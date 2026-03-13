@@ -1,0 +1,6 @@
+[submodule "pocom"]
+	path = pocom
+	url = https://github.com/HistoryAtState/pocom
+[submodule "rdcr"]
+	path = rdcr
+	url = https://github.com/HistoryAtState/rdcr

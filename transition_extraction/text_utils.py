@@ -48,12 +48,38 @@ def number_lines(text: str, source_file: str = "", repo_commit: str = "") -> tup
 def fuzzy_match(claimed_quote: str, actual_text: str) -> float:
     """Compute fuzzy match ratio between a claimed quote and actual source text.
 
+    Uses the best matching substring when the actual text is significantly longer
+    than the claimed quote, since LLMs often quote a portion of a long line.
+
     Returns a float between 0.0 and 1.0.
     """
-    # Normalize whitespace in both strings for comparison
     claimed = re.sub(r"\s+", " ", claimed_quote.strip())
     actual = re.sub(r"\s+", " ", actual_text.strip())
-    return difflib.SequenceMatcher(None, claimed, actual).ratio()
+
+    # Exact substring match is always a pass
+    if claimed in actual:
+        return 1.0
+
+    full_ratio = difflib.SequenceMatcher(None, claimed, actual).ratio()
+
+    # If actual text is much longer, find the best matching substring
+    if len(actual) > len(claimed) * 1.5 and len(claimed) > 20:
+        matcher = difflib.SequenceMatcher(None, claimed, actual)
+        blocks = matcher.get_matching_blocks()
+        matching_blocks = [b for b in blocks if b.size > 0]
+        if matching_blocks:
+            best_start = min(b.b for b in matching_blocks)
+            best_end = max(b.b + b.size for b in matching_blocks)
+            window = len(claimed)
+            center = (best_start + best_end) // 2
+            sub_start = max(0, center - window // 2)
+            sub_end = min(len(actual), sub_start + window + window // 4)
+            sub_start = max(0, sub_end - window - window // 4)
+            substring = actual[sub_start:sub_end]
+            sub_ratio = difflib.SequenceMatcher(None, claimed, substring).ratio()
+            return max(full_ratio, sub_ratio)
+
+    return full_ratio
 
 
 def estimate_tokens(text: str) -> int:

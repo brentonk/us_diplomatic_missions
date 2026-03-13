@@ -26,9 +26,9 @@ def _parse_csv_events(config: PipelineConfig) -> dict[str, list[CsvEvent]]:
     for country_name, group in df.groupby("state_dept_name", sort=True):
         events = []
         for row_idx, (_, row) in enumerate(group.iterrows(), start=1):
-            year = int(row["year"]) if pd.notna(row["year"]) else None
-            month = int(row["month"]) if pd.notna(row["month"]) else None
-            day = int(row["day"]) if pd.notna(row["day"]) else None
+            year = int(row["year"]) if row["year"] != "" and pd.notna(row["year"]) else None
+            month = int(row["month"]) if row["month"] != "" and pd.notna(row["month"]) else None
+            day = int(row["day"]) if row["day"] != "" and pd.notna(row["day"]) else None
             events.append(CsvEvent(
                 state_dept_name=str(row["state_dept_name"]),
                 status_change=str(row["status_change"]),

@@ -1,11 +1,15 @@
 """Output Assembly.
 
 Build final sourcing records from reconciliation, extraction, and verification results.
+Apply manual reconciliation decisions from input/manual_reconciliation.yaml when present.
 Write sourcing_records.jsonl and summary.csv.
 """
 
 import csv
 import json
+from pathlib import Path
+
+import yaml
 
 from .config import PipelineConfig
 from .models import WorkUnit
@@ -25,10 +29,90 @@ def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None 
     return work_units
 
 
+def _load_decisions(decisions_path: Path) -> dict[str, dict]:
+    """Load human decisions, keyed by 'country|csv_row' or 'country|addition|date'."""
+    if not decisions_path.exists():
+        return {}
+    with open(decisions_path) as f:
+        raw = yaml.safe_load(f) or []
+    decisions = {}
+    for entry in raw:
+        country = entry.get("country", "")
+        if entry.get("type") == "addition":
+            key = f"{country}|addition|{entry.get('date', '')}"
+        else:
+            key = f"{country}|{entry.get('csv_row', '')}"
+        decisions[key] = entry
+    return decisions
+
+
+def _apply_decision(record: dict, decision: dict) -> list[dict]:
+    """Apply a human decision to a sourcing record.
+
+    Returns a list of records (usually one, but split decisions produce multiple).
+    """
+    choice = decision.get("decision", "")
+    notes = decision.get("notes", "")
+
+    if record["validation_status"] == "discrepancy":
+        if choice == "accept_csv":
+            record["validation_status"] = "confirmed"
+            record["validation_notes"] = f"Human decision: accept CSV value. {notes}".strip()
+        elif choice == "accept_source":
+            record["validation_status"] = "confirmed"
+            if decision.get("override_date"):
+                record["date"] = decision["override_date"]
+            if decision.get("override_status"):
+                record["new_status"] = decision["override_status"]
+            record["validation_notes"] = f"Human decision: accept source value. {notes}".strip()
+        elif choice == "custom":
+            record["validation_status"] = "confirmed"
+            if decision.get("override_date"):
+                record["date"] = decision["override_date"]
+            if decision.get("override_status"):
+                record["new_status"] = decision["override_status"]
+            record["validation_notes"] = f"Human decision: custom override. {notes}".strip()
+        elif choice == "split":
+            entries = decision.get("entries", [])
+            if entries:
+                split_records = []
+                for entry in entries:
+                    new_record = record.copy()
+                    new_record["date"] = entry.get("date", record["date"])
+                    new_record["new_status"] = entry.get("status", record["new_status"])
+                    new_record["validation_status"] = "confirmed"
+                    new_record["validation_notes"] = f"Human decision: split. {notes}".strip()
+                    split_records.append(new_record)
+                return split_records
+
+    elif record["validation_status"] == "candidate_addition":
+        if choice == "add":
+            if decision.get("override_date"):
+                record["date"] = decision["override_date"]
+            if decision.get("override_status"):
+                record["new_status"] = decision["override_status"]
+            record["validation_status"] = "confirmed_addition"
+            record["validation_notes"] = f"Human decision: add to dataset. {notes}".strip()
+        elif choice == "reject":
+            record["validation_status"] = "rejected"
+            record["validation_notes"] = f"Human decision: reject addition. {notes}".strip()
+
+    elif record["validation_status"] == "unsupported":
+        if choice == "keep":
+            record["validation_status"] = "confirmed"
+            record["validation_notes"] = f"Human decision: keep despite no source. {notes}".strip()
+        elif choice == "remove":
+            record["validation_status"] = "removed"
+            record["validation_notes"] = f"Human decision: remove from dataset. {notes}".strip()
+
+    return [record]
+
+
 def assemble_country(
     work_unit: WorkUnit,
     config: PipelineConfig,
     run_timestamp: str,
+    decisions: dict[str, dict] | None = None,
 ) -> list[dict]:
     """Assemble sourcing records for a single country.
 
@@ -128,6 +212,7 @@ def assemble_country(
         record = {
             "run_timestamp": run_timestamp,
             "country": work_unit.country,
+            "csv_row": csv_row,
             "date": csv_event.date_str() if csv_event else "",
             "new_status": csv_event.status_change if csv_event else "",
             "event_description": "",
@@ -156,6 +241,7 @@ def assemble_country(
         record = {
             "run_timestamp": run_timestamp,
             "country": work_unit.country,
+            "csv_row": csv_row,
             "date": csv_event.date_str() if csv_event else "",
             "new_status": csv_event.status_change if csv_event else "",
             "event_description": _get_event_description(extracted_indices, merged_events),
@@ -173,6 +259,29 @@ def assemble_country(
             ),
         }
         records.append(record)
+
+    # Apply human decisions
+    if decisions:
+        resolved_records = []
+        for record in records:
+            status = record["validation_status"]
+            if status == "confirmed":
+                resolved_records.append(record)
+                continue
+            decision = None
+            if status in ("discrepancy", "unsupported"):
+                csv_row = record.get("csv_row")
+                if csv_row is not None:
+                    key = f"{work_unit.country}|{csv_row}"
+                    decision = decisions.get(key)
+            elif status == "candidate_addition":
+                key = f"{work_unit.country}|addition|{record.get('date', '')}"
+                decision = decisions.get(key)
+            if decision:
+                resolved_records.extend(_apply_decision(record, decision))
+            else:
+                resolved_records.append(record)
+        records = resolved_records
 
     return records
 
@@ -253,6 +362,12 @@ def run_assemble(
     """Assemble final output from all pipeline stages."""
     work_units = _load_work_units(config, countries_filter)
 
+    # Load human decisions
+    decisions_path = config.paths.manual_reconciliation
+    decisions = _load_decisions(decisions_path)
+    if decisions:
+        print(f"  Loaded {len(decisions)} human decisions from {decisions_path}")
+
     final_dir = config.paths.output_dir / "final"
     final_dir.mkdir(parents=True, exist_ok=True)
 
@@ -265,7 +380,7 @@ def run_assemble(
     print(f"Assembling final output...")
 
     for wu in work_units:
-        records = assemble_country(wu, config, run_timestamp)
+        records = assemble_country(wu, config, run_timestamp, decisions)
         all_records.extend(records)
 
         # Compute summary stats

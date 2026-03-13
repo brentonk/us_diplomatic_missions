@@ -96,7 +96,7 @@ RECONCILIATION_TOOL = {
                         "extracted_value": {"type": "string"},
                         "assessment": {
                             "type": "string",
-                            "enum": ["csv_likely_correct", "extracted_likely_correct", "ambiguous"],
+                            "enum": ["csv_likely_correct", "extracted_likely_correct", "ambiguous", "suggest_split"],
                         },
                         "reasoning": {"type": "string"},
                     },

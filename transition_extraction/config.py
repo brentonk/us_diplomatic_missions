@@ -34,6 +34,7 @@ class PathsConfig:
     pocom_roles: Path = field(default_factory=lambda: Path("./pocom/roles-country-chiefs"))
     transitions_csv: Path = field(default_factory=lambda: Path("./input/2024-01-16_transitions.csv"))
     country_aliases: Path = field(default_factory=lambda: Path("./input/country_aliases.yaml"))
+    manual_reconciliation: Path = field(default_factory=lambda: Path("./input/manual_reconciliation.yaml"))
     output_dir: Path = field(default_factory=lambda: Path("./output"))
     log_dir: Path = field(default_factory=lambda: Path("./logs"))
     prompt_extract: Path = field(default_factory=lambda: Path("./input/prompt_extract.txt"))

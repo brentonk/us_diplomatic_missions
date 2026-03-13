@@ -19,6 +19,7 @@ paths:
   pocom_roles: "./pocom/roles-country-chiefs"
   transitions_csv: "./input/2024-01-16_transitions.csv"
   country_aliases: "./input/country_aliases.yaml"
+  manual_reconciliation: "./input/manual_reconciliation.yaml"
   output_dir: "./output"
   log_dir: "./logs"
   prompt_extract: "./input/prompt_extract.txt"

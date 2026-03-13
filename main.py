@@ -31,6 +31,7 @@ def main():
     subparsers.add_parser("stage3", help="Quote verification")
     subparsers.add_parser("stage4", help="LLM reconciliation (Opus)")
     subparsers.add_parser("assemble", help="Final output assembly")
+    subparsers.add_parser("audit", help="Generate HTML audit report")
     subparsers.add_parser("run-all", help="Run all stages sequentially")
 
     args = parser.parse_args()
@@ -69,6 +70,10 @@ def main():
     elif args.command == "assemble":
         from transition_extraction.assemble import run_assemble
         run_assemble(config, run_timestamp, countries_filter)
+
+    elif args.command == "audit":
+        from transition_extraction.audit_report import run_audit_report
+        run_audit_report(config, countries_filter)
 
     elif args.command == "run-all":
         from transition_extraction.stage0_resolve import run_stage0

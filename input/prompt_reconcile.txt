@@ -21,6 +21,8 @@ CSV events that could not be found in either source extraction. These may be err
 ### 4. Discrepancies
 Events present in both sets but with conflicting dates, statuses, or descriptions. Reference both the CSV row and extracted event index(es). Identify which field conflicts (date, new_status, or both), state both values, and assess which is more likely correct (csv_likely_correct, extracted_likely_correct, or ambiguous) with reasoning.
 
+If the evidence suggests a single CSV row actually represents two distinct events that happened at different times (e.g., a mission closure followed by a new arrangement weeks later), set the assessment to "suggest_split" and explain the two events with their respective dates and statuses in your reasoning.
+
 ## Guidelines
 
 - An extracted event and a CSV event "match" if they refer to the same historical diplomatic transition, even if dates differ slightly or descriptions use different wording.

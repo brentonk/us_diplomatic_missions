@@ -261,8 +261,10 @@ def _render_html(items_by_country: dict[str, list[dict]], csv_by_country: dict[s
         for item in items:
             items_html.append(_render_item(item))
 
+        all_resolved = all(it.get("decision") for it in items)
+        country_open = "" if all_resolved else " open"
         country_sections.append(f"""
-<details id="{escape(anchor)}" class="country-section" open>
+<details id="{escape(anchor)}" class="country-section"{country_open}>
   <summary><h2>{escape(country)} {pending_badge}{badge}</h2></summary>
   {csv_table}
   {"".join(items_html)}
@@ -567,7 +569,8 @@ def _render_item(item: dict) -> str:
     if decision:
         resolved_tag = f' <span class="badge resolved">{escape(decision.get("decision", ""))}</span>'
 
-    parts = [f'<details class="item{resolved_class}" open>']
+    item_open = "" if decision else " open"
+    parts = [f'<details class="item{resolved_class}"{item_open}>']
     parts.append(f'<summary><span class="item-type {item_type}">{type_label}</span> {summary_text}{resolved_tag}</summary>')
     parts.append('<div class="item-body">')
 

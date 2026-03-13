@@ -1,0 +1,454 @@
+- country: "Afghanistan"
+  csv_row: 7
+  decision: split
+  entries:
+    - date: "2021-08-31"
+      status: "None"
+    - date: "2021-11-12"
+      status: "Interests"
+
+- country: "Andorra"
+  type: addition
+  date: "1995-02-21"
+  decision: add
+  override_status: "Consul Nonresident"
+
+- country: "China"
+  type: addition
+  date: "1979-01-01"
+  decision: reject
+  notes: "This is a Taiwan event, not a China event"
+
+- country: "China"
+  csv_row: 7
+  decision: keep
+  notes: "Manual addition due to joint handling of Taiwan and China in RDCR"
+
+- country: "Australia"
+  type: addition
+  date: "1940-01-08"
+  decision: reject
+  notes: "Final data assembly already assumes \"None\" prior to first mission establishment"
+
+- country: "Eritrea"
+  csv_row: 1
+  decision: accept_csv
+
+- country: "Finland"
+  type: addition
+  date: "1919-05-27"
+  decision: add
+
+- country: "Finland"
+  type: addition
+  date: "1945-01-16"
+  decision: add
+
+- country: "San Marino"
+  csv_row: 1
+  decision: keep
+  notes: "Extraction script just missed this one"
+
+- country: "Thailand"
+  type: addition
+  date: "1941-12-08"
+  decision: add
+
+- country: "Thailand"
+  type: addition
+  date: "1946-01-05"
+  decision: add
+
+- country: "Albania"
+  type: addition
+  date: "1991-03-15"
+  decision: reject
+
+- country: "Albania"
+  type: addition
+  date: "1945"
+  decision: reject
+
+- country: "Albania"
+  type: addition
+  date: "1946-11"
+  decision: reject
+
+- country: "Argentina"
+  csv_row: 3
+  decision: keep
+  notes: "Armour was instructed to return to Washington on June 27, 1944. Edward L. Reed subsequently became Chargés d’Affaires of the Embassy in Buenos Aires."
+
+- country: "Argentina"
+  csv_row: 4
+  decision: keep
+  notes: "The United States resumed normal diplomatic relations with Argentina and formally recognized the Farrell government on April 19, 1945"
+
+- country: "Armenia"
+  type: addition
+  date: "1991-12-25"
+  decision: reject
+
+- country: "Austria"
+  type: addition
+  date: "1838-11-07"
+  decision: reject
+  notes: "Covered by Austrian Empire entry"
+
+- country: "Austria"
+  type: addition
+  date: "1861-11-14"
+  decision: reject
+  notes: "Covered by Austrian Empire entry"
+
+- country: "Austria"
+  type: addition
+  date: "1868-09-25"
+  decision: reject
+  notes: "Covered by Austrian Empire entry"
+
+- country: "Austria"
+  type: addition
+  date: "1902-06-26"
+  decision: reject
+  notes: "Covered by Austrian Empire entry"
+
+- country: "Austria"
+  type: addition
+  date: "1917-04-09"
+  decision: reject
+  notes: "Covered by Austrian Empire entry"
+
+- country: "Austria"
+  type: addition
+  date: "1946-01-21"
+  decision: add
+
+- country: "Austrian Empire"
+  csv_row: 3
+  decision: accept_csv
+
+- country: "Azerbaijan"
+  type: addition
+  date: "1992-02-19"
+  decision: reject
+
+- country: "Baden"
+  csv_row: 1
+  decision: accept_csv
+  notes: "The first U.S. Consulate in the Grand Duchy of Baden was opened on July 13, 1832 in Baden-Baden."
+
+- country: "Baden"
+  type: addition
+  date: "1868-07-19"
+  decision: add
+
+- country: "Bavaria"
+  type: addition
+  date: "1868-05-26"
+  decision: add
+
+- country: "Belgium"
+  type: addition
+  date: "1940-07-15"
+  decision: add
+
+- country: "Belgium"
+  type: addition
+  date: "1940-11-01"
+  decision: add
+
+- country: "Belgium"
+  type: addition
+  date: "1944-09-14"
+  decision: reject
+  notes: "Redundant with 1940-11-01 addition"
+
+- country: "Benin (Dahomey)"
+  type: addition
+  date: "1960-08-01"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "Nonresident chargé d'affaires coded at ambassador level per README rule (subsequent chief Reams was Ambassador)"
+
+- country: "Benin (Dahomey)"
+  type: addition
+  date: "1960-11-26"
+  decision: reject
+  notes: "Redundant: Reams's credential presentation is a personnel change, not a status change, since 1960-08-01 is already Ambassador Nonresident"
+
+- country: "Bolivia"
+  csv_row: 2
+  decision: custom
+  override_date: "1942-01-04"
+  override_status: "Embassy"
+  notes: "Ambiguous in the RDCR doc, but March 31 there seems to refer to Bolivia's status in USA rather than vice versa"
+
+- country: "Bosnia and Herzegovina"
+  csv_row: 1
+  decision: accept_csv
+  notes: "Embassy in Vienna is nonresident per coding rules"
+
+- country: "Bosnia and Herzegovina"
+  type: addition
+  date: "1992-08-06"
+  decision: reject
+
+- country: "Brazil"
+  type: addition
+  date: "1842-01-01"
+  decision: reject
+
+- country: "Brunei"
+  csv_row: 3
+  decision: accept_source
+
+- country: "Brunswick and Lüneburg"
+  type: addition
+  date: "1867-07-01"
+  decision: reject
+  notes: "Sovereignty decisions offloaded to state system membership, not transitions data"
+
+- country: "Bulgaria"
+  csv_row: 1
+  decision: custom
+  override_date: "1912-02-01"
+  override_status: "Envoy Nonresident"
+  notes: "Envoy status should start with Jackson as suggested here, but nonresident until 1919 opening of legation in Sofia"
+
+- country: "Bulgaria"
+  type: addition
+  date: "1903-09-19"
+  decision: add
+
+- country: "Burkina Faso (Upper Volta)"
+  type: addition
+  date: "1960-08-05"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "Nonresident chargé d'affaires coded at ambassador level per README rule (subsequent chief Reams was Ambassador)"
+
+- country: "Burkina Faso (Upper Volta)"
+  type: addition
+  date: "1960-11-26"
+  decision: reject
+  notes: "Redundant: Reams's credential presentation is a personnel change, not a status change, since 1960-08-05 is already Ambassador Nonresident"
+
+- country: "Cambodia"
+  csv_row: 3
+  decision: accept_source
+
+- country: "Cambodia"
+  type: addition
+  date: "1954-10-02"
+  decision: add
+
+- country: "Central African Republic"
+  type: addition
+  date: "1960-08-13"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "Nonresident chargé d'affaires coded at ambassador level per README rule (subsequent chief Blancke was Ambassador)"
+
+- country: "Central African Republic"
+  type: addition
+  date: "1997-03-31"
+  decision: add
+
+- country: "Central African Republic"
+  type: addition
+  date: "1999-06-01"
+  decision: add
+  override_date: "1999-02-01"
+  override_status: "Embassy"
+  notes: "Dating from credential presentation"
+
+- country: "Central American Federation"
+  type: addition
+  date: "1824-08-04"
+  decision: reject
+  notes: "USA is recipient here, not sender"
+
+- country: "Chad"
+  csv_row: 1
+  decision: accept_source
+
+- country: "Comoros"
+  csv_row: 1
+  decision: accept_csv
+
+- country: "Comoros"
+  type: addition
+  date: "1982-11-18"
+  decision: reject
+
+- country: "Costa Rica"
+  csv_row: 6
+  decision: accept_csv
+
+- country: "Costa Rica"
+  csv_row: 1
+  decision: keep
+  notes: "A Consulate was established in San José in 1852."
+
+- country: "Czechoslovakia"
+  csv_row: 5
+  decision: accept_csv
+  notes: "Ministers to governments-in-exile during WWII treated as resident"
+
+- country: "Czechoslovakia"
+  type: addition
+  date: "1943-06-04"
+  decision: add
+  override_status: "Embassy"
+  notes: "Ministers to governments-in-exile during WWII treated as resident"
+
+- country: "Czechoslovakia"
+  type: addition
+  date: "1992-12-31"
+  decision: reject
+  notes: "Sovereignty decisions not made in transitions data"
+
+- country: "Czechoslovakia"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. consular post in Bohemia was in Prague. A consulate was opened in 1869 and closed April 9, 1917, after Austria-Hungary severed diplomatic relations with the United States."
+
+- country: "Czechoslovakia"
+  csv_row: 2
+  decision: keep
+  notes: "The first U.S. consular post in Bohemia was in Prague. A consulate was opened in 1869 and closed April 9, 1917, after Austria-Hungary severed diplomatic relations with the United States."
+
+- country: "Dominican Republic"
+  type: addition
+  date: "1960-08-26"
+  decision: add
+
+- country: "Dominican Republic"
+  type: addition
+  date: "1962-01-06"
+  decision: add
+
+- country: "Dominican Republic"
+  type: addition
+  date: "1963-09-25"
+  decision: add
+
+- country: "Dominican Republic"
+  type: addition
+  date: "1964-03-23"
+  decision: add
+
+- country: "Bolivia"
+  type: addition
+  date: "1943-12-20"
+  decision: add
+
+- country: "Bolivia"
+  type: addition
+  date: "1944-11-16"
+  decision: add
+
+- country: "Bolivia"
+  type: addition
+  date: "1980-07-17"
+  decision: add
+
+- country: "Bolivia"
+  type: addition
+  date: "1980-07"
+  decision: add
+  override_status: "Liaison"
+  notes: "Treating CDA during non-recognition period as liaison"
+
+- country: "Bolivia"
+  type: addition
+  date: "1981-12-10"
+  decision: add
+
+- country: "East Germany (German Democratic Republic)"
+  type: addition
+  date: "1990-10-02"
+  decision: reject
+  notes: "Sovereignty decisions not for transitions file"
+
+- country: "Ecuador"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. consular representative to serve in what is today Ecuador was William Wheelwright, appointed on June 9, 1824, as the U.S. Consul in Guayaquil."
+
+- country: "Egypt"
+  type: addition
+  date: "1849-03-17"
+  decision: add
+  override_status: "Consulate"
+
+- country: "Egypt"
+  type: addition
+  date: "1861-07-01"
+  decision: reject
+  notes: "Redundant with previous entry"
+
+- country: "Egypt"
+  type: addition
+  date: "1864-10-15"
+  decision: reject
+  notes: "Redundant because consulate outweighs liaison in coding scheme"
+
+- country: "Egypt"
+  type: addition
+  date: "1922-04-26"
+  decision: reject
+  notes: "Redundant because consulate outweighs liaison in coding scheme"
+
+- country: "Egypt"
+  type: addition
+  date: "1946-10-10"
+  decision: add
+
+- country: "Egypt"
+  type: addition
+  date: "1958-02-25"
+  decision: reject
+  notes: "Redundant, and UAR not contained in either state system dataset"
+
+- country: "El Salvador"
+  csv_row: 3
+  decision: accept_source
+  notes: "Seems most consistent with treatment of this sort of interruption elsewhere in Latin America"
+
+- country: "Fiji"
+  csv_row: 2
+  decision: accept_csv
+  notes: "Ambassador John P. Condon became the first U.S. Ambassador to Fiji to be resident at Suva when he presented credentials there on April 11, 1978. Previous Ambassadors had been resident at Wellington, New Zealand."
+
+- country: "Fiji"
+  csv_row: 3
+  decision: keep
+  notes: "Ambassador John P. Condon became the first U.S. Ambassador to Fiji to be resident at Suva when he presented credentials there on April 11, 1978. Previous Ambassadors had been resident at Wellington, New Zealand."
+
+- country: "France"
+  csv_row: 3
+  decision: accept_csv
+
+- country: "France"
+  csv_row: 6
+  decision: accept_source
+  override_date: "1944-10-23"
+
+- country: "France"
+  type: addition
+  date: "1835-11-08"
+  decision: reject
+  notes: "No corresponding entry in RDCR, and not evidently a political decision"
+
+- country: "France"
+  type: addition
+  date: "1836-12-01"
+  decision: reject
+
+- country: "France"
+  type: addition
+  date: "1943-08-26"
+  decision: reject
+

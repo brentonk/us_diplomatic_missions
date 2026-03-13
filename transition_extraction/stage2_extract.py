@@ -78,10 +78,18 @@ async def _extract_from_source(
     max_tokens: int,
     run_timestamp: str,
     output_dir: Path,
+    skip_existing: bool = True,
 ) -> dict | None:
     """Extract events from a single source file for a country."""
     slug = country_slug(work_unit.country)
     output_path = output_dir / f"{slug}_{source_type}.json"
+
+    if skip_existing and output_path.exists():
+        with open(output_path) as f:
+            existing = json.load(f)
+        event_count = len(existing.get("result", {}).get("events", [])) if existing.get("result") else 0
+        print(f"  {work_unit.country} ({source_type}): skipped (existing, {event_count} events)")
+        return existing
 
     user_message = f"Country: {work_unit.country}\nSource: {source_file}\n\n{numbered_text}"
 
@@ -122,6 +130,7 @@ async def _extract_country(
     config: PipelineConfig,
     run_timestamp: str,
     output_dir: Path,
+    skip_existing: bool = True,
 ) -> list[dict | None]:
     """Extract events from all available sources for a country."""
     results = []
@@ -139,6 +148,7 @@ async def _extract_country(
             max_tokens=config.api.max_tokens_extraction,
             run_timestamp=run_timestamp,
             output_dir=output_dir,
+            skip_existing=skip_existing,
         )
         results.append(result)
 
@@ -155,6 +165,7 @@ async def _extract_country(
             max_tokens=config.api.max_tokens_extraction,
             run_timestamp=run_timestamp,
             output_dir=output_dir,
+            skip_existing=skip_existing,
         )
         results.append(result)
 
@@ -241,6 +252,8 @@ async def run_stage2_async(
 
     print(f"Stage 2: Extracting events from {len(work_units)} countries...")
 
+    skip_existing = config.api.skip_existing
+
     # Run all countries concurrently (bounded by semaphore)
     tasks = []
     for wu in work_units:
@@ -251,6 +264,7 @@ async def run_stage2_async(
             config=config,
             run_timestamp=run_timestamp,
             output_dir=output_dir,
+            skip_existing=skip_existing,
         )
         tasks.append((wu.country, task))
 

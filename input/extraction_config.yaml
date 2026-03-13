@@ -8,6 +8,7 @@ api:
   max_tokens_reconciliation: 8192
   concurrency_extraction: 5
   concurrency_reconciliation: 3
+  skip_existing: true  # skip API calls when output file already exists; override with --force
 
 verification:
   quote_match_threshold: 0.85

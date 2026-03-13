@@ -56,6 +56,7 @@ uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countr
 - **TEI namespace**: `http://www.tei-c.org/ns/1.0` — must be handled in all `find`/`findall` calls in rdcr parsing
 - **Async for API stages only**: Stages 2 and 4 use `asyncio` with semaphore. Python-only stages are synchronous.
 - **Intermediate files**: Each stage writes JSON to `output/`. Enables resumability and inspection.
+- **Skip existing**: Stages 2 and 4 skip API calls when output files already exist (`api.skip_existing: true` in config). Use `--force` CLI flag to override. This makes it safe to re-run the full pipeline without re-doing completed work.
 - **Shared `country_slug()`**: Use `from .text_utils import country_slug` — do not define local slug functions in individual modules.
 - **LLM calls go through the Messages API** (`api_client.py`), never through Claude Code's own loop. This is a reproducibility requirement.
 - **All API calls**: `temperature: 0`, tool use for structured output, full request/response logged to JSONL.

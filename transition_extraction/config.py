@@ -19,6 +19,7 @@ class ApiConfig:
     max_tokens_reconciliation: int = 8192
     concurrency_extraction: int = 5
     concurrency_reconciliation: int = 3
+    skip_existing: bool = True
 
 
 @dataclass

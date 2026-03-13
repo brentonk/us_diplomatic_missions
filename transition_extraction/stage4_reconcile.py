@@ -203,9 +203,19 @@ async def _reconcile_country(
     extractions_dir: Path,
     verifications_dir: Path,
     output_dir: Path,
+    skip_existing: bool = True,
 ) -> dict | None:
     """Reconcile extracted events against CSV for a single country."""
     slug = country_slug(work_unit.country)
+    output_path = output_dir / f"{slug}.json"
+
+    if skip_existing and output_path.exists():
+        with open(output_path) as f:
+            existing = json.load(f)
+        result = existing.get("result", {})
+        matched = len(result.get("matched", [])) if result else 0
+        print(f"  {work_unit.country}: skipped (existing, {matched} matched)")
+        return existing
 
     # Merge and deduplicate extracted events
     merged_events = _merge_extractions(slug, extractions_dir, verifications_dir)
@@ -316,6 +326,7 @@ async def run_stage4_async(
         concurrency=config.api.concurrency_reconciliation,
     )
 
+    skip_existing = config.api.skip_existing
     successes = []
     failures = []
 
@@ -332,6 +343,7 @@ async def run_stage4_async(
             extractions_dir=extractions_dir,
             verifications_dir=verifications_dir,
             output_dir=output_dir,
+            skip_existing=skip_existing,
         )
         tasks.append((wu.country, task))
 

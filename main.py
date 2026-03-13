@@ -18,6 +18,7 @@ def main():
     parser.add_argument("--config", default="input/extraction_config.yaml", help="Path to config YAML")
     parser.add_argument("--countries", default=None, help="Comma-separated list of countries to process")
     parser.add_argument("--dry-run", action="store_true", help="Estimate costs without making API calls (stages 2, 4)")
+    parser.add_argument("--force", action="store_true", help="Re-run API calls even if output already exists (stages 2, 4)")
 
     subparsers = parser.add_subparsers(dest="command", help="Pipeline stage to run")
     subparsers.add_parser("stage0", help="Country name resolution")
@@ -37,6 +38,9 @@ def main():
     config = load_config(args.config)
     countries_filter = [c.strip() for c in args.countries.split(",")] if args.countries else None
     run_timestamp = get_run_timestamp()
+
+    if args.force:
+        config.api.skip_existing = False
 
     if args.command == "stage0":
         from transition_extraction.stage0_resolve import run_stage0

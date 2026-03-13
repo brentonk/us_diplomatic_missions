@@ -64,11 +64,31 @@ def _get_source_lines(work_unit: WorkUnit, source_type: str, line_start: int, li
     return "\n".join(result)
 
 
+def _load_suggestions(input_dir: Path) -> dict[str, dict]:
+    """Load suggested decisions from suggested_reconciliation.yaml."""
+    import yaml
+    path = input_dir / "suggested_reconciliation.yaml"
+    if not path.exists():
+        return {}
+    with open(path) as f:
+        raw = yaml.safe_load(f) or []
+    suggestions = {}
+    for entry in raw:
+        country = entry.get("country", "")
+        if entry.get("type") == "addition":
+            key = f"{country}|addition|{entry.get('date', '')}"
+        else:
+            key = f"{country}|{entry.get('csv_row', '')}"
+        suggestions[key] = entry
+    return suggestions
+
+
 def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | None = None) -> Path:
     """Generate an HTML audit report. Returns the output path."""
     work_units = _load_work_units(config, countries_filter)
     decisions_path = config.paths.manual_reconciliation
     decisions = _load_decisions(decisions_path)
+    suggestions = _load_suggestions(config.paths.manual_reconciliation.parent)
 
     reconciliations_dir = config.paths.output_dir / "reconciliations"
 
@@ -127,6 +147,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                     csv_event = ev
                     break
 
+            suggestion = suggestions.get(decision_key) if not decision else None
             item = {
                 "type": "discrepancy",
                 "country": wu.country,
@@ -142,6 +163,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                 "reasoning": disc.get("reasoning", ""),
                 "sources": sources,
                 "decision": decision,
+                "suggestion": suggestion,
             }
             country_items.append(item)
             if decision:
@@ -171,6 +193,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                             "context": context,
                         })
 
+            suggestion = suggestions.get(decision_key) if not decision else None
             item = {
                 "type": "candidate_addition",
                 "country": wu.country,
@@ -180,6 +203,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                 "notes": missing.get("notes", ""),
                 "sources": sources,
                 "decision": decision,
+                "suggestion": suggestion,
             }
             country_items.append(item)
             if decision:
@@ -199,6 +223,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                     csv_event = ev
                     break
 
+            suggestion = suggestions.get(decision_key) if not decision else None
             item = {
                 "type": "unsupported",
                 "country": wu.country,
@@ -208,6 +233,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                 "notes": unsupported.get("notes", ""),
                 "sources": [],
                 "decision": decision,
+                "suggestion": suggestion,
             }
             country_items.append(item)
             if decision:
@@ -335,6 +361,13 @@ def _render_html(items_by_country: dict[str, list[dict]], csv_by_country: dict[s
   .source-label {{ font-size: 0.8rem; font-weight: 600; color: #666; margin-bottom: 0.25rem; }}
   .quote {{ padding: 0.5rem 0.75rem; background: #f0fdf4; border-left: 3px solid #16a34a; font-size: 0.9rem; margin-bottom: 0.5rem; }}
   .context {{ font-family: "SF Mono", "Consolas", monospace; font-size: 0.8rem; background: #f9fafb; padding: 0.5rem 0.75rem; overflow-x: auto; white-space: pre; border-radius: 4px; margin-bottom: 0.5rem; }}
+  .suggestion-banner {{ margin-top: 0.75rem; padding: 0.75rem; background: #eff6ff; border: 1px solid #93c5fd; border-radius: 6px; }}
+  .suggestion-header {{ font-size: 0.9rem; margin-bottom: 0.5rem; }}
+  .suggestion-header strong {{ color: #1d4ed8; }}
+  .suggestion-yaml {{ font-family: "SF Mono", "Consolas", monospace; font-size: 0.78rem; background: #1e293b; color: #e2e8f0; padding: 0.5rem 0.75rem; border-radius: 4px; overflow-x: auto; white-space: pre; margin-bottom: 0.5rem; }}
+  .accept-suggestion-btn {{ font-size: 0.85rem; padding: 0.35rem 1rem; border: 1px solid #3b82f6; border-radius: 4px; background: #3b82f6; color: white; cursor: pointer; font-weight: 600; }}
+  .accept-suggestion-btn:hover {{ background: #2563eb; }}
+  .accept-suggestion-btn.accepted {{ background: #16a34a; border-color: #16a34a; }}
   .decision-form {{ margin-top: 1rem; padding: 0.75rem; background: #f9fafb; border-radius: 6px; border: 1px solid #e5e7eb; }}
   .radio-group {{ display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin-bottom: 0.5rem; }}
   .radio-group label {{ font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 0.3rem; }}
@@ -543,6 +576,58 @@ document.addEventListener('DOMContentLoaded', () => {{
     }});
   }});
 
+  document.querySelectorAll('.accept-suggestion-btn').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      const banner = btn.closest('.suggestion-banner');
+      const itemBody = banner.closest('.item-body');
+      const form = itemBody.querySelector('.decision-form');
+      if (!form) return;
+
+      const decision = banner.dataset.decision;
+      const overrideDate = banner.dataset.overrideDate || '';
+      const overrideStatus = banner.dataset.overrideStatus || '';
+      const notes = banner.dataset.notes || '';
+
+      // Select the right radio
+      const radio = form.querySelector('input[type="radio"][value="' + decision + '"]');
+      if (radio) {{
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', {{ bubbles: true }}));
+      }}
+
+      // Fill override fields
+      const customFields = form.querySelector('.custom-fields');
+      const additionOverrides = form.querySelector('.addition-overrides');
+      if (customFields && (decision === 'accept_source' || decision === 'custom')) {{
+        customFields.style.display = 'flex';
+        if (overrideDate) customFields.querySelector('.override-date').value = overrideDate;
+        if (overrideStatus) {{
+          const sel = customFields.querySelector('.override-status');
+          if (sel) sel.value = overrideStatus;
+        }}
+      }}
+      if (additionOverrides && decision === 'add') {{
+        additionOverrides.style.display = 'flex';
+        if (overrideDate) additionOverrides.querySelector('.override-date').value = overrideDate;
+        if (overrideStatus) {{
+          const sel = additionOverrides.querySelector('.override-status');
+          if (sel) sel.value = overrideStatus;
+        }}
+      }}
+
+      // Fill notes
+      const notesInput = form.querySelector('.notes-input');
+      if (notesInput && notes) notesInput.value = notes;
+
+      // Trigger YAML regeneration
+      const changeEvent = new Event('input', {{ bubbles: true }});
+      if (notesInput) notesInput.dispatchEvent(changeEvent);
+
+      btn.textContent = 'Accepted!';
+      btn.classList.add('accepted');
+    }});
+  }});
+
   document.getElementById('copy-all-btn').addEventListener('click', () => {{
     const snippets = [];
     document.querySelectorAll('.yaml-output pre').forEach(pre => {{
@@ -631,11 +716,54 @@ def _render_item(item: dict) -> str:
 
     # Interactive decision form
     if not decision:
+        suggestion = item.get("suggestion")
+        if suggestion:
+            parts.append(_render_suggestion_banner(suggestion))
         parts.append(_render_decision_form(item))
 
     parts.append('</div>')  # close .item-body
     parts.append('</details>')
     return "\n".join(parts)
+
+
+def _render_suggestion_banner(suggestion: dict) -> str:
+    """Render a suggestion banner with an accept button."""
+    choice = escape(suggestion.get("decision", ""))
+    notes = escape(suggestion.get("notes", ""))
+    override_date = escape(suggestion.get("override_date", ""), quote=True)
+    override_status = escape(suggestion.get("override_status", ""), quote=True)
+
+    # Build the YAML preview
+    lines = []
+    lines.append(f'- country: "{suggestion.get("country", "")}"')
+    if suggestion.get("type") == "addition":
+        lines.append(f'  type: addition')
+        lines.append(f'  date: "{suggestion.get("date", "")}"')
+    else:
+        lines.append(f'  csv_row: {suggestion.get("csv_row", "")}')
+    lines.append(f'  decision: {suggestion.get("decision", "")}')
+    if suggestion.get("override_date"):
+        lines.append(f'  override_date: "{suggestion["override_date"]}"')
+    if suggestion.get("override_status"):
+        lines.append(f'  override_status: "{suggestion["override_status"]}"')
+    if suggestion.get("entries"):
+        lines.append("  entries:")
+        for entry in suggestion["entries"]:
+            lines.append(f'    - date: "{entry.get("date", "")}"')
+            lines.append(f'      status: "{entry.get("status", "")}"')
+    if suggestion.get("notes"):
+        lines.append(f'  notes: "{suggestion["notes"]}"')
+    yaml_text = "\n".join(lines)
+
+    return f"""<div class="suggestion-banner"
+  data-decision="{choice}"
+  data-override-date="{override_date}"
+  data-override-status="{override_status}"
+  data-notes="{escape(suggestion.get('notes', ''), quote=True)}">
+  <div class="suggestion-header"><strong>Suggested:</strong> {choice}. {notes}</div>
+  <pre class="suggestion-yaml">{escape(yaml_text)}</pre>
+  <button type="button" class="accept-suggestion-btn">Accept suggestion</button>
+</div>"""
 
 
 _form_counter = 0

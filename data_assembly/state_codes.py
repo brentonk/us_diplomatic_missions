@@ -6,7 +6,6 @@ import csv
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
-from typing import TypeGuard, cast
 
 import yaml
 
@@ -21,47 +20,18 @@ class Interval:
 
 
 @dataclass
-class DateRule:
-    code: str
+class NameRule:
+    """A USDOS name mapping for a code, optionally date-bounded."""
+    name: str
     before: date | None = None
     after: date | None = None
 
 
-@dataclass
-class MappingEntry:
-    cow: list[str] | list[DateRule] | None = None
-    gw: list[str] | list[DateRule] | None = None
+# code -> simple name (str) or list of date-bounded names
+CodeMapping = dict[str, str | list[NameRule]]
 
-
-def _parse_mapping_codes(raw: object) -> list[str] | list[DateRule] | None:
-    """Parse a cow/gw value from YAML into either a list of codes or date rules."""
-    if raw is None:
-        return None
-    if isinstance(raw, str):
-        return [raw]
-    if isinstance(raw, list):
-        if all(isinstance(x, str) for x in raw):
-            return [str(x) for x in raw]
-        rules: list[DateRule] = []
-        for item in raw:
-            rules.append(DateRule(
-                code=item["code"],
-                before=date.fromisoformat(item["before"]) if "before" in item else None,
-                after=date.fromisoformat(item["after"]) if "after" in item else None,
-            ))
-        return rules
-    raise ValueError(f"Unexpected mapping value: {raw!r}")
-
-
-def _is_date_rules(codes: list[str] | list[DateRule]) -> TypeGuard[list[DateRule]]:
-    return len(codes) > 0 and isinstance(codes[0], DateRule)
-
-
-def _get_code_strings(codes: list[str] | list[DateRule]) -> list[str]:
-    """Extract code strings from either a plain list or date rules."""
-    if _is_date_rules(codes):
-        return [r.code for r in codes]
-    return codes  # type: ignore[return-value]
+# name -> [(code, rule_or_None), ...] for reverse lookups
+NameIndex = dict[str, list[tuple[str, NameRule | None]]]
 
 
 def _load_cow(cow_csv: Path) -> dict[str, list[Interval]]:
@@ -107,48 +77,72 @@ def _load_gw(gw_tsv: Path, supplement: Path | None = None) -> dict[str, list[Int
     return intervals
 
 
-def _load_mapping(mapping_yaml: Path) -> dict[str, MappingEntry | None]:
-    """Load state_system_codes.yaml. Returns {usdos_name: MappingEntry | None}."""
+def _load_mapping(mapping_yaml: Path) -> tuple[CodeMapping, CodeMapping, list[str]]:
+    """Load code-keyed state_system_codes.yaml.
+
+    Returns (cow_mapping, gw_mapping, unmapped_names).
+    """
     with open(mapping_yaml) as f:
         raw = yaml.safe_load(f)
-    mapping: dict[str, MappingEntry | None] = {}
-    for name, entry in raw.items():
-        if entry is None:
-            mapping[name] = None
+
+    cow_mapping: CodeMapping = {}
+    gw_mapping: CodeMapping = {}
+
+    for system_key, mapping in [("cow", cow_mapping), ("gw", gw_mapping)]:
+        section = raw.get(system_key, {})
+        for code, value in section.items():
+            code = str(code)
+            if isinstance(value, str):
+                mapping[code] = value
+            elif isinstance(value, list):
+                rules: list[NameRule] = []
+                for item in value:
+                    rules.append(NameRule(
+                        name=item["name"],
+                        before=date.fromisoformat(item["before"]) if "before" in item else None,
+                        after=date.fromisoformat(item["after"]) if "after" in item else None,
+                    ))
+                mapping[code] = rules
+            else:
+                raise ValueError(f"Unexpected value for {system_key}.{code}: {value!r}")
+
+    unmapped = raw.get("unmapped", [])
+    return cow_mapping, gw_mapping, unmapped
+
+
+def _build_name_index(mapping: CodeMapping) -> NameIndex:
+    """Build name → [(code, rule_or_None), ...] reverse index for usdos_to_code lookups."""
+    index: NameIndex = {}
+    for code, entry in mapping.items():
+        if isinstance(entry, str):
+            index.setdefault(entry, []).append((code, None))
         else:
-            mapping[name] = MappingEntry(
-                cow=_parse_mapping_codes(entry.get("cow")),
-                gw=_parse_mapping_codes(entry.get("gw")),
-            )
-    return mapping
+            for rule in entry:
+                index.setdefault(rule.name, []).append((code, rule))
+    return index
 
 
-def _build_reverse_index(
-    mapping: dict[str, MappingEntry | None],
-    system: str,
-) -> dict[str, list[tuple[str, DateRule | None]]]:
-    """Build code → [(usdos_name, date_rule_or_None), ...] reverse index."""
-    reverse: dict[str, list[tuple[str, DateRule | None]]] = {}
-    for usdos_name, entry in mapping.items():
-        if entry is None:
-            continue
-        codes = entry.cow if system == "cow" else entry.gw
-        if codes is None:
-            continue
-        if _is_date_rules(codes):
-            for rule in codes:
-                reverse.setdefault(rule.code, []).append((usdos_name, rule))
-        else:
-            for code_str in cast(list[str], codes):
-                reverse.setdefault(code_str, []).append((usdos_name, None))
-    return reverse
-
-
-def _check_date_rule(rule: DateRule, query_date: date) -> bool:
-    """Return True if query_date satisfies the date rule."""
+def _check_name_rule(rule: NameRule, query_date: date) -> bool:
+    """Return True if query_date satisfies the name rule's date bounds."""
     if rule.before is not None and query_date >= rule.before:
         return False
     if rule.after is not None and query_date < rule.after:
+        return False
+    return True
+
+
+def _date_ranges_overlap(r1: NameRule, r2: NameRule) -> bool:
+    """Return True if two name rules have overlapping date ranges.
+
+    Each rule defines a half-open interval [after, before). If either bound
+    is None, that side is unbounded.
+    """
+    # r1's range starts at r1.after (or -inf) and ends at r1.before (or +inf)
+    # r2's range starts at r2.after (or -inf) and ends at r2.before (or +inf)
+    # They overlap unless one ends before the other starts.
+    if r1.before is not None and r2.after is not None and r1.before <= r2.after:
+        return False
+    if r2.before is not None and r1.after is not None and r2.before <= r1.after:
         return False
     return True
 
@@ -158,78 +152,82 @@ class StateCodeResolver:
                  gw_supplement: Path | None = None):
         self._cow = _load_cow(cow_csv)
         self._gw = _load_gw(gw_tsv, gw_supplement)
-        self._mapping = _load_mapping(mapping_yaml)
-        self._reverse_cow = _build_reverse_index(self._mapping, "cow")
-        self._reverse_gw = _build_reverse_index(self._mapping, "gw")
+        self._cow_mapping, self._gw_mapping, self._unmapped = _load_mapping(mapping_yaml)
+        self._cow_name_index = _build_name_index(self._cow_mapping)
+        self._gw_name_index = _build_name_index(self._gw_mapping)
+        self._unmapped_set = set(self._unmapped)
 
-    @property
-    def mapping(self) -> dict[str, MappingEntry | None]:
-        return self._mapping
+    def is_unmapped(self, usdos_name: str) -> bool:
+        """Check if a USDOS name is in the unmapped list."""
+        return usdos_name in self._unmapped_set
 
     def intervals(self, system: str) -> dict[str, list[Interval]]:
         return self._cow if system == "cow" else self._gw
 
+    def code_name_entries(self, system: str, code: str) -> list[tuple[str, NameRule | None]]:
+        """Return all (usdos_name, rule_or_None) entries for a given code.
+
+        Used by panel.py to determine split dates for interval subdivision.
+        """
+        mapping = self._cow_mapping if system == "cow" else self._gw_mapping
+        entry = mapping.get(code)
+        if entry is None:
+            return []
+        if isinstance(entry, str):
+            return [(entry, None)]
+        return [(rule.name, rule) for rule in entry]
+
     def code_to_usdos(self, system: str, code: str, query_date: date) -> str | None:
         """State system code + date → USDOS name."""
-        reverse = self._reverse_cow if system == "cow" else self._reverse_gw
-        candidates = reverse.get(code)
-        if not candidates:
+        mapping = self._cow_mapping if system == "cow" else self._gw_mapping
+        entry = mapping.get(code)
+        if entry is None:
             return None
-        if len(candidates) == 1:
-            name, rule = candidates[0]
-            if rule is not None and not _check_date_rule(rule, query_date):
-                return None
-            return name
-        # Multiple candidates — disambiguate by date
-        matched: list[str] = []
-        for name, rule in candidates:
-            if rule is not None:
-                if not _check_date_rule(rule, query_date):
-                    continue
-                matched.append(name)
-            else:
-                matched.append(name)
-        if len(matched) == 1:
-            return matched[0]
-        if len(matched) > 1:
-            return matched[0]
+        if isinstance(entry, str):
+            return entry
+        for rule in entry:
+            if _check_name_rule(rule, query_date):
+                return rule.name
         return None
 
     def usdos_to_code(self, usdos_name: str, system: str, query_date: date) -> tuple[str, int] | None:
         """USDOS name + date → (code, number). Returns None if unmapped."""
-        entry = self._mapping.get(usdos_name)
-        if entry is None:
-            return None
-        codes = entry.cow if system == "cow" else entry.gw
-        if codes is None:
+        name_index = self._cow_name_index if system == "cow" else self._gw_name_index
+        candidates = name_index.get(usdos_name)
+        if not candidates:
             return None
         raw = self._cow if system == "cow" else self._gw
-        if _is_date_rules(codes):
-            for rule in codes:
-                if not _check_date_rule(rule, query_date):
-                    continue
-                for iv in raw.get(rule.code, []):
-                    if iv.start <= query_date <= iv.end:
-                        return (rule.code, iv.number)
-            return None
-        # Simple code list — find which code has an active interval
-        for code_str in cast(list[str], codes):
-            for iv in raw.get(code_str, []):
+        for code, rule in candidates:
+            if rule is not None and not _check_name_rule(rule, query_date):
+                continue
+            for iv in raw.get(code, []):
                 if iv.start <= query_date <= iv.end:
-                    return (code_str, iv.number)
+                    return (code, iv.number)
         return None
 
     def validate(self) -> list[str]:
-        """Check all YAML codes exist in raw data. Returns list of warnings."""
+        """Check mapping integrity. Returns list of warnings.
+
+        Checks:
+        1. All mapped codes exist in raw state system data.
+        2. No date range overlaps for multi-name code entries.
+        """
         warnings: list[str] = []
-        for name, entry in self._mapping.items():
-            if entry is None:
-                continue
-            for system_key, codes in [("cow", entry.cow), ("gw", entry.gw)]:
-                if codes is None:
-                    continue
-                raw = self._cow if system_key == "cow" else self._gw
-                for code_str in _get_code_strings(codes):
-                    if code_str not in raw:
-                        warnings.append(f"{name}: {system_key} code {code_str} not in raw data")
+        for system_key, mapping in [("cow", self._cow_mapping), ("gw", self._gw_mapping)]:
+            raw = self._cow if system_key == "cow" else self._gw
+            for code, entry in mapping.items():
+                if code not in raw:
+                    if isinstance(entry, str):
+                        warnings.append(f"{system_key} code {code} ({entry}) not in raw data")
+                    else:
+                        names = ", ".join(r.name for r in entry)
+                        warnings.append(f"{system_key} code {code} ({names}) not in raw data")
+                if isinstance(entry, list) and len(entry) > 1:
+                    for i, r1 in enumerate(entry):
+                        for r2 in entry[i + 1:]:
+                            if _date_ranges_overlap(r1, r2):
+                                warnings.append(
+                                    f"{system_key} code {code}: overlapping date ranges "
+                                    f"for '{r1.name}' and '{r2.name}'"
+                                )
         return warnings

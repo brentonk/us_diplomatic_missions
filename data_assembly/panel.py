@@ -55,8 +55,7 @@ def _collect_split_dates(
     split_dates: set[date] = set()
 
     # Add USDOS name-change boundaries from the mapping's before/after rules
-    reverse = resolver._reverse_cow if system == "cow" else resolver._reverse_gw
-    candidates = reverse.get(code, [])
+    candidates = resolver.code_name_entries(system, code)
     for _, rule in candidates:
         if rule is not None:
             if rule.before is not None and interval.start < rule.before <= interval.end:

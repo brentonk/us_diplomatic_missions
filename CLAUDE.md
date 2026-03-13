@@ -40,16 +40,17 @@ uv run python main.py build-panel --system gw    # Build GW interval panel
   - `stage4_reconcile.py` — Async Opus reconciliation with tool use
   - `assemble.py` — Builds final sourcing records + summary CSV
 - `data_assembly/` — Panel data assembly package
-  - `state_codes.py` — `StateCodeResolver`: loads raw state system data + YAML mapping, resolves codes ↔ USDOS names
+  - `state_codes.py` — `StateCodeResolver`: loads raw state system data + code-keyed YAML mapping, resolves codes ↔ USDOS names. Validates date-range overlaps.
   - `panel.py` — `build_panel()`: builds interval-level panel datasets with merged US mission status
   - `diagnostics.py` — Compares generated panel against old `_mod` reference files
 - `scripts/` — One-time utility scripts
-  - `migrate_state_codes.py` — Extracts YAML mapping from old `_mod` CSV files
+  - `migrate_state_codes.py` — (historical) Extracted YAML mapping from old `_mod` CSV files
+  - `convert_mapping_format.py` — Converted YAML from USDOS-name-keyed to code-keyed format
   - `verify_state_codes.py` — Round-trip verification of mapping against old data
 - `input/` — Config, prompts, CSV data, aliases
   - `extraction_config.yaml` — Model strings, API params, thresholds, paths
   - `country_aliases.yaml` — CSV name → repo stem overrides (grows as edge cases surface)
-  - `state_system_codes.yaml` — USDOS name → COW/GW code mapping (~215 entries)
+  - `state_system_codes.yaml` — COW/GW code → USDOS name mapping (code-keyed, ~210 codes per system, with date-bounded entries for code reuse)
   - `cow_statelist2024.csv` — Raw COW state list (2024 version)
   - `ksgmdw.txt` — Raw Gleditsch-Ward state list (tab-separated)
   - `microstates.txt` — GW supplement for micro/island states not in `ksgmdw.txt`

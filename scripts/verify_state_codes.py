@@ -90,9 +90,8 @@ def verify_transitions(resolver: StateCodeResolver) -> list[str]:
             day = int(day_str) if day_str else 1
             query = date(year, month, day)
             if name in known_nulls:
-                entry = resolver.mapping.get(name)
-                if entry is not None:
-                    issues.append(f"'{name}' expected null mapping but found {entry}")
+                if not resolver.is_unmapped(name):
+                    issues.append(f"'{name}' expected to be unmapped but is not")
                 continue
             cow_result = resolver.usdos_to_code(name, "cow", query)
             gw_result = resolver.usdos_to_code(name, "gw", query)

@@ -1,0 +1,86 @@
+# CSV name -> repo filename stem (without extension)
+# Used when deterministic normalization fails to match.
+# Each entry maps a state_dept_name from the CSV to the XML filename stem
+# in the source repos. If a name needs different stems for rdcr vs pocom,
+# use a dict with "rdcr" and/or "pocom" keys instead of a plain string.
+
+# "X, The" patterns
+"Bahamas, The": "bahamas"
+"Gambia, The": "gambia"
+"Netherlands, The": "netherlands"
+"Solomon Islands, The": "solomon-islands"
+"United Arab Emirates, The": "united-arab-emirates"
+"United Kingdom, The": "united-kingdom"
+
+# Parenthetical / alternate names
+"Congo (Kinshasa)": "congo-democratic-republic"
+"Congo (Brazzaville)": "congo-republic"
+"Cote d'Ivoire (Ivory Coast)": "cote-divoire"
+"Republic of Korea (South Korea)": "korea-south"
+
+# Comma-inverted names
+"Korea, South": "korea-south"
+"Korea, North": "korea-north"
+
+# Name changes / alternate names
+"Eswatini": "swaziland"
+"Burma": "burma"
+"Myanmar": "burma"
+"Cabo Verde": "cape-verde"
+"Timor-Leste": "timor-leste"
+"Czechia": "czech-republic"
+"North Macedonia": "macedonia"
+"East Germany (German Democratic Republic)": "german-democratic-republic"
+"Democratic Republic of the Congo": "congo-democratic-republic"
+"Republic of the Congo": "congo-republic"
+
+# Historical entities
+"Taiwan": "china"
+"Two Sicilies": "two-sicilies"
+"Papal States": "papal-states"
+"Hanseatic Republics": "hanseatic-republics"
+"German Democratic Republic": "german-democratic-republic"
+"Kingdom of Serbia/Yugoslavia":
+  rdcr: "kingdom-of-yugoslavia"
+  pocom: "yugoslavia"
+"Brunswick and Lüneburg": "brunswick-luneburg"
+"Republic of Genoa": "genoa"
+"North Yemen": "yemen"
+"South Yemen":
+  rdcr: null
+  pocom: null
+"Zanzibar":
+  rdcr: null
+  pocom: null
+
+# Multi-word names where repo drops "and" / "the"
+"Antigua and Barbuda": "antigua-barbuda"
+"Bosnia and Herzegovina": "bosnia-herzegovina"
+"Saint Kitts and Nevis": "saint-kitts-nevis"
+"Saint Vincent and the Grenadines": "saint-vincent-grenadines"
+
+# Multi-word names (straightforward hyphenation)
+"Burkina Faso": "burkina-faso"
+"Central African Republic": "central-african-republic"
+"Costa Rica": "costa-rica"
+"Dominican Republic": "dominican-republic"
+"El Salvador": "el-salvador"
+"Equatorial Guinea": "equatorial-guinea"
+"Guinea-Bissau": "guinea-bissau"
+"Marshall Islands": "marshall-islands"
+"Micronesia": "micronesia"
+"New Zealand": "new-zealand"
+"Papua New Guinea": "papua-new-guinea"
+"Saint Lucia": "saint-lucia"
+"San Marino": "san-marino"
+"Sao Tome and Principe": "sao-tome-and-principe"
+"Saudi Arabia": "saudi-arabia"
+"Sierra Leone": "sierra-leone"
+"Solomon Islands": "solomon-islands"
+"South Africa": "south-africa"
+"South Sudan": "south-sudan"
+"Sri Lanka": "sri-lanka"
+"Trinidad and Tobago": "trinidad-and-tobago"
+"United Arab Emirates": "united-arab-emirates"
+"United Kingdom": "united-kingdom"
+"Vatican City": "vatican-city"

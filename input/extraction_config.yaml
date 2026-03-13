@@ -1,0 +1,24 @@
+models:
+  extraction: "claude-sonnet-4-6"
+  reconciliation: "claude-opus-4-6"
+
+api:
+  temperature: 0
+  max_tokens_extraction: 4096
+  max_tokens_reconciliation: 8192
+  concurrency_extraction: 5
+  concurrency_reconciliation: 3
+
+verification:
+  quote_match_threshold: 0.85
+
+paths:
+  rdcr_articles: "./rdcr/articles"
+  pocom_missions: "./pocom/missions-countries"
+  pocom_roles: "./pocom/roles-country-chiefs"
+  transitions_csv: "./input/2024-01-16_transitions.csv"
+  country_aliases: "./input/country_aliases.yaml"
+  output_dir: "./output"
+  log_dir: "./logs"
+  prompt_extract: "./input/prompt_extract.txt"
+  prompt_reconcile: "./input/prompt_reconcile.txt"

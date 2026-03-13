@@ -27,7 +27,7 @@ uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countr
 - `main.py` — CLI entry point (argparse subcommands)
 - `transition_extraction/` — Pipeline package
   - `config.py` — Loads `input/extraction_config.yaml`, returns `PipelineConfig` dataclass
-  - `models.py` — Dataclasses: `CsvEvent`, `CountryMapping`, `NumberedText`, `WorkUnit`, `ExtractedEvent`, `ApiMetadata`
+  - `models.py` — Pydantic models: `CsvEvent`, `CountryMapping`, `NumberedText`, `WorkUnit`, `ExtractedEvent`, `ApiMetadata`
   - `text_utils.py` — Shared utilities: `normalize_country_name`, `number_lines`, `fuzzy_match`, `country_slug`, `estimate_tokens`
   - `xml_parsers.py` — `parse_rdcr_tei()` (TEI XML) and `parse_pocom_missions()` (structured XML + role resolution)
   - `api_client.py` — `ApiClient` wrapping `anthropic.AsyncAnthropic` with retry, semaphore concurrency, JSONL logging
@@ -51,7 +51,7 @@ uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countr
 ## Key conventions
 
 - **Package manager**: `uv` (never `pip install` directly)
-- **No Pydantic**: Plain dataclasses for all models
+- **Pydantic models**: All models in `models.py` are Pydantic `BaseModel` subclasses. Use `.model_dump()` to serialize, `Model.model_validate(d)` to deserialize. `config.py` still uses plain dataclasses since it doesn't need serialization.
 - **stdlib XML**: `xml.etree.ElementTree` only (no lxml)
 - **TEI namespace**: `http://www.tei-c.org/ns/1.0` — must be handled in all `find`/`findall` calls in rdcr parsing
 - **Async for API stages only**: Stages 2 and 4 use `asyncio` with semaphore. Python-only stages are synchronous.

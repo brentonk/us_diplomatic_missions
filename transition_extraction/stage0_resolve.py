@@ -130,7 +130,7 @@ def run_stage0(config: PipelineConfig) -> None:
     # Build output JSON
     output = {}
     for name, mapping in sorted(mappings.items()):
-        output[name] = mapping.to_dict()
+        output[name] = mapping.to_mapping_dict()
 
     # Write mapping file
     output_dir = config.paths.output_dir

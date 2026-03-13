@@ -18,7 +18,7 @@ def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None 
     for path in sorted(work_units_dir.glob("*.json")):
         with open(path) as f:
             data = json.load(f)
-        wu = WorkUnit.from_dict(data)
+        wu = WorkUnit.model_validate(data)
         if countries_filter and wu.country not in countries_filter:
             continue
         work_units.append(wu)

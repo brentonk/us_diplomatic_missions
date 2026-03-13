@@ -67,7 +67,7 @@ def _load_country_mapping(config: PipelineConfig) -> dict[str, CountryMapping]:
 
     mappings = {}
     for csv_name, d in data.items():
-        mappings[csv_name] = CountryMapping.from_dict(csv_name, d)
+        mappings[csv_name] = CountryMapping(csv_name=csv_name, rdcr_path=d.get("rdcr"), pocom_path=d.get("pocom"))
     return mappings
 
 
@@ -165,7 +165,7 @@ def preprocess(config: PipelineConfig, countries_filter: list[str] | None = None
         slug = country_slug(country_name)
         output_path = work_units_dir / f"{slug}.json"
         with open(output_path, "w") as f:
-            json.dump(wu.to_dict(), f, indent=2)
+            json.dump(wu.model_dump(), f, indent=2)
 
         work_units.append(wu)
 

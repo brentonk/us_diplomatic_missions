@@ -62,9 +62,11 @@ uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countr
 
 ## Country resolution status
 
-- 199/215 countries resolve in both repos
+- 200/215 countries resolve in both repos
 - 14 rdcr-only (historical entities: Austrian Empire, Baden, Bavaria, etc.)
-- 2 genuinely unresolved (South Yemen, Zanzibar — no source files in either repo)
+- 1 pocom-only (Zanzibar — uses Tanzania's chiefs of mission page)
+- 0 unresolved
+- North Yemen and South Yemen both map to `yemen.xml` in rdcr (shared source file)
 - When new aliases are needed, add to `input/country_aliases.yaml` and re-run stage0
 
 ## Cost estimates (full pipeline, all 213 countries)

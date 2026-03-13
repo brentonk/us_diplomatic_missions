@@ -20,7 +20,7 @@ TOKEN_LIMIT = 60_000
 
 def _parse_csv_events(config: PipelineConfig) -> dict[str, list[CsvEvent]]:
     """Parse the transitions CSV into CsvEvent records grouped by country."""
-    df = pd.read_csv(config.paths.transitions_csv)
+    df = pd.read_csv(config.paths.transitions_csv, keep_default_na=False)
 
     events_by_country: dict[str, list[CsvEvent]] = {}
     for country_name, group in df.groupby("state_dept_name", sort=True):

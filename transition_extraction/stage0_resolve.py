@@ -91,7 +91,7 @@ def resolve_countries(config: PipelineConfig) -> dict[str, CountryMapping]:
     Returns a dict mapping CSV country names to CountryMapping objects.
     """
     # Read unique country names from CSV
-    df = pd.read_csv(config.paths.transitions_csv)
+    df = pd.read_csv(config.paths.transitions_csv, keep_default_na=False)
     csv_names = sorted(df["state_dept_name"].unique())
 
     # List available XML stems

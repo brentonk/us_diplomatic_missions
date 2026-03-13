@@ -20,6 +20,8 @@ uv run python main.py assemble            # Final output assembly
 uv run python main.py run-all             # All stages sequentially
 uv run python main.py --dry-run stage2    # Cost estimate without API calls
 uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countries
+uv run python main.py build-panel --system cow   # Build COW interval panel
+uv run python main.py build-panel --system gw    # Build GW interval panel
 ```
 
 ## Project structure
@@ -37,9 +39,20 @@ uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countr
   - `stage3_verify.py` — Fuzzy-matches extracted quotes against source text
   - `stage4_reconcile.py` — Async Opus reconciliation with tool use
   - `assemble.py` — Builds final sourcing records + summary CSV
+- `data_assembly/` — Panel data assembly package
+  - `state_codes.py` — `StateCodeResolver`: loads raw state system data + YAML mapping, resolves codes ↔ USDOS names
+  - `panel.py` — `build_panel()`: builds interval-level panel datasets with merged US mission status
+  - `diagnostics.py` — Compares generated panel against old `_mod` reference files
+- `scripts/` — One-time utility scripts
+  - `migrate_state_codes.py` — Extracts YAML mapping from old `_mod` CSV files
+  - `verify_state_codes.py` — Round-trip verification of mapping against old data
 - `input/` — Config, prompts, CSV data, aliases
   - `extraction_config.yaml` — Model strings, API params, thresholds, paths
   - `country_aliases.yaml` — CSV name → repo stem overrides (grows as edge cases surface)
+  - `state_system_codes.yaml` — USDOS name → COW/GW code mapping (~215 entries)
+  - `cow_statelist2024.csv` — Raw COW state list (2024 version)
+  - `ksgmdw.txt` — Raw Gleditsch-Ward state list (tab-separated)
+  - `microstates.txt` — GW supplement for micro/island states not in `ksgmdw.txt`
   - `prompt_extract.txt` — System prompt for Stage 2
   - `prompt_reconcile.txt` — System prompt for Stage 4
   - `2024-01-16_transitions.csv` — Hand-coded transitions (590 rows)

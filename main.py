@@ -32,6 +32,9 @@ def main():
     subparsers.add_parser("stage4", help="LLM reconciliation (Opus)")
     subparsers.add_parser("assemble", help="Final output assembly")
     subparsers.add_parser("audit", help="Generate HTML audit report")
+    panel_parser = subparsers.add_parser("build-panel", help="Build interval-level panel dataset")
+    panel_parser.add_argument("--system", required=True, choices=["cow", "gw"], help="State system (cow or gw)")
+    subparsers.add_parser("diagnose", help="Compare CSV vs assembled on legation-or-higher ranges")
     subparsers.add_parser("run-all", help="Run all stages sequentially")
 
     args = parser.parse_args()
@@ -74,6 +77,42 @@ def main():
     elif args.command == "audit":
         from transition_extraction.audit_report import run_audit_report
         run_audit_report(config, countries_filter)
+
+    elif args.command == "build-panel":
+        from data_assembly.panel import build_panel, write_panel_csv
+        from data_assembly.state_codes import StateCodeResolver
+        from data_assembly.diagnostics import print_diagnostics
+
+        resolver = StateCodeResolver(
+            config.paths.cow_raw,
+            config.paths.gw_raw,
+            config.paths.state_system_codes,
+            gw_supplement=config.paths.gw_supplement,
+        )
+        warnings = resolver.validate()
+        if warnings:
+            print("Mapping validation warnings:")
+            for w in warnings:
+                print(f"  {w}")
+            print()
+
+        rows = build_panel(resolver, config.paths.transitions_csv, args.system)
+        output_path = config.paths.output_dir / f"panel_{args.system}.csv"
+        config.paths.output_dir.mkdir(parents=True, exist_ok=True)
+        write_panel_csv(rows, output_path)
+        print(f"Wrote {len(rows)} rows to {output_path}")
+
+        # Compare against old reference _mod file
+        if args.system == "cow":
+            ref_path = config.repo_root / "input" / "cowstates_mod.csv"
+        else:
+            ref_path = config.repo_root / "input" / "gwstates_mod.csv"
+        if ref_path.exists():
+            print_diagnostics(rows, ref_path, args.system)
+
+    elif args.command == "diagnose":
+        from transition_extraction.diagnose import run_diagnose
+        run_diagnose(config, countries_filter)
 
     elif args.command == "run-all":
         from transition_extraction.stage0_resolve import run_stage0

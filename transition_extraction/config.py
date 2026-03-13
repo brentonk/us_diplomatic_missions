@@ -39,6 +39,10 @@ class PathsConfig:
     log_dir: Path = field(default_factory=lambda: Path("./logs"))
     prompt_extract: Path = field(default_factory=lambda: Path("./input/prompt_extract.txt"))
     prompt_reconcile: Path = field(default_factory=lambda: Path("./input/prompt_reconcile.txt"))
+    cow_raw: Path = field(default_factory=lambda: Path("./input/cow_statelist2024.csv"))
+    gw_raw: Path = field(default_factory=lambda: Path("./input/ksgmdw.txt"))
+    gw_supplement: Path = field(default_factory=lambda: Path("./input/microstates.txt"))
+    state_system_codes: Path = field(default_factory=lambda: Path("./input/state_system_codes.yaml"))
 
 
 @dataclass

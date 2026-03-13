@@ -24,3 +24,7 @@ paths:
   log_dir: "./logs"
   prompt_extract: "./input/prompt_extract.txt"
   prompt_reconcile: "./input/prompt_reconcile.txt"
+  cow_raw: "./input/cow_statelist2024.csv"
+  gw_raw: "./input/ksgmdw.txt"
+  gw_supplement: "./input/microstates.txt"
+  state_system_codes: "./input/state_system_codes.yaml"

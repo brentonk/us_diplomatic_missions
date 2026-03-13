@@ -99,9 +99,16 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
 
             extracted_indices = disc.get("extracted_event_indices", [])
             sources = []
+            source_date = source_status = ""
             for idx in extracted_indices:
                 if 0 <= idx < len(merged_events):
                     ev = merged_events[idx]
+                    if not source_date:
+                        source_date = ev.get("date", "")
+                        source_status = ev.get("new_status", "")
+                    if ev.get("source_type") == "rdcr" and not sources:
+                        source_date = ev.get("date", "")
+                        source_status = ev.get("new_status", "")
                     for e in ev.get("evidence", []):
                         context = _get_source_lines(
                             wu, ev.get("source_type", ""),
@@ -129,6 +136,8 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
                 "field": disc.get("field", "?"),
                 "csv_value": disc.get("csv_value", "?"),
                 "extracted_value": disc.get("extracted_value", "?"),
+                "source_date": source_date,
+                "source_status": source_status,
                 "assessment": disc.get("assessment", "?"),
                 "reasoning": disc.get("reasoning", ""),
                 "sources": sources,
@@ -467,7 +476,18 @@ document.addEventListener('DOMContentLoaded', () => {{
 
     radios.forEach(r => r.addEventListener('change', () => {{
       const val = getSelected();
-      if (customFields) customFields.style.display = (val === 'accept_source' || val === 'custom') ? 'flex' : 'none';
+      if (customFields) {{
+        customFields.style.display = (val === 'accept_source' || val === 'custom') ? 'flex' : 'none';
+        if (val === 'accept_source') {{
+          const sd = form.dataset.sourceDate || '';
+          const ss = form.dataset.sourceStatus || '';
+          customFields.querySelector('.override-date').value = sd;
+          const sel = customFields.querySelector('.override-status');
+          sel.value = ss;
+        }} else if (val !== 'custom') {{
+          customFields.querySelectorAll('input, select').forEach(i => i.value = '');
+        }}
+      }}
       if (splitFields) splitFields.style.display = val === 'split' ? 'block' : 'none';
       if (additionOverrides) additionOverrides.style.display = val === 'add' ? 'flex' : 'none';
       updateYaml();
@@ -641,16 +661,20 @@ def _render_decision_form(item: dict) -> str:
         field = escape(item.get("field", ""), quote=True)
         csv_date = escape(item.get("csv_date", ""), quote=True)
         csv_status = escape(item.get("csv_status", ""), quote=True)
+        source_date = escape(item.get("source_date", ""), quote=True)
+        source_status = escape(item.get("source_status", ""), quote=True)
 
         return f"""<div class="decision-form" id="{form_id}"
   data-type="discrepancy" data-country="{country}" data-csv-row="{csv_row}"
   data-field="{field}" data-csv-value="{csv_value}" data-extracted-value="{extracted_value}"
-  data-csv-date="{csv_date}" data-csv-status="{csv_status}">
+  data-csv-date="{csv_date}" data-csv-status="{csv_status}"
+  data-source-date="{source_date}" data-source-status="{source_status}">
   <div class="radio-group">
     <label><input type="radio" name="{form_id}" value="accept_csv"> Accept CSV value</label>
     <label><input type="radio" name="{form_id}" value="accept_source"> Accept source value</label>
     <label><input type="radio" name="{form_id}" value="custom"> Custom override</label>
     <label><input type="radio" name="{form_id}" value="split"> Split into multiple</label>
+    <label><input type="radio" name="{form_id}" value="remove"> Remove</label>
   </div>
   <div class="custom-fields" style="display:none">
     <input type="text" class="override-date" placeholder="override_date (e.g. 1995-02-21)">

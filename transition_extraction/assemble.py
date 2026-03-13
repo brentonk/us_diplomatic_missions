@@ -60,10 +60,8 @@ def _apply_decision(record: dict, decision: dict) -> list[dict]:
             record["validation_notes"] = f"Human decision: accept CSV value. {notes}".strip()
         elif choice == "accept_source":
             record["validation_status"] = "confirmed"
-            if decision.get("override_date"):
-                record["date"] = decision["override_date"]
-            if decision.get("override_status"):
-                record["new_status"] = decision["override_status"]
+            record["date"] = decision.get("override_date") or record.get("_source_date") or record["date"]
+            record["new_status"] = decision.get("override_status") or record.get("_source_status") or record["new_status"]
             record["validation_notes"] = f"Human decision: accept source value. {notes}".strip()
         elif choice == "custom":
             record["validation_status"] = "confirmed"
@@ -72,6 +70,9 @@ def _apply_decision(record: dict, decision: dict) -> list[dict]:
             if decision.get("override_status"):
                 record["new_status"] = decision["override_status"]
             record["validation_notes"] = f"Human decision: custom override. {notes}".strip()
+        elif choice == "remove":
+            record["validation_status"] = "removed"
+            record["validation_notes"] = f"Human decision: remove from dataset. {notes}".strip()
         elif choice == "split":
             entries = decision.get("entries", [])
             if entries:
@@ -84,6 +85,17 @@ def _apply_decision(record: dict, decision: dict) -> list[dict]:
                     new_record["validation_notes"] = f"Human decision: split. {notes}".strip()
                     split_records.append(new_record)
                 return split_records
+
+    elif record["validation_status"] == "confirmed":
+        if choice == "custom":
+            if decision.get("override_date"):
+                record["date"] = decision["override_date"]
+            if decision.get("override_status"):
+                record["new_status"] = decision["override_status"]
+            record["validation_notes"] = f"Human decision: custom override. {notes}".strip()
+        elif choice == "remove":
+            record["validation_status"] = "removed"
+            record["validation_notes"] = f"Human decision: remove from dataset. {notes}".strip()
 
     elif record["validation_status"] == "candidate_addition":
         if choice == "add":
@@ -167,6 +179,7 @@ def assemble_country(
         record = {
             "run_timestamp": run_timestamp,
             "country": work_unit.country,
+            "csv_row": csv_row,
             "date": csv_event.date_str() if csv_event else "",
             "new_status": csv_event.status_change if csv_event else "",
             "event_description": _get_event_description(extracted_indices, merged_events),
@@ -237,6 +250,7 @@ def assemble_country(
         extracted_indices = disc.get("extracted_event_indices", [])
         sources = _build_sources(extracted_indices, merged_events, work_unit)
         ext_meta = _get_extraction_metadata(extracted_indices, merged_events, extraction_metadata)
+        source_date, source_status = _get_source_values(extracted_indices, merged_events)
 
         record = {
             "run_timestamp": run_timestamp,
@@ -244,6 +258,8 @@ def assemble_country(
             "csv_row": csv_row,
             "date": csv_event.date_str() if csv_event else "",
             "new_status": csv_event.status_change if csv_event else "",
+            "_source_date": source_date,
+            "_source_status": source_status,
             "event_description": _get_event_description(extracted_indices, merged_events),
             "confidence": _get_confidence(extracted_indices, merged_events),
             "sources": sources,
@@ -265,10 +281,16 @@ def assemble_country(
         resolved_records = []
         for record in records:
             status = record["validation_status"]
-            if status == "confirmed":
-                resolved_records.append(record)
-                continue
             decision = None
+            if status == "confirmed":
+                # Allow custom overrides on matched/confirmed records
+                csv_row = record.get("csv_row")
+                if csv_row is not None:
+                    key = f"{work_unit.country}|{csv_row}"
+                    decision = decisions.get(key)
+                if not decision:
+                    resolved_records.append(record)
+                    continue
             if status in ("discrepancy", "unsupported"):
                 csv_row = record.get("csv_row")
                 if csv_row is not None:
@@ -338,6 +360,27 @@ def _get_extraction_metadata(
     return None
 
 
+def _get_source_values(
+    extracted_indices: list[int],
+    merged_events: list[dict],
+) -> tuple[str, str]:
+    """Get (date, status) from extracted events, preferring RDCR."""
+    rdcr_date = rdcr_status = ""
+    first_date = first_status = ""
+    for idx in extracted_indices:
+        if idx < 0 or idx >= len(merged_events):
+            continue
+        ev = merged_events[idx]
+        if not first_date:
+            first_date = ev.get("date", "")
+            first_status = ev.get("new_status", "")
+        if ev.get("source_type") == "rdcr" and not rdcr_date:
+            rdcr_date = ev.get("date", "")
+            rdcr_status = ev.get("new_status", "")
+            break
+    return (rdcr_date or first_date, rdcr_status or first_status)
+
+
 def _get_event_description(extracted_indices: list[int], merged_events: list[dict]) -> str:
     """Get the event description from the first extracted event."""
     for idx in extracted_indices:
@@ -399,10 +442,11 @@ def run_assemble(
                 "discrepancies": discrepancies,
             })
 
-    # Write JSONL
+    # Write JSONL (strip internal fields)
     with open(records_path, "w") as f:
         for record in all_records:
-            f.write(json.dumps(record, default=str) + "\n")
+            out = {k: v for k, v in record.items() if not k.startswith("_")}
+            f.write(json.dumps(out, default=str) + "\n")
 
     # Write summary CSV
     if summary_rows:

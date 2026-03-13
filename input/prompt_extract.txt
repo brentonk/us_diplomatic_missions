@@ -18,9 +18,10 @@ Each transition records the highest level of U.S. diplomatic representation AFTE
 
 - When the records specify the date an embassy, legation, or consulate general opened, that date is used.
 - If no specific opening date is provided, the date of presentation of credentials by the first chief of mission is used.
-- For elevations of existing relations (e.g., legation to embassy), the date of formal elevation is used, even if there is a lag before the new ambassador presents credentials.
-- For newly established relations, the date of credential presentation by the first envoy/ambassador is used.
+- For elevations of existing relations (e.g., legation to embassy), the date of formal elevation is used, even if there is a lag before the new ambassador presents credentials. Do NOT use the date the new ambassador presented credentials if the source gives an explicit elevation date.
+- For newly established relations where no explicit opening date is given, the date of credential presentation by the first envoy/ambassador is used.
 - When records are ambiguous about exact dates, record as much information as possible (year only, or year-month).
+- Appointment dates and promotion dates are NOT the same as the date a mission was established or elevated. Use the institutional event date, not the personnel date.
 
 ## Coding Conventions
 

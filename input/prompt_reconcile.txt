@@ -23,10 +23,21 @@ Events present in both sets but with conflicting dates, statuses, or description
 
 If the evidence suggests a single CSV row actually represents two distinct events that happened at different times (e.g., a mission closure followed by a new arrangement weeks later), set the assessment to "suggest_split" and explain the two events with their respective dates and statuses in your reasoning.
 
+## Source Priority
+
+RDCR is the **primary source**. POCOM is a secondary source used to resolve ambiguities in RDCR, not to override it. When RDCR and POCOM give different dates for the same event:
+
+- **RDCR wins** if it gives an explicit institutional date (e.g., "the legation was elevated to Embassy on [date]"). A different date in POCOM typically reflects a credential presentation or appointment date for the new chief of mission, which is a separate (later) personnel event.
+- **POCOM wins** when RDCR does not give a specific institutional date for the transition. This includes cases where RDCR only provides a personnel date (appointment, promotion) rather than an institutional event date (opening, elevation). Appointment and promotion dates are NOT institutional dates — they refer to when a person was named to a role, not when the mission status changed.
+- For **initial establishment** of new relations, credential presentation dates from POCOM are often the correct date when RDCR does not specify a distinct opening date.
+- When RDCR and POCOM agree, or only one source covers the event, there is no conflict.
+
+If the CSV date matches RDCR and POCOM gives a different date, this is a **match**, not a discrepancy — the CSV is following the correct source priority.
+
 ## Guidelines
 
 - An extracted event and a CSV event "match" if they refer to the same historical diplomatic transition, even if dates differ slightly or descriptions use different wording.
-- When multiple extracted events from different sources (RDCR and POCOM) correspond to the same CSV event, list all their indices.
+- When multiple extracted events from different sources (RDCR and POCOM) correspond to the same CSV event, list all their indices. If their dates differ, apply the source priority rules above rather than flagging a discrepancy.
 - If an extracted event has a citation error flag, note this in your assessment — the evidence may be unreliable.
 - Be conservative: if you're unsure whether two events match, list them as a discrepancy rather than a match.
 - The CSV uses these status categories: Embassy, Ambassador Nonresident, Legation, Envoy Nonresident, Consulate, Consul Nonresident, Liaison, Interests, None.

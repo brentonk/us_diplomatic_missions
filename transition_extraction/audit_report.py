@@ -253,7 +253,7 @@ def _render_html(items_by_country: dict[str, list[dict]], csv_by_country: dict[s
         pending_badge = f'<span class="badge pending">{pending}</span>' if pending else '<span class="badge resolved">all resolved</span>'
 
         anchor = country.lower().replace(" ", "-").replace("(", "").replace(")", "")
-        country_nav.append(f'<li><a href="#{escape(anchor)}">{escape(country)}</a> {pending_badge}{badge}</li>')
+        country_nav.append(f'<li><a href="#{escape(anchor)}">{escape(country)}</a> {pending_badge}</li>')
 
         csv_table = _render_csv_table(csv_by_country.get(country, []))
 
@@ -262,11 +262,11 @@ def _render_html(items_by_country: dict[str, list[dict]], csv_by_country: dict[s
             items_html.append(_render_item(item))
 
         country_sections.append(f"""
-<section id="{escape(anchor)}" class="country-section">
-  <h2>{escape(country)}</h2>
+<details id="{escape(anchor)}" class="country-section" open>
+  <summary><h2>{escape(country)} {pending_badge}{badge}</h2></summary>
   {csv_table}
   {"".join(items_html)}
-</section>""")
+</details>""")
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -294,20 +294,25 @@ def _render_html(items_by_country: dict[str, list[dict]], csv_by_country: dict[s
   .badge.pending {{ background: #fef3c7; color: #92400e; }}
   .badge.resolved {{ background: #dcfce7; color: #166534; }}
   .country-section {{ margin-bottom: 3rem; }}
-  .country-section h2 {{ border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem; }}
+  .country-section > summary {{ cursor: pointer; padding: 0.5rem 0; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; }}
+  .country-section > summary::marker {{ color: #9ca3af; }}
+  .country-section > summary h2 {{ display: inline; }}
+  .country-section > summary .badge {{ vertical-align: middle; margin-left: 0.5rem; }}
+  details.item {{ border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; }}
+  details.item > summary {{ padding: 0.75rem 1.25rem; cursor: pointer; font-size: 0.95rem; }}
+  details.item > summary .item-type {{ font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }}
+  details.item[open] > summary {{ border-bottom: 1px solid #e5e7eb; }}
+  .item-body {{ padding: 1rem 1.25rem; }}
   .csv-table {{ margin-bottom: 1.25rem; }}
   .csv-table summary {{ font-size: 0.9rem; font-weight: 600; color: #4b5563; cursor: pointer; margin-bottom: 0.5rem; }}
   .csv-table table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
   .csv-table th {{ text-align: left; padding: 0.35rem 0.5rem; background: #f9fafb; border-bottom: 2px solid #e5e7eb; font-weight: 600; color: #374151; }}
   .csv-table td {{ padding: 0.3rem 0.5rem; border-bottom: 1px solid #f3f4f6; }}
   .csv-table tr:hover {{ background: #f9fafb; }}
-  .item {{ border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; position: relative; }}
   .item.resolved {{ opacity: 0.6; }}
-  .item-type {{ font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }}
   .item-type.discrepancy {{ color: #d97706; }}
   .item-type.candidate_addition {{ color: #2563eb; }}
   .item-type.unsupported {{ color: #dc2626; }}
-  .item-header {{ font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }}
   .field-row {{ display: flex; gap: 2rem; margin-bottom: 0.5rem; flex-wrap: wrap; }}
   .field {{ }}
   .field .label {{ font-size: 0.8rem; color: #666; }}
@@ -547,8 +552,24 @@ def _render_item(item: dict) -> str:
     decision = item.get("decision")
     resolved_class = " resolved" if decision else ""
 
-    parts = [f'<div class="item{resolved_class}">']
-    parts.append(f'<div class="item-type {item_type}">{item_type.replace("_", " ")}</div>')
+    # Build summary line for the <details> element
+    type_label = item_type.replace("_", " ")
+    if item_type == "discrepancy":
+        summary_text = f'CSV row {item["csv_row"]}: {escape(item["csv_date"])} {escape(item["csv_status"])}'
+    elif item_type == "candidate_addition":
+        summary_text = f'{escape(item["date"])} {escape(item["new_status"])}'
+    elif item_type == "unsupported":
+        summary_text = f'CSV row {item["csv_row"]}: {escape(item["csv_date"])} {escape(item["csv_status"])}'
+    else:
+        summary_text = ""
+
+    resolved_tag = ""
+    if decision:
+        resolved_tag = f' <span class="badge resolved">{escape(decision.get("decision", ""))}</span>'
+
+    parts = [f'<details class="item{resolved_class}" open>']
+    parts.append(f'<summary><span class="item-type {item_type}">{type_label}</span> {summary_text}{resolved_tag}</summary>')
+    parts.append('<div class="item-body">')
 
     if decision:
         d = escape(decision.get("decision", ""))
@@ -556,7 +577,6 @@ def _render_item(item: dict) -> str:
         parts.append(f'<div class="decision-banner"><strong>Resolved:</strong> {d}. {n}</div>')
 
     if item_type == "discrepancy":
-        parts.append(f'<div class="item-header">{escape(item["country"])} &mdash; CSV row {item["csv_row"]}: {escape(item["csv_date"])} {escape(item["csv_status"])}</div>')
         parts.append('<div class="field-row">')
         parts.append(f'<div class="field"><div class="label">Field</div><div class="value">{escape(item["field"])}</div></div>')
         parts.append(f'<div class="field"><div class="label">CSV value</div><div class="value csv">{escape(str(item["csv_value"]))}</div></div>')
@@ -567,14 +587,12 @@ def _render_item(item: dict) -> str:
             parts.append(f'<div class="reasoning">{escape(item["reasoning"])}</div>')
 
     elif item_type == "candidate_addition":
-        parts.append(f'<div class="item-header">{escape(item["country"])} &mdash; {escape(item["date"])} {escape(item["new_status"])}</div>')
         if item.get("event_description"):
             parts.append(f'<div class="notes">{escape(item["event_description"])}</div>')
         if item.get("notes"):
             parts.append(f'<div class="reasoning">{escape(item["notes"])}</div>')
 
     elif item_type == "unsupported":
-        parts.append(f'<div class="item-header">{escape(item["country"])} &mdash; CSV row {item["csv_row"]}: {escape(item["csv_date"])} {escape(item["csv_status"])}</div>')
         if item.get("notes"):
             parts.append(f'<div class="reasoning">{escape(item["notes"])}</div>')
 
@@ -592,7 +610,8 @@ def _render_item(item: dict) -> str:
     if not decision:
         parts.append(_render_decision_form(item))
 
-    parts.append('</div>')
+    parts.append('</div>')  # close .item-body
+    parts.append('</details>')
     return "\n".join(parts)
 
 

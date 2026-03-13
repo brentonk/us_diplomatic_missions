@@ -6,7 +6,11 @@ Subcommands: stage0, stage1, stage2, stage3, stage4, assemble, run-all
 import argparse
 from datetime import datetime, timezone
 
+from dotenv import load_dotenv
+
 from transition_extraction.config import load_config
+
+load_dotenv()
 
 
 def get_run_timestamp() -> str:

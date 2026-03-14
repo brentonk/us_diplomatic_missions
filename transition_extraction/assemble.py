@@ -161,9 +161,16 @@ def assemble_country(
 
     records = []
 
+    # Track csv_rows that appear in discrepancies/unsupported to avoid duplicates
+    # when the reconciliation LLM puts the same row in both matched and discrepancies
+    disc_rows = {d.get("csv_row") for d in recon_result.get("discrepancies", [])}
+    unsup_rows = {u.get("csv_row") for u in recon_result.get("unsupported_in_sources", [])}
+
     # Process matched events
     for match in recon_result.get("matched", []):
         csv_row = match.get("csv_row")
+        if csv_row in disc_rows or csv_row in unsup_rows:
+            continue  # will be handled by the discrepancy/unsupported section
         csv_event = None
         for ev in work_unit.csv_events:
             if ev.row_index == csv_row:

@@ -84,7 +84,18 @@ uv run python main.py build-panel --system gw    # Build GW interval panel
 - North Yemen and South Yemen both map to `yemen.xml` in rdcr (shared source file)
 - When new aliases are needed, add to `input/country_aliases.yaml` and re-run stage0
 
+## Known extraction limitations (do not change now — preserving reproducibility)
+
+The Stage 2 extraction prompt instructs the model to skip consulates not located in the capital (`prompt_extract.txt` line 31: "Consulates are only coded if located in the capital"). This correctly implements the README coding rule, but it causes the extraction to miss many early consular establishments that appear clearly in RDCR text — e.g., Morocco 1797 (Tangier, not the capital), Japan 1855 (Shimoda), Norway 1809, Panama 1823, Nassau 1853, etc. These show up as "unsupported" in reconciliation and are resolved via manual `keep` decisions with notes citing external records.
+
+The root cause is that the extraction model applies the capital-only filter at extraction time rather than surfacing the event for the reconciliation stage to evaluate. If the extraction pipeline is revised in the future:
+- Extract all consulate events regardless of location, tagging non-capital ones with a flag
+- Let the reconciliation stage or manual review decide whether to keep or reject
+- This would eliminate the largest category of spurious "unsupported" flags
+
+Do not change the extraction logic now — the current manual reconciliation workflow has already corrected for these gaps and changing the pipeline would break reproducibility of existing results.
+
 ## Cost estimates (full pipeline, all 213 countries)
 
-- Stage 2 (Sonnet extraction): ~412 API calls, ~$10
-- Stage 4 (Opus reconciliation): ~213 API calls, ~$52
+- Stage 2 (Sonnet extraction): ~412 API calls, ~$9
+- Stage 4 (Opus reconciliation): ~213 API calls, ~$8

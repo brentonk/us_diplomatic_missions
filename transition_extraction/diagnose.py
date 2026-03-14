@@ -215,12 +215,16 @@ def _diff_events(
                 d, s = before[k]
                 rows.append(("unchanged", _fmt(d), s))
         elif op == "replace":
+            # Interleave old and new by date so the diff reads chronologically
+            combined: list[tuple[str, str, str]] = []
             for k in range(i1, i2):
                 d, s = before[k]
-                rows.append(("modified_old", _fmt(d), s))
+                combined.append(("modified_old", _fmt(d), s))
             for k in range(j1, j2):
                 d, s = after[k]
-                rows.append(("modified_new", _fmt(d), s))
+                combined.append(("modified_new", _fmt(d), s))
+            combined.sort(key=lambda x: x[1])
+            rows.extend(combined)
         elif op == "delete":
             for k in range(i1, i2):
                 d, s = before[k]

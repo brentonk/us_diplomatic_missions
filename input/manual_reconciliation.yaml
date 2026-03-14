@@ -42,7 +42,7 @@
   csv_row: 1
   decision: accept_csv
 
-# WWII: Finland legation closure and reopening
+# Finland: WWI-era legation establishment and WWII reopening
 - country: "Finland"
   type: addition
   date: "1919-05-27"
@@ -160,13 +160,13 @@
   decision: accept_csv
   notes: "The first U.S. Consulate in the Grand Duchy of Baden was opened on July 13, 1832 in Baden-Baden."
 
-# Baden: dissolution into North German Confederation
+# Baden: Bancroft accreditation as Envoy Nonresident
 - country: "Baden"
   type: addition
   date: "1868-07-19"
   decision: add
 
-# Bavaria: dissolution into North German Confederation
+# Bavaria: Bancroft accreditation as Envoy Nonresident
 - country: "Bavaria"
   type: addition
   date: "1868-05-26"
@@ -297,11 +297,14 @@
   decision: reject
   notes: "Redundant: Reams's credential presentation is a personnel change, not a status change, since 1960-08-05 is already Ambassador Nonresident"
 
-# Cambodia: addition for elevation of consulate to legation
+# Cambodia: first resident ambassador (McClintock) — now redundant since csv_row 3
+# is already Embassy from 1952. Consistent with Fiji 1978 removal (ambassador
+# becoming resident is a personnel change, not a status change).
 - country: "Cambodia"
   type: addition
   date: "1954-10-02"
-  decision: add
+  decision: reject
+  notes: "Redundant: ambassador becoming resident is a personnel change, not a status change (consistent with Fiji 1978)"
 
 # Cambodia csv_row 3: physical embassy existed in Phnom Penh with ambassador based in
 # Saigon. Per README: "If an embassy/legation exists but the chief of mission is not
@@ -385,6 +388,14 @@
   decision: add
   override_status: "Embassy"
   notes: "Ministers to governments-in-exile during WWII treated as resident"
+
+# Czechoslovakia csv_row 6: return to Prague — now redundant since 1943-06-04
+# already elevated to Embassy. Embassy → Embassy is a relocation, not a status
+# change (consistent with Poland/Serbia WWII relocation rejections).
+- country: "Czechoslovakia"
+  csv_row: 6
+  decision: remove
+  notes: "Redundant: Embassy status continuous from 1943 gov-in-exile elevation"
 
 # Czechoslovakia: dissolution is a sovereignty event
 - country: "Czechoslovakia"
@@ -541,11 +552,13 @@
   override_status: "Ambassador Nonresident"
   notes: "Nonresident chargé d'affaires coded at ambassador level per README rule (subsequent chief Blancke was Ambassador)"
 
-# Gabon: intermediate nonresident ambassador before embassy opened
+# Gabon: Blancke's credential presentation now redundant — already Ambassador
+# Nonresident from 1960-08-17 (consistent with Benin/Burkina/Niger rejections)
 - country: "Gabon"
   type: addition
   date: "1961-01-13"
-  decision: add
+  decision: reject
+  notes: "Redundant: Blancke's credential presentation is a personnel change, not a status change"
 
 # Georgia: recognition date is not a status transition
 - country: "Georgia"
@@ -857,6 +870,14 @@
   override_status: "Legation"
   notes: "Consistent with other codings (Fiji, Cambodia) to treat as the mission even if the head is posted elsewhere"
 
+# Kingdom of Serbia/Yugoslavia csv_row 2: 1919 re-credentialing to Yugoslavia is
+# Legation → Legation (no status change). The legation in Belgrade was continuous
+# from 1882 through the state succession from Serbia to Yugoslavia.
+- country: "Kingdom of Serbia/Yugoslavia"
+  csv_row: 2
+  decision: remove
+  notes: "Redundant: Legation status continuous from 1882; 1919 re-credentialing is a personnel/entity change, not a status change"
+
 # Kingdom of Serbia/Yugoslavia: WWII gov-in-exile movements — rejecting as redundant
 # (embassy status doesn't change during these relocations)
 - country: "Kingdom of Serbia/Yugoslavia"
@@ -923,4 +944,884 @@
   type: addition
   date: "1991-12-25"
   decision: reject
+
+# Laos: State Dept describes 1975-1992 as a genuine downgrade ("representation was
+# downgraded, though not withdrawn. Full diplomatic relations were restored in 1992.")
+# Distinct from Nicaragua 1988 where embassy status was maintained throughout.
+- country: "Laos"
+  type: addition
+  date: "1975-12"
+  decision: add
+  notes: "https://la.usembassy.gov/policy-and-history/ indicates this was a genuine downgrade in the overall status of the mission"
+
+- country: "Laos"
+  type: addition
+  date: "1992-08-06"
+  decision: add
+  notes: "First U.S. Ambassador to the LPDR; restores full Embassy-level status after 1975 downgrade"
+
+# Latvia: nonresident envoy (July 28) predates resident Legation (Nov 13)
+- country: "Latvia"
+  type: addition
+  date: "1922-07-28"
+  decision: add
+  override_status: "Envoy Nonresident"
+  notes: "RDCR: diplomatic relations established July 28, 1922 with nonresident envoy at Riga; Legation not formally established until Nov 13"
+
+# Latvia: 1991 MOU — recognition date, not status transition
+- country: "Latvia"
+  type: addition
+  date: "1991-09-05"
+  decision: reject
+
+# Lebanon: Wadsworth credentials as Diplomatic Agent/Consul General → Liaison per README
+# Using credential presentation date (not RDCR appointment date 1942-10-09)
+- country: "Lebanon"
+  type: addition
+  date: "1942-11-19"
+  decision: add
+
+# Libya csv_row 18: ambassador continued from Malta/Tunis after 2014 suspension
+- country: "Libya"
+  csv_row: 18
+  decision: accept_csv
+  notes: "POCOM confirms relations not severed and ambassador continued from Malta/Tunis; Ambassador Nonresident is correct"
+
+# Libya: 2015 office relocation — ambassador already nonresident since July 2014
+- country: "Libya"
+  type: addition
+  date: "2015-03"
+  decision: reject
+  notes: "Relocation, not status change — ambassador was already nonresident from July 2014"
+
+# Lithuania csv_row 1: RDCR institutional date; consistent with Latvia treatment
+- country: "Lithuania"
+  csv_row: 1
+  decision: accept_source
+  override_date: "1922-07-28"
+  override_status: "Envoy Nonresident"
+  notes: "RDCR institutional date for establishment of diplomatic relations - seems most consistent with treatment of Latvia"
+
+# Lithuania: 1991 MOU — recognition date, not status transition
+- country: "Lithuania"
+  type: addition
+  date: "1991-09-06"
+  decision: reject
+  notes: "Recognition/MOU date, not a status transition; Embassy opened Oct 2, 1991"
+
+# Luxembourg: resident Legation established 1931 (previously Envoy Nonresident)
+- country: "Luxembourg"
+  type: addition
+  date: "1931-10-08"
+  decision: add
+  override_status: "Legation"
+  notes: "POCOM documents Gibson introducing Waller as resident CDA, establishing physical Legation"
+
+# Luxembourg csv_row 3: Moffat accredited to gov-in-exile in Canada. Per WWII
+# gov-in-exile convention (Belgium, Czechoslovakia, Greece), missions near
+# governments-in-exile are treated as resident → Legation, not Envoy Nonresident.
+- country: "Luxembourg"
+  csv_row: 3
+  decision: custom
+  override_status: "Legation"
+  notes: "Gov-in-exile convention: 'embassy near the government' treated as open mission (consistent with Belgium, Czechoslovakia, Greece)"
+
+# Luxembourg: 1943-11-12 Biddle credentials in London — relocation of gov-in-exile,
+# not a status change (consistent with Serbia/Yugoslavia WWII relocation rejections)
+- country: "Luxembourg"
+  type: addition
+  date: "1943-11-12"
+  decision: reject
+  notes: "Relocation of gov-in-exile from Canada to London; status unchanged (already Legation from 1941)"
+
+# Luxembourg: 1944-09-23 reopening in Luxembourg — redundant (already Legation from 1941)
+- country: "Luxembourg"
+  type: addition
+  date: "1944-09-23"
+  decision: reject
+  notes: "Redundant — Legation status continuous from 1941 gov-in-exile"
+
+# Luxembourg csv_row 4: Mesta's 1952 credentials — personnel event, Legation since 1941
+- country: "Luxembourg"
+  csv_row: 4
+  decision: remove
+  notes: "Redundant — Legation status continuous from 1941 gov-in-exile"
+
+# Madagascar: 1916 consulate relocation from Tamatave to capital — not a status change
+- country: "Madagascar"
+  type: addition
+  date: "1916-07-08"
+  decision: reject
+
+# Madagascar csv_row 1: unsupported consulate — keeping from external records
+- country: "Madagascar"
+  csv_row: 1
+  decision: keep
+  notes: "Finkelmeier was appointed Consul on June 17, 1874."
+
+# Malaysia csv_row 1: unsupported consulate — keeping from external records
+- country: "Malaysia"
+  csv_row: 1
+  decision: keep
+  notes: "The United States also established consular posts in Kuala Lumpur (1948) and Kuching (1964)."
+
+# Mali: keeping June 20 (Federation) date. COW treats Federation and Republic as
+# continuous (code 432 starts 6/20). GW starts 9/22, but Embassy status holds from
+# 6/20 onward either way. Consistent with Senegal (Embassy 9/24).
+- country: "Mali"
+  csv_row: 1
+  decision: accept_csv
+  notes: "This creates cleanest treatment for COW and GW state systems. COW has Mali entering the system on 6/20, so it's thinking of the Federation of Mali and the Republic of Mali as continuous states. There are embassy-level relations with the entity throughout the period so we want embassy from 6/20 forward. GW only have Mali entering the system on 9/24, so this coding will also ensure US has embassy-level representation throughout the period there too."
+
+# Mauritania: joint communiqué resuming relations (12/22) but no mission or chief of
+# mission until embassy reopened 3/4/1970. Unlike Comoros (where we coded from the
+# communiqué using the CDA rule), here there's no representative at all until March.
+- country: "Mauritania"
+  type: addition
+  date: "1969-12-22"
+  decision: reject
+  notes: "No mission or chief of mission until 3/4/1970"
+
+# Mecklenburg-Schwerin: extraction miscoded as None; CSV Consulate is correct
+- country: "Mecklenburg-Schwerin"
+  csv_row: 1
+  decision: accept_csv
+  notes: "The first known act of mutual recognition between the United States and the Grand Duchy of Mecklenburg-Schwerin was in 1816, when John M. Forbes established the first U.S. Consul in the Grand Duchy of Mecklenburg-Schwerin. Forbes was appointed to the post on January 22, 1816."
+
+# Mexico: CSV tracks US Legation in Mexico — Clifford's credential presentation in
+# Mexico City (10/2) is the relevant date, not when Mexico's envoy arrived in
+# Washington (12/4)
+- country: "Mexico"
+  csv_row: 3
+  decision: accept_csv
+  notes: "RDCR 1848-12-04 is when Mexican envoy presented credentials in Washington; CSV 1848-10-02 is when US envoy Clifford presented in Mexico City"
+
+# Micronesia: RDCR explicitly says Office of U.S. Representative opened Nov 3, 1986
+# "Office of the U.S. Representative" → Liaison per README coding conventions
+- country: "Micronesia"
+  csv_row: 1
+  decision: accept_source
+  override_date: "1986-11-03"
+  override_status: "Liaison"
+  notes: "RDCR explicitly says Office of U.S. Representative opened Nov 3, 1986"
+
+# Moldova: "None" before first mission — redundant per assembly convention
+- country: "Moldova"
+  type: addition
+  date: "1992-02-18"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+# Monaco csv_row 3: POCOM title is Envoy, not Ambassador. First actual Ambassador
+# was Hartley in 2014. Consistent with Saint Lucia (Shelton coded as Envoy Nonresident).
+- country: "Monaco"
+  csv_row: 3
+  decision: custom
+  override_status: "Envoy Nonresident"
+  notes: "POCOM records Stapleton as Envoy Extraordinary and Minister Plenipotentiary, not Ambassador"
+
+# Monaco: elevation to Ambassador level (Hartley was first actual Ambassador)
+- country: "Monaco"
+  type: addition
+  date: "2014-11-05"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "POCOM confirms Hartley was first Ambassador to Monaco"
+
+# Mongolia: "None" before first mission — redundant per assembly convention
+- country: "Mongolia"
+  type: addition
+  date: "1987-01-27"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+# Montenegro: consulate in capital (Podgorica) predated embassy elevation
+- country: "Montenegro"
+  type: addition
+  date: "2006-08-15"
+  decision: add
+  override_status: "Consulate"
+  notes: "Exact date of consular establishment is unclear, but RDCR text does make it clear that a consulate preceded the embassy, and the resumption of relations date is a plausible coding there"
+
+# Morocco csv_row 1: unsupported consulate — keeping from external records
+- country: "Morocco"
+  csv_row: 1
+  decision: keep
+  notes: "James Simpson was appointed the first U.S. consul, and arrived on December 7, 1797, at Tangier to assume his duties and establish the U.S. consulate."
+
+# Namibia: extraction date is Embassy elevation, not Liaison start. No Liaison
+# start date recoverable from sources.
+- country: "Namibia"
+  type: addition
+  date: "1990-03-21"
+  decision: reject
+  notes: "Low confidence; date is actually the Embassy elevation, not Liaison establishment. No Liaison start date available."
+
+# Nassau: Prussian annexation — sovereignty event
+- country: "Nassau"
+  type: addition
+  date: "1866-10-03"
+  decision: reject
+  notes: "Sovereignty decisions offloaded to state system membership"
+
+# Nassau csv_row 1: unsupported consulate — keeping from external records
+- country: "Nassau"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. Consul appointed to the Duchy of Nassau was John B. Muller Melchiors on November 1, 1853."
+
+# Nauru: accreditation moved from Canberra to Suva — same status, no transition
+- country: "Nauru"
+  type: addition
+  date: "1996-04-24"
+  decision: reject
+  notes: "Redundant — no status change (Ambassador Nonresident in both cases)"
+
+# Nicaragua: Central American Federation event, not independent Nicaragua
+- country: "Nicaragua"
+  type: addition
+  date: "1824-08-04"
+  decision: reject
+  notes: "Statement is about foreign presence in Washington, not US mission abroad"
+
+# Nicaragua: US is recipient of envoy, not sender
+- country: "Nicaragua"
+  type: addition
+  date: "1849-12-24"
+  decision: reject
+  notes: "US is recipient of Nicaraguan envoy, not sender"
+
+# Nicaragua: POCOM date conflicts with RDCR authoritative severance date
+- country: "Nicaragua"
+  type: addition
+  date: "1909-03-12"
+  decision: reject
+  notes: "POCOM date conflicts with RDCR authoritative diplomatic severance of 1909-12-01 - my personal guess is that this is a typo in POCOM and should say 1909-12-03 (the 1909-12-01 severing refers to an event in Washington, and a two day lag makes sense given 1909 communications)"
+
+# Nicaragua: ambassador expelled but embassy remained open under CDA
+# (distinct from Laos 1975 where State Dept described a genuine downgrade)
+- country: "Nicaragua"
+  type: addition
+  date: "1988-07-11"
+  decision: reject
+  notes: "Embassy remained open throughout; expulsion of ambassador is a personnel event"
+
+# Nicaragua: redundant since embassy was continuous through 1988
+- country: "Nicaragua"
+  type: addition
+  date: "1990-06-21"
+  decision: reject
+  notes: "Redundant — no status change since Embassy was continuous"
+
+# Nicaragua csv_rows 4-5: 1925-26 Chamorro non-recognition cycle
+# Unsupported but well-documented from external sources
+- country: "Nicaragua"
+  csv_row: 4
+  decision: keep
+  notes: "On October 25, 1925, General Emiliano Chamorro Vargas began insurgent operations in Managua against the government of Carlos José Solórzano. Charles C. Eberhardt, U.S. Envoy Extraordinary and Minister Plenipotentiary, immediately informed Chamorro that the United States would not recognize any government that assumed power by force. Chamorro claimed the Presidency on January 17, 1926 and failed to win U.S. recognition."
+
+- country: "Nicaragua"
+  csv_row: 5
+  decision: keep
+  notes: "A reconstituted Congress, including Senators and Deputies who had been expelled by General Chamorro, elected Adolfo Díaz as President Designate on November 11, 1926. Díaz took the oath of office on November 14. On November 17, the U.S. Chargé d’Affaires, Lawrence Dennis, delivered a note to the Nicaraguan Minister of Foreign Affairs extending U.S. recognition of the Díaz government."
+
+# Niger: nonresident CDA coded at ambassador level per README rule
+# (subsequent chief Reams was Ambassador — same as Chad/Benin/Burkina/CAR)
+- country: "Niger"
+  type: addition
+  date: "1960-08-03"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "Nonresident chargé d’affaires coded at ambassador level per README rule (subsequent chief Reams was Ambassador)"
+
+# Niger csv_row 1: Reams’s credential presentation now redundant — already
+# Ambassador Nonresident from 1960-08-03 (consistent with Benin/Burkina rejections)
+- country: "Niger"
+  csv_row: 1
+  decision: remove
+  notes: "Redundant: Reams’s credential presentation is a personnel change, not a status change"
+
+# Nigeria csv_row 1: RDCR institutional date over POCOM credential date
+- country: "Nigeria"
+  csv_row: 1
+  decision: accept_source
+  override_date: "1960-10-01"
+  override_status: "Embassy"
+  notes: "RDCR priority"
+
+# North Macedonia csv_row 2: "establishment of diplomatic relations" without explicit
+# mission opening — using credential presentation date (Kiribati precedent)
+- country: "North Macedonia"
+  csv_row: 2
+  decision: accept_csv
+  notes: "\"establishment of diplomatic relations\" insufficient evidence of embassy opening, using credential presentation"
+
+# North Macedonia: political recognition event, not a mission opening
+- country: "North Macedonia"
+  type: addition
+  date: "1995-09-13"
+  decision: reject
+  notes: "Political event without explicit mission opening; CSV correctly uses 1996-07-29 Embassy date"
+
+# North Yemen: Special Diplomatic Mission (Eddy, 1946) → Liaison per coding conventions
+- country: "North Yemen"
+  type: addition
+  date: "1946-03-04"
+  decision: add
+  override_status: "Liaison"
+  notes: "Special Diplomatic Mission per RDCR; coded as Liaison"
+
+# North Yemen: 2015 embassy suspension. "North Yemen" feeds both COW unified Yemen
+# (679/YEM) and GW continuous Yemen (678/YEM) via state_system_codes mapping.
+- country: "North Yemen"
+  type: addition
+  date: "2015-02-11"
+  decision: add
+
+# Norway csv_row 2: keeping CSV date (1905-05-31) over RDCR date (1905-11-14).
+# Note: 5/31 predates Norwegian independence (6/7/1905) — Graves’s credentials
+# were for the joint Sweden-and-Norway post. The 11/14 date is when he was
+# separately accredited to independent Norway. User judgment call.
+- country: "Norway"
+  csv_row: 2
+  decision: accept_csv
+  notes: "Seems pretty clear from source docs that Graves began as nonresident envoy to Norway on 5/31"
+
+# Norway csv_row 1: unsupported consulate — keeping from external records
+- country: "Norway"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. Consulates established in Norway were at Christiania (Oslo since 1925) and Christiansand in 1809."
+
+# Orange Free State csv_row 2: CSV date 1928-11-30 vs extraction's 1902 (annexation).
+# Sovereignty decisions deferred to state system data.
+- country: "Orange Free State"
+  csv_row: 2
+  decision: accept_csv
+  notes: "Offloading sovereignty decisions to state system data"
+
+# Panama csv_row 4: RDCR gives 1931-01-16 (one day off from CSV 1931-01-15)
+- country: "Panama"
+  csv_row: 4
+  decision: accept_source
+  override_date: "1931-01-16"
+  override_status: "Legation"
+
+# Panama csv_row 1: unsupported consulate — keeping; Colombian-era consular presence
+- country: "Panama"
+  csv_row: 1
+  decision: keep
+  notes: "Consular relations in the part of Colombia that later became Panama were established in 1823 with the appointment of David Craig as Consular Commercial Agent at Panama."
+
+# Peru: 4 non-recognition interruption/resumption cycles (all POCOM-only)
+# Consistent with Bolivia/Dominican Republic/Guatemala/Haiti pattern
+
+# Peru: 1860 suspension and 1862 re-establishment
+- country: "Peru"
+  type: addition
+  date: "1860-10-19"
+  decision: add
+
+- country: "Peru"
+  type: addition
+  date: "1862-01-11"
+  decision: add
+
+# Peru: 1865 non-recognition and 1866 re-establishment
+- country: "Peru"
+  type: addition
+  date: "1865-11-26"
+  decision: add
+
+- country: "Peru"
+  type: addition
+  date: "1866-05-22"
+  decision: add
+
+# Peru: 1881 Chilean occupation of Lima and 1884 re-establishment
+- country: "Peru"
+  type: addition
+  date: "1881-09-28"
+  decision: add
+
+- country: "Peru"
+  type: addition
+  date: "1884-04-24"
+  decision: add
+
+# Peru: 1962 coup non-recognition and 1963 re-establishment
+- country: "Peru"
+  type: addition
+  date: "1962-07-18"
+  decision: add
+
+- country: "Peru"
+  type: addition
+  date: "1963-02-06"
+  decision: add
+
+# Poland WWII: all four events are relocations (Warsaw → Romania → Paris → London
+# → back to Warsaw). Embassy status continuous throughout. Consistent with
+# Serbia/Yugoslavia WWII relocation rejections.
+- country: "Poland"
+  type: addition
+  date: "1939-09-05"
+  decision: reject
+  notes: "Relocation, not status change"
+
+- country: "Poland"
+  type: addition
+  date: "1940-06"
+  decision: reject
+  notes: "Relocation, not status change"
+
+# Poland 1945-07-05: U.S. withdrew recognition of London gov-in-exile and
+# recognized Warsaw government. User treats this as continuous Embassy status
+# (relocation back to Warsaw, not a break) — consistent with the 1939/1940
+# rejections treating all wartime moves as relocations.
+- country: "Poland"
+  type: addition
+  date: "1945-07-05"
+  decision: reject
+  notes: "Clear from context this is just a relocation event at the end of the war, should not be considered a break in relations"
+
+- country: "Poland"
+  type: addition
+  date: "1945-07-31"
+  decision: reject
+  notes: "Redundant"
+
+# Poland csv_rows 1-2: unsupported Warsaw consulate under Russian administration
+- country: "Poland"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. consular post in Poland was a Consulate in Warsaw, which was then under Russian administration. It opened in 1871 and closed in 1917."
+
+- country: "Poland"
+  csv_row: 2
+  decision: keep
+  notes: "The first U.S. consular post in Poland was a Consulate in Warsaw, which was then under Russian administration. It opened in 1871 and closed in 1917."
+
+# Portugal 1810: legation followed Portuguese court to Rio de Janeiro — relocation
+- country: "Portugal"
+  type: addition
+  date: "1810"
+  decision: reject
+  notes: "Relocation, not status change"
+
+# Portugal 1821-07: legation closure in Rio when court returned to Lisbon.
+# Treating as relocation (consistent with WWII gov-in-exile convention where
+# mission follows the government). The legation was near the Portuguese court
+# in Rio, then returned to Lisbon — no break in relations.
+- country: "Portugal"
+  type: addition
+  date: "1821-07"
+  decision: reject
+  notes: "Relocation, not break in relations (consistent with various WWII codings)"
+
+- country: "Portugal"
+  type: addition
+  date: "1822"
+  decision: reject
+  notes: "Redundant"
+
+# Portugal: 1910 non-recognition (Republic revolution) and 1911 re-establishment
+# Consistent with Greece 1920/1922 and Guatemala 1921/1922 pattern
+- country: "Portugal"
+  type: addition
+  date: "1910-10-05"
+  decision: add
+
+- country: "Portugal"
+  type: addition
+  date: "1911-08-03"
+  decision: add
+
+# Republic of Genoa: incorporation into Piedmont-Sardinia — sovereignty event
+- country: "Republic of Genoa"
+  type: addition
+  date: "1815"
+  decision: reject
+  notes: "Sovereignty decisions offloaded to state system membership"
+
+# Republic of Korea csv_row 1: unsupported but historically well-known
+- country: "Republic of Korea (South Korea)"
+  csv_row: 1
+  decision: keep
+
+# Romania csv_row 3: "Diplomatic Agent and Consul General" → Liaison per README
+- country: "Romania"
+  csv_row: 3
+  decision: accept_source
+  override_date: "1880-12-14"
+  override_status: "Liaison"
+  notes: "Per README, 'Diplomatic Agent' is coded as Liaison"
+
+# Romania csv_row 4: Schuyler was initially resident in Bucharest (1882) but was
+# multi-accredited to Greece and Serbia and moved to Athens by 1884. Coding as
+# Envoy Nonresident from the start simplifies the timeline — the brief resident
+# period (~2 years) is subsumed into the longer nonresident arrangement.
+# Strict physical-mission rule would give Legation (1882) → Envoy Nonresident (1884),
+# but this is a reasonable simplification.
+- country: "Romania"
+  csv_row: 4
+  decision: accept_csv
+  notes: "Schuyler was promoted to Minister Resident and Consul General on July 7, 1882, and presented his new credentials on September 8, 1882. However, he was also accredited to Greece and Serbia and moved his residence to Athens. Schuyler presented his recall on September 7, 1884."
+
+# Romania: POCOM-only personnel promotion, not institutional
+- country: "Romania"
+  type: addition
+  date: "1881-01-25"
+  decision: reject
+
+# Romania: 1884 move to Athens now redundant since csv_row 4 already codes as
+# Envoy Nonresident from 1882
+- country: "Romania"
+  type: addition
+  date: "1884"
+  decision: reject
+  notes: "redundant"
+
+# Romania: ministers returned to Bucharest as resident from 1905 (RDCR).
+# POCOM gives Riddle's credential date for the exact date.
+- country: "Romania"
+  type: addition
+  date: "1905"
+  decision: add
+  override_date: "1905-10-03"
+  override_status: "Legation"
+  notes: "RDCR: ministers resident in Bucharest from 1905, exact date from POCOM for John Wallace Riddle"
+
+# Romania csv_rows 1-2: unsupported consulate under Ottoman suzerainty — keeping
+- country: "Romania"
+  csv_row: 1
+  decision: keep
+  notes: "The first U.S. Consul was appointed to Romania while it was still an autonomous part of the Ottoman Empire. Louis J. Czapkay, a native of Hungary but a resident of California, was appointed to Bucharest on June 20, 1866. He served from May 1, 1867 to February 1869."
+
+- country: "Romania"
+  csv_row: 2
+  decision: keep
+  notes: "He served from February 20, 1871 to June 18, 1876. The consulate was abolished that September."
+
+# Romania csv_row 5: sole commissioning (1921) is not a status change — legation was
+# already resident in Bucharest from 1905
+- country: "Romania"
+  csv_row: 5
+  decision: remove
+  notes: "Redundant: legation was already resident in Bucharest from 1905; 1921 marks sole commissioning"
+
+# Russia csv_row 3: unsupported Liaison (1917) — keeping. Relations were never
+# formally severed but the U.S. refused all contact with the Bolshevik government.
+# "Liaison" captures this ambiguous state (consistent with Laos 1975 treatment).
+- country: "Russia"
+  csv_row: 3
+  decision: keep
+  notes: "Normal diplomatic relations were interrupted following the November 7, 1917, Bolshevik Revolution in Russia. After the abdication of Tsar Nicholas II during the February Revolution earlier that year, Ambassador to Russia, David R. Francis, had informed the new Provisional Government that the United States recognized the new government and would maintain diplomatic relations with Russia. On December 6, 1917, following the Bolshevik October Revolution that overthrew the Provisional Government, President Woodrow Wilson instructed all American diplomatic representatives in Russia to refrain from any direct communication with representatives of the Bolshevik Government. Although diplomatic relations with Russia never were formally severed, the United States refused to recognize or have any formal relations with the Bolshevik/Soviet governments until 1933."
+
+# Saint Kitts csv_row 1: using credential date (Kiribati/North Macedonia precedent)
+- country: "Saint Kitts and Nevis"
+  csv_row: 1
+  decision: accept_csv
+  notes: "We use first credential presentation when no explicit statement about mission opening (\"diplomatic relations\" does not imply mission)"
+
+# Saint Kitts, Saint Lucia, Saint Vincent: all three had Ortiz appointed as
+# U.S. Special Representative on 1977-09-01 (pre-independence liaison)
+- country: "Saint Kitts and Nevis"
+  type: addition
+  date: "1977-09-01"
+  decision: add
+  notes: "Ortiz appointed U.S. Special Representative; same pattern as Saint Lucia and Saint Vincent"
+
+# Saint Lucia csv_row 1: POCOM title is Envoy, not Ambassador (consistent with Monaco)
+- country: "Saint Lucia"
+  csv_row: 1
+  decision: custom
+  override_status: "Envoy Nonresident"
+  notes: "POCOM records Shelton as Envoy Extraordinary and Minister Plenipotentiary; all chiefs resident at Barbados"
+
+- country: "Saint Lucia"
+  type: addition
+  date: "1977-09-01"
+  decision: add
+  notes: "Ortiz appointed U.S. Special Representative; same pattern as Saint Kitts and Saint Vincent"
+
+# Saint Lucia: elevation from Envoy to Ambassador level (Bish was first Ambassador)
+- country: "Saint Lucia"
+  type: addition
+  date: "1981-12-15"
+  decision: add
+  override_status: "Ambassador Nonresident"
+  notes: "POCOM records Bish as first Ambassador; all chiefs resident at Barbados"
+
+- country: "Saint Vincent and the Grenadines"
+  type: addition
+  date: "1977-09-01"
+  decision: add
+  notes: "Ortiz appointed U.S. Special Representative; same pattern as Saint Kitts and Saint Lucia"
+
+# Sao Tome: "None" before first mission — redundant per assembly convention
+- country: "Sao Tome and Principe"
+  type: addition
+  date: "1975-10-10"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+# Serbia csv_row 1: embassy continued operating 1992-1999 despite non-recognition of FRY
+- country: "Serbia"
+  csv_row: 1
+  decision: accept_csv
+  notes: "RDCR says 'closed Embassy Belgrade' in 1999, confirming Embassy status retained 1992-1999"
+
+# Serbia: 19th-century events belong to Kingdom of Serbia/Yugoslavia entity
+- country: "Serbia"
+  type: addition
+  date: "1882-11-10"
+  decision: reject
+  notes: "Pre-entity event: belongs to Kingdom of Serbia/Yugoslavia"
+
+- country: "Serbia"
+  type: addition
+  date: "1894-06-29"
+  decision: reject
+  notes: "Pre-entity event: belongs to Kingdom of Serbia/Yugoslavia"
+
+- country: "Serbia"
+  type: addition
+  date: "1918-12-17"
+  decision: reject
+  notes: "Pre-entity event: belongs to Kingdom of Serbia/Yugoslavia"
+
+# Somalia csv_row 2: CSV codes 1991 as "Liaison" — embassy closed and all personnel
+# withdrawn, but U.S. maintained dialogue through Nairobi. "Liaison" captures this
+# ongoing-but-minimal contact. Diverges from my suggestion of "None" — user judges
+# the Nairobi-based engagement constitutes active representation.
+- country: "Somalia"
+  csv_row: 2
+  decision: accept_csv
+  notes: "Through the U.S. Embassy in Nairobi, Kenya, the United States maintained regular dialogue with transitional governments and other key stakeholders in Somalia, and after January 17, 2013, with the newly recognized central government of Somalia."
+
+# Somalia csv_row 3: Schwartz was nonresident ambassador before embassy reopened 2018
+- country: "Somalia"
+  csv_row: 3
+  decision: accept_csv
+  notes: "RDCR confirms Embassy Mogadishu reopened 2018-12-02; Schwartz was nonresident"
+
+# South Yemen: Interests Section in Italian Embassy (1970)
+- country: "South Yemen"
+  type: addition
+  date: "1970-04-10"
+  decision: add
+  notes: "POCOM confirms U.S. Interests Section established in Italian Embassy"
+
+# South Yemen: 1990 resumption — too close to unification to be meaningful
+- country: "South Yemen"
+  type: addition
+  date: "1990-04-30"
+  decision: reject
+  notes: "Low confidence with citation error; three weeks before unification — sovereignty boundary"
+
+# Spain: embassy status maintained throughout Civil War (ambassador remained
+# accredited, embassy relocated but never formally closed)
+- country: "Spain"
+  type: addition
+  date: "1939-04-13"
+  decision: reject
+  notes: "Redundant — Embassy status maintained throughout Civil War; never formally closed"
+
+# Sudan csv_row 3: embassy closed June 6 (POCOM) vs relations severed June 7 (RDCR).
+# User keeps CSV date (6/6) — coding the operational closure rather than the
+# formal severance. Note: this diverges from RDCR-over-POCOM source priority,
+# but the user judges the embassy closure is the relevant status event.
+- country: "Sudan"
+  csv_row: 3
+  decision: accept_csv
+  notes: "Clear that embassy closed 6/6"
+
+# Sudan csv_row 6: CSV says "None" for 1996 embassy suspension. Extraction says
+# "Ambassador Nonresident" (Carney at Nairobi). User keeps "None" — judges that
+# Carney's presence in Nairobi doesn't constitute active representation to Sudan.
+# Diverges from Libya (where nonresident ambassador = Ambassador Nonresident) and
+# from my suggestion, but user's note indicates insufficient evidence of ongoing
+# representation.
+- country: "Sudan"
+  csv_row: 6
+  decision: accept_csv
+  notes: "No clear indication that Carney was continuing to provide representation to Sudan from Nairobi"
+
+# Sudan csv_row 1: unsupported Liaison — keeping; Liaison Officer in Khartoum
+- country: "Sudan"
+  csv_row: 1
+  decision: keep
+  notes: "The United States recognized the Republic of Sudan on January 1, 1956, in a letter to that effect delivered by Arthur Beach, the U.S. Liaison Officer in Khartoum, to the President of the Supreme Commission of Sudan, Abdel Fattah Mohammed del Maghrabi."
+
+# Switzerland csv_row 1: unsupported consulate — keeping from external records
+- country: "Switzerland"
+  csv_row: 1
+  decision: keep
+  notes: "John Godfrey Boeker was appointed Consul General at Basel on November 30, 1829 and began serving in October 1830."
+
+# Syria: Wadsworth as Diplomatic Agent/Consul General → Liaison per README.
+# Using credential presentation date (consistent with Lebanon 1942-11-19).
+- country: "Syria"
+  type: addition
+  date: "1942-11-30"
+  decision: add
+  override_status: "Liaison"
+  notes: "Wadsworth presented credentials as Diplomatic Agent/Consul General; coded as Liaison per README"
+
+# Syria: legation-to-embassy elevation (POCOM only — RDCR doesn't mention it).
+# Fills otherwise implausible gap between Legation (1944) and Consulate (1958).
+- country: "Syria"
+  type: addition
+  date: "1952-09-30"
+  decision: add
+  override_status: "Embassy"
+  notes: "POCOM records Moose promoted to Ambassador; fills gap between Legation (1944) and Consulate (1958)"
+
+- country: "Taiwan"
+  csv_row: 1
+  decision: accept_csv
+  notes: "README: Taiwan embassy coded from 1949-12-08 (system entry date) for consistency with WWII gov-in-exile treatment"
+
+- country: "Taiwan"
+  type: addition
+  date: "1914"
+  decision: reject
+  notes: "Pre-entity: consulate under Japanese colonial sovereignty"
+
+- country: "Taiwan"
+  type: addition
+  date: "1844-06-12"
+  decision: reject
+  notes: "Pre-entity: original China legation, covered under China entity"
+
+- country: "Taiwan"
+  type: addition
+  date: "1935-09-17"
+  decision: reject
+  notes: "Pre-entity: China embassy elevation, covered under China entity"
+
+- country: "Tajikistan"
+  type: addition
+  date: "1992-02-19"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+- country: "Tajikistan"
+  type: addition
+  date: "1992-10-25"
+  decision: add
+
+- country: "Tajikistan"
+  type: addition
+  date: "1993-03-11"
+  decision: add
+
+- country: "Texas"
+  type: addition
+  date: "1845-08-09"
+  decision: reject
+  notes: "Sovereignty decisions offloaded to state system membership"
+
+- country: "Tonga"
+  type: addition
+  date: "1979-04-11"
+  decision: reject
+  notes: "Relocation, not status change"
+
+- country: "Tunisia"
+  csv_row: 1
+  decision: accept_source
+  override_date: "1795"
+  override_status: "Consul Nonresident"
+  notes: "RDCR clearly states Donaldson remained at post in Algiers"
+
+- country: "Tunisia"
+  csv_row: 7
+  decision: accept_csv
+  notes: "1915 is institutional revival date per RDCR; 1916 is when staffing occurred"
+
+- country: "Tunisia"
+  type: addition
+  date: "1798-03-15"
+  decision: add
+  notes: "Eaton presented credentials to the Bey of Tunis, establishing resident consular presence"
+
+- country: "Turkey"
+  csv_row: 4
+  decision: accept_csv
+  notes: "\"establishment of relations\" not clear enough on its own to date a mission opening, using credential presentation"
+
+- country: "Turkmenistan"
+  type: addition
+  date: "1992-02-19"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+- country: "Ukraine"
+  type: addition
+  date: "1991-12-25"
+  decision: reject
+  notes: "Assembly assumes None before first event"
+
+# UAE csv_row 1: POCOM clearly shows Stoltzfus was Ambassador; RDCR's "envoy" is a typo
+- country: "United Arab Emirates, The"
+  csv_row: 1
+  decision: custom
+  override_status: "Ambassador Nonresident"
+  notes: "POCOM confirms Stoltzfus was Ambassador Extraordinary and Plenipotentiary; RDCR 'envoy' is erroneous"
+
+# UAE: POCOM-only embassy date with citation error; RDCR dates Embassy to 1974
+- country: "United Arab Emirates, The"
+  type: addition
+  date: "1972-05-15"
+  decision: reject
+
+# Uruguay csv_row 3: RDCR institutional date (Secretary of State announcement of
+# elevation) over POCOM credential presentation date
+- country: "Uruguay"
+  csv_row: 3
+  decision: accept_source
+  override_date: "1941-01-11"
+  override_status: "Embassy"
+  notes: "RDCR institutional date (Secretary of State announcement) over POCOM credential date"
+
+# Venezuela: 1908-09 non-recognition cycle (consistent with Bolivia, Dominican
+# Republic, Guatemala, Greece, Haiti, Peru, Portugal pattern)
+- country: "Venezuela"
+  type: addition
+  date: "1908-06-20"
+  decision: add
+
+- country: "Venezuela"
+  type: addition
+  date: "1909-03-15"
+  decision: add
+
+# Vietnam csv_row 3: extraction used June 6 (announcement) but RDCR text says
+# "raised to Embassy status on June 24, 1952" — CSV is correct
+- country: "Vietnam"
+  csv_row: 3
+  decision: accept_csv
+  notes: "RDCR says 'raised to Embassy status on June 24, 1952'; extraction incorrectly selected June 6"
+
+# Vietnam csv_row 1: unsupported consulate — keeping; French Indochina era
+- country: "Vietnam"
+  csv_row: 1
+  decision: keep
+  notes: "The United States established its first full consular post in the French colony of Indochina in the city of Saigon on December 9, 1907. There had been a commercial agent in this city since 1889."
+
+# Württemberg: German Empire formation — sovereignty event (consistent with
+# Baden, Bavaria, Brunswick, Hanseatic Republics)
+- country: "Württemberg"
+  type: addition
+  date: "1871-01-18"
+  decision: reject
+  notes: "Sovereignty decisions offloaded to state system membership; consulate continued operating"
+
+# Zanzibar: "Consulate General" in POCOM but schema has no separate category
+- country: "Zanzibar"
+  csv_row: 2
+  decision: accept_csv
+  notes: "POCOM says 'Consulate General' but Consulate is the correct coding category"
 

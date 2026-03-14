@@ -1,24 +1,27 @@
 ---
 title: "Data Explorer"
+subtitle: "Select a country to view its diplomatic status timeline"
 ---
 
 ```{=html}
 <div id="explorer-app">
   <div id="sidebar">
     <div id="controls">
-      <select id="system-select">
+      <label for="system-select" class="control-label">State system</label>
+      <select id="system-select" aria-label="Select state system">
         <option value="cow">Correlates of War (COW)</option>
         <option value="gw">Gleditsch-Ward (GW + microstates)</option>
       </select>
-      <input type="text" id="search-box" placeholder="Filter countries...">
+      <label for="search-box" class="control-label">Search</label>
+      <input type="text" id="search-box" placeholder="Filter countries..." aria-label="Filter countries">
       <span id="country-count"></span>
     </div>
-    <div id="country-list"></div>
+    <div id="country-list" role="listbox" aria-label="Country list"></div>
   </div>
 
   <div id="main-panel">
     <div id="welcome-msg">
-      <p>Select a country to view its diplomatic status timeline.</p>
+      <p>Select a country from the list to view its diplomatic status timeline.</p>
     </div>
     <div id="timeline-panel">
       <h3 id="timeline-title"></h3>
@@ -35,110 +38,137 @@ title: "Data Explorer"
   </div>
 </div>
 
+<div id="tooltip" class="timeline-tooltip" style="display:none;"></div>
+
 <script>
 (function() {
-  const STATUS_COLORS = {
-    "Embassy": "#1b5e20",
-    "Ambassador Nonresident": "#388e3c",
-    "Legation": "#2196f3",
-    "Envoy Nonresident": "#64b5f6",
-    "Consulate": "#f57c00",
-    "Consul Nonresident": "#ffb74d",
-    "Liaison": "#7b1fa2",
-    "Interests": "#ce93d8",
-    "None": "#bdbdbd"
+  var STATUS_COLORS = {
+    "Embassy": "#2d6a4f",
+    "Ambassador Nonresident": "#52796f",
+    "Legation": "#2c5282",
+    "Envoy Nonresident": "#6b98b5",
+    "Consulate": "#c06014",
+    "Consul Nonresident": "#d4973b",
+    "Liaison": "#7c3a6d",
+    "Interests": "#b07da8",
+    "None": "#a8a29e"
   };
 
-  const STATUS_ORDER = [
+  var STATUS_ORDER = [
     "Embassy", "Ambassador Nonresident", "Legation", "Envoy Nonresident",
     "Consulate", "Consul Nonresident", "Liaison", "Interests", "None"
   ];
 
-  const data = /* __EXPLORER_DATA__ */null;
-  let currentSystem = "cow";
-  let selectedAbbrev = null;
+  var data = /* __EXPLORER_DATA__ */null;
+  var currentSystem = "cow";
+  var selectedAbbrev = null;
+  var tooltip = document.getElementById("tooltip");
 
-  const getEl = id => document.getElementById(id);
+  var getEl = function(id) { return document.getElementById(id); };
 
   function renderList() {
-    const sys = data[currentSystem];
+    var sys = data[currentSystem];
     if (!sys) return;
-    const search = getEl("search-box").value.toLowerCase().trim();
-    const entries = Object.entries(sys)
-      .map(([abbrev, info]) => ({abbrev, ...info}))
-      .filter(e => {
-        if (!search) return true;
-        return e.name.toLowerCase().includes(search)
-          || e.abbrev.toLowerCase().includes(search)
-          || String(e.code).includes(search);
-      })
-      .sort((a, b) => a.name.localeCompare(b.name));
+    var search = getEl("search-box").value.toLowerCase().trim();
+    var entries = Object.keys(sys).map(function(abbrev) {
+      return {abbrev: abbrev, name: sys[abbrev].name, code: sys[abbrev].code, ranges: sys[abbrev].ranges};
+    }).filter(function(e) {
+      if (!search) return true;
+      return e.name.toLowerCase().indexOf(search) !== -1
+        || e.abbrev.toLowerCase().indexOf(search) !== -1
+        || String(e.code).indexOf(search) !== -1;
+    }).sort(function(a, b) { return a.name.localeCompare(b.name); });
 
     getEl("country-count").textContent = entries.length + " countries";
 
-    const list = getEl("country-list");
+    var list = getEl("country-list");
     list.innerHTML = "";
-    for (const e of entries) {
-      const item = document.createElement("div");
+    for (var i = 0; i < entries.length; i++) {
+      var e = entries[i];
+      var item = document.createElement("div");
       item.className = "country-item" + (e.abbrev === selectedAbbrev ? " selected" : "");
+      item.setAttribute("role", "option");
       item.innerHTML = '<span class="country-name">' + e.name + '</span>'
         + '<span class="country-code">' + e.abbrev + '</span>';
-      item.addEventListener("click", function() { showTimeline(e.abbrev); });
+      item.addEventListener("click", (function(abbrev) {
+        return function() { showTimeline(abbrev); };
+      })(e.abbrev));
       list.appendChild(item);
     }
   }
 
   function showTimeline(abbrev) {
-    const sys = data[currentSystem];
-    const info = sys[abbrev];
+    var sys = data[currentSystem];
+    var info = sys[abbrev];
     if (!info) return;
 
     selectedAbbrev = abbrev;
     renderList();
 
     getEl("welcome-msg").style.display = "none";
-    const panel = getEl("timeline-panel");
+    var panel = getEl("timeline-panel");
+    // Re-trigger fade-in animation
+    panel.style.display = "none";
+    panel.offsetHeight;
     panel.style.display = "block";
+
     getEl("timeline-title").textContent =
       info.name + " (" + abbrev + ", " + currentSystem.toUpperCase() + " " + info.code + ")";
 
-    const ranges = info.ranges;
-    const minDate = new Date(ranges[0].start);
-    const maxDate = new Date(ranges[ranges.length - 1].end);
-    const totalMs = maxDate - minDate;
+    var ranges = info.ranges;
+    var minDate = new Date(ranges[0].start);
+    var maxDate = new Date(ranges[ranges.length - 1].end);
+    var totalMs = maxDate - minDate;
 
     // Timeline bar
-    const bar = getEl("timeline-bar");
+    var bar = getEl("timeline-bar");
     bar.innerHTML = "";
-    for (const r of ranges) {
-      const start = new Date(r.start);
-      const end = new Date(r.end);
-      const leftPct = ((start - minDate) / totalMs) * 100;
-      const widthPct = ((end - start) / totalMs) * 100;
+    for (var i = 0; i < ranges.length; i++) {
+      var r = ranges[i];
+      var start = new Date(r.start);
+      var end = new Date(r.end);
+      var leftPct = ((start - minDate) / totalMs) * 100;
+      var widthPct = ((end - start) / totalMs) * 100;
 
-      const seg = document.createElement("div");
+      var seg = document.createElement("div");
       seg.className = "timeline-segment";
       seg.style.left = leftPct + "%";
       seg.style.width = Math.max(widthPct, 0.3) + "%";
       seg.style.backgroundColor = STATUS_COLORS[r.status] || "#999";
-      const usdos = r.usdos ? " (" + r.usdos + ")" : "";
-      seg.title = r.status + ": " + r.start + " to " + r.end + usdos;
+
+      // Custom tooltip events
+      (function(r) {
+        seg.addEventListener("mouseenter", function(e) {
+          var usdos = r.usdos ? " (" + r.usdos + ")" : "";
+          tooltip.innerHTML = "<strong>" + r.status + "</strong><br>"
+            + r.start + " &ndash; " + r.end + usdos;
+          tooltip.style.display = "block";
+        });
+        seg.addEventListener("mousemove", function(e) {
+          tooltip.style.left = (e.pageX + 12) + "px";
+          tooltip.style.top = (e.pageY - 40) + "px";
+        });
+        seg.addEventListener("mouseleave", function() {
+          tooltip.style.display = "none";
+        });
+      })(r);
+
       bar.appendChild(seg);
     }
 
     // Year axis
-    const labels = getEl("timeline-labels");
+    var labels = getEl("timeline-labels");
     labels.innerHTML = "";
-    const startYear = minDate.getFullYear();
-    const endYear = maxDate.getFullYear();
-    const span = endYear - startYear;
-    const step = span <= 20 ? 5 : span <= 50 ? 10 : span <= 100 ? 20 : 25;
-    const firstTick = Math.ceil(startYear / step) * step;
-    for (let y = firstTick; y <= endYear; y += step) {
-      const d = new Date(y, 0, 1);
-      const pct = ((d - minDate) / totalMs) * 100;
+    var startYear = minDate.getFullYear();
+    var endYear = maxDate.getFullYear();
+    var span = endYear - startYear;
+    var step = span <= 20 ? 5 : span <= 50 ? 10 : span <= 100 ? 20 : 25;
+    var firstTick = Math.ceil(startYear / step) * step;
+    for (var y = firstTick; y <= endYear; y += step) {
+      var d = new Date(y, 0, 1);
+      var pct = ((d - minDate) / totalMs) * 100;
       if (pct >= 0 && pct <= 100) {
-        const lbl = document.createElement("span");
+        var lbl = document.createElement("span");
         lbl.className = "timeline-label";
         lbl.style.left = pct + "%";
         lbl.textContent = y;
@@ -147,16 +177,17 @@ title: "Data Explorer"
     }
 
     // Detail table
-    const tbody = getEl("timeline-tbody");
+    var tbody = getEl("timeline-tbody");
     tbody.innerHTML = "";
-    for (const r of ranges) {
-      const tr = document.createElement("tr");
-      const color = STATUS_COLORS[r.status] || "#999";
-      const start = new Date(r.start);
-      const end = new Date(r.end);
-      const days = Math.round((end - start) / 86400000) + 1;
-      const years = (days / 365.25).toFixed(1);
-      const duration = days < 365 ? days + "d" : years + "y";
+    for (var i = 0; i < ranges.length; i++) {
+      var r = ranges[i];
+      var tr = document.createElement("tr");
+      var color = STATUS_COLORS[r.status] || "#999";
+      var start = new Date(r.start);
+      var end = new Date(r.end);
+      var days = Math.round((end - start) / 86400000) + 1;
+      var years = (days / 365.25).toFixed(1);
+      var duration = days < 365 ? days + "d" : years + "y";
       tr.innerHTML = "<td>" + r.start + "</td><td>" + r.end
         + "</td><td>" + duration
         + '</td><td><span class="status-dot" style="background:' + color + '"></span> ' + r.status
@@ -165,11 +196,16 @@ title: "Data Explorer"
     }
 
     // Legend
-    const usedStatuses = new Set(ranges.map(r => r.status));
+    var usedStatuses = {};
+    for (var i = 0; i < ranges.length; i++) {
+      usedStatuses[ranges[i].status] = true;
+    }
     getEl("timeline-legend").innerHTML = STATUS_ORDER
-      .filter(s => usedStatuses.has(s))
-      .map(s => '<span class="legend-item"><span class="legend-color" style="background:'
-        + STATUS_COLORS[s] + '"></span>' + s + '</span>')
+      .filter(function(s) { return usedStatuses[s]; })
+      .map(function(s) {
+        return '<span class="legend-item"><span class="legend-color" style="background:'
+          + STATUS_COLORS[s] + '"></span>' + s + '</span>';
+      })
       .join(" ");
   }
 

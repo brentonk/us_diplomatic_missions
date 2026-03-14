@@ -2,6 +2,7 @@
 
 import csv
 import json
+import re
 from pathlib import Path
 
 REPO_URL = "https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main"
@@ -25,62 +26,83 @@ def _generate_download_page(data_dir: Path, version: str) -> None:
         'title: "Download"',
         "---",
         "",
-        f"## Current release: v{version}",
+        f"Current release: **v{version}**",
         "",
     ]
 
     # Archives
     if zip_file.exists() and tar_file.exists():
-        lines.append("### Complete archives")
-        lines.append("")
-        lines.append("Download all data files and codebook in a single archive:")
-        lines.append("")
-        lines.append(f"- [{zip_file.name}]({base}/{zip_file.name})")
-        lines.append(f"- [{tar_file.name}]({base}/{tar_file.name})")
-        lines.append("")
+        lines.extend([
+            "::: {.download-section}",
+            "### Complete Archives",
+            "",
+            "Download all data files and codebook in a single archive.",
+            "",
+            f"- [`{zip_file.name}`]({base}/{zip_file.name}) (ZIP)",
+            f"- [`{tar_file.name}`]({base}/{tar_file.name}) (TAR.GZ)",
+            "",
+            ":::",
+            "",
+        ])
 
     # Codebook
-    lines.append("### Codebook")
-    lines.append("")
+    lines.extend([
+        "::: {.download-section}",
+        "### Codebook",
+        "",
+    ])
     if codebook_pdf.exists():
-        lines.append(f"- [{codebook_pdf.name}]({base}/{codebook_pdf.name}) (PDF)")
+        lines.append(f"- [`{codebook_pdf.name}`]({base}/{codebook_pdf.name}) (PDF)")
     if codebook_md.exists():
-        lines.append(f"- [{codebook_md.name}]({base}/{codebook_md.name}) (Markdown)")
-    lines.append("")
+        lines.append(f"- [`{codebook_md.name}`]({base}/{codebook_md.name}) (Markdown)")
+    lines.extend(["", ":::", ""])
 
-    # Data files by type
-    lines.append("### Range datasets")
-    lines.append("")
-    lines.append("One row per country--date range with constant diplomatic status.")
-    lines.append("")
+    # Range datasets
+    lines.extend([
+        "::: {.download-section}",
+        "### Range Datasets",
+        "",
+        "One row per country--date range with constant diplomatic status.",
+        "",
+    ])
     for f in range_files:
         label = _system_label(f.name)
-        lines.append(f"- [{f.name}]({base}/{f.name}) ({label})")
-    lines.append("")
+        lines.append(f"- [`{f.name}`]({base}/{f.name}) ({label})")
+    lines.extend(["", ":::", ""])
 
-    lines.append("### Monthly datasets")
-    lines.append("")
-    lines.append("One row per country--month with min/max/median/mode aggregation.")
-    lines.append("")
+    # Monthly datasets
+    lines.extend([
+        "::: {.download-section}",
+        "### Monthly Datasets",
+        "",
+        "One row per country--month with min/max/median/mode aggregation.",
+        "",
+    ])
     for f in monthly_files:
         label = _system_label(f.name)
-        lines.append(f"- [{f.name}]({base}/{f.name}) ({label})")
-    lines.append("")
+        lines.append(f"- [`{f.name}`]({base}/{f.name}) ({label})")
+    lines.extend(["", ":::", ""])
 
-    lines.append("### Yearly datasets")
-    lines.append("")
-    lines.append("One row per country--year with min/max/median/mode aggregation.")
-    lines.append("")
+    # Yearly datasets
+    lines.extend([
+        "::: {.download-section}",
+        "### Yearly Datasets",
+        "",
+        "One row per country--year with min/max/median/mode aggregation.",
+        "",
+    ])
     for f in yearly_files:
         label = _system_label(f.name)
-        lines.append(f"- [{f.name}]({base}/{f.name}) ({label})")
-    lines.append("")
+        lines.append(f"- [`{f.name}`]({base}/{f.name}) ({label})")
+    lines.extend(["", ":::", ""])
 
-    # Archive section placeholder
-    lines.append("## Previous releases")
-    lines.append("")
-    lines.append("No previous releases.")
-    lines.append("")
+    # Previous releases
+    lines.extend([
+        "## Previous Releases",
+        "",
+        "No previous releases.",
+        "",
+    ])
 
     (WEB_DIR / "download.qmd").write_text("\n".join(lines))
 
@@ -141,7 +163,37 @@ def _generate_explorer_page(data_dir: Path, version: str) -> None:
     (WEB_DIR / "explorer" / "index.qmd").write_text(output)
 
 
+def _generate_codebook_page(data_dir: Path, version: str) -> None:
+    """Generate web/codebook.qmd from the codebook Markdown source."""
+    codebook_md = data_dir / f"CODEBOOK_us_mission_status_v{version}.md"
+    if not codebook_md.exists():
+        return
+
+    content = codebook_md.read_text()
+
+    # Strip the pandoc YAML frontmatter and replace with Quarto frontmatter
+    content = re.sub(
+        r"\A---\n.*?\n---\n*",
+        "",
+        content,
+        count=1,
+        flags=re.DOTALL,
+    )
+
+    lines = [
+        "---",
+        f'title: "Codebook (v{version})"',
+        "number-sections: true",
+        "---",
+        "",
+        content,
+    ]
+
+    (WEB_DIR / "codebook.qmd").write_text("\n".join(lines))
+
+
 def generate_web_sources(data_dir: Path, version: str) -> None:
     """Generate all web source files from data products."""
     _generate_download_page(data_dir, version)
     _generate_explorer_page(data_dir, version)
+    _generate_codebook_page(data_dir, version)

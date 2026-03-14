@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: _site
-  resources:
-    - explorer/data.json
 
 website:
   title: "US Diplomatic Mission Status Data"

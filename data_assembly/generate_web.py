@@ -96,8 +96,8 @@ def _system_label(filename: str) -> str:
     return ""
 
 
-def _generate_explorer_data(data_dir: Path, version: str) -> None:
-    """Generate web/explorer/data.json from range CSVs."""
+def _build_explorer_data(data_dir: Path, version: str) -> str:
+    """Build explorer JSON string from range CSVs."""
     result: dict[str, dict] = {}
 
     for system in ("cow", "gw"):
@@ -127,12 +127,21 @@ def _generate_explorer_data(data_dir: Path, version: str) -> None:
 
         result[system] = countries
 
-    explorer_dir = WEB_DIR / "explorer"
-    explorer_dir.mkdir(parents=True, exist_ok=True)
-    (explorer_dir / "data.json").write_text(json.dumps(result, separators=(",", ":")))
+    return json.dumps(result, separators=(",", ":"))
+
+
+def _generate_explorer_page(data_dir: Path, version: str) -> None:
+    """Generate web/explorer/index.qmd with inlined data."""
+    explorer_json = _build_explorer_data(data_dir, version)
+
+    template_path = WEB_DIR / "explorer" / "_template.qmd"
+    template = template_path.read_text()
+    output = template.replace("/* __EXPLORER_DATA__ */null", explorer_json)
+
+    (WEB_DIR / "explorer" / "index.qmd").write_text(output)
 
 
 def generate_web_sources(data_dir: Path, version: str) -> None:
     """Generate all web source files from data products."""
     _generate_download_page(data_dir, version)
-    _generate_explorer_data(data_dir, version)
+    _generate_explorer_page(data_dir, version)

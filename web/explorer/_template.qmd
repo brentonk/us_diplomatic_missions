@@ -1,0 +1,191 @@
+---
+title: "Data Explorer"
+---
+
+```{=html}
+<div id="explorer-app">
+  <div id="sidebar">
+    <div id="controls">
+      <select id="system-select">
+        <option value="cow">Correlates of War (COW)</option>
+        <option value="gw">Gleditsch-Ward (GW + microstates)</option>
+      </select>
+      <input type="text" id="search-box" placeholder="Filter countries...">
+      <span id="country-count"></span>
+    </div>
+    <div id="country-list"></div>
+  </div>
+
+  <div id="main-panel">
+    <div id="welcome-msg">
+      <p>Select a country to view its diplomatic status timeline.</p>
+    </div>
+    <div id="timeline-panel">
+      <h3 id="timeline-title"></h3>
+      <div id="timeline-bar-wrap">
+        <div id="timeline-bar"></div>
+        <div id="timeline-labels"></div>
+      </div>
+      <div id="timeline-legend"></div>
+      <table id="timeline-table">
+        <thead><tr><th>Start</th><th>End</th><th>Duration</th><th>Status</th><th>USDOS Name</th></tr></thead>
+        <tbody id="timeline-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const STATUS_COLORS = {
+    "Embassy": "#1b5e20",
+    "Ambassador Nonresident": "#388e3c",
+    "Legation": "#2196f3",
+    "Envoy Nonresident": "#64b5f6",
+    "Consulate": "#f57c00",
+    "Consul Nonresident": "#ffb74d",
+    "Liaison": "#7b1fa2",
+    "Interests": "#ce93d8",
+    "None": "#bdbdbd"
+  };
+
+  const STATUS_ORDER = [
+    "Embassy", "Ambassador Nonresident", "Legation", "Envoy Nonresident",
+    "Consulate", "Consul Nonresident", "Liaison", "Interests", "None"
+  ];
+
+  const data = /* __EXPLORER_DATA__ */null;
+  let currentSystem = "cow";
+  let selectedAbbrev = null;
+
+  const getEl = id => document.getElementById(id);
+
+  function renderList() {
+    const sys = data[currentSystem];
+    if (!sys) return;
+    const search = getEl("search-box").value.toLowerCase().trim();
+    const entries = Object.entries(sys)
+      .map(([abbrev, info]) => ({abbrev, ...info}))
+      .filter(e => {
+        if (!search) return true;
+        return e.name.toLowerCase().includes(search)
+          || e.abbrev.toLowerCase().includes(search)
+          || String(e.code).includes(search);
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    getEl("country-count").textContent = entries.length + " countries";
+
+    const list = getEl("country-list");
+    list.innerHTML = "";
+    for (const e of entries) {
+      const item = document.createElement("div");
+      item.className = "country-item" + (e.abbrev === selectedAbbrev ? " selected" : "");
+      item.innerHTML = '<span class="country-name">' + e.name + '</span>'
+        + '<span class="country-code">' + e.abbrev + '</span>';
+      item.addEventListener("click", function() { showTimeline(e.abbrev); });
+      list.appendChild(item);
+    }
+  }
+
+  function showTimeline(abbrev) {
+    const sys = data[currentSystem];
+    const info = sys[abbrev];
+    if (!info) return;
+
+    selectedAbbrev = abbrev;
+    renderList();
+
+    getEl("welcome-msg").style.display = "none";
+    const panel = getEl("timeline-panel");
+    panel.style.display = "block";
+    getEl("timeline-title").textContent =
+      info.name + " (" + abbrev + ", " + currentSystem.toUpperCase() + " " + info.code + ")";
+
+    const ranges = info.ranges;
+    const minDate = new Date(ranges[0].start);
+    const maxDate = new Date(ranges[ranges.length - 1].end);
+    const totalMs = maxDate - minDate;
+
+    // Timeline bar
+    const bar = getEl("timeline-bar");
+    bar.innerHTML = "";
+    for (const r of ranges) {
+      const start = new Date(r.start);
+      const end = new Date(r.end);
+      const leftPct = ((start - minDate) / totalMs) * 100;
+      const widthPct = ((end - start) / totalMs) * 100;
+
+      const seg = document.createElement("div");
+      seg.className = "timeline-segment";
+      seg.style.left = leftPct + "%";
+      seg.style.width = Math.max(widthPct, 0.3) + "%";
+      seg.style.backgroundColor = STATUS_COLORS[r.status] || "#999";
+      const usdos = r.usdos ? " (" + r.usdos + ")" : "";
+      seg.title = r.status + ": " + r.start + " to " + r.end + usdos;
+      bar.appendChild(seg);
+    }
+
+    // Year axis
+    const labels = getEl("timeline-labels");
+    labels.innerHTML = "";
+    const startYear = minDate.getFullYear();
+    const endYear = maxDate.getFullYear();
+    const span = endYear - startYear;
+    const step = span <= 20 ? 5 : span <= 50 ? 10 : span <= 100 ? 20 : 25;
+    const firstTick = Math.ceil(startYear / step) * step;
+    for (let y = firstTick; y <= endYear; y += step) {
+      const d = new Date(y, 0, 1);
+      const pct = ((d - minDate) / totalMs) * 100;
+      if (pct >= 0 && pct <= 100) {
+        const lbl = document.createElement("span");
+        lbl.className = "timeline-label";
+        lbl.style.left = pct + "%";
+        lbl.textContent = y;
+        labels.appendChild(lbl);
+      }
+    }
+
+    // Detail table
+    const tbody = getEl("timeline-tbody");
+    tbody.innerHTML = "";
+    for (const r of ranges) {
+      const tr = document.createElement("tr");
+      const color = STATUS_COLORS[r.status] || "#999";
+      const start = new Date(r.start);
+      const end = new Date(r.end);
+      const days = Math.round((end - start) / 86400000) + 1;
+      const years = (days / 365.25).toFixed(1);
+      const duration = days < 365 ? days + "d" : years + "y";
+      tr.innerHTML = "<td>" + r.start + "</td><td>" + r.end
+        + "</td><td>" + duration
+        + '</td><td><span class="status-dot" style="background:' + color + '"></span> ' + r.status
+        + "</td><td>" + (r.usdos || "") + "</td>";
+      tbody.appendChild(tr);
+    }
+
+    // Legend
+    const usedStatuses = new Set(ranges.map(r => r.status));
+    getEl("timeline-legend").innerHTML = STATUS_ORDER
+      .filter(s => usedStatuses.has(s))
+      .map(s => '<span class="legend-item"><span class="legend-color" style="background:'
+        + STATUS_COLORS[s] + '"></span>' + s + '</span>')
+      .join(" ");
+  }
+
+  getEl("system-select").addEventListener("change", function(e) {
+    currentSystem = e.target.value;
+    selectedAbbrev = null;
+    getEl("timeline-panel").style.display = "none";
+    getEl("welcome-msg").style.display = "block";
+    renderList();
+  });
+
+  getEl("search-box").addEventListener("input", function() {
+    renderList();
+  });
+
+  renderList();
+})();
+</script>
+```

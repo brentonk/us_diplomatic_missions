@@ -103,7 +103,11 @@ def main():
         output_dir = config.repo_root / "data" / f"v{version}"
         print(f"Generating data product v{version} in {output_dir}\n")
         generate_all_datasets(resolver, transitions_csv, output_dir, version)
-        print(f"Done. Output in {output_dir}")
+
+        from data_assembly.generate_web import generate_web_sources
+        print("\nGenerating web sources...")
+        generate_web_sources(output_dir, version)
+        print("Done.")
 
     elif args.command == "run-all":
         from transition_extraction.stage0_resolve import run_stage0

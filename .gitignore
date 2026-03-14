@@ -1,5 +1,6 @@
 output/
 logs/
+web/_site/
 .venv/
 __pycache__/
 *.pyc

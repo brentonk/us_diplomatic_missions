@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - explorer/data.json
+
+website:
+  title: "US Diplomatic Mission Status Data"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Download
+        href: download.qmd
+      - text: Explorer
+        href: explorer/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css

@@ -20,7 +20,9 @@ uv run python main.py assemble            # Final output assembly
 uv run python main.py run-all             # All stages sequentially
 uv run python main.py --dry-run stage2    # Cost estimate without API calls
 uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countries
-uv run python main.py generate-data              # Generate all data product CSVs
+uv run python main.py generate-data              # Generate all data product files + web sources
+quarto render web                                # Build website locally
+quarto preview web                               # Preview website locally
 ```
 
 ## Project structure
@@ -46,7 +48,10 @@ uv run python main.py generate-data              # Generate all data product CSV
   - `range_builder.py` — Builds interval-level range datasets (mission_status_range_*.csv)
   - `daily_builder.py` — Expands range data to daily rows (in-memory intermediate for aggregation)
   - `aggregator.py` — Monthly and yearly aggregation from daily data
-  - `generate.py` — Orchestrator: generates all 9 data product CSVs
+  - `generate.py` — Orchestrator: generates all data product files (CSVs, codebook, archives)
+  - `codebook_builder.py` — Assembles codebook Markdown from fragments and renders PDF via pandoc
+  - `codebook/` — Codebook source fragments (7 Markdown files assembled in order)
+  - `generate_web.py` — Generates Quarto website source files (download page, explorer data)
 - `scripts/` — One-time utility scripts (currently empty; historical scripts removed after completing their purpose)
 - `input/` — Config, prompts, CSV data, aliases
   - `extraction_config.yaml` — Model strings, API params, thresholds, paths
@@ -62,7 +67,9 @@ uv run python main.py generate-data              # Generate all data product CSV
 - `instructions/data_product.md` — Data product specification (datasets, codebook, website)
 - `rdcr/`, `pocom/` — Git submodules (State Department sources)
 - `output/` — All pipeline outputs (gitignored)
-- `data/` — Versioned data product CSVs (committed, organized as `data/v{VERSION}/`)
+- `data/` — Versioned data products (committed, organized as `data/v{VERSION}/`): 9 CSVs, codebook (md + pdf), archives (zip + tar.gz)
+- `web/` — Quarto website source (landing page, download page, data explorer)
+- `.github/workflows/pages.yml` — GitHub Pages deployment on push to main
 - `logs/` — API call logs (gitignored)
 
 ## Versioning

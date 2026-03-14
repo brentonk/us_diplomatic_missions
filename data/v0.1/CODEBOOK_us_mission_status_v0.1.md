@@ -1,0 +1,211 @@
+---
+title: "US Diplomatic Mission Status Data"
+subtitle: "Codebook, Version 0.1"
+date: 2025
+geometry: margin=1in
+colorlinks: true
+---
+
+
+# Overview
+
+This dataset records the status of U.S. diplomatic missions abroad, matched to standard state system membership data. It covers all countries recognized by the Correlates of War (COW) and Gleditsch-Ward (GW) state system datasets, from the earliest date of system membership through the end of the most recent available data.
+
+The primary source is the Office of the Historian, U.S. Department of State, *A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776*, available in machine-readable XML at <https://github.com/HistoryAtState/rdcr>. Ambiguities in the primary source are resolved by consulting *Principal Officers & Chiefs of Mission* (<https://github.com/HistoryAtState/pocom>).
+
+The underlying transition events were hand-coded from these sources, then validated against the XML records using a combination of automated extraction and manual reconciliation. For details on the extraction and validation pipeline, see the project repository at <https://github.com/brentonk/us_diplomatic_missions>.
+
+
+# Data products
+
+The data is provided in three temporal resolutions, each matched to three state system definitions, for a total of nine CSV files. All filenames include the version number (currently v0.1).
+
+## State system definitions
+
+- **COW** (Correlates of War): The standard COW state system membership list (2024 version). Files use the suffix `_cow`.
+- **GW** (Gleditsch-Ward): The Gleditsch-Ward state system membership list, excluding microstates. Files use the suffix `_gw`.
+- **GWM** (Gleditsch-Ward with microstates): The Gleditsch-Ward list supplemented with micro and island states. Files use the suffix `_gwm`. GW and GWM share the same coding system (abbreviations, numeric codes, and country names); they differ only in which states are included.
+
+## Distributed files
+
+### Range datasets (one row per country--date range)
+
+- `mission_status_range_cow_v0.1.csv`
+- `mission_status_range_gw_v0.1.csv`
+- `mission_status_range_gwm_v0.1.csv`
+
+### Monthly datasets (one row per country-code--month)
+
+- `mission_status_monthly_cow_v0.1.csv`
+- `mission_status_monthly_gw_v0.1.csv`
+- `mission_status_monthly_gwm_v0.1.csv`
+
+### Yearly datasets (one row per country-code--year)
+
+- `mission_status_yearly_cow_v0.1.csv`
+- `mission_status_yearly_gw_v0.1.csv`
+- `mission_status_yearly_gwm_v0.1.csv`
+
+### Daily datasets (not distributed)
+
+Daily-level datasets (one row per country--day) are not distributed due to their size, but can be generated from the range data. See Section 6 for code to produce daily data from the range files.
+
+
+# Diplomatic status categories
+
+Each observation records the highest level of U.S. diplomatic representation in the recipient country. The categories, ordered from greatest to least, are:
+
+1. **Embassy**: Permanent diplomatic mission headed by an ambassador.
+2. **Ambassador Nonresident**: Nonresident ambassadorial relations --- ambassadors accredited to the country but not resident there.
+3. **Legation**: Permanent diplomatic mission of lower status than an embassy, typically headed by an Envoy Extraordinary and Minister Plenipotentiary. Largely phased out after World War II.
+4. **Envoy Nonresident**: Nonresident envoy relations --- envoys or ministers accredited to the country but not resident there.
+5. **Consulate**: Consular office in the capital city. Only coded if located in the capital.
+6. **Consul Nonresident**: Nonresident consular relations.
+7. **Liaison**: Liaison office or informal diplomatic presence (e.g., "Office of the U.S. Representative," "Diplomatic Agent").
+8. **Interests**: Interests section --- diplomats of one state working under the flag of a second on the territory of a third, used to maintain communication when formal relations are broken.
+9. **None**: No formal diplomatic representation.
+
+## Date coding rules
+
+- When the records specify the date an embassy, legation, or consulate general opened, that date is used.
+- If no specific opening date is provided, the date of presentation of credentials by the first chief of mission is used.
+- For elevations of existing relations (e.g., legation to embassy), the date of formal elevation is used, even if there is a lag before the new ambassador presents credentials.
+- For newly established relations, the date of credential presentation by the first envoy/ambassador is used.
+- When State Department records are ambiguous about exact dates, as much information as possible is recorded: dates with a known year but unknown month or day are mapped to January 1 or the first of the month, respectively.
+
+## Coding conventions
+
+- **Missions** (e.g., to France and Prussia in the 1700s) are coded as legations.
+- **"Office of the U.S. Representative"** (e.g., Marshall Islands) and **"Diplomatic Agent"** (e.g., Morocco) are coded as liaison offices.
+- **Nonresident charges d'affaires** and **nonresident ministers** are coded at the level of the mission they represent: Envoy Nonresident if serving at the envoy level, Ambassador Nonresident if serving at the ambassadorial level.
+- **Consulates** are only coded if located in the capital.
+- **Governments in exile** during WWII: "embassy near the government" is treated as an open embassy.
+
+
+# Column definitions
+
+## Range datasets
+
+The unit of observation is the **country--date range**. Each row represents a period during which a country's diplomatic status was constant.
+
+| Column | Description |
+|--------|-------------|
+| `country_abbrev_cow` / `country_abbrev_gw` | Country abbreviation in the state system (e.g., `AFG`, `HAI`). |
+| `country_code_cow` / `country_code_gw` | Numeric country code in the state system (e.g., `700`, `41`). |
+| `country_name_cow` / `country_name_gw` | Country name in the state system (e.g., `Afghanistan`, `Haiti`). |
+| `country_name_usdos` | Country name in U.S. Department of State records. Empty if no match exists. Rows are split when the USDOS name mapping changes over time. |
+| `date_start` | Start date of the range (YYYY-MM-DD). |
+| `date_end` | End date of the range (YYYY-MM-DD), inclusive. |
+| `us_mission_status` | Diplomatic status during this range. One of the nine status strings listed in Section 3. |
+
+For each country, the date ranges form a proper partition of the state system membership dates: no gaps, no overlaps, and complete coverage. Status carries forward across gaps in system membership (e.g., a country that exits and re-enters the system retains its most recent status at re-entry, if a transition occurred during the gap).
+
+GW and GWM datasets use the `_gw` column suffix and share the same coding system. They differ only in which states are included.
+
+## Monthly datasets
+
+The unit of observation is **country-code--month**. Aggregation is over all days in the month for a given state system code.
+
+| Column | Description |
+|--------|-------------|
+| `country_abbrev_cow` / `country_abbrev_gw` | Country abbreviation. |
+| `country_code_cow` / `country_code_gw` | Numeric country code. |
+| `country_name_cow` / `country_name_gw` | Country name. |
+| `country_name_usdos` | USDOS name(s). If the name changes within the month, all applicable names are concatenated with ` / `. Empty if no match. |
+| `month` | Month in YYYY-MM format. |
+| `us_mission_min` | Least diplomatic status observed on any day in the month. |
+| `us_mission_max` | Greatest diplomatic status observed on any day in the month. |
+| `us_mission_median` | Median diplomatic status across all days in the month. |
+| `us_mission_mode` | Most frequent diplomatic status across all days in the month. |
+
+Status comparisons use the ordering in Section 3 (Embassy is the greatest, None is the least). Ties in the median or mode are broken in favor of the greater status.
+
+## Yearly datasets
+
+The unit of observation is **country-code--year**. Structure is identical to the monthly datasets, with `year` (YYYY format) replacing `month`.
+
+
+# Generating daily data
+
+Daily-level datasets are not distributed due to their size (approximately 6--7 million rows per state system definition). They can be generated from the range datasets by expanding each date range into individual rows.
+
+## Daily dataset columns
+
+| Column | Description |
+|--------|-------------|
+| `country_abbrev_cow` / `country_abbrev_gw` | Country abbreviation. |
+| `country_code_cow` / `country_code_gw` | Numeric country code. |
+| `country_name_cow` / `country_name_gw` | Country name. |
+| `country_name_usdos` | USDOS name. Empty if no match. |
+| `date` | Date in YYYY-MM-DD format. |
+| `us_mission_status` | Diplomatic status on that date. |
+
+## R (tidyverse)
+
+```r
+library(tidyverse)
+
+range_df <- read_csv("mission_status_range_cow_v0.1.csv")
+
+daily_df <- range_df |>
+  mutate(date = map2(date_start, date_end, ~ seq(.x, .y, by = "day"))) |>
+  unnest(date) |>
+  select(-date_start, -date_end)
+```
+
+## Python (pandas)
+
+```python
+import pandas as pd
+
+range_df = pd.read_csv("mission_status_range_cow_v0.1.csv",
+                        parse_dates=["date_start", "date_end"])
+
+daily_rows = []
+for _, row in range_df.iterrows():
+    dates = pd.date_range(row["date_start"], row["date_end"], freq="D")
+    for d in dates:
+        daily_rows.append({**row.drop(["date_start", "date_end"]), "date": d})
+
+daily_df = pd.DataFrame(daily_rows)
+```
+
+Replace `cow` with `gw` or `gwm` for other state system definitions. Daily data files are also available on request from the project maintainers.
+
+
+# State system definitions
+
+The data is matched to two widely used state system membership datasets, each defining which political entities count as sovereign states and when.
+
+## Correlates of War (COW)
+
+The Correlates of War project's state system membership list (2024 version). COW defines system membership beginning in 1816, with most entries starting in the 19th or 20th century. Each state is identified by a three-letter abbreviation (e.g., `AFG`) and a numeric code (e.g., `700`).
+
+Source: Correlates of War Project, "State System Membership List, v2024," <https://correlatesofwar.org/data-sets/state-system-membership/>.
+
+## Gleditsch-Ward (GW)
+
+The Gleditsch-Ward state system membership list, as revised and extended by Gleditsch and Ward (1999). GW uses similar conventions to COW but differs in its criteria for statehood, resulting in different membership dates and country lists. Each state is identified by a two- to five-letter abbreviation and a numeric code.
+
+Source: Kristian Skrede Gleditsch and Michael D. Ward, "Interstate System Membership: A Revised List of the Independent States since 1816," *International Interactions* 25, no. 4 (1999): 393--413.
+
+## Gleditsch-Ward with microstates (GWM)
+
+The GW list supplemented with micro and island states that are not included in the standard GW data. Uses the same coding system as GW.
+
+## USDOS name mapping
+
+State system codes are mapped to U.S. Department of State country names using a hand-maintained mapping file. Some codes have date-bounded entries where the USDOS name changes over time (e.g., COW code `YUG` maps to "Kingdom of Serbia/Yugoslavia" before 1992 and "Serbia" after). When the USDOS name changes within a state system membership interval, the range data is split at the boundary so that each row has a unique `country_name_usdos` value.
+
+
+# Special cases
+
+## China and Taiwan
+
+Under the One-China Policy, the State Department does not treat Taiwan as a separate entity from mainland China. Historical U.S. diplomatic relations with Taiwan are recorded within the State Department's China page. In this dataset, they are coded separately under a distinct USDOS name ("Taiwan") to avoid confusion when merging with state system membership data, as both COW and Gleditsch-Ward list Taiwan as a separate member.
+
+Key coding decisions:
+
+- The establishment of the People's Republic of China (1949-10-01) is coded as the date of the break in relations with China (status changes to None).
+- Taiwan's embassy is coded as beginning on 1949-12-08, its date of system entry in both the COW and Gleditsch-Ward datasets, even though the U.S. embassy in Taipei did not physically open until 1949-12-19. This is because the U.S. embassy in mainland China had been moved repeatedly throughout 1949 to remain near the Nationalist government, and using the system entry date ensures consistency with the treatment of European governments in exile during WWII.
+- The break in relations with Taiwan is coded as 1979-01-01 (U.S. recognition of the PRC).

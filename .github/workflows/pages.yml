@@ -1,0 +1,32 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data/**'
+
+permissions:
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - run: quarto render web
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/_site
+      - id: deployment
+        uses: actions/deploy-pages@v4

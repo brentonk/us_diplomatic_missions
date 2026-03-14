@@ -1,0 +1,36 @@
+---
+title: "US Diplomatic Mission Status Data"
+---
+
+This project provides panel datasets recording the status of U.S. diplomatic missions abroad, matched to standard state system membership data used in international relations research.
+
+## What the data covers
+
+- **Temporal scope**: From the earliest date of state system membership through the most recent available data (2020 for Gleditsch-Ward, 2024 for Correlates of War).
+- **Geographic scope**: All non-U.S. countries recognized by the COW and/or Gleditsch-Ward state systems.
+- **Nine diplomatic status categories**, from Embassy (highest) to None (no formal representation).
+
+## State system definitions
+
+The data is matched to three state system definitions:
+
+- **COW** (Correlates of War, 2024 version)
+- **GW** (Gleditsch-Ward, excluding microstates)
+- **GWM** (Gleditsch-Ward, including microstates)
+
+## Data formats
+
+For each state system, the data is available in three temporal resolutions:
+
+- **Range**: One row per country--date range with constant diplomatic status (most compact)
+- **Monthly**: One row per country--month with min/max/median/mode aggregation
+- **Yearly**: One row per country--year with min/max/median/mode aggregation
+
+## Sources
+
+The primary source is the Office of the Historian, U.S. Department of State, [*A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776*](https://github.com/HistoryAtState/rdcr). Ambiguities are resolved by consulting [*Principal Officers & Chiefs of Mission*](https://github.com/HistoryAtState/pocom).
+
+## Getting started
+
+- [**Download the data**](download.qmd)
+- [**Explore by country**](explorer/index.qmd)

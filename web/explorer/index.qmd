@@ -1,0 +1,169 @@
+---
+title: "Data Explorer"
+---
+
+<div id="controls">
+  <label for="system-select">State system:</label>
+  <select id="system-select">
+    <option value="cow">Correlates of War (COW)</option>
+    <option value="gw">Gleditsch-Ward (GW + microstates)</option>
+  </select>
+  <input type="text" id="search-box" placeholder="Search countries...">
+</div>
+
+<div id="country-list"></div>
+
+<div id="timeline-panel" style="display:none;">
+  <h3 id="timeline-title"></h3>
+  <div id="timeline-container"></div>
+  <div id="timeline-legend"></div>
+</div>
+
+```{=html}
+<script>
+const STATUS_COLORS = {
+  "Embassy": "#1b5e20",
+  "Ambassador Nonresident": "#388e3c",
+  "Legation": "#2196f3",
+  "Envoy Nonresident": "#64b5f6",
+  "Consulate": "#f57c00",
+  "Consul Nonresident": "#ffb74d",
+  "Liaison": "#7b1fa2",
+  "Interests": "#ce93d8",
+  "None": "#bdbdbd"
+};
+
+let data = null;
+let currentSystem = "cow";
+
+async function loadData() {
+  const resp = await fetch("data.json");
+  data = await resp.json();
+  renderCountryList();
+}
+
+function renderCountryList() {
+  const sys = data[currentSystem];
+  if (!sys) return;
+  const search = document.getElementById("search-box").value.toLowerCase();
+  const entries = Object.entries(sys)
+    .map(([abbrev, info]) => ({abbrev, ...info}))
+    .filter(e => !search || e.name.toLowerCase().includes(search) || e.abbrev.toLowerCase().includes(search))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const container = document.getElementById("country-list");
+  const table = document.createElement("table");
+  table.className = "country-table";
+  const thead = document.createElement("thead");
+  thead.innerHTML = "<tr><th>Code</th><th>Name</th><th>#</th><th>Numeric</th></tr>";
+  table.appendChild(thead);
+  const tbody = document.createElement("tbody");
+  for (const e of entries) {
+    const tr = document.createElement("tr");
+    tr.className = "country-row";
+    tr.innerHTML = `<td>${e.abbrev}</td><td>${e.name}</td><td>${e.code}</td><td>${e.ranges.length}</td>`;
+    tr.addEventListener("click", () => showTimeline(e.abbrev));
+    tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);
+  container.innerHTML = "";
+  container.appendChild(table);
+}
+
+function showTimeline(abbrev) {
+  const sys = data[currentSystem];
+  const info = sys[abbrev];
+  if (!info) return;
+
+  document.getElementById("timeline-panel").style.display = "block";
+  document.getElementById("timeline-title").textContent =
+    `${info.name} (${abbrev}, ${currentSystem.toUpperCase()} ${info.code})`;
+
+  const ranges = info.ranges;
+  const minDate = new Date(ranges[0].start);
+  const maxDate = new Date(ranges[ranges.length - 1].end);
+  const totalMs = maxDate - minDate;
+
+  const container = document.getElementById("timeline-container");
+  container.innerHTML = "";
+
+  const bar = document.createElement("div");
+  bar.className = "timeline-bar";
+
+  for (const r of ranges) {
+    const start = new Date(r.start);
+    const end = new Date(r.end);
+    const leftPct = ((start - minDate) / totalMs) * 100;
+    const widthPct = ((end - start) / totalMs) * 100;
+
+    const seg = document.createElement("div");
+    seg.className = "timeline-segment";
+    seg.style.left = leftPct + "%";
+    seg.style.width = Math.max(widthPct, 0.15) + "%";
+    seg.style.backgroundColor = STATUS_COLORS[r.status] || "#999";
+
+    const startStr = r.start;
+    const endStr = r.end;
+    const usdos = r.usdos ? ` (${r.usdos})` : "";
+    seg.title = `${r.status}: ${startStr} to ${endStr}${usdos}`;
+    bar.appendChild(seg);
+  }
+  container.appendChild(bar);
+
+  // Year labels
+  const labels = document.createElement("div");
+  labels.className = "timeline-labels";
+  const startYear = minDate.getFullYear();
+  const endYear = maxDate.getFullYear();
+  const step = Math.max(1, Math.round((endYear - startYear) / 10));
+  for (let y = startYear; y <= endYear; y += step) {
+    const d = new Date(y, 0, 1);
+    const pct = ((d - minDate) / totalMs) * 100;
+    if (pct >= 0 && pct <= 100) {
+      const lbl = document.createElement("span");
+      lbl.className = "timeline-label";
+      lbl.style.left = pct + "%";
+      lbl.textContent = y;
+      labels.appendChild(lbl);
+    }
+  }
+  container.appendChild(labels);
+
+  // Range detail table
+  const detailTable = document.createElement("table");
+  detailTable.className = "range-detail-table";
+  detailTable.innerHTML = "<thead><tr><th>Start</th><th>End</th><th>Status</th><th>USDOS Name</th></tr></thead>";
+  const dtbody = document.createElement("tbody");
+  for (const r of ranges) {
+    const tr = document.createElement("tr");
+    const color = STATUS_COLORS[r.status] || "#999";
+    tr.innerHTML = `<td>${r.start}</td><td>${r.end}</td><td><span class="status-dot" style="background:${color}"></span> ${r.status}</td><td>${r.usdos || ""}</td>`;
+    dtbody.appendChild(tr);
+  }
+  detailTable.appendChild(dtbody);
+  container.appendChild(detailTable);
+
+  // Legend
+  const legend = document.getElementById("timeline-legend");
+  const usedStatuses = [...new Set(ranges.map(r => r.status))];
+  legend.innerHTML = usedStatuses.map(s =>
+    `<span class="legend-item"><span class="legend-color" style="background:${STATUS_COLORS[s]}"></span>${s}</span>`
+  ).join(" ");
+
+  // Scroll to timeline
+  document.getElementById("timeline-panel").scrollIntoView({behavior: "smooth"});
+}
+
+document.getElementById("system-select").addEventListener("change", (e) => {
+  currentSystem = e.target.value;
+  document.getElementById("timeline-panel").style.display = "none";
+  renderCountryList();
+});
+
+document.getElementById("search-box").addEventListener("input", () => {
+  renderCountryList();
+});
+
+loadData();
+</script>
+```

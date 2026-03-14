@@ -18,8 +18,7 @@ website:
         href: explorer/index.qmd
   page-footer:
     center: |
-      Data compiled from the [Office of the Historian](https://history.state.gov/),
-      U.S. Department of State.
+      Maintained by [Brenton Kenkel](https://bkenkel.com), Vanderbilt University.
 
 format:
   html:

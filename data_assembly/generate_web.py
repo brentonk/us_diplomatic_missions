@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 REPO_URL = "https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main"
+RELEASE_URL = "https://github.com/brentonk/us_diplomatic_missions/releases"
 WEB_DIR = Path(__file__).resolve().parents[1] / "web"
 
 
@@ -18,8 +19,10 @@ def _generate_download_page(data_dir: Path, version: str) -> None:
     yearly_files = sorted(data_dir.glob(f"mission_status_yearly_*_v{version}.csv"))
     codebook_md = data_dir / f"CODEBOOK_us_mission_status_v{version}.md"
     codebook_pdf = data_dir / f"CODEBOOK_us_mission_status_v{version}.pdf"
-    zip_file = data_dir / f"us_mission_status_v{version}.zip"
-    tar_file = data_dir / f"us_mission_status_v{version}.tar.gz"
+
+    release_download = f"{RELEASE_URL}/download/v{version}"
+    zip_name = f"us_mission_status_v{version}.zip"
+    tar_name = f"us_mission_status_v{version}.tar.gz"
 
     lines = [
         "---",
@@ -30,20 +33,19 @@ def _generate_download_page(data_dir: Path, version: str) -> None:
         "",
     ]
 
-    # Archives
-    if zip_file.exists() and tar_file.exists():
-        lines.extend([
-            "::: {.download-section}",
-            "### Complete Archives",
-            "",
-            "Download all data files and codebook in a single archive.",
-            "",
-            f"- [`{zip_file.name}`]({base}/{zip_file.name}) (ZIP)",
-            f"- [`{tar_file.name}`]({base}/{tar_file.name}) (TAR.GZ)",
-            "",
-            ":::",
-            "",
-        ])
+    # Archives (via GitHub Releases)
+    lines.extend([
+        "::: {.download-section}",
+        "### Complete Archives",
+        "",
+        "Download all data files and codebook in a single archive.",
+        "",
+        f"- [`{zip_name}`]({release_download}/{zip_name}) (ZIP)",
+        f"- [`{tar_name}`]({release_download}/{tar_name}) (TAR.GZ)",
+        "",
+        ":::",
+        "",
+    ])
 
     # Codebook
     lines.extend([
@@ -100,7 +102,7 @@ def _generate_download_page(data_dir: Path, version: str) -> None:
     lines.extend([
         "## Previous Releases",
         "",
-        "No previous releases.",
+        f"See [all releases]({RELEASE_URL}).",
         "",
     ])
 

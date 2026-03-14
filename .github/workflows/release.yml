@@ -1,0 +1,34 @@
+name: Create release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create archives
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          DATA_DIR="data/v${VERSION}"
+          cd "$DATA_DIR"
+          zip "us_mission_status_v${VERSION}.zip" mission_status_*.csv CODEBOOK_*
+          tar czf "us_mission_status_v${VERSION}.tar.gz" mission_status_*.csv CODEBOOK_*
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          DATA_DIR="data/v${VERSION}"
+          gh release create "$GITHUB_REF_NAME" \
+            "${DATA_DIR}/us_mission_status_v${VERSION}.zip" \
+            "${DATA_DIR}/us_mission_status_v${VERSION}.tar.gz" \
+            --title "v${VERSION}" \
+            --generate-notes

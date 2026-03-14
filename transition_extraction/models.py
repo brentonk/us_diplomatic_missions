@@ -49,7 +49,7 @@ class NumberedText(BaseModel):
     @classmethod
     def _coerce_offset_keys(cls, v: dict) -> dict[int, int]:
         """JSON round-trips dict keys as strings; coerce back to int."""
-        return {int(k): v for k, v in v.items()}
+        return {int(k): val for k, val in v.items()}
 
 
 class WorkUnit(BaseModel):

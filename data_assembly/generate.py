@@ -1,7 +1,5 @@
 """Orchestrate generation of all data product files."""
 
-import tarfile
-import zipfile
 from pathlib import Path
 
 from .aggregator import build_monthly_dataset, build_yearly_dataset
@@ -11,34 +9,13 @@ from .range_builder import build_range_dataset, write_range_csv
 from .state_codes import StateCodeResolver
 
 
-def _create_archives(output_dir: Path, version: str) -> None:
-    """Create ZIP and tar.gz archives of all distributable files."""
-    # Collect distributable files (CSVs + codebook)
-    csv_files = sorted(output_dir.glob(f"mission_status_*_v{version}.csv"))
-    codebook_files = sorted(output_dir.glob(f"CODEBOOK_*_v{version}.*"))
-    all_files = csv_files + codebook_files
-
-    zip_path = output_dir / f"us_mission_status_v{version}.zip"
-    tar_path = output_dir / f"us_mission_status_v{version}.tar.gz"
-
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for f in all_files:
-            zf.write(f, f.name)
-    print(f"  Created {zip_path.name} ({len(all_files)} files)")
-
-    with tarfile.open(tar_path, "w:gz") as tf:
-        for f in all_files:
-            tf.add(f, arcname=f.name)
-    print(f"  Created {tar_path.name} ({len(all_files)} files)")
-
-
 def generate_all_datasets(
     resolver: StateCodeResolver,
     transitions_csv: Path,
     output_dir: Path,
     version: str,
 ) -> None:
-    """Generate all data product files: 9 CSVs, codebook, and archives."""
+    """Generate all data product files: 9 CSVs and codebook."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for system in ("cow", "gw", "gwm"):
@@ -73,7 +50,3 @@ def generate_all_datasets(
     md_path, pdf_path = build_codebook(version, output_dir)
     print(f"  {md_path.name} ({md_path.stat().st_size:,} bytes)")
     print(f"  {pdf_path.name} ({pdf_path.stat().st_size:,} bytes)")
-    print()
-
-    print("Creating archives...")
-    _create_archives(output_dir, version)

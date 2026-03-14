@@ -19,11 +19,6 @@ def normalize_country_name(name: str) -> str:
     return name
 
 
-def name_to_slug(name: str) -> str:
-    """Convert a country name to a filename slug (hyphens for spaces)."""
-    normalized = normalize_country_name(name)
-    return re.sub(r"\s+", "-", normalized)
-
 
 def number_lines(text: str, source_file: str = "", repo_commit: str = "") -> tuple[str, list[str], dict[int, int]]:
     """Prepend [N] to each line. Return (numbered_text, original_lines, line_to_byte_offset).

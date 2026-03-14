@@ -48,11 +48,10 @@ quarto preview web                               # Preview website locally
   - `range_builder.py` — Builds interval-level range datasets (mission_status_range_*.csv)
   - `daily_builder.py` — Expands range data to daily rows (in-memory intermediate for aggregation)
   - `aggregator.py` — Monthly and yearly aggregation from daily data
-  - `generate.py` — Orchestrator: generates all data product files (CSVs, codebook, archives)
+  - `generate.py` — Orchestrator: generates all data product files (CSVs, codebook)
   - `codebook_builder.py` — Assembles codebook Markdown from fragments and renders PDF via pandoc
   - `codebook/` — Codebook source fragments (7 Markdown files assembled in order)
   - `generate_web.py` — Generates Quarto website source files (download page, explorer data)
-- `scripts/` — One-time utility scripts (currently empty; historical scripts removed after completing their purpose)
 - `input/` — Config, prompts, CSV data, aliases
   - `extraction_config.yaml` — Model strings, API params, thresholds, paths
   - `country_aliases.yaml` — CSV name → repo stem overrides (grows as edge cases surface)
@@ -63,13 +62,13 @@ quarto preview web                               # Preview website locally
   - `prompt_extract.txt` — System prompt for Stage 2
   - `prompt_reconcile.txt` — System prompt for Stage 4
   - `2024-01-16_transitions.csv` — Hand-coded transitions (590 rows)
-- `instructions/extraction_pipeline.md` — Full pipeline specification
-- `instructions/data_product.md` — Data product specification (datasets, codebook, website)
+- `instructions/` — Pipeline and data product specifications (gitignored, local reference only)
 - `rdcr/`, `pocom/` — Git submodules (State Department sources)
 - `output/` — All pipeline outputs (gitignored)
-- `data/` — Versioned data products (committed, organized as `data/v{VERSION}/`): 9 CSVs, codebook (md + pdf), archives (zip + tar.gz)
+- `data/` — Versioned data products (committed, organized as `data/v{VERSION}/`): 9 CSVs, codebook (md + pdf)
 - `web/` — Quarto website source (landing page, download page, data explorer)
 - `.github/workflows/pages.yml` — GitHub Pages deployment on push to main
+- `.github/workflows/release.yml` — Creates GitHub Release with data archives on version tag push
 - `logs/` — API call logs (gitignored)
 
 ## Versioning
@@ -77,7 +76,7 @@ quarto preview web                               # Preview website locally
 The canonical version is in `pyproject.toml`. The current pre-release version is 0.1.
 
 - **Version bumps**: After the initial 0.1 release, any code change that produces different output data requires a version bump. Minor changes (e.g., typo fixes in mapping) get a minor bump; major changes (e.g., new state system data versions) get a major bump.
-- **Release tags**: Each release should be tagged in GitHub (e.g., `v0.1`). Use `git tag` + `gh release create`.
+- **Release tags**: Each release should be tagged in GitHub (e.g., `v0.1`). Push a tag to trigger the release workflow, which creates a GitHub Release with data archives attached.
 - **Data preservation**: This project is intended for scientific research. Data from prior releases must not be deleted or overwritten. Output datasets should be versioned alongside the code so that any published result can be reproduced from a tagged release.
 
 ## Key conventions

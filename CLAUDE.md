@@ -1,4 +1,4 @@
-# US Diplomacy Extraction Pipeline
+# US Diplomatic Missions Extraction Pipeline
 
 ## Pre-commit checklist
 

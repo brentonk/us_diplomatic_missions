@@ -516,7 +516,7 @@ wheels = [
 ]
 
 [[package]]
-name = "us-diplomacy"
+name = "us-diplomatic-missions"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

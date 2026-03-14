@@ -1,0 +1,726 @@
+country_abbrev_gw,country_code_gw,country_name_gw,country_name_usdos,date_start,date_end,us_mission_status
+AAB,58,Antigua & Barbuda,Antigua and Barbuda,1981-11-01,1994-06-29,Embassy
+AAB,58,Antigua & Barbuda,Antigua and Barbuda,1994-06-30,2020-12-31,Ambassador Nonresident
+ABK,396,Abkhazia,,2008-08-26,2020-12-31,None
+AFG,700,Afghanistan,Afghanistan,1816-01-01,1888-12-30,None
+AFG,700,Afghanistan,Afghanistan,1919-05-01,1935-05-03,None
+AFG,700,Afghanistan,Afghanistan,1935-05-04,1942-06-05,Envoy Nonresident
+AFG,700,Afghanistan,Afghanistan,1942-06-06,1948-06-04,Legation
+AFG,700,Afghanistan,Afghanistan,1948-06-05,1989-01-29,Embassy
+AFG,700,Afghanistan,Afghanistan,1989-01-30,2001-12-16,None
+AFG,700,Afghanistan,Afghanistan,2001-12-17,2002-01-16,Liaison
+AFG,700,Afghanistan,Afghanistan,2002-01-17,2020-12-31,Embassy
+ALB,339,Albania,Albania,1913-01-01,1922-12-03,None
+ALB,339,Albania,Albania,1922-12-04,1939-09-15,Legation
+ALB,339,Albania,Albania,1939-09-16,1991-09-30,None
+ALB,339,Albania,Albania,1991-10-01,2020-12-31,Embassy
+ALG,615,Algeria,Algeria,1816-01-01,1829-12-31,Consulate
+ALG,615,Algeria,Algeria,1830-01-01,1830-07-05,None
+ALG,615,Algeria,Algeria,1962-07-05,1962-09-28,Consulate
+ALG,615,Algeria,Algeria,1962-09-29,1967-06-05,Embassy
+ALG,615,Algeria,Algeria,1967-06-06,1974-11-11,Interests
+ALG,615,Algeria,Algeria,1974-11-12,2020-12-31,Embassy
+AND,232,Andorra,Andorra,1816-01-01,1995-02-20,None
+AND,232,Andorra,Andorra,1995-02-21,1998-10-29,Consul Nonresident
+AND,232,Andorra,Andorra,1998-10-30,2020-12-31,Ambassador Nonresident
+ANG,540,Angola,Angola,1975-11-11,1992-01-09,None
+ANG,540,Angola,Angola,1992-01-10,1994-07-13,Liaison
+ANG,540,Angola,Angola,1994-07-14,2020-12-31,Embassy
+ARG,160,Argentina,Argentina,1816-07-09,1823-12-26,None
+ARG,160,Argentina,Argentina,1823-12-27,1914-09-30,Legation
+ARG,160,Argentina,Argentina,1914-10-01,1944-06-26,Embassy
+ARG,160,Argentina,Argentina,1944-06-27,1945-04-18,Liaison
+ARG,160,Argentina,Argentina,1945-04-19,2020-12-31,Embassy
+ARM,371,Armenia,Armenia,1991-12-21,1992-02-02,None
+ARM,371,Armenia,Armenia,1992-02-03,2020-12-31,Embassy
+AUH,300,Austria-Hungary,Austrian Empire,1816-01-01,1829-10-09,None
+AUH,300,Austria-Hungary,Austrian Empire,1829-10-10,1838-11-06,Consulate
+AUH,300,Austria-Hungary,Austrian Empire,1838-11-07,1902-06-25,Legation
+AUH,300,Austria-Hungary,Austrian Empire,1902-06-26,1917-04-07,Embassy
+AUH,300,Austria-Hungary,Austrian Empire,1917-04-08,1918-11-13,None
+AUL,900,Australia,Australia,1901-01-01,1940-07-16,None
+AUL,900,Australia,Australia,1940-07-17,1946-07-08,Legation
+AUL,900,Australia,Australia,1946-07-09,2020-12-31,Embassy
+AUS,305,Austria,Austria,1918-11-14,1921-11-25,None
+AUS,305,Austria,Austria,1921-11-26,1938-04-29,Legation
+AUS,305,Austria,Austria,1938-04-30,1941-07-08,Consulate
+AUS,305,Austria,Austria,1941-07-09,1946-01-20,None
+AUS,305,Austria,Austria,1946-01-21,1946-09-06,Liaison
+AUS,305,Austria,Austria,1946-09-07,1951-11-27,Legation
+AUS,305,Austria,Austria,1951-11-28,2020-12-31,Embassy
+AZE,373,Azerbaijan,Azerbaijan,1991-12-21,1992-03-15,None
+AZE,373,Azerbaijan,Azerbaijan,1992-03-16,2020-12-31,Embassy
+BAD,267,Baden,Baden,1816-01-01,1832-07-12,None
+BAD,267,Baden,Baden,1832-07-13,1868-07-18,Consulate
+BAD,267,Baden,Baden,1868-07-19,1871-01-17,Envoy Nonresident
+BAH,692,Bahrain,Bahrain,1971-08-15,1971-09-20,None
+BAH,692,Bahrain,Bahrain,1971-09-21,2020-12-31,Embassy
+BAR,53,Barbados,Barbados,1966-11-30,2020-12-31,Embassy
+BAV,245,Bavaria,Bavaria,1816-01-01,1833-07-03,None
+BAV,245,Bavaria,Bavaria,1833-07-04,1868-05-25,Consulate
+BAV,245,Bavaria,Bavaria,1868-05-26,1871-01-17,Envoy Nonresident
+BEL,211,Belgium,Belgium,1830-10-04,1832-09-24,None
+BEL,211,Belgium,Belgium,1832-09-25,1919-10-02,Legation
+BEL,211,Belgium,Belgium,1919-10-03,1940-07-14,Embassy
+BEL,211,Belgium,Belgium,1940-07-15,1940-10-31,None
+BEL,211,Belgium,Belgium,1940-11-01,2020-12-31,Embassy
+BEN,434,Benin,Benin (Dahomey),1960-08-01,1961-02-14,Ambassador Nonresident
+BEN,434,Benin,Benin (Dahomey),1961-02-15,2020-12-31,Embassy
+BFO,439,Burkina Faso (Upper Volta),Burkina Faso (Upper Volta),1960-08-05,1960-12-30,Ambassador Nonresident
+BFO,439,Burkina Faso (Upper Volta),Burkina Faso (Upper Volta),1960-12-31,2020-12-31,Embassy
+BHM,31,Bahamas,"Bahamas, The",1973-07-10,2020-12-31,Embassy
+BHU,760,Bhutan,,1949-01-01,2020-12-31,None
+BLR,370,Belarus (Byelorussia),Belarus,1991-08-25,1992-01-30,None
+BLR,370,Belarus (Byelorussia),Belarus,1992-01-31,2020-12-31,Embassy
+BLZ,80,Belize,Belize,1981-09-21,1981-10-28,Consulate
+BLZ,80,Belize,Belize,1981-10-29,2020-12-31,Embassy
+BNG,771,Bangladesh,Bangladesh,1971-12-16,1972-05-17,Consulate
+BNG,771,Bangladesh,Bangladesh,1972-05-18,2020-12-31,Embassy
+BOL,145,Bolivia,Bolivia,1825-08-06,1849-01-02,None
+BOL,145,Bolivia,Bolivia,1849-01-03,1942-01-03,Legation
+BOL,145,Bolivia,Bolivia,1942-01-04,1943-12-19,Embassy
+BOL,145,Bolivia,Bolivia,1943-12-20,1944-11-15,None
+BOL,145,Bolivia,Bolivia,1944-11-16,1980-06-30,Embassy
+BOL,145,Bolivia,Bolivia,1980-07-01,1980-07-16,Liaison
+BOL,145,Bolivia,Bolivia,1980-07-17,1981-12-09,None
+BOL,145,Bolivia,Bolivia,1981-12-10,2020-12-31,Embassy
+BOS,346,Bosnia-Herzegovina,Bosnia and Herzegovina,1992-04-27,1993-06-22,None
+BOS,346,Bosnia-Herzegovina,Bosnia and Herzegovina,1993-06-23,1994-07-03,Ambassador Nonresident
+BOS,346,Bosnia-Herzegovina,Bosnia and Herzegovina,1994-07-04,2020-12-31,Embassy
+BOT,571,Botswana,Botswana,1966-09-30,2020-12-31,Embassy
+BRA,140,Brazil,Brazil,1822-09-07,1825-10-28,None
+BRA,140,Brazil,Brazil,1825-10-29,1905-01-12,Legation
+BRA,140,Brazil,Brazil,1905-01-13,2020-12-31,Embassy
+BRU,835,Brunei,Brunei,1984-01-01,2020-12-31,Embassy
+BUI,516,Burundi,Burundi,1962-07-01,1962-12-14,Embassy
+BUI,516,Burundi,Burundi,1962-12-15,1963-09-15,Legation
+BUI,516,Burundi,Burundi,1963-09-16,2020-12-31,Embassy
+BUL,355,Bulgaria,Bulgaria,1878-03-03,1903-09-18,None
+BUL,355,Bulgaria,Bulgaria,1903-09-19,1912-01-31,Liaison
+BUL,355,Bulgaria,Bulgaria,1912-02-01,1919-03-17,Envoy Nonresident
+BUL,355,Bulgaria,Bulgaria,1919-03-18,1941-12-12,Legation
+BUL,355,Bulgaria,Bulgaria,1941-12-13,1947-09-26,None
+BUL,355,Bulgaria,Bulgaria,1947-09-27,1950-02-19,Legation
+BUL,355,Bulgaria,Bulgaria,1950-02-20,1960-03-13,None
+BUL,355,Bulgaria,Bulgaria,1960-03-14,1966-11-27,Legation
+BUL,355,Bulgaria,Bulgaria,1966-11-28,2020-12-31,Embassy
+CAM,811,Cambodia (Kampuchea),Cambodia,1953-11-09,1965-05-02,Embassy
+CAM,811,Cambodia (Kampuchea),Cambodia,1965-05-03,1969-08-15,None
+CAM,811,Cambodia (Kampuchea),Cambodia,1969-08-16,1975-04-11,Embassy
+CAM,811,Cambodia (Kampuchea),Cambodia,1975-04-12,1991-11-10,None
+CAM,811,Cambodia (Kampuchea),Cambodia,1991-11-11,1994-05-16,Liaison
+CAM,811,Cambodia (Kampuchea),Cambodia,1994-05-17,2020-12-31,Embassy
+CAN,20,Canada,Canada,1867-07-01,1927-05-31,None
+CAN,20,Canada,Canada,1927-06-01,1943-11-18,Legation
+CAN,20,Canada,Canada,1943-11-19,2020-12-31,Embassy
+CAO,471,Cameroon,Cameroon,1960-01-01,2020-12-31,Embassy
+CAP,402,Cape Verde,Cabo Verde,1975-07-05,1976-11-17,None
+CAP,402,Cape Verde,Cabo Verde,1976-11-18,1978-01-27,Ambassador Nonresident
+CAP,402,Cape Verde,Cabo Verde,1978-01-28,2020-12-31,Embassy
+CDI,437,Cote DIvoire,Cote d’Ivoire (Ivory Coast),1960-08-07,2020-12-31,Embassy
+CEN,482,Central African Republic,Central African Republic,1960-08-13,1961-02-09,Ambassador Nonresident
+CEN,482,Central African Republic,Central African Republic,1961-02-10,1997-03-30,Embassy
+CEN,482,Central African Republic,Central African Republic,1997-03-31,1999-01-31,None
+CEN,482,Central African Republic,Central African Republic,1999-02-01,2020-12-31,Embassy
+CHA,483,Chad,Chad,1960-08-11,1961-01-31,Ambassador Nonresident
+CHA,483,Chad,Chad,1961-02-01,1980-03-23,Embassy
+CHA,483,Chad,Chad,1980-03-24,1982-01-14,None
+CHA,483,Chad,Chad,1982-01-15,2020-12-31,Embassy
+CHL,155,Chile,Chile,1818-04-01,1824-04-22,None
+CHL,155,Chile,Chile,1824-04-23,1914-09-30,Legation
+CHL,155,Chile,Chile,1914-10-01,2020-12-31,Embassy
+CHN,710,China,China,1816-01-01,1844-06-15,None
+CHN,710,China,China,1844-06-16,1912-02-11,Legation
+CHN,710,China,China,1912-02-12,1913-05-01,None
+CHN,710,China,China,1913-05-02,1924-12-08,Legation
+CHN,710,China,China,1924-12-09,1928-07-24,None
+CHN,710,China,China,1928-07-25,1935-06-17,Legation
+CHN,710,China,China,1935-06-18,1949-09-30,Embassy
+CHN,710,China,China,1949-10-01,1973-04-30,None
+CHN,710,China,China,1973-05-01,1979-02-28,Liaison
+CHN,710,China,China,1979-03-01,2020-12-31,Embassy
+COL,100,Colombia,Colombia,1830-09-23,1939-02-14,Legation
+COL,100,Colombia,Colombia,1939-02-15,2020-12-31,Embassy
+COM,581,Comoros,Comoros,1975-07-06,1977-08-14,None
+COM,581,Comoros,Comoros,1977-08-15,1985-08-25,Ambassador Nonresident
+COM,581,Comoros,Comoros,1985-08-26,1993-09-29,Embassy
+COM,581,Comoros,Comoros,1993-09-30,2020-12-31,Ambassador Nonresident
+CON,484,Congo,Republic of the Congo,1960-08-15,1965-08-14,Embassy
+CON,484,Congo,Republic of the Congo,1965-08-15,1977-10-29,None
+CON,484,Congo,Republic of the Congo,1977-10-30,2020-12-31,Embassy
+COS,94,Costa Rica,Costa Rica,1840-01-01,1851-12-31,None
+COS,94,Costa Rica,Costa Rica,1852-01-01,1858-09-17,Consulate
+COS,94,Costa Rica,Costa Rica,1858-09-18,1898-01-14,Envoy Nonresident
+COS,94,Costa Rica,Costa Rica,1898-01-15,1918-12-04,Legation
+COS,94,Costa Rica,Costa Rica,1918-12-05,1920-10-14,None
+COS,94,Costa Rica,Costa Rica,1920-10-15,1943-05-19,Legation
+COS,94,Costa Rica,Costa Rica,1943-05-20,2020-12-31,Embassy
+CRO,344,Croatia,Croatia,1992-04-27,1992-08-24,None
+CRO,344,Croatia,Croatia,1992-08-25,2020-12-31,Embassy
+CUB,40,Cuba,Cuba,1902-05-20,1902-05-26,None
+CUB,40,Cuba,Cuba,1902-05-27,1923-02-09,Legation
+CUB,40,Cuba,Cuba,1923-02-10,1961-01-02,Embassy
+CUB,40,Cuba,Cuba,1961-01-03,1977-08-31,None
+CUB,40,Cuba,Cuba,1977-09-01,2015-07-19,Interests
+CUB,40,Cuba,Cuba,2015-07-20,2020-12-31,Embassy
+CYP,352,Cyprus,Cyprus,1960-08-16,2020-12-31,Embassy
+CZE,315,Czechoslovakia,Czechoslovakia,1918-11-11,1919-06-10,None
+CZE,315,Czechoslovakia,Czechoslovakia,1919-06-11,1939-03-20,Legation
+CZE,315,Czechoslovakia,Czechoslovakia,1939-03-21,1941-09-03,None
+CZE,315,Czechoslovakia,Czechoslovakia,1941-09-04,1943-06-03,Legation
+CZE,315,Czechoslovakia,Czechoslovakia,1943-06-04,1992-12-31,Embassy
+CZR,316,Czech Republic,Czechia,1993-01-01,2020-12-31,Embassy
+DEN,390,Denmark,Denmark,1816-01-01,1827-09-19,Consulate
+DEN,390,Denmark,Denmark,1827-09-20,1941-12-19,Legation
+DEN,390,Denmark,Denmark,1941-12-20,1945-06-15,None
+DEN,390,Denmark,Denmark,1945-06-16,1947-03-17,Legation
+DEN,390,Denmark,Denmark,1947-03-18,2020-12-31,Embassy
+DJI,522,Djibouti,Djibouti,1977-06-27,2020-12-31,Embassy
+DMA,54,Dominica,Dominica,1978-11-03,1979-07-17,None
+DMA,54,Dominica,Dominica,1979-07-18,2020-12-31,Ambassador Nonresident
+DOM,42,Dominican Republic,Dominican Republic,1844-02-27,1884-03-25,None
+DOM,42,Dominican Republic,Dominican Republic,1884-03-26,1904-07-22,Envoy Nonresident
+DOM,42,Dominican Republic,Dominican Republic,1904-07-23,1943-03-22,Legation
+DOM,42,Dominican Republic,Dominican Republic,1943-03-23,1960-08-25,Embassy
+DOM,42,Dominican Republic,Dominican Republic,1960-08-26,1962-01-05,None
+DOM,42,Dominican Republic,Dominican Republic,1962-01-06,1963-09-24,Embassy
+DOM,42,Dominican Republic,Dominican Republic,1963-09-25,1964-03-22,None
+DOM,42,Dominican Republic,Dominican Republic,1964-03-23,2020-12-31,Embassy
+DRC,490,"Congo, Democratic Republic of (Zaire)",Democratic Republic of the Congo,1960-06-30,2020-12-31,Embassy
+DRV,816,"Vietnam, Democratic Republic of",,1954-05-01,1975-04-28,None
+DRV,816,"Vietnam, Democratic Republic of",,1975-04-29,1975-04-29,None
+DRV,816,"Vietnam, Democratic Republic of",Vietnam,1975-04-30,1995-01-27,None
+DRV,816,"Vietnam, Democratic Republic of",Vietnam,1995-01-28,1995-08-05,Liaison
+DRV,816,"Vietnam, Democratic Republic of",Vietnam,1995-08-06,2020-12-31,Embassy
+ECU,130,Ecuador,Ecuador,1830-05-13,1848-08-11,Consulate
+ECU,130,Ecuador,Ecuador,1848-08-12,1942-03-04,Legation
+ECU,130,Ecuador,Ecuador,1942-03-05,2020-12-31,Embassy
+EGY,651,Egypt,Egypt,1827-01-01,1849-03-16,None
+EGY,651,Egypt,Egypt,1849-03-17,1855-12-31,Consulate
+EGY,651,Egypt,Egypt,1922-02-28,1922-06-23,Consulate
+EGY,651,Egypt,Egypt,1922-06-24,1946-10-09,Legation
+EGY,651,Egypt,Egypt,1946-10-10,1967-06-05,Embassy
+EGY,651,Egypt,Egypt,1967-06-06,1967-06-06,None
+EGY,651,Egypt,Egypt,1967-06-07,1974-02-27,Interests
+EGY,651,Egypt,Egypt,1974-02-28,2020-12-31,Embassy
+EQG,411,Equatorial Guinea,Equatorial Guinea,1968-10-12,1968-11-20,None
+EQG,411,Equatorial Guinea,Equatorial Guinea,1968-11-21,1969-07-31,Ambassador Nonresident
+EQG,411,Equatorial Guinea,Equatorial Guinea,1969-08-01,1976-03-13,Embassy
+EQG,411,Equatorial Guinea,Equatorial Guinea,1976-03-14,1979-12-18,None
+EQG,411,Equatorial Guinea,Equatorial Guinea,1979-12-19,1981-06-10,Ambassador Nonresident
+EQG,411,Equatorial Guinea,Equatorial Guinea,1981-06-11,1995-10-30,Embassy
+EQG,411,Equatorial Guinea,Equatorial Guinea,1995-10-31,2006-11-22,Ambassador Nonresident
+EQG,411,Equatorial Guinea,Equatorial Guinea,2006-11-23,2020-12-31,Embassy
+ERI,531,Eritrea,Eritrea,1993-05-24,1993-06-10,Consulate
+ERI,531,Eritrea,Eritrea,1993-06-11,2020-12-31,Embassy
+EST,366,Estonia,Estonia,1918-11-11,1922-07-27,None
+EST,366,Estonia,Estonia,1922-07-28,1930-06-29,Envoy Nonresident
+EST,366,Estonia,Estonia,1930-06-30,1940-06-01,Legation
+EST,366,Estonia,Estonia,1991-09-06,1991-10-01,None
+EST,366,Estonia,Estonia,1991-10-02,2020-12-31,Embassy
+ETH,530,Ethiopia,Ethiopia,1855-02-11,1909-07-05,None
+ETH,530,Ethiopia,Ethiopia,1909-07-06,1937-03-30,Legation
+ETH,530,Ethiopia,Ethiopia,1937-03-31,1943-08-30,None
+ETH,530,Ethiopia,Ethiopia,1943-08-31,1949-06-27,Legation
+ETH,530,Ethiopia,Ethiopia,1949-06-28,2020-12-31,Embassy
+ETM,860,East Timor,Timor-Leste,2002-05-20,2020-12-31,Embassy
+FIN,375,Finland,Finland,1917-12-06,1919-05-26,None
+FIN,375,Finland,Finland,1919-05-27,1920-03-18,Envoy Nonresident
+FIN,375,Finland,Finland,1920-03-19,1944-06-29,Legation
+FIN,375,Finland,Finland,1944-06-30,1945-01-15,None
+FIN,375,Finland,Finland,1945-01-16,1945-08-31,Liaison
+FIN,375,Finland,Finland,1945-09-01,1952-11-14,Legation
+FIN,375,Finland,Finland,1952-11-15,2020-12-31,Embassy
+FJI,950,Fiji,Fiji,1970-10-10,1971-10-31,Consul Nonresident
+FJI,950,Fiji,Fiji,1971-11-01,2020-12-31,Embassy
+FRN,220,France,France,1816-01-01,1893-04-07,Legation
+FRN,220,France,France,1893-04-08,1942-11-07,Embassy
+FRN,220,France,France,1942-11-08,1944-10-22,None
+FRN,220,France,France,1944-10-23,2020-12-31,Embassy
+FSM,987,Federated States of Micronesia,Micronesia,1986-11-03,1989-09-19,Liaison
+FSM,987,Federated States of Micronesia,Micronesia,1989-09-20,2020-12-31,Embassy
+GAB,481,Gabon,Gabon,1960-08-17,1961-03-19,Ambassador Nonresident
+GAB,481,Gabon,Gabon,1961-03-20,2020-12-31,Embassy
+GAM,420,Gambia,"Gambia, The",1965-02-18,1965-08-08,None
+GAM,420,Gambia,"Gambia, The",1965-08-09,1965-09-08,Ambassador Nonresident
+GAM,420,Gambia,"Gambia, The",1965-09-09,2020-12-31,Embassy
+GCL,99,Great Colombia,Colombia,1821-08-30,1823-12-15,None
+GCL,99,Great Colombia,Colombia,1823-12-16,1830-09-22,Legation
+GDR,265,German Democratic Republic,East Germany (German Democratic Republic),1949-10-05,1974-12-08,None
+GDR,265,German Democratic Republic,East Germany (German Democratic Republic),1974-12-09,1990-10-02,Embassy
+GFR,260,German Federal Republic,Germany,1949-09-21,1955-05-04,None
+GFR,260,German Federal Republic,Germany,1955-05-05,2020-12-31,Embassy
+GHA,452,Ghana,Ghana,1957-03-06,2020-12-31,Embassy
+GMY,255,Germany (Prussia),Germany,1816-01-01,1893-10-25,Legation
+GMY,255,Germany (Prussia),Germany,1893-10-26,1917-02-02,Embassy
+GMY,255,Germany (Prussia),Germany,1917-02-03,1921-12-09,None
+GMY,255,Germany (Prussia),Germany,1921-12-10,1941-12-10,Embassy
+GMY,255,Germany (Prussia),Germany,1941-12-11,1945-05-07,None
+GNB,404,Guinea-Bissau,Guinea-Bissau,1974-09-10,1976-06-29,None
+GNB,404,Guinea-Bissau,Guinea-Bissau,1976-06-30,1998-06-13,Embassy
+GNB,404,Guinea-Bissau,Guinea-Bissau,1998-06-14,2003-02-12,None
+GNB,404,Guinea-Bissau,Guinea-Bissau,2003-02-13,2020-12-31,Ambassador Nonresident
+GRC,350,Greece,Greece,1828-04-25,1838-01-06,None
+GRC,350,Greece,Greece,1838-01-07,1868-06-15,Consulate
+GRC,350,Greece,Greece,1868-06-16,1920-12-05,Legation
+GRC,350,Greece,Greece,1920-12-06,1922-01-31,None
+GRC,350,Greece,Greece,1922-02-01,1941-07-13,Legation
+GRC,350,Greece,Greece,1941-07-14,1941-11-12,None
+GRC,350,Greece,Greece,1941-11-13,1942-10-29,Legation
+GRC,350,Greece,Greece,1942-10-30,2020-12-31,Embassy
+GRG,372,Georgia,Georgia,1991-12-21,1992-04-22,None
+GRG,372,Georgia,Georgia,1992-04-23,2020-12-31,Embassy
+GRN,55,Grenada,Grenada,1974-02-07,1975-02-24,None
+GRN,55,Grenada,Grenada,1975-02-25,1984-02-01,Ambassador Nonresident
+GRN,55,Grenada,Grenada,1984-02-02,2020-12-31,Embassy
+GUA,90,Guatemala,Guatemala,1840-01-01,1921-12-05,Legation
+GUA,90,Guatemala,Guatemala,1921-12-06,1922-07-30,None
+GUA,90,Guatemala,Guatemala,1922-07-31,1943-05-18,Legation
+GUA,90,Guatemala,Guatemala,1943-05-19,2020-12-31,Embassy
+GUI,438,Guinea,Guinea,1958-10-02,1959-02-12,None
+GUI,438,Guinea,Guinea,1959-02-13,2020-12-31,Embassy
+GUY,110,Guyana,Guyana,1966-05-26,2020-12-31,Embassy
+HAI,41,Haiti,Haiti,1816-01-01,1862-09-30,None
+HAI,41,Haiti,Haiti,1862-10-01,1915-07-04,Legation
+HAI,41,Haiti,Haiti,1934-08-15,1943-03-22,Legation
+HAI,41,Haiti,Haiti,1943-03-23,1963-05-14,Embassy
+HAI,41,Haiti,Haiti,1963-05-15,1964-01-15,None
+HAI,41,Haiti,Haiti,1964-01-16,2020-12-31,Embassy
+HAN,240,Hanover,,1816-01-01,1871-01-17,None
+HON,91,Honduras,Honduras,1840-01-01,1853-04-18,None
+HON,91,Honduras,Honduras,1853-04-19,1856-02-21,Envoy Nonresident
+HON,91,Honduras,Honduras,1856-02-22,1943-03-22,Legation
+HON,91,Honduras,Honduras,1943-03-23,2020-12-31,Embassy
+HSD,275,Hesse-Darmstadt (Ducal),Hesse,1816-01-01,1829-05-13,None
+HSD,275,Hesse-Darmstadt (Ducal),Hesse,1829-05-14,1868-07-31,Consulate
+HSD,275,Hesse-Darmstadt (Ducal),Hesse,1868-08-01,1871-01-17,Envoy Nonresident
+HSE,273,Hesse-Kassel (Electoral),,1816-01-01,1871-01-17,None
+HUN,310,Hungary,Hungary,1918-11-03,1921-12-25,None
+HUN,310,Hungary,Hungary,1921-12-26,1941-12-10,Legation
+HUN,310,Hungary,Hungary,1941-12-11,1945-05-10,None
+HUN,310,Hungary,Hungary,1945-05-11,1946-01-25,Liaison
+HUN,310,Hungary,Hungary,1946-01-26,1966-11-27,Legation
+HUN,310,Hungary,Hungary,1966-11-28,2020-12-31,Embassy
+ICE,395,Iceland,Iceland,1944-06-17,1955-11-02,Legation
+ICE,395,Iceland,Iceland,1955-11-03,2020-12-31,Embassy
+IND,750,India,India,1947-08-15,2020-12-31,Embassy
+INS,850,Indonesia,Indonesia,1945-08-17,1949-12-27,Consulate
+INS,850,Indonesia,Indonesia,1949-12-28,2020-12-31,Embassy
+IRE,205,Ireland,Ireland,1921-12-06,1927-07-26,None
+IRE,205,Ireland,Ireland,1927-07-27,1950-04-17,Legation
+IRE,205,Ireland,Ireland,1950-04-18,2020-12-31,Embassy
+IRN,630,Iran (Persia),Iran,1816-01-01,1883-06-10,None
+IRN,630,Iran (Persia),Iran,1883-06-11,1944-08-20,Legation
+IRN,630,Iran (Persia),Iran,1944-08-21,1980-04-06,Embassy
+IRN,630,Iran (Persia),Iran,1980-04-07,1980-05-20,None
+IRN,630,Iran (Persia),Iran,1980-05-21,2020-12-31,Interests
+IRQ,645,Iraq,Iraq,1932-10-03,1946-12-27,Legation
+IRQ,645,Iraq,Iraq,1946-12-28,1967-06-06,Embassy
+IRQ,645,Iraq,Iraq,1967-06-07,1972-09-30,None
+IRQ,645,Iraq,Iraq,1972-10-01,1984-11-25,Interests
+IRQ,645,Iraq,Iraq,1984-11-26,1991-01-11,Embassy
+IRQ,645,Iraq,Iraq,1991-01-12,1991-02-08,None
+IRQ,645,Iraq,Iraq,1991-02-09,2004-06-27,Interests
+IRQ,645,Iraq,Iraq,2004-06-28,2020-12-31,Embassy
+ISR,666,Israel,Israel,1948-05-14,1949-03-27,None
+ISR,666,Israel,Israel,1949-03-28,2020-12-31,Embassy
+ITA,325,Italy/Sardinia,Italy,1816-01-01,1840-09-14,None
+ITA,325,Italy/Sardinia,Italy,1840-09-15,1893-10-22,Legation
+ITA,325,Italy/Sardinia,Italy,1893-10-23,1941-12-10,Embassy
+ITA,325,Italy/Sardinia,Italy,1941-12-11,1945-01-07,None
+ITA,325,Italy/Sardinia,Italy,1945-01-08,2020-12-31,Embassy
+JAM,51,Jamaica,Jamaica,1962-08-06,1962-08-15,None
+JAM,51,Jamaica,Jamaica,1962-08-16,2020-12-31,Embassy
+JOR,663,Jordan,Jordan,1946-05-25,1949-02-17,None
+JOR,663,Jordan,Jordan,1949-02-18,1952-09-22,Legation
+JOR,663,Jordan,Jordan,1952-09-23,2020-12-31,Embassy
+JPN,740,Japan,Japan,1816-01-01,1855-08-03,None
+JPN,740,Japan,Japan,1855-08-04,1859-11-04,Consulate
+JPN,740,Japan,Japan,1859-11-05,1906-05-25,Legation
+JPN,740,Japan,Japan,1906-05-26,1941-12-07,Embassy
+JPN,740,Japan,Japan,1941-12-08,1952-05-08,None
+JPN,740,Japan,Japan,1952-05-09,2020-12-31,Embassy
+KBI,970,Kiribati,Kiribati,1979-07-12,1981-01-19,None
+KBI,970,Kiribati,Kiribati,1981-01-20,1982-05-30,Envoy Nonresident
+KBI,970,Kiribati,Kiribati,1982-05-31,2020-12-31,Ambassador Nonresident
+KEN,501,Kenya,Kenya,1963-12-12,1964-03-01,None
+KEN,501,Kenya,Kenya,1964-03-02,2020-12-31,Embassy
+KOR,730,Korea,Korea,1816-01-01,1883-05-19,None
+KOR,730,Korea,Korea,1883-05-20,1905-11-27,Legation
+KOR,730,Korea,Korea,1905-11-28,1910-08-22,None
+KOS,347,Kosovo,Kosovo,2008-02-17,2008-04-07,None
+KOS,347,Kosovo,Kosovo,2008-04-08,2020-12-31,Embassy
+KUW,690,Kuwait,Kuwait,1961-06-19,1961-09-21,Consulate
+KUW,690,Kuwait,Kuwait,1961-09-22,1990-12-12,Embassy
+KUW,690,Kuwait,Kuwait,1990-12-13,1991-02-28,None
+KUW,690,Kuwait,Kuwait,1991-03-01,2020-12-31,Embassy
+KYR,703,Kyrgyz Republic,Kyrgyzstan,1991-08-31,1992-01-31,None
+KYR,703,Kyrgyz Republic,Kyrgyzstan,1992-02-01,2020-12-31,Embassy
+KZK,705,Kazakhstan,Kazakhstan,1991-12-16,1992-02-02,None
+KZK,705,Kazakhstan,Kazakhstan,1992-02-03,2020-12-31,Embassy
+LAO,812,Laos,Laos,1954-05-01,1955-08-09,Legation
+LAO,812,Laos,Laos,1955-08-10,1975-11-30,Embassy
+LAO,812,Laos,Laos,1975-12-01,1992-08-05,Liaison
+LAO,812,Laos,Laos,1992-08-06,2020-12-31,Embassy
+LAT,367,Latvia,Latvia,1918-11-11,1922-07-27,None
+LAT,367,Latvia,Latvia,1922-07-28,1922-11-12,Envoy Nonresident
+LAT,367,Latvia,Latvia,1922-11-13,1940-06-01,Legation
+LAT,367,Latvia,Latvia,1991-09-06,1991-10-01,None
+LAT,367,Latvia,Latvia,1991-10-02,2020-12-31,Embassy
+LBR,450,Liberia,Liberia,1847-07-26,1864-02-22,None
+LBR,450,Liberia,Liberia,1864-02-23,1949-05-05,Legation
+LBR,450,Liberia,Liberia,1949-05-06,2020-12-31,Embassy
+LEB,660,Lebanon,Lebanon,1944-11-22,1952-10-02,Legation
+LEB,660,Lebanon,Lebanon,1952-10-03,1989-09-05,Embassy
+LEB,660,Lebanon,Lebanon,1989-09-06,1990-11-28,None
+LEB,660,Lebanon,Lebanon,1990-11-29,2020-12-31,Embassy
+LES,570,Lesotho,Lesotho,1966-10-04,2020-12-31,Embassy
+LIB,620,Libya,Libya,1816-01-01,1834-12-31,Consulate
+LIB,620,Libya,Libya,1951-12-24,1954-09-24,Legation
+LIB,620,Libya,Libya,1954-09-25,1980-05-01,Embassy
+LIB,620,Libya,Libya,1980-05-02,2004-02-07,None
+LIB,620,Libya,Libya,2004-02-08,2004-06-27,Interests
+LIB,620,Libya,Libya,2004-06-28,2006-05-30,Liaison
+LIB,620,Libya,Libya,2006-05-31,2011-02-24,Embassy
+LIB,620,Libya,Libya,2011-02-25,2011-09-21,None
+LIB,620,Libya,Libya,2011-09-22,2014-07-25,Embassy
+LIB,620,Libya,Libya,2014-07-26,2020-12-31,Ambassador Nonresident
+LIE,223,Liechtenstein,Liechtenstein,1816-01-01,1997-02-09,None
+LIE,223,Liechtenstein,Liechtenstein,1997-02-10,2020-12-31,Ambassador Nonresident
+LIT,368,Lithuania,Lithuania,1918-02-16,1922-07-27,None
+LIT,368,Lithuania,Lithuania,1922-07-28,1930-05-30,Envoy Nonresident
+LIT,368,Lithuania,Lithuania,1930-05-31,1940-06-01,Legation
+LIT,368,Lithuania,Lithuania,1991-09-06,1991-10-01,None
+LIT,368,Lithuania,Lithuania,1991-10-02,2020-12-31,Embassy
+LUX,212,Luxembourg,Luxembourg,1867-05-11,1903-07-16,None
+LUX,212,Luxembourg,Luxembourg,1903-07-17,1931-10-07,Envoy Nonresident
+LUX,212,Luxembourg,Luxembourg,1931-10-08,1940-07-14,Legation
+LUX,212,Luxembourg,Luxembourg,1940-07-15,1941-03-09,None
+LUX,212,Luxembourg,Luxembourg,1941-03-10,1956-09-20,Legation
+LUX,212,Luxembourg,Luxembourg,1956-09-21,2020-12-31,Embassy
+MAA,435,Mauritania,Mauritania,1960-11-28,1962-07-13,Ambassador Nonresident
+MAA,435,Mauritania,Mauritania,1962-07-14,1967-06-06,Embassy
+MAA,435,Mauritania,Mauritania,1967-06-07,1970-03-03,None
+MAA,435,Mauritania,Mauritania,1970-03-04,2020-12-31,Embassy
+MAC,343,Macedonia (Former Yugoslav Republic of),North Macedonia,1991-11-20,1993-12-02,None
+MAC,343,Macedonia (Former Yugoslav Republic of),North Macedonia,1993-12-03,1996-07-28,Liaison
+MAC,343,Macedonia (Former Yugoslav Republic of),North Macedonia,1996-07-29,2020-12-31,Embassy
+MAD,781,Maldives,Maldives,1965-05-26,1966-04-08,None
+MAD,781,Maldives,Maldives,1966-04-09,2020-12-31,Ambassador Nonresident
+MAG,580,Madagascar (Malagasy),Madagascar,1816-01-01,1874-06-16,None
+MAG,580,Madagascar (Malagasy),Madagascar,1874-06-17,1896-08-05,Consulate
+MAG,580,Madagascar,Madagascar,1960-06-26,2020-12-31,Embassy
+MAL,820,Malaysia,Malaysia,1957-08-31,2020-12-31,Embassy
+MAS,590,Mauritius,Mauritius,1968-03-12,2020-12-31,Embassy
+MAW,553,Malawi,Malawi,1964-07-06,2020-12-31,Embassy
+MEC,280,Mecklenburg-Schwerin,Mecklenburg-Schwerin,1816-01-01,1816-01-21,None
+MEC,280,Mecklenburg-Schwerin,Mecklenburg-Schwerin,1816-01-22,1871-01-17,Consulate
+MEX,70,Mexico,Mexico,1821-07-01,1825-05-31,None
+MEX,70,Mexico,Mexico,1825-06-01,1845-03-27,Legation
+MEX,70,Mexico,Mexico,1845-03-28,1848-10-01,None
+MEX,70,Mexico,Mexico,1848-10-02,1858-06-20,Legation
+MEX,70,Mexico,Mexico,1858-06-21,1859-04-05,None
+MEX,70,Mexico,Mexico,1859-04-06,1899-01-02,Legation
+MEX,70,Mexico,Mexico,1899-01-03,1914-04-21,Embassy
+MEX,70,Mexico,Mexico,1914-04-22,1917-03-02,None
+MEX,70,Mexico,Mexico,1917-03-03,2020-12-31,Embassy
+MLD,359,Moldova,Moldova,1991-08-27,1992-03-12,None
+MLD,359,Moldova,Moldova,1992-03-13,2020-12-31,Embassy
+MLI,432,Mali,Mali,1960-09-22,2020-12-31,Embassy
+MLT,338,Malta,Malta,1964-09-21,2020-12-31,Embassy
+MNC,221,Monaco,Monaco,1816-01-01,1874-02-21,None
+MNC,221,Monaco,Monaco,1874-02-22,1906-02-15,Consulate
+MNC,221,Monaco,Monaco,1906-02-16,2006-12-12,None
+MNC,221,Monaco,Monaco,2006-12-13,2014-11-04,Envoy Nonresident
+MNC,221,Monaco,Monaco,2014-11-05,2020-12-31,Ambassador Nonresident
+MNG,341,Montenegro,Montenegro,1868-01-01,1905-10-29,None
+MNG,341,Montenegro,Montenegro,1905-10-30,1915-07-01,Envoy Nonresident
+MNG,341,Montenegro,Montenegro,2006-06-03,2006-08-14,None
+MNG,341,Montenegro,Montenegro,2006-08-15,2006-10-04,Consulate
+MNG,341,Montenegro,Montenegro,2006-10-05,2020-12-31,Embassy
+MOD,332,Modena,,1816-01-01,1861-03-16,None
+MON,712,Mongolia,Mongolia,1921-03-13,1988-04-16,None
+MON,712,Mongolia,Mongolia,1988-04-17,2020-12-31,Embassy
+MOR,600,Morocco,Morocco,1816-01-01,1904-01-01,Consulate
+MOR,600,Morocco,Morocco,1956-03-02,1956-06-10,Liaison
+MOR,600,Morocco,Morocco,1956-06-11,2020-12-31,Embassy
+MSI,983,Marshall Islands,Marshall Islands,1986-10-21,1989-09-08,Liaison
+MSI,983,Marshall Islands,Marshall Islands,1989-09-09,2020-12-31,Embassy
+MYA,775,Myanmar (Burma),Burma,1816-01-01,1885-12-31,None
+MYA,775,Myanmar (Burma),Burma,1948-01-04,2020-12-31,Embassy
+MZM,541,Mozambique,Mozambique,1975-06-25,1975-11-07,None
+MZM,541,Mozambique,Mozambique,1975-11-08,2020-12-31,Embassy
+NAM,565,Namibia,Namibia,1990-03-21,2020-12-31,Embassy
+NAU,971,Nauru,Nauru,1968-12-31,1976-10-23,None
+NAU,971,Nauru,Nauru,1976-10-24,2020-12-31,Ambassador Nonresident
+NEP,790,Nepal,Nepal,1816-01-01,1948-05-02,None
+NEP,790,Nepal,Nepal,1948-05-03,1952-02-15,Envoy Nonresident
+NEP,790,Nepal,Nepal,1952-02-16,1959-08-05,Ambassador Nonresident
+NEP,790,Nepal,Nepal,1959-08-06,2020-12-31,Embassy
+NEW,920,New Zealand,New Zealand,1907-09-01,1942-03-31,None
+NEW,920,New Zealand,New Zealand,1942-04-01,1948-12-21,Legation
+NEW,920,New Zealand,New Zealand,1948-12-22,2020-12-31,Embassy
+NIC,93,Nicaragua,Nicaragua,1840-01-01,1851-02-17,None
+NIC,93,Nicaragua,Nicaragua,1851-02-18,1909-11-30,Legation
+NIC,93,Nicaragua,Nicaragua,1909-12-01,1911-02-20,None
+NIC,93,Nicaragua,Nicaragua,1911-02-21,1926-01-16,Legation
+NIC,93,Nicaragua,Nicaragua,1926-01-17,1926-11-16,None
+NIC,93,Nicaragua,Nicaragua,1926-11-17,1943-03-26,Legation
+NIC,93,Nicaragua,Nicaragua,1943-03-27,1947-06-04,Embassy
+NIC,93,Nicaragua,Nicaragua,1947-06-05,1948-08-31,None
+NIC,93,Nicaragua,Nicaragua,1948-09-01,2020-12-31,Embassy
+NIG,475,Nigeria,Nigeria,1960-10-01,2020-12-31,Embassy
+NIR,436,Niger,Niger,1960-08-03,1961-02-02,Ambassador Nonresident
+NIR,436,Niger,Niger,1961-02-03,2020-12-31,Embassy
+NOR,385,Norway,Norway,1905-08-26,1906-08-12,Envoy Nonresident
+NOR,385,Norway,Norway,1906-08-13,1940-07-14,Legation
+NOR,385,Norway,Norway,1940-07-15,1940-08-01,None
+NOR,385,Norway,Norway,1940-08-02,1942-05-12,Legation
+NOR,385,Norway,Norway,1942-05-13,2020-12-31,Embassy
+NTH,210,Netherlands,"Netherlands, The",1816-01-01,1940-07-14,Legation
+NTH,210,Netherlands,"Netherlands, The",1940-07-15,1940-08-14,None
+NTH,210,Netherlands,"Netherlands, The",1940-08-15,1942-05-07,Legation
+NTH,210,Netherlands,"Netherlands, The",1942-05-08,2020-12-31,Embassy
+OFS,564,Orange Free State,Orange Free State,1854-03-28,1891-12-15,None
+OFS,564,Orange Free State,Orange Free State,1891-12-16,1910-05-30,Consulate
+OMA,698,Oman,Oman,1816-01-01,1879-12-31,None
+OMA,698,Oman,Oman,1880-01-01,1914-12-31,Consulate
+OMA,698,Oman,Oman,1915-01-01,1972-04-16,None
+OMA,698,Oman,Oman,1972-04-17,1972-07-03,Envoy Nonresident
+OMA,698,Oman,Oman,1972-07-04,2020-12-31,Embassy
+PAK,770,Pakistan,Pakistan,1947-08-14,1947-08-14,None
+PAK,770,Pakistan,Pakistan,1947-08-15,2020-12-31,Embassy
+PAL,986,Palau,Palau,1994-10-01,1996-12-05,None
+PAL,986,Palau,Palau,1996-12-06,2004-10-09,Ambassador Nonresident
+PAL,986,Palau,Palau,2004-10-10,2020-12-31,Embassy
+PAN,95,Panama,Panama,1903-11-03,1903-12-24,Consulate
+PAN,95,Panama,Panama,1903-12-25,1931-01-04,Legation
+PAN,95,Panama,Panama,1931-01-05,1931-01-15,None
+PAN,95,Panama,Panama,1931-01-16,1939-07-13,Legation
+PAN,95,Panama,Panama,1939-07-14,1949-11-24,Embassy
+PAN,95,Panama,Panama,1949-11-25,1949-12-13,None
+PAN,95,Panama,Panama,1949-12-14,1964-01-09,Embassy
+PAN,95,Panama,Panama,1964-01-10,1964-04-02,None
+PAN,95,Panama,Panama,1964-04-03,1968-10-14,Embassy
+PAN,95,Panama,Panama,1968-10-15,1968-11-12,None
+PAN,95,Panama,Panama,1968-11-13,2020-12-31,Embassy
+PAP,327,Papal States,Papal States,1816-01-01,1848-08-18,Consulate
+PAP,327,Papal States,Papal States,1848-08-19,1866-12-31,Legation
+PAP,327,Papal States,Papal States,1867-01-01,1870-09-22,None
+PAR,150,Paraguay,Paraguay,1816-01-01,1861-11-25,None
+PAR,150,Paraguay,Paraguay,1861-11-26,1942-03-30,Legation
+PAR,150,Paraguay,Paraguay,1942-03-31,2020-12-31,Embassy
+PER,135,Peru,Peru,1824-12-09,1827-05-20,None
+PER,135,Peru,Peru,1827-05-21,1860-10-18,Legation
+PER,135,Peru,Peru,1860-10-19,1862-01-10,None
+PER,135,Peru,Peru,1862-01-11,1865-11-25,Legation
+PER,135,Peru,Peru,1865-11-26,1866-05-21,None
+PER,135,Peru,Peru,1866-05-22,1881-09-27,Legation
+PER,135,Peru,Peru,1881-09-28,1884-04-23,None
+PER,135,Peru,Peru,1884-04-24,1920-04-23,Legation
+PER,135,Peru,Peru,1920-04-24,1962-07-17,Embassy
+PER,135,Peru,Peru,1962-07-18,1963-02-05,None
+PER,135,Peru,Peru,1963-02-06,2020-12-31,Embassy
+PHI,840,Philippines,Philippines,1946-07-04,2020-12-31,Embassy
+PMA,335,Parma,,1816-01-01,1861-03-16,None
+PNG,910,Papua New Guinea,Papua New Guinea,1975-09-16,2020-12-31,Embassy
+POL,290,Poland,Poland,1918-11-11,1919-05-01,None
+POL,290,Poland,Poland,1919-05-02,1930-05-23,Legation
+POL,290,Poland,Poland,1930-05-24,2020-12-31,Embassy
+POR,235,Portugal,Portugal,1816-01-01,1910-10-04,Legation
+POR,235,Portugal,Portugal,1910-10-05,1911-08-02,None
+POR,235,Portugal,Portugal,1911-08-03,1944-06-19,Legation
+POR,235,Portugal,Portugal,1944-06-20,2020-12-31,Embassy
+PRK,731,"Korea, People's Republic of",,1948-09-09,2020-12-31,None
+QAT,694,Qatar,Qatar,1971-09-03,1972-03-18,None
+QAT,694,Qatar,Qatar,1972-03-19,1973-02-23,Envoy Nonresident
+QAT,694,Qatar,Qatar,1973-02-24,2020-12-31,Embassy
+ROK,732,"Korea, Republic of",Republic of Korea (South Korea),1948-08-15,1949-04-19,None
+ROK,732,"Korea, Republic of",Republic of Korea (South Korea),1949-04-20,2020-12-31,Embassy
+RUM,360,Rumania,Romania,1878-07-13,1880-12-13,None
+RUM,360,Rumania,Romania,1880-12-14,1882-09-07,Liaison
+RUM,360,Rumania,Romania,1882-09-08,1905-10-02,Envoy Nonresident
+RUM,360,Rumania,Romania,1905-10-03,1941-12-11,Legation
+RUM,360,Rumania,Romania,1941-12-12,1947-09-24,None
+RUM,360,Rumania,Romania,1947-09-25,1964-05-31,Legation
+RUM,360,Rumania,Romania,1964-06-01,2020-12-31,Embassy
+RUS,365,Russia (Soviet Union),Russia,1816-01-01,1898-02-10,Legation
+RUS,365,Russia (Soviet Union),Russia,1898-02-11,1917-11-06,Embassy
+RUS,365,Russia (Soviet Union),Russia,1917-11-07,1919-09-13,Liaison
+RUS,365,Russia (Soviet Union),Russia,1919-09-14,1933-12-12,None
+RUS,365,Russia (Soviet Union),Russia,1933-12-13,2020-12-31,Embassy
+RVN,817,"Vietnam, Republic of",Vietnam,1954-05-01,1975-04-28,Embassy
+RVN,817,"Vietnam, Republic of",Vietnam,1975-04-29,1975-04-30,None
+RWA,517,Rwanda,Rwanda,1962-01-07,1962-06-30,None
+RWA,517,Rwanda,Rwanda,1962-07-01,2020-12-31,Embassy
+SAF,560,South Africa,South Africa,1910-05-31,1929-12-18,None
+SAF,560,South Africa,South Africa,1929-12-19,1949-03-22,Legation
+SAF,560,South Africa,South Africa,1949-03-23,2020-12-31,Embassy
+SAL,92,El Salvador,El Salvador,1840-01-01,1863-06-14,None
+SAL,92,El Salvador,El Salvador,1863-06-15,1931-12-03,Legation
+SAL,92,El Salvador,El Salvador,1931-12-04,1934-01-25,None
+SAL,92,El Salvador,El Salvador,1934-01-26,1943-03-22,Legation
+SAL,92,El Salvador,El Salvador,1943-03-23,2020-12-31,Embassy
+SAU,670,Saudi Arabia,Saudi Arabia,1932-09-23,1940-02-03,None
+SAU,670,Saudi Arabia,Saudi Arabia,1940-02-04,1942-04-30,Envoy Nonresident
+SAU,670,Saudi Arabia,Saudi Arabia,1942-05-01,1949-03-17,Legation
+SAU,670,Saudi Arabia,Saudi Arabia,1949-03-18,2020-12-31,Embassy
+SAX,269,Saxony,,1816-01-01,1871-01-17,None
+SEN,433,Senegal,Senegal,1960-04-04,1960-09-23,None
+SEN,433,Senegal,Senegal,1960-09-24,2020-12-31,Embassy
+SER,340,Serbia,Kingdom of Serbia/Yugoslavia,1878-07-13,1882-11-09,None
+SER,340,Serbia,Kingdom of Serbia/Yugoslavia,1882-11-10,1915-10-01,Legation
+SER,340,Serbia,Serbia,2006-06-05,2020-12-31,Embassy
+SEY,591,Seychelles,Seychelles,1976-06-29,1976-06-30,None
+SEY,591,Seychelles,Seychelles,1976-07-01,1996-08-29,Embassy
+SEY,591,Seychelles,Seychelles,1996-08-30,2020-12-31,Ambassador Nonresident
+SIC,329,Two Sicilies,Two Sicilies,1816-01-01,1832-01-24,Consulate
+SIC,329,Two Sicilies,Two Sicilies,1832-01-25,1860-11-05,Legation
+SIC,329,Two Sicilies,Two Sicilies,1860-11-06,1861-03-16,None
+SIE,451,Sierra Leone,Sierra Leone,1961-04-27,2020-12-31,Embassy
+SIN,830,Singapore,Singapore,1965-08-09,1966-04-03,Consulate
+SIN,830,Singapore,Singapore,1966-04-04,2020-12-31,Embassy
+SKN,60,Saint Kitts and Nevis,Saint Kitts and Nevis,1983-09-19,1984-08-21,Liaison
+SKN,60,Saint Kitts and Nevis,Saint Kitts and Nevis,1984-08-22,2020-12-31,Ambassador Nonresident
+SLO,317,Slovakia,Slovakia,1993-01-01,1993-01-03,None
+SLO,317,Slovakia,Slovakia,1993-01-04,2020-12-31,Embassy
+SLU,56,Saint Lucia,Saint Lucia,1979-02-22,1979-06-10,Liaison
+SLU,56,Saint Lucia,Saint Lucia,1979-06-11,1981-12-14,Envoy Nonresident
+SLU,56,Saint Lucia,Saint Lucia,1981-12-15,2020-12-31,Ambassador Nonresident
+SLV,349,Slovenia,Slovenia,1992-04-27,1992-08-24,None
+SLV,349,Slovenia,Slovenia,1992-08-25,2020-12-31,Embassy
+SNM,331,San Marino,San Marino,1816-01-01,1925-04-08,None
+SNM,331,San Marino,San Marino,1925-04-09,2007-03-07,Consulate
+SNM,331,San Marino,San Marino,2007-03-08,2020-12-31,Ambassador Nonresident
+SOL,940,Solomon Islands,"Solomon Islands, The",1978-07-07,1978-10-08,None
+SOL,940,Solomon Islands,"Solomon Islands, The",1978-10-09,1988-07-03,Ambassador Nonresident
+SOL,940,Solomon Islands,"Solomon Islands, The",1988-07-04,1993-07-29,Embassy
+SOL,940,Solomon Islands,"Solomon Islands, The",1993-07-30,2020-12-31,Ambassador Nonresident
+SOM,520,Somalia,Somalia,1960-07-01,1991-01-04,Embassy
+SOM,520,Somalia,Somalia,1991-01-05,2016-08-08,Liaison
+SOM,520,Somalia,Somalia,2016-08-09,2018-12-01,Ambassador Nonresident
+SOM,520,Somalia,Somalia,2018-12-02,2020-12-31,Embassy
+SOT,397,South Ossetia,,2008-08-26,2020-12-31,None
+SPN,230,Spain,Spain,1816-01-01,1898-04-20,Legation
+SPN,230,Spain,Spain,1898-04-21,1899-06-15,None
+SPN,230,Spain,Spain,1899-06-16,1913-10-30,Legation
+SPN,230,Spain,Spain,1913-10-31,2020-12-31,Embassy
+SRI,780,Sri Lanka (Ceylon),Sri Lanka,1948-02-04,1949-08-02,None
+SRI,780,Sri Lanka (Ceylon),Sri Lanka,1949-08-03,2020-12-31,Embassy
+SSD,626,South Sudan,South Sudan,2011-07-09,2020-12-31,Embassy
+STP,403,São Tomé and Principe,Sao Tome and Principe,1975-07-12,1976-02-13,None
+STP,403,São Tomé and Principe,Sao Tome and Principe,1976-02-14,2020-12-31,Ambassador Nonresident
+SUD,625,Sudan,Sudan,1956-01-01,1956-02-14,Liaison
+SUD,625,Sudan,Sudan,1956-02-15,1967-06-05,Embassy
+SUD,625,Sudan,Sudan,1967-06-06,1967-08-13,None
+SUD,625,Sudan,Sudan,1967-08-14,1972-07-24,Interests
+SUD,625,Sudan,Sudan,1972-07-25,1996-02-06,Embassy
+SUD,625,Sudan,Sudan,1996-02-07,2002-05-22,None
+SUD,625,Sudan,Sudan,2002-05-23,2020-12-31,Embassy
+SUR,115,Surinam,Suriname,1975-11-25,2020-12-31,Embassy
+SVG,57,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,1979-10-27,1981-12-07,Liaison
+SVG,57,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,1981-12-08,2020-12-31,Ambassador Nonresident
+SWA,572,Swaziland,Eswatini,1968-09-06,2020-12-31,Embassy
+SWD,380,Sweden,Sweden,1816-01-01,1818-04-28,None
+SWD,380,Sweden,Sweden,1818-04-29,1947-12-04,Legation
+SWD,380,Sweden,Sweden,1947-12-05,2020-12-31,Embassy
+SWZ,225,Switzerland,Switzerland,1816-01-01,1830-09-30,None
+SWZ,225,Switzerland,Switzerland,1830-10-01,1853-06-28,Consulate
+SWZ,225,Switzerland,Switzerland,1853-06-29,1953-10-08,Legation
+SWZ,225,Switzerland,Switzerland,1953-10-09,2020-12-31,Embassy
+SYR,652,Syria,Syria,1946-01-01,1952-09-29,Legation
+SYR,652,Syria,Syria,1952-09-30,1958-02-24,Embassy
+SYR,652,Syria,Syria,1958-02-25,1961-10-09,Consulate
+SYR,652,Syria,Syria,1961-10-10,1967-06-05,Embassy
+SYR,652,Syria,Syria,1967-06-06,1974-02-07,None
+SYR,652,Syria,Syria,1974-02-08,1974-06-15,Interests
+SYR,652,Syria,Syria,1974-06-16,2012-02-05,Embassy
+SYR,652,Syria,Syria,2012-02-06,2020-12-31,None
+TAJ,702,Tajikistan,Tajikistan,1991-09-09,1992-03-12,None
+TAJ,702,Tajikistan,Tajikistan,1992-03-13,1992-10-24,Embassy
+TAJ,702,Tajikistan,Tajikistan,1992-10-25,1993-03-10,None
+TAJ,702,Tajikistan,Tajikistan,1993-03-11,2020-12-31,Embassy
+TAW,713,Taiwan,Taiwan,1949-12-08,1978-12-31,Embassy
+TAW,713,Taiwan,Taiwan,1979-01-01,2020-12-31,None
+TAZ,510,Tanzania/Tanganyika,Tanzania,1961-12-09,2020-12-31,Embassy
+TBT,711,Tibet,,1913-01-01,1950-10-01,None
+THI,800,Thailand,Thailand,1816-01-01,1859-01-24,None
+THI,800,Thailand,Thailand,1859-01-25,1882-10-22,Consulate
+THI,800,Thailand,Thailand,1882-10-23,1941-12-07,Legation
+THI,800,Thailand,Thailand,1941-12-08,1946-01-04,None
+THI,800,Thailand,Thailand,1946-01-05,1947-05-08,Legation
+THI,800,Thailand,Thailand,1947-05-09,2020-12-31,Embassy
+TKM,701,Turkmenistan,Turkmenistan,1991-10-27,1992-03-16,None
+TKM,701,Turkmenistan,Turkmenistan,1992-03-17,2020-12-31,Embassy
+TOG,461,Togo,Togo,1960-04-27,2020-12-31,Embassy
+TON,972,Tonga,Tonga,1970-06-04,1972-11-05,None
+TON,972,Tonga,Tonga,1972-11-06,2020-12-31,Ambassador Nonresident
+TRA,563,Transvaal,,1852-01-01,1910-05-30,None
+TRI,52,Trinidad and Tobago,Trinidad and Tobago,1962-08-31,2020-12-31,Embassy
+TUN,616,Tunisia,Tunisia,1816-01-01,1881-05-12,Consulate
+TUN,616,Tunisia,Tunisia,1956-01-01,1956-06-04,Consulate
+TUN,616,Tunisia,Tunisia,1956-06-05,2020-12-31,Embassy
+TUR,640,Turkey (Ottoman Empire),Turkey,1816-01-01,1831-09-12,None
+TUR,640,Turkey (Ottoman Empire),Turkey,1831-09-13,1906-06-17,Legation
+TUR,640,Turkey (Ottoman Empire),Turkey,1906-06-18,1917-04-19,Embassy
+TUR,640,Turkey (Ottoman Empire),Turkey,1917-04-20,1927-10-11,None
+TUR,640,Turkey (Ottoman Empire),Turkey,1927-10-12,2020-12-31,Embassy
+TUS,337,Tuscany,,1816-01-01,1861-03-16,None
+TUV,973,Tuvalu,Tuvalu,1978-10-01,1980-01-23,None
+TUV,973,Tuvalu,Tuvalu,1980-01-24,2020-12-31,Ambassador Nonresident
+UAE,696,United Arab Emirates,"United Arab Emirates, The",1971-12-02,1972-03-19,None
+UAE,696,United Arab Emirates,"United Arab Emirates, The",1972-03-20,1974-06-23,Ambassador Nonresident
+UAE,696,United Arab Emirates,"United Arab Emirates, The",1974-06-24,2020-12-31,Embassy
+UGA,500,Uganda,Uganda,1962-10-09,1973-11-09,Embassy
+UGA,500,Uganda,Uganda,1973-11-10,1979-06-17,Interests
+UGA,500,Uganda,Uganda,1979-06-18,2020-12-31,Embassy
+UKG,200,United Kingdom,"United Kingdom, The",1816-01-01,1893-06-21,Legation
+UKG,200,United Kingdom,"United Kingdom, The",1893-06-22,2020-12-31,Embassy
+UKR,369,Ukraine,Ukraine,1991-12-01,1992-01-22,None
+UKR,369,Ukraine,Ukraine,1992-01-23,2020-12-31,Embassy
+UPC,89,United Provinces of Central America,Central American Federation,1823-07-01,1826-05-02,None
+UPC,89,United Provinces of Central America,Central American Federation,1826-05-03,1839-12-31,Legation
+URU,165,Uruguay,Uruguay,1830-05-26,1867-10-01,None
+URU,165,Uruguay,Uruguay,1867-10-02,1870-07-05,Envoy Nonresident
+URU,165,Uruguay,Uruguay,1870-07-06,1941-01-10,Legation
+URU,165,Uruguay,Uruguay,1941-01-11,2020-12-31,Embassy
+UZB,704,Uzbekistan,Uzbekistan,1991-08-31,1992-03-15,None
+UZB,704,Uzbekistan,Uzbekistan,1992-03-16,2020-12-31,Embassy
+VAN,935,Vanuatu,Vanuatu,1980-06-30,1987-04-09,None
+VAN,935,Vanuatu,Vanuatu,1987-04-10,2020-12-31,Ambassador Nonresident
+VEN,101,Venezuela,Venezuela,1829-01-01,1835-06-29,None
+VEN,101,Venezuela,Venezuela,1835-06-30,1908-06-19,Legation
+VEN,101,Venezuela,Venezuela,1908-06-20,1909-03-14,None
+VEN,101,Venezuela,Venezuela,1909-03-15,1939-08-13,Legation
+VEN,101,Venezuela,Venezuela,1939-08-14,2020-12-31,Embassy
+VNM,815,Vietnam (Annam/Cochin China/Tonkin),,1816-01-01,1893-01-01,None
+WRT,271,Württemberg,Württemberg,1816-01-01,1842-10-12,None
+WRT,271,Württemberg,Württemberg,1842-10-13,1843-03-02,Consulate
+WRT,271,Württemberg,Württemberg,1843-03-03,1847-03-02,None
+WRT,271,Württemberg,Württemberg,1847-03-03,1868-07-26,Consulate
+WRT,271,Württemberg,Württemberg,1868-07-27,1871-01-17,Envoy Nonresident
+WSM,990,Samoa/Western Samoa,Samoa,1962-01-01,1971-07-13,None
+WSM,990,Samoa/Western Samoa,Samoa,1971-07-14,1988-11-14,Ambassador Nonresident
+WSM,990,Samoa/Western Samoa,Samoa,1988-11-15,2020-12-31,Embassy
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1918-10-30,1946-03-03,None
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1946-03-04,1946-09-29,Liaison
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1946-09-30,1959-03-15,Envoy Nonresident
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1959-03-16,1963-01-27,Legation
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1963-01-28,1967-06-06,Embassy
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1967-06-07,1970-04-09,None
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1970-04-10,1972-06-30,Interests
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,1972-07-01,2015-02-10,Embassy
+YEM,678,Yemen (Arab Republic of Yemen),North Yemen,2015-02-11,2020-12-31,Ambassador Nonresident
+YPR,680,"Yemen, People's Republic of",South Yemen,1967-11-30,1967-12-06,None
+YPR,680,"Yemen, People's Republic of",South Yemen,1967-12-07,1969-10-25,Embassy
+YPR,680,"Yemen, People's Republic of",South Yemen,1969-10-26,1970-04-09,None
+YPR,680,"Yemen, People's Republic of",South Yemen,1970-04-10,1990-05-21,Interests
+YUG,345,Yugoslavia,Kingdom of Serbia/Yugoslavia,1918-12-01,1942-09-28,Legation
+YUG,345,Yugoslavia,Kingdom of Serbia/Yugoslavia,1942-09-29,1992-05-20,Embassy
+YUG,345,Yugoslavia,Serbia,1992-05-21,1999-03-22,Embassy
+YUG,345,Yugoslavia,Serbia,1999-03-23,2001-04-30,None
+YUG,345,Yugoslavia,Serbia,2001-05-01,2006-06-04,Embassy
+ZAM,551,Zambia,Zambia,1964-10-24,2020-12-31,Embassy
+ZAN,511,Zanzibar,Zanzibar,1963-12-19,1964-04-26,Embassy
+ZIM,552,Zimbabwe (Rhodesia),Zimbabwe,1965-11-11,1980-04-17,None
+ZIM,552,Zimbabwe (Rhodesia),Zimbabwe,1980-04-18,2020-12-31,Embassy

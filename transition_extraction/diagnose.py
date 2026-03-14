@@ -7,7 +7,6 @@ per-country event-level diffs.
 """
 
 import csv
-import json
 from difflib import SequenceMatcher
 from html import escape
 from pathlib import Path
@@ -27,14 +26,6 @@ _PRESENT = (9999, 12, 31)
 DateTuple = tuple[int, int, int]
 Range = tuple[DateTuple, DateTuple | None]
 
-
-def _parse_date(date_str: str) -> DateTuple:
-    """Parse YYYY, YYYY-MM, or YYYY-MM-DD into a sortable tuple."""
-    parts = date_str.split("-")
-    year = int(parts[0]) if parts[0] else 0
-    month = int(parts[1]) if len(parts) >= 2 else 1
-    day = int(parts[2]) if len(parts) >= 3 else 1
-    return (year, month, day)
 
 
 def _fmt(date: DateTuple) -> str:
@@ -146,27 +137,10 @@ def _build_csv_timelines(
 
 
 def _build_assembled_timelines(
-    jsonl_path: Path,
+    csv_path: Path,
 ) -> dict[str, list[tuple[DateTuple, str]]]:
-    exclude = {"rejected", "removed"}
-    timelines: dict[str, list[tuple[DateTuple, str]]] = {}
-    with open(jsonl_path) as f:
-        for line in f:
-            record = json.loads(line)
-            if record["validation_status"] in exclude:
-                continue
-            date_str = record.get("date", "")
-            status = record.get("new_status", "")
-            if not date_str:
-                continue
-            date = _parse_date(date_str)
-            if date[0] == 0:
-                continue
-            country = record["country"]
-            timelines.setdefault(country, []).append((date, status))
-    for country in timelines:
-        timelines[country].sort()
-    return timelines
+    """Build assembled timelines from the assembled transitions CSV."""
+    return _build_csv_timelines(csv_path)
 
 
 def _duration_str(start: DateTuple, end: DateTuple) -> str:
@@ -397,15 +371,15 @@ def run_diagnose(
 ) -> None:
     """Compare original CSV and assembled data on legation-or-higher ranges."""
     csv_path = config.paths.transitions_csv
-    jsonl_path = config.paths.output_dir / "final" / "sourcing_records.jsonl"
+    assembled_csv_path = config.paths.output_dir / "final" / "assembled_transitions.csv"
 
-    if not jsonl_path.exists():
-        print(f"Error: assembled output not found at {jsonl_path}")
+    if not assembled_csv_path.exists():
+        print(f"Error: assembled transitions not found at {assembled_csv_path}")
         print("Run the full pipeline (including 'assemble') first.")
         return
 
     csv_timelines = _build_csv_timelines(csv_path)
-    assembled_timelines = _build_assembled_timelines(jsonl_path)
+    assembled_timelines = _build_assembled_timelines(assembled_csv_path)
 
     countries = sorted(assembled_timelines.keys())
     if countries_filter:

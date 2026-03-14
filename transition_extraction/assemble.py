@@ -404,6 +404,40 @@ def _get_confidence(extracted_indices: list[int], merged_events: list[dict]) -> 
     return ""
 
 
+def _write_assembled_transitions(records: list[dict], output_path: Path) -> None:
+    """Write confirmed/confirmed_addition records as a transitions CSV.
+
+    Same column format as the input transitions CSV so the diagnose
+    script can compare the two directly.
+    """
+    include = {"confirmed", "confirmed_addition"}
+    fieldnames = ["state_dept_name", "status_change", "year", "month", "day",
+                  "last_verified", "notes"]
+    rows = []
+    for rec in records:
+        if rec["validation_status"] not in include:
+            continue
+        date_str = rec.get("date", "")
+        parts = date_str.split("-")
+        year = parts[0] if parts[0] else ""
+        month = str(int(parts[1])) if len(parts) >= 2 else ""
+        day = str(int(parts[2])) if len(parts) >= 3 else ""
+        rows.append({
+            "state_dept_name": rec["country"],
+            "status_change": rec["new_status"],
+            "year": year,
+            "month": month,
+            "day": day,
+            "last_verified": "",
+            "notes": "",
+        })
+    rows.sort(key=lambda r: (r["state_dept_name"], r["year"], r["month"], r["day"]))
+    with open(output_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def run_assemble(
     config: PipelineConfig,
     run_timestamp: str,
@@ -454,6 +488,10 @@ def run_assemble(
         for record in all_records:
             out = {k: v for k, v in record.items() if not k.startswith("_")}
             f.write(json.dumps(out, default=str) + "\n")
+
+    # Write assembled transitions CSV (same format as input transitions)
+    transitions_path = final_dir / "assembled_transitions.csv"
+    _write_assembled_transitions(all_records, transitions_path)
 
     # Write summary CSV
     if summary_rows:

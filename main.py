@@ -1,6 +1,6 @@
 """CLI entry point for the extraction pipeline.
 
-Subcommands: stage0, stage1, stage2, stage3, stage4, assemble, run-all
+Subcommands: stage0, stage1, stage2, stage3, stage4, assemble, generate-data, run-all
 """
 
 import argparse
@@ -32,9 +32,7 @@ def main():
     subparsers.add_parser("stage4", help="LLM reconciliation (Opus)")
     subparsers.add_parser("assemble", help="Final output assembly")
     subparsers.add_parser("audit", help="Generate HTML audit report")
-    panel_parser = subparsers.add_parser("build-panel", help="Build interval-level panel dataset")
-    panel_parser.add_argument("--system", required=True, choices=["cow", "gw"], help="State system (cow or gw)")
-    subparsers.add_parser("diagnose", help="Compare CSV vs assembled on legation-or-higher ranges")
+    subparsers.add_parser("generate-data", help="Generate all data product CSVs")
     subparsers.add_parser("run-all", help="Run all stages sequentially")
 
     args = parser.parse_args()
@@ -78,10 +76,16 @@ def main():
         from transition_extraction.audit_report import run_audit_report
         run_audit_report(config, countries_filter)
 
-    elif args.command == "build-panel":
-        from data_assembly.panel import build_panel, write_panel_csv
+    elif args.command == "generate-data":
+        from data_assembly.generate import generate_all_datasets
         from data_assembly.state_codes import StateCodeResolver
-        from data_assembly.diagnostics import print_diagnostics
+        from data_assembly.version import get_version
+
+        version = get_version()
+        transitions_csv = config.paths.output_dir / "final" / "assembled_transitions.csv"
+        if not transitions_csv.exists():
+            print(f"Error: {transitions_csv} not found. Run 'assemble' first.")
+            return
 
         resolver = StateCodeResolver(
             config.paths.cow_raw,
@@ -96,23 +100,10 @@ def main():
                 print(f"  {w}")
             print()
 
-        rows = build_panel(resolver, config.paths.transitions_csv, args.system)
-        output_path = config.paths.output_dir / f"panel_{args.system}.csv"
-        config.paths.output_dir.mkdir(parents=True, exist_ok=True)
-        write_panel_csv(rows, output_path)
-        print(f"Wrote {len(rows)} rows to {output_path}")
-
-        # Compare against old reference _mod file
-        if args.system == "cow":
-            ref_path = config.repo_root / "input" / "cowstates_mod.csv"
-        else:
-            ref_path = config.repo_root / "input" / "gwstates_mod.csv"
-        if ref_path.exists():
-            print_diagnostics(rows, ref_path, args.system)
-
-    elif args.command == "diagnose":
-        from transition_extraction.diagnose import run_diagnose
-        run_diagnose(config, countries_filter)
+        output_dir = config.repo_root / "data" / f"v{version}"
+        print(f"Generating data product v{version} in {output_dir}\n")
+        generate_all_datasets(resolver, transitions_csv, output_dir, version)
+        print(f"Done. Output in {output_dir}")
 
     elif args.command == "run-all":
         from transition_extraction.stage0_resolve import run_stage0

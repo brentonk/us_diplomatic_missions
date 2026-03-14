@@ -151,7 +151,8 @@ class StateCodeResolver:
     def __init__(self, cow_csv: Path, gw_tsv: Path, mapping_yaml: Path,
                  gw_supplement: Path | None = None):
         self._cow = _load_cow(cow_csv)
-        self._gw = _load_gw(gw_tsv, gw_supplement)
+        self._gw_base = _load_gw(gw_tsv)
+        self._gw_full = _load_gw(gw_tsv, gw_supplement)
         self._cow_mapping, self._gw_mapping, self._unmapped = _load_mapping(mapping_yaml)
         self._cow_name_index = _build_name_index(self._cow_mapping)
         self._gw_name_index = _build_name_index(self._gw_mapping)
@@ -162,7 +163,11 @@ class StateCodeResolver:
         return usdos_name in self._unmapped_set
 
     def intervals(self, system: str) -> dict[str, list[Interval]]:
-        return self._cow if system == "cow" else self._gw
+        if system == "cow":
+            return self._cow
+        if system == "gwm":
+            return self._gw_full
+        return self._gw_base
 
     def code_name_entries(self, system: str, code: str) -> list[tuple[str, NameRule | None]]:
         """Return all (usdos_name, rule_or_None) entries for a given code.
@@ -196,7 +201,7 @@ class StateCodeResolver:
         candidates = name_index.get(usdos_name)
         if not candidates:
             return None
-        raw = self._cow if system == "cow" else self._gw
+        raw = self.intervals(system)
         for code, rule in candidates:
             if rule is not None and not _check_name_rule(rule, query_date):
                 continue
@@ -214,7 +219,7 @@ class StateCodeResolver:
         """
         warnings: list[str] = []
         for system_key, mapping in [("cow", self._cow_mapping), ("gw", self._gw_mapping)]:
-            raw = self._cow if system_key == "cow" else self._gw
+            raw = self._cow if system_key == "cow" else self._gw_full
             for code, entry in mapping.items():
                 if code not in raw:
                     if isinstance(entry, str):

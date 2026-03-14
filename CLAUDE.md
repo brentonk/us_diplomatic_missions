@@ -20,8 +20,7 @@ uv run python main.py assemble            # Final output assembly
 uv run python main.py run-all             # All stages sequentially
 uv run python main.py --dry-run stage2    # Cost estimate without API calls
 uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countries
-uv run python main.py build-panel --system cow   # Build COW interval panel
-uv run python main.py build-panel --system gw    # Build GW interval panel
+uv run python main.py generate-data              # Generate all data product CSVs
 ```
 
 ## Project structure
@@ -39,14 +38,16 @@ uv run python main.py build-panel --system gw    # Build GW interval panel
   - `stage3_verify.py` — Fuzzy-matches extracted quotes against source text
   - `stage4_reconcile.py` — Async Opus reconciliation with tool use
   - `assemble.py` — Builds final sourcing records + summary CSV
-- `data_assembly/` — Panel data assembly package
-  - `state_codes.py` — `StateCodeResolver`: loads raw state system data + code-keyed YAML mapping, resolves codes ↔ USDOS names. Validates date-range overlaps.
-  - `panel.py` — `build_panel()`: builds interval-level panel datasets with merged US mission status
-  - `diagnostics.py` — Compares generated panel against old `_mod` reference files
-- `scripts/` — One-time utility scripts
-  - `migrate_state_codes.py` — (historical) Extracted YAML mapping from old `_mod` CSV files
-  - `convert_mapping_format.py` — Converted YAML from USDOS-name-keyed to code-keyed format
-  - `verify_state_codes.py` — Round-trip verification of mapping against old data
+- `data_assembly/` — Data assembly and data product generation
+  - `state_codes.py` — `StateCodeResolver`: loads raw state system data + code-keyed YAML mapping, resolves codes ↔ USDOS names. Supports COW, GW, and GWM (GW + microstates) systems.
+  - `timeline.py` — Shared timeline logic: `build_status_timeline()`, `get_status_at()`, `collect_split_dates()`
+  - `status.py` — Diplomatic status ordering (9 levels) and aggregation functions (min/max/median/mode)
+  - `version.py` — Reads project version from `pyproject.toml`
+  - `range_builder.py` — Builds interval-level range datasets (mission_status_range_*.csv)
+  - `daily_builder.py` — Expands range data to daily rows (in-memory intermediate for aggregation)
+  - `aggregator.py` — Monthly and yearly aggregation from daily data
+  - `generate.py` — Orchestrator: generates all 9 data product CSVs
+- `scripts/` — One-time utility scripts (currently empty; historical scripts removed after completing their purpose)
 - `input/` — Config, prompts, CSV data, aliases
   - `extraction_config.yaml` — Model strings, API params, thresholds, paths
   - `country_aliases.yaml` — CSV name → repo stem overrides (grows as edge cases surface)
@@ -58,9 +59,19 @@ uv run python main.py build-panel --system gw    # Build GW interval panel
   - `prompt_reconcile.txt` — System prompt for Stage 4
   - `2024-01-16_transitions.csv` — Hand-coded transitions (590 rows)
 - `instructions/extraction_pipeline.md` — Full pipeline specification
+- `instructions/data_product.md` — Data product specification (datasets, codebook, website)
 - `rdcr/`, `pocom/` — Git submodules (State Department sources)
 - `output/` — All pipeline outputs (gitignored)
+- `data/` — Versioned data product CSVs (committed, organized as `data/v{VERSION}/`)
 - `logs/` — API call logs (gitignored)
+
+## Versioning
+
+The canonical version is in `pyproject.toml`. The current pre-release version is 0.1.
+
+- **Version bumps**: After the initial 0.1 release, any code change that produces different output data requires a version bump. Minor changes (e.g., typo fixes in mapping) get a minor bump; major changes (e.g., new state system data versions) get a major bump.
+- **Release tags**: Each release should be tagged in GitHub (e.g., `v0.1`). Use `git tag` + `gh release create`.
+- **Data preservation**: This project is intended for scientific research. Data from prior releases must not be deleted or overwritten. Output datasets should be versioned alongside the code so that any published result can be reproduced from a tagged release.
 
 ## Key conventions
 

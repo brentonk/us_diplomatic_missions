@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Hd8ok954hyw6dwj9g5ZQTC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6039,
+      "output_tokens": 1300
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Belgium",
+    "source_file": "pocom/missions-countries/belgium.xml",
+    "events": [
+      {
+        "date": "1832-09-25",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Belgium when the first Charg\u00e9 d'Affaires, Hugh Swinton Legar\u00e9, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Hugh Swinton Legare, Charg\u00e9 d'Affaires. Appointed: 1832-04-14. Credentials presented: 1832-09-25. Presented recall on 1836-06-09."
+          }
+        ]
+      },
+      {
+        "date": "1919-10-03",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy when Brand Whitlock was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 55,
+            "quote": "Brand Whitlock, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1913-12-22. Credentials presented: 1914-02-14. Promoted to Ambassador Extraordinary and Plenipotentiary 1919-10-03.\n\nBrand Whitlock, Ambassador Extraordinary and Plenipotentiary. Appointed: 1919-09-30. Credentials presented: 1919-10-03."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "Embassy Brussels closed following German occupation of Belgium.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 70,
+            "quote": "Note: Embassy Brussels was closed on July 15, 1940; Cudahy left post on July 18, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1940-11-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established near the Government of Belgium in exile in England, with Rudolf Emil Schoenfeld designated as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 70,
+            "line_end": 72,
+            "quote": "Rudolph E. Schoenfeld was designated on November 1, 1940, to serve as Charg\u00e9 d'Affaires ad interim near the Government of Belgium established in England.\n\nRudolf Emil Schoenfeld, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1940-11-01. Note: Served as Charg\u00e9 d'Affaires ad interim near the Government of Belgium established in England."
+          }
+        ]
+      }
+    ]
+  }
+}

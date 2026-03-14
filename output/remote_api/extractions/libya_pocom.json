@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013Dxwcs7jw37H6xaw9J5VcK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3211,
+      "output_tokens": 1516
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Libya",
+    "source_file": "pocom/missions-countries/libya.xml",
+    "events": [
+      {
+        "date": "1951-12-24",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic presence established in Libya via a Charg\u00e9 d'Affaires ad interim, opening the Legation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Andrew Green Lynch, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1951-12-24."
+          }
+        ]
+      },
+      {
+        "date": "1954-11-16",
+        "new_status": "Embassy",
+        "event_description": "Mission elevated from Legation to Embassy with the presentation of credentials by the first Ambassador Extraordinary and Plenipotentiary, John Lindsley Tappin.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "John Lindsley Tappin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1954-09-25. Credentials presented: 1954-11-16. Superseded 1958-03-17."
+          }
+        ]
+      },
+      {
+        "date": "1980-05-02",
+        "new_status": "None",
+        "event_description": "Embassy Tripoli closed, ending all U.S. diplomatic representation in Libya.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Embassy Tripoli was closed on May 2, 1980."
+          }
+        ]
+      },
+      {
+        "date": "2004-02-08",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in Tripoli, resuming a limited diplomatic presence after the 1980 closure.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The United States established an Interests Section in Tripoli on February 8, 2004."
+          }
+        ]
+      },
+      {
+        "date": "2004-06-28",
+        "new_status": "Liaison",
+        "event_description": "The Interests Section in Tripoli was upgraded to the U.S. Liaison Office.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "It became the U.S. Liaison Office on June 28, 2004."
+          }
+        ]
+      },
+      {
+        "date": "2006-05-31",
+        "new_status": "Embassy",
+        "event_description": "The United States resumed full diplomatic relations with Libya; the Interests Section in Tripoli became an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "On May 31, 2006, the United States resumed diplomatic relations with Libya, and the Interests Section in Tripoli became an Embassy."
+          }
+        ]
+      },
+      {
+        "date": "2014-07-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Embassy Tripoli suspended operations and all U.S. personnel were withdrawn due to the Libyan civil war; however, diplomatic relations were maintained and the U.S. Ambassador to Libya continued to operate from U.S. Embassies in Malta and later Tunis.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "The U.S. Embassy in Tripoli suspended operations on July 26, 2014, and all U.S. personnel were withdrawn after security conditions deteriorated in the midst of the Libyan civil war; however, the United States did not sever diplomatic relations with Libya."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UBuKV2T68uutH554BF5AYm",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3961,
+      "output_tokens": 953
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saudi Arabia",
+    "source_file": "pocom/missions-countries/saudi-arabia.xml",
+    "events": [
+      {
+        "date": "1940-02-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Bert Fish presented credentials as Envoy Extraordinary and Minister Plenipotentiary, nonresident (based in Cairo), establishing nonresident envoy relations with Saudi Arabia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Bert Fish, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1939-08-07. Credentials presented: 1940-02-04. Left Cairo 1941-02-28."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-01",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation in Jeddah was formally established with James S. Moose, Jr. as Charg\u00e9 d'Affaires ad interim, upgrading from nonresident envoy relations to a resident legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "After Fish had withdrawn, but before Kirk presented credentials as non-resident Minister, the Legation in Jeddah was established on May 1, 1942, with James S. Moose, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1949-03-18",
+        "new_status": "Embassy",
+        "event_description": "James Rives Childs was promoted to Ambassador Extraordinary and Plenipotentiary on 1949-03-18, marking the elevation of the U.S. mission from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 13,
+            "quote": "James Rives Childs, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-04-27. Credentials presented: 1946-06-29. Promoted to Ambassador Extraordinary and Plenipotentiary 1949-03-18."
+          }
+        ]
+      }
+    ]
+  }
+}

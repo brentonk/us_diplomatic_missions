@@ -1,0 +1,282 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016sT6kazmkyEwV9urvGKFUf",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3945,
+      "output_tokens": 1799
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1922-04-26",
+      "new_status": "Liaison",
+      "event_description": "Diplomatic relations established upon U.S. recognition of Egyptian independence. The existing Diplomatic Agent and Consul General, J. Morton Howell, served as the American diplomatic representative, constituting a liaison-level presence prior to formal elevation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "Diplomatic relations were established on April 26, 1922, upon American recognition of Egyptian independence. American Diplomatic Agent and Consul General at Cairo, J. Morton Howell, had conducted unofficial relations with Egypt as a \"semi-independent state\" prior to this date, as had been U.S. practice since 1849."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1922-06-24",
+      "new_status": "Legation",
+      "event_description": "The position of Diplomatic Agent was raised to Envoy Extraordinary and Minister Plenipotentiary, formally establishing the American Legation in Egypt.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "the position of Diplomatic Agent was raised to the rank of Envoy Extraordinary and Minister Plenipotentiary on June 24, 1922, thereby establishing the American Legation in Egypt."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1958-02-25",
+      "new_status": "Embassy",
+      "event_description": "Upon U.S. recognition of the United Arab Republic (formed by Egypt and Syria), the United States maintained its embassy in Cairo as the primary mission to the UAR.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 13,
+          "quote": "The United States recognized the UAR on February 25, 1958, when U.S. Ambassador Raymond Hare delivered a note to that effect to the UAR Ministry of Foreign Affairs. The UAR's capital was established at Cairo, where the United States maintained its embassy, while the American Embassy in Damascus was reclassified as a Consulate General."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": true
+    },
+    {
+      "date": "1967-06-06",
+      "new_status": "None",
+      "event_description": "The United Arab Republic severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, ending formal U.S. diplomatic representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The United Arab Republic severed diplomatic relations with the United States on June 6, 1967, in the wake of the June 1967 Arab-Israeli War."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1967-06-07",
+      "new_status": "Interests",
+      "event_description": "A U.S. Interests Section was established in the Spanish Embassy in Cairo, maintaining a limited U.S. presence after the severance of diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "A U.S. Interests Section was established in the Spanish Embassy in Cairo on June 7, 1967."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1974-02-28",
+      "new_status": "Embassy",
+      "event_description": "Egypt and the United States agreed to resume diplomatic relations and the American Embassy in Cairo was reopened, with Ambassador-designate Hermann F. Eilts named in charge.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 33,
+          "line_end": 33,
+          "quote": "The Governments of Egypt and the United States agreed to resume diplomatic relations on February 28, 1974, and the United States named Ambassador-designate Hermann F. Eilts in charge of the American Embassy in Cairo, which was reopened on the same date."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1849-03-17",
+      "new_status": "Liaison",
+      "event_description": "Daniel Smith McCauley presented credentials as Agent and Consul General, establishing a liaison-level U.S. presence in Egypt. Though commissioned only as Consul General, he used the title Agent and Consul General with the acquiescence of the Department of State.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Daniel Smith Mccauley, Agent/Consul General. Appointed: 1848-08-14. Credentials presented: 1849-03-17. Died at post on 1852-10-24. Note: Commissioned as Consul General only and used the title Agent and Consul General with the acquiescence of the Department of State."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1861-07-01",
+      "new_status": "Consulate",
+      "event_description": "William Sydney Thayer presented credentials as Consul General only (not Agent and Consul General), reducing the mission to a purely consular level in Cairo, the capital.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "William Sydney Thayer, Consul General. Appointed: 1861-03-20. Credentials presented: 1861-07-01. Died at post on 1864-04-10. Note: Commissioned as Consul General only and used only his consular title."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1864-10-15",
+      "new_status": "Liaison",
+      "event_description": "Charles Hale presented credentials as Agent and Consul General, restoring the liaison-level presence. Though commissioned only as Consul General, his title was changed to Agent and Consul General by Act of Congress.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quote": "Charles Hale, Agent/Consul General. Appointed: 1864-05-18. Credentials presented: 1864-10-15. Presented recall on 1870-05-23. Note: Commissioned as Consul General only; not recommissioned when his title was changed to Agent and Consul General by Act of Congress approved on June 20, 1864."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1922-08-28",
+      "new_status": "Legation",
+      "event_description": "Joseph Morton Howell was promoted to Envoy Extraordinary and Minister Plenipotentiary and presented credentials, elevating the U.S. mission in Egypt from a liaison/agency to a full legation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 49,
+          "line_end": 51,
+          "quote": "Joseph Morton Howell, Agent/Consul General. Appointed: 1921-10-07. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1922-08-28. Joseph Morton Howell, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-06-21. Credentials presented: 1922-08-28."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1946-10-10",
+      "new_status": "Embassy",
+      "event_description": "Somerville Pinkney Tuck was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials, elevating the U.S. mission in Egypt from a legation to a full embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 61,
+          "line_end": 63,
+          "quote": "Somerville Pinkney Tuck, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1944-05-04. Credentials presented: 1944-06-14. Promoted to Ambassador Extraordinary and Plenipotentiary 1946-10-10. Somerville Pinkney Tuck, Ambassador Extraordinary and Plenipotentiary. Appointed: 1946-09-19. Credentials presented: 1946-10-10."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 4,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Egypt",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          9
+        ],
+        "notes": "RDCR Event 1 (1922-06-24) matches CSV exactly. POCOM Event 9 (1922-08-28) refers to the same legation elevation but gives the credential presentation/promotion date. Per source priority, RDCR's explicit institutional date of June 24, 1922 is correct."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact match on date (1967-06-06) and status (None). UAR severed diplomatic relations."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact match on date (1967-06-07) and status (Interests). U.S. Interests Section established in Spanish Embassy in Cairo."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Exact match on date (1974-02-28) and status (Embassy). Diplomatic relations resumed and embassy reopened."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          6
+        ],
+        "date": "1849-03-17",
+        "new_status": "Liaison",
+        "event_description": "Daniel Smith McCauley presented credentials as Agent and Consul General, establishing a liaison-level U.S. presence in Egypt. POCOM is the source; RDCR mentions the practice of unofficial relations since 1849 but does not give a specific institutional date, so the POCOM credential date is the best available.",
+        "notes": "This would represent the initial establishment of a U.S. diplomatic/quasi-diplomatic presence in Egypt, predating formal recognition of independence."
+      },
+      {
+        "extracted_event_indices": [
+          7
+        ],
+        "date": "1861-07-01",
+        "new_status": "Consulate",
+        "event_description": "William Sydney Thayer presented credentials as Consul General only (not Agent and Consul General), reducing the mission to a purely consular level. Source: POCOM.",
+        "notes": "Represents a downgrade from liaison (Agent and Consul General) to consular-only representation. Only supported by POCOM."
+      },
+      {
+        "extracted_event_indices": [
+          8
+        ],
+        "date": "1864-10-15",
+        "new_status": "Liaison",
+        "event_description": "Charles Hale presented credentials as Agent and Consul General, restoring the liaison-level presence after the 1861 downgrade. Title changed by Act of Congress (June 20, 1864). Source: POCOM.",
+        "notes": "Represents restoration of the Agent and Consul General title. Only supported by POCOM."
+      },
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1922-04-26",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations formally established upon U.S. recognition of Egyptian independence. The existing Diplomatic Agent and Consul General (J. Morton Howell) continued to serve, constituting a liaison-level presence prior to the June 1922 legation elevation. Source: RDCR.",
+        "notes": "RDCR explicitly states diplomatic relations were established on April 26, 1922. This is a distinct event from the June 24, 1922 legation elevation (CSV Row 1). Could be considered the formal start of bilateral relations with independent Egypt."
+      },
+      {
+        "extracted_event_indices": [
+          10
+        ],
+        "date": "1946-10-10",
+        "new_status": "Embassy",
+        "event_description": "Somerville Pinkney Tuck was promoted to Ambassador and presented credentials, elevating the U.S. mission in Egypt from Legation to Embassy. Source: POCOM.",
+        "notes": "Significant gap in CSV: the CSV jumps from Legation (1922) directly to None (1967) with no Embassy elevation recorded. RDCR does not appear to provide a specific institutional date for this elevation, so the POCOM date (1946-10-10) is the best available. This is a major omission from the CSV."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1958-02-25",
+        "new_status": "Embassy",
+        "event_description": "U.S. recognized the United Arab Republic (Egypt-Syria union); the embassy in Cairo was maintained as the primary mission to the UAR. Source: RDCR (citation error flagged).",
+        "notes": "This event has a CITATION ERROR flag, so treat with extra skepticism. However, the content is historically plausible. This may not represent a status change per se (Embassy \u2192 Embassy), but rather a continuity/name-change event. Whether it warrants a CSV row depends on whether the dataset tracks country name changes or only status transitions."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

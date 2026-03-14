@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018oBFg7hSpnse5tXfEfD6rP",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2375,
+      "output_tokens": 350
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "2002-05-20",
+      "new_status": "Embassy",
+      "event_description": "The United States established diplomatic relations with Timor-Leste and opened an Embassy in Dili on the date of formal independence, initially under Charg\u00e9 d'Affaires Shari Villarossa.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States and Timor-Leste (East Timor) established diplomatic relations on May 20, 2002, when the United States opened an Embassy in Dili."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Timor-Leste",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the establishment of diplomatic relations and opening of the Embassy in Dili on 2002-05-20, the date of Timor-Leste's formal independence. High-confidence RDCR source with verified citation."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WVxLV7vUg8ZHbSA9WrLMZn",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2647,
+      "output_tokens": 594
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saint Kitts and Nevis",
+    "source_file": "pocom/missions-countries/saint-kitts-nevis.xml",
+    "events": [
+      {
+        "date": "1984-08-22",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Saint Kitts and Nevis. The first U.S. Ambassador, Thomas H. Anderson, presented credentials on this date and was based in Bridgetown (Barbados), not resident in Saint Kitts and Nevis.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Thomas H Anderson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1984-05-03. Credentials presented: 1984-08-22. Left Bridgetown 1986-03-12."
+          }
+        ]
+      }
+    ]
+  }
+}

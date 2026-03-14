@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GSjN11CR94GTmYpsm8imbg",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3106,
+      "output_tokens": 617
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ecuador",
+    "source_file": "rdcr/articles/ecuador.xml",
+    "events": [
+      {
+        "date": "1848-08-12",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations with Ecuador when Charg\u00e9 d'Affaires Van Brugh Livingston presented his credentials, becoming the first resident U.S. diplomatic agent in Ecuador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "The United States established diplomatic relations with Ecuador on August 12, 1848, when Charg\u00e9 d'Affaires Van Brugh Livingston presented his credentials to the Ecuadorian Government. He became the first resident U.S. diplomatic agent in Ecuador."
+          }
+        ]
+      },
+      {
+        "date": "1942-03-05",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Ecuador was elevated to Embassy, and Minister Boaz Long was raised in rank to Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "The rank of the U.S. Legation in Ecuador was raised to Embassy on March 5, 1942. The Minister to Ecuador, Boaz Long, was raised in rank to Ambassador."
+          }
+        ]
+      }
+    ]
+  }
+}

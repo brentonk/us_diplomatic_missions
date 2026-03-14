@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Aofzbu6FpjKE8yMkc9sQtS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4159,
+      "output_tokens": 914
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Morocco",
+    "source_file": "pocom/missions-countries/morocco.xml",
+    "events": [
+      {
+        "date": "1906-09-29",
+        "new_status": "Legation",
+        "event_description": "Establishment of U.S. diplomatic mission in Morocco at the legation level, with Samuel Rene Gummere presenting credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Samuel Rene Gummere, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1905-03-08. Credentials presented: 1906-09-29. Superseded 1909-06-09."
+          }
+        ]
+      },
+      {
+        "date": "1917-10-11",
+        "new_status": "Liaison",
+        "event_description": "Mission downgraded from Legation/Charg\u00e9 d'Affaires to a Liaison office, with Maxwell Blake serving as Agent/Consul General (Diplomatic Agent).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Maxwell Blake, Agent/Consul General. Appointed: 1917-07-20. Credentials presented: 1917-10-11. Superseded 1922-04-11."
+          }
+        ]
+      },
+      {
+        "date": "1956-10-06",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated to Embassy level upon Moroccan independence, with Cavendish Wells Cannon presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Cavendish Wells Cannon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1956-07-21. Credentials presented: 1956-10-06. Relinquished charge 1958-07-01."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WgBK8tXGDrLwtWf2yn4NXs",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2272,
+      "output_tokens": 718
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Palau",
+    "source_file": "pocom/missions-countries/palau.xml",
+    "events": [
+      {
+        "date": "1996-12-06",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "First U.S. Ambassador to Palau presented credentials. Ambassador was nonresident, based in Manila.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Thomas C Hubbard, Ambassador Extraordinary and Plenipotentiary. Appointed: 1996-07-02. Credentials presented: 1996-12-06. Left Manila 2000-07-24."
+          }
+        ]
+      },
+      {
+        "date": "2010-09-30",
+        "new_status": "Embassy",
+        "event_description": "Ambassador Reed presented credentials and left 'post' (not Manila), suggesting a transition to a resident embassy in Palau.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Rowe Helen Patricia Reed, Ambassador Extraordinary and Plenipotentiary. Appointed: 2010-08-09. Credentials presented: 2010-09-30. Left post on 2013-07-26."
+          }
+        ]
+      }
+    ]
+  }
+}

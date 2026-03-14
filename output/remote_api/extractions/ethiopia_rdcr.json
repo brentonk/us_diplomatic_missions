@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CJRK3eheiJpXVVdGsHUnDa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2837,
+      "output_tokens": 985
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ethiopia",
+    "source_file": "rdcr/articles/ethiopia.xml",
+    "events": [
+      {
+        "date": "1909-07-06",
+        "new_status": "Legation",
+        "event_description": "The American Legation was established in Addis Ababa when U.S. Minister Resident and Consul General Hoffman Philip presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 21,
+            "quote": "The American Legation was established on July 6, 1909, when U.S. Minister Resident and Consul General Hoffman Philip presented his credentials in Addis Ababa."
+          }
+        ]
+      },
+      {
+        "date": "1937-03-31",
+        "new_status": "None",
+        "event_description": "The American Legation in Addis Ababa was closed following the Italian occupation of Ethiopia. The U.S. Minister departed on March 4, 1937, and the consulate was closed after March 31, 1937.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 25,
+            "quote": "U.S. Minister Resident and Consul General Cornelius Van H. Engert departed Addis Ababa on March 4, 1937, and the consulate was closed after March 31, 1937."
+          }
+        ]
+      },
+      {
+        "date": "1943-08-31",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Addis Ababa was reopened when U.S. Minister Resident and Consul General John K. Caldwell presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 29,
+            "quote": "The American Legation in Addis Ababa reopened on August 31, 1943, when U.S. Minister Resident and Consul General John K. Caldwell presented his credentials."
+          }
+        ]
+      },
+      {
+        "date": "1949-06-28",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Addis Ababa was elevated to Embassy status when Ambassador George R. Merrell presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 37,
+            "quote": "The American Legation in Addis Ababa was elevated to Embassy status on June 28, 1949, when Ambassador George R. Merrell presented his credentials"
+          }
+        ]
+      }
+    ]
+  }
+}

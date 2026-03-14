@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HudvAykgoURiGPegMKWMAA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3056,
+      "output_tokens": 1137
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Somalia",
+    "source_file": "pocom/missions-countries/somalia.xml",
+    "events": [
+      {
+        "date": "1960-07-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Somalia upon independence; Andrew Green Lynch presented credentials as Charg\u00e9 d'Affaires ad interim, the first U.S. chief of mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Andrew Green Lynch, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-07-01. Left post: 1960-07-11."
+          }
+        ]
+      },
+      {
+        "date": "1991-01-05",
+        "new_status": "None",
+        "event_description": "U.S. Embassy in Mogadishu closed and all U.S. personnel withdrawn following the collapse of the central Somali government. Diplomatic relations were not formally severed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 29,
+            "quote": "Embassy closed 1991-01-05. The U.S. Embassy in Mogadishu closed on January 5, 1991, and all U.S. personnel were withdrawn after the collapse of the central Somali government; however, the United States did not sever diplomatic relations with Somalia."
+          }
+        ]
+      },
+      {
+        "date": "2016-08-09",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established in Somalia; Stephen Michael Schwartz presented credentials as Ambassador Extraordinary and Plenipotentiary, the first resident ambassador since the 1991 closure.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Stephen Michael Schwartz, Ambassador Extraordinary and Plenipotentiary. Appointed: 2016-05-20. Credentials presented: 2016-08-09. Left post: 2017-07-21."
+          }
+        ]
+      }
+    ]
+  }
+}

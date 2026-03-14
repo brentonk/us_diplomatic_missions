@@ -1,0 +1,50 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019yvhn83Km1nAfrWVkNqj3V",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2401,
+      "output_tokens": 676
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1957-08-31",
+      "new_status": "Embassy",
+      "event_description": "The United States elevated its Consulate General in Kuala Lumpur to the status of Embassy upon Malaysian independence, with Consul General Thomas K. Wright placed in charge as Charg\u00e9 d'Affaires.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "Diplomatic relations were established on August 31, 1957, when the United States elevated its Consulate General in Kuala Lumpur to the status of Embassy. Then Consul General Thomas K. Wright was placed in charge of the Embassy as Charge d'Affaires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Malaysia",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Both record elevation to Embassy on 1957-08-31 upon Malaysian independence. Perfect match on date and status."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event covers the 1948 establishment of a consular post. However, Event 0's RDCR text indirectly references a pre-existing 'Consulate General in Kuala Lumpur' that was elevated in 1957, which is consistent with a consular presence from around 1948. The CSV labels this as 'Consulate' while the RDCR text refers to a 'Consulate General.' No specific extracted event or date confirmation exists for the 1948 opening, so this remains unsupported by the extraction pipeline (though not necessarily incorrect)."
+      }
+    ],
+    "discrepancies": []
+  }
+}

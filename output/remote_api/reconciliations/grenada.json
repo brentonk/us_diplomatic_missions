@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NzzHWUnpZiLCwdMBpEdPxc",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2478,
+      "output_tokens": 447
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1975-02-25",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "U.S. Ambassador Theodore R. Britton presented credentials in St. George's, establishing the American diplomatic mission to Grenada. He was also Ambassador to Barbados and was resident at Bridgetown, making him a nonresident ambassador to Grenada.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "An American diplomatic mission to Grenada was established on February 25, 1975, when Ambassador Theodore R. Britton presented his in St. George's, Grenada. He also was Ambassador to Barbados, and was resident at Bridgetown."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1984-02-02",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in St. George's was formally established with Charles A. Gillespie as Charg\u00e9 d'Affaires ad interim, elevating the U.S. mission from nonresident ambassador to a resident embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The American Embassy in St. George's was established on February 2, 1984, with Charles A. Gillespie as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Grenada",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1975-02-25) and status (Ambassador Nonresident). Both describe Ambassador Britton presenting credentials in St. George's as nonresident ambassador."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1984-02-02) and status (Embassy). Both describe the formal establishment of the American Embassy in St. George's with Gillespie as Charg\u00e9 d'Affaires ad interim."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

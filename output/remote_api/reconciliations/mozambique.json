@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CaACQrspxjYUw2iULDiLAB",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2359,
+      "output_tokens": 315
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1975-11-08",
+      "new_status": "Embassy",
+      "event_description": "Embassy Lourenco Marques (now Maputo) was opened with Johnnie Carson as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Lourenco Marques (now Maputo) was opened on November 8, 1975, with Johnnie Carson as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Mozambique",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the opening of Embassy Lourenco Marques (now Maputo) on 1975-11-08. High confidence RDCR source with verified citation."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

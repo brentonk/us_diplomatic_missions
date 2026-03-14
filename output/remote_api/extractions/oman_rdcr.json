@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01RJmqogSPn9cLAX33UGucWu",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2420,
+      "output_tokens": 1044
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Oman",
+    "source_file": "rdcr/articles/oman.xml",
+    "events": [
+      {
+        "date": "1880",
+        "new_status": "Consulate",
+        "event_description": "United States established a consulate in Muscat, the capital of Oman.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established a consulate in Muscat in 1880, which lasted until 1915, at which time American interests in Oman were handled by U.S. diplomats in other countries."
+          }
+        ]
+      },
+      {
+        "date": "1915",
+        "new_status": "None",
+        "event_description": "The U.S. consulate in Muscat closed; American interests in Oman were thereafter handled by U.S. diplomats in other countries, leaving no formal representation in Oman.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established a consulate in Muscat in 1880, which lasted until 1915, at which time American interests in Oman were handled by U.S. diplomats in other countries."
+          }
+        ]
+      },
+      {
+        "date": "1972-04-17",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when nonresident Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented credentials to Oman; he was resident in Kuwait and accredited to multiple countries.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Diplomatic Relations were established on April 17, 1972, when American Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented his credentials to the government of Oman. Stoltzfus was accredited to Bahrain, Kuwait, Qatar and the United Arab Emirates as well, and he was resident in Kuwait."
+          }
+        ]
+      },
+      {
+        "date": "1972-07-04",
+        "new_status": "Embassy",
+        "event_description": "The United States Embassy in Muscat was established on July 4, 1972, under Charg\u00e9 d'Affaires ad interim Clifford J. Quinlan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The United States Embassy in Muscat was established on July 4, 1972, under Charg\u00e9 d' Affaires ad interim Clifford J. Quinlan."
+          }
+        ]
+      }
+    ]
+  }
+}

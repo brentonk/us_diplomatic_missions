@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JGvXDMUYH1hgYV6tgtrDDr",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2573,
+      "output_tokens": 567
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1974-12-09",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Berlin was established, with Brandon H. Grove, Jr., as Charg\u00e9 d'Affaires ad interim, following U.S. recognition of the GDR on September 4, 1974.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "The American Embassy in Berlin was established on December 9, 1974, with Brandon H. Grove, Jr., as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-10-02",
+      "new_status": "None",
+      "event_description": "The U.S. Embassy in Berlin was closed as the GDR was absorbed by the Federal Republic of Germany upon German reunification.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "The United States maintained its embassy in Bonn; however, it closed its embassy in Berlin on October 2, 1990."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1974-12-20",
+      "new_status": "Embassy",
+      "event_description": "Embassy established in East Germany; first Ambassador John Sherman Cooper presented credentials.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "John Sherman Cooper, Ambassador Extraordinary and Plenipotentiary. Appointed: 1974-09-19. Credentials presented: 1974-12-20. Left post on 1976-09-28."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "East Germany (German Democratic Republic)",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "CSV date 1974-12-09 matches RDCR Event 0 exactly. POCOM Event 2 gives 1974-12-20 (credential presentation date for Ambassador Cooper), but RDCR provides the explicit institutional establishment date of Dec 9, which correctly takes priority. No discrepancy."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1990-10-02",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in Berlin was closed as the GDR was absorbed by the Federal Republic of Germany upon German reunification on October 3, 1990. The embassy closed on October 2, 1990.",
+        "notes": "High-confidence RDCR event. This represents the end of U.S. diplomatic relations with East Germany as a separate state. Strong candidate for addition to the CSV."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

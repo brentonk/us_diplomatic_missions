@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018UMuswywKWDZkxVyHf5FpN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2115,
+      "output_tokens": 257
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sao Tome and Principe",
+    "source_file": "rdcr/articles/sao-tome-and-principe.xml",
+    "events": [
+      {
+        "date": "1975-10-10",
+        "new_status": "None",
+        "event_description": "The United States and Sao Tome and Principe established diplomatic relations by exchange of diplomatic notes, but no mission was established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States and Sao Tome and Principe established diplomatic relations on October 10, 1975, by exchange of diplomatic notes."
+          }
+        ]
+      }
+    ]
+  }
+}

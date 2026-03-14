@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NLmrYHNqmBmatAFuSBERDP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3379,
+      "output_tokens": 411
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mali",
+    "source_file": "pocom/missions-countries/mali.xml",
+    "events": [
+      {
+        "date": "1960-06-20",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in the Federation of Mali (Dakar), with Donald Albert Dumont as first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Donald Albert Dumont, Charg\u00e9 d'Affaires ad interim. Appointed: 1960-06-20. Note: Embassy Dakar (in the Federation of Mali) was established on June 20, 1960."
+          }
+        ]
+      }
+    ]
+  }
+}

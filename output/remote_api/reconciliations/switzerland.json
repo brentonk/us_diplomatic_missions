@@ -1,0 +1,73 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QmBBNsdwWuP2i6dG21T5Wd",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2517,
+      "output_tokens": 669
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1853-06-29",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation in Switzerland were established when Theodore S. Fay presented his credentials as U.S. Minister Resident.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "Diplomatic relations and the American Legation in Switzerland were established on June 29, 1853, when Theodore S. Fay presented his credentials as U.S. Minister Resident in Switzerland."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1953-10-09",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Switzerland was elevated to Embassy status when Frances E. Willis presented her credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 26,
+          "line_end": 26,
+          "quote": "Frances E. Willis was appointed as the first U.S. Ambassador Extraordinary and Plenipotentiary to Switzerland on July 20, 1953. She presented her credentials on October 9, 1953."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Switzerland",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1853-06-29) and status (Legation). RDCR explicitly states diplomatic relations and the American Legation were established on this date."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1953-10-09) and status (Embassy). RDCR mentions both the appointment date (July 20, 1953) and credential presentation date (October 9, 1953); the CSV correctly uses the credential presentation date as the elevation date. Medium confidence extraction but evidence text clearly supports the date."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event corresponds to a consulate established in October 1830. The RDCR narrative and POCOM records begin coverage with the 1853 establishment of the Legation. The consulate likely predates the diplomatic relations narrative and may be documented in other sources (e.g., consular records) not included in this extraction pipeline."
+      }
+    ],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Mw1WjuGqT3vp4abWX9A1Ky",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5732,
+      "output_tokens": 1075
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Turkey",
+    "source_file": "pocom/missions-countries/turkey.xml",
+    "events": [
+      {
+        "date": "1831-09-13",
+        "new_status": "Legation",
+        "event_description": "U.S. diplomatic mission to Turkey established when David Porter presented credentials as Charg\u00e9 d'Affaires, representing the first U.S. diplomatic presence in Turkey.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "David Porter, Charg\u00e9 d'Affaires. Appointed: 1831-04-15. Credentials presented: 1831-09-13."
+          }
+        ]
+      },
+      {
+        "date": "1906-10-05",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy when John G A Leishman was promoted to Ambassador Extraordinary and Plenipotentiary and presented new credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 45,
+            "quote": "John G A Leishman, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1900-12-20. Credentials presented: 1901-03-29. Promoted to Ambassador Extraordinary and Plenipotentiary 1906-10-05.\n\nJohn G A Leishman, Ambassador Extraordinary and Plenipotentiary. Appointed: 1906-06-18. Credentials presented: 1906-10-05."
+          }
+        ]
+      },
+      {
+        "date": "1917-04-20",
+        "new_status": "None",
+        "event_description": "Turkey severed diplomatic relations with the United States, ending the U.S. Embassy presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 53,
+            "quote": "Turkey severed diplomatic relations with the United States on 1917-04-20. Note: Elkus left post on May 29, 1917."
+          }
+        ]
+      },
+      {
+        "date": "1927-10-12",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established in Turkey when Joseph Clark Grew presented credentials as Ambassador Extraordinary and Plenipotentiary, restoring diplomatic relations after the 1917 break.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "Joseph Clark Grew, Ambassador Extraordinary and Plenipotentiary. Appointed: 1927-05-19. Credentials presented: 1927-10-12."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XGi39Cx4ijMqAkysb3V7vQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2346,
+      "output_tokens": 730
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Uruguay",
+    "source_file": "rdcr/articles/uruguay.xml",
+    "events": [
+      {
+        "date": "1867-10-02",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when Minister Resident Alexander Asboth presented credentials to Uruguay. Asboth was accredited to Uruguay but resident at Buenos Aires, Argentina.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on October 2, 1867, when American Minister Resident Alexander Asboth presented his credentials to the Government of the Oriental Republic of Uruguay. Asboth was also accredited to Argentina and resident at Buenos Aires."
+          }
+        ]
+      },
+      {
+        "date": "1870-07-06",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Montevideo opened, establishing a resident diplomatic mission in Uruguay.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Legation in Montevideo opened on July 6, 1870, under Minister Resident John L. Stevens."
+          }
+        ]
+      },
+      {
+        "date": "1941-01-11",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Uruguay was formally elevated to Embassy status, with William Dawson appointed as the first U.S. Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The Secretary of State announced on January 11, 1941, that the President had given his approval to raise the status of the American Legation in Uruguay to that of an Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016vyQh3vZuWvisLVXYdCU1L",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2368,
+      "output_tokens": 763
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Dominican Republic",
+    "source_file": "rdcr/articles/dominican-republic.xml",
+    "events": [
+      {
+        "date": "1884-03-26",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when John M. Langston presented credentials as American Charge d'Affaires. He was accredited to the Dominican Republic but resident at Port-au-Prince, Haiti.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on March 26, 1884, when John M. Langston presented his credentials as American Charge d'Affaires to the Government of the Dominican Republic. He was also accredited to Haiti and resident at Port-au-Prince."
+          }
+        ]
+      },
+      {
+        "date": "1904-07-23",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Santo Domingo was established when Thomas C. Dawson presented his credentials as Minister Resident/Consul General.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Legation in Santo Domingo was established on July 23, 1904, when Thomas C. Dawson presented his credentials as Minister Resident/Consul General."
+          }
+        ]
+      },
+      {
+        "date": "1943-03-23",
+        "new_status": "Embassy",
+        "event_description": "The American Legation was elevated to Embassy status following a joint announcement on March 23, 1943, between the United States and seven American Republics including the Dominican Republic.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Following a joint announcement on March 23, 1943, between the United States and seven American Republics that included Dominican Republic, the Legations in the respective nations and the United States were raised to the status of Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

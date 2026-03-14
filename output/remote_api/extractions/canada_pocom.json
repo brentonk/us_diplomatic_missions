@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014WoP6VmywnYvEQCuTzt5HL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4040,
+      "output_tokens": 588
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Canada",
+    "source_file": "pocom/missions-countries/canada.xml",
+    "events": [
+      {
+        "date": "1927-06-01",
+        "new_status": "Legation",
+        "event_description": "William Phillips presented credentials as Envoy Extraordinary and Minister Plenipotentiary, establishing the U.S. Legation in Canada.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William Phillips, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1927-02-17. Credentials presented: 1927-06-01. Left post on 1929-12-14."
+          }
+        ]
+      },
+      {
+        "date": "1943-11-19",
+        "new_status": "Embassy",
+        "event_description": "Ray Atherton was promoted from Envoy/Minister to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Canada from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "Ray Atherton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1943-07-08. Credentials presented: 1943-08-03. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-11-19."
+          }
+        ]
+      }
+    ]
+  }
+}

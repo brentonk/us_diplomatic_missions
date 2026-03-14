@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Lg5Aa5Pkbh9TiWXkQPnFkW",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3733,
+      "output_tokens": 1532
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bulgaria",
+    "source_file": "rdcr/articles/bulgaria.xml",
+    "events": [
+      {
+        "date": "1903-09-19",
+        "new_status": "Liaison",
+        "event_description": "John B. Jackson, serving as Diplomatic Agent to Bulgaria, presented his credentials in Sofia \u2014 the first U.S. representative to do so \u2014 establishing diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "John B. Jackson, who was Minister to Greece, Romania, and Serbia, was the first Diplomatic Agent to Bulgaria, and the first U.S. representative to present his credentials there, which he did on September 19, 1903. This date marks the establishment of diplomatic relations between Bulgaria and the United States."
+          }
+        ]
+      },
+      {
+        "date": "1919-03-18",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Sofia was established when Charles S. Wilson presented his credentials as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "The American Legation in Sofia was established on March 18, 1919, when Charles S. Wilson presented his credentials as Charg\u00e9 d'Affaires ad interim at Sofia."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-27",
+        "new_status": "None",
+        "event_description": "U.S. Minister George H. Earle III departed Sofia following Bulgaria's declaration of war on the United States, ending U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Bulgaria declared war on the United States on December 13, 1941. U.S. Minister George H. Earle III left Sofia and arrived in Istanbul on December 27, 1941."
+          }
+        ]
+      },
+      {
+        "date": "1947-09-27",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation in Sofia was reopened, resuming diplomatic relations after the wartime break.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The U.S. Legation in Sofia was reopened on September 27, 1947, and Donald R. Heath presented his credentials on November 8 as U.S. Minister to Bulgaria."
+          }
+        ]
+      },
+      {
+        "date": "1950-02-20",
+        "new_status": "None",
+        "event_description": "Bulgaria severed diplomatic relations with the United States; the U.S. announced suspension of relations the following day and Minister Heath departed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "Bulgaria severed diplomatic relations with the United States on February 20, 1950. The United States announced the suspension of diplomatic relations with Bulgaria on February 21, and Heath left the country on February 24, 1950."
+          }
+        ]
+      },
+      {
+        "date": "1960-03-14",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Sofia was reopened when Edward Page, Jr. presented his credentials as Minister to Bulgaria, following the 1959 agreement to resume diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "The United States and Bulgaria agreed to resume diplomatic relations on March 24, 1959. Edward Page, Jr. was appointed Minister to Bulgaria on November 23, 1959, and presented his credentials on March 14, 1960."
+          }
+        ]
+      },
+      {
+        "date": "1966-11-28",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Bulgaria was formally elevated to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "The Legation in Bulgaria was elevated to Embassy status on November 28, 1966. Minister John M. McSweeney, who had been originally appointed on May 16, 1966, was appointed Ambassador on April 7, 1967."
+          }
+        ]
+      }
+    ]
+  }
+}

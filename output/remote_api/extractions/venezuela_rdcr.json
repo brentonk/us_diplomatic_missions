@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DTzCjZBi33iRdMw3ZwkqGx",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2411,
+      "output_tokens": 578
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Venezuela",
+    "source_file": "rdcr/articles/venezuela.xml",
+    "events": [
+      {
+        "date": "1835-06-30",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when U.S. Charg\u00e9 d'Affaires John G.A. Williamson presented his credentials to the Venezuelan Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Diplomatic relations were established on June 30, 1835, when U.S. Charg\u00e9 d'Affaires John G.A. Williamson presented his credentials to the Venezuelan Government."
+          }
+        ]
+      },
+      {
+        "date": "1939",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Venezuela was raised to the rank of Embassy; Frank P. Corrigan became the first U.S. Ambassador to Venezuela.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The U.S. Legation in Venezuela was raised to the rank of Embassy in 1939. Frank P. Corrigan became the first U.S. Ambassador to Venezuela."
+          }
+        ]
+      }
+    ]
+  }
+}

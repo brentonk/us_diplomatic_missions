@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Nfy7rhwnNouWAGrDM3q6Xj",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3187,
+      "output_tokens": 669
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lesotho",
+    "source_file": "pocom/missions-countries/lesotho.xml",
+    "events": [
+      {
+        "date": "1966-10",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Lesotho established, with Richard St Francis Post serving as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Richard St Francis Post, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1966-10. Left post: 1968-07."
+          }
+        ]
+      }
+    ]
+  }
+}

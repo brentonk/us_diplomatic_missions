@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NT67jnFvdeCockX6DhcTNQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5287,
+      "output_tokens": 696
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Uruguay",
+    "source_file": "pocom/missions-countries/uruguay.xml",
+    "events": [
+      {
+        "date": "1867-10-02",
+        "new_status": "Legation",
+        "event_description": "Alexander Asboth presented credentials as the first U.S. Minister Resident to Uruguay, establishing a U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alexander Asboth, Minister Resident. Appointed: 1867-04-05. Credentials presented: 1867-10-02. Died at Buenos Aires 1868-01-21."
+          }
+        ]
+      },
+      {
+        "date": "1941-07-12",
+        "new_status": "Embassy",
+        "event_description": "William Dawson presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Uruguay, elevating the mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "William Dawson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-07-12. Left post on 1946-08-06."
+          }
+        ]
+      }
+    ]
+  }
+}

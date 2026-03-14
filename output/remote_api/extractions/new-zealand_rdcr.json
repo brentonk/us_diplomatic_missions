@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Fk3dEhbHrPCxbwT7CTDH4F",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2651,
+      "output_tokens": 714
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "New Zealand",
+    "source_file": "rdcr/articles/new-zealand.xml",
+    "events": [
+      {
+        "date": "1942-04-01",
+        "new_status": "Legation",
+        "event_description": "The United States established its legation in Wellington on April 1, 1942, under the charge of Patrick Hurley.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The United States established its legation in Wellington on April 1, 1942, under the charge of Patrick Hurley. On April 24, Hurley presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to the Government of New Zealand."
+          }
+        ]
+      },
+      {
+        "date": "1948-12-22",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Wellington was elevated to Embassy status when Robert Scotten presented his credentials as Ambassador Extraordinary and Plenipotentiary to the Government of New Zealand.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "On November 1, 1948, Robert Scotten, whose credentials as Envoy Extraordinary and Minister Plenipotentiary had been accepted on April 7, 1948, was appointed Ambassador Extraordinary and Plenipotentiary. On December 22, 1948, Scotten presented his credentials as Ambassador to the Government of New Zealand."
+          }
+        ]
+      }
+    ]
+  }
+}

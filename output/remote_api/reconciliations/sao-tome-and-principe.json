@@ -1,0 +1,71 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WczPwfZTypEERM8a7bik7N",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2513,
+      "output_tokens": 568
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1975-10-10",
+      "new_status": "None",
+      "event_description": "The United States and Sao Tome and Principe established diplomatic relations by exchange of diplomatic notes, but no mission was established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States and Sao Tome and Principe established diplomatic relations on October 10, 1975, by exchange of diplomatic notes."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1976-02-14",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Establishment of nonresident ambassadorial relations with Sao Tome and Principe; first U.S. Ambassador Extraordinary and Plenipotentiary (resident in Libreville, Gabon) presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Andrew Lee Steigman, Ambassador Extraordinary and Plenipotentiary. Appointed: 1975-12-11. Credentials presented: 1976-02-14. Left Libreville 1977-08-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Sao Tome and Principe",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. CSV date 1976-02-14 matches POCOM credential presentation date for first nonresident Ambassador (Andrew Lee Steigman, resident in Libreville, Gabon). Status 'Ambassador Nonresident' is consistent."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1975-10-10",
+        "new_status": "None",
+        "event_description": "The United States and Sao Tome and Principe established diplomatic relations by exchange of diplomatic notes on October 10, 1975. No mission was established at this time.",
+        "notes": "RDCR (primary source) explicitly states diplomatic relations were established on this date. This 'None' status event should precede the 1976-02-14 Ambassador Nonresident entry in the CSV, as it marks the formal beginning of diplomatic relations without a mission."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

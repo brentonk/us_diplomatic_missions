@@ -1,0 +1,71 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01U3BswJzmyQYCxVUDy1dVJj",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2489,
+      "output_tokens": 552
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1995-02-21",
+      "new_status": "Liaison",
+      "event_description": "The U.S. established diplomatic relations with Andorra. The Secretary of State appointed the U.S. Consul General in Barcelona to represent the United States to Andorra for diplomatic and consular affairs.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The United States established diplomatic relations with Andorra on February 21, 1995, with an exchange of letters between the Andorran government (requesting to establish full diplomatic relations) and the U.S. Secretary of State. Secretary of State Warren Christopher reciprocated by appointing the U.S. Consul General in Barcelona to also represent the United States to Andorra for diplomatic and consular affairs."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1998-10-30",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The first U.S. Ambassador to Andorra, Edward L. Romero, presented his credentials. All ambassadors to Andorra are accredited to Spain and resident in Madrid, making them nonresident ambassadors.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "The first U.S. Ambassador to Andorra, Edward L. Romero, presented his credentials on October 30, 1998. All Ambassadors to Andorra have also been accredited to Spain and resident in Madrid."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Andorra",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date match (1998-10-30) and status match (Ambassador Nonresident). First U.S. Ambassador Edward L. Romero presented credentials; all ambassadors to Andorra are resident in Madrid."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1995-02-21",
+        "new_status": "Liaison",
+        "event_description": "The U.S. established diplomatic relations with Andorra via exchange of letters. The Secretary of State appointed the U.S. Consul General in Barcelona to represent the United States to Andorra for diplomatic and consular affairs. This represents an informal liaison-type arrangement prior to the appointment of a nonresident ambassador in 1998.",
+        "notes": "High-confidence event from RDCR with verified citation. The status 'Liaison' reflects the informal representational arrangement through the Consul General in Barcelona rather than a formal embassy or legation. This predates the CSV's first event by nearly three years and represents the initial establishment of diplomatic relations."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

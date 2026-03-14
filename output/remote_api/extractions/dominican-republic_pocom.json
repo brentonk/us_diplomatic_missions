@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AKPtnZJKMGJANV3QFWpMvQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5404,
+      "output_tokens": 1791
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Dominican Republic",
+    "source_file": "pocom/missions-countries/dominican-republic.xml",
+    "events": [
+      {
+        "date": "1884-03-26",
+        "new_status": "Envoy Nonresident",
+        "event_description": "John Mercer Langston presents credentials as Charg\u00e9 d'Affaires, accredited (but not commissioned) to Santo Domingo while commissioned to Haiti \u2014 establishing nonresident diplomatic relations.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Mercer Langston, Charg\u00e9 d'Affaires. Appointed: 1883-11-12. Credentials presented: 1884-03-26. Transmitted recall by mail 1885-06-23. Note: Commissioned during a recess of the Senate; recommissioned on February 12, 1884, after confirmation. Commissioned or accredited to Santo Domingo."
+          }
+        ]
+      },
+      {
+        "date": "1904-07-23",
+        "new_status": "Legation",
+        "event_description": "Thomas Cleland Dawson presents credentials as Minister Resident/Consul General, establishing a resident legation in Santo Domingo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Thomas Cleland Dawson, Minister Resident/Consul General. Appointed: 1904-04-29. Credentials presented: 1904-07-23. Left post on 1907-05-05. Note: Commissioned during a recess of the Senate; recommissioned on December 8, 1904, after confirmation. Commissioned or accredited to Santo Domingo."
+          }
+        ]
+      },
+      {
+        "date": "1943-04-17",
+        "new_status": "Embassy",
+        "event_description": "Avra Milvin Warren promoted to Ambassador Extraordinary and Plenipotentiary, elevating the mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 41,
+            "quote": "Avra Milvin Warren, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-07-04. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-17. Avra Milvin Warren, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-17. Left post on 1944-04-22."
+          }
+        ]
+      },
+      {
+        "date": "1960-08-26",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with the Dominican Republic.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 58,
+            "quote": "Henry Mark Valpey Dearborn, Charg\u00e9 d'Affaires ad interim. The United States severed diplomatic relations with the Dominican Republic on 1960-08-26."
+          }
+        ]
+      },
+      {
+        "date": "1962-01-06",
+        "new_status": "Embassy",
+        "event_description": "John Calvin Hill presents credentials as Charg\u00e9 d'Affaires ad interim, resuming U.S. diplomatic representation at the embassy level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 60,
+            "line_end": 60,
+            "quote": "John Calvin Hill, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-01-06."
+          }
+        ]
+      },
+      {
+        "date": "1963-09-25",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted following the new unrecognized government; the U.S. suspended normal relations on 1963-09-25.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 62,
+            "line_end": 62,
+            "quote": "John Bartlow Martin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1962-03-02. Credentials presented: 1962-03-09. Normal relations interrupted on 1963-09-25. Note: The new Government of the Dominican Republic was still unrecognized by the United States when Martin left post on September 28, 1963."
+          }
+        ]
+      },
+      {
+        "date": "1964-03-23",
+        "new_status": "Embassy",
+        "event_description": "William Tapley Bennett presents credentials as Ambassador Extraordinary and Plenipotentiary, restoring full embassy-level diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 64,
+            "line_end": 64,
+            "quote": "William Tapley Bennett, Ambassador Extraordinary and Plenipotentiary. Appointed: 1964-03-04. Credentials presented: 1964-03-23. Left post on 1966-04-13."
+          }
+        ]
+      }
+    ]
+  }
+}

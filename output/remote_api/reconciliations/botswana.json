@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UgSo92Gs978gE8d3gPwD2B",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2384,
+      "output_tokens": 308
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1966-09-30",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Gaberones (Gaborone) was established upon Botswana's attainment of independence, with Charles H. Pletcher as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on September 30, 1966, when the American Embassy at Gaberones (Gaborone) was established with Charles H. Pletcher as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Botswana",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1966-09-30) and status (Embassy). Both refer to the establishment of the American Embassy at Gaborone upon Botswana's independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

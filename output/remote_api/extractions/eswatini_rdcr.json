@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XAsX1Sgx23Dp9J5xgzW55c",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2152,
+      "output_tokens": 292
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Eswatini",
+    "source_file": "rdcr/articles/swaziland.xml",
+    "events": [
+      {
+        "date": "1968-09-06",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy at Mbabane was established upon Swaziland's attainment of independence, with Chris C. Pappas, Jr., as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on September 6, 1968, when the American Embassy at Mbabane was established with Chris C. Pappas, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

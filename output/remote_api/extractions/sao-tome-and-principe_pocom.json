@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AzThLRZVLq5cGhK6nrAG39",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2907,
+      "output_tokens": 492
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sao Tome and Principe",
+    "source_file": "pocom/missions-countries/sao-tome-and-principe.xml",
+    "events": [
+      {
+        "date": "1976-02-14",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Sao Tome and Principe; first U.S. Ambassador Extraordinary and Plenipotentiary (resident in Libreville, Gabon) presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Andrew Lee Steigman, Ambassador Extraordinary and Plenipotentiary. Appointed: 1975-12-11. Credentials presented: 1976-02-14. Left Libreville 1977-08-21."
+          }
+        ]
+      }
+    ]
+  }
+}

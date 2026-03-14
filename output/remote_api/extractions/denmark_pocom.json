@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KSiB7bHmu1pUpCtwDMiya1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6087,
+      "output_tokens": 1068
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Denmark",
+    "source_file": "pocom/missions-countries/denmark.xml",
+    "events": [
+      {
+        "date": "1827-09-20",
+        "new_status": "Legation",
+        "event_description": "First U.S. mission to Denmark established when Henry Wheaton presented credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Henry Wheaton, Charg\u00e9 d'Affaires. Appointed: 1827-03-03. Credentials presented: 1827-09-20. Presented recall on or shortly before 1835-05-29."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-20",
+        "new_status": "None",
+        "event_description": "Legation Copenhagen closed, ending U.S. diplomatic representation in Denmark.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 72,
+            "line_end": 72,
+            "quote": "Robert Borden Reams, Charg\u00e9 d'Affaires ad interim. Legation Copenhagen closed on 1941-12-20."
+          }
+        ]
+      },
+      {
+        "date": "1945-06-16",
+        "new_status": "Legation",
+        "event_description": "Legation Copenhagen reopened after WWII closure, with Monnett Bain Davis in charge pending presentation of credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 74,
+            "line_end": 74,
+            "quote": "Note: The mission at Copenhagen was reopened as a Legation on June 16, 1945, with Davis in charge pending presentation of his letter of credence."
+          }
+        ]
+      },
+      {
+        "date": "1947-03-18",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy when Josiah Marvel was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 76,
+            "line_end": 78,
+            "quote": "Josiah Marvel, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-03-13. Credentials presented: 1946-04-23. Promoted to Ambassador Extraordinary and Plenipotentiary 1947-03-18."
+          }
+        ]
+      }
+    ]
+  }
+}

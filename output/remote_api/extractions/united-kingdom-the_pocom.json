@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BH5qrrN4SN7QP2krEy4xmJ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6800,
+      "output_tokens": 1005
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "United Kingdom, The",
+    "source_file": "pocom/missions-countries/united-kingdom.xml",
+    "events": [
+      {
+        "date": "1785-06-01",
+        "new_status": "Legation",
+        "event_description": "John Adams presented credentials as Minister Plenipotentiary to the court of Great Britain, establishing the first U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Adams, Minister Plenipotentiary. Appointed: 1785-02-24. Credentials presented: 1785-06-01. Had farewell audience 1788-02-20. Note: Commissioned to the court of Great Britain."
+          }
+        ]
+      },
+      {
+        "date": "1812-06-18",
+        "new_status": "None",
+        "event_description": "The United States declared war on Great Britain; Charg\u00e9 d'Affaires Jonathan Russell suspended his official functions, ending U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "The United States declared war on Great Britain on 1812-06-18. Note: Commission (issued during a recess of the Senate) not of record, but enclosed with an instruction of July 27, 1811. Russell received unofficial notice of the U.S. declaration of war on July 29, 1812, and suspended his official functions."
+          }
+        ]
+      },
+      {
+        "date": "1815-06-08",
+        "new_status": "Legation",
+        "event_description": "John Quincy Adams presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. legation after the War of 1812.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "John Quincy Adams, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1815-02-28. Credentials presented: 1815-06-08. Presented recall on 1817-05-14. Note: Commissioned to the court of the Prince Regent of the United Kingdom of Great Britain and Ireland."
+          }
+        ]
+      },
+      {
+        "date": "1893-06-22",
+        "new_status": "Embassy",
+        "event_description": "Thomas Francis Bayard presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 65,
+            "line_end": 65,
+            "quote": "Thomas Francis Bayard, Ambassador Extraordinary and Plenipotentiary. Appointed: 1893-03-30. Credentials presented: 1893-06-22. Left post on 1897-03-17."
+          }
+        ]
+      }
+    ]
+  }
+}

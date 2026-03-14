@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0139GuURRgiVJNJdqDmbaJ9u",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2590,
+      "output_tokens": 465
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Azerbaijan",
+    "source_file": "pocom/missions-countries/azerbaijan.xml",
+    "events": [
+      {
+        "date": "1992-09-16",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Azerbaijan when the first Ambassador Extraordinary and Plenipotentiary, Richard Monroe Miles, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Richard Monroe Miles, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-09-16. Left post on 1993-11-15."
+          }
+        ]
+      }
+    ]
+  }
+}

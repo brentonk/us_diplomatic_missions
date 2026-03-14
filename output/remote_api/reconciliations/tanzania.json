@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013TU8vPXnfPSsiwLcGPDZZ6",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2381,
+      "output_tokens": 347
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1961-12-09",
+      "new_status": "Embassy",
+      "event_description": "The American consulate general at Dar es Salaam was raised to Embassy status upon the establishment of diplomatic relations with Tanganyika, with William R. Duggan as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on December 9, 1961, when the American consulate general at Dar es Salaam was raised to Embassy status with William R. Duggan as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Tanzania",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the establishment of diplomatic relations with Tanganyika on 1961-12-09 when the consulate general at Dar es Salaam was raised to Embassy status. High-confidence RDCR source with verified citation."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

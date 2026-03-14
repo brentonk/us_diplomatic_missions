@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01D4FGXPt2L8BtNwzRP7iaUk",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3963,
+      "output_tokens": 873
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "South Africa",
+    "source_file": "pocom/missions-countries/south-africa.xml",
+    "events": [
+      {
+        "date": "1930-02-18",
+        "new_status": "Legation",
+        "event_description": "Ralph James Totten presented credentials as Minister Resident/Consul General to the Union of South Africa, establishing the first U.S. diplomatic mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Ralph James Totten, Minister Resident/Consul General. Appointed: 1929-12-19. Credentials presented: 1930-02-18. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1930-09-08. Note: Commissioned to the Union of South Africa."
+          }
+        ]
+      },
+      {
+        "date": "1930-09-08",
+        "new_status": "Legation",
+        "event_description": "Totten promoted to Envoy Extraordinary and Minister Plenipotentiary, elevating the U.S. mission in South Africa to a full Legation headed by an Envoy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 5,
+            "quote": "Promoted to Envoy Extraordinary and Minister Plenipotentiary 1930-09-08. Note: Commissioned to the Union of South Africa."
+          }
+        ]
+      },
+      {
+        "date": "1949-03-23",
+        "new_status": "Embassy",
+        "event_description": "North Winship promoted to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. Legation in South Africa to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "North Winship, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1948-03-24. Credentials presented: 1948-06-11. Promoted to Ambassador Extraordinary and Plenipotentiary 1949-03-23. Note: Commissioned to the Union of South Africa."
+          }
+        ]
+      }
+    ]
+  }
+}

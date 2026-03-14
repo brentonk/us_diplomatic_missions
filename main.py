@@ -1,6 +1,6 @@
 """CLI entry point for the extraction pipeline.
 
-Subcommands: stage0, stage1, stage2, stage3, stage4, assemble, generate-data, run-all
+Subcommands: extraction0..4, assemble, audit, generate-data, extraction-all
 """
 
 import argparse
@@ -21,19 +21,19 @@ def main():
     parser = argparse.ArgumentParser(description="US Diplomatic Transition Extraction Pipeline")
     parser.add_argument("--config", default="input/extraction_config.yaml", help="Path to config YAML")
     parser.add_argument("--countries", default=None, help="Comma-separated list of countries to process")
-    parser.add_argument("--dry-run", action="store_true", help="Estimate costs without making API calls (stages 2, 4)")
-    parser.add_argument("--force", action="store_true", help="Re-run API calls even if output already exists (stages 2, 4)")
+    parser.add_argument("--dry-run", action="store_true", help="Estimate costs without making API calls (extraction2, extraction4)")
+    parser.add_argument("--force", action="store_true", help="Re-run API calls even if output already exists (extraction2, extraction4)")
 
     subparsers = parser.add_subparsers(dest="command", help="Pipeline stage to run")
-    subparsers.add_parser("stage0", help="Country name resolution")
-    subparsers.add_parser("stage1", help="Preprocessing")
-    subparsers.add_parser("stage2", help="LLM extraction (Sonnet)")
-    subparsers.add_parser("stage3", help="Quote verification")
-    subparsers.add_parser("stage4", help="LLM reconciliation (Opus)")
+    subparsers.add_parser("extraction0", help="Country name resolution")
+    subparsers.add_parser("extraction1", help="Preprocessing")
+    subparsers.add_parser("extraction2", help="LLM extraction (Sonnet)")
+    subparsers.add_parser("extraction3", help="Quote verification")
+    subparsers.add_parser("extraction4", help="LLM reconciliation (Opus)")
     subparsers.add_parser("assemble", help="Final output assembly")
     subparsers.add_parser("audit", help="Generate HTML audit report")
     subparsers.add_parser("generate-data", help="Generate all data product CSVs")
-    subparsers.add_parser("run-all", help="Run all stages sequentially")
+    subparsers.add_parser("extraction-all", help="Run all extraction stages sequentially")
 
     args = parser.parse_args()
 
@@ -48,23 +48,23 @@ def main():
     if args.force:
         config.api.skip_existing = False
 
-    if args.command == "stage0":
+    if args.command == "extraction0":
         from transition_extraction.stage0_resolve import run_stage0
         run_stage0(config)
 
-    elif args.command == "stage1":
+    elif args.command == "extraction1":
         from transition_extraction.stage1_preprocess import run_stage1
         run_stage1(config, countries_filter)
 
-    elif args.command == "stage2":
+    elif args.command == "extraction2":
         from transition_extraction.stage2_extract import run_stage2
         run_stage2(config, run_timestamp, countries_filter, args.dry_run)
 
-    elif args.command == "stage3":
+    elif args.command == "extraction3":
         from transition_extraction.stage3_verify import run_stage3
         run_stage3(config, countries_filter)
 
-    elif args.command == "stage4":
+    elif args.command == "extraction4":
         from transition_extraction.stage4_reconcile import run_stage4
         run_stage4(config, run_timestamp, countries_filter, args.dry_run)
 
@@ -82,7 +82,7 @@ def main():
         from data_assembly.version import get_version
 
         version = get_version()
-        transitions_csv = config.paths.output_dir / "final" / "assembled_transitions.csv"
+        transitions_csv = config.paths.output_dir / "local" / "final" / "assembled_transitions.csv"
         if not transitions_csv.exists():
             print(f"Error: {transitions_csv} not found. Run 'assemble' first.")
             return
@@ -109,7 +109,7 @@ def main():
         generate_web_sources(output_dir, version)
         print("Done.")
 
-    elif args.command == "run-all":
+    elif args.command == "extraction-all":
         from transition_extraction.stage0_resolve import run_stage0
         from transition_extraction.stage1_preprocess import run_stage1
         from transition_extraction.stage2_extract import run_stage2

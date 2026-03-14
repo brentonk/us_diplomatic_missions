@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015b3vAqksumqEFxWDcUpsR5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2287,
+      "output_tokens": 518
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Singapore",
+    "source_file": "rdcr/articles/singapore.xml",
+    "events": [
+      {
+        "date": "1836-07-04",
+        "new_status": "Consulate",
+        "event_description": "The United States established a Consulate in Singapore by appointing Joseph Balestier to the post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established a Consulate in Singapore when it appointed Joseph Balestier to the post on July 4, 1836."
+          }
+        ]
+      },
+      {
+        "date": "1966-04-04",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy were established in Singapore, with Richard H. Donald as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations and the American Embassy were established on April 4, 1966, when the United States opened its embassy in Singapore under with Richard H. Donald as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

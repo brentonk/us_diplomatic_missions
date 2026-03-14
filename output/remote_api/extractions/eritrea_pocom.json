@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KGhh8Taa422vEsdR2MzvyU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2459,
+      "output_tokens": 686
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Eritrea",
+    "source_file": "pocom/missions-countries/eritrea.xml",
+    "events": [
+      {
+        "date": "1991-06",
+        "new_status": "Liaison",
+        "event_description": "A U.S. Charg\u00e9 d'Affaires ad interim presented credentials in June 1991, establishing an initial informal U.S. diplomatic presence in Eritrea prior to formal independence and recognition.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Joseph P Oneill, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1991-06."
+          }
+        ]
+      },
+      {
+        "date": "1993-12-31",
+        "new_status": "Embassy",
+        "event_description": "The first U.S. Ambassador Extraordinary and Plenipotentiary to Eritrea presented credentials, establishing a full U.S. Embassy following Eritrea's formal independence and U.S. recognition.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Robert Gordon Houdek, Ambassador Extraordinary and Plenipotentiary. Appointed: 1993-11-22. Credentials presented: 1993-12-31. Left post on 1996-09-10."
+          }
+        ]
+      }
+    ]
+  }
+}

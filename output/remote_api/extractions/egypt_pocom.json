@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019T6pkgyA2TcNx8GEC1GHyt",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5853,
+      "output_tokens": 1981
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Egypt",
+    "source_file": "pocom/missions-countries/egypt.xml",
+    "events": [
+      {
+        "date": "1849-03-17",
+        "new_status": "Liaison",
+        "event_description": "Daniel Smith McCauley presented credentials as Agent and Consul General, establishing a liaison-level U.S. presence in Egypt. Though commissioned only as Consul General, he used the title Agent and Consul General with the acquiescence of the Department of State.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Daniel Smith Mccauley, Agent/Consul General. Appointed: 1848-08-14. Credentials presented: 1849-03-17. Died at post on 1852-10-24. Note: Commissioned as Consul General only and used the title Agent and Consul General with the acquiescence of the Department of State."
+          }
+        ]
+      },
+      {
+        "date": "1861-07-01",
+        "new_status": "Consulate",
+        "event_description": "William Sydney Thayer presented credentials as Consul General only (not Agent and Consul General), reducing the mission to a purely consular level in Cairo, the capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "William Sydney Thayer, Consul General. Appointed: 1861-03-20. Credentials presented: 1861-07-01. Died at post on 1864-04-10. Note: Commissioned as Consul General only and used only his consular title."
+          }
+        ]
+      },
+      {
+        "date": "1864-10-15",
+        "new_status": "Liaison",
+        "event_description": "Charles Hale presented credentials as Agent and Consul General, restoring the liaison-level presence. Though commissioned only as Consul General, his title was changed to Agent and Consul General by Act of Congress.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Charles Hale, Agent/Consul General. Appointed: 1864-05-18. Credentials presented: 1864-10-15. Presented recall on 1870-05-23. Note: Commissioned as Consul General only; not recommissioned when his title was changed to Agent and Consul General by Act of Congress approved on June 20, 1864."
+          }
+        ]
+      },
+      {
+        "date": "1922-08-28",
+        "new_status": "Legation",
+        "event_description": "Joseph Morton Howell was promoted to Envoy Extraordinary and Minister Plenipotentiary and presented credentials, elevating the U.S. mission in Egypt from a liaison/agency to a full legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 51,
+            "quote": "Joseph Morton Howell, Agent/Consul General. Appointed: 1921-10-07. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1922-08-28. Joseph Morton Howell, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-06-21. Credentials presented: 1922-08-28."
+          }
+        ]
+      },
+      {
+        "date": "1946-10-10",
+        "new_status": "Embassy",
+        "event_description": "Somerville Pinkney Tuck was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials, elevating the U.S. mission in Egypt from a legation to a full embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 61,
+            "line_end": 63,
+            "quote": "Somerville Pinkney Tuck, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1944-05-04. Credentials presented: 1944-06-14. Promoted to Ambassador Extraordinary and Plenipotentiary 1946-10-10. Somerville Pinkney Tuck, Ambassador Extraordinary and Plenipotentiary. Appointed: 1946-09-19. Credentials presented: 1946-10-10."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-06",
+        "new_status": "None",
+        "event_description": "The United Arab Republic broke diplomatic relations with the United States, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 82,
+            "line_end": 82,
+            "quote": "David Gulick Nes, Charg\u00e9 d'Affaires ad interim. The United Arab Republic broke relations with the United States 1967-06-06."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Spanish Embassy in Cairo, maintaining a limited diplomatic presence after the break in relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 84,
+            "line_end": 84,
+            "quote": "On June 7, 1967, the United States established an Interests Section in the Spanish Embassy."
+          }
+        ]
+      },
+      {
+        "date": "1974-02-28",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Cairo was reestablished, with Ambassador-designate Eilts in charge pending his formal commissioning and presentation of credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 92,
+            "line_end": 92,
+            "quote": "The Embassy in Cairo was reestablished on February 28, 1974, with Ambassador-designate Eilts in charge pending his nomination, commissioning, and presentation of his letter of credence."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KKFJ1rwoHBPiCGnSPiuCBE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6972,
+      "output_tokens": 905
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Russia",
+    "source_file": "pocom/missions-countries/russia.xml",
+    "events": [
+      {
+        "date": "1809-11-05",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Russia established when John Quincy Adams presented credentials as Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Quincy Adams, Minister Plenipotentiary. Appointed: 1809-06-27. Credentials presented: 1809-11-05. Left post on 1814-04-28."
+          }
+        ]
+      },
+      {
+        "date": "1898-03-21",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation in Russia elevated to Embassy when Ethan Allen Hitchcock was promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "Ethan Allen Hitchcock, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1897-08-16. Credentials presented: 1897-12-16. Promoted to Ambassador Extraordinary and Plenipotentiary 1898-03-21."
+          }
+        ]
+      },
+      {
+        "date": "1919-09-14",
+        "new_status": "None",
+        "event_description": "U.S. Embassy in Russia closed, ending formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 87,
+            "line_end": 87,
+            "quote": "Felix Cole, Charg\u00e9 d'Affaires ad interim. Embassy in Russia closed on 1919-09-14."
+          }
+        ]
+      },
+      {
+        "date": "1933-12-13",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established with the USSR when William Christian Bullitt presented credentials as Ambassador, following restoration of diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 89,
+            "line_end": 89,
+            "quote": "William Christian Bullitt, Ambassador Extraordinary and Plenipotentiary. Appointed: 1933-11-21. Credentials presented: 1933-12-13. Left Russia 1936-05-16."
+          }
+        ]
+      }
+    ]
+  }
+}

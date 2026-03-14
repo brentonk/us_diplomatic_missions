@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012aecgiMf9rc5TkP1vhT8mV",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2132,
+      "output_tokens": 259
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malta",
+    "source_file": "rdcr/articles/malta.xml",
+    "events": [
+      {
+        "date": "1964-09-21",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Valletta was established with Harrison Lewis as Charg\u00e9 d'Affaires ad interim, following Maltese independence and U.S. recognition.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The Embassy in Valletta was established on September 21, 1964, with Harrison Lewis as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

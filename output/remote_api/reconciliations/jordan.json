@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018hEvepPi3e5faMW9DA4B6i",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2551,
+      "output_tokens": 494
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1949-02-18",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation in Jordan were established when Wells Stabler presented his credentials as Charg\u00e9 d'Affaires ad interim at Amman.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Legation in Jordan were established on February 18, 1949 when Wells Stabler presented his credentials as Charg\u00e9 d'Affaires ad interim at Amman."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-09-23",
+      "new_status": "Embassy",
+      "event_description": "U.S. Legation in Jordan elevated to Embassy when Joseph Coy Green was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quote": "Joseph Coy Green, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1952-05-14. Credentials presented: 1952-07-31. Promoted to Ambassador Extraordinary and Plenipotentiary 1952-09-23."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Jordan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both CSV and RDCR agree on 1949-02-18 as the date diplomatic relations and the American Legation were established."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Dates and statuses match. RDCR does not provide a separate institutional elevation date, so POCOM's promotion date of 1952-09-23 is used per source priority rules. CSV note references the Chiefs of Mission page, consistent with POCOM sourcing."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

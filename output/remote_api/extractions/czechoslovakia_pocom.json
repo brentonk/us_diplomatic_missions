@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FsnJPyp6iHMCrwexbkoe9z",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4058,
+      "output_tokens": 1434
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Czechoslovakia",
+    "source_file": "pocom/missions-countries/czechoslovakia.xml",
+    "events": [
+      {
+        "date": "1919-06-11",
+        "new_status": "Legation",
+        "event_description": "Richard Crane presented credentials as Envoy Extraordinary and Minister Plenipotentiary, establishing the U.S. Legation in Czechoslovakia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Richard Crane, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1919-04-23. Credentials presented: 1919-06-11."
+          }
+        ]
+      },
+      {
+        "date": "1939-03-21",
+        "new_status": "None",
+        "event_description": "The U.S. Legation in Praha was closed following German occupation of Praha on March 15, 1939.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "German forces occupied Praha on 1939-03-15. Note: Carr closed the Legation in Praha on March 21, 1939, and left post on April 6, 1939."
+          }
+        ]
+      },
+      {
+        "date": "1941-10-28",
+        "new_status": "Legation",
+        "event_description": "Anthony J. Drexel Biddle Jr. presented credentials as Envoy Extraordinary and Minister Plenipotentiary to the Czechoslovak government-in-exile, re-establishing a U.S. Legation near the government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-09-17. Credentials presented: 1941-10-28. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-07-12."
+          }
+        ]
+      },
+      {
+        "date": "1943-07-12",
+        "new_status": "Embassy",
+        "event_description": "Biddle was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on 1943-07-12, elevating the mission to an Embassy near the Government of Czechoslovakia in England.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 17,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-09-17. Credentials presented: 1941-10-28. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-07-12."
+          }
+        ]
+      },
+      {
+        "date": "1945-05-29",
+        "new_status": "Embassy",
+        "event_description": "Alfred Will Klieforth presented credentials as Charg\u00e9 d'Affaires ad interim in Czechoslovakia, re-establishing the Embassy in-country after the termination of the Embassy near the government-in-exile in England.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "Note: Rudolph E. Schoenfeld was serving as Charg\u00e9 d'Affaires ad interim when the mission of the Embassy near the Government of Czechoslovakia established in England was terminated\n\nAlfred Will Klieforth, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1945-05-29."
+          }
+        ]
+      },
+      {
+        "date": "1992-12-31",
+        "new_status": "None",
+        "event_description": "The Czech and Slovak Federal Republic ceased to exist, ending U.S. diplomatic relations with Czechoslovakia as a state.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "The Czech and Slovak Federal Republic ceased to exist on 1992-12-31. Note: Basora continued to serve as Ambassador to the Czech Republic."
+          }
+        ]
+      }
+    ]
+  }
+}

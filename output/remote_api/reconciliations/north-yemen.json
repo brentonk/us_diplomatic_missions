@@ -1,0 +1,228 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MuumRjjNMPDfDaA14Vb272",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3489,
+      "output_tokens": 1356
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1946-03-04",
+      "new_status": "Liaison",
+      "event_description": "The U.S. established a Special Diplomatic Mission to the Kingdom of Yemen, with William A. Eddy named as Chief of Mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Diplomatic relations were established on March 4, 1946, when the United States and Yemen agreed to the appointment of an American Special Diplomatic Mission to the Kingdom of the Yemen. William A. Eddy was named Chief of this mission and concluded a provisional agreement on relations between the two states on May 4, 1946."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1946-09-30",
+      "new_status": "Envoy Nonresident",
+      "event_description": "J. Rives Childs presented credentials as Envoy Extraordinary and Minister Plenipotentiary to the Kingdom of Yemen, but was nonresident, being accredited also to Saudi Arabia and resident at Jidda.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "On September 30, 1946, J. Rives Childs presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to the Kingdom of Yemen (North Yemen). Childs was also accredited to Saudi Arabia and was resident at Jidda."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1959-03-16",
+      "new_status": "Legation",
+      "event_description": "The American Legation at Taiz was opened to the public, establishing a resident diplomatic mission in North Yemen.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 32,
+          "line_end": 32,
+          "quote": "The American Legation at Taiz was opened to the public as of March 16, 1959, with Charles B. Ferguson as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1963-01-28",
+      "new_status": "Embassy",
+      "event_description": "The American Legation at Taiz was elevated to Embassy status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 37,
+          "line_end": 37,
+          "quote": "The American Legation at Taiz was raised to Embassy status on January 28, 1963."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1967-06-07",
+      "new_status": "None",
+      "event_description": "The Yemen Arab Republic (North Yemen) severed diplomatic relations with the United States in the wake of the Arab-Israeli conflict.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 45,
+          "line_end": 45,
+          "quote": "The Yemen Arab Republic (North Yemen) severed relations with the United States on June 7, 1967 in the wake of the Arab-Israeli conflict."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-07",
+      "new_status": "Embassy",
+      "event_description": "The United States reestablished diplomatic relations with the Yemen Arab Republic and reopened the Embassy in San'a following a visit by Secretary of State Rogers.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 67,
+          "line_end": 67,
+          "quote": "The United States reestablished diplomatic relations with the Yemen Arab Republic after a visit to San'a by U.S. Secretary of State William P. Rogers in July 1972. At this time, the Embassy in San'a reopened."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1970-04-10",
+      "new_status": "Interests",
+      "event_description": "The United States established an Interests Section in the Italian Embassy in Yemen.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "On April 10, 1970, the United States established an Interests Section in the Italian Embassy."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-12-19",
+      "new_status": "Embassy",
+      "event_description": "Ambassador William Rex Crawford presented credentials to the Yemen Arab Republic, restoring full ambassadorial-level embassy relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "William Rex Crawford, Ambassador Extraordinary and Plenipotentiary. Appointed: 1972-10-12. Credentials presented: 1972-12-19. Left post on 1974-07-06. Note: Commissioned to the Yemen Arab Republic."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "2015-02-11",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The U.S. Embassy in Sanaa suspended operations and all personnel were withdrawn due to deteriorating security during the Yemeni civil war. Diplomatic relations were not severed; U.S. diplomats continued working from the U.S. Embassy in Riyadh under the authority of the U.S. Ambassador to Yemen.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 65,
+          "line_end": 65,
+          "quote": "The U.S. Embassy in Sanaa suspended operations on February 11, 2015, and all U.S. personnel were withdrawn after security conditions deteriorated in the midst of the Yemeni civil war; however, the United States did not sever diplomatic relations with Yemen. Working from the U.S. Embassy in Riyadh, Saudi Arabia under the authority of the U.S. Ambassador to Yemen, U.S. diplomats in the Yemeni Affairs Unit maintained regular dialogue with the Republic of Yemen Government."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 6,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "North Yemen",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1946-09-30) and status (Envoy Nonresident). RDCR confirms Childs presented credentials as Envoy, nonresident at Jidda."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1959-03-16) and status (Legation). RDCR confirms American Legation at Taiz opened to the public."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact match on date (1963-01-28) and status (Embassy). RDCR confirms Legation elevated to Embassy status."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact match on date (1967-06-07) and status (None). RDCR confirms Yemen Arab Republic severed relations."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Exact match on date (1970-04-10) and status (Interests). Sourced from POCOM; RDCR does not provide a specific date for the Interests Section establishment."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5,
+          7
+        ],
+        "notes": "RDCR (Event 5) says Embassy reopened in 'July 1972' without a specific day. CSV uses 1972-07-01 as an approximation. POCOM (Event 7) gives 1972-12-19 for credential presentation, which is a separate personnel event. Per source priority, RDCR's 'July 1972' is the correct institutional date; CSV's use of July 1 is a reasonable approximation of the month-only RDCR date."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1946-03-04",
+        "new_status": "Liaison",
+        "event_description": "The U.S. established a Special Diplomatic Mission to the Kingdom of Yemen, with William A. Eddy named as Chief of Mission. This preceded the formal Envoy Nonresident appointment on 1946-09-30.",
+        "notes": "RDCR explicitly states diplomatic relations were established on March 4, 1946 via a Special Diplomatic Mission. This is a distinct earlier event before the Envoy Nonresident status in Row 1. Strong candidate for addition as a 'Liaison' or similar pre-legation status."
+      },
+      {
+        "extracted_event_indices": [
+          8
+        ],
+        "date": "2015-02-11",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. Embassy in Sanaa suspended operations and all personnel withdrawn due to Yemeni civil war. Diplomats continued working from Riyadh under the U.S. Ambassador to Yemen.",
+        "notes": "This event pertains to the unified Republic of Yemen (post-1990 unification of North and South Yemen). It may fall outside the scope of the 'North Yemen' dataset if the CSV tracks North Yemen only up to unification in 1990. However, if the CSV tracks the successor state, this is a significant missing event from POCOM."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

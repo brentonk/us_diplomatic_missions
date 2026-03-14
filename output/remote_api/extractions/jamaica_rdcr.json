@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QYPB2n3ft52tGMDjRAH5ZS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2148,
+      "output_tokens": 269
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Jamaica",
+    "source_file": "rdcr/articles/jamaica.xml",
+    "events": [
+      {
+        "date": "1962-08-16",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy at Kingston were established upon U.S. recognition of Jamaican independence, with Irving G. Cheslaw as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Embassy at Kingston were established on August 16, 1962, with Irving G. Cheslaw as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

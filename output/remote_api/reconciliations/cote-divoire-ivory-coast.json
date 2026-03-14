@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016Bm32gksEGXExrthDvRNtu",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2379,
+      "output_tokens": 358
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-07",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations established and the American consulate at Abidjan was elevated to Embassy status, with former consul Donald R. Norland as Charg\u00e9 d'Affaires.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on August 7, 1960, when the American consulate at Abidjan was elevated to Embassy status with former consul Donald R. Norland as Charge d'Affaires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Cote d'Ivoire (Ivory Coast)",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both sources agree on 1960-08-07 as the date diplomatic relations were established and the consulate at Abidjan was elevated to Embassy status. RDCR citation verified with high confidence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

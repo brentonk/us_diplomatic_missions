@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KxHo6T1oSqwzSepLrgPNNa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2267,
+      "output_tokens": 380
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Azerbaijan",
+    "source_file": "rdcr/articles/azerbaijan.xml",
+    "events": [
+      {
+        "date": "1992-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the United States and Azerbaijan, but no mission yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 17,
+            "quote": "Diplomatic relations were established on February 19, 1992, when President George H.W. Bush announced the decision in a press statement."
+          }
+        ]
+      },
+      {
+        "date": "1992-03-16",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Baku was opened with Robert Finn as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 21,
+            "quote": "The American Embassy in Baku was opened on March 16, 1992, with Robert Finn as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

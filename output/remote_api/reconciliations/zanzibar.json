@@ -1,0 +1,73 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VnekagHo3LXxsBo5i8nDEq",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2526,
+      "output_tokens": 648
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1963-12-10",
+      "new_status": "Embassy",
+      "event_description": "Embassy in Zanzibar established with Frederick P. Picard III as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "On December 10, 1963, the Embassy in Zanzibar was established with Frederick P. Picard III as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1964-06-27",
+      "new_status": "Consulate",
+      "event_description": "Embassy Zanzibar downgraded in rank to a Consulate General, effective June 27, 1964, following Zanzibar's union with Tanganyika on April 27, 1964.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Frank C. Carlucci III was serving as Charge d'Affaires ad interim when Embassy Zanzibar was changed in rank to a Consulate General, effective June 27, 1964."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "Zanzibar",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1963-12-10) and status (Embassy). Both sources agree."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "new_status",
+        "csv_value": "Consulate",
+        "extracted_value": "Consulate (described as 'Consulate General' in source)",
+        "assessment": "ambiguous",
+        "reasoning": "The date matches exactly (1964-06-27), but the extracted event describes the downgrade as to a 'Consulate General,' while the CSV records it as 'Consulate.' Note that Event 1 has a CITATION ERROR flag, so the exact source wording is uncertain. However, the description consistently says 'Consulate General.' The CSV status category 'Consulate' may be used as a catch-all for both Consulate and Consulate General (since there is no separate 'Consulate General' category in the CSV schema), in which case this is effectively a match. But if the distinction matters, the source text likely says 'Consulate General,' not simply 'Consulate.' Marked as ambiguous because the CSV schema does not include a 'Consulate General' category, so 'Consulate' may be the correct coding choice even if the actual rank was Consulate General."
+      }
+    ]
+  }
+}

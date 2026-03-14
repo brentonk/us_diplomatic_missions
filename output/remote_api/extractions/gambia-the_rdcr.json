@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012FvRvnUHPnqQ22fA1vDzuA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2263,
+      "output_tokens": 587
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Gambia, The",
+    "source_file": "rdcr/articles/gambia.xml",
+    "events": [
+      {
+        "date": "1965-08-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established when Ambassador Mercer Cook presented credentials to Gambian authorities. Cook was nonresident, accredited to Senegal and resident at Dakar.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 9, 1965, when Ambassador Mercer Cook presented his credentials to Gambian authorities. Cook also was accredited to Senegal and was resident at Dakar."
+          }
+        ]
+      },
+      {
+        "date": "1965-09-09",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy at Bathurst (now Banjul) was established, with John G. Gossett as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The Embassy at Bathurst (now Banjul) was established on September 9, 1965, with John G. Gossett as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

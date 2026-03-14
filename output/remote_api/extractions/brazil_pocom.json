@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0127sH98cd7dDSxCWbfJ6f7T",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5680,
+      "output_tokens": 1064
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Brazil",
+    "source_file": "pocom/missions-countries/brazil.xml",
+    "events": [
+      {
+        "date": "1825-10-29",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Brazil with Condy Raguet presenting credentials as the first Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Condy Raguet, Charg\u00e9 d'Affaires. Appointed: 1825-03-09. Credentials presented: 1825-10-29. Left post on 1827-04-16."
+          }
+        ]
+      },
+      {
+        "date": "1842-01-01",
+        "new_status": "Legation",
+        "event_description": "Mission elevated within the Legation: William Hunter promoted from Charg\u00e9 d'Affaires to Envoy Extraordinary and Minister Plenipotentiary, the first Minister-level head of the U.S. Legation in Brazil.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 11,
+            "quote": "William Jr Hunter, Charg\u00e9 d'Affaires. Appointed: 1834-06-28. Credentials presented: 1835-01-07. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1842-01-01.\n\nWilliam Jr Hunter, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1841-09-13. Credentials presented: 1842-01-01."
+          }
+        ]
+      },
+      {
+        "date": "1905-03-16",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy; David Eugene Thompson promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials as first Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 49,
+            "quote": "David Eugene Thompson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1902-12-08. Credentials presented: 1903-04-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1905-03-16.\n\nDavid Eugene Thompson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1905-01-13. Credentials presented: 1905-03-16."
+          }
+        ]
+      }
+    ]
+  }
+}

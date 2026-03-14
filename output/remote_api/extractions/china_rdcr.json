@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T10:25:55.396148-05:00",
+  "api_metadata": {
+    "message_id": "msg_018W6PzSrkCRLmhGP4qemdrL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4698,
+      "output_tokens": 1853
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "China",
+    "source_file": "rdcr/articles/china.xml",
+    "events": [
+      {
+        "date": "1844-06-16",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when Caleb Cushing presented credentials as Envoy Extraordinary and Minister Plenipotentiary to Chinese authorities, establishing a U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Diplomatic relations were first established on or about June 16, 1844, when Caleb Cushing presented his credentials as Envoy Extraordinary and Minister Plenipotentiary and Commissioner to the Chinese authorities in Macao."
+          }
+        ]
+      },
+      {
+        "date": "1912-02-12",
+        "new_status": "None",
+        "event_description": "Diplomatic relations interrupted when the Manchu Emperor abdicated in favor of a provisional republican government; the U.S. withheld recognition pending establishment of a permanent government.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Diplomatic relations were interrupted on February 12, 1912, when, as a result of the Chinese Revolution, the Manchu Emperor abdicated his throne in favor of a provisional republican government. The United States withheld recognition of this new provisional government while awaiting the organization of a permanent government."
+          }
+        ]
+      },
+      {
+        "date": "1913-05-02",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations resumed when the U.S. Legation in Beijing communicated a message from President Wilson to President Yuan Shikai upon convening of the National Assembly for the new Republic of China.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "Diplomatic relations were resumed on May 2, 1913, when the Legation in Beijing communicated a message from President Woodrow Wilson to President Yuan Shikai of China upon the convening of the National Assembly for the new Republic of China."
+          }
+        ]
+      },
+      {
+        "date": "1924-12-09",
+        "new_status": "None",
+        "event_description": "Diplomatic relations interrupted when the U.S. Legation informed the newly declared Provisional Government that the U.S. would maintain only 'de facto relations' pending establishment of a formal government.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "Diplomatic relations were interrupted on December 9, 1924, when the Legation in Beijing informed the newly declared Provisional Government of the Republic of China that the United States would maintain \"de facto relations\" with it, pending the establishment of a formal government."
+          }
+        ]
+      },
+      {
+        "date": "1928-07-25",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations resumed with the Nationalist Government of the Republic of China when U.S. diplomatic representatives signed a tariff revision treaty with Nationalist officials, constituting full recognition.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "On July 25, 1928, following a period of governmental instability and the emergence of the Nationalist Government of the Republic of China, U.S. diplomatic representatives in China signed a tariff revision treaty with Nationalist officials. The Department of State declared that this act constituted full recognition of the Nationalist Government of China, with which diplomatic relations would be conducted."
+          }
+        ]
+      },
+      {
+        "date": "1935-06-18",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Beijing was elevated to the level of Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 54,
+            "line_end": 54,
+            "quote": "The Legation in Beijing was elevated to the level of Embassy on June 18, 1935."
+          }
+        ]
+      },
+      {
+        "date": "1973-05-01",
+        "new_status": "Liaison",
+        "event_description": "The United States opened the U.S. Liaison Office in Beijing to handle all matters in the U.S.-PRC relationship except strictly formal diplomatic aspects, as a step toward normalization with the PRC.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 83,
+            "line_end": 83,
+            "quote": "on May 1, 1973, the United States opened the U.S. Liaison Office in Beijing to handle all matters in the U.S.-PRC relationship \"except the strictly formal diplomatic aspects of the relationship.\""
+          }
+        ]
+      },
+      {
+        "date": "1979-03-01",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Liaison Office in Beijing was converted to a full Embassy, and Leonard F. Woodcock was appointed Ambassador, following U.S. recognition of the PRC on January 1, 1979.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 96,
+            "line_end": 96,
+            "quote": "The U.S. Liaison Office in Beijing was converted to an Embassy on March 1, 1979, and Leonard F. Woodcock, who had been head of the Liaison Office, was appointed Ambassador."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NfHsky3j2iWambMwRWv1fc",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3531,
+      "output_tokens": 930
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nepal",
+    "source_file": "pocom/missions-countries/nepal.xml",
+    "events": [
+      {
+        "date": "1948-05-03",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Henry Francis Grady presented credentials as the first U.S. Envoy Extraordinary and Minister Plenipotentiary to Nepal, operating nonresident from New Delhi.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Henry Francis Grady, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1948-02-26. Credentials presented: 1948-05-03. Left New Delhi 1948-06-22."
+          }
+        ]
+      },
+      {
+        "date": "1952-02-16",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Chester Bliss Bowles presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Nepal, operating nonresident from New Delhi, elevating the mission from Envoy to Ambassador level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Chester Bliss Bowles, Ambassador Extraordinary and Plenipotentiary. Appointed: 1951-10-10. Credentials presented: 1952-02-16. Left New Delhi 1953-03-23."
+          }
+        ]
+      },
+      {
+        "date": "1959-08-06",
+        "new_status": "Embassy",
+        "event_description": "Embassy Kathmandu was formally opened, establishing a resident U.S. Embassy in Nepal for the first time.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "During Bunker's tenure as non-resident Ambassador, Embassy Kathmandu was opened on August 6, 1959, with L. Douglas Heck as Charge d'affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

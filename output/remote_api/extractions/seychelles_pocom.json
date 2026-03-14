@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0123rLHbV8fQqKJZsxJqEPRJ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3133,
+      "output_tokens": 563
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Seychelles",
+    "source_file": "pocom/missions-countries/seychelles.xml",
+    "events": [
+      {
+        "date": "1976-07-01",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. Ambassador Nonresident relations established with Seychelles. Anthony Dryden Marshall presented credentials on 1976-07-01 and was resident in Nairobi, not in Seychelles.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Anthony Dryden Marshall, Ambassador Extraordinary and Plenipotentiary. Appointed: 1976-06-30. Credentials presented: 1976-07-01. Left Nairobi 1977-04-26."
+          }
+        ]
+      }
+    ]
+  }
+}

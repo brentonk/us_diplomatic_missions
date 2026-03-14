@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PkcMkGd3noNP1UPdcwh1XB",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2222,
+      "output_tokens": 277
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Zimbabwe",
+    "source_file": "rdcr/articles/zimbabwe.xml",
+    "events": [
+      {
+        "date": "1980-04-18",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Salisbury (now Harare) was established upon Zimbabwe's attainment of independence, with Jeffrey Davidow as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "Diplomatic relations were established on April 18, 1980, when the American Embassy at Salisbury (now Harare) was established with Jeffrey Davidow as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

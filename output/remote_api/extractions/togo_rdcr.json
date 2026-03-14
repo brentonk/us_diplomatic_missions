@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Qi8F8ZmQUu4AAynwmgtBEP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2203,
+      "output_tokens": 280
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Togo",
+    "source_file": "rdcr/articles/togo.xml",
+    "events": [
+      {
+        "date": "1960-04-27",
+        "new_status": "Embassy",
+        "event_description": "The American consulate at Lom\u00e9 was raised to Embassy status upon establishment of diplomatic relations with Togo, with Jesse M. MacKnight as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on April 27, 1960, when the American consulate at Lom\u00e9 was raised to Embassy status with Jesse M. MacKnight as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012fraxStN5EPQBkxdhcWPD2",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2620,
+      "output_tokens": 457
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1996-12-06",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "U.S. Ambassador to the Philippines Thomas C. Hubbard was accredited to Palau, remaining resident in Manila, establishing nonresident ambassadorial relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "On December 6, 1996, U.S. Ambassador to the Philippines Thomas C. Hubbard was accredited to Palau; he remained resident at Manila."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2004-10-10",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Koror was established, with Deborah L. Kingsland as Charg\u00e9 d'Affaires, ending the nonresident ambassadorial arrangement.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Koror was established on October 10, 2004, with Deborah L. Kingsland as Charg\u00e9 d'Affaires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "2010-09-30",
+      "new_status": "Embassy",
+      "event_description": "Ambassador Reed presented credentials and left 'post' (not Manila), suggesting a transition to a resident embassy in Palau.",
+      "confidence": "low",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "Rowe Helen Patricia Reed, Ambassador Extraordinary and Plenipotentiary. Appointed: 2010-08-09. Credentials presented: 2010-09-30. Left post on 2013-07-26."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Palau",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1996-12-06) and status (Ambassador Nonresident). RDCR confirms accreditation of nonresident ambassador."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (2004-10-10) and status (Embassy). RDCR confirms establishment of American Embassy in Koror."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

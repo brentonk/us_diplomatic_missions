@@ -1,0 +1,223 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VE37SsAUtNKUrSRzhvnpgg",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3380,
+      "output_tokens": 1002
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1796-03-04",
+      "new_status": "Consulate",
+      "event_description": "Formal U.S. consular representation at Algiers (the capital) began with Joel Barlow's presentation of credentials as consul to Dey Hassan of Algiers.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Formal U.S. Consular representation began with Joel Barlow's presentation of his credentials as consul to Dey Hassan of Algiers on March 4, 1796."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1812-07-25",
+      "new_status": "None",
+      "event_description": "Consular presence at Algiers interrupted due to the Algerian War (one of the Barbary Wars).",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Consular presence was interrupted from July 25, 1812 until July of 1815 owing to the Algerian War, one of the Barbary Wars."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1815-07",
+      "new_status": "Consulate",
+      "event_description": "Consular presence at Algiers resumed after the end of the Algerian War.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Consular presence was interrupted from July 25, 1812 until July of 1815 owing to the Algerian War, one of the Barbary Wars."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1830",
+      "new_status": "None",
+      "event_description": "Consular presence at Algiers effectively lapsed when appointee David Porter chose not to take up his post following the French occupation of Algiers.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "When appointee David Porter heard of the French occupation of Algiers in 1830, he chose not to take up his post, instead waiting for a new assignement as Charg\u00e9 d'Affaires at Instanbul, where he arrived in 1831. There is no extant consul until the arrival of George F. Brown in 1835."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": true
+    },
+    {
+      "date": "1835",
+      "new_status": "Consulate",
+      "event_description": "Consular presence at Algiers resumed with the arrival of George F. Brown.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "There is no extant consul until the arrival of George F. Brown in 1835, whose exequatur was revoked in 1838."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-09-29",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations and the American Embassy at Algiers were established when Algeria agreed to the elevation of the American Consulate General to Embassy status, with William J. Porter as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 33,
+          "line_end": 33,
+          "quote": "Diplomatic relations and the American Embassy at Algiers were established on September 29, 1962, when Algerian agreed to the elevation of the American Consulate General to Embassy status, with William J. Porter as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1967-06-06",
+      "new_status": "Interests",
+      "event_description": "Algeria severed diplomatic relations with the United States following the June 1967 Arab-Israeli War; a U.S. Interests Section was established in the Swiss Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 37,
+          "line_end": 37,
+          "quote": "Algeria severed diplomatic relations with the United States on June 6, 1967, in the wake of the June 1967 Arab-Israeli War. A U.S. Interests Section was established in the Swiss Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": false
+    },
+    {
+      "date": "1974-11-12",
+      "new_status": "Embassy",
+      "event_description": "The United States and Algeria reestablished diplomatic relations and their respective embassies in Algiers and Washington reopened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 41,
+          "line_end": 41,
+          "quote": "The United States and Algeria reestablished diplomatic relations, and their respective embassies in Algiers and Washington reopened on November 12, 1974."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 7,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-12-17",
+      "new_status": "Embassy",
+      "event_description": "Embassy Algiers established as William James Porter presented credentials as the first U.S. Ambassador to Algeria.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "William James Porter, Ambassador Extraordinary and Plenipotentiary. Appointed: 1962-11-29. Credentials presented: 1962-12-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Algeria",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both cite Joel Barlow's presentation of credentials on 1796-03-04."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Interruption of consular presence due to the Algerian War on 1812-07-25."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact date and status match. Resumption of consular presence in July 1815 after the Algerian War."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Date and status match (both 1830, None). Event 3 has a citation error flag, but the quoted evidence text is consistent with the claimed event (David Porter not taking up post after French occupation). Medium confidence."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact date and status match. Resumption of consular presence with George F. Brown in 1835."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5,
+          8
+        ],
+        "notes": "CSV date 1962-09-29 matches RDCR (Event 5), which gives the institutional date for embassy establishment. POCOM (Event 8) gives 1962-12-17 as the credential presentation date for Ambassador Porter, which is a separate personnel event. Per source priority rules, RDCR wins for institutional dates. No discrepancy."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Exact date and status match. Algeria severed relations on 1967-06-06; U.S. Interests Section established in Swiss Embassy."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          7
+        ],
+        "notes": "Exact date and status match. Reestablishment of diplomatic relations and reopening of embassies on 1974-11-12."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

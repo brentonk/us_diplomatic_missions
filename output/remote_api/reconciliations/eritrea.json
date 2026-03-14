@@ -1,0 +1,90 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EZhngo6erwAbiwfsrKC3KG",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2574,
+      "output_tokens": 776
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1993-06-11",
+      "new_status": "Embassy",
+      "event_description": "The American consulate at Asmara was raised to Embassy status with Joseph P. O'Neill as Charg\u00e9 d'Affaires ad interim, establishing diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on June 11, 1993, when the American consulate at Asmara was raised to Embassy status with Joseph P. O'Neill as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1991-06",
+      "new_status": "Liaison",
+      "event_description": "A U.S. Charg\u00e9 d'Affaires ad interim presented credentials in June 1991, establishing an initial informal U.S. diplomatic presence in Eritrea prior to formal independence and recognition.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Joseph P Oneill, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1991-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-12-31",
+      "new_status": "Embassy",
+      "event_description": "The first U.S. Ambassador Extraordinary and Plenipotentiary to Eritrea presented credentials, establishing a full U.S. Embassy following Eritrea's formal independence and U.S. recognition.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Robert Gordon Houdek, Ambassador Extraordinary and Plenipotentiary. Appointed: 1993-11-22. Credentials presented: 1993-12-31. Left post on 1996-09-10."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Eritrea",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "CSV date 1993-06-11 matches RDCR Event 0 exactly. POCOM Event 2 (1993-12-31) reflects the first Ambassador presenting credentials, a later personnel event confirming the Embassy status. No conflict."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "new_status",
+        "csv_value": "Consulate",
+        "extracted_value": "Liaison",
+        "assessment": "csv_likely_correct",
+        "reasoning": "The extracted event from POCOM labeled this as 'Liaison' based on the presence of a Charg\u00e9 d'Affaires ad interim in June 1991. However, RDCR Event 0 explicitly states 'the American consulate at Asmara was raised to Embassy status' on 1993-06-11, confirming that the pre-Embassy U.S. presence was a Consulate, not a Liaison office. The extractor's 'Liaison' label was an inference; the RDCR primary source confirms the facility was a consulate. The CSV's 'Consulate' status is correct. The date (1991-06) is consistent between both."
+      }
+    ]
+  }
+}

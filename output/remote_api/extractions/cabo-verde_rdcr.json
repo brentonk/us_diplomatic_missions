@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NcwB9ZxkAVFSvpVUmAjQsM",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2278,
+      "output_tokens": 590
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cabo Verde",
+    "source_file": "rdcr/articles/cape-verde.xml",
+    "events": [
+      {
+        "date": "1976-11-18",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Ambassador Melissa F. Wells presented credentials to the government of Cape Verde but was resident at Bissau (Guinea-Bissau), establishing nonresident ambassadorial relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Ambassador Melissa F. Wells presented her credentials to the government of Cape Verde on November 18, 1976. Wells also was accredited to Guinea-Bissau and was resident at Bissau."
+          }
+        ]
+      },
+      {
+        "date": "1978-01-28",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Praia was established, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The American Embassy at Praia was established on January 28, 1978, with Howard McGowan as Charge d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

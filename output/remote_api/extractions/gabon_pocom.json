@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HcGXPHdgSnsJrTgd9gv3X2",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3366,
+      "output_tokens": 933
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Gabon",
+    "source_file": "pocom/missions-countries/gabon.xml",
+    "events": [
+      {
+        "date": "1960-08-17",
+        "new_status": "None",
+        "event_description": "Alan Wood Lukens served as Charg\u00e9 d'Affaires ad interim upon Gabonese independence, representing the U.S. before any formal ambassadorial appointment or embassy establishment. This marks the initial U.S. presence but not yet a full mission.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-17."
+          }
+        ]
+      },
+      {
+        "date": "1961-01-13",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Wilton Wendell Blancke presented credentials as the first U.S. Ambassador to Gabon, serving in a nonresident capacity before Embassy Libreville was established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Wilton Wendell Blancke, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-12-12. Credentials presented: 1961-01-13. Superseded 1961-10-10. Note: Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Blancke's tenure as non-resident Ambassador, Embassy Libreville was established March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1961-03-20",
+        "new_status": "Embassy",
+        "event_description": "Embassy Libreville was formally established on March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Blancke's tenure as non-resident Ambassador, Embassy Libreville was established March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

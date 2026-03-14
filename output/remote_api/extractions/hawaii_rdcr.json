@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SzCuTvhsuCJ127mNVDpS7c",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4271,
+      "output_tokens": 1180
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Hawaii",
+    "source_file": "rdcr/articles/hawaii.xml",
+    "events": [
+      {
+        "date": "1820-10",
+        "new_status": "Consul Nonresident",
+        "event_description": "John Coffin Jones Jr. appointed Agent for Commerce and Seamen at the port of Honolulu, beginning to serve in October 1820. This is a consular-level presence, but Honolulu was not yet the capital (Lahaina was capital before 1845), so coded as Consul Nonresident.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "John Coffin Jones, Jr. (also known in Hawaiian documents as John Aluli) was appointed Agent for Commerce and Seamen on September 19, 1820. He began to serve in October of 1820, at the port of Honolulu."
+          }
+        ]
+      },
+      {
+        "date": "1853-12-20",
+        "new_status": "Legation",
+        "event_description": "David L. Gregg presented his credentials as U.S. Commissioner to the Kingdom of Hawaii, establishing the American Legation at Honolulu.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "David L. Gregg presented his credentials as U.S. Commissioner to the Kingdom of Hawaii on December 20, 1853. Gregg referred to the Mission at Honolulu as a Legation in his first dispatch from Hawaii on December 27, 1853."
+          }
+        ]
+      },
+      {
+        "date": "1898-08-12",
+        "new_status": "None",
+        "event_description": "The American Legation at Honolulu ceased to exist upon the formal U.S. annexation of Hawaii, ending all diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "Owing to U.S. annexation of Hawaii, the legation ceased to exist on August 12, 1898. Harold Sewall, the last Envoy Extraordinary and Plenipotentiary, became Special Agent."
+          }
+        ]
+      }
+    ]
+  }
+}

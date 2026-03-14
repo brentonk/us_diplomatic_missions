@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UBx6bVCZvheMuRUjH56rAe",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2528,
+      "output_tokens": 464
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-01-01",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Consulate General at Yaounde was elevated to Embassy status, establishing diplomatic relations with the newly independent Republic of Cameroon. Bolard More served as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Embassy in Cameroon were established on January 1, 1960, when the Consulate General at Yaounde was elevated to Embassy status, with Bolard More as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-06-09",
+      "new_status": "Embassy",
+      "event_description": "First U.S. Ambassador Extraordinary and Plenipotentiary to Cameroon, Leland Judd Barrows, presented credentials, confirming full Embassy-level representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Leland Judd Barrows, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-04-20. Credentials presented: 1960-06-09. Left post on 1966-09-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Cameroon",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date 1960-01-01 matches RDCR (Event 0) exactly. POCOM (Event 1) gives 1960-06-09 as the credential presentation date for the first ambassador, which is a separate personnel event. Per source priority, RDCR's institutional date of 1960-01-01 is correct."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

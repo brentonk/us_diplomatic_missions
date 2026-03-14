@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MkXdgj4Z9xaqcgGhtzHRpG",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2710,
+      "output_tokens": 886
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-01",
+      "new_status": "Liaison",
+      "event_description": "Diplomatic relations established with Donald R. Norland taking up his position as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 1, 1960, when Donald R. Norland took up his position as Charg\u00e9 d'Affaires ad interim. He had presented his credentials on July 31, 1960, to take effect on the next day."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1961-02-15",
+      "new_status": "Embassy",
+      "event_description": "Embassy Cotonou established with Converse Hettinger as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Cotonou was established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-11-26",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Robert Borden Reams presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Dahomey, serving initially as a nonresident ambassador before Embassy Cotonou was established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Robert Borden Reams, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-10-14. Credentials presented: 1960-11-26. Superseded 1961-07-31. Note: Commissioned to Dahomey. Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Reams's tenure as non-resident Ambassador, Embassy Cotonou was established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Benin (Dahomey)",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1961-02-15) and status (Embassy). Event 2 from POCOM also confirms this date as the Embassy Cotonou establishment, noting the nonresident ambassador was already in place."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1960-08-01",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations established with Donald R. Norland taking up his position as Charg\u00e9 d'Affaires ad interim on August 1, 1960. RDCR explicitly states this date.",
+        "notes": "High-confidence RDCR event. This is the initial establishment of diplomatic relations, predating the Embassy opening by over 6 months. Strong candidate for addition to CSV."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1960-11-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Robert Borden Reams presented credentials as the first Ambassador to Dahomey on 1960-11-26, serving as a nonresident ambassador before Embassy Cotonou was established on 1961-02-15.",
+        "notes": "POCOM source. Reams served as nonresident ambassador from late 1960 until the Embassy was established in February 1961. This represents an intermediate status between the initial Liaison and the Embassy. Candidate for addition to CSV."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

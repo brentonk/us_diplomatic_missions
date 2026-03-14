@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QUnQW6czqnwgDheKa363Si",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2328,
+      "output_tokens": 265
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ireland",
+    "source_file": "rdcr/articles/ireland.xml",
+    "events": [
+      {
+        "date": "1927-07-27",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Dublin was established when Frederick A. Sterling presented his credentials as American Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The American Legation in Dublin was established on July 27, 1927, when Frederick A. Sterling presented his credentials as American Envoy Extraordinary and Minister Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

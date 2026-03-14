@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01H7nktgyvD3rghmvUm1eLAM",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4929,
+      "output_tokens": 1038
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Two Sicilies",
+    "source_file": "rdcr/articles/two-sicilies.xml",
+    "events": [
+      {
+        "date": "1796-05-20",
+        "new_status": "Consulate",
+        "event_description": "The Kingdom of Naples recognized the United States by accepting the credentials of U.S. consular agent John S. M. Matthiew, appointed as U.S. Consul in Naples (the capital), establishing the first U.S. consular presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 14,
+            "line_end": 14,
+            "quote": "The Kingdom of Naples recognized the United States when it accepted the credentials of U.S. consular agent John S. M. Matthiew, who was appointed to the position of U.S. Consul in Naples on May 20, 1796."
+          }
+        ]
+      },
+      {
+        "date": "1832-01-25",
+        "new_status": "Legation",
+        "event_description": "Full diplomatic relations established when the first U.S. Charg\u00e9 d'Affaires to the Kingdom of the Two Sicilies, John Nelson, presented his credentials to the King on January 25, 1832, elevating the U.S. mission from consular to legation level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "Full diplomatic relations were established when the first U.S. Charg\u00e9 d'Affaires to the Kingdom of the Two Sicilies John Nelson presented his credentials to the King of the Two Sicilies on January 25, 1832."
+          }
+        ]
+      },
+      {
+        "date": "1860-11",
+        "new_status": "None",
+        "event_description": "The U.S. closed its mission in Naples in November 1860 as the Kingdom of the Two Sicilies ceased to exist during the Risorgimento, with U.S. diplomatic representatives subsequently relocating to Turin under the new Kingdom of Italy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 40,
+            "line_end": 40,
+            "quote": "The U.S. closed its mission in Naples in November 1860. When the Kingdom of Italy was proclaimed in early 1861, Sicily and Naples were part of the newly constituted nation, and U.S. diplomatic representatives were located in Turin."
+          }
+        ]
+      }
+    ]
+  }
+}

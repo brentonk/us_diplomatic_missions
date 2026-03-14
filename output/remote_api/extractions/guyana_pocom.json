@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HeKXqYPmAHu5hx9U3tMALU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3199,
+      "output_tokens": 394
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guyana",
+    "source_file": "pocom/missions-countries/guyana.xml",
+    "events": [
+      {
+        "date": "1966-08-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Guyana upon independence, with Delmar Richard Carlson presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Delmar Richard Carlson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1966-06-16. Credentials presented: 1966-08-17. Left post on 1969-09-13."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MMbP4PSFYHuu6Qsv1TZqiA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5918,
+      "output_tokens": 1214
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "El Salvador",
+    "source_file": "pocom/missions-countries/el-salvador.xml",
+    "events": [
+      {
+        "date": "1863-06-15",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic mission to El Salvador established when Minister Resident James Rudolph Partridge presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "James Rudolph Partridge, Minister Resident. Appointed: 1863-04-16. Credentials presented: 1863-06-15. Left post on or soon after 1866-03-22."
+          }
+        ]
+      },
+      {
+        "date": "1931-12-04",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations with El Salvador interrupted on December 4, 1931, when the new Salvadoran government remained unrecognized by the U.S.; Curtis left post January 10, 1932 without returning.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 46,
+            "line_end": 47,
+            "quote": "Normal relations interrupted on, Dec 4, 1931; new Government of El Salvador still unrecognized by the U.S. when Curtis left post Jan 10, 1932 1931-12-04. Note: Commissioned during a recess of the Senate; recommissioned on December 17, 1931, after confirmation. Curtis left post on January 10, 1932, and the United States had still not recognized the new government of El Salvador by that time."
+          }
+        ]
+      },
+      {
+        "date": "1934-04-30",
+        "new_status": "Legation",
+        "event_description": "U.S. diplomatic relations with El Salvador restored when Envoy Extraordinary and Minister Plenipotentiary Francis Patrick Corrigan presented credentials, re-establishing the legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Francis Patrick Corrigan, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1934-03-14. Credentials presented: 1934-04-30. Left post on 1937-08-28."
+          }
+        ]
+      },
+      {
+        "date": "1943-04-16",
+        "new_status": "Embassy",
+        "event_description": "U.S. legation in El Salvador elevated to embassy when Walter Clarence Thurston was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on April 16, 1943.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 55,
+            "quote": "Walter Clarence Thurston, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1942-11-14. Credentials presented: 1943-01-14. Promoted to Ambassador Extraordinary and Plenipotentiary on 1943-04-16. Walter Clarence Thurston, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-16."
+          }
+        ]
+      }
+    ]
+  }
+}

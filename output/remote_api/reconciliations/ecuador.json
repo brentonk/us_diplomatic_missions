@@ -1,0 +1,90 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015yxk62ZudNjrFJkHU5TL5L",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2732,
+      "output_tokens": 704
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1848-08-12",
+      "new_status": "Legation",
+      "event_description": "The United States established diplomatic relations with Ecuador when Charg\u00e9 d'Affaires Van Brugh Livingston presented his credentials, becoming the first resident U.S. diplomatic agent in Ecuador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "The United States established diplomatic relations with Ecuador on August 12, 1848, when Charg\u00e9 d'Affaires Van Brugh Livingston presented his credentials to the Ecuadorian Government. He became the first resident U.S. diplomatic agent in Ecuador."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-03-05",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Ecuador was elevated to Embassy, and Minister Boaz Long was raised in rank to Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 33,
+          "line_end": 33,
+          "quote": "The rank of the U.S. Legation in Ecuador was raised to Embassy on March 5, 1942. The Minister to Ecuador, Boaz Long, was raised in rank to Ambassador."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-04-14",
+      "new_status": "Embassy",
+      "event_description": "The U.S. legation in Ecuador was elevated to an embassy when Boaz Walton Long was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 49,
+          "quote": "Boaz Walton Long, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1938-03-22. Credentials presented: 1938-04-29. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-04-14.\n\nBoaz Walton Long, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-04-14. Left post on 1943-05-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Ecuador",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date match (1848-08-12). CSV codes this as 'Legation'; extracted event describes establishment of diplomatic relations via Charg\u00e9 d'Affaires presenting credentials, consistent with Legation-level representation."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date (1942-03-05) matches RDCR Event 1 exactly. POCOM Event 2 gives 1942-04-14, which is the credential presentation / promotion date for Ambassador Long \u2014 a personnel event, not the institutional elevation date. Per source priority, RDCR's institutional date is correct and the CSV follows it."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event corresponds to a consulate established on 1825-07-05. The RDCR narrative states diplomatic relations were established in 1848, and no earlier consular presence is mentioned in either RDCR or POCOM extractions. This event may derive from a source outside the current pipeline (e.g., consular records or other historical references)."
+      }
+    ],
+    "discrepancies": []
+  }
+}

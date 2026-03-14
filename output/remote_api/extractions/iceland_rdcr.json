@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TTuqpqX7QV7RDXMr5EQ3X9",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2368,
+      "output_tokens": 699
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iceland",
+    "source_file": "rdcr/articles/iceland.xml",
+    "events": [
+      {
+        "date": "1941-09-30",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation at Reykjavik were established when Envoy Extraordinary and Minister Plenipotentiary Lincoln MacVeagh presented credentials, elevating the existing American Consulate to Legation status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation at Reykjavik were established on September 30, 1941, when Envoy Extraordinary and Minister Plenipotentiary Lincoln MacVeagh presented credentials and elevated the American Consulate to Legation status."
+          }
+        ]
+      },
+      {
+        "date": "1955-11-03",
+        "new_status": "Embassy",
+        "event_description": "The American Legation was elevated to Embassy status when John J. Muccio presented his credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The American Legation was elevated to Embassy status on November 3, 1955, when John J. Muccio presented his credentials as Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

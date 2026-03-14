@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012H4gc4KstK5eNrCkkCztHR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3214,
+      "output_tokens": 615
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Algeria",
+    "source_file": "pocom/missions-countries/algeria.xml",
+    "events": [
+      {
+        "date": "1962-12-17",
+        "new_status": "Embassy",
+        "event_description": "Embassy Algiers established as William James Porter presented credentials as the first U.S. Ambassador to Algeria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William James Porter, Ambassador Extraordinary and Plenipotentiary. Appointed: 1962-11-29. Credentials presented: 1962-12-17."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-06",
+        "new_status": "Interests",
+        "event_description": "Algeria severed diplomatic relations with the United States; a U.S. Interests Section was established in the Swiss Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Algeria severed diplomatic relations with the United States on June 6, 1967. A U.S. Interests Section was established in the Swiss Embassy."
+          }
+        ]
+      },
+      {
+        "date": "1974-11-12",
+        "new_status": "Embassy",
+        "event_description": "Embassy Algiers was re-established, restoring full diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Embassy Algiers was re-established November 12, 1974."
+          }
+        ]
+      }
+    ]
+  }
+}

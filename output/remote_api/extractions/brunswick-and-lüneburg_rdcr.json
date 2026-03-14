@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Km5RgKnSTjBFVGaAoYbhj8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2748,
+      "output_tokens": 861
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Brunswick and L\u00fcneburg",
+    "source_file": "rdcr/articles/brunswick-luneburg.xml",
+    "events": [
+      {
+        "date": "1856-03-17",
+        "new_status": "Consulate",
+        "event_description": "The United States opened its first consulate in the Duchy of Brunswick and L\u00fcneburg.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The United States opened its first consulate in the Duchy of Brunswick and L\u00fcneburg on March 17, 1856. This post closed on July 25, 1916."
+          }
+        ]
+      },
+      {
+        "date": "1867-07-01",
+        "new_status": "None",
+        "event_description": "Brunswick and L\u00fcneburg joined the North German Confederation, ending its existence as a separate diplomatic entity. U.S. representation shifted to the North German Confederation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "On July 1, 1867, the Duchy of Brunswick and L\u00fcneburg joined the North German Confederation."
+          }
+        ]
+      },
+      {
+        "date": "1916-07-25",
+        "new_status": "None",
+        "event_description": "The U.S. consulate in Brunswick and L\u00fcneburg closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The United States opened its first consulate in the Duchy of Brunswick and L\u00fcneburg on March 17, 1856. This post closed on July 25, 1916."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BU6WQJUswcMYwapE8aXdF5",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3136,
+      "output_tokens": 913
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1905-03-08",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established when the American consulate at Tangier was elevated to the status of a legation, with Samuel Gummere named American Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 32,
+          "line_end": 32,
+          "quote": "Diplomatic relations were established on March 8, 1905, when the American consulate at Tangier was elevated to the status of a legation, and Samuel Gummere was named American Minister Plenipotentiary, with a letter of credence dated March 21."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1917-10-20",
+      "new_status": "Liaison",
+      "event_description": "Upon U.S. recognition of the French and Spanish protectorate over Morocco, the U.S. Minister at Tangier was downgraded to the status of Diplomatic Agent.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 36,
+          "line_end": 36,
+          "quote": "upon U.S. entry into the First World War, the U.S. Government issued a statement recognizing the protectorate over Morocco on October 20, 1917, whereupon the U.S. Minister at Tangier was downgraded to the status of Diplomatic Agent."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1956-06-11",
+      "new_status": "Embassy",
+      "event_description": "Following recognition of Moroccan independence, the post of diplomatic agent was raised to ambassador level and the U.S. Embassy was established at the capital of Rabat, with William J. Porter as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 41,
+          "line_end": 41,
+          "quote": "the post of diplomatic agent was again raised, this time to the level of ambassador, and the U.S. embassy was established at the capital of Rabat on Jun 11, 1956, with William J. Porter as Charg\u00e9 d'Affaires ad interim"
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1906-09-29",
+      "new_status": "Legation",
+      "event_description": "Establishment of U.S. diplomatic mission in Morocco at the legation level, with Samuel Rene Gummere presenting credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Samuel Rene Gummere, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1905-03-08. Credentials presented: 1906-09-29. Superseded 1909-06-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1917-10-11",
+      "new_status": "Liaison",
+      "event_description": "Mission downgraded from Legation/Charg\u00e9 d'Affaires to a Liaison office, with Maxwell Blake serving as Agent/Consul General (Diplomatic Agent).",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quote": "Maxwell Blake, Agent/Consul General. Appointed: 1917-07-20. Credentials presented: 1917-10-11. Superseded 1922-04-11."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1956-10-06",
+      "new_status": "Embassy",
+      "event_description": "U.S. mission elevated to Embassy level upon Moroccan independence, with Cavendish Wells Cannon presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "Cavendish Wells Cannon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1956-07-21. Credentials presented: 1956-10-06. Relinquished charge 1958-07-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Morocco",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0,
+          3
+        ],
+        "notes": "CSV date 1905-03-08 matches RDCR Event 0 exactly. POCOM Event 3 gives credential presentation date of 1906-09-29, which is a separate personnel event. RDCR institutional date takes priority."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1,
+          4
+        ],
+        "notes": "CSV date 1917-10-20 matches RDCR Event 1 exactly. POCOM Event 4 gives credential presentation date of 1917-10-11 for the new Diplomatic Agent. RDCR institutional date (U.S. recognition of protectorate) takes priority."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          2,
+          5
+        ],
+        "notes": "CSV date 1956-06-11 matches RDCR Event 2 exactly. POCOM Event 5 gives credential presentation date of 1956-10-06 for the first Ambassador. RDCR institutional date (embassy establishment at Rabat) takes priority."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "The 1797-12-07 Consulate event is not covered by any extracted event. The RDCR extraction begins with the 1905 elevation to legation, and POCOM records start from the legation period. This likely reflects information from earlier sections of the RDCR narrative or other historical sources (e.g., the 1786 Treaty of Friendship) not captured in the extraction pipeline. The event is plausible given that RDCR Event 0 references the 'American consulate at Tangier' being elevated in 1905, confirming a pre-existing consulate."
+      }
+    ],
+    "discrepancies": []
+  }
+}

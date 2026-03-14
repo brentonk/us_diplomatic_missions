@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Wdb4ccvVQwaqi8G7DroQGx",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4309,
+      "output_tokens": 945
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Finland",
+    "source_file": "pocom/missions-countries/finland.xml",
+    "events": [
+      {
+        "date": "1920-03-19",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic representation in Finland established when Charg\u00e9 d'Affaires pro tempore Alexander Richardson Magruder presented credentials, opening a legation-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alexander Richardson Magruder, Charg\u00e9 d'Affaires pro tempore. Credentials presented: 1920-03-19. Superseded 1922-02-17. Note: Not commissioned; letter of credence dated March 13, 1920."
+          }
+        ]
+      },
+      {
+        "date": "1944-06-30",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Finland, ending all formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Edmund Asbury Gullion, Charg\u00e9 d'Affaires ad interim. The United States severed diplomatic relations with Finland on 1944-06-30."
+          }
+        ]
+      },
+      {
+        "date": "1945-09-01",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations with Finland resumed when Charg\u00e9 d'Affaires ad interim Benjamin Mayham Hulley presented credentials, re-establishing a legation-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "Benjamin Mayham Hulley, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1945-09-01."
+          }
+        ]
+      },
+      {
+        "date": "1954-09-10",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Helsinki was raised to Embassy status, elevating the highest level of U.S. diplomatic representation in Finland.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The Legation in Helsinki was raised to Embassy status on September 10, 1954."
+          }
+        ]
+      }
+    ]
+  }
+}

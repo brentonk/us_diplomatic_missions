@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EbxY2v4KHdWVUu1njnVpbf",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2508,
+      "output_tokens": 580
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Turkmenistan",
+    "source_file": "pocom/missions-countries/turkmenistan.xml",
+    "events": [
+      {
+        "date": "1992-03-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Turkmenistan established, with Jeffrey White serving as the first Charg\u00e9 d'Affaires ad interim upon presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Jeffrey White, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-03-17."
+          }
+        ]
+      }
+    ]
+  }
+}

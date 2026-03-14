@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MqsmSGuuBMSxGFw4dchUni",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2387,
+      "output_tokens": 616
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Uganda",
+    "source_file": "rdcr/articles/uganda.xml",
+    "events": [
+      {
+        "date": "1962-10-09",
+        "new_status": "Embassy",
+        "event_description": "The American consulate general at Kampala was raised to Embassy status, with Olcott H. Deming as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Ugandan independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on October 9, 1962, when the American consulate general at Kampala was raised to Embassy status with Olcott H. Deming as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1973-11-10",
+        "new_status": "Interests",
+        "event_description": "The American Embassy at Kampala was closed and all U.S. diplomatic personnel were withdrawn. Diplomatic relations were not interrupted, and American interests in Uganda were represented by the Federal Republic of Germany.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The American Embassy at Kampala was closed on November 10, 1973, when all U.S. diplomatic personnel were withdrawn from Uganda. American interests in Uganda were represented by the Federal Republic of Germany."
+          }
+        ]
+      },
+      {
+        "date": "1979-06-18",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Kampala was re-established, with David Halstead as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The American Embassy at Kampala was re-established on June 18, 1979, with David Halstead as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

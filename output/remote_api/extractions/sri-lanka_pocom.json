@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MSqtg51h5gma3WPEbNJpVT",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3657,
+      "output_tokens": 418
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sri Lanka",
+    "source_file": "pocom/missions-countries/sri-lanka.xml",
+    "events": [
+      {
+        "date": "1949-08-03",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Ceylon (later Sri Lanka) upon presentation of credentials by the first Ambassador, Felix Cole.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Felix Cole, Ambassador Extraordinary and Plenipotentiary. Appointed: 1948-04-08. Credentials presented: 1949-08-03. Left post on 1949-10-30. Note: Commissioned to Ceylon."
+          }
+        ]
+      }
+    ]
+  }
+}

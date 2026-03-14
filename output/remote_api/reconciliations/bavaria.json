@@ -1,0 +1,94 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TEwPDKHGmzTHLv2gsR3fE5",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2719,
+      "output_tokens": 697
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1833",
+      "new_status": "Consulate",
+      "event_description": "The first U.S. Consulate in the Kingdom of Bavaria was established in Munich, marking the first act of mutual recognition between the United States and Bavaria.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "A letter from U.S. Consul Robert de Ruedorffer dated July 4, 1833, informs U.S. Secretary of State Edward Livingston that Ruedorffer will discharge the duties of Consul for the United States in Munich."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1868-05-26",
+      "new_status": "Envoy Nonresident",
+      "event_description": "U.S. Minister Plenipotentiary George Bancroft was specially accredited to Bavaria (while resident in Berlin, also accredited to Prussia and the North German Confederation), signing a naturalization treaty with Bavaria on this date.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "On May 26, 1868, specially accredited U.S. Minister Plenipotentiary George Bancroft signed a naturalization treaty with Bavaria. At the time, Bancroft was also accredited to Prussia and the North German Confederation and, after 1871, to the German Empire."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1917-02-03",
+      "new_status": "None",
+      "event_description": "All diplomatic relations between the U.S. and the German Empire (including Bavaria as a constituent state) were severed when President Wilson instructed the Secretary of State to notify the German Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "On February 3, 1917, U.S. President Woodrow Wilson instructed the Secretary of State to notify the German Ambassador to the United States that all diplomatic relations between the U.S. and the German Empire were severed. As the foreign affairs of Imperial Germany were run out of Berlin and decided upon by the Kaiser, this constituted the severance of relations with Bavaria, as part of the German Empire."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Bavaria",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Extracted event gives only year 1833, but the underlying evidence cites July 4, 1833, matching the CSV date exactly. Same status (Consulate)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1917-02-03) and status (None). Severance of relations with the German Empire, including Bavaria."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1868-05-26",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. Minister Plenipotentiary George Bancroft was specially accredited to Bavaria (while resident in Berlin, also accredited to Prussia and the North German Confederation), signing a naturalization treaty with Bavaria on this date. This represents a status upgrade from Consulate to Envoy Nonresident.",
+        "notes": "Medium confidence event. The RDCR evidence clearly states Bancroft was specially accredited to Bavaria, suggesting a nonresident envoy arrangement alongside the existing consulate. The CSV jumps directly from Consulate (1833) to None (1917) without capturing this intermediate diplomatic status change. Candidate for addition."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

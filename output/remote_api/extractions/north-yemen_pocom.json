@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01THNPK4RNQgSFH3PhqBa54p",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4032,
+      "output_tokens": 1629
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "North Yemen",
+    "source_file": "pocom/missions-countries/yemen.xml",
+    "events": [
+      {
+        "date": "1946-09-30",
+        "new_status": "Envoy Nonresident",
+        "event_description": "First U.S. Envoy Extraordinary and Minister Plenipotentiary to the Kingdom of Yemen presented credentials, establishing nonresident ministerial relations (based in Jeddah).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "James Rives Childs, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-08-22. Credentials presented: 1946-09-30. Left Jeddah 1950-07-21. Note: Commissioned during a recess of the Senate; recommissioned on January 13, 1947, after confirmation. Commissioned to the Kingdom of Yemen."
+          }
+        ]
+      },
+      {
+        "date": "1959-03-16",
+        "new_status": "Legation",
+        "event_description": "Legation Taiz opened to the public, establishing a resident U.S. legation in Yemen. Prior envoys were nonresident, based in Jeddah or Cairo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "During Hare's tenure as non-resident Ambassador, Legation Taiz was opened to the public effective March 16, 1959, with Charles B. Ferguson as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1963-01-28",
+        "new_status": "Embassy",
+        "event_description": "Legation Taiz was raised to Embassy status on January 28, 1963 (later transferred to San'a in 1966).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Robert Wilson Stookey, Charg\u00e9 d'Affaires ad interim. Note: Was serving as Charg\u00e9 d'Affaires ad interim when Legation Taiz was raised to Embassy status, Jan 28, 1963 (Embassy transferred to San'a in 1966)."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "The Government of the Yemen Arab Republic severed diplomatic relations with the United States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 22,
+            "quote": "Lee Fries Dinsmore, Charg\u00e9 d'Affaires ad interim. Government of the Yemen Arab Republic severed relations with the United States 1967-06-07."
+          }
+        ]
+      },
+      {
+        "date": "1970-04-10",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Italian Embassy in Yemen.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "On April 10, 1970, the United States established an Interests Section in the Italian Embassy."
+          }
+        ]
+      },
+      {
+        "date": "1972-12-19",
+        "new_status": "Embassy",
+        "event_description": "Ambassador William Rex Crawford presented credentials to the Yemen Arab Republic, restoring full ambassadorial-level embassy relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "William Rex Crawford, Ambassador Extraordinary and Plenipotentiary. Appointed: 1972-10-12. Credentials presented: 1972-12-19. Left post on 1974-07-06. Note: Commissioned to the Yemen Arab Republic."
+          }
+        ]
+      },
+      {
+        "date": "2015-02-11",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. Embassy in Sanaa suspended operations and all personnel were withdrawn due to deteriorating security during the Yemeni civil war. Diplomatic relations were not severed; U.S. diplomats continued working from the U.S. Embassy in Riyadh under the authority of the U.S. Ambassador to Yemen.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 65,
+            "line_end": 65,
+            "quote": "The U.S. Embassy in Sanaa suspended operations on February 11, 2015, and all U.S. personnel were withdrawn after security conditions deteriorated in the midst of the Yemeni civil war; however, the United States did not sever diplomatic relations with Yemen. Working from the U.S. Embassy in Riyadh, Saudi Arabia under the authority of the U.S. Ambassador to Yemen, U.S. diplomats in the Yemeni Affairs Unit maintained regular dialogue with the Republic of Yemen Government."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JNbqiXNQKf4nuvGFXY8dxF",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2728,
+      "output_tokens": 737
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Republic of the Congo",
+    "source_file": "rdcr/articles/congo-republic.xml",
+    "events": [
+      {
+        "date": "1960-08-15",
+        "new_status": "Embassy",
+        "event_description": "Embassy Brazzaville established with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Congolese independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "Diplomatic relations were established on August 15, 1960, when Embassy Brazzaville was established with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1965-08-15",
+        "new_status": "None",
+        "event_description": "Embassy Brazzaville closed after the U.S. withdrew all diplomatic and consular representatives due to serious mistreatment of American officials by Congolese authorities.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Once the diplomatic and consular staff departed Brazzaville by August 15, 1965, Lloyd M. Rives served as Charg\u00e9 d'Affaires ad interim until the Embassy closed."
+          }
+        ]
+      },
+      {
+        "date": "1977-10-30",
+        "new_status": "Embassy",
+        "event_description": "Embassy Brazzaville reopened with Jay Katzen as Charg\u00e9 d'Affaires ad interim, restoring diplomatic relations after a 12-year suspension.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "The U.S. Embassy reopened on October 30, 1977, with Jay Katzen as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

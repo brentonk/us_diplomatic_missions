@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CLLoSooFQQToNp8oa74Lrp",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2471,
+      "output_tokens": 561
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "South Sudan",
+    "source_file": "rdcr/articles/south-sudan.xml",
+    "events": [
+      {
+        "date": "2005-11-11",
+        "new_status": "Consulate",
+        "event_description": "The U.S. government established a consulate in Juba (the capital) following the signing of the Comprehensive Peace Agreement.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "After the signing of the Comprehensive Peace Agreement in 2005, the U.S. government established a consulate in Juba on November 11, 2005, to reinforce its partnership with the South Sudanese people."
+          }
+        ]
+      },
+      {
+        "date": "2011-07-09",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Consulate General in Juba was elevated to a U.S. Embassy upon South Sudan's declaration of independence and U.S. recognition of the new state.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Following its declaration of independence, the United States established full diplomatic relations with the Republic of South Sudan, upgrading the U.S. Consulate General in Juba to a U.S. Embassy on July 9, 2011."
+          }
+        ]
+      }
+    ]
+  }
+}

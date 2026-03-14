@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KYP5zgq3PmDmViNLQhupE5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2482,
+      "output_tokens": 457
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Slovenia",
+    "source_file": "pocom/missions-countries/slovenia.xml",
+    "events": [
+      {
+        "date": "1993-05-26",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Slovenia established upon presentation of credentials by the first Ambassador, E Allan Wendt.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "E Allan Wendt, Ambassador Extraordinary and Plenipotentiary. Appointed: 1993-05-15. Credentials presented: 1993-05-26. Left post on 1995-09-12."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QLuL5Pafchyj8NCZxDsT2x",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3280,
+      "output_tokens": 978
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Niger",
+    "source_file": "pocom/missions-countries/niger.xml",
+    "events": [
+      {
+        "date": "1960-08-03",
+        "new_status": "Interests",
+        "event_description": "Donald Richard Norland presented credentials as Charg\u00e9 d'Affaires ad interim on August 3, 1960, establishing the first U.S. diplomatic presence in Niger upon or around its independence, prior to the establishment of a formal embassy.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Donald Richard Norland, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-03. Note: Presented credentials as Charg\u00e9 d'Affaires ad interim on August 2, 1960, to take effect on August 3, 1960."
+          }
+        ]
+      },
+      {
+        "date": "1960-11-23",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Robert Borden Reams presented credentials as Ambassador Extraordinary and Plenipotentiary. Per the note, he served as a nonresident Ambassador, as Embassy Niamey had not yet been established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Robert Borden Reams, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-10-14. Credentials presented: 1960-11-23. Superseded 1961-08-02. Note: Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Reams's tenure as non-resident Ambassador, Embassy Niamey was established on February 3, 1961, with Joseph W. Schutz as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-03",
+        "new_status": "Embassy",
+        "event_description": "Embassy Niamey was formally established on February 3, 1961, with Joseph W. Schutz as Charg\u00e9 d'Affaires ad interim, elevating the mission from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Reams's tenure as non-resident Ambassador, Embassy Niamey was established on February 3, 1961, with Joseph W. Schutz as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

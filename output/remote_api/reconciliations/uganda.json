@@ -1,0 +1,125 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JPg1oR1RFoZinyVPPY4wKb",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2857,
+      "output_tokens": 840
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1962-10-09",
+      "new_status": "Embassy",
+      "event_description": "The American consulate general at Kampala was raised to Embassy status, with Olcott H. Deming as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Ugandan independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on October 9, 1962, when the American consulate general at Kampala was raised to Embassy status with Olcott H. Deming as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1973-11-10",
+      "new_status": "Interests",
+      "event_description": "The American Embassy at Kampala was closed and all U.S. diplomatic personnel were withdrawn. Diplomatic relations were not interrupted, and American interests in Uganda were represented by the Federal Republic of Germany.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The American Embassy at Kampala was closed on November 10, 1973, when all U.S. diplomatic personnel were withdrawn from Uganda. American interests in Uganda were represented by the Federal Republic of Germany."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1979-06-18",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Kampala was re-established, with David Halstead as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The American Embassy at Kampala was re-established on June 18, 1979, with David Halstead as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-11-09",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Uganda established; first Charg\u00e9 d'Affaires ad interim presented credentials upon Ugandan independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Olcott Hawthorne Deming, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-11-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1973-11-10",
+      "new_status": "None",
+      "event_description": "All U.S. diplomatic personnel withdrawn from Uganda; diplomatic representation ended.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 13,
+          "quote": "Robert Vossler Keeley, Charg\u00e9 d'Affaires ad interim. All U.S. diplomatic personnel were withdrawn from Uganda on 1973-11-10."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Uganda",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          3
+        ],
+        "notes": "RDCR (Event 0) gives 1962-10-09 as the institutional date when the consulate general was raised to Embassy status. POCOM (Event 3) gives 1962-11-09 as the credential presentation date. CSV correctly follows RDCR's institutional date."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          4
+        ],
+        "notes": "RDCR (Event 1, citation error flagged) and POCOM (Event 4) both give 1973-11-10. RDCR describes closure of embassy with German representation of U.S. interests, supporting 'Interests' status. POCOM (Event 4) labels it 'None' reflecting personnel withdrawal, but RDCR is primary and supports 'Interests'. Citation error on Event 1 is noted but the content is consistent with POCOM's date and the broader narrative."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1979-06-18) and status (Embassy). RDCR confirms re-establishment of the American Embassy at Kampala."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TW4RtDzrwHhSqdmWDeg9DE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2407,
+      "output_tokens": 516
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Liechtenstein",
+    "source_file": "pocom/missions-countries/liechtenstein.xml",
+    "events": [
+      {
+        "date": "1997-03-14",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Liechtenstein. The first U.S. Ambassador Extraordinary and Plenipotentiary (nonresident, based in Bern) presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Madeleine May Kunin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1997-02-10. Credentials presented: 1997-03-14. Left Bern 1999-08-16."
+          }
+        ]
+      }
+    ]
+  }
+}

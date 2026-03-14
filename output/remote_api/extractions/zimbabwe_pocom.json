@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KrEihCRm8ENfcsMnzScJGy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2782,
+      "output_tokens": 377
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Zimbabwe",
+    "source_file": "pocom/missions-countries/zimbabwe.xml",
+    "events": [
+      {
+        "date": "1980-06-19",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Zimbabwe upon presentation of credentials by the first Ambassador, Robert Vossler Keeley.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert Vossler Keeley, Ambassador Extraordinary and Plenipotentiary. Appointed: 1980-05-23. Credentials presented: 1980-06-19. Left post on 1984-02-20."
+          }
+        ]
+      }
+    ]
+  }
+}

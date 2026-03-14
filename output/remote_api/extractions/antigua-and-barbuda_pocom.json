@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KyKMguV4MBAyQcYiD83Xhf",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2833,
+      "output_tokens": 517
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Antigua and Barbuda",
+    "source_file": "pocom/missions-countries/antigua-barbuda.xml",
+    "events": [
+      {
+        "date": "1981-11-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Antigua and Barbuda upon independence, with Paul J Byrnes presenting credentials as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Paul J Byrnes, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1981-11-01."
+          }
+        ]
+      }
+    ]
+  }
+}

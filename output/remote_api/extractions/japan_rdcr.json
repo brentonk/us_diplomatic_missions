@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01B36ERucEdUTUgZpZvTWdD5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3008,
+      "output_tokens": 930
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Japan",
+    "source_file": "rdcr/articles/japan.xml",
+    "events": [
+      {
+        "date": "1859-11-05",
+        "new_status": "Legation",
+        "event_description": "The United States established its first legation in Japan when Minister Resident Townsend Harris presented his credentials to the Government of Japan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "The United States established its first legation in Japan when Minister Resident Townsend Harris presented his credentials to the Government of Japan on November 5, 1859."
+          }
+        ]
+      },
+      {
+        "date": "1906-05-26",
+        "new_status": "Embassy",
+        "event_description": "The U.S. diplomatic presence in Tokyo was elevated from a legation to an embassy when Ambassador Luke E. Wright presented his credentials to the Japanese Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "The United States diplomatic presence in Tokyo was elevated to the status of an Embassy on May 26, 1906, when Ambassador Extraordinary and Minister Plenipotentiary Luke E. Wright presented his credentials to the Japanese Government."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-08",
+        "new_status": "None",
+        "event_description": "Diplomatic relations between Japan and the United States were severed when both nations declared war on each other following Japan's attack on Pearl Harbor.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "Diplomatic relations between Japan and the United States were severed on December 8, 1941, when both nations declared war on each other in the wake of Japan's attack on Pearl Harbor."
+          }
+        ]
+      },
+      {
+        "date": "1952-05-09",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Tokyo reopened when Ambassador Robert D. Murphy presented his credentials to the Government of Japan, resuming full diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "The U.S. Embassy in Tokyo reopened on May 9, 1952, when Ambassador Robert D. Murphy presented his credentials to the Government of Japan."
+          }
+        ]
+      }
+    ]
+  }
+}

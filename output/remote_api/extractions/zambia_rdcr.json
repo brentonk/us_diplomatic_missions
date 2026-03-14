@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01LZ7huqNSxKR5PBdZVVXVk8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2286,
+      "output_tokens": 281
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Zambia",
+    "source_file": "rdcr/articles/zambia.xml",
+    "events": [
+      {
+        "date": "1964-10-24",
+        "new_status": "Embassy",
+        "event_description": "The American consulate at Lusaka was elevated to Embassy status upon Zambia's attainment of independence, with Robert C. Foulon as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Diplomatic relations were established on October 24, 1964, when the American consulate at Lusaka was elevated to Embassy status with Robert C. Foulon as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CRdFxn1XDaodNMdRdGMB5u",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2049,
+      "output_tokens": 320
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Republic of Korea (South Korea)",
+    "source_file": "rdcr/articles/korea-south.xml",
+    "events": []
+  }
+}

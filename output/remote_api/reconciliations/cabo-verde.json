@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HiXKVPeiaK6WFZQKn3QwaQ",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2490,
+      "output_tokens": 411
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1976-11-18",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Ambassador Melissa F. Wells presented credentials to the government of Cape Verde but was resident at Bissau (Guinea-Bissau), establishing nonresident ambassadorial relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Ambassador Melissa F. Wells presented her credentials to the government of Cape Verde on November 18, 1976. Wells also was accredited to Guinea-Bissau and was resident at Bissau."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1978-01-28",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Praia was established, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The American Embassy at Praia was established on January 28, 1978, with Howard McGowan as Charge d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Cabo Verde",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both refer to Ambassador Melissa F. Wells presenting credentials on 1976-11-18, resident at Bissau (Guinea-Bissau)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both refer to the establishment of the American Embassy at Praia on 1978-01-28."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

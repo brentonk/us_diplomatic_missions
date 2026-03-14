@@ -1,0 +1,108 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011ZYyqCSjv21VMFFrbC4k63",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2766,
+      "output_tokens": 635
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-15",
+      "new_status": "Embassy",
+      "event_description": "Embassy Brazzaville established with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Congolese independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "Diplomatic relations were established on August 15, 1960, when Embassy Brazzaville was established with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1965-08-15",
+      "new_status": "None",
+      "event_description": "Embassy Brazzaville closed after the U.S. withdrew all diplomatic and consular representatives due to serious mistreatment of American officials by Congolese authorities.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "Once the diplomatic and consular staff departed Brazzaville by August 15, 1965, Lloyd M. Rives served as Charg\u00e9 d'Affaires ad interim until the Embassy closed."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1977-10-30",
+      "new_status": "Embassy",
+      "event_description": "Embassy Brazzaville reopened with Jay Katzen as Charg\u00e9 d'Affaires ad interim, restoring diplomatic relations after a 12-year suspension.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "The U.S. Embassy reopened on October 30, 1977, with Jay Katzen as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-12-23",
+      "new_status": "Embassy",
+      "event_description": "First U.S. Ambassador Extraordinary and Plenipotentiary, Wilton Wendell Blancke, presented credentials, confirming full Embassy-level representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Wilton Wendell Blancke, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-11-09. Credentials presented: 1960-12-23."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Republic of the Congo",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          3
+        ],
+        "notes": "CSV date matches RDCR Event 0 exactly (1960-08-15). POCOM Event 3 (1960-12-23) reflects the first ambassador's credential presentation, a later personnel event. CSV correctly follows RDCR for the institutional establishment date."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date and status. Event 1 has a CITATION ERROR flag, but the quoted text still supports the 1965-08-15 closure date and the event is consistent with the CSV."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date and status. Embassy Brazzaville reopened on 1977-10-30 per RDCR."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

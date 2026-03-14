@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01N16eceZEaW1opAAy7kq7gD",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2474,
+      "output_tokens": 522
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Belarus",
+    "source_file": "rdcr/articles/belarus.xml",
+    "events": [
+      {
+        "date": "1992-01-31",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Minsk was established with John Ford as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The American Embassy in Minsk was established on January 31, 1992, with John Ford as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

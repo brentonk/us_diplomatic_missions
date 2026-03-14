@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01M4PscEBFEKh4umytLcYu2V",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3085,
+      "output_tokens": 1002
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Hawaii",
+    "source_file": "pocom/missions-countries/hawaii.xml",
+    "events": [
+      {
+        "date": "1853-12-20",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation at Honolulu established when Commissioner David Lawrence Gregg presented credentials to the Kingdom of Hawaii. Gregg was the first chief of mission to refer to the mission as a Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Gregg's predecessors, who served as Commissioners to the Sandwich Islands, did not refer to the Mission at Honolulu as a Legation. This term was used by Gregg, however, in his first despatch, dated December 27, 1853."
+          }
+        ]
+      },
+      {
+        "date": "1898-08-12",
+        "new_status": "None",
+        "event_description": "The U.S. Legation at Honolulu ceased to exist upon the annexation of Hawaii to the United States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Hawaii was annexed to U.S. 1898-08-12. Note: Commissioned to Hawaii. Legation Honolulu ceased to exist on August 12, 1898; Sewall thereafter used the title Special Agent."
+          }
+        ]
+      }
+    ]
+  }
+}

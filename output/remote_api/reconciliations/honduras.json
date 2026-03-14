@@ -1,0 +1,125 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PpaGCuJqmhJWGoKAFrC1ss",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2968,
+      "output_tokens": 764
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1853-04-19",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established with Honduras via appointment of Solon Borland as Envoy Extraordinary and Minister Plenipotentiary, accredited to Honduras but not resident there.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on April 19, 1853, when American Envoy Extraordinary and Minister Plenipotentiary Solon Borland was appointed to Honduras, Costa Rica, Nicaragua, and El Salvador. Borland did not present his credentials in Tegucigalpa, though he was accredited to Honduras."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1856-02-22",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Comayagua and Tegucigalpa was opened, establishing a resident diplomatic mission in Honduras.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The American Legation in Comayagua and Tegucigalpa was opened on February 22, 1856."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-03-23",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Honduras was elevated to Embassy status following a joint announcement between the United States and seven American Republics including Honduras.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Following a joint announcement on March 23, 1943 between the United States and seven American Republics that included Honduras, the Legations in the respective nations and the United States were raised to the status of Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1858-08-10",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation established in Honduras when the first Minister Resident, Beverly Leonidas Clarke, presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Beverly Leonidas Clarke, Minister Resident. Appointed: 1858-01-14. Credentials presented: 1858-08-10. Died at Guatemala 1860-03-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-04-27",
+      "new_status": "Embassy",
+      "event_description": "U.S. Legation elevated to Embassy when John Draper Erwin was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 51,
+          "line_end": 53,
+          "quote": "John Draper Erwin, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1937-07-29. Credentials presented: 1937-09-08. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-27.\n\nJohn Draper Erwin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-27. Left post on 1947-04-16."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Honduras",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1853-04-19) and status (Envoy Nonresident). RDCR confirms diplomatic relations established via appointment of non-resident envoy Solon Borland."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          3
+        ],
+        "notes": "RDCR (Event 1) gives 1856-02-22 as the date the American Legation was opened, matching the CSV exactly. POCOM (Event 3) gives 1858-08-10 as the credential presentation date for the first Minister Resident, which is a later personnel event. Per source priority, RDCR's institutional date prevails."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          4
+        ],
+        "notes": "RDCR (Event 2) gives 1943-03-23 as the date the Legation was elevated to Embassy, matching the CSV exactly. POCOM (Event 4) gives 1943-04-27 as the date the Ambassador presented credentials/was promoted, which is a later personnel event. Per source priority, RDCR's institutional date prevails."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

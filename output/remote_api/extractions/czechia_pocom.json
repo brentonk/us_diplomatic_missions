@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BuchygaB9jHpSNMN6ZgXCK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2523,
+      "output_tokens": 499
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Czechia",
+    "source_file": "pocom/missions-countries/czech-republic.xml",
+    "events": [
+      {
+        "date": "1993-01-01",
+        "new_status": "Embassy",
+        "event_description": "The Czech and Slovak Federal Republic dissolved on December 31, 1992, and the Czech Republic came into existence. Ambassador Basora, previously accredited to Czechoslovakia, continued as Ambassador Extraordinary and Plenipotentiary to the new Czech Republic, establishing U.S. embassy-level relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Note: Prior to Dec 31, 1992, see Czechoslovakia. The Czech and Slovak Federal Republic ceased to exist on December 31, 1992. Basora continued as Ambassador Extraordinary and Plenipotentiary to the Czech Republic."
+          }
+        ]
+      }
+    ]
+  }
+}

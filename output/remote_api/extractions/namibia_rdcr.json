@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0147fVsozXNRKQQoTeby6Qtv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2195,
+      "output_tokens": 566
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Namibia",
+    "source_file": "rdcr/articles/namibia.xml",
+    "events": [
+      {
+        "date": "1990-03-21",
+        "new_status": "Liaison",
+        "event_description": "A U.S. Liaison Office existed at Windhoek prior to Namibian independence, under South African sovereignty.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "The United States recognized Namibia on March 21, 1990, when the U.S. Liaison Office at Windhoek was elevated to Embassy status with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim, upon Namibia's attainment of independence on that date. Namibia previously had been under South African sovereignty."
+          }
+        ]
+      },
+      {
+        "date": "1990-03-21",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Liaison Office at Windhoek was elevated to Embassy status upon Namibia's independence, with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on March 21, 1990, when the U.S. Liaison Office at Windhoek was elevated to Embassy status with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

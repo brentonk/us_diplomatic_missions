@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XPjTQE8fP3Y6GBV11i6Hpg",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2193,
+      "output_tokens": 263
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Slovakia",
+    "source_file": "rdcr/articles/slovakia.xml",
+    "events": [
+      {
+        "date": "1993-01-04",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Bratislava established with Paul Hacker appointed as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the U.S. Embassy in Bratislava were established on January 4, 1993, with the appointment of Paul Hacker as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

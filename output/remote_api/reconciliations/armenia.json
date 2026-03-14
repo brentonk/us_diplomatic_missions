@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BpokXDW9i7RksxepptMFFB",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2554,
+      "output_tokens": 524
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1991-12-25",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established with Armenia on December 25, 1991, but no physical mission yet opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 23,
+          "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-02-03",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Yerevan was opened on February 3, 1992, with Steven Mann as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 27,
+          "quote": "The American Embassy in Yerevan was opened on February 3, 1992, with Steven Mann as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-02",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Armenia established, with Steven Robert Mann serving as the first Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Steven Robert Mann, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-02. Left post: 1992-02."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Armenia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "RDCR gives exact date 1992-02-03; POCOM gives 1992-02 (month-level precision). Both confirm the opening of the American Embassy in Yerevan with Steven Mann as Charg\u00e9 d'Affaires ad interim."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Armenia on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union. No physical mission was yet opened.",
+        "notes": "High-confidence RDCR event. This represents the formal establishment of diplomatic relations prior to the Embassy opening on 1992-02-03. Candidate for addition as a 'None' status entry reflecting recognition without a mission."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

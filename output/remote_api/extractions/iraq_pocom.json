@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016ckqYrXAWopjnZpgGbMwQ5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4229,
+      "output_tokens": 1616
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iraq",
+    "source_file": "pocom/missions-countries/iraq.xml",
+    "events": [
+      {
+        "date": "1931-06-18",
+        "new_status": "Legation",
+        "event_description": "First U.S. mission to Iraq established when Charg\u00e9 d'Affaires Alexander Kilgore Sloan presented credentials, representing a legation-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alexander Kilgore Sloan, Charg\u00e9 d'Affaires. Appointed: 1931-03-30. Credentials presented: 1931-06-18. Relinquished charge 1932-10-19."
+          }
+        ]
+      },
+      {
+        "date": "1946-12-28",
+        "new_status": "Embassy",
+        "event_description": "Legation Baghdad was raised to Embassy status on December 28, 1946.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Note: James S. Moose, Jr., was serving as Charg\u00e9 d'Affaires ad interim when Legation Baghdad was raised to Embassy status on December 28, 1946."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "Iraq severed diplomatic relations with the United States, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Enoch Sevier Duncan, Charg\u00e9 d'Affaires ad interim. Iraq severed diplomatic relations with the United States 1967-06-07."
+          }
+        ]
+      },
+      {
+        "date": "1972-10-01",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Belgian Embassy in Baghdad on October 1, 1972.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "[Mission Note] On October 1, 1972, the United States established an Interests Section in the Belgian Embassy."
+          }
+        ]
+      },
+      {
+        "date": "1984-11-26",
+        "new_status": "Embassy",
+        "event_description": "The United States resumed diplomatic relations with Iraq and elevated the U.S. Interests Section in Baghdad to Embassy status on November 26, 1984.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "[Mission Note] The United States resumed diplomatic relations with Iraq and elevated the U.S. Interests Section in Baghdad to Embassy status on November 26, 1984, when President Ronald Reagan and Deputy Prime Minister and Foreign Minister Tariq Aziz concluded an agreement to that effect."
+          }
+        ]
+      },
+      {
+        "date": "1991-01-12",
+        "new_status": "None",
+        "event_description": "Embassy Baghdad was closed on January 12, 1991, following Iraq's invasion of Kuwait and the buildup of military forces in the region.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "Joseph Charles Wilson, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1990-07. Embassy Baghdad closed on 1991-01-12."
+          }
+        ]
+      },
+      {
+        "date": "1991-02-09",
+        "new_status": "Interests",
+        "event_description": "After Iraq severed diplomatic relations with the United States on February 9, 1991, each nation maintained a modest Interests Section in the other's capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Iraq severed diplomatic relations with the United States February 9, 1991, after which each nation maintained a modest Interests Section in the other's capital."
+          }
+        ]
+      },
+      {
+        "date": "2004-06-28",
+        "new_status": "Embassy",
+        "event_description": "The United States reestablished diplomatic relations with Iraq and reopened its Embassy within Baghdad's 'Green Zone' on June 28, 2004.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "The United States reestablished diplomatic relations with Iraq on June 28, 2004, when the United States reopened its Embassy within Baghdad's \"Green Zone.\""
+          }
+        ]
+      }
+    ]
+  }
+}

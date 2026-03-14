@@ -1,0 +1,212 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EPK6896ehJdwUEr9Ai3zKS",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3448,
+      "output_tokens": 1787
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1903-07-17",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established when U.S. Ambassador to the Netherlands Stanford Newel presented credentials as Envoy Extraordinary and Minister Plenipotentiary to Luxembourg, remaining resident at The Hague.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "On July 17, 1903, U.S. Ambassador to the Netherlands Stanford Newel presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to Luxembourg. He remained resident at the The Hague."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1940-07-15",
+      "new_status": "None",
+      "event_description": "American Legation in Luxembourg closed following German occupation of Luxembourg on May 10, 1940.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "Germany occupied Luxembourg on May 10, 1940, and the American Legation closed on July 15, 1940."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941",
+      "new_status": "Envoy Nonresident",
+      "event_description": "U.S. Ambassador to Canada Jay Pierrepont Moffat was accredited to the Government of Luxembourg in Canada, resident at Ottawa, re-establishing nonresident envoy-level relations.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "U.S. Ambassador to Canada Jay Pierrepont Moffat was accredited to the Government of Luxembourg in Canada; he remained resident at Ottawa."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-11-12",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Anthony J. Drexel Biddle Jr. presented credentials to the Government of Luxembourg in London after the government moved to the United Kingdom on October 14, 1943, continuing nonresident envoy-level relations.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The Government of Luxembourg moved to the United Kingdom on October 14, 1943. Anthony J. Drexel Biddle Jr. presented his credentials to the Government of Luxembourg in London on November 12th but he departed London shortly thereafter."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1944-09-23",
+      "new_status": "Legation",
+      "event_description": "Legation Luxembourg reopened with Winthrop S. Green as Charg\u00e9 d'Affaires ad interim; U.S. Ambassador to Belgium Charles Sawyer later presented credentials as Envoy Extraordinary and Minister Plenipotentiary on November 1, 1944.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "Legation Luxembourg reopened on September 23, 1944, with Winthrop S. Green as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1956-09-21",
+      "new_status": "Embassy",
+      "event_description": "Representation elevated to ambassadorial level when Wiley T. Buchanan Jr. presented credentials as the first U.S. Ambassador to Luxembourg.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "Wiley T. Buchanan Jr., presented his credentials as the first U.S. Ambassador to Luxembourg on September 21, 1956."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1931-10-08",
+      "new_status": "Legation",
+      "event_description": "A resident Legation is established in Luxembourg. Gibson (nonresident Minister) introduces George P. Waller as Second Secretary of Legation and Consul, then returns to Brussels, leaving Waller in charge as resident Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "On October 8, 1931, during Gibson's tenure as non-resident Minister, Gibson introduced George P. Waller to the Minister of State in Luxembourg, in Waller's capacity as Second Secretary of Legation and Consul. Gibson then returned to Brussels on October 9, 1931, leaving Waller in charge at Luxembourg, the Department of State having previously authorized the Consul and Second Secretary at that post to act as Charge d'Affaires ad interim in the absence of the Minister and First Secretary."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-03-10",
+      "new_status": "Legation",
+      "event_description": "Legation re-established near the Luxembourg government in exile. Moffat presents credentials as Envoy Extraordinary and Minister Plenipotentiary, resident at Ottawa.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "Jay Pierrepont Moffat, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-03-10. Died at Ottawa 1943-01-24."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Luxembourg",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match: 1903-07-17, Envoy Nonresident. Both RDCR and CSV agree on date and status."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match: 1940-07-15, None (Legation closed). Both RDCR and CSV agree."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          7
+        ],
+        "notes": "CSV date 1941-03-10 matches POCOM (Event 7) credential presentation date; RDCR (Event 2) gives only year 1941. CSV status 'Envoy Nonresident' aligns with RDCR's description of accreditation to government-in-exile with envoy resident at Ottawa. POCOM labels this 'Legation' but the arrangement was clearly nonresident. CSV correctly follows RDCR for status and POCOM for the specific date."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Perfect match: 1956-09-21, Embassy. Both RDCR and CSV agree on date and status."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          6
+        ],
+        "date": "1931-10-08",
+        "new_status": "Legation",
+        "event_description": "Resident Legation established in Luxembourg when Gibson (nonresident Minister) introduced George P. Waller as Second Secretary of Legation and Consul, then returned to Brussels, leaving Waller as resident Charg\u00e9 d'Affaires ad interim.",
+        "notes": "POCOM source (Event 6) documents the transition from nonresident envoy arrangement to a resident Legation in 1931. This is a significant institutional change not captured in the CSV. The CSV jumps from 1903 Envoy Nonresident directly to 1940 closure, missing this upgrade."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1943-11-12",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Anthony J. Drexel Biddle Jr. presented credentials to the Government of Luxembourg in London after the government moved to the UK on October 14, 1943, continuing nonresident envoy-level relations.",
+        "notes": "RDCR documents this as a continuation of nonresident envoy relations but with a new accreditation in London. Could be considered a continuation of the status established in Row 3 rather than a new event, but it represents a change in the location of the government-in-exile and a new credential presentation."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1944-09-23",
+        "new_status": "Legation",
+        "event_description": "Legation Luxembourg reopened with Winthrop S. Green as Charg\u00e9 d'Affaires ad interim after liberation.",
+        "notes": "RDCR clearly states the Legation reopened on September 23, 1944. This is a major institutional event (reopening of the resident Legation) that is absent from the CSV. The CSV has a 'Legation' entry for 1952-06-14 (Row 4) which appears to be a different event \u2014 possibly Perle Mesta's credential presentation rather than the institutional reopening."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 4,
+        "notes": "CSV records 'Legation' status on 1952-06-14, citing Perle Mesta's bio page. No extracted event from either RDCR or POCOM corresponds to this date or to a Legation status change in 1952. RDCR shows the Legation reopened on 1944-09-23 (Event 4), and there is no indication of a closure and re-establishment between 1944 and 1956. The 1952-06-14 date likely refers to Mesta's credential presentation as Envoy Extraordinary and Minister Plenipotentiary \u2014 a personnel event, not an institutional status change. The Legation was already operational since 1944. This CSV row appears to be an error conflating a personnel event with an institutional transition."
+      }
+    ],
+    "discrepancies": []
+  }
+}

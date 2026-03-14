@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017DQRz5VEgwzkr1NkzUUb6Z",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2443,
+      "output_tokens": 653
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Switzerland",
+    "source_file": "rdcr/articles/switzerland.xml",
+    "events": [
+      {
+        "date": "1853-06-29",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Switzerland were established when Theodore S. Fay presented his credentials as U.S. Minister Resident.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations and the American Legation in Switzerland were established on June 29, 1853, when Theodore S. Fay presented his credentials as U.S. Minister Resident in Switzerland."
+          }
+        ]
+      },
+      {
+        "date": "1953-10-09",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Switzerland was elevated to Embassy status when Frances E. Willis presented her credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "Frances E. Willis was appointed as the first U.S. Ambassador Extraordinary and Plenipotentiary to Switzerland on July 20, 1953. She presented her credentials on October 9, 1953."
+          }
+        ]
+      }
+    ]
+  }
+}

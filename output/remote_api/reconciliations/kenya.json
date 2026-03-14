@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VHEQeQjEF8x7qJqMUnC9xg",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2467,
+      "output_tokens": 571
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1964-03-02",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations and the American Embassy at Nairobi were established when U.S. Ambassador William Attwood presented his credentials to the Kenyan government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Embassy at Nairobi were established on March 2, 1964, when U.S. Ambassador William Attwood presented his credentials to the Kenyan government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1963-12-12",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Kenya upon independence, with Laurence Coolidge Vass presenting credentials as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Laurence Coolidge Vass, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1963-12-12."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Kenya",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date 1964-03-02 matches RDCR (Event 0) exactly. POCOM (Event 1) gives 1963-12-12 (Kenya's independence date, when a Charg\u00e9 d'Affaires ad interim presented credentials), but RDCR is the primary source and explicitly states the Embassy and diplomatic relations were established on 1964-03-02 when Ambassador Attwood presented credentials. Per source priority rules, RDCR wins with its explicit institutional date. No discrepancy \u2014 the CSV correctly follows RDCR."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

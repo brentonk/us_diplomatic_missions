@@ -1,0 +1,71 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018VfBoUZzwKbHe3GxYS3DwU",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2465,
+      "output_tokens": 481
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1991-12-25",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established with Kyrgyzstan following U.S. recognition of its independence upon dissolution of the Soviet Union, but no mission yet opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-02-01",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Bishkek was established with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Bishkek was established on February 1, 1992, with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Kyrgyzstan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both record the establishment of the American Embassy in Bishkek on 1992-02-01."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Kyrgyzstan following U.S. recognition of its independence upon dissolution of the Soviet Union. No mission yet opened.",
+        "notes": "High-confidence event from RDCR with verified citation. This represents the initial recognition/establishment of diplomatic relations on December 25, 1991, prior to the embassy opening on February 1, 1992. Candidate for addition as a 'None' status entry preceding the Embassy row."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

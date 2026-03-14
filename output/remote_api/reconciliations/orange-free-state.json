@@ -1,0 +1,73 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QtodzHjkT3jMzAdJTYmv7Q",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2492,
+      "output_tokens": 711
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1891-12-16",
+      "new_status": "Consulate",
+      "event_description": "First U.S. Consular Agent appointed to Bloemfontein (the capital of the Orange Free State), establishing a consular presence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The first U.S. Consul assigned to the Orange Free State was Ernst Richard Landgraf, who was appointed as U.S. Consular Agent to Bloemfontein on December 16, 1891."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1902",
+      "new_status": "None",
+      "event_description": "The Orange Free State was annexed to the British Empire following the 1902 Peace of Vereeniging, ending the existence of the republic and any U.S. diplomatic representation to it.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "The 1902 Peace of Vereeniging, which ended the Boer War, annexed the Orange Free State to the British Empire."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Orange Free State",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the establishment of a U.S. consular presence at Bloemfontein on 1891-12-16."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "date",
+        "csv_value": "1928-11-30",
+        "extracted_value": "1902",
+        "assessment": "ambiguous",
+        "reasoning": "Both events describe the end of U.S. relations with the Orange Free State (status: None), but the dates differ significantly. The RDCR source (primary) ties the end to the 1902 Peace of Vereeniging, which annexed the Orange Free State to the British Empire, ending its existence as an independent republic. The CSV date of 1928-11-30 may reflect the formal closure of the U.S. consular post, which could have continued operating under British sovereignty for some years after the republic ceased to exist. It is plausible that the consulate was not formally closed until 1928 even though the sovereign entity ended in 1902. However, the RDCR narrative only mentions 1902 as the relevant date. Without additional sources clarifying a 1928 formal closure, this remains ambiguous. The CSV researcher may have had access to additional records (e.g., consular post closure records) not reflected in the RDCR narrative."
+      }
+    ]
+  }
+}

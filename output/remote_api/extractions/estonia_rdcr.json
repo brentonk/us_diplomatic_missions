@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019jGCnvoqLUtUVQiJVqsooK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2751,
+      "output_tokens": 1117
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Estonia",
+    "source_file": "rdcr/articles/estonia.xml",
+    "events": [
+      {
+        "date": "1922-07-28",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established; U.S. Commissioner Evan Young at Riga informed Estonia of U.S. recognition and would continue as American representative to the Baltic States with the new rank of Minister, residing in Riga.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on July 28, 1922, when U.S. Commissioner at Riga, Evan Young, informed the Foreign Office of Estonia that the United States recognized its independence and that he would continue as the American representative to the three Baltic States, with the new rank of Minister."
+          }
+        ]
+      },
+      {
+        "date": "1930-06-30",
+        "new_status": "Legation",
+        "event_description": "The American Legation at Tallinn was established, with Harry E. Carlson as Charg\u00e9 d'Affaires ad interim. Prior to this, U.S. diplomatic representatives had resided in Riga.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Legation at Tallinn was established on June 30, 1930, with Harry E. Carlson as Charge d'Affaires ad interim. Previous U.S. diplomatic representatives to Estonia also had been accredited to Latvia and Lithuania, and had resided in Riga."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "The U.S. Legation at Tallinn was closed following the Soviet occupation and annexation of Estonia. The U.S. did not recognize the incorporation but the physical mission was shuttered.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The U.S. Legation at Tallinn was closed on September 5, 1940, after the USSR occupied and annexed Estonia, as well as Latvia and Lithuania, in August 1940."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-02",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Tallinn was established, with Robert C. Frasure as Charg\u00e9 d'Affaires ad interim, following the resumption of normal diplomatic relations after Estonia's restored independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "The American Embassy in Tallinn was established on October 2, 1991, with Robert C. Frasure as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

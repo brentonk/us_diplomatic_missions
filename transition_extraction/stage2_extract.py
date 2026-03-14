@@ -174,7 +174,7 @@ async def _extract_country(
 
 def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None = None) -> list[WorkUnit]:
     """Load work units from Stage 1 output."""
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units = []
 
     for path in sorted(work_units_dir.glob("*.json")):
@@ -237,7 +237,7 @@ async def run_stage2_async(
         system_prompt = f.read()
 
     # Set up output directory
-    output_dir = config.paths.output_dir / "extractions"
+    output_dir = config.paths.output_dir / "remote_api" / "extractions"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Initialize API client
@@ -276,7 +276,7 @@ async def run_stage2_async(
             failures.append(country)
 
     # Write manifest
-    manifest_path = config.paths.output_dir / "manifest.json"
+    manifest_path = config.paths.output_dir / "local" / "manifest.json"
     manifest = {}
     if manifest_path.exists():
         with open(manifest_path) as f:

@@ -1,0 +1,148 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0146HNPVxqAi4bek5aEqaWu9",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6376,
+      "output_tokens": 2306
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Austria",
+    "source_file": "pocom/missions-countries/austria.xml",
+    "events": [
+      {
+        "date": "1838-11-07",
+        "new_status": "Legation",
+        "event_description": "Henry Augustus Philip Muhlenberg presents credentials as the first Envoy Extraordinary and Minister Plenipotentiary to Austria, establishing a U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Henry Augustus Philip Muhlenberg, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1838-02-08. Credentials presented: 1838-11-07. Left post on 1840-09-18."
+          }
+        ]
+      },
+      {
+        "date": "1861-11-14",
+        "new_status": "Embassy",
+        "event_description": "John Lothrop Motley presents credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "John Lothrop Motley, Ambassador Extraordinary and Plenipotentiary. Appointed: 1861-08-10. Credentials presented: 1861-11-14. Left post: 1867-06-14."
+          }
+        ]
+      },
+      {
+        "date": "1868-09-25",
+        "new_status": "Legation",
+        "event_description": "Henry Miller Watts presents credentials as Envoy Extraordinary and Minister Plenipotentiary, reverting the U.S. mission from embassy to legation status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Henry Miller Watts, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1868-07-25. Credentials presented: 1868-09-25. Presented recall on 1869-06-01."
+          }
+        ]
+      },
+      {
+        "date": "1902-06-26",
+        "new_status": "Embassy",
+        "event_description": "Robert Sanderson McCormick is promoted to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from legation to embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Robert Sanderson Mccormick, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1901-03-07. Credentials presented: 1901-04-29. Promoted to Ambassador Extraordinary and Plenipotentiary on 1902-06-26."
+          }
+        ]
+      },
+      {
+        "date": "1917-04-09",
+        "new_status": "None",
+        "event_description": "Austria-Hungary severs relations with the United States, ending all formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 61,
+            "line_end": 61,
+            "quote": "Joseph Clark Grew, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1913-04-07. Austria-Hungary severed relations with the United States on 1917-04-09."
+          }
+        ]
+      },
+      {
+        "date": "1921-11-26",
+        "new_status": "Liaison",
+        "event_description": "Arthur Hugh Frazier is received as Charg\u00e9 d'Affaires pro tempore on an informal, provisional basis without a formal commission, establishing a liaison-level presence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 63,
+            "line_end": 63,
+            "quote": "Arthur Hugh Frazier, Charg\u00e9 d'Affaires pro tempore. Credentials presented: 1921-11-26. Left post on 1922-05-21. Note: Not commissioned; letter of credence dated November 25, 1921. Recognized provisionally as Charge d'Affaires pro tempore and received as such on November 26, 1921."
+          }
+        ]
+      },
+      {
+        "date": "1922-06-19",
+        "new_status": "Legation",
+        "event_description": "Albert Henry Washburn presents credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing a formal U.S. legation in Austria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 65,
+            "line_end": 65,
+            "quote": "Albert Henry Washburn, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-02-10. Credentials presented: 1922-06-19. Died at post on 1930-04-29."
+          }
+        ]
+      },
+      {
+        "date": "1938-04-30",
+        "new_status": "None",
+        "event_description": "The U.S. legation in Austria is closed following Austria's annexation by Germany on March 13, 1938, ending all formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 75,
+            "line_end": 75,
+            "quote": "John Cooper Wiley, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1937-09-26. Legation closed on 1938-04-30. Note: Austria was annexed to Germany on March 13, 1938."
+          }
+        ]
+      },
+      {
+        "date": "1946-09-07",
+        "new_status": "Legation",
+        "event_description": "John George Erhardt presents credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing a U.S. legation in post-war Austria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 77,
+            "line_end": 77,
+            "quote": "John George Erhardt, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-08-03. Credentials presented: 1946-09-07. Left post on 1950-06-27."
+          }
+        ]
+      },
+      {
+        "date": "1951-11-28",
+        "new_status": "Embassy",
+        "event_description": "Walter Joseph Donnelly is promoted to Ambassador Extraordinary and Plenipotentiary and presents credentials, elevating the U.S. mission from legation to embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 79,
+            "line_end": 79,
+            "quote": "Walter Joseph Donnelly, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1950-09-20. Credentials presented: 1950-10-25. Promoted to Ambassador Extraordinary and Plenipotentiary on 1951-11-28."
+          }
+        ]
+      }
+    ]
+  }
+}

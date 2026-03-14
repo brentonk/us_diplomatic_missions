@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019uh9izA7uF6S6ZWHMKn3gZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3165,
+      "output_tokens": 787
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Uganda",
+    "source_file": "pocom/missions-countries/uganda.xml",
+    "events": [
+      {
+        "date": "1962-11-09",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Uganda established; first Charg\u00e9 d'Affaires ad interim presented credentials upon Ugandan independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Olcott Hawthorne Deming, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-11-09."
+          }
+        ]
+      },
+      {
+        "date": "1973-11-10",
+        "new_status": "None",
+        "event_description": "All U.S. diplomatic personnel withdrawn from Uganda; diplomatic representation ended.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Robert Vossler Keeley, Charg\u00e9 d'Affaires ad interim. All U.S. diplomatic personnel were withdrawn from Uganda on 1973-11-10."
+          }
+        ]
+      },
+      {
+        "date": "1979-06-18",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Uganda re-established after the 1973 withdrawal; Charg\u00e9 d'Affaires ad interim presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "David Crane Halsted, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1979-06-18."
+          }
+        ]
+      }
+    ]
+  }
+}

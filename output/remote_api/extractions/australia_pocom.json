@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_012SioRG3qUSpxsYakaQfyrw",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3628,
+      "output_tokens": 585
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Australia",
+    "source_file": "pocom/missions-countries/australia.xml",
+    "events": [
+      {
+        "date": "1940-07-17",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Canberra established when first Envoy Extraordinary and Minister Plenipotentiary Clarence Edward Gauss presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Clarence Edward Gauss, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1940-01-12. Credentials presented: 1940-07-17. Left post on 1941-03-05."
+          }
+        ]
+      },
+      {
+        "date": "1946-07-19",
+        "new_status": "Embassy",
+        "event_description": "Legation Canberra was raised to Embassy status on July 19, 1946, while John Russell Minter was serving as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Minter was serving as Charg\u00e9 d'Affaires ad interim when Legation Canberra was raised to Embassy status, July 19, 1946."
+          }
+        ]
+      }
+    ]
+  }
+}

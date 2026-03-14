@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AnqcBRLEg6VECZ9eujzm3A",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2441,
+      "output_tokens": 406
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1947-09-18",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations established and the American Legation (formerly Consulate General) in Rangoon raised to Embassy status, with agreement to exchange representatives at the rank of ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Legation in Burma were established on September 18, 1947, when the U.S. Department of State announced that the governments of Burma and the United States had \"agreed to exchange representatives with the rank of ambassador.\" The announcement also stated that the Consulate General of the United States in Rangoon was being raised to the status of Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-09-19",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Burma established; Earl Lenoir Packer presented credentials as the first Charg\u00e9 d'Affaires ad interim, marking the opening of the U.S. diplomatic mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Earl Lenoir Packer, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1947-09-19."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Burma",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date (1947-09-18) matches RDCR (Event 0). POCOM (Event 1) gives 1947-09-19, which reflects the credential presentation date of the first Charg\u00e9 d'Affaires. Per source priority rules, RDCR's institutional date prevails. No discrepancy."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

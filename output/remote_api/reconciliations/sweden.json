@@ -1,0 +1,85 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017TiVbgCKFpCDMFUxCQjtf3",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2618,
+      "output_tokens": 624
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1818-04-29",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established when Jonathan Russell presented credentials as American Minister Plenipotentiary to Sweden, opening a U.S. Legation in Stockholm.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Diplomatic relations were established on April 29, 1818, when Jonathan Russell presented his credentials as American Minister Plenipotentiary to Sweden."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-09-20",
+      "new_status": "Embassy",
+      "event_description": "U.S. Legation elevated to Embassy status with the appointment of H. Freeman Matthews as the first U.S. Ambassador to Sweden.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "On September 20, 1947, H. Freeman Matthews was appointed to be the first U.S. Ambassador to Sweden."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-12-05",
+      "new_status": "Embassy",
+      "event_description": "Harrison Freeman Matthews presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Stockholm from a Legation to an Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 63,
+          "line_end": 63,
+          "quote": "Harrison Freeman Matthews, Ambassador Extraordinary and Plenipotentiary. Appointed: 1947-09-20. Credentials presented: 1947-12-05. Left post on 1950-05-24. Note: Commissioned during a recess of the Senate; recommissioned on December 9, 1947, after confirmation."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Sweden",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1818-04-29) and status (Legation). Both describe Jonathan Russell presenting credentials as Minister Plenipotentiary to Sweden."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1947-12-05 matches POCOM Event 2 (credential presentation date). RDCR Event 1 gives 1947-09-20, but this is explicitly an appointment date ('was appointed to be the first U.S. Ambassador'), which is a personnel event, not an institutional elevation date. Per source priority rules, since RDCR provides only an appointment date and not an explicit institutional date, POCOM's credential presentation date (1947-12-05) correctly governs. CSV follows the correct source priority."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

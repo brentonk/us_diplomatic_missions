@@ -1,0 +1,189 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01LA7LZsV7VZpiyduYoRCMoe",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3257,
+      "output_tokens": 1369
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-05-21",
+      "new_status": "Interests",
+      "event_description": "The U.S. announced it would not recognize the FRY as the successor state to the SFRY. Ambassador Warren Zimmerman was recalled from Belgrade, but the mission continued under a Charg\u00e9 d'Affaires ad interim, effectively functioning as an interests-level presence given non-recognition.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "On May 21, 1992, the U.S. announced that it would not recognize the Federal Republic of Yugoslavia as a successor state of the Socialist Federal Republic of Yugoslavia. U.S. Ambassador Warren Zimmerman was recalled from Belgrade, but the mission continued with a staff under the authority of a Charg\u00e9 d'Affaires ad interim"
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1999-03-23",
+      "new_status": "None",
+      "event_description": "The U.S. severed relations with the Federal Republic of Yugoslavia and closed Embassy Belgrade in response to the conflict in Kosovo, one day before the NATO bombing of Yugoslavia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 26,
+          "line_end": 26,
+          "quote": "on March 23, 1999, the U.S. severed relations with the Federal Republic of Yugoslavia, and closed Embassy Belgrade."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "2001-05",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy in Belgrade reopened in May 2001, following the establishment of full diplomatic relations in November 2000.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 34,
+          "line_end": 34,
+          "quote": "The U.S. Embassy reopened in May 2001, and William Dale Montgomery was appointed Ambassador Extraordinary and Plenipotentiary to Serbia on November 26, 2001."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1882-11-10",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation established in Serbia when Eugene Schuyler, Minister Resident/Consul General, presented credentials in Belgrade.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Eugene Schuyler, Minister Resident/Consul General. Appointed: 1882-07-07. Credentials presented: 1882-11-10."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1894-06-29",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Mission status effectively became nonresident when Eben Alexander, Envoy Extraordinary and Minister Plenipotentiary/Consul General, presented credentials \u2014 he was resident at Athens, not Belgrade, marking a shift from a resident Legation to a nonresident Envoy arrangement.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "Eben Alexander, Envoy Extraordinary and Minister Plenipotentiary/Consul General. Appointed: 1893-04-07. Credentials presented: 1894-06-29. Relinquished charge at Athens 1897-08-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1918-12-17",
+      "new_status": "None",
+      "event_description": "U.S. Legation in Belgrade suspended when Charles Joseph Vopicka was relieved of active functions pertaining to the Legation, coinciding with Serbia's absorption into the Kingdom of Serbs, Croats and Slovenes.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 29,
+          "line_end": 29,
+          "quote": "Charles Joseph Vopicka, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1913-09-11. Credentials presented: 1913-12-15. Relieved of active functions pertaining to the Legation in Belgrade on 1918-12-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "2002-01-04",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy re-established in Serbia (then Federal Republic of Yugoslavia) when Ambassador William Dale Montgomery presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "William Dale Montgomery, Ambassador Extraordinary and Plenipotentiary. Appointed: 2001-11-26. Credentials presented: 2002-01-04. Left post: 2004-02-24. Note: Originally commissioned to the Federal Republic of Yugoslavia; continued to serve after country's name was changed to Serbia and Montenegro on February 4, 2003."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Serbia",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. RDCR confirms U.S. severed relations and closed Embassy Belgrade on March 23, 1999."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          6
+        ],
+        "notes": "RDCR confirms Embassy reopened in May 2001. POCOM Event 6 gives 2002-01-04 as the credential presentation date for Ambassador Montgomery, which is a later personnel event, not the institutional reopening date. CSV correctly follows RDCR."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1882-11-10",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Serbia when Eugene Schuyler, Minister Resident/Consul General, presented credentials in Belgrade.",
+        "notes": "From POCOM. This is the initial establishment of the U.S. diplomatic mission to Serbia in the 19th century. Candidate for addition if the CSV is intended to cover the full historical timeline."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1894-06-29",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Mission status effectively became nonresident when Eben Alexander (EE&MP/CG, resident at Athens) presented credentials, marking a shift from a resident Legation to a nonresident Envoy arrangement.",
+        "notes": "From POCOM. Medium confidence. The shift to nonresident status is inferred from the minister being resident at Athens. Candidate for addition."
+      },
+      {
+        "extracted_event_indices": [
+          5
+        ],
+        "date": "1918-12-17",
+        "new_status": "None",
+        "event_description": "U.S. Legation in Belgrade suspended when Charles Joseph Vopicka was relieved of active functions, coinciding with Serbia's absorption into the Kingdom of Serbs, Croats and Slovenes.",
+        "notes": "From POCOM. This marks the end of the separate U.S. mission to Serbia as it merged into the new state. Candidate for addition if the CSV covers the full historical timeline."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "field": "new_status",
+        "csv_value": "Embassy",
+        "extracted_value": "Interests",
+        "assessment": "ambiguous",
+        "reasoning": "Event 0 from RDCR describes the U.S. announcing non-recognition of FRY on 1992-05-21 and recalling the Ambassador, with the mission continuing under a Charg\u00e9 d'Affaires ad interim. The extracted event characterizes this as 'Interests' level given non-recognition. However, the RDCR text itself later refers to 'closed Embassy Belgrade' when describing the 1999 severance (Event 1, line 26), implying the mission retained its Embassy designation throughout 1992-1999 despite non-recognition. The CSV's 'Embassy' status is consistent with the RDCR's own terminology for the mission at closure. On the other hand, the non-recognition and recall of the Ambassador could justify a lower status classification. This is genuinely ambiguous and depends on how one interprets the institutional status of a mission operating under a Charg\u00e9 in a non-recognized state."
+      }
+    ]
+  }
+}

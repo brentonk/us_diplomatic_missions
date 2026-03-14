@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01RW6GUMUYAFvwhYZe8hr9BR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3264,
+      "output_tokens": 531
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malta",
+    "source_file": "pocom/missions-countries/malta.xml",
+    "events": [
+      {
+        "date": "1964-09-21",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Malta established; Harrison Lewis presented credentials as Charg\u00e9 d'Affaires ad interim, marking the opening of diplomatic relations coinciding with Maltese independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Harrison Lewis, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1964-09-21."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013Jk4MnFmrcz3pKfMyJRBRF",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6158,
+      "output_tokens": 1849
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guatemala",
+    "source_file": "pocom/missions-countries/guatemala.xml",
+    "events": [
+      {
+        "date": "1826-05-03",
+        "new_status": "Legation",
+        "event_description": "First U.S. mission established to the Federation of the Centre of America, with John Williams presenting credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Williams, Charg\u00e9 d'Affaires. Appointed: 1825-12-29. Credentials presented: 1826-05-03. Made farewell calls 1826-12-01. Note: Commissioned to the Federation of the Centre of America."
+          }
+        ]
+      },
+      {
+        "date": "1826-12-01",
+        "new_status": "None",
+        "event_description": "John Williams made farewell calls, ending the first U.S. mission to the Federation of the Centre of America. No successor was appointed until 1833.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Williams, Charg\u00e9 d'Affaires. Appointed: 1825-12-29. Credentials presented: 1826-05-03. Made farewell calls 1826-12-01. Note: Commissioned to the Federation of the Centre of America."
+          }
+        ]
+      },
+      {
+        "date": "1833-12-17",
+        "new_status": "Legation",
+        "event_description": "U.S. mission re-established to the Republic of Central America, with Witt Charles Gerrit De presenting credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Witt Charles Gerrit De, Charg\u00e9 d'Affaires. Appointed: 1833-01-29. Credentials presented: 1833-12-17. Left post about 1839-01-01. Note: Commissioned to the Republic of Central of America."
+          }
+        ]
+      },
+      {
+        "date": "1839-01-01",
+        "new_status": "None",
+        "event_description": "Witt Charles Gerrit De left post, ending the U.S. mission to the Republic of Central America. No successor was appointed until 1848.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Witt Charles Gerrit De, Charg\u00e9 d'Affaires. Appointed: 1833-01-29. Credentials presented: 1833-12-17. Left post about 1839-01-01. Note: Commissioned to the Republic of Central of America."
+          }
+        ]
+      },
+      {
+        "date": "1849-01-31",
+        "new_status": "Legation",
+        "event_description": "U.S. mission re-established to the Republic of Guatemala, with Elijah Hise presenting credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Elijah Hise, Charg\u00e9 d'Affaires. Appointed: 1848-03-31. Credentials presented: 1849-01-31. Presented recall about 1849-06-23. Note: Commissioned to the Republic of Guatemala."
+          }
+        ]
+      },
+      {
+        "date": "1921-12-06",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted when the new government of Guatemala was unrecognized by the United States; McMillin left post on January 5, 1922.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 54,
+            "line_end": 54,
+            "quote": "Benton Mcmillin, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1919-09-23. Credentials presented: 1920-01-15. Normal relations interrupted on 1921-12-06. Note: The new government of Guatemala was still unrecognized by the United States when McMillin left post on January 5, 1922."
+          }
+        ]
+      },
+      {
+        "date": "1922-07-31",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation re-established in Guatemala with Arthur H Geissler presenting credentials as Envoy Extraordinary and Minister Plenipotentiary, restoring normal diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "Arthur H Geissler, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-05-24. Credentials presented: 1922-07-31. Left post on 1930-01-23."
+          }
+        ]
+      },
+      {
+        "date": "1943-05-19",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy with Boaz Walton Long presenting credentials as the first Ambassador Extraordinary and Plenipotentiary to Guatemala.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 64,
+            "line_end": 64,
+            "quote": "Boaz Walton Long, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-05-19. Left post on 1945-04-11."
+          }
+        ]
+      }
+    ]
+  }
+}

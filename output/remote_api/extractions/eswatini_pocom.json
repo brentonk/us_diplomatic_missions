@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018LS8Qe8cAi6sEbdUeHQgZX",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3047,
+      "output_tokens": 486
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Eswatini",
+    "source_file": "pocom/missions-countries/swaziland.xml",
+    "events": [
+      {
+        "date": "1968-09-06",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Swaziland, with the first chief of mission (Charg\u00e9 d'Affaires ad interim Christos Constantine Pappas) presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Christos Constantine Pappas, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1968-09-06."
+          }
+        ]
+      }
+    ]
+  }
+}

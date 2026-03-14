@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BxDB9nU9Pj2tgqMSzGwG9T",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3228,
+      "output_tokens": 479
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Maldives",
+    "source_file": "pocom/missions-countries/maldives.xml",
+    "events": [
+      {
+        "date": "1966-04-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Maldives. Cecil Burton Lyon, the first U.S. Ambassador accredited to Maldives, presented credentials while resident in Colombo, Sri Lanka.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Cecil Burton Lyon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1965-11-10. Credentials presented: 1966-04-09. Left Colombo 1967-06-17. Note: Commissioned during a recess of the Senate; recommissioned on January 27, 1966, after confirmation. Commissioned to the Maldive Islands."
+          }
+        ]
+      }
+    ]
+  }
+}

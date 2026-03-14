@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014toawcAt8MAvw9yPRcg6Sx",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2141,
+      "output_tokens": 271
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mauritius",
+    "source_file": "rdcr/articles/mauritius.xml",
+    "events": [
+      {
+        "date": "1968-03-12",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Port Louis was established upon Mauritius' attainment of independence, with William B. Hussey as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on March 12, 1968, when the American Embassy at Port Louis was established with William B. Hussey as Charg\u00e9 d'Affaires at interim."
+          }
+        ]
+      }
+    ]
+  }
+}

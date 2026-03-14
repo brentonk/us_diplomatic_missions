@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WHVP1iUyPJAEzyDNTb4f8c",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2904,
+      "output_tokens": 477
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tuvalu",
+    "source_file": "pocom/missions-countries/tuvalu.xml",
+    "events": [
+      {
+        "date": "1980-01-24",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Tuvalu. The first U.S. Ambassador, John Peter Condon, presented credentials while based in Suva (Fiji), indicating a nonresident appointment.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Peter Condon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1979-09-20. Credentials presented: 1980-01-24. Left Suva 1980-07-27."
+          }
+        ]
+      }
+    ]
+  }
+}

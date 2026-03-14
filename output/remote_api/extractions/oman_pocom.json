@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01N5Smn35nVY1w1UB8jfvVjy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2924,
+      "output_tokens": 689
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Oman",
+    "source_file": "pocom/missions-countries/oman.xml",
+    "events": [
+      {
+        "date": "1972-04-17",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "William A. Stoltzfus presented credentials as the first U.S. Ambassador to Oman, serving in a nonresident capacity.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William A Stoltzfus, Ambassador Extraordinary and Plenipotentiary. Appointed: 1972-02-29. Credentials presented: 1972-04-17. Appointment terminated 1974-07-16. Note: During Stoltzfus's tenure as non-resident Ambassador, Embassy Muscat was established on July 4, 1972, with Clifford J. Quinlan as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1972-07-04",
+        "new_status": "Embassy",
+        "event_description": "Embassy Muscat was formally established, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Note: During Stoltzfus's tenure as non-resident Ambassador, Embassy Muscat was established on July 4, 1972, with Clifford J. Quinlan as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

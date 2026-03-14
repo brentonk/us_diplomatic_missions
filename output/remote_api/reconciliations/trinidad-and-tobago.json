@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Y7r9htFPXcSsdEtF3RVhto",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2401,
+      "output_tokens": 374
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1962-08-31",
+      "new_status": "Embassy",
+      "event_description": "The United States established the American Embassy in Port-of-Spain upon recognizing Trinidad and Tobago's independence, with William H. Christensen as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States established diplomatic relations with Trinidad and Tobago on August 31, 1962, when it recognized the island nation's independence. That same day, the United States established the American Embassy in Port-of-Spain, with William H. Christensen as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "Trinidad and Tobago",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1962-08-31) and status (Embassy). Extracted event has a citation error flag, but the evidence text is coherent and consistent with the CSV. Both describe the establishment of the American Embassy in Port-of-Spain upon Trinidad and Tobago's independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

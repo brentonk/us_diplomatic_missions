@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JhrJM7JQan7xT9SfV9mrET",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4955,
+      "output_tokens": 982
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Liberia",
+    "source_file": "pocom/missions-countries/liberia.xml",
+    "events": [
+      {
+        "date": "1864-02-23",
+        "new_status": "Liaison",
+        "event_description": "Abraham Hanson presented credentials as Commissioner and Consul General, establishing the first U.S. diplomatic presence in Liberia. The title 'Commissioner' indicates a liaison/diplomatic agent role rather than a full legation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Abraham Hanson, Commissioner and Consul General. Appointed: 1863-06-08. Credentials presented: 1864-02-23."
+          }
+        ]
+      },
+      {
+        "date": "1867-01-02",
+        "new_status": "Legation",
+        "event_description": "John Seys presented credentials as Minister Resident/Consul General, elevating U.S. representation to a legation-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "John Seys, Minister Resident/Consul General. Appointed: 1866-10-08. Credentials presented: 1867-01-02."
+          }
+        ]
+      },
+      {
+        "date": "1949-05-06",
+        "new_status": "Embassy",
+        "event_description": "Edward Richard Dudley was promoted to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Edward Richard Dudley, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1948-08-11. Credentials presented: 1948-10-18. Promoted to Ambassador Extraordinary and Plenipotentiary 1949-05-06."
+          }
+        ]
+      }
+    ]
+  }
+}

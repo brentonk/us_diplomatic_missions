@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ep3CFopE2PXehYB3s2vqcV",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2468,
+      "output_tokens": 494
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Croatia",
+    "source_file": "pocom/missions-countries/croatia.xml",
+    "events": [
+      {
+        "date": "1992-08-25",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Croatia established, with Ronald Nietzke as Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Ronald Nietzke, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-08-25."
+          }
+        ]
+      },
+      {
+        "date": "1993-06-28",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador to Croatia, Peter W Galbraith, presented credentials, confirming full ambassadorial-level embassy representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Peter W Galbraith, Ambassador Extraordinary and Plenipotentiary. Appointed: 1993-06-17. Credentials presented: 1993-06-28. Left post on 1998-01-03."
+          }
+        ]
+      }
+    ]
+  }
+}

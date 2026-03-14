@@ -1,0 +1,135 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EsMJDAZwPVa8PG9e6h5k39",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2897,
+      "output_tokens": 1820
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cambodia",
+    "source_file": "rdcr/articles/cambodia.xml",
+    "events": [
+      {
+        "date": "1950-07-11",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when nonresident Envoy Extraordinary and Minister Plenipotentiary Donald R. Heath presented credentials; Heath was resident at Saigon.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on July 11, 1950, when American Envoy Extraordinary and Minister Plenipotentiary Donald R. Heath presented his credentials to the government of the Kingdom of Cambodia. Heath was resident at Saigon."
+          }
+        ]
+      },
+      {
+        "date": "1950-11-14",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Phnom Penh opened, establishing a resident mission in the capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Legation in Phnom Penh opened on November 14, 1950, under Charg\u00e9 d'Affaires ad interim Don V. Catlett."
+          }
+        ]
+      },
+      {
+        "date": "1952-06-24",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The Legation in Phnom Penh was elevated to Embassy status on June 24, 1952; Ambassador Heath remained resident at Saigon, making representation nonresident at the ambassadorial level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "the United States Legation in Phnom Penh was raised to Embassy status on June 24, 1952, when Ambassador Donald R. Heath received confirmation of his appointment from the United States Senate. Ambassador Heath remained resident at Saigon."
+          }
+        ]
+      },
+      {
+        "date": "1954-10-02",
+        "new_status": "Embassy",
+        "event_description": "The first resident Ambassador, Robert M. McClintock, presented his credentials, establishing a fully resident Embassy in Phnom Penh.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The first Ambassador resident at Phnom Penh was Robert M. McClintock, who presented his credentials on October 2, 1954."
+          }
+        ]
+      },
+      {
+        "date": "1965-05-03",
+        "new_status": "None",
+        "event_description": "Cambodia severed diplomatic relations with the United States, ending all formal representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Cambodia severed diplomatic relations with the United States on May 3, 1965. The Government of Cambodia stated that it held the United States responsible for recent cross-border air attacks by South Vietnam that had killed Cambodian citizens."
+          }
+        ]
+      },
+      {
+        "date": "1969-08-16",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Phnom Penh was reopened following the reestablishment of diplomatic relations, under Charg\u00e9 d'Affaires ad interim Lloyd M. Rives.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "The United States Embassy in Phnom Penh was reopened on August 16, 1969, under Charg\u00e9 d'Affaires ad interim Lloyd M. Rives."
+          }
+        ]
+      },
+      {
+        "date": "1975-04-12",
+        "new_status": "None",
+        "event_description": "The United States closed its Embassy in Phnom Penh following evacuation of all U.S. personnel due to the deteriorating military situation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "The United States closed its Embassy in Phnom Penh on April 12, 1975, following the evacuation of all U.S. personnel due to the deteriorating military situation in fighting between government forces and communist insurgents."
+          }
+        ]
+      },
+      {
+        "date": "1991-11-11",
+        "new_status": "Liaison",
+        "event_description": "The United States established a U.S. mission to Cambodia with Charles H. Twining as its Representative, constituting an informal liaison-level presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "The United States established a U.S. mission to the Kingdom of Cambodia on November 11, 1991, with Charles H. Twining as its Representative."
+          }
+        ]
+      },
+      {
+        "date": "1994-05-17",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Cambodia was reopened and normal relations resumed when Ambassador Charles H. Twining presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 48,
+            "line_end": 48,
+            "quote": "The U.S. Embassy in Cambodia was reopened and normal relations were resumed on May 17, 1994, when Ambassador Charles H. Twining presented his credentials in Phnom Pehn."
+          }
+        ]
+      }
+    ]
+  }
+}

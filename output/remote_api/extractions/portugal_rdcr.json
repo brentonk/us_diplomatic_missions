@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JyLUiUFXqUeYXYQKRDrjHo",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2740,
+      "output_tokens": 951
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Portugal",
+    "source_file": "rdcr/articles/portugal.xml",
+    "events": [
+      {
+        "date": "1791-05-13",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Lisbon were established when U.S. Minister David Humphreys presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Diplomatic relations and the American Legation in Lisbon were established on May 13, 1791, when U.S. Minister to Portugal Col. David Humphreys presented his credentials."
+          }
+        ]
+      },
+      {
+        "date": "1810",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation relocated from Lisbon to Rio de Janeiro following the King of Portugal's flight to Brazil during the Napoleonic Wars.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "During the Napoleonic Wars, the King of Portugal fled to Brazil. The U.S. legation followed and was located there from 1810-21. It closed in July 1821."
+          }
+        ]
+      },
+      {
+        "date": "1821-07",
+        "new_status": "None",
+        "event_description": "The U.S. Legation in Rio de Janeiro closed in July 1821.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "The U.S. legation followed and was located there from 1810-21. It closed in July 1821."
+          }
+        ]
+      },
+      {
+        "date": "1822",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation returned to Lisbon in 1822. Henry Dearborn, Sr. was appointed U.S. Envoy to Portugal and arrived at Lisbon before August 16, 1822, but did not report a date of presentation of credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "In 1822 the U.S. legation returned to Lisbon, along with the King of Portugal, where it has since remained. Henry Dearborn, Sr. was appointed U.S. Envoy to Portugal on May 7, 1822, and arrived at Lisbon before August 16, 1822, but did not report a date of presentation of credentials."
+          }
+        ]
+      },
+      {
+        "date": "1944-06-20",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Lisbon was elevated to Embassy status when R. Henry Norweb presented his new credentials after being promoted from Minister to Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "The U.S. legation in Lisbon became an embassy on June 20, 1944, when R. Henry Norweb presented his new credentials to Lisbon after he was promoted from Minister to Ambassador."
+          }
+        ]
+      }
+    ]
+  }
+}

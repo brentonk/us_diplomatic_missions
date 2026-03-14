@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013aXTe5WSGgyf2msBPW1M3R",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2256,
+      "output_tokens": 277
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Pakistan",
+    "source_file": "rdcr/articles/pakistan.xml",
+    "events": [
+      {
+        "date": "1947-08-15",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy was established at Karachi with Charles W. Lewis, Jr., as Charg\u00e9 d'Affaires ad interim, coinciding with the establishment of diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on August 15, 1947, when the U.S. Department of State established the American Embassy at Karachi with Charles W. Lewis, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

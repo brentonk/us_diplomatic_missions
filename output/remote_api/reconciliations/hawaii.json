@@ -1,0 +1,99 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JRJGhB2katcz2s5EXUx1BR",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2708,
+      "output_tokens": 949
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1820-10",
+      "new_status": "Consul Nonresident",
+      "event_description": "John Coffin Jones Jr. appointed Agent for Commerce and Seamen at the port of Honolulu, beginning to serve in October 1820. This is a consular-level presence, but Honolulu was not yet the capital (Lahaina was capital before 1845), so coded as Consul Nonresident.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "John Coffin Jones, Jr. (also known in Hawaiian documents as John Aluli) was appointed Agent for Commerce and Seamen on September 19, 1820. He began to serve in October of 1820, at the port of Honolulu."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1853-12-20",
+      "new_status": "Legation",
+      "event_description": "David L. Gregg presented his credentials as U.S. Commissioner to the Kingdom of Hawaii, establishing the American Legation at Honolulu.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 47,
+          "quote": "David L. Gregg presented his credentials as U.S. Commissioner to the Kingdom of Hawaii on December 20, 1853. Gregg referred to the Mission at Honolulu as a Legation in his first dispatch from Hawaii on December 27, 1853."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1898-08-12",
+      "new_status": "None",
+      "event_description": "The American Legation at Honolulu ceased to exist upon the formal U.S. annexation of Hawaii, ending all diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 56,
+          "line_end": 56,
+          "quote": "Owing to U.S. annexation of Hawaii, the legation ceased to exist on August 12, 1898. Harold Sewall, the last Envoy Extraordinary and Plenipotentiary, became Special Agent."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Hawaii",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1853-12-20) and status (Legation). David L. Gregg presented credentials as U.S. Commissioner."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1898-08-12) and status (None). Legation ceased to exist upon U.S. annexation of Hawaii."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1820-10",
+        "new_status": "Consul Nonresident",
+        "event_description": "John Coffin Jones Jr. appointed Agent for Commerce and Seamen, began serving at Honolulu in October 1820. Coded as Consul Nonresident because Honolulu was not the capital at the time (Lahaina was capital before 1845).",
+        "notes": "Medium confidence. This represents the earliest U.S. consular-level presence in Hawaii, predating the CSV's first event (1844) by 24 years. The 'Consul Nonresident' coding reflects that Honolulu was not the seat of government. This could be a legitimate addition to the CSV as the initial U.S. representation event."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "The CSV records a 'Consulate' established on 1844-07-05, but no extracted event corresponds to this date or status. The only pre-Legation consular event extracted is Event 0 (October 1820, Consul Nonresident). The 1844-07-05 date may refer to a formal consulate establishment or elevation event documented in sources not included in this extraction pipeline, or it could represent a different milestone (e.g., appointment of a new consul, formal recognition). It is not contradicted by the extractions, but it is not supported either."
+      }
+    ],
+    "discrepancies": []
+  }
+}

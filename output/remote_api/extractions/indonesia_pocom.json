@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018evSDDZhXsAJkWv4a3jQxE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3265,
+      "output_tokens": 429
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Indonesia",
+    "source_file": "pocom/missions-countries/indonesia.xml",
+    "events": [
+      {
+        "date": "1949-12-30",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Indonesia when the first Ambassador Extraordinary and Plenipotentiary, Horace Merle Cochran, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Horace Merle Cochran, Ambassador Extraordinary and Plenipotentiary. Appointed: 1949-12-28. Credentials presented: 1949-12-30."
+          }
+        ]
+      }
+    ]
+  }
+}

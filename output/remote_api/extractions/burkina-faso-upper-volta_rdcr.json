@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QktKiuHSEUqsS59nc6wBbM",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2258,
+      "output_tokens": 436
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Burkina Faso (Upper Volta)",
+    "source_file": "rdcr/articles/burkina-faso.xml",
+    "events": [
+      {
+        "date": "1960-08-05",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Upper Volta via a Charg\u00e9 d'Affaires ad interim, but no embassy or legation yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 5, 1960, when Donald R. Norland assumed his post as Charg\u00e9 d'Affaires ad interim. Norland had presented his credentials on August 4, 1960, to take effect the following day."
+          }
+        ]
+      },
+      {
+        "date": "1960-12-31",
+        "new_status": "Embassy",
+        "event_description": "Embassy Ouagadougou was established, elevating the U.S. diplomatic presence to full embassy level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Embassy Ouagadougou was established on December 31, 1960, with Robert McKinnon as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

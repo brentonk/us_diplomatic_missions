@@ -104,7 +104,7 @@ def verify_country(
 
 def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None = None) -> list[WorkUnit]:
     """Load work units from Stage 1 output."""
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units = []
     for path in sorted(work_units_dir.glob("*.json")):
         with open(path) as f:
@@ -119,8 +119,8 @@ def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None 
 def run_stage3(config: PipelineConfig, countries_filter: list[str] | None = None) -> None:
     """Run Stage 3 quote verification."""
     work_units = _load_work_units(config, countries_filter)
-    extractions_dir = config.paths.output_dir / "extractions"
-    verifications_dir = config.paths.output_dir / "verifications"
+    extractions_dir = config.paths.output_dir / "remote_api" / "extractions"
+    verifications_dir = config.paths.output_dir / "local" / "verifications"
     verifications_dir.mkdir(parents=True, exist_ok=True)
 
     threshold = config.verification.quote_match_threshold

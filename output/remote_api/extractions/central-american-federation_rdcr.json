@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01T6HvmhK8oZkbWBt6RwABFP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2649,
+      "output_tokens": 866
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Central American Federation",
+    "source_file": "rdcr/articles/central-american-federation.xml",
+    "events": [
+      {
+        "date": "1824-08-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established between the U.S. and the Federation of the Centre of America. No resident U.S. mission yet established; relations initiated by the Federation's envoy being received in Washington.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "Diplomatic relations between the United States and the Federation of the Centre of America were established when U.S. President James Monroe received Antonio Jose Ca\u00f1as as Envoy Extraordinary and Minister Plenipotentiary of the Federation of the Centre of America on August 4, 1824."
+          }
+        ]
+      },
+      {
+        "date": "1826-05-03",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Guatemala City was established when U.S. Charg\u00e9 d'Affaires John Williams presented his credentials to the Federation of Central American States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 22,
+            "quote": "Establishment of the American Legation in Guatemala City, 1826.\n\nU.S. Charg\u00e9 d'Affaires John Williams presented his credentials to the Federation of Central American States on May 3, 1826."
+          }
+        ]
+      },
+      {
+        "date": "1842-03",
+        "new_status": "None",
+        "event_description": "Cessation of U.S. diplomatic relations with the Central American Federation. The last U.S. diplomatic representative, Special and Confidential Agent William S. Murphy, took formal leave of his post in March 1842 as the federation had dissolved.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "the last U.S. diplomatic representative accredited to the Central American Federation, Special and Confidential Agent of the United States to Central America William S. Murphy, did not take formal leave of his post until March 1842."
+          }
+        ]
+      }
+    ]
+  }
+}

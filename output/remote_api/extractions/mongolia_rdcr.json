@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019KnjFVchhVuQB7KmX1SXPY",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2320,
+      "output_tokens": 394
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mongolia",
+    "source_file": "rdcr/articles/mongolia.xml",
+    "events": [
+      {
+        "date": "1987-01-27",
+        "new_status": "None",
+        "event_description": "The United States established diplomatic relations with Mongolia via joint communiqu\u00e9, but no physical mission was yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established diplomatic relations with Mongolia on January 27, 1987, when the United States and Mongolia issued a joint communiqu\u00e9 to that effect."
+          }
+        ]
+      },
+      {
+        "date": "1988-04-17",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Ulaanbaatar was opened, with Steven Mann as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy at Ulaanbaatar was opened on April 17, 1988, with Steven Mann as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

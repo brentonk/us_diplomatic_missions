@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BLHcjhmEMNkUF8kDWsw2LX",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2650,
+      "output_tokens": 1348
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Luxembourg",
+    "source_file": "rdcr/articles/luxembourg.xml",
+    "events": [
+      {
+        "date": "1903-07-17",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when U.S. Ambassador to the Netherlands Stanford Newel presented credentials as Envoy Extraordinary and Minister Plenipotentiary to Luxembourg, remaining resident at The Hague.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "On July 17, 1903, U.S. Ambassador to the Netherlands Stanford Newel presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to Luxembourg. He remained resident at the The Hague."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "American Legation in Luxembourg closed following German occupation of Luxembourg on May 10, 1940.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Germany occupied Luxembourg on May 10, 1940, and the American Legation closed on July 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1941",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. Ambassador to Canada Jay Pierrepont Moffat was accredited to the Government of Luxembourg in Canada, resident at Ottawa, re-establishing nonresident envoy-level relations.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "U.S. Ambassador to Canada Jay Pierrepont Moffat was accredited to the Government of Luxembourg in Canada; he remained resident at Ottawa."
+          }
+        ]
+      },
+      {
+        "date": "1943-11-12",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Anthony J. Drexel Biddle Jr. presented credentials to the Government of Luxembourg in London after the government moved to the United Kingdom on October 14, 1943, continuing nonresident envoy-level relations.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "The Government of Luxembourg moved to the United Kingdom on October 14, 1943. Anthony J. Drexel Biddle Jr. presented his credentials to the Government of Luxembourg in London on November 12th but he departed London shortly thereafter."
+          }
+        ]
+      },
+      {
+        "date": "1944-09-23",
+        "new_status": "Legation",
+        "event_description": "Legation Luxembourg reopened with Winthrop S. Green as Charg\u00e9 d'Affaires ad interim; U.S. Ambassador to Belgium Charles Sawyer later presented credentials as Envoy Extraordinary and Minister Plenipotentiary on November 1, 1944.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "Legation Luxembourg reopened on September 23, 1944, with Winthrop S. Green as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1956-09-21",
+        "new_status": "Embassy",
+        "event_description": "Representation elevated to ambassadorial level when Wiley T. Buchanan Jr. presented credentials as the first U.S. Ambassador to Luxembourg.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "Wiley T. Buchanan Jr., presented his credentials as the first U.S. Ambassador to Luxembourg on September 21, 1956."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012tYBKvGsAw9A9XDgfSciji",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2981,
+      "output_tokens": 1324
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1922-12-04",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established and U.S. Legation opened in Tirana when Envoy Extraordinary and Minister Plenipotentiary Ulysses Grant-Smith presented credentials to the Albanian government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on December 4, 1922, when Envoy Extraordinary and Minister Plenipotentiary Ulysses Grant-Smith presented credentials to the government of Albania in Tirana."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1939-09-16",
+      "new_status": "None",
+      "event_description": "U.S.-Albanian diplomatic relations ended after Italy took control of Albania's foreign affairs; Legation Tirana was officially closed on September 16, 1939.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "U.S.-Albanian diplomatic relations ended on June 5, 1939, when Albanian Minister for Foreign Affairs notified the American Minister in Albania that Italy had taken control of Albania's foreign affairs. Legation Tirana was officially closed on September 16, 1939."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1945",
+      "new_status": "Liaison",
+      "event_description": "An informal U.S. mission was sent to Albania in 1945 to study the possibility of reestablishing relations with the NLF regime.",
+      "confidence": "low",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "After Italy's defeat in World War II, an informal US mission was sent to Albania in 1945 to study the possibility of reestablishing relations with the National Liberation Front (NLF) regime."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": true
+    },
+    {
+      "date": "1946-11",
+      "new_status": "None",
+      "event_description": "The United States withdrew its informal mission from Albania in November 1946 following disagreements with the NLF regime.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "disagreements led the United States to withdraw the mission in November 1946."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1991-03-15",
+      "new_status": "Embassy",
+      "event_description": "The United States and Albania reestablished diplomatic relations when Albanian Foreign Minister Muhamet Kapllani and Assistant Secretary Raymond Seitz signed a Memorandum of Understanding in Washington.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 23,
+          "quote": "The United States and Albania resumed diplomatic relations on March 15, 1991, when Albanian Foreign Minister Muhamet Kapllani and Assistant Secretary Raymond Seitz signed a Memorandum of Understanding in Washington."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1991-10-01",
+      "new_status": "Embassy",
+      "event_description": "Embassy Tirana opened, re-establishing U.S. diplomatic presence in Albania after relations were resumed on March 15, 1991.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States resumed diplomatic relations with Albania on March 15, 1991. Embassy Tirana opened on October 1, 1991."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Albania",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1922-12-04) and status (Legation). RDCR confirms diplomatic relations established and Legation opened when Grant-Smith presented credentials."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1939-09-16) and status (None). RDCR distinguishes between end of diplomatic relations (June 5, 1939) and official closure of Legation Tirana (September 16, 1939); CSV correctly uses the closure date."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Exact match on date (1991-10-01) and status (Embassy). CSV note indicates source was Chiefs of Mission (POCOM) page. POCOM confirms Embassy Tirana opened on October 1, 1991. Event 4 (RDCR, 1991-03-15) describes the resumption of diplomatic relations, which is a separate earlier event \u2014 see missing_from_csv."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1991-03-15",
+        "new_status": "Embassy",
+        "event_description": "The United States and Albania resumed diplomatic relations on March 15, 1991, when Albanian Foreign Minister Kapllani and Assistant Secretary Seitz signed a Memorandum of Understanding in Washington. This is distinct from the opening of Embassy Tirana on October 1, 1991.",
+        "notes": "RDCR (primary source) explicitly states relations resumed on March 15, 1991. POCOM also confirms this date. The CSV only captures the later Embassy opening (Oct 1). This resumption of relations event should be added, though the appropriate status is debatable \u2014 it could be 'Embassy' (since the eventual mission was an Embassy) or a different transitional status. The RDCR text does not mention a Legation stage upon resumption, so Embassy seems correct."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1945",
+        "new_status": "Liaison",
+        "event_description": "An informal U.S. mission was sent to Albania in 1945 to study the possibility of reestablishing relations with the NLF regime.",
+        "notes": "Low confidence event with CITATION ERROR flag. The 'informal mission' may not constitute a formal diplomatic status change. The extracted status 'Liaison' is an interpretation; RDCR describes it as an informal mission to study reestablishment of relations. Consider adding only if the dataset tracks informal/liaison presences. Treat with skepticism due to citation error."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1946-11",
+        "new_status": "None",
+        "event_description": "The United States withdrew its informal mission from Albania in November 1946 following disagreements with the NLF regime.",
+        "notes": "Medium confidence. If the 1945 informal mission is added, this withdrawal event should also be added as the corresponding closure. Only relevant if the dataset tracks informal missions. Date is month-level precision only (November 1946)."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

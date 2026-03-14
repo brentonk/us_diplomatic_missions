@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Kqsde8UumAaxuA2j7KxGqQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2197,
+      "output_tokens": 520
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Dominica",
+    "source_file": "rdcr/articles/dominica.xml",
+    "events": [
+      {
+        "date": "1979",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Ambassador Sally Angela Shelton presented credentials as the first U.S. Ambassador to Dominica, remaining resident in Bridgetown, Barbados \u2014 establishing nonresident ambassadorial relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "The United States maintains no official presence in Dominica. The Ambassador and the Embassy staff are resident at Bridgetown, Barbados."
+          },
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Ambassador Sally Angela Shelton presented credentials at Bridgetown, Barbados, where she remained resident."
+          }
+        ]
+      }
+    ]
+  }
+}

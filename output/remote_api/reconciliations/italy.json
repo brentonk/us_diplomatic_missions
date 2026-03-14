@@ -1,0 +1,199 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KxoPvqyYUZZdUUGJaffFSM",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3267,
+      "output_tokens": 1495
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1861-04-11",
+      "new_status": "Legation",
+      "event_description": "The United States established diplomatic relations with the Kingdom of Italy and a legation was recognized when Chevalier Joseph Bertinatti presented credentials as Minister Plenipotentiary of the Kingdom of Italy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "The United States established diplomatic relations with the Kingdom of Italy in 1861 when it accepted the credentials of Chevalier Joseph Bertinatti as Minister Plenipotentiary of the Kingdom of Italy on April 11, 1861."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1893-10-23",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation to Italy was elevated to Embassy status when James J. Van Allen was appointed ambassador, marking the formal elevation date, though Wayne MacVeagh became the first ambassador to actually present credentials (March 11, 1894).",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "The legation was elevated to an embassy when James J. Van Allen was appointed ambassador on October 23, 1893, though he declined the appointment. Wayne MacVeagh became the first official U.S. Ambassador to Italy when he presented his credentials in Rome on March 11, 1894."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-12-11",
+      "new_status": "None",
+      "event_description": "Diplomatic relations were severed and the American Embassy in Rome was closed after Italy declared war on the United States.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 51,
+          "line_end": 51,
+          "quote": "Diplomatic relations were severed and the American Embassy in Rome was closed on December 11, 1941, after Italy declared war on the United States."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1944-10-16",
+      "new_status": "Interests",
+      "event_description": "Diplomatic relations were reestablished on October 16, 1944, though the Embassy had not yet physically re-opened; this represents a restoration of formal contact short of a fully operational embassy.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 55,
+          "line_end": 55,
+          "quote": "Diplomatic relations were reestablished on October 16, 1944, when the Acting Secretary of State announced the decision in a statement released to the press."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1945-01-08",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy in Rome was formally re-opened when Ambassador Alexander C. Kirk presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 59,
+          "line_end": 59,
+          "quote": "Ambassador Alexander C. Kirk re-opened the U.S. Embassy in Rome when he presented his credentials on January 8, 1945."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1840-09-15",
+      "new_status": "Legation",
+      "event_description": "Hezekiah Gold Rogers presented credentials as Charg\u00e9 d'Affaires to Sardinia (capital Turin), establishing the first U.S. diplomatic mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Hezekiah Gold Rogers, Charg\u00e9 d'Affaires. Appointed: 1840-06-05. Credentials presented: 1840-09-15. Presented recall on 1841-11-22. Note: Commissioned to Sardinia (capital at Turin)."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1894-03-11",
+      "new_status": "Embassy",
+      "event_description": "Isaac Wayne Macveagh presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a Legation to an Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Isaac Wayne Macveagh, Ambassador Extraordinary and Plenipotentiary. Appointed: 1893-12-20. Credentials presented: 1894-03-11. Left post on 1897-03-04."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-12",
+      "new_status": "None",
+      "event_description": "Italy declared war on the United States, ending U.S. diplomatic representation in Italy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 55,
+          "line_end": 55,
+          "quote": "George Wadsworth, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1941-10. Italy declared war on the United States 1941-12-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Italy",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Exact date match (1840-09-15). Event 5 (POCOM) records Hezekiah Gold Rogers presenting credentials as Charg\u00e9 d'Affaires to Sardinia. This is the initial U.S. diplomatic mission that eventually became the mission to Italy."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          6
+        ],
+        "notes": "CSV date 1893-10-23 matches RDCR Event 1, which states the legation was elevated to embassy when Van Allen was appointed on that date. POCOM Event 6 gives 1894-03-11 (credential presentation of first actual ambassador MacVeagh), which is a later personnel event. Per source priority, RDCR's institutional elevation date wins, consistent with CSV."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          7
+        ],
+        "notes": "CSV date 1941-12-11 matches RDCR Event 2 exactly. POCOM Event 7 gives month-level precision (1941-12) and incorrectly states the war declaration date as 1941-12-06 (historically it was 12-11), but clearly refers to the same event."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact date match (1945-01-08). Ambassador Kirk re-opened the Embassy in Rome by presenting credentials."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1861-04-11",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations with the Kingdom of Italy when Chevalier Joseph Bertinatti presented credentials as Minister Plenipotentiary of the Kingdom of Italy. This is distinct from the earlier 1840 mission to Sardinia (CSV Row 1) and represents the formal recognition of unified Italy.",
+        "notes": "High confidence RDCR event. The CSV currently jumps from the 1840 Sardinia legation directly to the 1893 embassy elevation, omitting this significant transition to the Kingdom of Italy. While the status remains 'Legation', the counterpart state changed from Sardinia to Italy, which may warrant a separate row depending on coding conventions."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1944-10-16",
+        "new_status": "Interests",
+        "event_description": "Diplomatic relations were reestablished on October 16, 1944, when the Acting Secretary of State announced the decision, prior to the formal reopening of the Embassy on January 8, 1945.",
+        "notes": "Medium confidence RDCR event. The CSV jumps from 'None' (1941-12-11) directly to 'Embassy' (1945-01-08), but RDCR indicates relations were reestablished nearly three months earlier. The appropriate status code is uncertain \u2014 'Interests' is used here as a placeholder for restored relations without a fully operational embassy, but the source text does not specify an intermediate institutional form. Could also be coded as a separate status or simply noted."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

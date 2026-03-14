@@ -1,0 +1,119 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01G1cmvttgHPfZvRBhrcZfKy",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2698,
+      "output_tokens": 903
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1829-10-10",
+      "new_status": "Consulate",
+      "event_description": "A U.S. Consulate was established in Vienna, the capital of the Austrian Empire.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "A U.S. Consulate was established in Vienna on October 10, 1829."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1838-11-07",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established and the American Legation in Vienna opened when the first U.S. Minister to Austria, Henry A. Muhlenberg, presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 32,
+          "line_end": 32,
+          "quote": "Henry A. Muhlenberg was appointed as the first U.S. Minister to Austria on February 8, 1838. He presented his credentials on November 7, 1838."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1902-05-27",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Vienna was elevated to Embassy status when U.S. Minister Robert S. McCormick was appointed Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 40,
+          "line_end": 40,
+          "quote": "U.S. Minister Robert S. McCormick, who had been appointed Minister on March 7, 1901, was appointed Ambassador on May 27, 1902. He presented his new credentials on June 26, 1902."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1917-04-08",
+      "new_status": "None",
+      "event_description": "Diplomatic relations terminated when the Austro-Hungarian Empire severed diplomatic relations with the United States.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 44,
+          "line_end": 44,
+          "quote": "On April 8, 1917, Austro-Hungarian Empire severed diplomatic relations with the United States."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Austrian Empire",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1829-10-10) and status (Consulate)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1838-11-07) and status (Legation). Date corresponds to credential presentation of first U.S. Minister."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact match on date (1917-04-08) and status (None). Austro-Hungarian Empire severed diplomatic relations."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "field": "date",
+        "csv_value": "1902-06-26",
+        "extracted_value": "1902-05-27",
+        "assessment": "csv_likely_correct",
+        "reasoning": "The RDCR text states that Minister McCormick 'was appointed Ambassador on May 27, 1902' and 'presented his new credentials on June 26, 1902.' The extracted event used May 27, which is the appointment date \u2014 a personnel event, not an institutional transition date. Per source priority rules, appointment dates are NOT institutional dates. The CSV uses June 26, 1902, the credential presentation date, which better represents when the Legation was actually elevated to Embassy status in practice. Since RDCR does not provide a separate explicit institutional elevation date, the credential presentation date (June 26) is the more appropriate choice for the Embassy transition, making the CSV likely correct."
+      }
+    ]
+  }
+}

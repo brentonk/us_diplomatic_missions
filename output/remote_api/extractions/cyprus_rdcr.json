@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CNa8Fxq6T6Y6RZtu4Jr14L",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2213,
+      "output_tokens": 287
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cyprus",
+    "source_file": "rdcr/articles/cyprus.xml",
+    "events": [
+      {
+        "date": "1960-08-16",
+        "new_status": "Embassy",
+        "event_description": "The American Consulate General in Nicosia was elevated to an Embassy upon U.S. recognition of Cyprus, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "Diplomatic relations and the American Embassy in Nicosia were established on August 16, 1960, when the American Consulate General was elevated to an embassy, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JvwFcyTz5LPUk29KSTfTeU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4757,
+      "output_tokens": 953
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Taiwan",
+    "source_file": "rdcr/articles/china.xml",
+    "events": [
+      {
+        "date": "1914",
+        "new_status": "Consulate",
+        "event_description": "U.S. consular post established in Taipei (then called Taihoku), the capital of Japanese-colonial Taiwan.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The United States also established consular posts in Taiwan during the time that it was a colony of the Empire of Japan, in Danshui (then called Tansui or Tamshui) in 1898 and in Taipei (then called Taihoku) in 1914."
+          }
+        ]
+      },
+      {
+        "date": "1949-12-19",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy moved to Taipei, Formosa (Taiwan), following the Republic of China government's relocation there during the Chinese Civil War. The U.S. continued to recognize the ROC as the legitimate government of China.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 79,
+            "line_end": 79,
+            "quote": "On December 19, 1949, the U.S. Embassy was moved to Taipei, Formosa (Taiwan), after the government of the Republic of China had moved there in response to advances by Chinese Communist forces on the mainland during the Chinese Civil War."
+          }
+        ]
+      },
+      {
+        "date": "1979-01-01",
+        "new_status": "None",
+        "event_description": "The United States withdrew recognition of the Republic of China and terminated diplomatic relations with it, effective January 1, 1979, upon recognizing the PRC as the sole legitimate government of China.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 88,
+            "line_end": 88,
+            "quote": "On January 1, 1979, the United States recognized the PRC and established diplomatic relations with it as the sole legitimate government of China. On the same day, the United States withdrew its recognition of, and terminated diplomatic relations with, the Republic of China as the government of China."
+          }
+        ]
+      }
+    ]
+  }
+}

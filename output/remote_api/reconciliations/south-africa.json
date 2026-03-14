@@ -1,0 +1,101 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MKNMe2oxogXyTp3ZJnCTXJ",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2845,
+      "output_tokens": 744
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1929-12-19",
+      "new_status": "Legation",
+      "event_description": "The United States established a legation in Cape Town by appointing Ralph J. Totten, who was serving as Consul General, as Minister Resident.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "On December 19, 1929, the United States established a legation in Cape Town by appointing Ralph J. Totten, who was serving as Consul General, as Minister Resident; Totten presented his credentials as Minister Resident to the Government of the Union of South Africa on February 18, 1930."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1949-03-23",
+      "new_status": "Embassy",
+      "event_description": "The U.S. legation in South Africa was elevated to embassy status, effective upon the presentation of ambassadorial credentials by North Winship on March 23, 1949.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "On December 21, 1948, the Department of State announced the elevation of the South African and U.S. legations to embassy stratus, effective as of the date of the presentation of ambassadorial credentials. On March 23, 1949, North Winship presented his credentials as Ambassador Extraordinary and Plenipotentiary of the United States to the Government of the Union of South Africa."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1930-02-18",
+      "new_status": "Legation",
+      "event_description": "Ralph James Totten presented credentials as Minister Resident/Consul General to the Union of South Africa, establishing the first U.S. diplomatic mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Ralph James Totten, Minister Resident/Consul General. Appointed: 1929-12-19. Credentials presented: 1930-02-18. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1930-09-08. Note: Commissioned to the Union of South Africa."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1930-09-08",
+      "new_status": "Legation",
+      "event_description": "Totten promoted to Envoy Extraordinary and Minister Plenipotentiary, elevating the U.S. mission in South Africa to a full Legation headed by an Envoy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quote": "Promoted to Envoy Extraordinary and Minister Plenipotentiary 1930-09-08. Note: Commissioned to the Union of South Africa."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "South Africa",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "RDCR (Event 0) gives 1929-12-19 as the date the legation was established. POCOM (Event 2) gives 1930-02-18, the credential presentation date. Per source priority, RDCR's institutional date is correct and matches the CSV. Event 2 is the same underlying event (credential presentation for the same appointment)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "RDCR (Event 1) states the elevation was announced 1948-12-21 but effective upon credential presentation on 1949-03-23, matching the CSV date. Citation error flag on Event 1, but the quoted text is internally consistent and the date logic is sound."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

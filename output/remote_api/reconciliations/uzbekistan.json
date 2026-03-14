@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01283MQ5jX1xNUUsJkZarYnY",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2348,
+      "output_tokens": 292
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-03-16",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Tashkent was established with Michael Mozur as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "The American Embassy in Tashkent was established March 16, 1992, with Michael Mozur as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Uzbekistan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the establishment of the American Embassy in Tashkent on 1992-03-16."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JgE3R51gvYXAD7nKvvNecq",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4671,
+      "output_tokens": 1144
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Panama",
+    "source_file": "pocom/missions-countries/panama.xml",
+    "events": [
+      {
+        "date": "1903-12",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Panama; Buchanan presented credentials as Envoy Extraordinary and Minister Plenipotentiary on special mission in December 1903 and conducted business in the capacity of Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Buchanan had presented credentials as Envoy Extraordinary and Minister Plenipotentiary on special mission in December 1903; he received new credentials as Envoy Extraordinary and Minister Plenipotentiary only a few days before he was to leave Panama and apparently did not present them. He ceased to act \"on special mission,\" however, and conducted business in the capacity of Envoy Extraordinary and Minister Plenipotentiary until his departure."
+          }
+        ]
+      },
+      {
+        "date": "1939-07-14",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy; William Dawson presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Panama.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "William Dawson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1939-03-23. Credentials presented: 1939-07-14. Left Panama 1941-04-21."
+          }
+        ]
+      },
+      {
+        "date": "1964-01-10",
+        "new_status": "None",
+        "event_description": "Panama severed diplomatic relations with the United States, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "Wallace Wyman Stuart, Charg\u00e9 d'Affaires ad interim. Panama severed diplomatic relations with the United States on 1964-01-10."
+          }
+        ]
+      },
+      {
+        "date": "1964-04-03",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations resumed; U.S. Charg\u00e9 d'Affaires ad interim Henry Landes Taylor presented credentials, restoring the Embassy-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Henry Landes Taylor, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1964-04-03. Note: 1964"
+          }
+        ]
+      }
+    ]
+  }
+}

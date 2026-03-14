@@ -1,0 +1,148 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011SYGS3LYFxr2atM1BwTwHM",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3681,
+      "output_tokens": 2127
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Panama",
+    "source_file": "rdcr/articles/panama.xml",
+    "events": [
+      {
+        "date": "1903-12-25",
+        "new_status": "Legation",
+        "event_description": "U.S. diplomatic mission (Legation) established in Panama when William Buchanan presented credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The U.S. diplomatic mission in Panama was established on December 25, 1903, when William Buchanan presented his credentials as Envoy Extraordinary and Minister Plenipotentiary on special mission to Panamanian authorities."
+          }
+        ]
+      },
+      {
+        "date": "1931-01-05",
+        "new_status": "None",
+        "event_description": "Diplomatic relations interrupted following a coup d'\u00e9tat; Secretary of State Stimson instructed the U.S. Minister not to reply to the new government pending satisfaction of recognition conditions.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Secretary of State Henry Stimson on January 5 instructed Minister at Panama Roy Davis not to reply at that time to a representative of the new government who had written seeking continuity in relations with the United States."
+          }
+        ]
+      },
+      {
+        "date": "1931-01-16",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations resumed; Minister Davis attended the inauguration of President Ricardo Alfaro and carried on normal diplomatic relations thereafter.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Accordingly, Stimson instructed Davis to attend the inauguration of President Ricardo Alfaro \"and carry on normal diplomatic relations thereafter with his government.\" Davis attended the inauguration on January 16, 1931."
+          }
+        ]
+      },
+      {
+        "date": "1939-07-14",
+        "new_status": "Embassy",
+        "event_description": "The Legation in Panama was raised to Embassy status when Ambassador William Dawson presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The Legation in Panama was raised to Embassy status on July 14, 1939, when AmbassadorWilliam Dawson presented his credentials to Panamanian authorities."
+          }
+        ]
+      },
+      {
+        "date": "1949-11-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations interrupted after a coup forced the resignation of President Chanis; U.S. Assistant Secretary of State announced that diplomatic relations with the Arias regime did not exist.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "On November 25, U.S. Assistant Secretary of State Edward Miller announced that, in view of the circumstances surrounding the change of government, \"diplomatic relations between the United States and the Arias regime in Panama do not exist.\""
+          }
+        ]
+      },
+      {
+        "date": "1949-12-14",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations resumed; Secretary of State Acheson announced the United States was renewing diplomatic relations with Panama and the U.S. Ambassador delivered formal notification.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "Secretary of State Dean Acheson announced on December 14, 1949, that \"the United States today is renewing diplomatic relations with Panama,\" and U.S. Ambassador Monnett Davis delivered a formal notification to the Government of Panama."
+          }
+        ]
+      },
+      {
+        "date": "1964-01-10",
+        "new_status": "None",
+        "event_description": "Panama severed diplomatic relations with the United States after Panamanian President Chiari broke off relations following clashes between Panamanians and U.S. troops.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Panamanian President Roberto Chiari broke off diplomatic relations with the United States on January 10, 1964."
+          }
+        ]
+      },
+      {
+        "date": "1964-04-03",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations reestablished when the two states signed a Joint Declaration agreeing to reestablish relations and designate Special Ambassadors.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 53,
+            "quote": "On April 3, 1964, the two states signed a Joint Declaration in which they agreed to reestablish diplomatic relations and to immediately designate \"Special Ambassadors with sufficient powers to seek the prompt elimination of the causes of conflict between the two countries, without limitations or preconditions of any kind.\""
+          }
+        ]
+      },
+      {
+        "date": "1968-10-15",
+        "new_status": "None",
+        "event_description": "Diplomatic relations suspended following a National Guard coup that deposed President Arias; the Department of State announced the suspension.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "On October 15, the Department of State spokesman announced that diplomatic relations were suspended as a result of events in Panama."
+          }
+        ]
+      },
+      {
+        "date": "1968-11-13",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations resumed; the Embassy at Panama City informed the Panamanian Ministry of Foreign Affairs that the United States was resuming diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 61,
+            "line_end": 61,
+            "quote": "On November 13, 1968, the Embassy at Panama City informed the Panamanian Ministry of Foreign Affairs that the United States was resuming diplomatic relations."
+          }
+        ]
+      }
+    ]
+  }
+}

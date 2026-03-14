@@ -1,0 +1,71 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016janm9No7YfSBr5PjYTtSD",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2473,
+      "output_tokens": 483
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1991-12-25",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established with Ukraine on December 25, 1991, following U.S. recognition of Ukrainian independence after the dissolution of the Soviet Union. No physical mission yet established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-01-23",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Kiev (Kyiv) was established on January 23, 1992, with Jon Gundersen as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Kiev was established on January 23, 1992, with Jon Gundersen as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Ukraine",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1992-01-23) and status (Embassy). RDCR confirms the American Embassy in Kiev was established on this date."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Ukraine on December 25, 1991, following U.S. recognition of Ukrainian independence after the dissolution of the Soviet Union. No physical mission yet established.",
+        "notes": "High-confidence RDCR event. This represents the initial establishment of diplomatic relations nearly a month before the Embassy opened on 1992-01-23. The status 'None' reflects that relations existed but no mission was yet in place. Candidate for addition as the first row for Ukraine."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

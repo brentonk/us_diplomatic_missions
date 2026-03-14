@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PTRjpE7XPeeUR5ZJSEvQBH",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3207,
+      "output_tokens": 928
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mauritania",
+    "source_file": "pocom/missions-countries/mauritania.xml",
+    "events": [
+      {
+        "date": "1960-11-28",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Henry Serrano Villard presented credentials as the first U.S. Ambassador to Mauritania, operating nonresident from Dakar before a resident embassy was established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Henry Serrano Villard, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-11-28. Credentials presented: 1960-11-28. Left Dakar 1961-04-30."
+          }
+        ]
+      },
+      {
+        "date": "1962-07-14",
+        "new_status": "Embassy",
+        "event_description": "Embassy Nouakchott was formally established, elevating the U.S. presence from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Kaiser's tenure as non-resident Ambassador, Embassy Nouakchott was established on July 14, 1962, with William L. Eagleton, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-08",
+        "new_status": "None",
+        "event_description": "Embassy Nouakchott was closed after Mauritania severed diplomatic relations with the United States on June 7, 1967.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 9,
+            "quote": "Mauritania severed diplomatic relations with the United States 1967-06-07. Lewis closed the Embassy on June 8, 1967, and left post on June 9, 1967."
+          }
+        ]
+      },
+      {
+        "date": "1970-03-04",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations resumed with Robert Andrew Stein presenting credentials as Charg\u00e9 d'Affaires ad interim, reopening the U.S. Embassy in Nouakchott.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Robert Andrew Stein, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1970-03-04."
+          }
+        ]
+      }
+    ]
+  }
+}

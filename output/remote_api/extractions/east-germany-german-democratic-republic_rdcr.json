@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MnFAGsRjgtKYDLdUMe3VzG",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2955,
+      "output_tokens": 608
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "East Germany (German Democratic Republic)",
+    "source_file": "rdcr/articles/german-democratic-republic.xml",
+    "events": [
+      {
+        "date": "1974-12-09",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Berlin was established, with Brandon H. Grove, Jr., as Charg\u00e9 d'Affaires ad interim, following U.S. recognition of the GDR on September 4, 1974.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "The American Embassy in Berlin was established on December 9, 1974, with Brandon H. Grove, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1990-10-02",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in Berlin was closed as the GDR was absorbed by the Federal Republic of Germany upon German reunification.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The United States maintained its embassy in Bonn; however, it closed its embassy in Berlin on October 2, 1990."
+          }
+        ]
+      }
+    ]
+  }
+}

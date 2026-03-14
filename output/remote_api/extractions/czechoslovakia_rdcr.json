@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013rq6fXoJqgWMqpWzfPRuxe",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3693,
+      "output_tokens": 1289
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Czechoslovakia",
+    "source_file": "rdcr/articles/czechoslovakia.xml",
+    "events": [
+      {
+        "date": "1919-06-11",
+        "new_status": "Legation",
+        "event_description": "American Legation established in Prague when Richard Crane presented his credentials as U.S. Minister to Czechoslovakia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "Richard Crane was appointed U.S. Minister to Czechoslovakia on April 23, 1919. He presented his credentials on June 11, and served until December 5, 1921."
+          }
+        ]
+      },
+      {
+        "date": "1939-03-21",
+        "new_status": "None",
+        "event_description": "American Legation in Prague closed by Minister Carr following German occupation of Prague.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "Wilbur J. Carr, former Assistant Secretary of State and Chief of the Consular Bureau, was Minister to Czechoslovakia when German forces occupied Prague on March 15, 1939, Carr closed the Legation on March 21, and departed on April 6."
+          }
+        ]
+      },
+      {
+        "date": "1941-10-28",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. Minister Biddle presented credentials to the Czechoslovakian Government-in-Exile in London, re-establishing nonresident legation-level relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "On September 4, 1941, Anthony J. Drexel Biddle Jr. was appointed Minister to the Czechoslovakian Government in London. He presented his credentials on October 28."
+          }
+        ]
+      },
+      {
+        "date": "1943-06-04",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Biddle promoted to Ambassador to the Czechoslovakian Government-in-Exile in London, elevating the nonresident mission to ambassador level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Biddle was promoted to Ambassador on June 4, 1943, and presented his new credentials on July 12."
+          }
+        ]
+      },
+      {
+        "date": "1945-05-29",
+        "new_status": "Embassy",
+        "event_description": "Embassy Prague established with Alfred W. Klieforth as Charg\u00e9 d'Affaires ad interim, elevating the mission from legation to embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "Embassy Prague was established on May 29, 1945 with Alfred W. Klieforth as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1992-12-31",
+        "new_status": "None",
+        "event_description": "Czechoslovakia ceased to exist as a state, ending U.S. diplomatic representation to Czechoslovakia. Succeeded by the Czech Republic and Slovakia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "On December 31, 1992, the Czech and Slovak Federal Republic ceased to exist and was succeeded by two new states: the Czech Republic and Slovakia."
+          }
+        ]
+      }
+    ]
+  }
+}

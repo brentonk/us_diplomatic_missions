@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Xu98MomVD6eA9SFx8MR1Ad",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2310,
+      "output_tokens": 254
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nigeria",
+    "source_file": "rdcr/articles/nigeria.xml",
+    "events": [
+      {
+        "date": "1960-10-01",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Lagos was established on October 1, 1960, with Joseph Palmer II in charge pending presentation of credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The American Embassy in Lagos, Nigeria was established on October 1, 1960, with Joseph Palmer II in charge pending presentation of his letter of credence on October 4, 1960."
+          }
+        ]
+      }
+    ]
+  }
+}

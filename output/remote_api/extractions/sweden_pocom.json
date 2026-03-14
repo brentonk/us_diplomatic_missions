@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01H65M3FpHF1uc3QmvWdiwMh",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5869,
+      "output_tokens": 822
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sweden",
+    "source_file": "pocom/missions-countries/sweden.xml",
+    "events": [
+      {
+        "date": "1818-04-29",
+        "new_status": "Legation",
+        "event_description": "Jonathan Russell presented credentials as Minister Plenipotentiary at Stockholm, establishing the U.S. Legation to Sweden (and Norway).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Jonathan Russell, Minister Plenipotentiary. Appointed: 1814-01-18. Credentials presented: 1818-04-29. Left post on 1818-10-22. Note: An earlier nomination of May 29, 1813, had been rejected by the Senate. Served at the court of Sweden and Norway; resident at Stockholm."
+          }
+        ]
+      },
+      {
+        "date": "1947-12-05",
+        "new_status": "Embassy",
+        "event_description": "Harrison Freeman Matthews presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Stockholm from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 63,
+            "line_end": 63,
+            "quote": "Harrison Freeman Matthews, Ambassador Extraordinary and Plenipotentiary. Appointed: 1947-09-20. Credentials presented: 1947-12-05. Left post on 1950-05-24. Note: Commissioned during a recess of the Senate; recommissioned on December 9, 1947, after confirmation."
+          }
+        ]
+      }
+    ]
+  }
+}

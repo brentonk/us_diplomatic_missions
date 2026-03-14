@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Eq8ehCaAVRBPgtgRbn8S29",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2224,
+      "output_tokens": 430
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Central African Republic",
+    "source_file": "rdcr/articles/central-african-republic.xml",
+    "events": [
+      {
+        "date": "1960-08-13",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations established when the American Consul at Brazzaville, Alan W. Lukens, presented his letter of credence as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 13, 1960, when the American Consul at Brazzaville, Alan W. Lukens, presented his letter of credence as Charge d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-10",
+        "new_status": "Embassy",
+        "event_description": "Embassy Bangui was established with Alan W. Lukens as resident Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Embassy Bangui was established on February 10, 1961, with Alan W. Lukens as resident Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

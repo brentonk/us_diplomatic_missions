@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Tb1rwcxvyXsZSznonQsAKx",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3577,
+      "output_tokens": 972
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bavaria",
+    "source_file": "rdcr/articles/bavaria.xml",
+    "events": [
+      {
+        "date": "1833",
+        "new_status": "Consulate",
+        "event_description": "The first U.S. Consulate in the Kingdom of Bavaria was established in Munich, marking the first act of mutual recognition between the United States and Bavaria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "A letter from U.S. Consul Robert de Ruedorffer dated July 4, 1833, informs U.S. Secretary of State Edward Livingston that Ruedorffer will discharge the duties of Consul for the United States in Munich."
+          }
+        ]
+      },
+      {
+        "date": "1868-05-26",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. Minister Plenipotentiary George Bancroft was specially accredited to Bavaria (while resident in Berlin, also accredited to Prussia and the North German Confederation), signing a naturalization treaty with Bavaria on this date.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "On May 26, 1868, specially accredited U.S. Minister Plenipotentiary George Bancroft signed a naturalization treaty with Bavaria. At the time, Bancroft was also accredited to Prussia and the North German Confederation and, after 1871, to the German Empire."
+          }
+        ]
+      },
+      {
+        "date": "1917-02-03",
+        "new_status": "None",
+        "event_description": "All diplomatic relations between the U.S. and the German Empire (including Bavaria as a constituent state) were severed when President Wilson instructed the Secretary of State to notify the German Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "On February 3, 1917, U.S. President Woodrow Wilson instructed the Secretary of State to notify the German Ambassador to the United States that all diplomatic relations between the U.S. and the German Empire were severed. As the foreign affairs of Imperial Germany were run out of Berlin and decided upon by the Kaiser, this constituted the severance of relations with Bavaria, as part of the German Empire."
+          }
+        ]
+      }
+    ]
+  }
+}

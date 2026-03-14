@@ -1,0 +1,71 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017MaKfNSUMCdhqsh5ZKc4vd",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2445,
+      "output_tokens": 482
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-02-19",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established between the United States and Turkmenistan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 17,
+          "quote": "Diplomatic relations were established on February 19, 1992, when President George H.W. Bush announced the decision in a press statement."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-03-17",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Ashkabad (now Ashgabat) was established, with Jeffrey White as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 21,
+          "quote": "The American Embassy in Ashkabad (now Ashgabat) was established March 17, 1992, with Jeffrey White as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Turkmenistan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1992-03-17) and status (Embassy). RDCR confirms the American Embassy in Ashgabat was established on this date."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1992-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the United States and Turkmenistan, announced by President George H.W. Bush in a press statement.",
+        "notes": "This event represents the formal establishment of diplomatic relations, which preceded the embassy opening by about a month. RDCR explicitly states the date as February 19, 1992. This should be added as a 'None' status row (relations established but no mission yet) before the Embassy row."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

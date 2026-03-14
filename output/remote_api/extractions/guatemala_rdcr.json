@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UyEXHjBvCTGf8fscZ7R6gV",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2790,
+      "output_tokens": 1030
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guatemala",
+    "source_file": "rdcr/articles/guatemala.xml",
+    "events": [
+      {
+        "date": "1824-08-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established with the Federation of Central American States when President Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary. No resident mission yet established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Diplomatic relations were established on August 4, 1824, when President James Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary on August 4, 1824."
+          }
+        ]
+      },
+      {
+        "date": "1826-05-03",
+        "new_status": "Legation",
+        "event_description": "American Legation established in Guatemala when Charg\u00e9 d'Affaires John Williams presented his credentials to the Federation of Central American States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Charg\u00e9 d'Affaires John Williams presented his credentials to the Federation of Central American States on May 3, 1826."
+          }
+        ]
+      },
+      {
+        "date": "1849-01-21",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations re-established with independent Guatemala when Charg\u00e9 d'Affaires Elijah Hise presented his credentials to the Republic of Guatemala.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "Charg\u00e9 d'Affaires Elijah Hise presented his credentials to the Republic of Guatemala on or shortly before January 21, 1849."
+          }
+        ]
+      },
+      {
+        "date": "1882-08-10",
+        "new_status": "Embassy",
+        "event_description": "American Legation in Guatemala raised to Embassy status when Henry C. Hall presented his credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "The American Legation in Guatemala was raised to Embassy status when Henry C. Hall, Envoy Extraordinary and Minister Plenipotentiary, presented his credentials on August 10, 1882."
+          }
+        ]
+      }
+    ]
+  }
+}

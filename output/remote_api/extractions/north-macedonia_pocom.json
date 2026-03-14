@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SMqAVbZdS33vMEuKdvcurS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2504,
+      "output_tokens": 894
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "North Macedonia",
+    "source_file": "pocom/missions-countries/macedonia.xml",
+    "events": [
+      {
+        "date": "1993-12-03",
+        "new_status": "Liaison",
+        "event_description": "U.S. diplomatic presence established in Macedonia with an Acting Principal Officer, indicating an initial liaison-level mission.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert Norman, Acting Principal Officer. Credentials presented: 1993-12-03. Left post: 1996-06."
+          }
+        ]
+      },
+      {
+        "date": "1994-04",
+        "new_status": "Embassy",
+        "event_description": "Mission elevated to embassy level with the arrival of a Charg\u00e9 d'Affaires, indicating a full diplomatic mission was established.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Victor D Comras, Charg\u00e9 d'Affaires. Credentials presented: 1994-04. Left post: 1996-06-14."
+          }
+        ]
+      },
+      {
+        "date": "1996-07-29",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador to Macedonia (Christopher Robert Hill) presented credentials, confirming full embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Christopher Robert Hill, Ambassador Extraordinary and Plenipotentiary. Appointed: 1996-07-02. Credentials presented: 1996-07-29. Left post on 1999-08-02. Note: Commissioned to The Former Yugoslav Republic of Macedonia."
+          }
+        ]
+      }
+    ]
+  }
+}

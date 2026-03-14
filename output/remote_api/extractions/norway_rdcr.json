@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012EcQ3UxR1JeDjASXYw95VT",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3201,
+      "output_tokens": 1326
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Norway",
+    "source_file": "rdcr/articles/norway.xml",
+    "events": [
+      {
+        "date": "1905-11-14",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Charles H. Graves, Minister to Sweden and Norway, acknowledged instructions to exercise his diplomatic functions toward Norway separately, establishing the first U.S. diplomatic representation to Norway on a nonresident basis.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Charles H. Graves had been appointed Minister to Sweden and Norway on March 8, 1905. On November 14, 1905, he acknowledged instructions to exercise his functions toward Norway separately, which he did until August 6, 1906."
+          }
+        ]
+      },
+      {
+        "date": "1906-08-13",
+        "new_status": "Legation",
+        "event_description": "Hubert H. D. Peirce presented his credentials as Minister to Norway on August 13, 1906, establishing a resident U.S. Legation in Christiania (Oslo).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Hubert H. D. Peirce was appointed Minister to Norway on June 22, 1906, and presented his credentials on August 13."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "The American Legation in Oslo was closed on July 15, 1940, following the Nazi German invasion of Norway and the flight of the Norwegian Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "U.S. Minister Florence Jaffray Harriman left the country on April 22, 1940, and Raymond E. Cox was serving as Charg\u00e9 d'Affaires when the Legation was closed on July 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1940-08-02",
+        "new_status": "Legation",
+        "event_description": "Rudolf E. Schoenfeld opened the American Legation Near the Government of Norway in London on August 2, 1940, re-establishing U.S. diplomatic representation to the Norwegian government-in-exile.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 40,
+            "line_end": 40,
+            "quote": "Rudolf E. Schoenfeld opened the Legation Near the Government of Norway in London and made his first call as Charg\u00e9 d'Affaires ad interim on August 2, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-12",
+        "new_status": "Embassy",
+        "event_description": "The American Legation near the Government of Norway in London was elevated to Embassy status when Anthony J. Drexel Biddle Jr. was promoted to Ambassador on May 12, 1942.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 44,
+            "line_end": 44,
+            "quote": "He was promoted to Ambassador on May 12, 1942, and presented his new credentials the next day."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HcRTcrKR4VgvunEBBZGBjC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2139,
+      "output_tokens": 750
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Monaco",
+    "source_file": "pocom/missions-countries/monaco.xml",
+    "events": [
+      {
+        "date": "2006-12-13",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Craig Roberts Stapleton presented credentials as Envoy Extraordinary and Minister Plenipotentiary (nonresident, based in Paris), establishing nonresident envoy-level relations with Monaco.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Craig Roberts Stapleton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 2006-11-22. Credentials presented: 2006-12-13. Left Paris 2009-01-29."
+          }
+        ]
+      },
+      {
+        "date": "2014-11-05",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Jane Dorothy Hartley presented credentials as Ambassador Extraordinary and Plenipotentiary (nonresident, based in Paris), elevating U.S. representation in Monaco from Envoy Nonresident to Ambassador Nonresident.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Jane Dorothy Hartley, Ambassador Extraordinary and Plenipotentiary. Appointed: 2014-09-26. Credentials presented: 2014-11-05. Left Paris on 2017-01-19."
+          }
+        ]
+      }
+    ]
+  }
+}

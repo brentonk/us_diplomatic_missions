@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01C2a2jFinxUvpRq8dY7vG8M",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2097,
+      "output_tokens": 233
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Israel",
+    "source_file": "rdcr/articles/israel.xml",
+    "events": [
+      {
+        "date": "1949-03-28",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established when U.S. Ambassador James Grover McDonald presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic Relations were established when U.S. Ambassador James Grover McDonald presented his credentials on March 28, 1949."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013DitJc3RpD5gPVBic5XPws",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2895,
+      "output_tokens": 1278
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Costa Rica",
+    "source_file": "rdcr/articles/costa-rica.xml",
+    "events": [
+      {
+        "date": "1858-09-18",
+        "new_status": "Envoy Nonresident",
+        "event_description": "First U.S. Minister to present credentials in Costa Rica, Mirabeau B. Lamar, did so on September 18, 1858. He was appointed to Costa Rica and Nicaragua and was resident in Managua, making him a nonresident envoy to Costa Rica.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The first U.S. Minister to present his credentials in Costa Rica was Mirabeau B. Lamar, who was appointed to Costa Rica and Nicaragua, and was resident in Managua. Lamar was appointed June 20, 1858, and presented his credentials in Costa Rica on September 18."
+          }
+        ]
+      },
+      {
+        "date": "1898-01-15",
+        "new_status": "Legation",
+        "event_description": "William L. Merry became the first U.S. Minister resident in San Jos\u00e9, presenting his credentials on January 15, 1898, establishing a resident U.S. Legation in Costa Rica.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "William L. Merry was the first U.S. Minister to be resident in San Jose, and presented his credentials there on January 15, 1898."
+          }
+        ]
+      },
+      {
+        "date": "1918-12-05",
+        "new_status": "None",
+        "event_description": "The U.S. Legation in San Jos\u00e9 was closed on December 5, 1918, following the non-recognition of the Tinoco government that came to power via a military coup in January 1917.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "U.S. Minister Edward J. Hale left the country on April 19, and the Legation was closed December 5, 1918."
+          }
+        ]
+      },
+      {
+        "date": "1920-10-15",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation in San Jos\u00e9 was reopened on October 15, 1920, after the overthrow of Tinoco and prior to the election of Julio Acosta as President.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "After the overthrow of Tinoco and prior to the election of Julio Acosta as President, the Legation was reopened October 15, 1920."
+          }
+        ]
+      },
+      {
+        "date": "1943-05-20",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in San Jos\u00e9 was elevated to Embassy status. Fay A. Des Portes, the first U.S. Ambassador to Costa Rica, served from May 20, 1943.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "Fay A. Des Portes was appointed as the first U.S. Ambassador to Costa Rica on March 27, 1943. He served from May 20, 1943 to September 11, 1944."
+          }
+        ]
+      }
+    ]
+  }
+}

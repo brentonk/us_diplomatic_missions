@@ -1,0 +1,181 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019v3pTroRFAGur3uT3GkBt5",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3287,
+      "output_tokens": 1399
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1905-11-14",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Charles H. Graves, Minister to Sweden and Norway, acknowledged instructions to exercise his diplomatic functions toward Norway separately, establishing the first U.S. diplomatic representation to Norway on a nonresident basis.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Charles H. Graves had been appointed Minister to Sweden and Norway on March 8, 1905. On November 14, 1905, he acknowledged instructions to exercise his functions toward Norway separately, which he did until August 6, 1906."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1906-08-13",
+      "new_status": "Legation",
+      "event_description": "Hubert H. D. Peirce presented his credentials as Minister to Norway on August 13, 1906, establishing a resident U.S. Legation in Christiania (Oslo).",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "Hubert H. D. Peirce was appointed Minister to Norway on June 22, 1906, and presented his credentials on August 13."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1940-07-15",
+      "new_status": "None",
+      "event_description": "The American Legation in Oslo was closed on July 15, 1940, following the Nazi German invasion of Norway and the flight of the Norwegian Government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "U.S. Minister Florence Jaffray Harriman left the country on April 22, 1940, and Raymond E. Cox was serving as Charg\u00e9 d'Affaires when the Legation was closed on July 15, 1940."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": true
+    },
+    {
+      "date": "1940-08-02",
+      "new_status": "Legation",
+      "event_description": "Rudolf E. Schoenfeld opened the American Legation Near the Government of Norway in London on August 2, 1940, re-establishing U.S. diplomatic representation to the Norwegian government-in-exile.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 40,
+          "line_end": 40,
+          "quote": "Rudolf E. Schoenfeld opened the Legation Near the Government of Norway in London and made his first call as Charg\u00e9 d'Affaires ad interim on August 2, 1940."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-05-12",
+      "new_status": "Embassy",
+      "event_description": "The American Legation near the Government of Norway in London was elevated to Embassy status when Anthony J. Drexel Biddle Jr. was promoted to Ambassador on May 12, 1942.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 44,
+          "line_end": 44,
+          "quote": "He was promoted to Ambassador on May 12, 1942, and presented his new credentials the next day."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1905-05-31",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation to Norway separately established when Graves presented credentials to Norway independently, having previously been commissioned jointly to Sweden and Norway and resident at Stockholm.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Charles Hinman Graves, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1905-03-08. Credentials presented: 1905-05-31. Functions with respect to Norway ceased 1906-08-06. Note: Commissioned to Sweden and Norway; resident at Stockholm. On November 14, 1905, Graves acknowledged instructions to exercise the functions of his office toward Norway separately."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-05-13",
+      "new_status": "Embassy",
+      "event_description": "Legation elevated to Embassy when Biddle was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 26,
+          "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-03-20. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-05-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Norway",
+    "matched": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Both give 1906-08-13 as the date Peirce presented credentials establishing the resident Legation in Christiania."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Both give 1940-07-15 as the closure date. Event 2 has a citation error flag, but the date and status (None) are consistent. The quoted text content is plausible."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Perfect match. Both give 1940-08-02 as the date the Legation near the Norwegian government-in-exile opened in London."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          4,
+          6
+        ],
+        "notes": "CSV date 1942-05-13 matches POCOM (Event 6). RDCR (Event 4) gives May 12 as the promotion date, but per source priority rules, promotion dates are personnel dates, not institutional dates. POCOM's May 13 credential presentation date is the appropriate institutional date. CSV correctly follows this logic."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted events from either RDCR or POCOM mention an 1809 consulate for Norway. This may reflect information from other sources (e.g., consular records) not included in this extraction pipeline. Norway was part of Denmark until 1814 and then in union with Sweden, so an 1809 consulate may refer to a consular post in Norwegian territory under Danish sovereignty."
+      }
+    ],
+    "discrepancies": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0,
+          5
+        ],
+        "field": "date",
+        "csv_value": "1905-05-31",
+        "extracted_value": "1905-11-14 (RDCR, Event 0); 1905-05-31 (POCOM, Event 5)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "The CSV date of 1905-05-31 matches POCOM Event 5's credential presentation date. However, RDCR (the primary source) explicitly states that Graves 'acknowledged instructions to exercise his functions toward Norway separately' on November 14, 1905. This is the institutional date when separate U.S. diplomatic representation to Norway began \u2014 prior to that, Graves was accredited jointly to Sweden and Norway. The May 31 date is merely when Graves presented his original credentials (to the joint Sweden-and-Norway post), not when the separate Norway representation was established. Per source priority rules, RDCR's explicit institutional date of 1905-11-14 should prevail. The CSV status of 'Envoy Nonresident' is correct (Graves remained resident in Stockholm), but the date should be 1905-11-14."
+      }
+    ]
+  }
+}

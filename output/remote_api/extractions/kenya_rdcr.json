@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NRJegnP8TqNPxtYiLygwRs",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2242,
+      "output_tokens": 263
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kenya",
+    "source_file": "rdcr/articles/kenya.xml",
+    "events": [
+      {
+        "date": "1964-03-02",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy at Nairobi were established when U.S. Ambassador William Attwood presented his credentials to the Kenyan government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Embassy at Nairobi were established on March 2, 1964, when U.S. Ambassador William Attwood presented his credentials to the Kenyan government."
+          }
+        ]
+      }
+    ]
+  }
+}

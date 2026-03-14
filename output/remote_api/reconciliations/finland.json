@@ -1,0 +1,182 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01V7TUygsr6zMZrsTyxm2DHK",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3089,
+      "output_tokens": 1167
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1919-05-27",
+      "new_status": "Envoy Nonresident",
+      "event_description": "The United States established diplomatic relations with Finland when Acting Secretary of State Frank L. Polk recognized Armas Herman Saastamoinen as provisional Envoy Extraordinary and Minister Plenipotentiary. As the U.S. President was still in Europe, this was a nonresident envoy arrangement.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quote": "The United States established diplomatic relations with Finland on May 27, 1919, when Acting Secretary of State Frank L. Polk recognized Armas Herman Saastamoinen as provisional Envoy Extraordinary and Minister Plenipotentiary of the de facto Government of Finland as U.S. President Woodrow Wilson was still in Europe for the Paris Peace Conference."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1920-03-19",
+      "new_status": "Legation",
+      "event_description": "The U.S. Legation in Helsingfors was established when Charg\u00e9 d'Affaires pro tem Alexander R. Magruder presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "U.S. Legation in Helsingfors was established on March 19, 1920, when Charg\u00e9 d'Affaires pro tem Alexander R. Magruder presented his credentials."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1944-06-30",
+      "new_status": "None",
+      "event_description": "The United States severed diplomatic relations with Finland and closed the legation, in response to Finland's formal military partnership with Nazi Germany.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "The United States severed diplomatic relations with Finland on June 30, 1944, and closed the legation on the same day."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1945-01-16",
+      "new_status": "Liaison",
+      "event_description": "The United States established a Special Mission at Helsinki, appointing Maxwell M. Hamilton as Minister. This was explicitly not a resumption of formal diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 29,
+          "line_end": 29,
+          "quote": "the United States established a Special Mission at Helsinki on January 16, 1945. Foreign Service officer Maxwell M. Hamilton was appointed Minister at the Mission. This was not a resumption of formal diplomatic relations."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1945-09-01",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation in Helsinki were reestablished, with Benjamin M. Hulley as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 34,
+          "line_end": 34,
+          "quote": "Diplomatic relations and the American Legation in Helsinki were reestablished on September 1, 1945, with Benjamin M. Hulley as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-11-15",
+      "new_status": "Embassy",
+      "event_description": "The U.S. elevated its legation in Helsinki to Embassy status when Jack K. McFall presented his credentials as Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 38,
+          "line_end": 38,
+          "quote": "The U.S. elevated its legation in Helsinki to Embassy status when Jack K. McFall presented his credentials as Ambassador Extraordinary and Plenipotentiary on November 15, 1952."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1954-09-10",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Helsinki was raised to Embassy status, elevating the highest level of U.S. diplomatic representation in Finland.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "The Legation in Helsinki was raised to Embassy status on September 10, 1954."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Finland",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Both record the establishment of the U.S. Legation in Helsingfors on 1920-03-19."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. Both record the severance of diplomatic relations and closure of the legation on 1944-06-30."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Perfect match. Both record the reestablishment of diplomatic relations and the American Legation on 1945-09-01."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          5,
+          6
+        ],
+        "notes": "CSV date (1952-11-15) matches RDCR Event 5 exactly. POCOM Event 6 gives 1954-09-10 for embassy elevation, but per source priority RDCR wins. The POCOM date likely reflects a later ambassador's credential presentation rather than the institutional status change."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1919-05-27",
+        "new_status": "Envoy Nonresident",
+        "event_description": "The United States established diplomatic relations with Finland when Acting Secretary of State Frank L. Polk recognized the Finnish provisional Envoy Extraordinary and Minister Plenipotentiary. The U.S. President was still in Europe, making this a nonresident envoy arrangement.",
+        "notes": "This is the initial establishment of diplomatic relations, predating the opening of the Legation by nearly a year. High confidence from RDCR. Strong candidate for addition as the first event for Finland."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1945-01-16",
+        "new_status": "Liaison",
+        "event_description": "The United States established a Special Mission at Helsinki, appointing Maxwell M. Hamilton as Minister. This was explicitly not a resumption of formal diplomatic relations.",
+        "notes": "This intermediate status falls between the severance of relations (1944-06-30) and the formal reestablishment of the Legation (1945-09-01). High confidence from RDCR. The source explicitly states this was not a resumption of formal diplomatic relations, so 'Liaison' is an appropriate status category."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FN9jLnni29QYTe7D47YMmS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3510,
+      "output_tokens": 569
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "New Zealand",
+    "source_file": "pocom/missions-countries/new-zealand.xml",
+    "events": [
+      {
+        "date": "1942-04-01",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Wellington, with Hurley in charge pending presentation of his letter of credence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Note: The Legation in Wellington had been established on April 1, 1942, with Hurley in charge pending presentation of his letter of credence."
+          }
+        ]
+      },
+      {
+        "date": "1948-12-22",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy; Scotten promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on this date.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 13,
+            "quote": "Robert Mcgregor Scotten, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1947-12-18. Credentials presented: 1948-04-07. Promoted to Ambassador Extraordinary and Plenipotentiary 1948-12-22."
+          }
+        ]
+      }
+    ]
+  }
+}

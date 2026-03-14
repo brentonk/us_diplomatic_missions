@@ -1,0 +1,287 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01F3vjaQstMrfdb8Pc9psJfo",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3516,
+      "output_tokens": 1648
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1795",
+      "new_status": "Consul Nonresident",
+      "event_description": "Consular relations began when Joseph Donaldson was named Consul for Tunis but remained at post in Algiers; Joseph \u00c9tienne Famin was deputized to act as U.S. consular official in Tunis.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "Joseph Donaldson held U.S. consular authority over all the Barbary States, and was named Consul for Tunis on March 28, 1795, but remained at post in Algiers. Joseph \u00c9tienne Famin, a French merchant at Tunis, was deputized to act as U.S. consular official."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1798-03-15",
+      "new_status": "Consulate",
+      "event_description": "William Eaton presented his credentials to the Bey of Tunis, establishing a resident consular presence in the capital.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Flamin remained in Tunis after the signing of the August 1, 1797 treaty, until the arrival of William Eaton, who presented his credentials to Hamouda Pasha, Bey of Tunis, on March 15, 1798."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1882",
+      "new_status": "None",
+      "event_description": "The Consulate at Tunis closed for the first time, with no extant record of an agent until 1894.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The first closing was from 1882 to 1890, although there is no extant record of an agent until 1894."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1890",
+      "new_status": "Consulate",
+      "event_description": "The Consulate at Tunis reopened after the first closure, though no extant record of an agent exists until 1894.",
+      "confidence": "low",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The first closing was from 1882 to 1890, although there is no extant record of an agent until 1894."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1904-06-30",
+      "new_status": "None",
+      "event_description": "The Consulate at Tunis was temporarily closed on June 30, 1904.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate was also temporarily closed from June 30, 1904 until after the confirmation of vice consul Auguste Proux on Ocotber 8, 1904."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1904-10-08",
+      "new_status": "Consulate",
+      "event_description": "The Consulate at Tunis reopened after the confirmation of vice consul Auguste Proux.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate was also temporarily closed from June 30, 1904 until after the confirmation of vice consul Auguste Proux on Ocotber 8, 1904."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1912-04-19",
+      "new_status": "None",
+      "event_description": "The Consulate at Tunis closed again after Proux's retirement.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The consulate closed again after Proux's retirement, on April 19, 1912."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": true
+    },
+    {
+      "date": "1916",
+      "new_status": "Consulate",
+      "event_description": "The Consulate at Tunis was revived in 1915 but not staffed until the summer of 1916 due to wartime conditions.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate was revived again in 1915, but owing to wartime conditions, it was not staffed until the summer of 1916."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 7,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942",
+      "new_status": "None",
+      "event_description": "The Consulate at Tunis closed again in late 1942.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate was also closed from late 1942 until spring of 1943."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 8,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943",
+      "new_status": "Consulate",
+      "event_description": "The Consulate at Tunis reopened in spring 1943 after wartime closure.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate was also closed from late 1942 until spring of 1943."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 9,
+      "has_citation_error": false
+    },
+    {
+      "date": "1956-06-05",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy in Tunisia was formally opened on June 5, 1956, elevated from Consulate General status, with Charge d'Affaires Morris N. Hughes presenting credentials on June 6.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "The Consulate General was elevated to the status of U.S. Embassy on June 5, 1956."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 10,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Tunisia",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Both agree on 1882 closure. No issues."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Both agree on 1890 reopening. Extracted confidence is low, noting no extant record of an agent until 1894."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Both agree on 1904-06-30 closure. Perfect match."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Both agree on 1904-10-08 reopening. Perfect match."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Both agree on 1912-04-19 closure. Note: extracted event has a citation error flag, but the date and status are consistent with the CSV."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          8
+        ],
+        "notes": "Both agree on 1942 closure (late 1942 per RDCR)."
+      },
+      {
+        "csv_row": 9,
+        "extracted_event_indices": [
+          9
+        ],
+        "notes": "Both agree on 1943 reopening (spring 1943 per RDCR)."
+      },
+      {
+        "csv_row": 10,
+        "extracted_event_indices": [
+          10
+        ],
+        "notes": "Both agree on 1956-06-05 Embassy elevation. Perfect match."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1798-03-15",
+        "new_status": "Consulate",
+        "event_description": "William Eaton presented credentials to the Bey of Tunis on March 15, 1798, establishing a resident consular presence. This is the transition from nonresident consul to a staffed Consulate.",
+        "notes": "If Row 1 is corrected to Consul Nonresident (see discrepancy for Row 1), then this event should be added as the establishment of a resident Consulate. RDCR clearly distinguishes between Donaldson's nonresident appointment in 1795 and Eaton's arrival in 1798."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "field": "new_status",
+        "csv_value": "Consulate",
+        "extracted_value": "Consul Nonresident",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR clearly states that Donaldson was 'named Consul for Tunis on March 28, 1795, but remained at post in Algiers' and deputized a French merchant (Famin) to act locally. This is a nonresident arrangement \u2014 the consul was based in Algiers, not Tunis. A resident Consulate was not established until William Eaton presented credentials in Tunis on March 15, 1798 (Event 1). The CSV should likely be corrected to 'Consul Nonresident' for 1795, with a new row added for 1798-03-15 as 'Consulate'."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          7
+        ],
+        "field": "date",
+        "csv_value": "1915",
+        "extracted_value": "1916",
+        "assessment": "ambiguous",
+        "reasoning": "RDCR states 'The Consulate was revived again in 1915, but owing to wartime conditions, it was not staffed until the summer of 1916.' The CSV uses 1915, which corresponds to the official revival/authorization date. The extracted event uses 1916, which corresponds to when the consulate was actually staffed and operational. Both dates are defensible depending on whether one tracks the formal decision or the operational reality. The CSV's 1915 aligns with the 'revived' language, while 1916 aligns with actual staffing. This is genuinely ambiguous."
+      }
+    ]
+  }
+}

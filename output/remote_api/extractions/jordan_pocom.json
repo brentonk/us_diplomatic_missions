@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0116KKdbYVC41yMbPhNvGgxS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3578,
+      "output_tokens": 703
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Jordan",
+    "source_file": "pocom/missions-countries/jordan.xml",
+    "events": [
+      {
+        "date": "1949-02-18",
+        "new_status": "Legation",
+        "event_description": "U.S. diplomatic representation in Jordan established with Wells Stabler presenting credentials as Charg\u00e9 d'Affaires ad interim, indicating the opening of a U.S. Legation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Wells Stabler, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1949-02-18. Left post: 1950-02."
+          }
+        ]
+      },
+      {
+        "date": "1952-09-23",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation in Jordan elevated to Embassy when Joseph Coy Green was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 9,
+            "quote": "Joseph Coy Green, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1952-05-14. Credentials presented: 1952-07-31. Promoted to Ambassador Extraordinary and Plenipotentiary 1952-09-23."
+          }
+        ]
+      }
+    ]
+  }
+}

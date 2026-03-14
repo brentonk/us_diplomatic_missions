@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Xj8tfy2uoDg4EsSpjURJL7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5233,
+      "output_tokens": 651
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Switzerland",
+    "source_file": "pocom/missions-countries/switzerland.xml",
+    "events": [
+      {
+        "date": "1853-06-29",
+        "new_status": "Legation",
+        "event_description": "Theodore Sedgwick Fay presented credentials as the first Minister Resident to Switzerland, establishing a U.S. Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Theodore Sedgwick Fay, Minister Resident. Appointed: 1853-03-16. Credentials presented: 1853-06-29. Presented recall on 1861-07-01."
+          }
+        ]
+      },
+      {
+        "date": "1953-10-09",
+        "new_status": "Embassy",
+        "event_description": "Frances Elizabeth Willis presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Switzerland, elevating the mission from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "Frances Elizabeth Willis, Ambassador Extraordinary and Plenipotentiary. Appointed: 1953-07-20. Credentials presented: 1953-10-09. Left post on 1957-05-05."
+          }
+        ]
+      }
+    ]
+  }
+}

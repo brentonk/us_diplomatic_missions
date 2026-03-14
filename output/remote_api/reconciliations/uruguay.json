@@ -1,0 +1,130 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GWcaFYHnQ7vs8AQLWXNLtv",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2858,
+      "output_tokens": 1018
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1867-10-02",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established when Minister Resident Alexander Asboth presented credentials to Uruguay. Asboth was accredited to Uruguay but resident at Buenos Aires, Argentina.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on October 2, 1867, when American Minister Resident Alexander Asboth presented his credentials to the Government of the Oriental Republic of Uruguay. Asboth was also accredited to Argentina and resident at Buenos Aires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1870-07-06",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Montevideo opened, establishing a resident diplomatic mission in Uruguay.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Legation in Montevideo opened on July 6, 1870, under Minister Resident John L. Stevens."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-01-11",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Uruguay was formally elevated to Embassy status, with William Dawson appointed as the first U.S. Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The Secretary of State announced on January 11, 1941, that the President had given his approval to raise the status of the American Legation in Uruguay to that of an Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1867-10-02",
+      "new_status": "Legation",
+      "event_description": "Alexander Asboth presented credentials as the first U.S. Minister Resident to Uruguay, establishing a U.S. legation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Alexander Asboth, Minister Resident. Appointed: 1867-04-05. Credentials presented: 1867-10-02. Died at Buenos Aires 1868-01-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-07-12",
+      "new_status": "Embassy",
+      "event_description": "William Dawson presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Uruguay, elevating the mission from a legation to an embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 52,
+          "line_end": 52,
+          "quote": "William Dawson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-07-12. Left post on 1946-08-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Uruguay",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          3
+        ],
+        "notes": "RDCR (Event 0) matches exactly: 1867-10-02, Envoy Nonresident. POCOM (Event 3) labels this as 'Legation' but RDCR clarifies Asboth was accredited to Uruguay while resident at Buenos Aires, making 'Envoy Nonresident' the correct status. CSV correctly follows RDCR."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1870-07-06) and status (Legation). RDCR confirms the American Legation in Montevideo opened on this date under Minister Resident John L. Stevens."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          4
+        ],
+        "field": "date",
+        "csv_value": "1941-07-12",
+        "extracted_value": "RDCR: 1941-01-11 (announcement of elevation); POCOM: 1941-07-12 (credential presentation of first Ambassador)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR (Event 2) states that on January 11, 1941, the Secretary of State announced the President's approval to raise the Legation to Embassy status. This is an explicit institutional date for the elevation. POCOM (Event 4) gives July 12, 1941, which is when Ambassador Dawson presented credentials \u2014 a later personnel event. Per source priority rules, RDCR's explicit institutional date (1941-01-11) should take precedence. The CSV currently uses the POCOM credential presentation date (1941-07-12), which should likely be corrected to 1941-01-11."
+      }
+    ]
+  }
+}

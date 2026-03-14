@@ -1,0 +1,108 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Na8QGeRf5qDPkCdV6QK7GJ",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2892,
+      "output_tokens": 970
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1948-02-16",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established when Nepal opened a Legation to the United States. The Nepalese Minister was nonresident, residing at the Nepalese Embassy in London, implying U.S. representation was also at the legation level.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on February 16, 1948, when Nepal established a Legation to the United States with Commanding General Kaiser Shum Shere Jung Bahadur Rana, as Envoy Extraordinary and Minister Plenipotentiary. The Minister also was Ambassador to Great Britain, and the entire Legation staff resided at the Nepalese Embassy in London."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1959-08-06",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy at Kathmandu was established with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The U.S. Embassy at Kathmandu was established on August 6, 1959, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1948-05-03",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Henry Francis Grady presented credentials as the first U.S. Envoy Extraordinary and Minister Plenipotentiary to Nepal, operating nonresident from New Delhi.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Henry Francis Grady, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1948-02-26. Credentials presented: 1948-05-03. Left New Delhi 1948-06-22."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-02-16",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Chester Bliss Bowles presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Nepal, operating nonresident from New Delhi, elevating the mission from Envoy to Ambassador level.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "Chester Bliss Bowles, Ambassador Extraordinary and Plenipotentiary. Appointed: 1951-10-10. Credentials presented: 1952-02-16. Left New Delhi 1953-03-23."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Nepal",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "CSV date (1948-05-03) matches POCOM Event 2 exactly (credential presentation date). RDCR Event 0 gives 1948-02-16 as the date diplomatic relations were established (Nepal opened a Legation). Since RDCR does not give a specific date for the start of U.S. envoy-level representation (only the date Nepal established its legation), the POCOM credential date is the appropriate date for the U.S. Envoy Nonresident status, consistent with source priority rules."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact match on date (1952-02-16) and status (Ambassador Nonresident). RDCR does not appear to have a separate event for this elevation; POCOM is the sole source."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1959-08-06) and status (Embassy). Event 1 has a citation error flag, but the date and description are consistent with the CSV and the event is clearly supported."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

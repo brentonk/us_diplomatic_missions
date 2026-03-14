@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012LEp3p5RFZ5zB5vPBCbFBL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2433,
+      "output_tokens": 1100
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mauritania",
+    "source_file": "rdcr/articles/mauritania.xml",
+    "events": [
+      {
+        "date": "1960-11-28",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established with Mauritania. Ambassador Henry S. Villard presented credentials but was nonresident, residing at Dakar and also accredited to Senegal.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on November 28, 1960, when Ambassador Henry S. Villard presented his credentials to Prime Minister Daddah. American Ambassadors to Mauritania also were accredited to Senegal, and were resident at Dakar."
+          }
+        ]
+      },
+      {
+        "date": "1962-07-14",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Nouakchott was established, elevating the mission from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy at Nouakchott was established on July 14, 1962, with William L. Eagleton, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "Mauritania severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, ending all formal representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Mauritania severed diplomatic relations with the United States on June 7, 1967, in the wake of the June 1967 Arab-Israeli War."
+          }
+        ]
+      },
+      {
+        "date": "1969-12-22",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The United States and Mauritania resumed diplomatic relations via joint communiqu\u00e9. The embassy in Nouakchott had not yet reopened, implying a nonresident ambassadorial status at this stage.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The United States and Mauritania resumed diplomatic relations on December 22, 1969, when they announced the decision in a joint communiqu\u00e9."
+          }
+        ]
+      },
+      {
+        "date": "1970-03-04",
+        "new_status": "Embassy",
+        "event_description": "Embassy Nouakchott was reopened, restoring a resident embassy presence in Mauritania.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Embassy Nouakchott was reopened on March 4, 1970, with Robert A. Stein as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

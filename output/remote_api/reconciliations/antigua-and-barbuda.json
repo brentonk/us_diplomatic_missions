@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012hqHEVgGq6mUY1JK8YtrTV",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2509,
+      "output_tokens": 445
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1981-11-01",
+      "new_status": "Embassy",
+      "event_description": "The United States established diplomatic relations with Antigua and Barbuda on independence day, raising the Consulate General in St. Johns to Embassy status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "The United States established diplomatic relations with Antigua and Barbuda on November 1, 1981. Paul Byrnes was Principal Officer when the Consulate General in St. Johns was raised to Embassy status."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1994-06-30",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The American Embassy at St. Johns was closed. Subsequent ambassadors to Antigua and Barbuda remained resident at Bridgetown, Barbados, making the ambassadorial relationship nonresident.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The American Embassy at St. Johns was closed June 30, 1994. Subsequent Ambassadors to Antigua and Barbuda remained resident at Bridgetown, Barbados."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Antigua and Barbuda",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both describe establishment of diplomatic relations and raising of Consulate General to Embassy on November 1, 1981 (independence day)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both describe closure of Embassy at St. Johns on June 30, 1994, with subsequent ambassadors nonresident from Bridgetown, Barbados."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

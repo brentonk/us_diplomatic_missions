@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BhZGymNafPdibfDF5kzeKL",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2367,
+      "output_tokens": 323
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1975-11-25",
+      "new_status": "Embassy",
+      "event_description": "The United States established diplomatic relations and opened the American Embassy in Paramaribo, with Robert L. Flanagin as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "The United States Diplomatic relations and the American Embassy in Paramaribo were established on November 25, 1975, with Robert L. Flanagin as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Suriname",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1975-11-25) and status (Embassy). RDCR confirms establishment of diplomatic relations and opening of the American Embassy in Paramaribo."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

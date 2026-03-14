@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GwMJZWeEkTd8piEd4dZnYS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3197,
+      "output_tokens": 998
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Hesse",
+    "source_file": "rdcr/articles/hesse.xml",
+    "events": [
+      {
+        "date": "1829-05-14",
+        "new_status": "Consulate",
+        "event_description": "First U.S. Consulate opened in the Grand Duchy of Hesse (capital Darmstadt), establishing the first formal U.S. diplomatic presence and mutual recognition.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The first U.S. Consulate to open in the Grand Duchy of Hesse was on May 14, 1829, which closed on August 29, 1872."
+          }
+        ]
+      },
+      {
+        "date": "1868-08-01",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. Minister Plenipotentiary George Bancroft was specially accredited to Hesse (nonresident, also accredited to Prussia and the North German Confederation and resident in Berlin), elevating the level of U.S. representation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "On August 1, 1868, specially accredited U.S. Minister Plenipotentiary George Bancroft signed a naturalization treaty with Hesse. At the time, Bancroft was also accredited to Prussia and the North German Confederation and, after 1871, to the German Empire."
+          }
+        ]
+      },
+      {
+        "date": "1871-01-18",
+        "new_status": "None",
+        "event_description": "The Grand Duchy of Hesse joined the German Empire upon its proclamation, after which foreign policy was conducted from Berlin. Hesse ceased to exist as a separate diplomatic entity, ending distinct U.S. diplomatic representation to Hesse.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 42,
+            "line_end": 42,
+            "quote": "The Grand Duchy of Hesse was one of the founding states of the German Empire, which was proclaimed on January 18, 1871."
+          }
+        ]
+      }
+    ]
+  }
+}

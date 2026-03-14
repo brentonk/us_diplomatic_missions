@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01G1JnThKrh6wKubAXpsqR8r",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2187,
+      "output_tokens": 270
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Barbados",
+    "source_file": "rdcr/articles/barbados.xml",
+    "events": [
+      {
+        "date": "1966-11-30",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Bridgetown was established on the same day Barbados became independent, with George Dolgin as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "The U.S. Embassy at Bridgetown was established on November 30, 1966, with George Dolgin as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

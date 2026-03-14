@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MgkkzadcTnw2EoJMYKvaLN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3099,
+      "output_tokens": 1522
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tonga",
+    "source_file": "rdcr/articles/tonga.xml",
+    "events": [
+      {
+        "date": "1897-06-30",
+        "new_status": "Consul Nonresident",
+        "event_description": "The first U.S. Consul-General to Nuku'alofa, Church Howe, was appointed. The post was resident in Apia, Samoa, making this a nonresident consular relationship.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The first U.S. Consul-General to Nuku'alofa, Church Howe, was appointed on June 30, 1897 and replaced by Luther W. Osborn on July 26, 1897. The post was resident in Apia, Samoa, and closed in 1901."
+          }
+        ]
+      },
+      {
+        "date": "1901",
+        "new_status": "None",
+        "event_description": "The U.S. consular post to Nuku'alofa, resident in Apia, Samoa, closed in 1901, ending U.S. diplomatic representation in Tonga. This coincided with Tonga becoming a British protectorate in 1900 and the U.S. ceasing to appoint consul-generals.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The post was resident in Apia, Samoa, and closed in 1901."
+          },
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "In 1900 when Tonga became a protectorate of Great Britain, the British Foreign Office undertook control over all Tongan external affairs, and the U.S. ceased to appoint consul-generals to Nuku'alofa."
+          }
+        ]
+      },
+      {
+        "date": "1972-11-06",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The United States accredited its Ambassador to New Zealand, Fiji, and Western Samoa, Kenneth Franzheim II, to Tonga. Franzheim presented his credentials on November 6, 1972, establishing nonresident ambassadorial relations with Tonga.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "On October 4, 1972, the United States accredited its Ambassador to New Zealand, Fiji, and Western Samoa, Kenneth Franzheim II, to Tonga; however, Franzheim resigned from his post in Wellington before he presented his credentials to Tonga on November 6, 1972."
+          }
+        ]
+      },
+      {
+        "date": "1979-04-11",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. Ambassador to Fiji (resident in Suva) replaced the U.S. Ambassador to New Zealand as the nonresident ambassador accredited to Tonga. John P. Condon presented his credentials to the Tongan government on April 11, 1979.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Beginning in 1979, the U.S. Ambassador to Fiji has also been accredited to Tonga, resident in Suva. On April 11, 1979, John P. Condon presented his credentials to the Tongan government."
+          }
+        ]
+      },
+      {
+        "date": "2023-05-09",
+        "new_status": "Embassy",
+        "event_description": "The United States officially opened the U.S. Embassy in Nuku'alofa, the Tongan capital, elevating the diplomatic relationship from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "On May 9, 2023, the United States officially opened the U.S. Embassy in Nuku'alofa."
+          }
+        ]
+      }
+    ]
+  }
+}

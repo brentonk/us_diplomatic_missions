@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013QCroJtaq5nfkm4EKwTPgt",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2709,
+      "output_tokens": 488
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mongolia",
+    "source_file": "pocom/missions-countries/mongolia.xml",
+    "events": [
+      {
+        "date": "1988-04-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Mongolia established, with Steven Robert Mann serving as the first Charg\u00e9 d'Affaires ad interim upon presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Steven Robert Mann, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1988-04-17."
+          }
+        ]
+      }
+    ]
+  }
+}

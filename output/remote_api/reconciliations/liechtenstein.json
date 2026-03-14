@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017ddnxNsJengow2AzKMjihf",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2531,
+      "output_tokens": 532
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1997-02-10",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The U.S. Ambassador to Switzerland, Madeleine M. Kunin, was accredited to Liechtenstein as the first U.S. Ambassador, resident at Bern, establishing diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "On February 10, 1997, U.S. Ambassador to Switzerland Madeleine M. Kunin was the first U.S. Ambassador accredited to Liechtenstein, resident at Bern."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1997-03-14",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Establishment of nonresident ambassadorial relations with Liechtenstein. The first U.S. Ambassador Extraordinary and Plenipotentiary (nonresident, based in Bern) presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Madeleine May Kunin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1997-02-10. Credentials presented: 1997-03-14. Left Bern 1999-08-16."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Liechtenstein",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date 1997-02-10 matches RDCR (Event 0) exactly. POCOM (Event 1) gives 1997-03-14 as the credential presentation date, but per source priority rules RDCR's explicit institutional date takes precedence. Both events refer to the same transition: establishment of nonresident ambassadorial relations with Liechtenstein."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

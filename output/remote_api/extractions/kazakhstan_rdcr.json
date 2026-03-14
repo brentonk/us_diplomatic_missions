@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01F7uZWwxRf9hJepqxy17hA3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2212,
+      "output_tokens": 440
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kazakhstan",
+    "source_file": "rdcr/articles/kazakhstan.xml",
+    "events": [
+      {
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Kazakhstan on December 25, 1991, following U.S. recognition of Kazakhstan's independence upon dissolution of the Soviet Union. No mission yet established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+          }
+        ]
+      },
+      {
+        "date": "1992-02-03",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Alma-Ata (now Almaty) was established on February 3, 1992, with William Harrison Courtney as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The American Embassy in Alma-Ata (now Almaty) was established on February 3, 1992, with William Harrison Courtney as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012BNE21oWNmu87qHxNw6D7y",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3094,
+      "output_tokens": 1239
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lithuania",
+    "source_file": "pocom/missions-countries/lithuania.xml",
+    "events": [
+      {
+        "date": "1922-12-05",
+        "new_status": "Envoy Nonresident",
+        "event_description": "First U.S. Envoy Extraordinary and Minister Plenipotentiary to Lithuania presents credentials, resident in Riga (nonresident to Lithuania), establishing nonresident envoy relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Frederick William Backus Coleman, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-09-20. Credentials presented: 1922-12-05. Left Riga 1931-10-20."
+          }
+        ]
+      },
+      {
+        "date": "1930-05-31",
+        "new_status": "Legation",
+        "event_description": "Legation Kovno (later Kaunas) established as a resident mission, with Hugh S. Fullerton as Charg\u00e9 d'Affaires ad interim, elevating representation from nonresident envoy to a resident legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Legation Kovno (later Kaunas) was established on May 31, 1930, with Hugh S. Fullerton as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "U.S. Legation in Kaunas closed following Soviet occupation of Lithuania, ending formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Bernard Anthony Gufler, Charg\u00e9 d'Affaires ad interim. Legation closed 1940-09-05."
+          }
+        ]
+      },
+      {
+        "date": "1991-09-02",
+        "new_status": "Embassy",
+        "event_description": "The United States resumed diplomatic relations with Lithuania and established an Embassy, with a Charg\u00e9 d'Affaires ad interim presenting credentials on the same date.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 17,
+            "quote": "The United States resumed diplomatic relations with Lithuania on September 2, 1991. Darryl Norman Johnson, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1991-09-02."
+          }
+        ]
+      }
+    ]
+  }
+}

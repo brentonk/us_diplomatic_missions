@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SKLXyfhq27BwRX5gQNLcWa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2875,
+      "output_tokens": 937
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guinea-Bissau",
+    "source_file": "pocom/missions-countries/guinea-bissau.xml",
+    "events": [
+      {
+        "date": "1976-06-30",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Guinea-Bissau with Brian Dean Curran presenting credentials as Charg\u00e9 d'Affaires ad interim, marking the first U.S. diplomatic presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Brian Dean Curran, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1976-06-30. Left post: 1976-11-29."
+          }
+        ]
+      },
+      {
+        "date": "1998-06-14",
+        "new_status": "None",
+        "event_description": "U.S. Embassy in Guinea-Bissau suspended operations, ending resident diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Peggy Blackford, Ambassador Extraordinary and Plenipotentiary. Appointed: 1995-10-03. Credentials presented: 1995-11-04. Embassy suspended operations 1998-06-14."
+          }
+        ]
+      },
+      {
+        "date": "2003-02-13",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. nonresident ambassadorial relations with Guinea-Bissau resumed, with Richard Allen Roth presenting credentials while based in Dakar, Senegal.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Richard Allen Roth, Ambassador Extraordinary and Plenipotentiary. Appointed: 2002-11-15. Credentials presented: 2003-02-13. Left Dakar 2005-08-04."
+          }
+        ]
+      }
+    ]
+  }
+}

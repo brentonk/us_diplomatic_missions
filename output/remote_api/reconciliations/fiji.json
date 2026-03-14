@@ -1,0 +1,78 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VRNRPE1Wfot7PhGNYkCHL9",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2495,
+      "output_tokens": 964
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1844-08-19",
+      "new_status": "Consul Nonresident",
+      "event_description": "Commercial Agent John B. Williams appointed first Consul to the Fiji Islands, resident at Auckland, New Zealand \u2014 not resident in Fiji.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Commercial Agent John B. Williams was appointed the first Consul to the Fiji Islands on August 19, 1844. He was resident at Auckland, New Zealand."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1971-11-01",
+      "new_status": "Embassy",
+      "event_description": "American Embassy at Suva established, with Robert W. Skiff as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 26,
+          "line_end": 26,
+          "quote": "The American Embassy at Suva established on November 1, 1971, with Robert W. Skiff as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Fiji",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match on date (1844-08-19) and status (Consul Nonresident). Williams was resident in Auckland, not Fiji, consistent with nonresident designation."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 3,
+        "notes": "No extracted event supports an Embassy transition on 1978-04-11. The RDCR states the Embassy at Suva was established on 1971-11-01. This date may reflect the credential presentation of the first resident ambassador (rather than an institutional status change), but no source extraction covers it."
+      }
+    ],
+    "discrepancies": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "new_status",
+        "csv_value": "Ambassador Nonresident",
+        "extracted_value": "Embassy",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "The RDCR explicitly states 'The American Embassy at Suva established on November 1, 1971, with Robert W. Skiff as Charg\u00e9 d'Affaires ad interim.' This is a clear institutional event \u2014 the opening of a resident Embassy in Suva \u2014 not a nonresident ambassador arrangement. The CSV's 'Ambassador Nonresident' status does not match the source text. It is possible the CSV researcher intended to split this into a nonresident phase (1971-11-01) followed by a resident Embassy (1978-04-11), but the RDCR describes the 1971-11-01 event as the establishment of the Embassy at Suva, which is an in-country resident mission. The CSV status for this row should likely be 'Embassy', and Row 3 (1978-04-11) may be redundant or may represent a different event (e.g., first resident ambassador presenting credentials) that is not an institutional status change."
+      }
+    ]
+  }
+}

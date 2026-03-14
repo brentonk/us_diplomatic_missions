@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01X7mDv6GxLGcXxVqXCnpMpy",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2427,
+      "output_tokens": 340
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1987-04-10",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Ambassadorial relations established when U.S. Ambassador to Papua New Guinea Everett E. Bierman presented credentials to the Government of Vanuatu. No resident mission was established at Port Vila; the ambassador remained resident at Port Moresby.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Ambassadorial relations commenced when U.S. Ambassador to Papua New Guinea Everett E. Bierman presented his credentials to the Government of Vanuatu on April 10, 1987. Since that time, the Ambassadors to Vanuatu have also been accredited to Papua New Guinea and the Solomon Islands and have been resident at Port Moresby."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Vanuatu",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both sources agree on 1987-04-10 as the date ambassadorial relations commenced via credential presentation by Ambassador Bierman, nonresident from Port Moresby. RDCR citation verified."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

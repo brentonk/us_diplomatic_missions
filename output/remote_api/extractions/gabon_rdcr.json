@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016aktMqeamijN75bY6tkuJH",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2209,
+      "output_tokens": 412
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Gabon",
+    "source_file": "rdcr/articles/gabon.xml",
+    "events": [
+      {
+        "date": "1960-08-17",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established with a nonresident Charg\u00e9 d'Affaires ad interim resident at Brazzaville presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 17, 1960, when Alan W. Lukens (resident at Brazzaville) presented his credentials as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1961-03-20",
+        "new_status": "Embassy",
+        "event_description": "Embassy Libreville established with a resident Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Embassy Libreville was established on March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

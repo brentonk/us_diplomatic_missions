@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KKL6jUJjwfhiP1jXAELPHv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5827,
+      "output_tokens": 1117
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Romania",
+    "source_file": "pocom/missions-countries/romania.xml",
+    "events": [
+      {
+        "date": "1880-12-14",
+        "new_status": "Liaison",
+        "event_description": "Eugene Schuyler presented credentials as Diplomatic Agent/Consul General, establishing a liaison-level U.S. presence in Romania.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Eugene Schuyler, Diplomatic Agent/Consul General. Appointed: 1880-06-11. Credentials presented: 1880-12-14."
+          }
+        ]
+      },
+      {
+        "date": "1881-01-25",
+        "new_status": "Legation",
+        "event_description": "Eugene Schuyler promoted to Charg\u00e9 d'Affaires and Consul General, elevating the U.S. presence to a legation-level mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Eugene Schuyler, Charg\u00e9 d'Affaires and Consul General. Appointed: 1880-12-21. Credentials presented: 1881-01-25."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-12",
+        "new_status": "None",
+        "event_description": "Romania declared war on the United States, ending U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "Romania declared war on the United States on 1941-12-12. Note: Gunther died at Bucharest on December 22, 1941."
+          }
+        ]
+      },
+      {
+        "date": "1947-09-25",
+        "new_status": "Legation",
+        "event_description": "Rudolf Emil Schoenfeld presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. Legation in Romania after WWII.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "Rudolf Emil Schoenfeld, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1947-07-28. Credentials presented: 1947-09-25."
+          }
+        ]
+      },
+      {
+        "date": "1964-06-01",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Bucharest was formally raised to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 69,
+            "quote": "John P. Shaw was serving as Charg\u00e9 d'Affaires ad interim when the Legation in Bucharest was raised to Embassy status on June 1, 1964."
+          }
+        ]
+      }
+    ]
+  }
+}

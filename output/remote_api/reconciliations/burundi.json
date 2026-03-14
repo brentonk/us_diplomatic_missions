@@ -1,0 +1,108 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FvusLPsHqFva5sTxAWC9aE",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2701,
+      "output_tokens": 679
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1962-07-01",
+      "new_status": "Embassy",
+      "event_description": "Embassy Usumbura (Bujumbura) established upon Burundi's independence, with Herbert V. Olds as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Embassy Usumbura (Bujumbura) was established July 1, 1962, with Herbert V. Olds as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-12-15",
+      "new_status": "Legation",
+      "event_description": "The rank of the U.S. mission in Burundi was changed from Embassy to Legation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "The rank of the mission was changed to Legation effective December 15, 1962, and to Embassy again effective September 16, 1963."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1963-09-16",
+      "new_status": "Embassy",
+      "event_description": "The rank of the U.S. mission in Burundi was elevated back from Legation to Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "The rank of the mission was changed to Legation effective December 15, 1962, and to Embassy again effective September 16, 1963."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-07-01",
+      "new_status": "Legation",
+      "event_description": "U.S. legation-level mission established in Burundi upon independence, with Herbert Vincent Olds presenting credentials as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Herbert Vincent Olds, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-07-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Burundi",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          3
+        ],
+        "notes": "RDCR (Event 0) says Embassy established 1962-07-01; POCOM (Event 3) labels it as Legation. RDCR is the primary source and explicitly states 'Embassy Usumbura was established July 1, 1962,' so the CSV's 'Embassy' status is correct. POCOM's 'Legation' label is overridden by RDCR."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. RDCR explicitly states the mission rank was changed to Legation effective December 15, 1962."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. RDCR explicitly states the mission rank was changed to Embassy again effective September 16, 1963."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

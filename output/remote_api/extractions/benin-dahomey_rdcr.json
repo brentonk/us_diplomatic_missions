@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01U4R8Ee8eA9pKpQJ4wg8oob",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2249,
+      "output_tokens": 433
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Benin (Dahomey)",
+    "source_file": "rdcr/articles/benin.xml",
+    "events": [
+      {
+        "date": "1960-08-01",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations established with Donald R. Norland taking up his position as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 1, 1960, when Donald R. Norland took up his position as Charg\u00e9 d'Affaires ad interim. He had presented his credentials on July 31, 1960, to take effect on the next day."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-15",
+        "new_status": "Embassy",
+        "event_description": "Embassy Cotonou established with Converse Hettinger as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Embassy Cotonou was established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

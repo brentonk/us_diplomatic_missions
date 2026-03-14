@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NMyVpoC8hW5itTm8nf1qa1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3292,
+      "output_tokens": 502
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Togo",
+    "source_file": "pocom/missions-countries/togo.xml",
+    "events": [
+      {
+        "date": "1960-04-27",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Togo established, with Jesse Mackenzie Macknight serving as Charg\u00e9 d'Affaires ad interim upon Togo's independence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Jesse Mackenzie Macknight, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-04-27."
+          }
+        ]
+      }
+    ]
+  }
+}

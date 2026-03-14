@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016UM7SjqSohKVoJ3Et3mfHa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2536,
+      "output_tokens": 1038
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lebanon",
+    "source_file": "rdcr/articles/lebanon.xml",
+    "events": [
+      {
+        "date": "1942-10-09",
+        "new_status": "Liaison",
+        "event_description": "George Wadsworth appointed as 'Agent and Consul General' to provide a quasi-diplomatic presence in Beirut.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The United States appointed George Wadsworth as \"Agent and Consul General\" on October 9, 1942, to provide a quasi-diplomatic presence in Beirut until the United States determined that Lebanon achieved effective independence in 1944."
+          }
+        ]
+      },
+      {
+        "date": "1944-11-16",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations and the American Legation in Lebanon when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "The United States established diplomatic relations with Lebanon when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary on November 16, 1944."
+          }
+        ]
+      },
+      {
+        "date": "1952-10-03",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Beirut was raised to embassy status when Harold B. Minor was appointed Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "The American Legation in Beirut was raised to embassy status on October 3, 1952, when Harold B. Minor was appointed Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      },
+      {
+        "date": "1989-09-06",
+        "new_status": "None",
+        "event_description": "The United States withdrew all embassy personnel from the American Embassy in Beirut, leaving no diplomatic representation in Lebanon.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The United States withdrew all personnel including Ambassador John Thomas McCarthy from the American Embassy in Beirut on September 6, 1989."
+          }
+        ]
+      },
+      {
+        "date": "1990-11-29",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Beirut was reopened when new Ambassador Ryan Crocker presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "The American Embassy in Beirut was reopened on November 29, 1990, when new Ambassador Ryan Crocker presented his credentials."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0126dcPPE5SfpiCmJdEuaGE8",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2744,
+      "output_tokens": 725
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1986-11-03",
+      "new_status": "Liaison",
+      "event_description": "The United States opened an Office of the U.S. Representative in Micronesia upon independence, establishing diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "On November 3, 1986, the United States opened an Office of the U.S. Representative. Michael G. Wygant presented his credentials on October 2, 1987."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1989-09-20",
+      "new_status": "Embassy",
+      "event_description": "The Office of the U.S. Representative was upgraded to Embassy status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "On September 20, 1989, the Office of the U.S. Representative was upgraded to Embassy status. The first U.S. Ambassador to the Federated States of Micronesia, Aurelia Erskine Brazeal, presented her credentials on September 18, 1990."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1987-10-02",
+      "new_status": "Liaison",
+      "event_description": "U.S. established a liaison-level presence in Micronesia with Michael Gordon Wygant serving as Representative.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Michael Gordon Wygant, Representative. Appointed: 1987-07-31. Credentials presented: 1987-10-02. Left post on 1990-05-29."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-09-18",
+      "new_status": "Embassy",
+      "event_description": "U.S. elevated its mission in Micronesia to Embassy level with the appointment and credentialing of the first Ambassador Extraordinary and Plenipotentiary, Aurelia Erskine Brazeal.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Aurelia Erskine Brazeal, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-08-06. Credentials presented: 1990-09-18. Left post on 1993-07-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Micronesia",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          3
+        ],
+        "notes": "CSV date 1989-09-20 matches RDCR institutional date for Embassy upgrade. POCOM date 1990-09-18 reflects the first Ambassador's credential presentation, a separate personnel event. No conflict per source priority rules."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "field": "date",
+        "csv_value": "1987-10-02",
+        "extracted_value": "1986-11-03 (RDCR institutional date); 1987-10-02 (POCOM credential presentation)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR explicitly states 'On November 3, 1986, the United States opened an Office of the U.S. Representative,' which is a clear institutional opening date. The CSV date of 1987-10-02 corresponds to the POCOM credential presentation date for Representative Wygant, which is a personnel event, not the institutional opening. Per source priority rules, RDCR's institutional date of 1986-11-03 should be used for the Liaison status transition."
+      }
+    ]
+  }
+}

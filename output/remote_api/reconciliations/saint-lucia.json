@@ -1,0 +1,117 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01B1PKCNM13GCzt4xTC7udxx",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2801,
+      "output_tokens": 1302
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1977-09-01",
+      "new_status": "Liaison",
+      "event_description": "Frank V. Ortiz, Jr. appointed U.S. Special Representative to St. Lucia (concurrent with his ambassadorial roles to Barbados and Grenada), establishing an informal diplomatic presence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Frank V. Oritz, Jr. was appointed United States Special Representative to the States of Antigua, Dominica, St. Christopher-Nevis-Anguilla, St. Lucia, and St. Vincent on September 1, 1977. The appointment was concurrent to his positions as Ambassador to Barbados and to Grenada."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-06-11",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Diplomatic relations formally established when Ambassador Sally Angela Shelton presented her credentials on June 11, 1979. All U.S. ambassadors to St. Lucia are resident in Barbados, making this a nonresident ambassadorial relationship.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "Diplomatic relations were established on June 11, 1979, when Ambassador Sally Angela Shelton presented her credentials. All U.S. ambassadors to St. Lucia have been resident at Barbados."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-06-11",
+      "new_status": "Legation",
+      "event_description": "Establishment of U.S. diplomatic relations with Saint Lucia at the legation level, with Sally Angela Shelton presenting credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Sally Angela Shelton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1979-05-17. Credentials presented: 1979-06-11."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-12-15",
+      "new_status": "Embassy",
+      "event_description": "Elevation of U.S. mission to Saint Lucia from legation to embassy level, with Milan D Bish presenting credentials as Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Milan D Bish, Ambassador Extraordinary and Plenipotentiary. Appointed: 1981-11-23. Credentials presented: 1981-12-15."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Saint Lucia",
+    "matched": [],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1977-09-01",
+        "new_status": "Liaison",
+        "event_description": "Frank V. Ortiz, Jr. appointed U.S. Special Representative to St. Lucia concurrent with his ambassadorial roles to Barbados and Grenada, establishing an informal diplomatic presence prior to St. Lucia's full independence.",
+        "notes": "RDCR explicitly documents this appointment. This predates formal diplomatic relations and represents a pre-independence liaison arrangement. Candidate for addition as a precursor event."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1981-12-15",
+        "new_status": "Embassy",
+        "event_description": "Elevation of U.S. mission to Saint Lucia from legation/envoy level to embassy/ambassador level, with Milan D Bish presenting credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "notes": "POCOM records show the first actual Ambassador (as opposed to Envoy/Minister Plenipotentiary) was Milan D Bish in 1981. RDCR does not give a specific institutional elevation date, so POCOM's credential date of 1981-12-15 is the best available date. This event is absent from the CSV entirely."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "field": "new_status",
+        "csv_value": "Ambassador Nonresident (1979-06-11)",
+        "extracted_value": "RDCR says 'Ambassador' but POCOM records Shelton as 'Envoy Extraordinary and Minister Plenipotentiary' (Legation/Envoy level) on 1979-06-11; upgrade to Ambassador level not until 1981-12-15 per POCOM",
+        "assessment": "suggest_split",
+        "reasoning": "The CSV records a single event on 1979-06-11 as 'Ambassador Nonresident,' but the evidence suggests two distinct events: (1) On 1979-06-11, diplomatic relations were established at the Envoy/Legation level \u2014 POCOM precisely records Sally Shelton as 'Envoy Extraordinary and Minister Plenipotentiary,' not Ambassador. The correct status for this date should be 'Envoy Nonresident' (since all chiefs of mission are resident in Barbados). RDCR's use of 'Ambassador' appears to be a loose/retroactive usage. (2) On 1981-12-15, the relationship was elevated to Ambassador/Embassy level when Milan D Bish presented credentials as 'Ambassador Extraordinary and Plenipotentiary' per POCOM. The CSV should be split into: Row 1 \u2192 1979-06-11 as 'Envoy Nonresident' (establishment of relations), and a new row \u2192 1981-12-15 as 'Ambassador Nonresident' (elevation to ambassadorial level, still resident in Barbados)."
+      }
+    ]
+  }
+}

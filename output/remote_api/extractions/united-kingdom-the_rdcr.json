@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DEam3qYjwoHPb9YzikxPny",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2739,
+      "output_tokens": 1080
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "United Kingdom, The",
+    "source_file": "rdcr/articles/united-kingdom.xml",
+    "events": [
+      {
+        "date": "1785-06-01",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in London were established when John Adams presented his credentials as Minister Plenipotentiary to King George III.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Diplomatic relations and the American Legation in London were established on June 1, 1785, when John Adams presented his credentials as Minister Plenipotentiary to King George III."
+          }
+        ]
+      },
+      {
+        "date": "1788",
+        "new_status": "None",
+        "event_description": "John Adams closed the legation in 1788 due to frustration with the cool reception, leaving the post vacant for four years.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Adams, however, became so frustrated with the cool reception that he closed the legation in 1788 and the post remained vacant for four years."
+          }
+        ]
+      },
+      {
+        "date": "1792",
+        "new_status": "Legation",
+        "event_description": "The American Legation in London was re-opened after four years of vacancy following Adams's closure in 1788.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Adams, however, became so frustrated with the cool reception that he closed the legation in 1788 and the post remained vacant for four years."
+          }
+        ]
+      },
+      {
+        "date": "1812-07-29",
+        "new_status": "None",
+        "event_description": "The U.S. legation in London was closed by Charg\u00e9 d'Affaires Jonathan Russell following the U.S. declaration of war against the United Kingdom on June 18, 1812.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The United States broke relations with the United Kingdom of Great Britain and Ireland when it declared war against its former colonial ruler on June 18, 1812, although Charg\u00e9 d'Affaires Jonathan Russell did not close the legation until July 29, 1812."
+          }
+        ]
+      },
+      {
+        "date": "1815-08-08",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations were re-established when John Quincy Adams presented his credentials as Envoy Extraordinary and Minister Plenipotentiary in London.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "Future President John Quincy Adams, son of John Adams, was appointed Envoy Extraordinary and Minister Plenipotentiary, to the United Kingdom on February 28, 1815, and presented his credentials in London on August 8, 1815."
+          }
+        ]
+      },
+      {
+        "date": "1893-06-22",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in London was elevated to an Embassy when Ambassador Thomas Bayard presented his credentials to the Court of St. James.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "The U.S. legation in London became the U.S. Embassy in London when Ambassador Thomas Bayard presented his credentials to the Court of St. James on June 22, 1893."
+          }
+        ]
+      }
+    ]
+  }
+}

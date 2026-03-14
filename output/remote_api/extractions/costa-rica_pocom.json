@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GatHR6zkkM77p1vBksH17t",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5832,
+      "output_tokens": 936
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Costa Rica",
+    "source_file": "pocom/missions-countries/costa-rica.xml",
+    "events": [
+      {
+        "date": "1858-09-14",
+        "new_status": "Legation",
+        "event_description": "First U.S. Minister Resident to Costa Rica presented credentials, establishing the U.S. Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 4,
+            "quote": "Mirabeau Buonaparte Lamar, Minister Resident. Appointed: 1858-01-20. Credentials presented: 1858-09-14."
+          }
+        ]
+      },
+      {
+        "date": "1918-12-05",
+        "new_status": "None",
+        "event_description": "Legation in San Jose formally closed, ending U.S. diplomatic representation in Costa Rica.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "Stewart Johnson, Charg\u00e9 d'Affaires ad interim. Legation San Jose closed on 1918-12-05."
+          }
+        ]
+      },
+      {
+        "date": "1920-10-15",
+        "new_status": "Legation",
+        "event_description": "U.S. Charg\u00e9 d'Affaires ad interim presented credentials, reopening the U.S. Legation in Costa Rica after its 1918 closure.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "John Funk Martin, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1920-10-15."
+          }
+        ]
+      },
+      {
+        "date": "1945-02-14",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador Extraordinary and Plenipotentiary to Costa Rica presented credentials, elevating the mission from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 61,
+            "line_end": 61,
+            "quote": "Hallett Johnson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1944-12-16. Credentials presented: 1945-02-14. Left post on 1947-05-16."
+          }
+        ]
+      }
+    ]
+  }
+}

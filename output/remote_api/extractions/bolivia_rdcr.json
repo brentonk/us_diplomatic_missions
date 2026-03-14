@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015TtmpXeGFGxdgV28Uyqu22",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2462,
+      "output_tokens": 556
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bolivia",
+    "source_file": "rdcr/articles/bolivia.xml",
+    "events": [
+      {
+        "date": "1849-01-03",
+        "new_status": "Legation",
+        "event_description": "The American Legation in La Paz opened under Charg\u00e9 d'Affaires John Appleton, who presented his credentials to the Government of the Republic of Bolivia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Legation in La Paz opened on January 3, 1849, under Charg\u00e9 d'Affaires John Appleton."
+          }
+        ]
+      },
+      {
+        "date": "1942-01-04",
+        "new_status": "Embassy",
+        "event_description": "Following a joint announcement by Bolivia and the United States, the American Legation in Bolivia was raised to the rank of Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Following a joint announcement by the Government of Bolivia and the Government of the United States on January 4, 1942, the Legation of Bolivia in the United States and the Legation of the United States in Bolivia were both raised to the rank of Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

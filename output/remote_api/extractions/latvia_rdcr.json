@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017S8BVZ1qh2fmpc33rbXAJz",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2806,
+      "output_tokens": 1397
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Latvia",
+    "source_file": "rdcr/articles/latvia.xml",
+    "events": [
+      {
+        "date": "1922-07-28",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established; U.S. Commissioner Evan Young informed the Latvian Foreign Office of U.S. recognition and that he would continue as American representative to the three Baltic States with the new rank of Minister.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on July 28, 1922, when U.S. Commissioner at Riga, Evan Young, informed the Foreign Office of Latvia that the United States' recognized its independence and that he would continue as the American representative to the three Baltic States, with the new rank of Minister."
+          }
+        ]
+      },
+      {
+        "date": "1922-11-13",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation at Riga was formally established when Envoy Extraordinary and Minister Plenipotentiary Frederick W.B. Coleman presented his credentials to the Latvian Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The U.S. Legation at Riga was established on November 13, 1922, when Envoy Extraordinary and Minister Plenipotentiary Frederick W.B. Coleman presented his credentials to the Latvian Government."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "The U.S. Legation at Riga was closed following the Soviet occupation and annexation of Latvia. The U.S. maintained it never recognized the forcible incorporation and that diplomatic relations continued uninterrupted in principle.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The U.S. Legation at Riga was closed on September 5, 1940, after the USSR occupied and annexed Latvia, as well as Estonia and Lithuania, in August 1940."
+          }
+        ]
+      },
+      {
+        "date": "1991-09-05",
+        "new_status": "Liaison",
+        "event_description": "The United States and Latvia resumed normal diplomatic relations when U.S. Deputy Assistant Secretary of State Curtis Kamman and Latvian First Secretary Martins Virsis signed a memorandum of understanding concerning diplomatic relations.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "The United States and Latvia resumed normal diplomatic relations on September 5, 1991, when U.S. Deputy Assistant Secretary of State Curtis Kamman and the Latvian First Secretary in the Ministry of Foreign Affairs, Martins Virsis, signed a memorandum of understanding concerning diplomatic relations."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-02",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Riga was established with Ints M. Silins as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "The American Embassy at Riga was established on October 2, 1991, with Ints M. Silins as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

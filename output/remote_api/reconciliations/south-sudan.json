@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WcUzasC5g9gaKUXTu3Y7bo",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2510,
+      "output_tokens": 415
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "2005-11-11",
+      "new_status": "Consulate",
+      "event_description": "The U.S. government established a consulate in Juba (the capital) following the signing of the Comprehensive Peace Agreement.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "After the signing of the Comprehensive Peace Agreement in 2005, the U.S. government established a consulate in Juba on November 11, 2005, to reinforce its partnership with the South Sudanese people."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2011-07-09",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Consulate General in Juba was elevated to a U.S. Embassy upon South Sudan's declaration of independence and U.S. recognition of the new state.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Following its declaration of independence, the United States established full diplomatic relations with the Republic of South Sudan, upgrading the U.S. Consulate General in Juba to a U.S. Embassy on July 9, 2011."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "South Sudan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (2005-11-11) and status (Consulate). RDCR confirms establishment of consulate in Juba following the Comprehensive Peace Agreement."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (2011-07-09) and status (Embassy). RDCR confirms elevation of Consulate General to Embassy upon South Sudan's independence and U.S. recognition."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

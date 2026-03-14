@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JN5ShpeFixotzfMrKJ4ZUg",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2979,
+      "output_tokens": 1180
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Spain",
+    "source_file": "rdcr/articles/spain.xml",
+    "events": [
+      {
+        "date": "1783-02-20",
+        "new_status": "Legation",
+        "event_description": "Spain officially received William Carmichael as Charg\u00e9 d'Affaires ad interim at the court in Madrid, establishing the American Legation and formal diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "The Spanish did not officially establish diplomatic relations with the United States until the U.S. Charg\u00e9 d'Affaires ad interim, William Carmichael, was officially received at the court in Madrid on February 20, 1783."
+          }
+        ]
+      },
+      {
+        "date": "1898-04-21",
+        "new_status": "None",
+        "event_description": "Spain severed diplomatic relations with the United States and U.S. Minister Stewart Woodford closed the legation in Madrid, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Spain severed diplomatic relations with the United States on April 21, 1898, and U.S. Minister Stewart Woodford closed the legation in Madrid on that day."
+          }
+        ]
+      },
+      {
+        "date": "1899-06-16",
+        "new_status": "Legation",
+        "event_description": "After the Spanish-American War, Bellamy Storer presented his credentials as Minister to Spain, reestablishing the American Legation in Madrid.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "After the Spanish-American War, the United States appointed Bellamy Storer as Minister on April 12, 1899, and he presented his credentials to Spain on June 16, 1899."
+          }
+        ]
+      },
+      {
+        "date": "1913-09-10",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Madrid was elevated to Embassy status when Joseph E. Williard was made Ambassador on September 10, 1913.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "Joseph E. Williard, though originally appointed as Envoy, was made Ambassador on September 10, 1913, and presented his credentials on October 31, 1913."
+          }
+        ]
+      },
+      {
+        "date": "1939-04-13",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy was re-established in Spain after the Spanish Civil War when H. Freeman Matthews was received at Burgos as Charg\u00e9 d'Affaires ad interim, ending the period during which the embassy had operated from Barcelona and then from St. Jean de Luz, France.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "The Embassy was re-established in Spain on April 13, 1939, when H. Freeman Matthews was received at Burgos as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

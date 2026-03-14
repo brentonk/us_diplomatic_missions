@@ -1,0 +1,124 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01YN8VieUdMWoxZx21xQ8Vuj",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2902,
+      "output_tokens": 1269
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1883-06-11",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation at Tehran were established when Charg\u00e9 d'Affaires S.G.W. Benjamin presented his credentials to the Shah of Persia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Legation at Tehran were established on June 11, 1883, when Charg\u00e9 d'Affaires S.G.W. Benjamin presented his credentials to the Shah of Persia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-04-07",
+      "new_status": "Interests",
+      "event_description": "The United States severed diplomatic relations with Iran; Switzerland serves as the protecting power for U.S. interests in Iran.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The United States severed diplomatic relations with Iran on April 7, 1980. This action was taken following the seizure by student militants of the American Embassy in Tehran and its staff on November 4, 1979, and the subsequent failure of the Iranian government to secure their release. The hostages eventually were released on January 20, 1981; however, diplomatic relations remain severed and Switzerland currently serves as the protecting power for U.S. interests in Iran."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1944-08-21",
+      "new_status": "Embassy",
+      "event_description": "Leland Burnette Morris presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Iran, elevating the mission from a legation to an embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "Leland Burnette Morris, Ambassador Extraordinary and Plenipotentiary. Appointed: 1944-03-21. Credentials presented: 1944-08-21. Left post on 1945-05-20."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-04-07",
+      "new_status": "None",
+      "event_description": "The United States severed diplomatic relations with Iran on April 7, 1980, following the seizure of the U.S. Embassy in Tehran on November 4, 1979.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 73,
+          "line_end": 73,
+          "quote": "Laingen was serving as Charg\u00e9 d'Affaires ad interim when the Embassy in Tehran was seized on November 4, 1979. The United States severed diplomatic relations with Iran on April 7, 1980."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "Iran",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1883-06-11) and status (Legation). RDCR confirms establishment of diplomatic relations and the American Legation at Tehran."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1944-08-21) and status (Embassy). RDCR does not provide a specific institutional elevation date, so POCOM's credential presentation date for the first Ambassador is the correct date per source priority rules."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Both agree on 1980-04-07 and status 'None' (severance of diplomatic relations). Event 3 has a citation error flag but the content is consistent with the well-documented historical event and corroborated by RDCR Event 1's text."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 4,
+        "notes": "The CSV records 1980-05-21 as the date Switzerland began serving as protecting power for U.S. interests in Iran. RDCR Event 1 mentions Switzerland's role as protecting power but does not provide a specific start date for this arrangement. No extracted event gives the date 1980-05-21. The CSV notes cite an archived usembassy.gov page as the source, which is outside the RDCR/POCOM pipeline. The event is plausible but not verifiable from the available source extractions."
+      }
+    ],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "new_status",
+        "csv_value": "None",
+        "extracted_value": "Interests",
+        "assessment": "csv_likely_correct",
+        "reasoning": "RDCR Event 1 is dated 1980-04-07 and labeled 'Interests' by the extractor, but the actual RDCR text states 'The United States severed diplomatic relations with Iran on April 7, 1980' \u2014 this is a severance event (status: None), not the establishment of an interests section. The Swiss protecting power arrangement is mentioned in the same passage as a current state without a specific start date. The CSV correctly splits this into two events: severance on 1980-04-07 (None) and the interests arrangement on 1980-05-21 (Interests). The extractor conflated the severance and the protecting power arrangement into a single 'Interests' event, which is inaccurate for the April 7 date."
+      }
+    ]
+  }
+}

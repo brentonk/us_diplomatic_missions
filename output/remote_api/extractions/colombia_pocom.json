@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019b1FtZeVnrWuVG4xqh6Kwo",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6719,
+      "output_tokens": 847
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Colombia",
+    "source_file": "pocom/missions-countries/colombia.xml",
+    "events": [
+      {
+        "date": "1823-12-16",
+        "new_status": "Legation",
+        "event_description": "Richard Clough Anderson presented credentials as Minister Plenipotentiary to Gran Colombia, establishing the first U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Richard Clough Anderson, Minister Plenipotentiary. Appointed: 1823-01-27. Credentials presented: 1823-12-16. Died at Cartagena 1826-07-24. Note: Commissioned to Colombia (i.e. \"Gran Colombia,\" which separated into the states of Ecuador, New Granada, and Venezuela)."
+          }
+        ]
+      },
+      {
+        "date": "1939-02-15",
+        "new_status": "Embassy",
+        "event_description": "Spruille Braden presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 80,
+            "line_end": 80,
+            "quote": "Spruille Braden, Ambassador Extraordinary and Plenipotentiary. Appointed: 1939-01-20. Credentials presented: 1939-02-15. Left Colombia 1942-03-12."
+          }
+        ]
+      }
+    ]
+  }
+}

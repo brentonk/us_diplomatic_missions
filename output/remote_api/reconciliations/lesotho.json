@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KK241mjfwZz5ASSAPnVxAo",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2475,
+      "output_tokens": 390
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1966-10-04",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Maseru was established upon Lesotho's attainment of independence, with Richard St. F. Post as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on October 4, 1966, when the American Embassy at Maseru was established with Richard St. F. Post as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1966-10",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Lesotho established, with Richard St Francis Post serving as the first Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Richard St Francis Post, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1966-10. Left post: 1968-07."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Lesotho",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "Both extracted events refer to the establishment of the U.S. Embassy at Maseru on Lesotho's independence. RDCR (Event 0) gives the precise date 1966-10-04; POCOM (Event 1) gives 1966-10 (month-level precision only). Dates are fully consistent."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

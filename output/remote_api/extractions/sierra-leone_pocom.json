@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UR6SnkYrTpwdg2xYwEKfGL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3203,
+      "output_tokens": 683
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sierra Leone",
+    "source_file": "pocom/missions-countries/sierra-leone.xml",
+    "events": [
+      {
+        "date": "1961-04-27",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Sierra Leone established, with Herbert Reiner presenting credentials as Charg\u00e9 d'Affaires ad interim \u2014 the first U.S. diplomatic representative to the newly independent country.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Herbert Reiner, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1961-04-27."
+          }
+        ]
+      }
+    ]
+  }
+}

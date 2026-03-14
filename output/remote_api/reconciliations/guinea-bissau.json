@@ -1,0 +1,91 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FwNe4KCqX6o1tzmdt1igof",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2614,
+      "output_tokens": 333
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1976-06-30",
+      "new_status": "Embassy",
+      "event_description": "Embassy Bissau was established with Dean Curran as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Bissau was established on June 30, 1976, with Dean Curran as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1998-06-14",
+      "new_status": "None",
+      "event_description": "Embassy Bissau suspended operations following the start of civil war in Guinea-Bissau.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "Embassy Bissau suspended operations on June 14, 1998, following the start of civil war in Guinea-Bissau. The U.S. Ambassador to Senegal subsequently handled relations with Guinea-Bissau."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "2003-02-13",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The U.S. Ambassador to Senegal, Richard Allen Roth, was accredited to Guinea-Bissau, presenting credentials to President Kumba Yala.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "The U.S. Ambassador to Senegal, Richard Allen Roth was accredited to Guinea-Bissau on February 13, 2003, when he presented his credentials to President Kumba Yala."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Guinea-Bissau",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record Embassy established on 1976-06-30."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Both record suspension of operations (None) on 1998-06-14 due to civil war."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. Both record Ambassador Nonresident status on 2003-02-13 when U.S. Ambassador to Senegal was accredited to Guinea-Bissau."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

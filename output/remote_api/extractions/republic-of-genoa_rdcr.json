@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GwCALVoRi9fxbVtfxBsBYE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2948,
+      "output_tokens": 689
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Republic of Genoa",
+    "source_file": "rdcr/articles/genoa.xml",
+    "events": [
+      {
+        "date": "1799",
+        "new_status": "Consulate",
+        "event_description": "First U.S. consulate established in Genoa (the capital of the Republic of Genoa).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Although the U.S. appointed its first Consul at Genoa on February 27, 1797, U.S. Department of State archival evidence suggests that the appointee never reached Genoa. The first U.S. consulate was established in Genoa in 1799."
+          }
+        ]
+      },
+      {
+        "date": "1815",
+        "new_status": "None",
+        "event_description": "The Republic of Genoa ceased to exist as an independent state when it was incorporated into the Kingdom of Piedmont-Sardinia following the Congress of Vienna, ending U.S. representation under this country entry.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "Although the Republic of Genoa was under the rule of France during the Napoleonic Wars, in the post-Napoleonic peace settlement, Genoa was given to the Kingdom of Piedmont-Sardinia in 1815."
+          }
+        ]
+      }
+    ]
+  }
+}

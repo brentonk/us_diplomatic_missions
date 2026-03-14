@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ar1p7RCQyPLRKeb1C2H6Xy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2543,
+      "output_tokens": 546
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Moldova",
+    "source_file": "pocom/missions-countries/moldova.xml",
+    "events": [
+      {
+        "date": "1992-03-13",
+        "new_status": "Liaison",
+        "event_description": "U.S. diplomatic presence established in Moldova with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Howard Steers, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-03-13."
+          }
+        ]
+      },
+      {
+        "date": "1992-08-26",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Moldova with the first Ambassador Extraordinary and Plenipotentiary presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Mary C Pendleton, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-08-26. Left post on 1995-08-12."
+          }
+        ]
+      }
+    ]
+  }
+}

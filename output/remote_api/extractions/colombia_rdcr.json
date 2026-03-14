@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013J9WtRztk7UDQRhhmbD4h3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2818,
+      "output_tokens": 623
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Colombia",
+    "source_file": "rdcr/articles/colombia.xml",
+    "events": [
+      {
+        "date": "1823-12-16",
+        "new_status": "Legation",
+        "event_description": "Richard Anderson presented his credentials to the Colombian Government, establishing the U.S. Legation in Colombia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Richard Anderson of Kentucky was named U.S. Minister to Colombia on January 27, 1823, and he presented his credentials to the Colombian Government on December 16, 1823, thus establishing the U.S. Mission in Colombia."
+          }
+        ]
+      },
+      {
+        "date": "1939",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Colombia was raised to the rank of Embassy; Spruille Braden became the first U.S. Ambassador to Colombia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "The U.S. Legation in Colombia was raised to the rank of Embassy in 1939. Spruille Braden became the first U.S. Ambassador to Colombia."
+          }
+        ]
+      }
+    ]
+  }
+}

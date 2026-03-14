@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BdnACkS72A6VxMQArQLtVC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2575,
+      "output_tokens": 678
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sweden",
+    "source_file": "rdcr/articles/sweden.xml",
+    "events": [
+      {
+        "date": "1818-04-29",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when Jonathan Russell presented credentials as American Minister Plenipotentiary to Sweden, opening a U.S. Legation in Stockholm.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Diplomatic relations were established on April 29, 1818, when Jonathan Russell presented his credentials as American Minister Plenipotentiary to Sweden."
+          }
+        ]
+      },
+      {
+        "date": "1947-09-20",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy status with the appointment of H. Freeman Matthews as the first U.S. Ambassador to Sweden.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "On September 20, 1947, H. Freeman Matthews was appointed to be the first U.S. Ambassador to Sweden."
+          }
+        ]
+      }
+    ]
+  }
+}

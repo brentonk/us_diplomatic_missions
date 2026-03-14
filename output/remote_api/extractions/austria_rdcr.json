@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PaDBLr7pFUMKgHmegdAGQS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3596,
+      "output_tokens": 1352
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Austria",
+    "source_file": "rdcr/articles/austria.xml",
+    "events": [
+      {
+        "date": "1921-11-26",
+        "new_status": "Legation",
+        "event_description": "American Legation established in Vienna when Charg\u00e9 d'Affaires Arthur Hugh Frazier presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Arthur Hugh Frazier was appointed Charg\u00e9 d'Affaires to Austria and presented his credentials on November 26, 1921."
+          }
+        ]
+      },
+      {
+        "date": "1938-04-30",
+        "new_status": "Consulate",
+        "event_description": "Following the Anschluss, the U.S. Legation in Vienna was closed and converted to a Consulate General (coded as Consulate, being in the capital).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 36,
+            "line_end": 36,
+            "quote": "He closed the Legation on April 30, 1938, and it became a Consulate General, a step that Secretary of State Cordell Hull noted had to be taken \"as a practical measure.\""
+          }
+        ]
+      },
+      {
+        "date": "1941-07-09",
+        "new_status": "None",
+        "event_description": "The Vienna Consulate General was closed, ending all U.S. diplomatic representation in Austria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The Vienna Consulate General was closed July 9, 1941, along with all other U.S. consulates in Germany."
+          }
+        ]
+      },
+      {
+        "date": "1946-01-21",
+        "new_status": "Liaison",
+        "event_description": "John G. Erhardt was appointed as U.S. Political Representative to the Austrian Government, establishing a liaison-level presence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 42,
+            "line_end": 42,
+            "quote": "John G. Erhardt was appointed as the U.S. Political Representative to the Austrian Government on January 21, 1946."
+          }
+        ]
+      },
+      {
+        "date": "1946-09-07",
+        "new_status": "Legation",
+        "event_description": "Erhardt presented his credentials as Minister to Austria, re-establishing the American Legation in Vienna.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 42,
+            "line_end": 42,
+            "quote": "He was appointed Minister to Austria on August 3. He presented his credentials on September 7, and served until June 27, 1950."
+          }
+        ]
+      },
+      {
+        "date": "1951-11-16",
+        "new_status": "Embassy",
+        "event_description": "The American Legation was elevated to Embassy status when Minister Walter J. Donnelly was promoted to Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 48,
+            "line_end": 48,
+            "quote": "American Minister Walter J. Donnelly was promoted to Ambassador on November 16, 1951. He presented his credentials on November 28, and served until July 19, 1952."
+          }
+        ]
+      }
+    ]
+  }
+}

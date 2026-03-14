@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014XGKTvZCcQ4oi2y1zUp5pk",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2485,
+      "output_tokens": 573
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Slovakia",
+    "source_file": "pocom/missions-countries/slovakia.xml",
+    "events": [
+      {
+        "date": "1993-01-04",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Slovakia established upon presentation of credentials by the first Charg\u00e9 d'Affaires ad interim, following Slovak independence from Czechoslovakia on 1993-01-01.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Paul Hacker, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1993-01-04. Left post: 1993-07-07."
+          }
+        ]
+      }
+    ]
+  }
+}

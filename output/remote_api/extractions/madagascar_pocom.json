@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VHXABAohJckgtzedem3C1a",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3300,
+      "output_tokens": 404
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Madagascar",
+    "source_file": "pocom/missions-countries/madagascar.xml",
+    "events": [
+      {
+        "date": "1960-06-26",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Madagascar upon independence, with John Roland Jacobs serving as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Roland Jacobs, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-06-26."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018DGB8U4484PBp8ksmYfRVb",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3158,
+      "output_tokens": 524
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malawi",
+    "source_file": "pocom/missions-countries/malawi.xml",
+    "events": [
+      {
+        "date": "1964-07-06",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Malawi upon independence, with the first U.S. representative presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 5,
+            "quote": "Edward Warren Holmes, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1964-07-06.\n\nSamuel Patrick Gilstrap, Ambassador Extraordinary and Plenipotentiary. Appointed: 1964-07-01. Credentials presented: 1964-07-08."
+          }
+        ]
+      }
+    ]
+  }
+}

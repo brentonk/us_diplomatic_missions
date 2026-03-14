@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0139WRF92mJFFbSCJJm1K3rd",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3258,
+      "output_tokens": 337
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malaysia",
+    "source_file": "pocom/missions-countries/malaysia.xml",
+    "events": [
+      {
+        "date": "1957-08-31",
+        "new_status": "Embassy",
+        "event_description": "Embassy Kuala Lumpur established on August 31, 1957, with Charg\u00e9 d'Affaires Thomas Kenneth Wright in charge, coinciding with the Federation of Malaya's independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Embassy Kuala Lumpur was established on August 31, 1957, with Wright in charge."
+          }
+        ]
+      }
+    ]
+  }
+}

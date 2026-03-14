@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EUr9fgHdFgB7YXUHSDsFE3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3343,
+      "output_tokens": 416
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guinea",
+    "source_file": "pocom/missions-countries/guinea.xml",
+    "events": [
+      {
+        "date": "1959-02-13",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Guinea established, with Robert Watland Rinden presenting credentials as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert Watland Rinden, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1959-02-13."
+          }
+        ]
+      }
+    ]
+  }
+}

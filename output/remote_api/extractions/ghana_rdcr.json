@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Bv5MWvU1pmduUEe89M265v",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2136,
+      "output_tokens": 289
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ghana",
+    "source_file": "rdcr/articles/ghana.xml",
+    "events": [
+      {
+        "date": "1957-03-06",
+        "new_status": "Embassy",
+        "event_description": "The Consulate General at Accra was elevated to Embassy status upon Ghanaian independence, with Consul General Donald W. Lamm as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Embassy in Ghana were established on March 6, 1957, when the Consulate General at Accra was elevated to Embassy status, with Consul General Donald W. Lamm as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01W8k2RMyq2JykNkQ1Pkd1Qh",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2629,
+      "output_tokens": 858
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-02-19",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established between the U.S. and Tajikistan, but no mission yet opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on February 19, 1992, when President George H.W. Bush announced the decision in a press statement."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-03-13",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Dushanbe was established with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The American Embassy in Embassy Dushanbe was established March 13, 1992, with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1992-10-25",
+      "new_status": "None",
+      "event_description": "Embassy Dushanbe was closed and all U.S. personnel were withdrawn, ending formal diplomatic representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "On October 25, 1992, Embassy Dushanbe was closed and all U.S. personnel were withdrawn."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-03-11",
+      "new_status": "Embassy",
+      "event_description": "Embassy Dushanbe reopened by Ambassador Escudero, restoring full U.S. diplomatic representation in Tajikistan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "Escudero reopened the Embassy on March 11, 1993."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Tajikistan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Both record the establishment of the American Embassy in Dushanbe on 1992-03-13. Event 1 has a citation error flag, but the quoted text is consistent and the date matches exactly."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1992-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the U.S. and Tajikistan via presidential press statement, but no mission yet opened.",
+        "notes": "High-confidence RDCR event. This represents the initial recognition of Tajikistan prior to the embassy opening on March 13. Should be added as the first event for Tajikistan."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1992-10-25",
+        "new_status": "None",
+        "event_description": "Embassy Dushanbe was closed and all U.S. personnel were withdrawn during the Tajik civil war.",
+        "notes": "From POCOM source. Represents a significant interruption in U.S. diplomatic presence. Should be added to capture the embassy closure."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1993-03-11",
+        "new_status": "Embassy",
+        "event_description": "Embassy Dushanbe reopened by Ambassador Escudero, restoring full U.S. diplomatic representation.",
+        "notes": "From POCOM source. Represents the reopening after the 1992 closure. Should be added to capture the restoration of the embassy."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

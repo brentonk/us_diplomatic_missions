@@ -1,0 +1,136 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01214hQfA8hQugY98kASEy5M",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2856,
+      "output_tokens": 957
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-11",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Diplomatic relations established when the American Consul at Brazzaville, Alan W. Lukens, presented credentials as nonresident Charg\u00e9 d'Affaires.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 11, 1960, when the American Consul at Brazzaville, Alan W. Lukens, presented his credentials as Charge d'Affaires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1961-02-01",
+      "new_status": "Embassy",
+      "event_description": "Embassy Fort Lamy (now N'Djamena) established with Frederic L. Chapin as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Fort Lamy (now N'Djamena) was established on February 1, 1961, with Frederic L. Chapin as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-03-24",
+      "new_status": "None",
+      "event_description": "Embassy N'Djamena closed after American diplomatic personnel were evacuated due to heavy fighting in the city.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The Embassy in N'Djamena was closed on March 24, 1980, when American diplomatic personnel were evacuated following the outbreak of heavy fighting in the city."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1982-01-15",
+      "new_status": "Embassy",
+      "event_description": "Embassy N'Djamena reopened with John Blane as Principal Officer and Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "The Embassy in N'Djamena was reopened on January 15, 1982, with John Blane as Principal Officer and Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-08-11",
+      "new_status": "Embassy",
+      "event_description": "Initial U.S. diplomatic presence established in Chad upon independence, with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-11."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Chad",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. RDCR confirms Embassy Fort Lamy established on February 1, 1961."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. RDCR confirms Embassy N'Djamena closed on March 24, 1980."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Perfect match. RDCR confirms Embassy N'Djamena reopened on January 15, 1982."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          4
+        ],
+        "field": "new_status",
+        "csv_value": "Consul Nonresident",
+        "extracted_value": "Ambassador Nonresident (RDCR: diplomatic relations established, American Consul at Brazzaville presented credentials as Charg\u00e9 d'Affaires); Embassy (POCOM)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "The RDCR text explicitly states that 'Diplomatic relations were established on August 11, 1960, when the American Consul at Brazzaville, Alan W. Lukens, presented his credentials as Charg\u00e9 d'Affaires.' While Lukens held the title of Consul at Brazzaville, his accreditation to Chad was as Charg\u00e9 d'Affaires (a diplomatic, not consular, role), establishing diplomatic relations on a nonresident basis from Brazzaville. This is characteristic of 'Ambassador Nonresident' (or more precisely nonresident diplomatic representation at the charg\u00e9 level) rather than 'Consul Nonresident.' The CSV's 'Consul Nonresident' appears to conflate Lukens's existing consular title at Brazzaville with his new diplomatic accreditation to Chad. RDCR as the primary source supports 'Ambassador Nonresident' status."
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018gtUufubFBPMnezW8v1rQf",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6129,
+      "output_tokens": 1191
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Venezuela",
+    "source_file": "pocom/missions-countries/venezuela.xml",
+    "events": [
+      {
+        "date": "1835-06-30",
+        "new_status": "Legation",
+        "event_description": "U.S. legation established in Venezuela with the presentation of credentials by the first Charg\u00e9 d'Affaires, John G.A. Williamson.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Gustavus Adolphus Williamson, Charg\u00e9 d'Affaires. Appointed: 1835-03-03. Credentials presented: 1835-06-30. Died at post on 1840-08-07."
+          }
+        ]
+      },
+      {
+        "date": "1888-09-18",
+        "new_status": "Legation",
+        "event_description": "Mission elevated from Minister Resident to Envoy Extraordinary and Minister Plenipotentiary, the highest Legation rank.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 40,
+            "line_end": 42,
+            "quote": "Charles Lewis Scott, Minister Resident/Consul General. Appointed: 1885-04-28. Credentials presented: 1885-06-24. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1888-09-18."
+          }
+        ]
+      },
+      {
+        "date": "1908-06-20",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Venezuela.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "Jacob Sleeper was serving as Charg\u00e9 d'Affaires ad interim on June 20, 1908, on which date he notified the Government of Venezuela that the United States had severed diplomatic relations with Venezuela."
+          }
+        ]
+      },
+      {
+        "date": "1909-03-15",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations with Venezuela re-established when Minister Russell presented new credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "Russell presented new credentials on March 15, 1909, when diplomatic relations were re-established."
+          }
+        ]
+      },
+      {
+        "date": "1939-08-14",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated to Embassy with the presentation of credentials by the first Ambassador, Francis Patrick Corrigan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 72,
+            "line_end": 72,
+            "quote": "Francis Patrick Corrigan, Ambassador Extraordinary and Plenipotentiary. Appointed: 1939-01-20. Credentials presented: 1939-08-14. Left Venezuela 1947-09-05."
+          }
+        ]
+      }
+    ]
+  }
+}

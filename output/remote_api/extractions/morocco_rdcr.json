@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013JRKzbBZyJB32i4h425PZj",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3317,
+      "output_tokens": 914
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Morocco",
+    "source_file": "rdcr/articles/morocco.xml",
+    "events": [
+      {
+        "date": "1905-03-08",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when the American consulate at Tangier was elevated to the status of a legation, with Samuel Gummere named American Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "Diplomatic relations were established on March 8, 1905, when the American consulate at Tangier was elevated to the status of a legation, and Samuel Gummere was named American Minister Plenipotentiary, with a letter of credence dated March 21."
+          }
+        ]
+      },
+      {
+        "date": "1917-10-20",
+        "new_status": "Liaison",
+        "event_description": "Upon U.S. recognition of the French and Spanish protectorate over Morocco, the U.S. Minister at Tangier was downgraded to the status of Diplomatic Agent.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 36,
+            "line_end": 36,
+            "quote": "upon U.S. entry into the First World War, the U.S. Government issued a statement recognizing the protectorate over Morocco on October 20, 1917, whereupon the U.S. Minister at Tangier was downgraded to the status of Diplomatic Agent."
+          }
+        ]
+      },
+      {
+        "date": "1956-06-11",
+        "new_status": "Embassy",
+        "event_description": "Following recognition of Moroccan independence, the post of diplomatic agent was raised to ambassador level and the U.S. Embassy was established at the capital of Rabat, with William J. Porter as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "the post of diplomatic agent was again raised, this time to the level of ambassador, and the U.S. embassy was established at the capital of Rabat on Jun 11, 1956, with William J. Porter as Charg\u00e9 d'Affaires ad interim"
+          }
+        ]
+      }
+    ]
+  }
+}

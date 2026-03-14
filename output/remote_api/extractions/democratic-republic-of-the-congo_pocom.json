@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014NXyQ5jJmLhDBtUpPcvWSe",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3389,
+      "output_tokens": 652
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Democratic Republic of the Congo",
+    "source_file": "pocom/missions-countries/congo-democratic-republic.xml",
+    "events": [
+      {
+        "date": "1960-06-30",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in the Congo, with John Doren Tomlinson presenting credentials as the first Charg\u00e9 d'Affaires ad interim, followed shortly by the first resident Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 5,
+            "quote": "John Doren Tomlinson, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-06-30.\n\nClare Hayes Timberlake, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-07-05. Credentials presented: 1960-07-25."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CQ4z3JEis7ocFDyT5Vaygy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3677,
+      "output_tokens": 2268
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nicaragua",
+    "source_file": "rdcr/articles/nicaragua.xml",
+    "events": [
+      {
+        "date": "1824-08-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "The United States established diplomatic relations with the Federation of Central American States (of which Nicaragua was a member) when President Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary. No resident mission in Nicaragua was established at this time.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The United States established diplomatic relations with the Federation of Central American States when President James Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary on August 4, 1824."
+          }
+        ]
+      },
+      {
+        "date": "1849-12-24",
+        "new_status": "Envoy Nonresident",
+        "event_description": "The United States recognized independent Nicaragua and established diplomatic relations when President Polk received Nicaraguan Charg\u00e9 d'Affaires Eduardo Carcache. No resident U.S. mission in Nicaragua was yet established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Diplomatic relations were established between Nicaragua and the United States on December 24, 1849, when President James K. Polk received Nicaraguan Charg\u00e9 d'Affaires, Eduardo Carcache."
+          }
+        ]
+      },
+      {
+        "date": "1851-02-18",
+        "new_status": "Legation",
+        "event_description": "The first U.S. diplomatic mission in Nicaragua was established when Charg\u00e9 d'Affaires John B. Kerr presented his credentials, creating a resident legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "The First U.S. diplomatic mission in Nicaragua was established on February 18, 1851, when Charg\u00e9 d'Affaires John B. Kerr presented his credentials."
+          }
+        ]
+      },
+      {
+        "date": "1909-12-01",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Nicaragua when Secretary of State Knox returned the passport of the Nicaraguan Charg\u00e9 d'Affaires, ending all formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "The United States severed diplomatic relations with Nicaragua on December 1, 1909, when Secretary of State Philander Chase Knox returned the passport of the Nicaraguan Charg\u00e9 d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1911-02-21",
+        "new_status": "Legation",
+        "event_description": "The United States re-established diplomatic relations with Nicaragua and restored the resident legation when Envoy Extraordinary and Minister Plenipotentiary Elliot Northcott presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "The United States re-established diplomatic relations with Nicaragua on February 21, 1911, when Envoy Extraordinary and Minister Plenipotentiary Elliot Northcott presented his credentials to the government of President Estrada."
+          }
+        ]
+      },
+      {
+        "date": "1943-03-27",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation at Managua was raised to an Embassy when Envoy Extraordinary and Minister Plenipotentiary James B. Stewart was promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 51,
+            "quote": "The Legation at Managua was raised to an Embassy on March 27, 1943, when U.S. Envoy Extraordinary and Minister Plenipotentiary to Nicaragua James B. Stewart was promoted to Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      },
+      {
+        "date": "1947-06-05",
+        "new_status": "None",
+        "event_description": "The United States effectively severed diplomatic relations with Nicaragua after Somoza Garc\u00eda's coup, informing the Nicaraguan Ambassador that the U.S. would not enter into official relations with the new regime.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "When Nicaraguan Ambassador to the United States, Guillermo Sevilla Sacasa called at the U.S. Department of State on June 5 he was received in his private capacity and informed that the U.S. Government \"would not be disposed to enter into official relations with the regime then in power in Nicaragua.\""
+          }
+        ]
+      },
+      {
+        "date": "1948-09-01",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations were reestablished at the embassy level when U.S. Ambassador Extraordinary and Plenipotentiary George P. Shaw presented his credentials to Nicaragua.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "George P. Shaw, U.S. Ambassador Extraordinary and Plenipotentiary, presented his credentials on September 1, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1988-07-11",
+        "new_status": "Liaison",
+        "event_description": "The Nicaraguan government expelled U.S. Ambassador Richard Melton and seven other Embassy members. The American Embassy in Managua remained open but was headed only by a Charg\u00e9 d'Affaires ad interim, reducing effective representation below full ambassadorial level.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 63,
+            "line_end": 63,
+            "quote": "On July 11, 1988 the Nicaraguan Government expelled the American Ambassador to Nicaragua, Richard Melton, along with seven other members of the American Embassy at Managua. The American Embassy in Managua remained open under Ronald D. Godard as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1990-06-21",
+        "new_status": "Embassy",
+        "event_description": "Full ambassadorial relations were resumed when Harry W. Shlaudeman presented his credentials as U.S. Ambassador to Nicaragua.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "Harry W. Shlaudeman presented his credentials as U.S. Ambassador to Nicaragua on June 21, 1990."
+          }
+        ]
+      }
+    ]
+  }
+}

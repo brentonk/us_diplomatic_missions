@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TE5V9zwQG7o8NdqFr3VA3u",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2153,
+      "output_tokens": 273
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Jordan",
+    "source_file": "rdcr/articles/jordan.xml",
+    "events": [
+      {
+        "date": "1949-02-18",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Jordan were established when Wells Stabler presented his credentials as Charg\u00e9 d'Affaires ad interim at Amman.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation in Jordan were established on February 18, 1949 when Wells Stabler presented his credentials as Charg\u00e9 d'Affaires ad interim at Amman."
+          }
+        ]
+      }
+    ]
+  }
+}

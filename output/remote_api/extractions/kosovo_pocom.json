@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WMjsWqsVsxai3ZpK5e3iC4",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2250,
+      "output_tokens": 613
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kosovo",
+    "source_file": "pocom/missions-countries/kosovo.xml",
+    "events": [
+      {
+        "date": "2008-04-08",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Kosovo established with Tina S. Kaidanow as Charg\u00e9 d'Affaires ad interim, the first U.S. chief of mission to Kosovo following its declaration of independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Tina S Kaidanow, Charg\u00e9 d'Affaires ad interim. Credentials presented: 2008-04-08. Left post: 2008-07."
+          }
+        ]
+      },
+      {
+        "date": "2008-07-25",
+        "new_status": "Embassy",
+        "event_description": "Tina S. Kaidanow presents credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Kosovo, confirming full embassy-level representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Tina S Kaidanow, Ambassador Extraordinary and Plenipotentiary. Appointed: 2008-06-30. Credentials presented: 2008-07-25. Left post on 2009-07-06."
+          }
+        ]
+      }
+    ]
+  }
+}

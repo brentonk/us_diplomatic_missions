@@ -1,0 +1,85 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UdV9eRPqjcnNrYgbEWsDXC",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2626,
+      "output_tokens": 595
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1823-12-16",
+      "new_status": "Legation",
+      "event_description": "Richard Anderson presented his credentials to the Colombian Government, establishing the U.S. Legation in Colombia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Richard Anderson of Kentucky was named U.S. Minister to Colombia on January 27, 1823, and he presented his credentials to the Colombian Government on December 16, 1823, thus establishing the U.S. Mission in Colombia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1939",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Colombia was raised to the rank of Embassy; Spruille Braden became the first U.S. Ambassador to Colombia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The U.S. Legation in Colombia was raised to the rank of Embassy in 1939. Spruille Braden became the first U.S. Ambassador to Colombia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1939-02-15",
+      "new_status": "Embassy",
+      "event_description": "Spruille Braden presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 80,
+          "line_end": 80,
+          "quote": "Spruille Braden, Ambassador Extraordinary and Plenipotentiary. Appointed: 1939-01-20. Credentials presented: 1939-02-15. Left Colombia 1942-03-12."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Colombia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1823-12-16) and status (Legation). Both refer to Richard Anderson presenting credentials to establish the U.S. Legation."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "RDCR (Event 1) gives only the year 1939 for the elevation to Embassy, without a specific institutional date. POCOM (Event 2) provides 1939-02-15 as Braden's credential presentation date. Per source priority rules, since RDCR lacks a specific date, POCOM's date of 1939-02-15 is used, which matches the CSV exactly. CSV note confirms the POCOM source."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

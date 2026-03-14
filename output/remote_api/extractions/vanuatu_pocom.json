@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015a9ZcrrDTxVvE6fwDzyyuv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2589,
+      "output_tokens": 534
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Vanuatu",
+    "source_file": "pocom/missions-countries/vanuatu.xml",
+    "events": [
+      {
+        "date": "1987-04-10",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Vanuatu. First U.S. Ambassador Everett E. Bierman presented credentials in Port Moresby (Papua New Guinea), confirming a nonresident posting.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Everett E Bierman, Ambassador Extraordinary and Plenipotentiary. Appointed: 1987-03-13. Credentials presented: 1987-04-10. Left Port Moresby 1989-10-30."
+          }
+        ]
+      }
+    ]
+  }
+}

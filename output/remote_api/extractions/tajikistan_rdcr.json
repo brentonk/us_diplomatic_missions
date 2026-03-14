@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Cyvh63QnR4WpBjbCvsxT2b",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2217,
+      "output_tokens": 400
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tajikistan",
+    "source_file": "rdcr/articles/tajikistan.xml",
+    "events": [
+      {
+        "date": "1992-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the U.S. and Tajikistan, but no mission yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on February 19, 1992, when President George H.W. Bush announced the decision in a press statement."
+          }
+        ]
+      },
+      {
+        "date": "1992-03-13",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Dushanbe was established with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The American Embassy in Embassy Dushanbe was established March 13, 1992, with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

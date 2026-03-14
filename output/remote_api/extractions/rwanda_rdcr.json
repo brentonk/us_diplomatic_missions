@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DF4iSraHgq6pR5sV59yox7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2187,
+      "output_tokens": 277
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Rwanda",
+    "source_file": "rdcr/articles/rwanda.xml",
+    "events": [
+      {
+        "date": "1962-07-01",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Kigali was established, with David J.S. Manbey as Charg\u00e9 d'Affaires ad interim, coinciding with Rwandan independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on July 1, 1962, when the American Embassy at Kigali was established, with David J.S. Manbey as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

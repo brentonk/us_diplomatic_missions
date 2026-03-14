@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017i3P7XMyWpy5G5saSSYcNQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2110,
+      "output_tokens": 238
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Philippines",
+    "source_file": "rdcr/articles/philippines.xml",
+    "events": [
+      {
+        "date": "1946-07-04",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established and the American Embassy opened when Ambassador Paul V. McNutt presented his credentials on Philippine independence day.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on July 4, 1946, when American Ambassador Paul V. McNutt presented his credentials."
+          }
+        ]
+      }
+    ]
+  }
+}

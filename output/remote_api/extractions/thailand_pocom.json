@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_012zyRBwvh48A3PtZq34E9MN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4890,
+      "output_tokens": 1049
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Thailand",
+    "source_file": "pocom/missions-countries/thailand.xml",
+    "events": [
+      {
+        "date": "1882-10-23",
+        "new_status": "Legation",
+        "event_description": "First U.S. Minister Resident/Consul General to Siam presents credentials, establishing a U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Acoming Jr Halderman, Minister Resident/Consul General. Appointed: 1882-07-13. Credentials presented: 1882-10-23. Left post on 1885-04-01. Note: Commissioned to Siam."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-08",
+        "new_status": "None",
+        "event_description": "Japanese forces occupied Bangkok; Thailand subsequently declared war on the United States, ending U.S. diplomatic representation. The minister was interned and eventually left post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "Japanese forces occupied Bangkok 1941-12-08. Note: Thailand declared war on the United States on January 25, 1942. Peck, having been interned, left post on June 29, 1942."
+          }
+        ]
+      },
+      {
+        "date": "1946-01-05",
+        "new_status": "Legation",
+        "event_description": "U.S. Charg\u00e9 d'Affaires presents credentials, re-establishing U.S. diplomatic representation in Thailand after the wartime break.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "Charles Woodruff Yost, Charg\u00e9 d'Affaires. Credentials presented: 1946-01-05. Superseded 1946-07-04. Note: Not commissioned; letter of credence sent to Yost by telegram on October 16, 1945."
+          }
+        ]
+      },
+      {
+        "date": "1947-05-09",
+        "new_status": "Embassy",
+        "event_description": "Edwin Forward Stanton promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 43,
+            "quote": "Edwin Forward Stanton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-04-27. Credentials presented: 1946-07-04. Promoted to Ambassador Extraordinary and Plenipotentiary 1947-05-09."
+          }
+        ]
+      }
+    ]
+  }
+}

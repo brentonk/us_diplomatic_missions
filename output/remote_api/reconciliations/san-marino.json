@@ -1,0 +1,72 @@
+{
+  "run_timestamp": "2026-03-13T11:17:12.987356-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EncLm1FL8yKTYqBPWRi1hH",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2581,
+      "output_tokens": 753
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "2006-11-22",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The U.S. appointed its first Ambassador to San Marino on November 22, 2006. Ambassador Ronald Spogli, who was concurrently the U.S. Ambassador to Italy and resident in Rome, presented his credentials to San Marino on March 8, 2007.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "did not appoint its first diplomatic ambassador to that country until November 22, 2006."
+        },
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Ambassador Ronald Spogli, who was also the U.S. Ambassador to Italy, presented his credentials to San Marino on March 8, 2007, and was resident in Rome."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2007-03-08",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Ronald Spogli presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to San Marino, establishing nonresident ambassadorial relations. Spogli was based in Rome.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Ronald Spogli, Ambassador Extraordinary and Plenipotentiary. Appointed: 2006-11-22. Credentials presented: 2007-03-08. Left post on 2009-02-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "San Marino",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "RDCR (Event 0) gives the appointment date as 2006-11-22 and credential presentation as 2007-03-08. POCOM (Event 1) confirms credentials presented 2007-03-08. Since RDCR's 2006-11-22 is an appointment/personnel date (not an explicit institutional transition date), the credential presentation date of 2007-03-08 from POCOM is the correct institutional date per source priority rules. The CSV correctly uses 2007-03-08."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "The 1925-04-09 Consulate event is not covered by any extracted event. The source texts provided focus on the ambassadorial relationship beginning in 2006-2007 and do not address the earlier consular establishment. This may be correct but is simply outside the scope of the extracted sources."
+      }
+    ],
+    "discrepancies": []
+  }
+}

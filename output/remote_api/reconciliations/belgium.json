@@ -1,0 +1,144 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019y2CNY7Ygbucb3j6S1VqpP",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2771,
+      "output_tokens": 782
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1832-09-25",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation in Brussels established when Charg\u00e9 d'Affaires Hugh Legare presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The U.S. Legation in Brussels was established on September 25, 1832, when Charg\u00e9 d'Affaires, Hugh Legare, presented his credentials in Brussels."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1919-10-03",
+      "new_status": "Embassy",
+      "event_description": "U.S. Legation in Brussels elevated to an Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The U.S. Legation in Brussels was elevated to an embassy on October 3, 1919."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1940-07-15",
+      "new_status": "None",
+      "event_description": "U.S. Embassy in Brussels closed following the German invasion of Belgium.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "The United States closed its embassy in Brussels on July 15, 1940, after the German invasion of Belgium."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1940-11-01",
+      "new_status": "Embassy",
+      "event_description": "Embassy near the Belgian Government-in-exile in England re-established, with Rudolph E. Schoenfeld designated as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Rudolph E. Schoenfeld was designated on November 1, 1940, to serve as Charg\u00e9 d'Affaires ad interim near the Government of Belgium established in England."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": true
+    },
+    {
+      "date": "1944-09-14",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Brussels reestablished with Ernest de W. Mayer as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The U.S. Embassy in Brussels was reestablished on September 14, 1944, with Ernest de W. Mayer as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Belgium",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both record the establishment of the U.S. Legation in Brussels on 1832-09-25."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both record the elevation of the Legation to Embassy on 1919-10-03."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "U.S. Embassy in Brussels closed following the German invasion of Belgium.",
+        "notes": "High-confidence RDCR event. Strong candidate for addition to CSV."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1940-11-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy re-established near the Belgian Government-in-exile in England, with Rudolph E. Schoenfeld designated as Charg\u00e9 d'Affaires ad interim.",
+        "notes": "CITATION ERROR flagged \u2014 treat with extra skepticism. However, the event is historically plausible (U.S. maintained diplomatic relations with the Belgian government-in-exile during WWII). The evidence text describes a personnel designation rather than a formal embassy reopening, so the exact status and date should be verified against the original RDCR text."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1944-09-14",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Brussels reestablished with Ernest de W. Mayer as Charg\u00e9 d'Affaires ad interim.",
+        "notes": "High-confidence RDCR event. This marks the return of the Embassy to Brussels after liberation. Strong candidate for addition to CSV."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

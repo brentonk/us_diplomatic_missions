@@ -1,0 +1,85 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KkcJyk5MfQxRYKkQo9guro",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2736,
+      "output_tokens": 487
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1824-04-23",
+      "new_status": "Legation",
+      "event_description": "The United States established diplomatic relations with Chile when Envoy Extraordinary and Minister Plenipotentiary Heman Allen presented his credentials to Supreme Director Ram\u00f3n Freire Serrano.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "The United States established diplomatic relations with Chile when Envoy Extraordinary and Minister Plenipotentiary Heman Allen of Vermont presented his credentials to Ram\u00f3n Freire Serrano, who had replaced Bernardo O'Higgins as Supreme Director, on April 23, 1824."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1914-10-01",
+      "new_status": "Embassy",
+      "event_description": "The United States elevated its Legation in Santiago to Embassy status, with U.S. Minister Henry P. Fletcher appointed as U.S. Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "The United States elevated its Legation in Santiago to Embassy status on October 1, 1914, when U.S. Minister to Chile Henry P. Fletcher was appointed as U.S. Ambassador Extraordinary and Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1914-11-19",
+      "new_status": "Embassy",
+      "event_description": "U.S. mission elevated from Legation to Embassy when Henry Prather Fletcher was promoted to Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 51,
+          "line_end": 53,
+          "quote": "Henry Prather Fletcher, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1909-12-21. Credentials presented: 1910-09-09. Promoted to Ambassador Extraordinary and Plenipotentiary 1914-11-19.\n\nHenry Prather Fletcher, Ambassador Extraordinary and Plenipotentiary. Appointed: 1914-10-01. Credentials presented: 1914-11-19. Left Chile 1916-03-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Chile",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1824-04-23) and status (Legation). RDCR high confidence."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1914-10-01 matches RDCR (Event 1). POCOM (Event 2) gives 1914-11-19, which is the credential presentation date for Fletcher as Ambassador. Per source priority, RDCR's explicit institutional elevation date of 1914-10-01 is correct, and the CSV follows this."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

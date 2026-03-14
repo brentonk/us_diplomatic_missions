@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01P1wfNLXQTXQHcoBm1EhaAU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3170,
+      "output_tokens": 1249
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Estonia",
+    "source_file": "pocom/missions-countries/estonia.xml",
+    "events": [
+      {
+        "date": "1922-11-20",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Frederick William Backus Coleman presented credentials as Envoy Extraordinary and Minister Plenipotentiary, establishing nonresident ministerial relations with Estonia (resident in Riga, Latvia).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Frederick William Backus Coleman, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-09-20. Credentials presented: 1922-11-20. Left Riga 1931-10-20."
+          }
+        ]
+      },
+      {
+        "date": "1930-06-30",
+        "new_status": "Legation",
+        "event_description": "Legation Tallinn was established, elevating U.S. representation from nonresident envoy to a resident legation, with Harry E. Carlson as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Legation Tallinn was established on June 30, 1930, with Harry E. Carlson as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "Legation Tallinn was officially closed following Soviet occupation of Tallinn and withdrawal of all U.S. diplomatic officials, ending formal U.S. diplomatic representation in Estonia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 16,
+            "quote": "All U.S. diplomatic officials accredited to Estonia were withdrawn from Tallinn 1940-09-04. [Mission Note] Legation Tallinn was officially closed on September 5, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-02",
+        "new_status": "Embassy",
+        "event_description": "Robert C Frasure presented credentials as Charg\u00e9 d'Affaires ad interim, re-establishing U.S. diplomatic representation in Estonia after the restoration of Estonian independence, with the mission operating as an embassy.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 18,
+            "quote": "The United States announced its readiness to re-establish relations with Estonia on September 2, 1991. Robert C Frasure, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1991-10-02."
+          }
+        ]
+      }
+    ]
+  }
+}

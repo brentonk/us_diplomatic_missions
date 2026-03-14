@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SaTVbyhvqXxCiNjSruQPH5",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2439,
+      "output_tokens": 340
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1980-01-24",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "John P. Condon became the first U.S. Ambassador to Tuvalu, presenting credentials on January 24, 1980. He was resident at Suva, Fiji, and no mission was established in Funafuti.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "John P. Condon became the first U.S. Ambassador to Tuvalu on January 24, 1980, when he presented his credentials. Condon also was accredited to Fiji and Tonga, and was resident at Suva. Since that time, the Ambassadors to Tuvalu have remained resident at Suva, and no mission has been established in Funafuti, Tuvalu."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Tuvalu",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. RDCR confirms John P. Condon presented credentials on 1980-01-24 as first U.S. Ambassador to Tuvalu, resident at Suva, Fiji, with no mission established in Funafuti."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

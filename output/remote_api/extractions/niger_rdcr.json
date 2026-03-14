@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015FE4NwLwbKuhE5PALrfm1T",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2325,
+      "output_tokens": 596
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Niger",
+    "source_file": "rdcr/articles/niger.xml",
+    "events": [
+      {
+        "date": "1960-08-03",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations established with Niger upon independence; Donald R. Norland presented credentials as Charg\u00e9 d'Affaires ad interim, representing an informal diplomatic presence prior to the formal embassy opening.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 3, 1960, when Donald R. Norland presented credentials as Charg\u00e9 d'Affaires ad interim, August 2, 1960, to take effect the following day."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-03",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Niamey was formally established, with Joseph W. Schutz as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The American Embassy in Niamey was established on February 3, 1961, with Joseph W. Schutz as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

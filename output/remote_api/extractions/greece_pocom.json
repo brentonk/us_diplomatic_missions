@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01YJQcfd7WZV4kTqTwigC9aZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5736,
+      "output_tokens": 1536
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Greece",
+    "source_file": "pocom/missions-countries/greece.xml",
+    "events": [
+      {
+        "date": "1868-06-16",
+        "new_status": "Legation",
+        "event_description": "First U.S. chief of mission to Greece, Charles Keating Tuckerman (Minister Resident), presented credentials, establishing the U.S. Legation in Greece.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Charles Keating Tuckerman, Minister Resident. Appointed: 1868-03-11. Credentials presented: 1868-06-16. Presented recall on 1871-11-04."
+          }
+        ]
+      },
+      {
+        "date": "1920-12-06",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations with Greece were interrupted, ending the U.S. Legation's active operations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "Edward Capps, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1920-06-18. Credentials presented: 1920-10-11. Normal relations interrupted on 1920-12-06."
+          }
+        ]
+      },
+      {
+        "date": "1922-02",
+        "new_status": "Legation",
+        "event_description": "Jefferson Caffery, Charg\u00e9 d'Affaires ad interim, presented credentials, resuming U.S. diplomatic representation in Greece at the legation level.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "Jefferson Caffery, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1922-02. Left post: 1923-05."
+          }
+        ]
+      },
+      {
+        "date": "1941-07-14",
+        "new_status": "None",
+        "event_description": "The U.S. Legation in Athens was closed as Germany occupied Greece, ending resident diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 59,
+            "quote": "Leslie E. Reed was serving as Charg\u00e9 d'Affaires ad interim when the Legation in Athens was closed, July 14, 1941."
+          }
+        ]
+      },
+      {
+        "date": "1941-11-28",
+        "new_status": "Legation",
+        "event_description": "Anthony J. Drexel Biddle Jr. presented credentials as Envoy Extraordinary and Minister Plenipotentiary near the Government of Greece in exile in England, re-establishing the U.S. Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 61,
+            "line_end": 61,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-11-13. Credentials presented: 1941-11-28. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-10-30. Note: Served near the Government of Greece established in England."
+          }
+        ]
+      },
+      {
+        "date": "1942-10-30",
+        "new_status": "Embassy",
+        "event_description": "Biddle was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials, elevating the U.S. mission to Greece from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 63,
+            "line_end": 63,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-09-29. Credentials presented: 1942-10-30. Government of Greece transferred to Egypt on 1943-03-16."
+          }
+        ]
+      }
+    ]
+  }
+}

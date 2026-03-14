@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TP3FnAdtmuoQsVysaDp1bN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3370,
+      "output_tokens": 920
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Chad",
+    "source_file": "pocom/missions-countries/chad.xml",
+    "events": [
+      {
+        "date": "1960-08-11",
+        "new_status": "Embassy",
+        "event_description": "Initial U.S. diplomatic presence established in Chad upon independence, with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-11."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy Fort Lamy (now N'Djamena) formally established, with Frederic L. Hapin as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Blancke's tenure as non-resident Ambassador, Embassy Fort Lamy (now N'Djamena) was established February 1, 1961, with Frederic L. Hapin as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1980-03-24",
+        "new_status": "None",
+        "event_description": "U.S. Embassy in Chad closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Donald Richard Norland, Ambassador Extraordinary and Plenipotentiary. Appointed: 1979-09-28. Credentials presented: 1979-11-17. Embassy closed 1980-03-24."
+          }
+        ]
+      },
+      {
+        "date": "1982-01-15",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Chad reopened, with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "John Propst Blane, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1982-01-15."
+          }
+        ]
+      }
+    ]
+  }
+}

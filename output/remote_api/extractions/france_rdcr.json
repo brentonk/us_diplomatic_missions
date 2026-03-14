@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SMjYsboigJJAx2mMH39GEa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4220,
+      "output_tokens": 1575
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "France",
+    "source_file": "rdcr/articles/france.xml",
+    "events": [
+      {
+        "date": "1779-03-23",
+        "new_status": "Legation",
+        "event_description": "American diplomatic mission (legation) established in Paris when Benjamin Franklin presented his credentials as Minister-Plenipotentiary to the French court.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 29,
+            "quote": "An American diplomatic mission in Paris was first established on March 23, 1779, when Benjamin Franklin presented to the French court his letter of credence as Minister-Plenipotentiary."
+          }
+        ]
+      },
+      {
+        "date": "1798-07-07",
+        "new_status": "None",
+        "event_description": "Diplomatic relations interrupted when the U.S. Congress abrogated the treaties of 1778 following the XYZ affair.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 33,
+            "quote": "In July 7, 1798, following the so-called \"XYZ affair,\" the U.S. Congress abrogated the treaties of 1778 and a pre-existing consular convention."
+          }
+        ]
+      },
+      {
+        "date": "1801-07-31",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations resumed following ratification of the Treaty of Friendship and Commerce (Treaty of Morfontaine) by both sides.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 37,
+            "quote": "Following the outbreak of the Quasi-War, the U.S. and France signed a Treaty of Friendship and Commerce on September 30, 1800 (also known as the Treaty of Morfontaine), which was revised and then later ratified by both sides on July 31, 1801."
+          }
+        ]
+      },
+      {
+        "date": "1893-04-08",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Paris was elevated to embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 41,
+            "quote": "The American Legation in Paris was elevated to embassy status on April 8, 1893. James B. Eustis, who had served as Envoy Extraordinary and Minister Plenipotentiary since March 20, 1893, was the first American Ambassador to France."
+          }
+        ]
+      },
+      {
+        "date": "1942-11-08",
+        "new_status": "None",
+        "event_description": "Vichy France severed diplomatic relations with the United States, ending the U.S. Embassy presence in Vichy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 53,
+            "quote": "Vichy France severed diplomatic relations with the United States on November 8, 1942, when Prime Minister Pierre Laval informed the U.S. Charg\u00e9 in Vichy, S. Pinkney Tuck, of his government's decision."
+          }
+        ]
+      },
+      {
+        "date": "1943-08-26",
+        "new_status": "Liaison",
+        "event_description": "The U.S. recognized the French Committee of National Liberation (FCNL) as an administrative authority (not a government), with Robert D. Murphy serving as U.S. Minister and personal representative in Algiers \u2014 a liaison-level presence short of full diplomatic recognition.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 58,
+            "quote": "The message announced that the U.S. Government \"recognizes the French Committee of National Liberation as administering those territories which acknowledge its authority.\" The message, however, did \"not constitute recognition of a government of France or of the French Empire by the Government of the United States.\""
+          }
+        ]
+      },
+      {
+        "date": "1944-10-23",
+        "new_status": "Embassy",
+        "event_description": "The U.S. recognized the Provisional Government of the French Republic and Jefferson Caffery was acknowledged as U.S. Ambassador to France, re-establishing full embassy-level relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 60,
+            "line_end": 63,
+            "quote": "On October 23, 1944, the Department of State issued a press release announcing the recognition of the PGFR by the U.S. Government, and that Caffery would assume the position of U.S. Ambassador to France. On the same day, in Paris, Caffery and representatives from the British, Soviet, and Canadian Governments called on French Foreign Minister, Georges Bidault. They provided him with letters extending diplomatic recognition from their Governments and Bidault reciprocated by acknowledging them as duly-accredited ambassadors to France."
+          }
+        ]
+      }
+    ]
+  }
+}

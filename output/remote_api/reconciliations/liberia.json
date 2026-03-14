@@ -1,0 +1,100 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QifyxUusEndkGjVw4vyjid",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2729,
+      "output_tokens": 774
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1864-02-23",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation at Monrovia were established when Commissioner and Consul General Abraham Hanson presented his credentials to the Liberian government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "Diplomatic relations and the American Legation at Monrovia were established on February 23, 1864, when American Commissioner and Consul General Abraham Hanson presented his credentials to the Liberian government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1949-05-06",
+      "new_status": "Embassy",
+      "event_description": "The American Legation at Monrovia was elevated to Embassy status when Ambassador Edward R. Dudley presented his credentials to the Liberian government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "The American Legation at Monrovia was elevated to Embassy status on May 6, 1949, when Ambassador Edward R. Dudley presented his credentials to the Liberian government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1864-02-23",
+      "new_status": "Liaison",
+      "event_description": "Abraham Hanson presented credentials as Commissioner and Consul General, establishing the first U.S. diplomatic presence in Liberia. The title 'Commissioner' indicates a liaison/diplomatic agent role rather than a full legation.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Abraham Hanson, Commissioner and Consul General. Appointed: 1863-06-08. Credentials presented: 1864-02-23."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1867-01-02",
+      "new_status": "Legation",
+      "event_description": "John Seys presented credentials as Minister Resident/Consul General, elevating U.S. representation to a legation-level mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "John Seys, Minister Resident/Consul General. Appointed: 1866-10-08. Credentials presented: 1867-01-02."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Liberia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1864-02-23) and status (Legation). RDCR explicitly states the American Legation was established on this date. Event 2 (POCOM) covers the same date but misinterprets the 'Commissioner' title as Liaison; RDCR is primary and clearly says 'Legation.' Event 3 (POCOM, 1867-01-02) is a subsequent personnel event (new Minister Resident presenting credentials) at the already-established Legation, not a new institutional transition."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1949-05-06) and status (Embassy). RDCR explicitly states the Legation was elevated to Embassy status on this date."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

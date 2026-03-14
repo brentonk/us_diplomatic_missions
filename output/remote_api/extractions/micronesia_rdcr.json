@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EpnqJ4s2T2LDZyT3V6AK7A",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2318,
+      "output_tokens": 533
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Micronesia",
+    "source_file": "rdcr/articles/micronesia.xml",
+    "events": [
+      {
+        "date": "1986-11-03",
+        "new_status": "Liaison",
+        "event_description": "The United States opened an Office of the U.S. Representative in Micronesia upon independence, establishing diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "On November 3, 1986, the United States opened an Office of the U.S. Representative. Michael G. Wygant presented his credentials on October 2, 1987."
+          }
+        ]
+      },
+      {
+        "date": "1989-09-20",
+        "new_status": "Embassy",
+        "event_description": "The Office of the U.S. Representative was upgraded to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "On September 20, 1989, the Office of the U.S. Representative was upgraded to Embassy status. The first U.S. Ambassador to the Federated States of Micronesia, Aurelia Erskine Brazeal, presented her credentials on September 18, 1990."
+          }
+        ]
+      }
+    ]
+  }
+}

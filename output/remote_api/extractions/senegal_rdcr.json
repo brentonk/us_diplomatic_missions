@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XAqQevd8yYtpzCQNdhEDJF",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2227,
+      "output_tokens": 310
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Senegal",
+    "source_file": "rdcr/articles/senegal.xml",
+    "events": [
+      {
+        "date": "1960-09-24",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Dakar was established in the Republic of Senegal, with Roswell D. McClelland as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Senegal following its withdrawal from the Federation of Mali.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established with the Republic of Senegal on September 24, 1960, when the American Embassy at Dakar in the Republic of Senegal was established, with Roswell D. McClelland as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

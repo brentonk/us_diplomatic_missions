@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CorUqZQhHn7wNfN4ZL3HRQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2363,
+      "output_tokens": 525
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Vietnam",
+    "source_file": "pocom/missions-countries/vietnam.xml",
+    "events": [
+      {
+        "date": "1995-08-26",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Vietnam established; Desaix Anderson presented credentials as the first Charg\u00e9 d'Affaires ad interim, marking the opening of diplomatic relations at the embassy level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "L Desaix Anderson, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1995-08-26. Left post: 1997-05-07."
+          }
+        ]
+      }
+    ]
+  }
+}

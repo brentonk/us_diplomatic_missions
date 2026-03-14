@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018JgFiiqV6HkgjDskm6kRvE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2207,
+      "output_tokens": 441
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Korea",
+    "source_file": "rdcr/articles/korea.xml",
+    "events": [
+      {
+        "date": "1883-05-20",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation at Seoul were established when Envoy Extraordinary and Minister Plenipotentiary Lucius H. Foote presented his credentials to the King of Korea.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Diplomatic relations and the American Legation at Seoul were established on May 20, 1883, when Envoy Extraordinary and Minister Plenipotentiary Lucius H. Foote presented his credentials to the King of Korea."
+          }
+        ]
+      },
+      {
+        "date": "1905-11-28",
+        "new_status": "None",
+        "event_description": "Following Japan's assumption of direction of Korean foreign relations, U.S. Envoy Edwin Morgan closed the Legation at Seoul.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Japan assumed direction of Korean foreign relations on November 17, 1905, and U.S. Envoy Edwin Morgan closed the Legation on November 28, 1905."
+          }
+        ]
+      }
+    ]
+  }
+}

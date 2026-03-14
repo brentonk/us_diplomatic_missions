@@ -264,7 +264,7 @@ async def _reconcile_country(
 
 def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None = None) -> list[WorkUnit]:
     """Load work units from Stage 1 output."""
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units = []
     for path in sorted(work_units_dir.glob("*.json")):
         with open(path) as f:
@@ -315,9 +315,9 @@ async def run_stage4_async(
         system_prompt = f.read()
 
     # Set up directories
-    extractions_dir = config.paths.output_dir / "extractions"
-    verifications_dir = config.paths.output_dir / "verifications"
-    output_dir = config.paths.output_dir / "reconciliations"
+    extractions_dir = config.paths.output_dir / "remote_api" / "extractions"
+    verifications_dir = config.paths.output_dir / "local" / "verifications"
+    output_dir = config.paths.output_dir / "remote_api" / "reconciliations"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Initialize API client
@@ -355,7 +355,7 @@ async def run_stage4_async(
             failures.append(country)
 
     # Update manifest
-    manifest_path = config.paths.output_dir / "manifest.json"
+    manifest_path = config.paths.output_dir / "local" / "manifest.json"
     manifest = {}
     if manifest_path.exists():
         with open(manifest_path) as f:

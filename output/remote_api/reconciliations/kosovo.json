@@ -1,0 +1,87 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012y2WtHvFBu3PVZcz6JMuPU",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2636,
+      "output_tokens": 705
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "2008-02-18",
+      "new_status": "None",
+      "event_description": "The United States recognized Kosovo's independence and agreed to establish diplomatic relations, but the text does not specify the opening of a specific mission or credential presentation at this date.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The United States recognized Kosovo's independence and agreed to establish diplomatic relations on February 18, 2008, when Secretary of State Condoleezza Rice released a press statement announcing President George W. Bush's decisions."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2008-04-08",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Kosovo established with Tina S. Kaidanow as Charg\u00e9 d'Affaires ad interim, the first U.S. chief of mission to Kosovo following its declaration of independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Tina S Kaidanow, Charg\u00e9 d'Affaires ad interim. Credentials presented: 2008-04-08. Left post: 2008-07."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2008-07-25",
+      "new_status": "Embassy",
+      "event_description": "Tina S. Kaidanow presents credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Kosovo, confirming full embassy-level representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Tina S Kaidanow, Ambassador Extraordinary and Plenipotentiary. Appointed: 2008-06-30. Credentials presented: 2008-07-25. Left post on 2009-07-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Kosovo",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. CSV date 2008-04-08 matches POCOM credential presentation date for first Charg\u00e9 d'Affaires ad interim. RDCR does not specify a distinct mission opening date, so POCOM's date is correctly used per source priority rules."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "2008-02-18",
+        "new_status": "None",
+        "event_description": "The United States recognized Kosovo's independence and agreed to establish diplomatic relations on February 18, 2008, via a press statement by Secretary Rice announcing President Bush's decisions. No mission was opened on this date.",
+        "notes": "This is a recognition event prior to the embassy opening. Could be added as a precursor event marking the formal recognition of Kosovo, though the extracted confidence is medium and the status 'None' reflects that no mission was yet established on this date. Whether to include depends on whether the dataset tracks recognition events separately from mission openings."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

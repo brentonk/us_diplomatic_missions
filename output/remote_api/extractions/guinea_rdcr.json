@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BdiyAmCwYqXybY9SDASBKf",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2152,
+      "output_tokens": 265
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guinea",
+    "source_file": "rdcr/articles/guinea.xml",
+    "events": [
+      {
+        "date": "1959-02-13",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established and the American Embassy at Conakry opened with Robert W. Rinden as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on February 13, 1959, when the American Embassy at Conakry was established with Robert W. Rinden as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

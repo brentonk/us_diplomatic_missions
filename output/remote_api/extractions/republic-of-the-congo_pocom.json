@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Rvv7UnbWriwZB9ZqB5YXhm",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3032,
+      "output_tokens": 931
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Republic of the Congo",
+    "source_file": "pocom/missions-countries/congo-republic.xml",
+    "events": [
+      {
+        "date": "1960-08-15",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Brazzaville upon Congolese independence, with Alan Wood Lukens as Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-15."
+          }
+        ]
+      },
+      {
+        "date": "1960-12-23",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador Extraordinary and Plenipotentiary, Wilton Wendell Blancke, presented credentials, confirming full Embassy-level representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Wilton Wendell Blancke, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-11-09. Credentials presented: 1960-12-23."
+          }
+        ]
+      },
+      {
+        "date": "1965-08-15",
+        "new_status": "None",
+        "event_description": "All U.S. diplomatic personnel withdrawn from Brazzaville, closing the Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Lloyd Michael Rives, Charg\u00e9 d'Affaires ad interim. All U.S. diplomatic personnel were withdrawn from Brazzaville on 1965-08-15."
+          }
+        ]
+      },
+      {
+        "date": "1977-10-30",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Brazzaville reopened after a break of over a decade, with Jay Kenneth Katzen as Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Jay Kenneth Katzen, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1977-10-30."
+          }
+        ]
+      }
+    ]
+  }
+}

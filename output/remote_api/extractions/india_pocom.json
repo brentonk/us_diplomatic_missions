@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011rjHFH8Yy5tckyBhbp9wW8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3595,
+      "output_tokens": 577
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "India",
+    "source_file": "pocom/missions-countries/india.xml",
+    "events": [
+      {
+        "date": "1946-11-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in India established; George Robert Merrell presented credentials as Charg\u00e9 d'Affaires ad interim, the first U.S. chief of mission to India.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "George Robert Merrell, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1946-11-01."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019G3FPDPo3FgE7eRCC97Qca",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2436,
+      "output_tokens": 960
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Turkey",
+    "source_file": "rdcr/articles/turkey.xml",
+    "events": [
+      {
+        "date": "1831-09-13",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation at Constantinople (Istanbul) established when David Porter presented credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation at Constantinople (Istanbul) were established on September 13, 1831, when David Porter presented his credentials as Charges d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1906-06-18",
+        "new_status": "Embassy",
+        "event_description": "The American Legation was elevated to Embassy status on June 18, 1906. Ambassador John G. A. Leishman presented credentials on October 5, 1906.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The American Legation was elevated to Embassy status on June 18, 1906, when John G. A. Leishman presented his credentials as the Ambassador on October 5, 1906."
+          }
+        ]
+      },
+      {
+        "date": "1917-04-20",
+        "new_status": "None",
+        "event_description": "Turkey severed diplomatic relations with the United States on April 20, 1917, following the U.S. declaration of war against Germany.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Turkey severed diplomatic relations with the United States on April 20, 1917, after the United States declared war against Germany on April 4, 1917."
+          }
+        ]
+      },
+      {
+        "date": "1927-02-17",
+        "new_status": "Embassy",
+        "event_description": "The United States and Turkey reestablished diplomatic relations on February 17, 1927, after an exchange of notes in Angora, Turkey.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "The United States and Turkey reestablished relations on February 17, 1927, after an exchange of notes in Angora, Turkey."
+          }
+        ]
+      }
+    ]
+  }
+}

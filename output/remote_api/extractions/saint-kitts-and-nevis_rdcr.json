@@ -1,0 +1,49 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KHgsXyUcRk6AtZAZtEjYcC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2451,
+      "output_tokens": 834
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saint Kitts and Nevis",
+    "source_file": "rdcr/articles/saint-kitts-nevis.xml",
+    "events": [
+      {
+        "date": "1977-09-01",
+        "new_status": "Liaison",
+        "event_description": "Frank V. Ortiz, Jr. appointed U.S. Special Representative to Saint Christopher-Nevis-Anguilla (among other states), concurrent with his ambassadorship to Barbados and Grenada, establishing a liaison-level presence prior to independence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Frank V. Ortiz, Jr. was appointed United States Special Representative to the States of Antigua, Dominica, Saint Christopher-Nevis-Anguilla, St. Lucia, and Saint Vincent on September 1, 1977. The appointment was concurrent to his positions as Ambassador to Barbados and Grenada."
+          }
+        ]
+      },
+      {
+        "date": "1983-09-20",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established on September 20, 1983, the day after independence. All U.S. ambassadors have been resident at Bridgetown, Barbados, making this a nonresident ambassadorial relationship.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Diplomatic relations were established on September 20, 1983."
+          },
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "All U.S. ambassadors have been resident at Bridgetown, Barbados."
+          }
+        ]
+      }
+    ]
+  }
+}

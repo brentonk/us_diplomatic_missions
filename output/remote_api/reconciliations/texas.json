@@ -1,0 +1,111 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QagB95UeiQpy7LkXu6YDby",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2807,
+      "output_tokens": 961
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1837-10",
+      "new_status": "Legation",
+      "event_description": "Establishment of the U.S. Legation in Houston. Alc\u00e9e La Branche, appointed Charg\u00e9 d'Affaires, presented his credentials sometime between October 23 and 27, 1837.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 24,
+          "line_end": 24,
+          "quote": "Alc\u00e9e La Branche, the appointed Charg\u00e9 d'Affaires of the U.S. Legation in Houston, then functioning as the seat of government, presented his credentials sometime between October 23 and 27, 1837."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": true
+    },
+    {
+      "date": "1846-02-19",
+      "new_status": "None",
+      "event_description": "Diplomatic relations between the United States and the Republic of Texas formally ended upon the transfer of Texan sovereignty to the United States on February 19, 1846.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "Although Texas entered the United States as a state on December 29, 1845, relations formally ended during the transfer of Texan sovereignty to the United States on February 19, 1846."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1837-10-23",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation to Texas established when first Charg\u00e9 d'Affaires Branche Alcee Louis La Branch presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Branche Alcee Louis La, Charg\u00e9 d'Affaires. Appointed: 1837-03-07. Credentials presented: 1837-10-23. Left Texas soon after 1840-06-05."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1845-08-09",
+      "new_status": "None",
+      "event_description": "U.S. Legation to Texas effectively ended as the last Charg\u00e9 d'Affaires, Andrew Jackson Donelson, departed Texas on or soon after this date, with no successor appointed. Texas was in the process of annexation to the United States.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 13,
+          "quote": "Andrew Jackson Donelson, Charg\u00e9 d'Affaires. Appointed: 1844-09-16. Credentials presented: 1844-11-29. Left Texas on or soon after 1845-08-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Texas",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "RDCR (Event 0) gives an imprecise date of '1837-10' with a range of Oct 23-27; has a citation error flag. POCOM (Event 2) gives the exact credential presentation date of 1837-10-23, which matches the CSV. Per source priority, POCOM's specific date is appropriate here since RDCR does not provide a single institutional date. Match confirmed."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. RDCR confirms diplomatic relations formally ended on 1846-02-19 upon the transfer of Texan sovereignty to the United States."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1845-08-09",
+        "new_status": "None",
+        "event_description": "Last U.S. Charg\u00e9 d'Affaires Andrew Jackson Donelson departed Texas on or soon after 1845-08-09, with no successor appointed, as Texas was in the process of annexation.",
+        "notes": "This is a POCOM-sourced personnel departure event (medium confidence), not a formal end of diplomatic relations. The RDCR source (Event 1) explicitly states relations formally ended on 1846-02-19. This event represents the de facto end of active diplomatic personnel presence but not the de jure end of the relationship. Could be added as a supplementary note but should not replace the CSV's Row 2 date of 1846-02-19."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

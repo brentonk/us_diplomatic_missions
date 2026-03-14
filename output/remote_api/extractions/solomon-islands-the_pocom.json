@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017jouwULZ5hpXdNh88y17GN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2899,
+      "output_tokens": 577
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Solomon Islands, The",
+    "source_file": "pocom/missions-countries/solomon-islands.xml",
+    "events": [
+      {
+        "date": "1978-10-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "First U.S. Ambassador to Solomon Islands presents credentials, operating nonresident from Port Moresby.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Mary Seymour Olmsted, Ambassador Extraordinary and Plenipotentiary. Appointed: 1978-08-31. Credentials presented: 1978-10-09. Left Port Moresby 1979-07-28."
+          }
+        ]
+      },
+      {
+        "date": "1988-07-04",
+        "new_status": "Embassy",
+        "event_description": "Embassy Honiara established on July 4, 1988, elevating from nonresident ambassador to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Note: During Bierman's tenure as non-resident Ambassador, Embassy Honiara was established on July 4, 1988, with William Warren as Charge d'affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GWwxpXpsg9hxJDxGyw7PuX",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3711,
+      "output_tokens": 538
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Pakistan",
+    "source_file": "pocom/missions-countries/pakistan.xml",
+    "events": [
+      {
+        "date": "1947-08-15",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Pakistan upon its independence, with Charles William Lewis serving as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Charles William Lewis, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1947-08-15."
+          }
+        ]
+      }
+    ]
+  }
+}

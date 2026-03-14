@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UNbxvJmLaceSXeqv7Rroz2",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3608,
+      "output_tokens": 1329
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Poland",
+    "source_file": "rdcr/articles/poland.xml",
+    "events": [
+      {
+        "date": "1919-05-02",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Warsaw were established when Hugh S. Gibson, the first U.S. Minister to Poland, presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "Diplomatic relations and the American Legation in Warsaw were established on May 2, 1919, when Hugh S. Gibson, the first U.S. Minister to Poland, presented his credentials."
+          }
+        ]
+      },
+      {
+        "date": "1930-05-24",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Warsaw was elevated to Embassy status. John N. Willys, appointed as U.S. Ambassador, presented his credentials on May 24, 1930.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 40,
+            "line_end": 42,
+            "quote": "Alexander P. Moore was appointed as the first U.S. Ambassador to Poland on January 31, 1930, but died before he could be sworn in. John N. Willys was appointed March 8, 1930, presented his credentials on May 24, and served until May 30, 1932."
+          }
+        ]
+      },
+      {
+        "date": "1939-09-05",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy departed Warsaw and followed the Polish Government-in-exile to France after Nazi Germany invaded Poland. The embassy remained open but relocated to Paris.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 50,
+            "line_end": 50,
+            "quote": "Ambassador Anthony J. Drexel Biddle Jr. left Warsaw on September 5, and followed the Government of Poland to France (September 1939-June 1940)."
+          }
+        ]
+      },
+      {
+        "date": "1940-06",
+        "new_status": "Embassy",
+        "event_description": "When France fell to the Axis powers, the American Embassy followed the Polish Government-in-exile from Paris to London.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 54,
+            "line_end": 54,
+            "quote": "When France fell to the Axis powers in June 1940, the Government of Poland-in-exile moved from Paris to London, and with it, the American Ambassador to Poland Anthony J. Drexel Biddle Jr."
+          }
+        ]
+      },
+      {
+        "date": "1945-07-05",
+        "new_status": "None",
+        "event_description": "The U.S. mission to the Government of Poland in London was terminated, ending diplomatic representation to the Polish government-in-exile.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 58,
+            "line_end": 58,
+            "quote": "The U.S. mission to the Government of Poland in London was terminated July 5, 1945."
+          }
+        ]
+      },
+      {
+        "date": "1945-07-31",
+        "new_status": "Embassy",
+        "event_description": "The United States re-established its Embassy in Warsaw at the end of World War II.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 62,
+            "line_end": 62,
+            "quote": "With the end of World War II, the United States re-established its Embassy in Warsaw on July 31, 1945."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015xHAoBJTiYTushUZ7qRbC7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3218,
+      "output_tokens": 744
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Gambia, The",
+    "source_file": "pocom/missions-countries/gambia.xml",
+    "events": [
+      {
+        "date": "1965-08-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Mercer Cook presented credentials as the first U.S. Ambassador to Gambia, serving nonresident from Dakar before a resident embassy was established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Mercer Cook, Ambassador Extraordinary and Plenipotentiary. Appointed: 1965-05-18. Credentials presented: 1965-08-09. Left Dakar 1966-07-01. Note: During Cook's tenure as non-resident Ambassador, Embassy Banjul was established on September 9, 1965, with John G. Gossett as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1965-09-09",
+        "new_status": "Embassy",
+        "event_description": "Embassy Banjul was formally established, with John G. Gossett serving as Charg\u00e9 d'Affaires ad interim, elevating the U.S. presence from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "During Cook's tenure as non-resident Ambassador, Embassy Banjul was established on September 9, 1965, with John G. Gossett as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

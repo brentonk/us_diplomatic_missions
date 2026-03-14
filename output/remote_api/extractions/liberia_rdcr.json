@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KUursvcirVMvF4cwjbPzy1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2310,
+      "output_tokens": 618
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Liberia",
+    "source_file": "rdcr/articles/liberia.xml",
+    "events": [
+      {
+        "date": "1864-02-23",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation at Monrovia were established when Commissioner and Consul General Abraham Hanson presented his credentials to the Liberian government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "Diplomatic relations and the American Legation at Monrovia were established on February 23, 1864, when American Commissioner and Consul General Abraham Hanson presented his credentials to the Liberian government."
+          }
+        ]
+      },
+      {
+        "date": "1949-05-06",
+        "new_status": "Embassy",
+        "event_description": "The American Legation at Monrovia was elevated to Embassy status when Ambassador Edward R. Dudley presented his credentials to the Liberian government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "The American Legation at Monrovia was elevated to Embassy status on May 6, 1949, when Ambassador Edward R. Dudley presented his credentials to the Liberian government."
+          }
+        ]
+      }
+    ]
+  }
+}

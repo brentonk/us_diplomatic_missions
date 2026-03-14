@@ -1,0 +1,329 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Sx5amXf2yHqvbZdezYn9bh",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 4135,
+      "output_tokens": 2286
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1824-08-04",
+      "new_status": "Envoy Nonresident",
+      "event_description": "The United States established diplomatic relations with the Federation of Central American States (of which Nicaragua was a member) when President Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary. No resident mission in Nicaragua was established at this time.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The United States established diplomatic relations with the Federation of Central American States when President James Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary on August 4, 1824."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1849-12-24",
+      "new_status": "Envoy Nonresident",
+      "event_description": "The United States recognized independent Nicaragua and established diplomatic relations when President Polk received Nicaraguan Charg\u00e9 d'Affaires Eduardo Carcache. No resident U.S. mission in Nicaragua was yet established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Diplomatic relations were established between Nicaragua and the United States on December 24, 1849, when President James K. Polk received Nicaraguan Charg\u00e9 d'Affaires, Eduardo Carcache."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1851-02-18",
+      "new_status": "Legation",
+      "event_description": "The first U.S. diplomatic mission in Nicaragua was established when Charg\u00e9 d'Affaires John B. Kerr presented his credentials, creating a resident legation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The First U.S. diplomatic mission in Nicaragua was established on February 18, 1851, when Charg\u00e9 d'Affaires John B. Kerr presented his credentials."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1909-12-01",
+      "new_status": "None",
+      "event_description": "The United States severed diplomatic relations with Nicaragua when Secretary of State Knox returned the passport of the Nicaraguan Charg\u00e9 d'Affaires, ending all formal diplomatic representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "The United States severed diplomatic relations with Nicaragua on December 1, 1909, when Secretary of State Philander Chase Knox returned the passport of the Nicaraguan Charg\u00e9 d'Affaires."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1911-02-21",
+      "new_status": "Legation",
+      "event_description": "The United States re-established diplomatic relations with Nicaragua and restored the resident legation when Envoy Extraordinary and Minister Plenipotentiary Elliot Northcott presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "The United States re-established diplomatic relations with Nicaragua on February 21, 1911, when Envoy Extraordinary and Minister Plenipotentiary Elliot Northcott presented his credentials to the government of President Estrada."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-03-27",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation at Managua was raised to an Embassy when Envoy Extraordinary and Minister Plenipotentiary James B. Stewart was promoted to Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 51,
+          "line_end": 51,
+          "quote": "The Legation at Managua was raised to an Embassy on March 27, 1943, when U.S. Envoy Extraordinary and Minister Plenipotentiary to Nicaragua James B. Stewart was promoted to Ambassador Extraordinary and Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-06-05",
+      "new_status": "None",
+      "event_description": "The United States effectively severed diplomatic relations with Nicaragua after Somoza Garc\u00eda's coup, informing the Nicaraguan Ambassador that the U.S. would not enter into official relations with the new regime.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 55,
+          "line_end": 55,
+          "quote": "When Nicaraguan Ambassador to the United States, Guillermo Sevilla Sacasa called at the U.S. Department of State on June 5 he was received in his private capacity and informed that the U.S. Government \"would not be disposed to enter into official relations with the regime then in power in Nicaragua.\""
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": true
+    },
+    {
+      "date": "1948-09-01",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations were reestablished at the embassy level when U.S. Ambassador Extraordinary and Plenipotentiary George P. Shaw presented his credentials to Nicaragua.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 59,
+          "line_end": 59,
+          "quote": "George P. Shaw, U.S. Ambassador Extraordinary and Plenipotentiary, presented his credentials on September 1, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 7,
+      "has_citation_error": false
+    },
+    {
+      "date": "1988-07-11",
+      "new_status": "Liaison",
+      "event_description": "The Nicaraguan government expelled U.S. Ambassador Richard Melton and seven other Embassy members. The American Embassy in Managua remained open but was headed only by a Charg\u00e9 d'Affaires ad interim, reducing effective representation below full ambassadorial level.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 63,
+          "line_end": 63,
+          "quote": "On July 11, 1988 the Nicaraguan Government expelled the American Ambassador to Nicaragua, Richard Melton, along with seven other members of the American Embassy at Managua. The American Embassy in Managua remained open under Ronald D. Godard as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 8,
+      "has_citation_error": true
+    },
+    {
+      "date": "1990-06-21",
+      "new_status": "Embassy",
+      "event_description": "Full ambassadorial relations were resumed when Harry W. Shlaudeman presented his credentials as U.S. Ambassador to Nicaragua.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 67,
+          "line_end": 67,
+          "quote": "Harry W. Shlaudeman presented his credentials as U.S. Ambassador to Nicaragua on June 21, 1990."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 9,
+      "has_citation_error": false
+    },
+    {
+      "date": "1852-02-18",
+      "new_status": "Legation",
+      "event_description": "First U.S. chief of mission (Charg\u00e9 d'Affaires John Bozman Kerr) presented credentials to Nicaragua, establishing the U.S. legation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "John Bozman Kerr, Charg\u00e9 d'Affaires. Appointed: 1851-03-12. Credentials presented: 1852-02-18."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1909-03-12",
+      "new_status": "None",
+      "event_description": "Legation Managua was formally closed by Charg\u00e9 d'Affaires ad interim John Hanaford Gregory.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 44,
+          "line_end": 45,
+          "quote": "John Hanaford Gregory, Charg\u00e9 d'Affaires ad interim. Notified the Government of Nicaragua of the closing of Legation Managua on 1909-03-12."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-04-14",
+      "new_status": "Embassy",
+      "event_description": "Legation elevated to Embassy when James Bolton Stewart was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 67,
+          "line_end": 69,
+          "quote": "James Bolton Stewart, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-06-12. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-14. James Bolton Stewart, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-14."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Nicaragua",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          2,
+          10
+        ],
+        "notes": "RDCR (Event 2) gives 1851-02-18, matching CSV exactly. POCOM (Event 10) gives 1852-02-18, likely a different date interpretation (credential presentation vs. establishment). CSV correctly follows RDCR as primary source."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "RDCR gives 1909-12-01 for severing of relations, matching CSV exactly. POCOM Event 11 (1909-03-12) describes a legation closure notification 9 months earlier \u2014 see missing_from_csv for that event."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact match on date (1911-02-21) and status (Legation). RDCR describes re-establishment of relations."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5,
+          12
+        ],
+        "notes": "RDCR (Event 5) gives 1943-03-27 matching CSV. POCOM (Event 12) gives 1943-04-14 (credential presentation as Ambassador). CSV correctly follows RDCR's institutional date for the elevation."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Date matches (1947-06-05). Note: Event 6 has a CITATION ERROR flag, but the description is consistent with severing relations after Somoza's coup. Medium confidence."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          7
+        ],
+        "notes": "Exact match on date (1948-09-01) and status (Embassy). Ambassador Shaw presented credentials."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1824-08-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. established diplomatic relations with the Federation of Central American States (of which Nicaragua was a member) when President Monroe received Antonio Jos\u00e9 Ca\u00f1az as Envoy Extraordinary and Minister Plenipotentiary.",
+        "notes": "This predates Nicaraguan independence as a separate state. The CSV may intentionally omit this as it pertains to the Central American Federation rather than Nicaragua directly. Consider whether the dataset scope includes predecessor-state relations."
+      },
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1849-12-24",
+        "new_status": "Envoy Nonresident",
+        "event_description": "U.S. recognized independent Nicaragua and established diplomatic relations when President Polk received Nicaraguan Charg\u00e9 d'Affaires Eduardo Carcache. No resident U.S. mission yet established.",
+        "notes": "CITATION ERROR flagged, but the event is historically well-known. This represents the initial recognition of independent Nicaragua and establishment of non-resident diplomatic relations, prior to the 1851 resident legation. Strong candidate for addition as the first event in the Nicaragua timeline."
+      },
+      {
+        "extracted_event_indices": [
+          11
+        ],
+        "date": "1909-03-12",
+        "new_status": "None",
+        "event_description": "POCOM records that Charg\u00e9 d'Affaires ad interim John Hanaford Gregory notified the Government of Nicaragua of the closing of Legation Managua on 1909-03-12.",
+        "notes": "This is 9 months before the RDCR date of 1909-12-01 for severing relations. It may represent an earlier closure of the physical legation or could be a POCOM data error. The RDCR account (Knox returning the Nicaraguan Charg\u00e9's passport on Dec 1, 1909) is the well-known historical event tied to the Zelaya crisis. Treat with caution; RDCR's December 1909 date is more authoritative for the diplomatic break."
+      },
+      {
+        "extracted_event_indices": [
+          8
+        ],
+        "date": "1988-07-11",
+        "new_status": "Liaison",
+        "event_description": "Nicaragua expelled U.S. Ambassador Richard Melton and seven other Embassy members. The Embassy remained open under a Charg\u00e9 d'Affaires ad interim, reducing representation below full ambassadorial level.",
+        "notes": "CITATION ERROR flagged and confidence is medium. The status classification as 'Liaison' is the extractor's interpretation; the Embassy technically remained open but without an ambassador. The CSV may have intentionally omitted this as the Embassy was never formally closed or downgraded \u2014 it simply lacked an ambassador. However, this is a notable reduction in diplomatic representation that could warrant inclusion."
+      },
+      {
+        "extracted_event_indices": [
+          9
+        ],
+        "date": "1990-06-21",
+        "new_status": "Embassy",
+        "event_description": "Full ambassadorial relations resumed when Harry W. Shlaudeman presented credentials as U.S. Ambassador to Nicaragua.",
+        "notes": "This would only be relevant if the 1988 expulsion event is added to the CSV. If the 1988 event is not included (i.e., Embassy status was considered continuous), then this event is redundant. Consider adding as a pair with Event 8."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 4,
+        "notes": "No extracted event corresponds to a break in relations on 1926-01-17. Neither RDCR nor POCOM mention a severing or suspension of diplomatic relations with Nicaragua in January 1926. This may relate to the U.S. response to political instability in Nicaragua (the Chamorro coup period), but the source texts do not cover this event. It could be correct but sourced from materials outside this pipeline."
+      },
+      {
+        "csv_row": 5,
+        "notes": "No extracted event corresponds to a restoration of the legation on 1926-11-17. Neither RDCR nor POCOM mention a re-establishment of relations in November 1926. This likely pairs with Row 4 (the break and subsequent restoration during the Nicaraguan political crisis of 1925-1926), but the source texts do not cover this event. It could be correct but sourced from materials outside this pipeline."
+      }
+    ],
+    "discrepancies": []
+  }
+}

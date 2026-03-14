@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FgKfrv6BSfxo9MfBRsgSpP",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2515,
+      "output_tokens": 311
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1965-08-09",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Diplomatic relations established when Ambassador Mercer Cook presented credentials to Gambian authorities. Cook was nonresident, accredited to Senegal and resident at Dakar.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 9, 1965, when Ambassador Mercer Cook presented his credentials to Gambian authorities. Cook also was accredited to Senegal and was resident at Dakar."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1965-09-09",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy at Bathurst (now Banjul) was established, with John G. Gossett as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The Embassy at Bathurst (now Banjul) was established on September 9, 1965, with John G. Gossett as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Gambia, The",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1965-08-09) and status (Ambassador Nonresident). RDCR confirms diplomatic relations established when Ambassador Mercer Cook presented credentials."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1965-09-09) and status (Embassy). RDCR confirms Embassy established at Bathurst (now Banjul)."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

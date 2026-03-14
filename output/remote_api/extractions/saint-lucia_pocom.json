@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JhqHwSsSWSThA8UsUYQYbz",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2871,
+      "output_tokens": 629
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saint Lucia",
+    "source_file": "pocom/missions-countries/saint-lucia.xml",
+    "events": [
+      {
+        "date": "1979-06-11",
+        "new_status": "Legation",
+        "event_description": "Establishment of U.S. diplomatic relations with Saint Lucia at the legation level, with Sally Angela Shelton presenting credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Sally Angela Shelton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1979-05-17. Credentials presented: 1979-06-11."
+          }
+        ]
+      },
+      {
+        "date": "1981-12-15",
+        "new_status": "Embassy",
+        "event_description": "Elevation of U.S. mission to Saint Lucia from legation to embassy level, with Milan D Bish presenting credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Milan D Bish, Ambassador Extraordinary and Plenipotentiary. Appointed: 1981-11-23. Credentials presented: 1981-12-15."
+          }
+        ]
+      }
+    ]
+  }
+}

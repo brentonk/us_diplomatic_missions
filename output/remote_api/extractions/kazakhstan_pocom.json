@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013rLsYDTSQTR8rtJSDjitxm",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2480,
+      "output_tokens": 399
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kazakhstan",
+    "source_file": "pocom/missions-countries/kazakhstan.xml",
+    "events": [
+      {
+        "date": "1992-09-15",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Kazakhstan when the first Ambassador, William Harrison Courtney, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William Harrison Courtney, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-09-15. Left post on 1995-07-01."
+          }
+        ]
+      }
+    ]
+  }
+}

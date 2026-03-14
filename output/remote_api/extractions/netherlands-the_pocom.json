@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UD7nkbtSB1y8zQ2xTwsfd7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6823,
+      "output_tokens": 1776
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Netherlands, The",
+    "source_file": "pocom/missions-countries/netherlands.xml",
+    "events": [
+      {
+        "date": "1782-04-19",
+        "new_status": "Legation",
+        "event_description": "Legation established when John Adams presented credentials as Minister Plenipotentiary to the Netherlands.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Adams, Minister Plenipotentiary. Appointed: 1781-01-01. Credentials presented: 1782-04-19."
+          }
+        ]
+      },
+      {
+        "date": "1801-09-02",
+        "new_status": "None",
+        "event_description": "Legation effectively closed when William Vans Murray presented his recall; no successor was appointed until 1815, leaving a ~14-year gap in representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 13,
+            "quote": "William Vans Murray, Minister Resident. Appointed: 1797-03-02. Credentials presented: 1797-06-20. Presented recall on 1801-09-02. Note: Commissioned to the Batavian Republic.\n\nWilliam Eustis, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1814-12-19. Credentials presented: 1815-07-20."
+          }
+        ]
+      },
+      {
+        "date": "1815-07-20",
+        "new_status": "Legation",
+        "event_description": "Legation re-established when William Eustis presented credentials as Envoy Extraordinary and Minister Plenipotentiary, ending a ~14-year gap in representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "William Eustis, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1814-12-19. Credentials presented: 1815-07-20. Had farewell audience 1818-05-05."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "Legation in The Hague closed by Gordon following German occupation of the Netherlands.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 83,
+            "line_end": 84,
+            "quote": "In anticipation of German occupation, the Government left the Netherlands on 1940-05-13. Note: Gordon closed the Legation on July 15, 1940, and left post on July 16, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1940-08-15",
+        "new_status": "Legation",
+        "event_description": "Legation re-established near the Dutch Government-in-exile in the United Kingdom, with Rudolf Schoenfeld making his initial call as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 84,
+            "line_end": 86,
+            "quote": "Rudolf E. Schoenfeld established the Legation near the Government of the Netherlands established in the United Kingdom, making his initial call as Charg\u00e9 d'Affaires ad interim on Aug 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-08",
+        "new_status": "Embassy",
+        "event_description": "Mission elevated from Legation to Embassy when Biddle was promoted to Ambassador Extraordinary and Plenipotentiary, while still serving near the Dutch Government-in-exile in London.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 88,
+            "line_end": 90,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-03-27. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-05-08."
+          }
+        ]
+      }
+    ]
+  }
+}

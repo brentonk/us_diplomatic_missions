@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0158CCkDF4L7sEgEXdeRpYmD",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6913,
+      "output_tokens": 1283
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Spain",
+    "source_file": "pocom/missions-countries/spain.xml",
+    "events": [
+      {
+        "date": "1783-02-20",
+        "new_status": "Legation",
+        "event_description": "William Carmichael was received as Charg\u00e9 d'Affaires ad interim, establishing the earliest recorded U.S. diplomatic presence in Spain.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "No report has been found concerning Carmichael's presentation of credentials as Charg\u00e9 d'Affaires en titre; he had already been received as Charg\u00e9 d'Affaires ad interim on February 20, 1783."
+          }
+        ]
+      },
+      {
+        "date": "1898-04-21",
+        "new_status": "None",
+        "event_description": "Spain severed diplomatic relations with the United States; Woodford left post and the U.S. declared war on Spain.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 69,
+            "quote": "Spain severed diplomatic relations with the United States on 1898-04-21. Note: Woodford left post on April 21, 1898. The United States declared war on Spain as of that date by act of Congress approved on April 25, 1898."
+          }
+        ]
+      },
+      {
+        "date": "1899-06-16",
+        "new_status": "Legation",
+        "event_description": "Bellamy Storer presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. Legation in Spain after the break caused by the Spanish-American War.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 71,
+            "line_end": 71,
+            "quote": "Bellamy Storer, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1899-04-12. Credentials presented: 1899-06-16."
+          }
+        ]
+      },
+      {
+        "date": "1913-10-31",
+        "new_status": "Embassy",
+        "event_description": "Joseph Edward Willard presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Spain from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 79,
+            "line_end": 79,
+            "quote": "Joseph Edward Willard, Ambassador Extraordinary and Plenipotentiary. Appointed: 1913-09-10. Credentials presented: 1913-10-31. Left post on 1921-07-07."
+          }
+        ]
+      }
+    ]
+  }
+}

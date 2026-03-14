@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013Ld6jeBCg9WDRLaMwptvYR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2290,
+      "output_tokens": 581
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Indonesia",
+    "source_file": "rdcr/articles/indonesia.xml",
+    "events": [
+      {
+        "date": "1801-11-24",
+        "new_status": "Consulate",
+        "event_description": "The United States established its first consular post in Batavia (present-day Jakarta, the capital) by appointing Thomas Hewes.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established its first consular post in what is now Indonesia in the city of Jakarta when it appointed Thomas Hewes on November 24, 1801. At the time, the territory was a Dutch colony and the city was known as Batavia."
+          }
+        ]
+      },
+      {
+        "date": "1949-12-28",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations were established and the U.S. Embassy opened when Ambassador H. Merle Cochran presented his credentials to President Sukarno upon Indonesian independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Diplomatic relations were established on December 28, 1949, when U.S. Ambassador H. Merle Cochran presented his credentials to President Sukarno."
+          }
+        ]
+      }
+    ]
+  }
+}

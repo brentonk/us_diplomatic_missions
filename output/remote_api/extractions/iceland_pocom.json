@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SJ4s2tk6jthcf9gJMpuFGZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3725,
+      "output_tokens": 631
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iceland",
+    "source_file": "pocom/missions-countries/iceland.xml",
+    "events": [
+      {
+        "date": "1941-09-30",
+        "new_status": "Legation",
+        "event_description": "Lincoln MacVeagh presented credentials as the first U.S. Envoy Extraordinary and Minister Plenipotentiary to Iceland, establishing a U.S. Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Lincoln Macveagh, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-08-08. Credentials presented: 1941-09-30. Left post on 1942-06-27."
+          }
+        ]
+      },
+      {
+        "date": "1955-11-03",
+        "new_status": "Embassy",
+        "event_description": "John Joseph Muccio was promoted from Envoy/Minister to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Iceland from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "John Joseph Muccio, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1954-08-23. Credentials presented: 1954-10-12. Promoted to Ambassador Extraordinary and Plenipotentiary 1955-11-03."
+          }
+        ]
+      }
+    ]
+  }
+}

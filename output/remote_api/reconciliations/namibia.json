@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Sd3qDdKBzs9hnRDnCmP4NN",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2643,
+      "output_tokens": 710
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1990-03-21",
+      "new_status": "Liaison",
+      "event_description": "A U.S. Liaison Office existed at Windhoek prior to Namibian independence, under South African sovereignty.",
+      "confidence": "low",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "The United States recognized Namibia on March 21, 1990, when the U.S. Liaison Office at Windhoek was elevated to Embassy status with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim, upon Namibia's attainment of independence on that date. Namibia previously had been under South African sovereignty."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-03-21",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Liaison Office at Windhoek was elevated to Embassy status upon Namibia's independence, with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on March 21, 1990, when the U.S. Liaison Office at Windhoek was elevated to Embassy status with Roger A. McGuire as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-08-30",
+      "new_status": "Embassy",
+      "event_description": "First U.S. Ambassador to Namibia presented credentials, establishing the U.S. Embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Genta Hawkins Holmes, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-08-06. Credentials presented: 1990-08-30. Left post on 1992-09-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Namibia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV matches Extracted Event 1 (RDCR) exactly on date and status. Extracted Event 2 (POCOM) refers to the first ambassador presenting credentials on 1990-08-30, which is a later personnel event, not the institutional transition. RDCR date of 1990-03-21 is authoritative per source priority."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1990-03-21",
+        "new_status": "Liaison",
+        "event_description": "A U.S. Liaison Office existed at Windhoek prior to Namibian independence (when the territory was under South African sovereignty). The office was elevated to Embassy status on 1990-03-21.",
+        "notes": "Low confidence extraction. The Liaison Office predates 1990-03-21 but no precise start date is given in the sources. The date 1990-03-21 is actually when the Liaison Office ended (by elevation to Embassy), not when it began. A CSV entry for the Liaison Office would need a different (earlier) start date, which is not available from these sources. Consider adding if an establishment date can be found elsewhere."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

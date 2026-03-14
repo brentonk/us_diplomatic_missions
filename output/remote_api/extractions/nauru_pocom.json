@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014cREzrmfex9YXdfRhpUW9y",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2855,
+      "output_tokens": 667
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nauru",
+    "source_file": "pocom/missions-countries/nauru.xml",
+    "events": [
+      {
+        "date": "1974-10-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Establishment of nonresident ambassadorial relations with Nauru. Marshall Green, the first U.S. Ambassador to Nauru, presented credentials while based in Canberra.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Marshall Green, Ambassador Extraordinary and Plenipotentiary. Appointed: 1974-02-28. Credentials presented: 1974-10-26. Left Canberra 1975-07-31."
+          }
+        ]
+      }
+    ]
+  }
+}

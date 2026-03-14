@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ss921v2HGxaUsga2WhvotG",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3488,
+      "output_tokens": 986
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Russia",
+    "source_file": "rdcr/articles/russia.xml",
+    "events": [
+      {
+        "date": "1809-11-05",
+        "new_status": "Legation",
+        "event_description": "The American Legation in St. Petersburg was established when U.S. Minister John Quincy Adams presented his credentials to Emperor Alexander I.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 21,
+            "quote": "The American Legation in St. Petersburg was established on November 5, 1809, when U.S. Minister to Russia John Quincy Adams presented his credentials to Emperor Alexander I."
+          }
+        ]
+      },
+      {
+        "date": "1898-02-11",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in St. Petersburg was raised to an Embassy when Ethan A. Hitchcock was appointed Ambassador to Russia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 25,
+            "quote": "The American Legation in St. Petersburg was raised to an Embassy on February 11, 1898, when Ethan A. Hitchcock was appointed Ambassador to Russia."
+          }
+        ]
+      },
+      {
+        "date": "1919-09-14",
+        "new_status": "None",
+        "event_description": "The American Embassy at Archangel was closed, ending formal U.S. diplomatic presence in Russia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 37,
+            "quote": "The American Embassy at Archangel was closed on September 14, 1919."
+          }
+        ]
+      },
+      {
+        "date": "1933-12-13",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy was established in Moscow when William Bullitt presented his credentials to President Kalinin as U.S. Ambassador to the Soviet Union, resuming formal diplomatic representation after a 14-year break.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 45,
+            "quote": "On December 13, 1933, William Bullitt presented his credentials to President Kalinin in Moscow as the U.S. Ambassador to the Soviet Union."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Vk2vGsfEeDQt3ZAo8taEGP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3015,
+      "output_tokens": 517
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Singapore",
+    "source_file": "pocom/missions-countries/singapore.xml",
+    "events": [
+      {
+        "date": "1966-04-04",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Singapore established, with Richard Hempstead Donald serving as the first Charg\u00e9 d'Affaires ad interim upon presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Richard Hempstead Donald, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1966-04-04."
+          }
+        ]
+      }
+    ]
+  }
+}

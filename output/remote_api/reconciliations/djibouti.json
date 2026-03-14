@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SmwqUXXyaqDmuNREoMrmfy",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2412,
+      "output_tokens": 352
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1977-06-27",
+      "new_status": "Embassy",
+      "event_description": "The American Consulate General to the former French Territory of Afars and Issas became the American Embassy at Djibouti, with Walter S. Clarke as Charg\u00e9 d'Affaires ad interim, coinciding with U.S. recognition of Djibouti's independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on June 27, 1977, when the American Consulate General to the former French Territory of Afars and Issas became the American Embassy at Djibouti, with Walter S. Clarke as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Djibouti",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1977-06-27) and status (Embassy). RDCR confirms the American Consulate General became the American Embassy at Djibouti on this date, coinciding with U.S. recognition of independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

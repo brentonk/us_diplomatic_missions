@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01A2sP8ijgrekQaUYzC8Ung7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2570,
+      "output_tokens": 383
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Angola",
+    "source_file": "rdcr/articles/angola.xml",
+    "events": [
+      {
+        "date": "1992-01-10",
+        "new_status": "Liaison",
+        "event_description": "U.S. Liaison Office opened in Luanda with Jeffrey Millington as Director.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The U.S. Liaison Office in Luanda was opened January 10, 1992, with Jeffrey Millington as Director."
+          }
+        ]
+      },
+      {
+        "date": "1994-07-14",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established and American Embassy opened when Ambassador Edmund T. De Jarnette presented credentials to Angolan authorities.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations were established on July 14, 1994, when American Ambassador Edmund T. De Jarnette presented his credentials to Angolan authorities."
+          }
+        ]
+      }
+    ]
+  }
+}

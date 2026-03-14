@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011ApnkM3pwTNAmtmfY32R42",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3347,
+      "output_tokens": 863
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Monaco",
+    "source_file": "rdcr/articles/monaco.xml",
+    "events": [
+      {
+        "date": "1874-02-22",
+        "new_status": "Consulate",
+        "event_description": "The United States established its first consular presence in Monaco when Emile de Loth was accredited by the Prince of Monaco as Consular Agent on February 22, 1874.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "the United States appointed its first consular representative to Monaco, Emile de Loth, on January 30, 1874, as Consular Agent. De Loth was accredited by the Prince of Monaco on February 22, 1874."
+          }
+        ]
+      },
+      {
+        "date": "1906-02-16",
+        "new_status": "None",
+        "event_description": "The U.S. consular post in Monaco was ordered closed on February 16, 1906, and moved to Nice, ending U.S. consular representation in Monaco.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "This post was ordered closed on February 16, 1906, and moved to Nice."
+          }
+        ]
+      },
+      {
+        "date": "2006-12-13",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Full diplomatic relations were established when U.S. Ambassador Craig Stapleton presented his credentials to Prince Albert II on December 13, 2006. Stapleton was resident in Paris, making this a nonresident ambassadorial relationship.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "U.S. Ambassador to Monaco Craig Stapleton presented his credentials to Prince Albert II on December 13, 2006. Stapleton was resident in Paris."
+          }
+        ]
+      }
+    ]
+  }
+}

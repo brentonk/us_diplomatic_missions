@@ -61,7 +61,7 @@ def _get_submodule_commit(submodule_dir: Path) -> str:
 
 def _load_country_mapping(config: PipelineConfig) -> dict[str, CountryMapping]:
     """Load the country mapping from Stage 0 output."""
-    mapping_path = config.paths.output_dir / "country_mapping.json"
+    mapping_path = config.paths.output_dir / "local" / "country_mapping.json"
     with open(mapping_path) as f:
         data = json.load(f)
 
@@ -103,7 +103,7 @@ def preprocess(config: PipelineConfig, countries_filter: list[str] | None = None
     pocom_commit = _get_submodule_commit(config.paths.pocom_missions.parent)
 
     # Set up output directory
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units_dir.mkdir(parents=True, exist_ok=True)
 
     work_units: list[WorkUnit] = []
@@ -190,4 +190,4 @@ def run_stage1(config: PipelineConfig, countries_filter: list[str] | None = None
             print(f"    - {name}")
     else:
         print(f"  No files flagged as large")
-    print(f"  Output: {config.paths.output_dir / 'work_units'}/")
+    print(f"  Output: {config.paths.output_dir / 'local' / 'work_units'}/")

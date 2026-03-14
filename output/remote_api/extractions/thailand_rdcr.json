@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_017m1zhQ96zoZuzqC9x14qj8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2412,
+      "output_tokens": 667
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Thailand",
+    "source_file": "rdcr/articles/thailand.xml",
+    "events": [
+      {
+        "date": "1859-01-25",
+        "new_status": "Consulate",
+        "event_description": "Establishment of consular relations in Siam when John Hassett Chandler became Acting Vice Consul in Charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "John Hassett Chandler became the Acting Vice Consul in Charge on January 25, 1859."
+          }
+        ]
+      },
+      {
+        "date": "1882-10-23",
+        "new_status": "Legation",
+        "event_description": "Establishment of diplomatic relations and the first U.S. Legation in Thailand (then Siam) when John A. Halderman presented credentials as Minister Resident and Consul General.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations and the first U.S. Legation in Thailand (then Siam) were established on October 23, 1882, when John A. Halderman presented his credentials as Minister Resident and Consul General."
+          }
+        ]
+      },
+      {
+        "date": "1947-04-10",
+        "new_status": "Embassy",
+        "event_description": "Elevation of the American Legation to Embassy status, with Edwin F. Stanton promoted to become the first U.S. Ambassador to Thailand.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "On April 10, 1947, Edwin F. Stanton was promoted to become the first U.S. Ambassador to Thailand. Stanton presented his credentials on May 9, 1947."
+          }
+        ]
+      }
+    ]
+  }
+}

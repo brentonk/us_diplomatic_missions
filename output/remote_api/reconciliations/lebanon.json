@@ -1,0 +1,174 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014FmPjSn3EtkQD1Fh3KCSx2",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3048,
+      "output_tokens": 1214
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1942-10-09",
+      "new_status": "Liaison",
+      "event_description": "George Wadsworth appointed as 'Agent and Consul General' to provide a quasi-diplomatic presence in Beirut.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "The United States appointed George Wadsworth as \"Agent and Consul General\" on October 9, 1942, to provide a quasi-diplomatic presence in Beirut until the United States determined that Lebanon achieved effective independence in 1944."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1944-11-16",
+      "new_status": "Legation",
+      "event_description": "The United States established diplomatic relations and the American Legation in Lebanon when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "The United States established diplomatic relations with Lebanon when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary on November 16, 1944."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-10-03",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Beirut was raised to embassy status when Harold B. Minor was appointed Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "The American Legation in Beirut was raised to embassy status on October 3, 1952, when Harold B. Minor was appointed Ambassador Extraordinary and Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1989-09-06",
+      "new_status": "None",
+      "event_description": "The United States withdrew all embassy personnel from the American Embassy in Beirut, leaving no diplomatic representation in Lebanon.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "The United States withdrew all personnel including Ambassador John Thomas McCarthy from the American Embassy in Beirut on September 6, 1989."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-11-29",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Beirut was reopened when new Ambassador Ryan Crocker presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 29,
+          "line_end": 29,
+          "quote": "The American Embassy in Beirut was reopened on November 29, 1990, when new Ambassador Ryan Crocker presented his credentials."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-11-19",
+      "new_status": "Liaison",
+      "event_description": "George Wadsworth presented credentials as Diplomatic Agent/Consul General, establishing a liaison-level U.S. presence in Lebanon.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "George Wadsworth, Diplomatic Agent/Consul General. Appointed: 1942-10-09. Credentials presented: 1942-11-19. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1944-11-16."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-08-27",
+      "new_status": "Embassy",
+      "event_description": "Legation Beirut was raised to Embassy status on August 27, 1952.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quote": "Note: Commissioned during a recess of the Senate. Legation Beirut was raised to Embassy status on August 27, 1952."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Lebanon",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Both agree on 1944-11-16 as the date the U.S. established diplomatic relations and the American Legation in Lebanon when Wadsworth presented credentials as Minister."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2,
+          6
+        ],
+        "notes": "CSV date 1952-10-03 matches RDCR (Event 2), which explicitly states 'raised to embassy status on October 3, 1952.' POCOM (Event 6) gives August 27, 1952 as the elevation date. Since RDCR provides an explicit institutional date ('raised to embassy status on October 3, 1952'), RDCR wins per source priority rules. The CSV correctly follows RDCR."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Both agree on 1989-09-06 as the date all U.S. embassy personnel were withdrawn from Beirut."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Both agree on 1990-11-29 as the date the American Embassy in Beirut was reopened."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0,
+          5
+        ],
+        "date": "1942-11-19",
+        "new_status": "Liaison",
+        "event_description": "George Wadsworth presented credentials as Diplomatic Agent/Consul General on 1942-11-19 (POCOM credential date), establishing a quasi-diplomatic U.S. presence in Lebanon prior to formal diplomatic relations. RDCR gives the appointment date as 1942-10-09.",
+        "notes": "RDCR describes this as a quasi-diplomatic presence ('Agent and Consul General') before the U.S. recognized Lebanon's effective independence in 1944. POCOM gives the credential presentation date as 1942-11-19, which is the appropriate institutional date for when the liaison presence was actually established in-country. This predates the formal Legation (1944) and could be added as a 'Liaison' or similar status if the dataset tracks pre-recognition diplomatic presences."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

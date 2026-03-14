@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Smp5nQd6hCJf3ZeA7yfPoN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3086,
+      "output_tokens": 681
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Albania",
+    "source_file": "pocom/missions-countries/albania.xml",
+    "events": [
+      {
+        "date": "1922-12-04",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Tirana established when the first Envoy Extraordinary and Minister Plenipotentiary, Smith Ulysses Grant, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Smith Ulysses Grant, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-09-22. Credentials presented: 1922-12-04. Left post on 1925-02-08."
+          }
+        ]
+      },
+      {
+        "date": "1939-09-16",
+        "new_status": "None",
+        "event_description": "Legation Tirana officially closed following Italian occupation of Tirana on April 8, 1939.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Italian forces occupied Tirana on April 8, 1939. Legation Tirana was officially closed on September 16, 1939."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy Tirana opened, re-establishing U.S. diplomatic presence in Albania after relations were resumed on March 15, 1991.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States resumed diplomatic relations with Albania on March 15, 1991. Embassy Tirana opened on October 1, 1991."
+          }
+        ]
+      }
+    ]
+  }
+}

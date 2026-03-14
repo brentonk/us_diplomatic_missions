@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BwAVfzHA3VbDZs1YrKdJEe",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2898,
+      "output_tokens": 770
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Orange Free State",
+    "source_file": "rdcr/articles/orange-free-state.xml",
+    "events": [
+      {
+        "date": "1891-12-16",
+        "new_status": "Consulate",
+        "event_description": "First U.S. Consular Agent appointed to Bloemfontein (the capital of the Orange Free State), establishing a consular presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The first U.S. Consul assigned to the Orange Free State was Ernst Richard Landgraf, who was appointed as U.S. Consular Agent to Bloemfontein on December 16, 1891."
+          }
+        ]
+      },
+      {
+        "date": "1902",
+        "new_status": "None",
+        "event_description": "The Orange Free State was annexed to the British Empire following the 1902 Peace of Vereeniging, ending the existence of the republic and any U.S. diplomatic representation to it.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "The 1902 Peace of Vereeniging, which ended the Boer War, annexed the Orange Free State to the British Empire."
+          }
+        ]
+      }
+    ]
+  }
+}

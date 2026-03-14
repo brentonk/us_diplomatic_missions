@@ -1,0 +1,118 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0189Wf5pqXLf5xXUp8Lrk1MT",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2988,
+      "output_tokens": 894
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1861-11-26",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation in Asuncion were established when Commissioner Charles A. Washburn presented his credentials to the Government of Paraguay.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Legation in Asuncion were established on November 26, 1861, when American Commissioner Charles A. Washburn presented his credentials to the Government of the Republic of Paraguay."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1942-03-31",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Paraguay was elevated to Embassy status, effective March 31, 1942, following a joint announcement on January 4, 1942.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "Following a joint announcement by the Government of Paraguay and the Government of the United States on January 4, 1942, the Legation of Paraguay in the United States and the Legation of the United States in Paraguay were both raised to the rank of Embassy. The change in status became effective on March 31, 1942, when Ambassador of Paraguay, Se\u00f1or Dr. Don Celso R. Velazquez, presented his letters of credence to the United States Government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1861-11-26",
+      "new_status": "Liaison",
+      "event_description": "First U.S. diplomatic presence established in Paraguay when Charles Ames Washburn presented credentials as Commissioner.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Charles Ames Washburn, Commissioner. Appointed: 1861-06-08. Credentials presented: 1861-11-26. Promoted to Minister Resident 1863-05-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1863-05-13",
+      "new_status": "Legation",
+      "event_description": "Mission elevated to Legation when Washburn was promoted from Commissioner to Minister Resident.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quote": "Charles Ames Washburn, Commissioner. Appointed: 1861-06-08. Credentials presented: 1861-11-26. Promoted to Minister Resident 1863-05-13.\n\nCharles Ames Washburn, Minister Resident. Appointed: 1863-01-19. Credentials presented: 1863-05-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": true
+    },
+    {
+      "date": "1942-04-15",
+      "new_status": "Embassy",
+      "event_description": "Mission elevated from Legation to Embassy when Wesley Frost was promoted to Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 49,
+          "quote": "Wesley Frost, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-03-20. Credentials presented: 1941-04-30. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-04-15.\n\nWesley Frost, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-04-15."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Paraguay",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "RDCR (Event 0) explicitly states the American Legation was established on 1861-11-26 when Commissioner Washburn presented credentials. POCOM (Event 2) records the same date but labels the status as 'Liaison' (Commissioner). Per source priority, RDCR's explicit institutional designation of 'Legation' takes precedence. CSV correctly follows RDCR."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          4
+        ],
+        "notes": "RDCR (Event 1) gives the explicit institutional effective date of 1942-03-31 for the Embassy elevation. POCOM (Event 4) gives 1942-04-15, which is the credential presentation date for the newly promoted Ambassador. Per source priority, RDCR's explicit institutional date wins. CSV correctly matches RDCR."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

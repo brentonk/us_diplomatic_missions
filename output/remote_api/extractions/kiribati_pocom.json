@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VK9ZNL9tSBgd2Scb49aNCT",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2793,
+      "output_tokens": 777
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kiribati",
+    "source_file": "pocom/missions-countries/kiribati.xml",
+    "events": [
+      {
+        "date": "1981-01-20",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Establishment of nonresident envoy relations with Kiribati. William Bodde Jr., Envoy Extraordinary and Minister Plenipotentiary (resident in Suva), presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William Jr Bodde, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1980-09-26. Credentials presented: 1981-01-20. Left Suva 1981-08-15."
+          }
+        ]
+      },
+      {
+        "date": "1982-05-31",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Elevation from nonresident envoy to nonresident ambassador relations with Kiribati. Fred J. Eckert, Ambassador Extraordinary and Plenipotentiary (resident in Suva), presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Fred J Eckert, Ambassador Extraordinary and Plenipotentiary. Appointed: 1982-02-11. Credentials presented: 1982-05-31. Left Suva 1984-05-07."
+          }
+        ]
+      }
+    ]
+  }
+}

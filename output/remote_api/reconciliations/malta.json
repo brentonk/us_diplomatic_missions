@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01G6LeMLFZM6aQSCHgDz8qaD",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2353,
+      "output_tokens": 307
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1964-09-21",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy in Valletta was established with Harrison Lewis as Charg\u00e9 d'Affaires ad interim, following Maltese independence and U.S. recognition.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The Embassy in Valletta was established on September 21, 1964, with Harrison Lewis as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Malta",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both sources agree on 1964-09-21 as the date the U.S. Embassy in Valletta was established, coinciding with Maltese independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

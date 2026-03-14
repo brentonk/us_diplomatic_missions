@@ -1,0 +1,66 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018UQbSieRPtAgyecX8A4rMD",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2444,
+      "output_tokens": 637
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-10-01",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Lagos was established on October 1, 1960, with Joseph Palmer II in charge pending presentation of credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The American Embassy in Lagos, Nigeria was established on October 1, 1960, with Joseph Palmer II in charge pending presentation of his letter of credence on October 4, 1960."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-10-04",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Nigeria upon independence; first Ambassador Joseph Palmer presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Joseph Palmer, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-09-23. Credentials presented: 1960-10-04."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Nigeria",
+    "matched": [],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "field": "date",
+        "csv_value": "1960-10-04",
+        "extracted_value": "1960-10-01 (RDCR: institutional establishment date) vs 1960-10-04 (POCOM: credential presentation date)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR, the primary source, explicitly states: 'The American Embassy in Lagos, Nigeria was established on October 1, 1960.' This is a clear institutional date for the embassy's establishment. The October 4 date used in the CSV corresponds to the credential presentation date of Ambassador Palmer, which is a personnel event, not the institutional transition date. Per source priority rules, RDCR's explicit institutional date of 1960-10-01 should take precedence. The CSV should be corrected to 1960-10-01."
+      }
+    ]
+  }
+}

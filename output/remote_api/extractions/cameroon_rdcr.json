@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0137Vc6HvsJL88AW193GiNVU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2192,
+      "output_tokens": 297
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cameroon",
+    "source_file": "rdcr/articles/cameroon.xml",
+    "events": [
+      {
+        "date": "1960-01-01",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Consulate General at Yaounde was elevated to Embassy status, establishing diplomatic relations with the newly independent Republic of Cameroon. Bolard More served as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Embassy in Cameroon were established on January 1, 1960, when the Consulate General at Yaounde was elevated to Embassy status, with Bolard More as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

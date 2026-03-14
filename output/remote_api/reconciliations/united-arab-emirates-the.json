@@ -1,0 +1,111 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Rn6KQMifwCjajKUPN27Kd2",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2883,
+      "output_tokens": 1210
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1972-03-20",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established when nonresident Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented credentials; he resided in Kuwait and was accredited to multiple Persian Gulf states.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on March 20, 1972, when American Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented his credentials to the government of the United Arab Emirates. Stoltzfus was also accredited to a number of other Persian Gulf states and he resided in Kuwait."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1974-06-24",
+      "new_status": "Embassy",
+      "event_description": "The United States Embassy in Abu Dhabi was established when the first resident American Ambassador, Michael Edmund Sterner, presented his credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The United States Embassy in Abu Dhabi was established on June 24, 1974, when the first American Ambassador in residence, Michael Edmund Sterner, presented his credentials to United Arab Emirates' officials."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-03-20",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "William A. Stoltzfus presented credentials as the first U.S. Ambassador to the UAE, serving in a nonresident capacity prior to the establishment of Embassy Abu Dhabi.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "William A Stoltzfus, Ambassador Extraordinary and Plenipotentiary. Appointed: 1972-02-29. Credentials presented: 1972-03-20. Appointment terminated 1974-06-23. Note: During Stolzfus's tenure as non-resident Ambassador, Embassy Abu Dhabi was established on May 15, 1972, with Philip J. Griffin as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-05-15",
+      "new_status": "Embassy",
+      "event_description": "Embassy Abu Dhabi was formally established, with Philip J. Griffin serving as Charg\u00e9 d'Affaires ad interim, elevating the U.S. presence from a nonresident ambassadorial relationship to a resident embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Note: During Stolzfus's tenure as non-resident Ambassador, Embassy Abu Dhabi was established on May 15, 1972, with Philip J. Griffin as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "United Arab Emirates, The",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "RDCR (Event 0) and CSV agree on date 1972-03-20 and status 'Envoy Nonresident.' POCOM (Event 2) calls Stoltzfus 'Ambassador Extraordinary and Plenipotentiary' rather than 'Envoy Extraordinary and Minister Plenipotentiary,' which would map to 'Ambassador Nonresident.' RDCR is the primary source and explicitly uses the Envoy/Minister title, so the CSV's 'Envoy Nonresident' is correct."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "RDCR (Event 1) and CSV agree on date 1974-06-24 and status 'Embassy.' RDCR explicitly states the Embassy was established on this date when Ambassador Sterner presented credentials."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1972-05-15",
+        "new_status": "Embassy",
+        "event_description": "POCOM notes that Embassy Abu Dhabi was established on May 15, 1972, with Philip J. Griffin as Charg\u00e9 d'Affaires ad interim, during Stoltzfus's tenure as nonresident Ambassador.",
+        "notes": "This event has a CITATION ERROR flag, reducing confidence. Additionally, RDCR (the primary source) does not mention a May 1972 embassy opening and instead dates the Embassy establishment to June 24, 1974. The POCOM note may refer to the physical opening of an office/post in Abu Dhabi rather than the formal diplomatic status change. Given the citation error and conflict with RDCR's narrative, this event should be treated with caution. If added, it would suggest the CSV should have an intermediate 'Embassy' row in 1972 (physical post opening) distinct from the 1974 event (first resident Ambassador). However, the RDCR-primary approach supports the current CSV structure."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

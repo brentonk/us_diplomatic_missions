@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HQ7iodGviKHKPb9aCj8xTw",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4373,
+      "output_tokens": 1421
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bulgaria",
+    "source_file": "pocom/missions-countries/bulgaria.xml",
+    "events": [
+      {
+        "date": "1903-09-19",
+        "new_status": "Liaison",
+        "event_description": "First U.S. Diplomatic Agent to Bulgaria presents credentials, establishing a liaison-level presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Brinkerhoff Jackson, Diplomatic Agent. Appointed: 1903-06-05. Credentials presented: 1903-09-19."
+          }
+        ]
+      },
+      {
+        "date": "1912-02-01",
+        "new_status": "Legation",
+        "event_description": "U.S. mission elevated to Legation level as Jackson is commissioned Envoy Extraordinary and Minister Plenipotentiary and presents credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "John Brinkerhoff Jackson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1911-08-12. Credentials presented: 1912-02-01."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-13",
+        "new_status": "None",
+        "event_description": "Bulgaria declared war on the United States, ending formal diplomatic relations and closing the mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Bulgaria declared war on the United States on 1941-12-13. Note: Earle left post late in December 1941, arriving at Istanbul (en route to the United States) on December 27, 1941."
+          }
+        ]
+      },
+      {
+        "date": "1947-09-27",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Sofia re-established after WWII break, with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "John Evarts Horner, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1947-09-27."
+          }
+        ]
+      },
+      {
+        "date": "1950-02-21",
+        "new_status": "None",
+        "event_description": "The Department of State announced the suspension of diplomatic relations with Bulgaria; Heath left post on February 24, 1950.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The Department of State announced the suspension of diplomatic relatoins with Bulgaria on February 21, 1950. Heath left post on February 24, 1950."
+          }
+        ]
+      },
+      {
+        "date": "1960-03-14",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Sofia re-established after suspension of relations, with Edward Page presenting credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Edward Page, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1959-11-23. Credentials presented: 1960-03-14."
+          }
+        ]
+      },
+      {
+        "date": "1966-11-28",
+        "new_status": "Embassy",
+        "event_description": "Legation Sofia raised to Embassy status on November 28, 1966, with McSweeney in charge pending his promotion to Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "Note: Legation Sofia was raised to Embassy status on November 28, 1966, with McSweeney in charge pending his promotion to the rank of Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

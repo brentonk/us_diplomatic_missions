@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01LUZb8RwDaFUaszpqcSuy9N",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4017,
+      "output_tokens": 1152
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Korea",
+    "source_file": "pocom/missions-countries/korea.xml",
+    "events": [
+      {
+        "date": "1883-05-20",
+        "new_status": "Legation",
+        "event_description": "Legation established when Lucius Harwood Foote presented credentials as Envoy Extraordinary and Minister Plenipotentiary, the first U.S. chief of mission to Korea.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Lucius Harwood Foote, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1883-02-27. Credentials presented: 1883-05-20. Left post on 1885-02-19."
+          }
+        ]
+      },
+      {
+        "date": "1905-11-17",
+        "new_status": "None",
+        "event_description": "U.S. Legation closed after Japan assumed direction of Korean foreign relations; Minister Morgan closed the Legation on November 28, 1905.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "Japan assumed direction of Korean foreign relations on 1905-11-17. Note: Morgan closed the Legation on November 28, 1905, and left Korea on December 8, 1905."
+          }
+        ]
+      },
+      {
+        "date": "1949-04-20",
+        "new_status": "Embassy",
+        "event_description": "Embassy established when John Joseph Muccio presented credentials as Ambassador Extraordinary and Plenipotentiary, the first U.S. Ambassador to Korea, following the post-WWII restoration of Korean independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "John Joseph Muccio, Ambassador Extraordinary and Plenipotentiary. Appointed: 1949-04-07. Credentials presented: 1949-04-20. Left Korea 1952-09-08."
+          }
+        ]
+      }
+    ]
+  }
+}

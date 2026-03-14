@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01R4eBMYqFv59qXCAoB8fHux",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2968,
+      "output_tokens": 470
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bangladesh",
+    "source_file": "pocom/missions-countries/bangladesh.xml",
+    "events": [
+      {
+        "date": "1972-05",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Bangladesh established, with Herbert Daniel Spivack serving as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Herbert Daniel Spivack, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1972-05. Left post: 1972-10."
+          }
+        ]
+      }
+    ]
+  }
+}

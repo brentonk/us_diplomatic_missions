@@ -1,0 +1,107 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012bh8LqZzdPGbGExsofeYrn",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2854,
+      "output_tokens": 909
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1980-08-12",
+      "new_status": "Envoy Nonresident",
+      "event_description": "The United States and Kiribati agreed to establish diplomatic relations. The first U.S. envoy was subsequently appointed nonresident, stationed at Suva, Fiji.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quote": "The United States and Kiribati agreed to establish diplomatic relations on August 12, 1980."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-09-26",
+      "new_status": "Envoy Nonresident",
+      "event_description": "William Bodde, Jr. was appointed Envoy Extraordinary and Minister Plenipotentiary to Kiribati, stationed nonresident at Suva, Fiji, as no diplomatic facilities exist on Kiribati.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "William Bodde, Jr. was appointed Envoy Extraordinary and Minister Plenipotentiary to Kiribati on September 26, 1980. Bodde was stationed at Suva, Fiji, as no diplomatic facilities exist on Kiribati."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-01-20",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Establishment of nonresident envoy relations with Kiribati. William Bodde Jr., Envoy Extraordinary and Minister Plenipotentiary (resident in Suva), presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "William Jr Bodde, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1980-09-26. Credentials presented: 1981-01-20. Left Suva 1981-08-15."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1982-05-31",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Elevation from nonresident envoy to nonresident ambassador relations with Kiribati. Fred J. Eckert, Ambassador Extraordinary and Plenipotentiary (resident in Suva), presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Fred J Eckert, Ambassador Extraordinary and Plenipotentiary. Appointed: 1982-02-11. Credentials presented: 1982-05-31. Left Suva 1984-05-07."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Kiribati",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "CSV date 1982-05-31 matches POCOM credential presentation date for Fred J. Eckert as Ambassador. RDCR does not provide a specific institutional date for the elevation to Ambassador, so POCOM's date correctly applies."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1,
+          2
+        ],
+        "field": "date",
+        "csv_value": "1981-01-20",
+        "extracted_value": "1980-08-12 (RDCR: agreement to establish diplomatic relations); 1980-09-26 (RDCR: appointment of envoy); 1981-01-20 (POCOM: credential presentation)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR explicitly states 'The United States and Kiribati agreed to establish diplomatic relations on August 12, 1980,' which is an institutional establishment date. Per source priority rules, RDCR wins over POCOM when it provides an explicit institutional date. The CSV date of 1981-01-20 corresponds to the POCOM credential presentation date for William Bodde Jr., which is a personnel event (presenting credentials), not the institutional event (establishing relations). The correct date for the establishment of Envoy Nonresident relations should be 1980-08-12."
+      }
+    ]
+  }
+}

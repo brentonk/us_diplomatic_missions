@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016z4XUzf9BKqboWLQ4BaMX2",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3074,
+      "output_tokens": 559
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tonga",
+    "source_file": "pocom/missions-countries/tonga.xml",
+    "events": [
+      {
+        "date": "1972-11-06",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. nonresident ambassadorial relations with Tonga established when the first Ambassador Extraordinary and Plenipotentiary, Kenneth Franzheim, presented credentials. He departed Tonga just three days later, and all subsequent ambassadors are noted as departing from Wellington or Suva, confirming the nonresident nature of the mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Kenneth Franzheim, Ambassador Extraordinary and Plenipotentiary. Appointed: 1972-10-04. Credentials presented: 1972-11-06. Left Tonga 1972-11-09."
+          }
+        ]
+      }
+    ]
+  }
+}

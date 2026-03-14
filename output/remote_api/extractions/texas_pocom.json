@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016tAqfMmthpGUocagS1rdas",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2338,
+      "output_tokens": 909
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Texas",
+    "source_file": "pocom/missions-countries/texas.xml",
+    "events": [
+      {
+        "date": "1837-10-23",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation to Texas established when first Charg\u00e9 d'Affaires Branche Alcee Louis La Branch presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Branche Alcee Louis La, Charg\u00e9 d'Affaires. Appointed: 1837-03-07. Credentials presented: 1837-10-23. Left Texas soon after 1840-06-05."
+          }
+        ]
+      },
+      {
+        "date": "1845-08-09",
+        "new_status": "None",
+        "event_description": "U.S. Legation to Texas effectively ended as the last Charg\u00e9 d'Affaires, Andrew Jackson Donelson, departed Texas on or soon after this date, with no successor appointed. Texas was in the process of annexation to the United States.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Andrew Jackson Donelson, Charg\u00e9 d'Affaires. Appointed: 1844-09-16. Credentials presented: 1844-11-29. Left Texas on or soon after 1845-08-09."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01R6gbBdKHVftgC4cAByqzYL",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2459,
+      "output_tokens": 513
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-01-31",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Minsk was established with John Ford as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The American Embassy in Minsk was established on January 31, 1992, with John Ford as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": true
+    },
+    {
+      "date": "1992-09-09",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Belarus established when first Ambassador David Haywood Swartz presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "David Haywood Swartz, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-09-09. Left post on 1994-01-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Belarus",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "RDCR (Event 0) gives the institutional establishment date of 1992-01-31, matching the CSV exactly. POCOM (Event 1) gives 1992-09-09, the date the first Ambassador presented credentials \u2014 a later personnel event, not the institutional opening date. Per source priority rules, RDCR wins for the institutional date. Note: Event 0 has a citation error flag, but the quoted text clearly states the January 31, 1992 establishment date and the CSV agrees."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

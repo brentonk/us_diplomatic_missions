@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DpwLZ8mY5ubsyiEC7EkCfH",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2818,
+      "output_tokens": 381
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Papua New Guinea",
+    "source_file": "pocom/missions-countries/papua-new-guinea.xml",
+    "events": [
+      {
+        "date": "1976-01-05",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Papua New Guinea; first Ambassador Mary Seymour Olmsted presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Mary Seymour Olmsted, Ambassador Extraordinary and Plenipotentiary. Appointed: 1975-11-20. Credentials presented: 1976-01-05. Left post on 1979-07-28."
+          }
+        ]
+      }
+    ]
+  }
+}

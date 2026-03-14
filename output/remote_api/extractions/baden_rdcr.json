@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01R924qqHquva9TuYPRKWiU1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3425,
+      "output_tokens": 1212
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Baden",
+    "source_file": "rdcr/articles/baden.xml",
+    "events": [
+      {
+        "date": "1855-03-03",
+        "new_status": "Consulate",
+        "event_description": "A U.S. Consulate opened in Carlsruhe (Karlsruhe), the capital of Baden, establishing the first U.S. diplomatic presence in the capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Carlsruhe (Karlsruhe), which opened on March 3, 1855 and closed on February 18, 1872"
+          }
+        ]
+      },
+      {
+        "date": "1868-07-19",
+        "new_status": "Envoy Nonresident",
+        "event_description": "George Bancroft was specially accredited as U.S. Minister to the Grand Duke of Baden, while also accredited to Prussia and the North German Confederation, establishing nonresident envoy relations with Baden.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "On July 19, 1868, specially accredited U.S. Minister to the Grand Duke of Baden George Bancroft and the Minister of Foreign Affairs of the Grand Duchy of Baden Rudolph von Freydorf signed a treaty of naturalization between the United States and the Grand Duchy of Baden. At the time, Bancroft was also accredited to Prussia and the North German Confederation and, after 1871, to the German Empire."
+          }
+        ]
+      },
+      {
+        "date": "1917-02-03",
+        "new_status": "None",
+        "event_description": "All diplomatic relations between the U.S. and the German Empire, including Baden as a constituent state, were severed when President Wilson instructed the Secretary of State to notify the German Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "On February 3, 1917, U.S. President Woodrow Wilson instructed the Secretary of State to notify the German Ambassador to the United States that all diplomatic relations between the U.S. and the German Empire were severed. As the foreign affairs of Imperial Germany were run out of Berlin and decided upon by the Kaiser, this constituted the severance of relations with Baden, as part of the German Empire."
+          }
+        ]
+      }
+    ]
+  }
+}

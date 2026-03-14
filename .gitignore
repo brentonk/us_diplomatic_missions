@@ -1,4 +1,4 @@
-output/
+output/local/
 logs/
 web/_site/
 .venv/

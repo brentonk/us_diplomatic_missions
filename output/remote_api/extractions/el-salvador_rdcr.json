@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KxQsULq9cAwkWaveHNfUzv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2823,
+      "output_tokens": 927
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "El Salvador",
+    "source_file": "rdcr/articles/el-salvador.xml",
+    "events": [
+      {
+        "date": "1863-06-15",
+        "new_status": "Legation",
+        "event_description": "The American Legation in San Salvador was established when James R. Partridge presented his credentials as U.S. Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 20,
+            "quote": "Diplomatic relations were established on June 15, 1863, when James R. Partridge presented his credentials in San Salvador as U.S. Envoy Extraordinary and Minister Plenipotentiary.\n\nThe American Legation in San Salvador opened on June 15, 1863, under Minister Resident James R. Partridge."
+          }
+        ]
+      },
+      {
+        "date": "1931-12-04",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations were interrupted when the United States refused to recognize the new revolutionary Government of El Salvador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Normal relations were interrupted on December 4, 1931, when the United States did not recognize the new revolutionary Government of El Salvador."
+          }
+        ]
+      },
+      {
+        "date": "1934-01-26",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations were normalized when the United States recognized the Martinez Government of El Salvador via telegram from Secretary Cordell Hull, restoring the Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "The United States recognized the Martinez Government of El Salvador via Telegram from Secretary Cordell Hull on January 26, 1934."
+          }
+        ]
+      },
+      {
+        "date": "1943-03-23",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in El Salvador was elevated to Embassy status following a joint announcement between the United States and seven American Republics, including El Salvador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "Following a joint announcement on March 23, 1943, between the United States and seven American Republics that included El Salvador, the Legations in the respective nations and the United States were raised to the status of Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

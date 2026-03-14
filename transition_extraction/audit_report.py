@@ -18,7 +18,7 @@ SPLIT_STATUS_SELECT = f'<select class="split-status"><option value="">-- status 
 
 
 def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None = None) -> list[WorkUnit]:
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units = []
     for path in sorted(work_units_dir.glob("*.json")):
         with open(path) as f:
@@ -90,7 +90,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
     decisions = _load_decisions(decisions_path)
     suggestions = _load_suggestions(config.paths.manual_reconciliation.parent)
 
-    reconciliations_dir = config.paths.output_dir / "reconciliations"
+    reconciliations_dir = config.paths.output_dir / "remote_api" / "reconciliations"
 
     items_by_country: dict[str, list[dict]] = {}
     csv_by_country: dict[str, list] = {}
@@ -248,7 +248,7 @@ def generate_audit_html(config: PipelineConfig, countries_filter: list[str] | No
     # Render HTML
     html = _render_html(items_by_country, csv_by_country, totals)
 
-    output_path = config.paths.output_dir / "final" / "audit_report.html"
+    output_path = config.paths.output_dir / "local" / "final" / "audit_report.html"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:
         f.write(html)

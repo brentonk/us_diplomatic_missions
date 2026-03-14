@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MuL6xy3t6BFxuyGwHTwxer",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2545,
+      "output_tokens": 390
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bosnia and Herzegovina",
+    "source_file": "pocom/missions-countries/bosnia-herzegovina.xml",
+    "events": [
+      {
+        "date": "1993-06-23",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Bosnia and Herzegovina when the first Ambassador Extraordinary and Plenipotentiary, Victor Jackovich, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Victor Jackovich, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-05-12. Credentials presented: 1993-06-23. Left post on 1995-04-17."
+          }
+        ]
+      }
+    ]
+  }
+}

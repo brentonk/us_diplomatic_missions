@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FguWK3a3Xigi4Q3KX1iGxR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4099,
+      "output_tokens": 1125
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cuba",
+    "source_file": "pocom/missions-countries/cuba.xml",
+    "events": [
+      {
+        "date": "1902-05-27",
+        "new_status": "Legation",
+        "event_description": "First U.S. Envoy Extraordinary and Minister Plenipotentiary to Cuba presented credentials, establishing a legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Herbert Goldsmith Squiers, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1902-05-20. Credentials presented: 1902-05-27."
+          }
+        ]
+      },
+      {
+        "date": "1923-03-05",
+        "new_status": "Embassy",
+        "event_description": "Enoch Herbert Crowder presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Cuba, elevating the mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Enoch Herbert Crowder, Ambassador Extraordinary and Plenipotentiary. Appointed: 1923-02-10. Credentials presented: 1923-03-05. Left post on 1927-05-28."
+          }
+        ]
+      },
+      {
+        "date": "1961-01-03",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Cuba, citing crippling limitations placed on the U.S. Mission by the Cuban government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 45,
+            "quote": "Braddock was serving as Charg\u00e9 d'Affaires ad interim when the United States severed diplomatic relations with Cuba on January 3, 1961. The United States severed diplomatic relations with Cuba on January 3, 1961, citing unwarranted action by the Government of Cuba that placed crippling limitations on the ability of the United States Mission to carry on its normal diplomatic and consular functions."
+          }
+        ]
+      },
+      {
+        "date": "1977-09-01",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Swiss Embassy in Havana, resuming a limited diplomatic presence after severing relations in 1961.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 47,
+            "quote": "On September 1, 1977, the United States established an Interests Section in the Swiss Embassy. Lyle Francis Lane, Principal Officer. Credentials presented: 1977-09."
+          }
+        ]
+      },
+      {
+        "date": "2015-07-20",
+        "new_status": "Embassy",
+        "event_description": "The United States and Cuba resumed full diplomatic relations, elevating their respective Interests Sections to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 75,
+            "line_end": 75,
+            "quote": "The United States and Cuba resumed diplomatic relations on July 20, 2015, when both countries elevated their respective Interests Sections to Embassy status."
+          }
+        ]
+      }
+    ]
+  }
+}

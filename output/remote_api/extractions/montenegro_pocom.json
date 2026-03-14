@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019qxw7sixXrJd4cxWYQAEbu",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2670,
+      "output_tokens": 897
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Montenegro",
+    "source_file": "pocom/missions-countries/montenegro.xml",
+    "events": [
+      {
+        "date": "1905-10-30",
+        "new_status": "Envoy Nonresident",
+        "event_description": "John Brinkerhoff Jackson presented credentials as the first U.S. Envoy Extraordinary and Minister Plenipotentiary to Montenegro, establishing nonresident envoy-level relations. Ministers were based in Athens, not resident in Montenegro.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Brinkerhoff Jackson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1905-03-08. Credentials presented: 1905-10-30. Presented recall on 1907-10-27."
+          }
+        ]
+      },
+      {
+        "date": "1918-12-04",
+        "new_status": "None",
+        "event_description": "Montenegro was absorbed into the Kingdom of the Serbs, Croats, and Slovenes, ending U.S. diplomatic representation to Montenegro.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 14,
+            "quote": "Montenegro was absorbed into the Kingdom of the Serbs, Croats, and Slovenes on 1918-12-04."
+          }
+        ]
+      },
+      {
+        "date": "2006-10-05",
+        "new_status": "Embassy",
+        "event_description": "Consulate Podgorica was elevated to Embassy status, coinciding with the presentation of credentials by Charg\u00e9 d'Affaires ad interim Arlene Lorraine Ferrill, following Montenegro's independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Arlene Lorraine Ferrill, Charg\u00e9 d'Affaires ad interim. Credentials presented: 2006-10-05. Note: Consulate Podgorica was elevated to Embassy status on October 5, 2006."
+          }
+        ]
+      }
+    ]
+  }
+}

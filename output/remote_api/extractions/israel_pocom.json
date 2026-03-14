@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011zUxxzq7jWgm1ctyrm5G8a",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3185,
+      "output_tokens": 420
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Israel",
+    "source_file": "pocom/missions-countries/israel.xml",
+    "events": [
+      {
+        "date": "1949-03-28",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Israel; first Ambassador James Grover McDonald presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "James Grover Mcdonald, Ambassador Extraordinary and Plenipotentiary. Appointed: 1949-03-18. Credentials presented: 1949-03-28. Left post on 1950-12-13."
+          }
+        ]
+      }
+    ]
+  }
+}

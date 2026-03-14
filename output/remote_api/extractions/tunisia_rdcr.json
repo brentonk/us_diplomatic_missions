@@ -1,0 +1,161 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Cbn7eRJpJUCEdzvy5nkoYC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3040,
+      "output_tokens": 2078
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tunisia",
+    "source_file": "rdcr/articles/tunisia.xml",
+    "events": [
+      {
+        "date": "1795",
+        "new_status": "Consul Nonresident",
+        "event_description": "Consular relations began when Joseph Donaldson was named Consul for Tunis but remained at post in Algiers; Joseph \u00c9tienne Famin was deputized to act as U.S. consular official in Tunis.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Joseph Donaldson held U.S. consular authority over all the Barbary States, and was named Consul for Tunis on March 28, 1795, but remained at post in Algiers. Joseph \u00c9tienne Famin, a French merchant at Tunis, was deputized to act as U.S. consular official."
+          }
+        ]
+      },
+      {
+        "date": "1798-03-15",
+        "new_status": "Consulate",
+        "event_description": "William Eaton presented his credentials to the Bey of Tunis, establishing a resident consular presence in the capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Flamin remained in Tunis after the signing of the August 1, 1797 treaty, until the arrival of William Eaton, who presented his credentials to Hamouda Pasha, Bey of Tunis, on March 15, 1798."
+          }
+        ]
+      },
+      {
+        "date": "1882",
+        "new_status": "None",
+        "event_description": "The Consulate at Tunis closed for the first time, with no extant record of an agent until 1894.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The first closing was from 1882 to 1890, although there is no extant record of an agent until 1894."
+          }
+        ]
+      },
+      {
+        "date": "1890",
+        "new_status": "Consulate",
+        "event_description": "The Consulate at Tunis reopened after the first closure, though no extant record of an agent exists until 1894.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The first closing was from 1882 to 1890, although there is no extant record of an agent until 1894."
+          }
+        ]
+      },
+      {
+        "date": "1904-06-30",
+        "new_status": "None",
+        "event_description": "The Consulate at Tunis was temporarily closed on June 30, 1904.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate was also temporarily closed from June 30, 1904 until after the confirmation of vice consul Auguste Proux on Ocotber 8, 1904."
+          }
+        ]
+      },
+      {
+        "date": "1904-10-08",
+        "new_status": "Consulate",
+        "event_description": "The Consulate at Tunis reopened after the confirmation of vice consul Auguste Proux.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate was also temporarily closed from June 30, 1904 until after the confirmation of vice consul Auguste Proux on Ocotber 8, 1904."
+          }
+        ]
+      },
+      {
+        "date": "1912-04-19",
+        "new_status": "None",
+        "event_description": "The Consulate at Tunis closed again after Proux's retirement.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The consulate closed again after Proux's retirement, on April 19, 1912."
+          }
+        ]
+      },
+      {
+        "date": "1916",
+        "new_status": "Consulate",
+        "event_description": "The Consulate at Tunis was revived in 1915 but not staffed until the summer of 1916 due to wartime conditions.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate was revived again in 1915, but owing to wartime conditions, it was not staffed until the summer of 1916."
+          }
+        ]
+      },
+      {
+        "date": "1942",
+        "new_status": "None",
+        "event_description": "The Consulate at Tunis closed again in late 1942.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate was also closed from late 1942 until spring of 1943."
+          }
+        ]
+      },
+      {
+        "date": "1943",
+        "new_status": "Consulate",
+        "event_description": "The Consulate at Tunis reopened in spring 1943 after wartime closure.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate was also closed from late 1942 until spring of 1943."
+          }
+        ]
+      },
+      {
+        "date": "1956-06-05",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Tunisia was formally opened on June 5, 1956, elevated from Consulate General status, with Charge d'Affaires Morris N. Hughes presenting credentials on June 6.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The Consulate General was elevated to the status of U.S. Embassy on June 5, 1956."
+          }
+        ]
+      }
+    ]
+  }
+}

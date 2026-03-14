@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01M7Hrwx5EQLt36wBByfuiCn",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4971,
+      "output_tokens": 1015
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Italy",
+    "source_file": "pocom/missions-countries/italy.xml",
+    "events": [
+      {
+        "date": "1840-09-15",
+        "new_status": "Legation",
+        "event_description": "Hezekiah Gold Rogers presented credentials as Charg\u00e9 d'Affaires to Sardinia (capital Turin), establishing the first U.S. diplomatic mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Hezekiah Gold Rogers, Charg\u00e9 d'Affaires. Appointed: 1840-06-05. Credentials presented: 1840-09-15. Presented recall on 1841-11-22. Note: Commissioned to Sardinia (capital at Turin)."
+          }
+        ]
+      },
+      {
+        "date": "1894-03-11",
+        "new_status": "Embassy",
+        "event_description": "Isaac Wayne Macveagh presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Isaac Wayne Macveagh, Ambassador Extraordinary and Plenipotentiary. Appointed: 1893-12-20. Credentials presented: 1894-03-11. Left post on 1897-03-04."
+          }
+        ]
+      },
+      {
+        "date": "1941-12",
+        "new_status": "None",
+        "event_description": "Italy declared war on the United States, ending U.S. diplomatic representation in Italy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "George Wadsworth, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1941-10. Italy declared war on the United States 1941-12-06."
+          }
+        ]
+      },
+      {
+        "date": "1945-01-08",
+        "new_status": "Embassy",
+        "event_description": "Alexander Comstock Kirk presented credentials as Ambassador Extraordinary and Plenipotentiary, re-establishing the U.S. Embassy in Italy after the break caused by World War II.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "Alexander Comstock Kirk, Ambassador Extraordinary and Plenipotentiary. Appointed: 1944-12-08. Credentials presented: 1945-01-08. Left post on 1946-03-05."
+          }
+        ]
+      }
+    ]
+  }
+}

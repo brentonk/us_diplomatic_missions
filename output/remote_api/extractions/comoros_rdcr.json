@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HAAmxrnU7JD2yQ8T2bwKSN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2380,
+      "output_tokens": 958
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Comoros",
+    "source_file": "rdcr/articles/comoros.xml",
+    "events": [
+      {
+        "date": "1977-08-15",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established via joint communiqu\u00e9. The first U.S. Charg\u00e9 d'Affaires ad interim was nonresident, resident at Antananarivo, Madagascar.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 15, 1977, when United States and the Comorian Republic issued a joint communiqu\u00e9 that announced the establishment of diplomatic relations between the two countries. The first American Charge d'Affaires ad interim to the Republic of the Comoros, Robert S. Barrett IV, presented his credentials to Foreign Minister Mouzawior Abdallah on August 16, 1977. Barrett was also Charge d'Affairs ad interim and resident at Antananarivo, Madagascar."
+          }
+        ]
+      },
+      {
+        "date": "1985-08-26",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Moroni was established, elevating the U.S. mission from a nonresident arrangement to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy at Moroni was established on August 26, 1985, with Edward Brynn as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1993-09-30",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The American Embassy at Moroni was closed. Subsequent U.S. Ambassadors to Comoros were accredited to Comoros but resident at Port Louis, Mauritius.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The American Embassy at Moroni was closed on September 30, 1993. Subsequent American Ambassadors to Comoros also have been accredited to Mauritius, and resident at Port Louis."
+          }
+        ]
+      }
+    ]
+  }
+}

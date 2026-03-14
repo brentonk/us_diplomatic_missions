@@ -1,0 +1,135 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016FRjqvpe4qHTDb2SxokP5q",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3723,
+      "output_tokens": 1791
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Syria",
+    "source_file": "pocom/missions-countries/syria.xml",
+    "events": [
+      {
+        "date": "1942-11-30",
+        "new_status": "Liaison",
+        "event_description": "George Wadsworth presented credentials as Diplomatic Agent/Consul General, establishing a liaison-level U.S. presence in Syria.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "George Wadsworth, Diplomatic Agent/Consul General. Appointed: 1942-10-09. Credentials presented: 1942-11-30."
+          }
+        ]
+      },
+      {
+        "date": "1944-11-17",
+        "new_status": "Legation",
+        "event_description": "Wadsworth was promoted to Envoy Extraordinary and Minister Plenipotentiary, elevating the U.S. mission to a legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "George Wadsworth, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1944-09-21. Credentials presented: 1944-11-17."
+          }
+        ]
+      },
+      {
+        "date": "1952-09-30",
+        "new_status": "Embassy",
+        "event_description": "James Sayle Moose was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials, elevating the U.S. mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 13,
+            "quote": "James Sayle Moose, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1952-06-25. Credentials presented: 1952-08-14. Promoted to Ambassador Extraordinary and Plenipotentiary 1952-09-30."
+          }
+        ]
+      },
+      {
+        "date": "1958-02-25",
+        "new_status": "Consulate",
+        "event_description": "Embassy Damascus was reclassified as a Consulate General following Syria's incorporation into the United Arab Republic.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "[Mission Note] Embassy Damascus was reclassified as a Consulate General on February 25, 1958. The mission was re-established as an Embassy on October 10, 1961."
+          }
+        ]
+      },
+      {
+        "date": "1961-10-10",
+        "new_status": "Embassy",
+        "event_description": "The U.S. mission in Damascus was re-established as an Embassy, with Ridgway Brewster Knight serving as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "[Mission Note] Embassy Damascus was reclassified as a Consulate General on February 25, 1958. The mission was re-established as an Embassy on October 10, 1961."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-06",
+        "new_status": "None",
+        "event_description": "Syria severed diplomatic relations with the United States, ending the U.S. Embassy presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Syria severed diplomatic relations with the United States on 1967-06-06. Note: Smythe left post on June 8, 1967."
+          }
+        ]
+      },
+      {
+        "date": "1974-02-08",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Italian Embassy in Damascus, resuming a limited diplomatic presence after the break in relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "[Mission Note] On February 8, 1974, the United States established an Interests Section in the Italian Embassy with Thomas J. Scotes as Principal Officer."
+          }
+        ]
+      },
+      {
+        "date": "1974-06-16",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Damascus was re-established, with Thomas James Scotes serving as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 27,
+            "quote": "The Embassy in Damascus was re-established on June 16, 1974."
+          }
+        ]
+      },
+      {
+        "date": "2012-02-06",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in Damascus suspended operations and all U.S. personnel were withdrawn due to deteriorating security conditions during the Syrian civil war.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "[Mission Note] The U.S. Embassy in Damascus suspended operations on February 6, 2012, and all U.S. personnel were withdrawn after security conditions deteriorated in the midst of the Syrian civil war."
+          }
+        ]
+      }
+    ]
+  }
+}

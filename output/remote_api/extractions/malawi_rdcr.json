@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TA6sQY9KgWaMGnQFvJVkM8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2244,
+      "output_tokens": 413
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malawi",
+    "source_file": "rdcr/articles/malawi.xml",
+    "events": [
+      {
+        "date": "1964-07-06",
+        "new_status": "Embassy",
+        "event_description": "The American consulate at Blantyre was elevated to Embassy status upon Malawi's attainment of independence, with Edward W. Holmes as Charg\u00e9 d'Affaires ad interim. The embassy was designated as Zomba until 1970 but physically located at Blantyre.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on July 6, 1964, when the American consulate at Blantyre was elevated to Embassy status (designated as Zomba, Malawi until 1970, but physically at Blantyre) with Edward W. Holmes as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

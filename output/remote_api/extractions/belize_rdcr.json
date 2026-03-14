@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019ThQTWh8WbpdDFSrYsXutv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2324,
+      "output_tokens": 623
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Belize",
+    "source_file": "rdcr/articles/belize.xml",
+    "events": [
+      {
+        "date": "1847-03-03",
+        "new_status": "Consulate",
+        "event_description": "The United States established a consulate in British Honduras (present-day Belize), located in what was then the capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The United States established a consulate in British Honduras (now Belize) on March 3, 1847."
+          }
+        ]
+      },
+      {
+        "date": "1981-10-29",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy were established when Consulate General Belize was raised to Embassy status, coinciding with U.S. recognition of Belizean independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "Diplomatic relations and the American Embassy were established on October 29, 1981, when Consulate General Belize was raised to Embassy status with Principal Officer Malcolm R. Barnebey serving as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

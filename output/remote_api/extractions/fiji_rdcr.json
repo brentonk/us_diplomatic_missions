@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014kE5FkgX1dAu87syMA5jBb",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2436,
+      "output_tokens": 685
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Fiji",
+    "source_file": "rdcr/articles/fiji.xml",
+    "events": [
+      {
+        "date": "1844-08-19",
+        "new_status": "Consul Nonresident",
+        "event_description": "Commercial Agent John B. Williams appointed first Consul to the Fiji Islands, resident at Auckland, New Zealand \u2014 not resident in Fiji.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Commercial Agent John B. Williams was appointed the first Consul to the Fiji Islands on August 19, 1844. He was resident at Auckland, New Zealand."
+          }
+        ]
+      },
+      {
+        "date": "1971-11-01",
+        "new_status": "Embassy",
+        "event_description": "American Embassy at Suva established, with Robert W. Skiff as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "The American Embassy at Suva established on November 1, 1971, with Robert W. Skiff as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

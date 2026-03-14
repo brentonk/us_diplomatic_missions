@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01RxJ5gragNQDyUpanvF4tN1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3220,
+      "output_tokens": 1562
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cambodia",
+    "source_file": "pocom/missions-countries/cambodia.xml",
+    "events": [
+      {
+        "date": "1950-07-11",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Donald Read Heath presented credentials as nonresident Envoy Extraordinary and Minister Plenipotentiary, establishing nonresident ministerial relations with Cambodia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Donald Read Heath, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1950-06-29. Credentials presented: 1950-07-11."
+          }
+        ]
+      },
+      {
+        "date": "1950-11-14",
+        "new_status": "Legation",
+        "event_description": "Legation Phnom Penh opened with Don V. Catlett as Charg\u00e9 d'Affaires ad interim, establishing a resident diplomatic mission in Cambodia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "During Heath's tenure as non-resident Minister, Legation Phnom Penh was opened on November 14, 1950, with Don V. Catlett as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1952-06-25",
+        "new_status": "Embassy",
+        "event_description": "Legation Phnom Penh was raised to Embassy status, with Thomas J. Corcoran as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Heath's tenure as non-resident Minister, Legation Phnom Penh was raised to Embassy status on June 25, 1952, with Thomas J. Corcoran as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1965-05-03",
+        "new_status": "None",
+        "event_description": "Cambodia severed diplomatic relations with the United States, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Cambodia severed diplomatic relations with the United States 1965-05-03."
+          }
+        ]
+      },
+      {
+        "date": "1969-08-16",
+        "new_status": "Embassy",
+        "event_description": "Lloyd Michael Rives presented credentials as Charg\u00e9 d'Affaires ad interim, resuming U.S. diplomatic representation in Cambodia at the embassy level.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "Lloyd Michael Rives, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1969-08-16."
+          }
+        ]
+      },
+      {
+        "date": "1975-04-12",
+        "new_status": "None",
+        "event_description": "Embassy Phnom Penh was closed, ending U.S. diplomatic representation in Cambodia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Embassy Phnom Penh closed 1975-04-12."
+          }
+        ]
+      },
+      {
+        "date": "1991-11-11",
+        "new_status": "Liaison",
+        "event_description": "Charles H. Twining presented credentials as Representative, establishing a liaison-level U.S. presence in Cambodia after the long break in relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Charles H Twining, Representative. Credentials presented: 1991-11-11."
+          }
+        ]
+      },
+      {
+        "date": "1994-05-17",
+        "new_status": "Embassy",
+        "event_description": "Charles H. Twining presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating U.S. representation in Cambodia to full embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Charles H Twining, Ambassador Extraordinary and Plenipotentiary. Appointed: 1994-05-13. Credentials presented: 1994-05-17."
+          }
+        ]
+      }
+    ]
+  }
+}

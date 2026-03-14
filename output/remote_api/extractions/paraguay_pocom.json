@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SX4wceXSi2uySS16LGeNK5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5211,
+      "output_tokens": 971
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Paraguay",
+    "source_file": "pocom/missions-countries/paraguay.xml",
+    "events": [
+      {
+        "date": "1861-11-26",
+        "new_status": "Liaison",
+        "event_description": "First U.S. diplomatic presence established in Paraguay when Charles Ames Washburn presented credentials as Commissioner.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Charles Ames Washburn, Commissioner. Appointed: 1861-06-08. Credentials presented: 1861-11-26. Promoted to Minister Resident 1863-05-13."
+          }
+        ]
+      },
+      {
+        "date": "1863-05-13",
+        "new_status": "Legation",
+        "event_description": "Mission elevated to Legation when Washburn was promoted from Commissioner to Minister Resident.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 5,
+            "quote": "Charles Ames Washburn, Commissioner. Appointed: 1861-06-08. Credentials presented: 1861-11-26. Promoted to Minister Resident 1863-05-13.\n\nCharles Ames Washburn, Minister Resident. Appointed: 1863-01-19. Credentials presented: 1863-05-13."
+          }
+        ]
+      },
+      {
+        "date": "1942-04-15",
+        "new_status": "Embassy",
+        "event_description": "Mission elevated from Legation to Embassy when Wesley Frost was promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 49,
+            "quote": "Wesley Frost, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-03-20. Credentials presented: 1941-04-30. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-04-15.\n\nWesley Frost, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-04-15."
+          }
+        ]
+      }
+    ]
+  }
+}

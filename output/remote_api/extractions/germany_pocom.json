@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011NracT39NkR2JQg8dEux5o",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6276,
+      "output_tokens": 1372
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Germany",
+    "source_file": "pocom/missions-countries/germany.xml",
+    "events": [
+      {
+        "date": "1797-12-05",
+        "new_status": "Legation",
+        "event_description": "Legation to Prussia established when John Quincy Adams presented credentials as Minister Plenipotentiary, resident at Berlin.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Quincy Adams, Minister Plenipotentiary. Appointed: 1797-06-01. Credentials presented: 1797-12-05. Presented recall on 1801-05-05. Note: Commissioned to Prussia; resident at Berlin."
+          }
+        ]
+      },
+      {
+        "date": "1893-10-26",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy when Theodore Runyon was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 45,
+            "quote": "Theodore Runyon, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1893-03-23. Credentials presented: 1893-06-04. Promoted to Ambassador Extraordinary and Plenipotentiary 1893-10-26. Note: Commissioned to Germany."
+          }
+        ]
+      },
+      {
+        "date": "1917-02-03",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Germany; Ambassador Gerard suspended official functions and left post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "The United States severed diplomatic relations with Germany on 1917-02-03. Note: Commissioned to Germany. Gerard received official notice of the suspension of relations on Febraury 5, 1917, and he suspended his official functions. He left post on February 10, 1917."
+          }
+        ]
+      },
+      {
+        "date": "1921-12-10",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations with Germany resumed; Ellis Loring Dresel presented credentials as Charg\u00e9 d'Affaires, re-establishing the Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "Ellis Loring Dresel, Charg\u00e9 d'Affaires. Appointed: 1921-11-18. Credentials presented: 1921-12-10. Left post on 1922-04-18. Note: Commissioned to Germany."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-11",
+        "new_status": "None",
+        "event_description": "Germany declared war on the United States, ending all diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 73,
+            "line_end": 73,
+            "quote": "Leland Burnette Morris, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1940-10. Germany declared war on the United States on 1941-12-11."
+          }
+        ]
+      },
+      {
+        "date": "1955-05-05",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Germany was reestablished on May 5, 1955, with Ambassador-designate Conant (previously serving as High Commissioner) in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 75,
+            "line_end": 75,
+            "quote": "The Embassy in Germany had been reestablished May 5, 1955, with Ambassador-designate Conant (who had been serving as High Commissioner) in charge except for a brief temporary absence pending confirmation of his nomination, commission, and presentation of his letter of credence."
+          }
+        ]
+      }
+    ]
+  }
+}

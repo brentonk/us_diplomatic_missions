@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ajfb81ho5wiLVbe5sfzTBR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3315,
+      "output_tokens": 1020
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Burkina Faso (Upper Volta)",
+    "source_file": "pocom/missions-countries/burkina-faso.xml",
+    "events": [
+      {
+        "date": "1960-08-05",
+        "new_status": "None",
+        "event_description": "Donald Norland presented credentials as Charg\u00e9 d'Affaires ad interim on the date of Upper Volta's independence, establishing initial U.S. diplomatic contact but prior to any formal mission being opened.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Donald Richard Norland, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-05. Note: Presented credentials as Charg\u00e9 d'Affaires ad interim on August 4, 1960, to take effect on August 5, 1960."
+          }
+        ]
+      },
+      {
+        "date": "1960-11-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Robert Borden Reams presented credentials as Ambassador Extraordinary and Plenipotentiary, but was nonresident, being commissioned to Dahomey. This established nonresident ambassadorial relations before the Embassy was formally opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Robert Borden Reams, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-10-14. Credentials presented: 1960-11-26. Superseded 1961-07-31. Note: Commissioned to Dahomey. Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Reams's tenure as non-resident Ambassador, Embassy Ouagadougou was established on December 31, 1960, with Robert McKinnon as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1960-12-31",
+        "new_status": "Embassy",
+        "event_description": "Embassy Ouagadougou was formally established with Robert McKinnon as Charg\u00e9 d'Affaires ad interim, elevating the U.S. mission to full embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Reams's tenure as non-resident Ambassador, Embassy Ouagadougou was established on December 31, 1960, with Robert McKinnon as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

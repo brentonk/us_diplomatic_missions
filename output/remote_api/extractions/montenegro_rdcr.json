@@ -1,0 +1,75 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016EYyjxxrkW7MrsAt2dDzFz",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2970,
+      "output_tokens": 1145
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Montenegro",
+    "source_file": "rdcr/articles/montenegro.xml",
+    "events": [
+      {
+        "date": "1905-10-30",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when U.S. Envoy Extraordinary and Minister Plenipotentiary John B. Jackson presented credentials to Prince Nikola. Jackson and successors resided in Athens, Greece, making only annual visits to Cetinje.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "Diplomatic relations were established on October 30, 1905, when John B. Jackson, U.S. Envoy Extraordinary and Minister Plenipotentiary, presented his credentials to Prince Nikola. Jackson and his successors resided in Athens, Greece and made annual visits to Cetinje, the Montenegrin capitol."
+          }
+        ]
+      },
+      {
+        "date": "1920-12-30",
+        "new_status": "None",
+        "event_description": "Diplomatic relations ended when President Woodrow Wilson withdrew recognition of Montenegro as an independent state.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 30,
+            "line_end": 30,
+            "quote": "Diplomatic relations ended on December 30, 1920, when President Woodrow Wilson withdrew recognition of Montenegro as an independent state (see Recognitions above)."
+          }
+        ]
+      },
+      {
+        "date": "2006-08-15",
+        "new_status": "Consulate",
+        "event_description": "Diplomatic relations re-established via exchange of letters between President Bush and Montenegrin President Vujanovic. A U.S. Consulate was already present in Podgorica (the capital), which would later be elevated to an embassy.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "Diplomatic relations were established on August 15, 2006, with an exchange of letters between President George W. Bush and Montenegrin President Filip Vujanovic."
+          },
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "The American Embasy in Podgorica was established on October 5, 2006, when the U.S. Consulate became an embassy, with Arlene Ferrill as Charge d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "2006-10-05",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Podgorica was established when the U.S. Consulate was elevated to embassy status, with Arlene Ferrill as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "The American Embasy in Podgorica was established on October 5, 2006, when the U.S. Consulate became an embassy, with Arlene Ferrill as Charge d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

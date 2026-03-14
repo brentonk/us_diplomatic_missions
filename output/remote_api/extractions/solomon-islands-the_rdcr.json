@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FFErpxhic1g5gZcUEKj5Sd",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2446,
+      "output_tokens": 972
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Solomon Islands, The",
+    "source_file": "rdcr/articles/solomon-islands.xml",
+    "events": [
+      {
+        "date": "1978-10-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established when Ambassador Mary S. Olmsted presented credentials; she was nonresident, also accredited to Papua New Guinea and resident at Port Moresby.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on October 9, 1978, when Mary S. Olmsted presented her credentials as Ambassador to the Solomon Islands. Olmstead also was accredited to Papua New Guinea and was resident at Port Moresby."
+          }
+        ]
+      },
+      {
+        "date": "1988-07-04",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Consulate in Honiara was upgraded to Embassy status, with William Warren as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The U.S. Consulate in Honiara was upgraded to Embassy status on July 4, 1988, with William Warren as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1993-07-30",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. Embassy in Honiara was closed; Ambassador Robert William remained nonresident Ambassador to the Solomon Islands, also accredited to Papua New Guinea and Vanuatu, and resident at Port Moresby.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The United States closed its Embassy at Honiara on July 30, 1993. Ambassador Robert William remained Ambassador to the Solomon Islands and was also accredited to Papua New Guinea and Vanuatu, and was resident at Port Moresby."
+          }
+        ]
+      },
+      {
+        "date": "2023-01-27",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Honiara was re-opened under the direction of Charg\u00e9 d'Affaires ad interim Russell Comeau.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The United States re-opened its Embassy at Honiara on January 27, 2023, under the direction of Charg\u00e9 d'Affaires ad interim Russell Comeau."
+          }
+        ]
+      }
+    ]
+  }
+}

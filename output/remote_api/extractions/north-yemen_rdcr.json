@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JjLbDXGJGxTDDPnkH2Yecs",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3565,
+      "output_tokens": 1262
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "North Yemen",
+    "source_file": "rdcr/articles/yemen.xml",
+    "events": [
+      {
+        "date": "1946-03-04",
+        "new_status": "Liaison",
+        "event_description": "The U.S. established a Special Diplomatic Mission to the Kingdom of Yemen, with William A. Eddy named as Chief of Mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Diplomatic relations were established on March 4, 1946, when the United States and Yemen agreed to the appointment of an American Special Diplomatic Mission to the Kingdom of the Yemen. William A. Eddy was named Chief of this mission and concluded a provisional agreement on relations between the two states on May 4, 1946."
+          }
+        ]
+      },
+      {
+        "date": "1946-09-30",
+        "new_status": "Envoy Nonresident",
+        "event_description": "J. Rives Childs presented credentials as Envoy Extraordinary and Minister Plenipotentiary to the Kingdom of Yemen, but was nonresident, being accredited also to Saudi Arabia and resident at Jidda.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "On September 30, 1946, J. Rives Childs presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to the Kingdom of Yemen (North Yemen). Childs was also accredited to Saudi Arabia and was resident at Jidda."
+          }
+        ]
+      },
+      {
+        "date": "1959-03-16",
+        "new_status": "Legation",
+        "event_description": "The American Legation at Taiz was opened to the public, establishing a resident diplomatic mission in North Yemen.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "The American Legation at Taiz was opened to the public as of March 16, 1959, with Charles B. Ferguson as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1963-01-28",
+        "new_status": "Embassy",
+        "event_description": "The American Legation at Taiz was elevated to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The American Legation at Taiz was raised to Embassy status on January 28, 1963."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "The Yemen Arab Republic (North Yemen) severed diplomatic relations with the United States in the wake of the Arab-Israeli conflict.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "The Yemen Arab Republic (North Yemen) severed relations with the United States on June 7, 1967 in the wake of the Arab-Israeli conflict."
+          }
+        ]
+      },
+      {
+        "date": "1972-07",
+        "new_status": "Embassy",
+        "event_description": "The United States reestablished diplomatic relations with the Yemen Arab Republic and reopened the Embassy in San'a following a visit by Secretary of State Rogers.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "The United States reestablished diplomatic relations with the Yemen Arab Republic after a visit to San'a by U.S. Secretary of State William P. Rogers in July 1972. At this time, the Embassy in San'a reopened."
+          }
+        ]
+      }
+    ]
+  }
+}

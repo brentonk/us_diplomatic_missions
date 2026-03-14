@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01SmN3oCdn1YM5gjP4eo6Lfb",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5066,
+      "output_tokens": 1627
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Luxembourg",
+    "source_file": "pocom/missions-countries/luxembourg.xml",
+    "events": [
+      {
+        "date": "1903-07-17",
+        "new_status": "Envoy Nonresident",
+        "event_description": "First U.S. Envoy Extraordinary and Minister Plenipotentiary to Luxembourg presents credentials, establishing nonresident envoy relations. Minister was resident at The Hague.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Stanford Newel, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1903-06-05. Credentials presented: 1903-07-17."
+          }
+        ]
+      },
+      {
+        "date": "1931-10-08",
+        "new_status": "Legation",
+        "event_description": "A resident Legation is established in Luxembourg. Gibson (nonresident Minister) introduces George P. Waller as Second Secretary of Legation and Consul, then returns to Brussels, leaving Waller in charge as resident Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "On October 8, 1931, during Gibson's tenure as non-resident Minister, Gibson introduced George P. Waller to the Minister of State in Luxembourg, in Waller's capacity as Second Secretary of Legation and Consul. Gibson then returned to Brussels on October 9, 1931, leaving Waller in charge at Luxembourg, the Department of State having previously authorized the Consul and Second Secretary at that post to act as Charge d'Affaires ad interim in the absence of the Minister and First Secretary."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "Legation Luxembourg closed following German occupation of Luxembourg on May 10, 1940.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "German forces occupied Luxembourg on 1940-05-10. Note: Cudahy left Brussels on July 18, 1940. George P. Waller was serving as Charg\u00e9 d'Affaires ad interim when Legation Luxembourg was closed on July 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1941-03-10",
+        "new_status": "Legation",
+        "event_description": "Legation re-established near the Luxembourg government in exile. Moffat presents credentials as Envoy Extraordinary and Minister Plenipotentiary, resident at Ottawa.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Jay Pierrepont Moffat, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-03-10. Died at Ottawa 1943-01-24."
+          }
+        ]
+      },
+      {
+        "date": "1944-09-23",
+        "new_status": "Legation",
+        "event_description": "Charg\u00e9 d'Affaires ad interim Winthrop Greene presents credentials near the Government of Luxembourg established in the United Kingdom, continuing the exile-government legation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 37,
+            "quote": "Rudolf Emil Schoenfeld, Charg\u00e9 d'Affaires. Appointed: 1944-03-21. Superseded 1944-11-01. Note: Served near the Government of Luxembourg established in the United Kingdom; resident at London.\n\nWinthrop Stephenson Greene, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1944-09-23."
+          }
+        ]
+      },
+      {
+        "date": "1956-09-21",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy. Wiley Thomas Buchanan promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary and presents credentials on the same date.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 47,
+            "quote": "Wiley Thomas Buchanan, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1953-09-12. Credentials presented: 1953-12-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1956-09-21.\n\nWiley Thomas Buchanan, Ambassador Extraordinary and Plenipotentiary. Appointed: 1956-09-09. Credentials presented: 1956-09-21."
+          }
+        ]
+      }
+    ]
+  }
+}

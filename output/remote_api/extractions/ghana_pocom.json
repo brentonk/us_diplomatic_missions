@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Er1Dfz7wctpVTrxoF7qAnQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3472,
+      "output_tokens": 339
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ghana",
+    "source_file": "pocom/missions-countries/ghana.xml",
+    "events": [
+      {
+        "date": "1957-03-06",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Accra was established on March 6, 1957, with Charg\u00e9 d'Affaires Donald Wakeham Lamm in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The Embassy in Accra was established on March 6, 1957, with Lamm in charge."
+          }
+        ]
+      }
+    ]
+  }
+}

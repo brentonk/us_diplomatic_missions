@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KQDxV44NFwzXWpSpA7B6V8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2479,
+      "output_tokens": 794
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saint Vincent and the Grenadines",
+    "source_file": "rdcr/articles/saint-vincent-grenadines.xml",
+    "events": [
+      {
+        "date": "1977-09-01",
+        "new_status": "Liaison",
+        "event_description": "Frank V. Ortiz Jr. appointed U.S. Special Representative to St. Vincent (and several other Eastern Caribbean states), concurrent with his ambassadorship to Barbados and Grenada.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Frank V. Oritz, Jr. was appointed United States Special Representative to the States of Antigua, Dominica, St. Christopher-Nevis-Anguilla, St. Lucia, and St. Vincent on September 1, 1977. The appointment was concurrent to his positions as Ambassador to Barbados and to Grenada."
+          }
+        ]
+      },
+      {
+        "date": "1981-12-08",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations formally established when American Ambassador Milan D. Bish presented credentials in Bridgetown on December 8, 1981. Bish was resident in Barbados, not Saint Vincent, making this a nonresident ambassadorial relationship.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Diplomatic relations were established on December 8, 1981, when St. Vincent and the Grenadines Ambassador Hudson Kemul Tannis presented his credentials. American Ambassador Milan D. Bish presented his credentials in Bridgetown that same day. He was concurrently Ambassador to Antigua and Barbuda, Barbados, Dominica, and St. Lucia and Special Representative to Saint Christopher and Nevis. All U.S. ambassadors to St. Vincent and the Grenadines have been resident at Bridgetown."
+          }
+        ]
+      }
+    ]
+  }
+}

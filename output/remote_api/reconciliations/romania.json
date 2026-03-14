@@ -1,0 +1,235 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0141ffe6gVPuXU8oRVrWA7hc",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3248,
+      "output_tokens": 2063
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1880-12-14",
+      "new_status": "Liaison",
+      "event_description": "Eugene Schuyler, appointed Diplomatic Agent and Consul General, delivered his credentials to Romania, establishing a liaison-level diplomatic presence.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Eugene Schuyler was the first U.S. diplomatic representative to Romania. He was appointed Diplomatic Agent and Consul General on June 11, 1880. The Romanian Foreign Ministry indicated on August 13 that it was willing to enter into provisional relations with the U.S. Legation. Schuyler delivered his credentials on December 14, 1880."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1882-09-08",
+      "new_status": "Legation",
+      "event_description": "Schuyler was promoted to Minister Resident and Consul General and presented his new credentials, establishing the American Legation in Bucharest.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "Schuyler was promoted to Minister Resident and Consul General on July 7, 1882, and presented his new credentials on September 8, 1882."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1884",
+      "new_status": "Envoy Nonresident",
+      "event_description": "After Schuyler's recall in September 1884, U.S. Ministers to Romania were resident at Athens (commissioned to Greece, Romania, and Serbia), making representation nonresident until 1905.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 33,
+          "line_end": 33,
+          "quote": "Until 1921, no U.S. Minister was commissioned solely to Romania. From 1885 to 1905, their commissions were to Greece, Romania, and Serbia, being resident at Athens."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1905",
+      "new_status": "Legation",
+      "event_description": "From 1905 onward, U.S. Ministers to Romania were resident in Bucharest, restoring a resident legation.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 33,
+          "line_end": 33,
+          "quote": "From 1905 to 1911, U.S. Ministers to Romania were also commissioned to Serbia but were resident in Bucharest."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-12-12",
+      "new_status": "None",
+      "event_description": "Diplomatic relations were severed when Romania declared war on the United States.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "Diplomatic relations were severed when Romania declared war on the United States on December 12, 1941."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-09-25",
+      "new_status": "Legation",
+      "event_description": "Rudolph E. Schoenfeld presented his credentials as the first postwar U.S. Minister to Romania, re-establishing the American Legation in Bucharest.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 51,
+          "line_end": 51,
+          "quote": "Rudolph E. Schoenfeld presented his credentials as the first postwar U.S. Minister to Romania on September 25, 1947."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1964-06-01",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Bucharest was raised to Embassy status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 55,
+          "line_end": 55,
+          "quote": "The U.S. Legation in Bucharest was raised to Embassy status on June 1, 1964."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": false
+    },
+    {
+      "date": "1881-01-25",
+      "new_status": "Legation",
+      "event_description": "Eugene Schuyler promoted to Charg\u00e9 d'Affaires and Consul General, elevating the U.S. presence to a legation-level mission.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Eugene Schuyler, Charg\u00e9 d'Affaires and Consul General. Appointed: 1880-12-21. Credentials presented: 1881-01-25."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Romania",
+    "matched": [
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Perfect match: Romania declared war on the U.S. on 1941-12-12, severing diplomatic relations."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Perfect match: Schoenfeld presented credentials as first postwar U.S. Minister on 1947-09-25."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Perfect match: Legation raised to Embassy on 1964-06-01."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          7
+        ],
+        "date": "1881-01-25",
+        "new_status": "Legation",
+        "event_description": "POCOM records Eugene Schuyler being promoted to Charg\u00e9 d'Affaires and Consul General, presenting credentials on 1881-01-25. This may represent an elevation from the initial Diplomatic Agent status to a legation-level mission, distinct from the 1880-12-14 credential presentation. However, RDCR does not clearly distinguish this as a separate institutional event, so inclusion is uncertain.",
+        "notes": "POCOM-only event. RDCR does not explicitly describe a separate institutional elevation on this date. The RDCR narrative flows from Diplomatic Agent (1880) to Minister Resident (1882). Consider whether this represents a distinct status change or just a personnel promotion."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1884",
+        "new_status": "Envoy Nonresident",
+        "event_description": "After Schuyler's recall in September 1884, U.S. Ministers to Romania were resident at Athens (commissioned to Greece, Romania, and Serbia), making representation nonresident until 1905.",
+        "notes": "RDCR indicates that from 1885 onward, ministers were resident at Athens, not Bucharest. This is a transition to nonresident status. The CSV Row 4 assigns 'Envoy Nonresident' to 1882-09-08, but RDCR suggests the nonresident arrangement began only after Schuyler's departure in 1884. This event is a strong candidate for addition."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1905",
+        "new_status": "Legation",
+        "event_description": "From 1905 onward, U.S. Ministers to Romania were resident in Bucharest (though still jointly commissioned to Serbia until 1911), restoring a resident legation.",
+        "notes": "RDCR clearly states ministers were resident in Bucharest from 1905. This represents a return to resident status from the nonresident arrangement that began c.1884-1885. Strong candidate for addition."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event from either RDCR or POCOM mentions an 1867 consulate in Romania. The earliest event in the extractions is 1880. This may reflect information from other sources (e.g., consular records) not included in this pipeline."
+      },
+      {
+        "csv_row": 2,
+        "notes": "No extracted event mentions a closure or cessation of relations in 1876-09. This may reflect the end of a consular presence before the establishment of diplomatic relations in 1880, but neither RDCR nor POCOM covers it."
+      },
+      {
+        "csv_row": 5,
+        "notes": "No extracted event specifically covers a 1921-06-30 Legation event. RDCR line 33 mentions 'Until 1921, no U.S. Minister was commissioned solely to Romania,' implying 1921 is when a minister was first commissioned solely to Romania. However, no extracted event captures this as a distinct status change. The legation was already resident in Bucharest from 1905; 1921 may represent a change in commissioning scope rather than a new institutional status."
+      }
+    ],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          0
+        ],
+        "field": "new_status",
+        "csv_value": "Consulate",
+        "extracted_value": "Liaison (Diplomatic Agent and Consul General)",
+        "assessment": "ambiguous",
+        "reasoning": "RDCR describes Schuyler as 'Diplomatic Agent and Consul General' who delivered credentials on 1880-12-14. The CSV codes this as 'Consulate,' which may reflect the Consul General aspect of the title. The extracted event codes it as 'Liaison,' reflecting the Diplomatic Agent aspect. The title 'Diplomatic Agent and Consul General' is a hybrid role \u2014 it has both consular and diplomatic functions. 'Diplomatic Agent' was a lower-than-minister diplomatic rank, so 'Liaison' or a similar sub-legation diplomatic category may be more accurate than 'Consulate,' but the CSV's 'Consulate' interpretation is also defensible given the Consul General component. Neither is clearly wrong."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "new_status",
+        "csv_value": "Envoy Nonresident",
+        "extracted_value": "Legation (Minister Resident and Consul General, resident in Bucharest)",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR clearly states Schuyler was promoted to Minister Resident and Consul General on 1882-09-08 and was resident in Bucharest. This establishes a resident Legation, not a nonresident envoy arrangement. The nonresident status only began after Schuyler's recall in 1884, when subsequent ministers were resident at Athens. The CSV appears to conflate the 1882 promotion with the later nonresident arrangement. The correct status for 1882-09-08 should be 'Legation,' with 'Envoy Nonresident' applying only from c.1884 onward."
+      }
+    ]
+  }
+}

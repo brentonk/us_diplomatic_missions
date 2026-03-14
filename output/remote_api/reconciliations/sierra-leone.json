@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011T5kk9YYhg5ude27qEyARZ",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2375,
+      "output_tokens": 330
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1961-04-27",
+      "new_status": "Embassy",
+      "event_description": "The American Consulate General at Freetown was elevated to Embassy status upon Sierra Leone's independence, with Herbert Reiner, Jr., as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on April 27, 1961, when the American Consulate General at Freetown was elevated to Embassy status, with Herbert Reiner, Jr., as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Sierra Leone",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1961-04-27) and status (Embassy). RDCR confirms the American Consulate General at Freetown was elevated to Embassy status upon Sierra Leone's independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

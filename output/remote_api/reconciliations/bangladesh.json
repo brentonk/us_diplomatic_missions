@@ -1,0 +1,85 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XxsPPwR69FWEYT8UHNUWRV",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2599,
+      "output_tokens": 441
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1949-08-29",
+      "new_status": "Consulate",
+      "event_description": "The United States established a consulate in Dhaka (then Dacca), which was at the time the eastern part of Pakistan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States established a consulate in Dhaka (then referred to as \"Dacca\") on August 29, 1949, when what is now called \"Bangladesh\" was the eastern part of Pakistan."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-05-18",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations and the American Embassy at Dhaka were established, with Herbert D. Spivack as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "Diplomatic relations and the American Embassy at Dhaka were established on May 18, 1972, with Herbert D. Spivack as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-05",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Bangladesh established, with Herbert Daniel Spivack serving as the first Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Herbert Daniel Spivack, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1972-05. Left post: 1972-10."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Bangladesh",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. RDCR confirms U.S. consulate established in Dhaka on August 29, 1949."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "Exact date and status match with RDCR (Event 1, 1972-05-18). POCOM (Event 2) gives the same event with month-level precision (1972-05), consistent with the RDCR date."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

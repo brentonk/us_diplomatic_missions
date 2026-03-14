@@ -1,0 +1,136 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AMgU9YG5QyRgZDnjDdmUoM",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2857,
+      "output_tokens": 905
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1859-11-05",
+      "new_status": "Legation",
+      "event_description": "The United States established its first legation in Japan when Minister Resident Townsend Harris presented his credentials to the Government of Japan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The United States established its first legation in Japan when Minister Resident Townsend Harris presented his credentials to the Government of Japan on November 5, 1859."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1906-05-26",
+      "new_status": "Embassy",
+      "event_description": "The U.S. diplomatic presence in Tokyo was elevated from a legation to an embassy when Ambassador Luke E. Wright presented his credentials to the Japanese Government.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "The United States diplomatic presence in Tokyo was elevated to the status of an Embassy on May 26, 1906, when Ambassador Extraordinary and Minister Plenipotentiary Luke E. Wright presented his credentials to the Japanese Government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-12-08",
+      "new_status": "None",
+      "event_description": "Diplomatic relations between Japan and the United States were severed when both nations declared war on each other following Japan's attack on Pearl Harbor.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "Diplomatic relations between Japan and the United States were severed on December 8, 1941, when both nations declared war on each other in the wake of Japan's attack on Pearl Harbor."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-05-09",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Embassy in Tokyo reopened when Ambassador Robert D. Murphy presented his credentials to the Government of Japan, resuming full diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "The U.S. Embassy in Tokyo reopened on May 9, 1952, when Ambassador Robert D. Murphy presented his credentials to the Government of Japan."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1952-04-28",
+      "new_status": "Embassy",
+      "event_description": "Embassy Tokyo was reestablished on April 28, 1952, with Ambassador Murphy in charge pending presentation of his letter of credence, restoring full U.S. diplomatic representation in Japan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 53,
+          "line_end": 53,
+          "quote": "Note: Embassy Tokyo was reestablished April 28, 1952, with Murphy in charge pending presentation of his letter of credence."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Japan",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1859-11-05) and status (Legation). RDCR confirms Townsend Harris presented credentials on this date."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1906-05-26) and status (Embassy). RDCR confirms elevation to Embassy when Ambassador Wright presented credentials."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Exact match on date (1941-12-08) and status (None). RDCR confirms severance of relations following Pearl Harbor."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          3,
+          4
+        ],
+        "notes": "CSV date (1952-05-09) matches RDCR (Event 3). POCOM (Event 4) gives April 28, 1952 as the reestablishment date with Murphy in charge pending credential presentation. Per source priority, RDCR provides the explicit institutional reopening date (May 9), so the CSV correctly follows RDCR. No discrepancy."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event from either RDCR or POCOM covers the establishment of a U.S. Consulate in Japan on 1855-08-04. This may reflect information from other historical sources not included in this extraction pipeline (e.g., Townsend Harris's appointment as Consul General). The event is plausible but cannot be verified from the available source texts."
+      }
+    ],
+    "discrepancies": []
+  }
+}

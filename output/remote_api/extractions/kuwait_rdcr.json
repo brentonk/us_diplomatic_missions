@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Tx8NCsenWcp2QE8mB2xiYi",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2615,
+      "output_tokens": 845
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kuwait",
+    "source_file": "rdcr/articles/kuwait.xml",
+    "events": [
+      {
+        "date": "1951-06-27",
+        "new_status": "Consulate",
+        "event_description": "The United States opened its first consulate in Kuwait City.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 18,
+            "line_end": 18,
+            "quote": "The United States opened its first consulate in Kuwait on June 27, 1951. It opened to the public on October 15, with Enoch Duncan as U.S. Consul to Kuwait."
+          }
+        ]
+      },
+      {
+        "date": "1961-09-22",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established and the American Embassy in Kuwait opened, with the American consul designated as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Diplomatic relations were established on September 22, 1961, by agreement between the governments of both states. The American Embassy in Kuwait was established on the same date when the American consul in Kuwait, Dayton Mak, was designated Charg\u00e9 d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1990-12-13",
+        "new_status": "None",
+        "event_description": "American Ambassador and Embassy staff evacuated Kuwait following Iraq's armed occupation, closing the Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "American Ambassador W. Nathaniel Howell and the Embassy staff left Kuwait on December 13, 1990, in the wake of Iraq's armed occupation of Kuwait that began on August 2, 1990."
+          }
+        ]
+      },
+      {
+        "date": "1991-03-01",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Kuwait reopened following the expulsion of Iraqi forces by U.S. and coalition military forces.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "The American Embassy reopened on March 1, 1991, following the expulsion of Iraqi armed forces from Kuwait by the military forces of the United States and a multinational coalition."
+          }
+        ]
+      }
+    ]
+  }
+}

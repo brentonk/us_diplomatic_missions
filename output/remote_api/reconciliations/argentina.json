@@ -1,0 +1,94 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014GDY4Q3F5P8EYeAEbgg6Dr",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2693,
+      "output_tokens": 650
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1823-12-27",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations established when American Minister Plenipotentiary Caesar Rodney presented his credentials to the Government of Buenos Ayres.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations were established on December 27, 1823, when American Minister Plenipotentiary Caesar Rodney presented his credentials to the Government of Buenos Ayres."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1914-10-01",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Buenos Aires was elevated to Embassy status on October 1, 1914, when Frederic Jessup Stimson was appointed as U.S. Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 28,
+          "line_end": 28,
+          "quote": "The United States elevated its Legation in Buenos Aires to Embassy status on October 1, 1914, when Frederic Jessup Stimson was appointed as U.S. Ambassador Extraordinary and Plenipotentiary. He presented his credentials on January 8, 1915."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1915-01-08",
+      "new_status": "Embassy",
+      "event_description": "U.S. mission elevated from Legation to Embassy with Frederic Jesup Stimson presenting credentials as Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 63,
+          "line_end": 63,
+          "quote": "Frederic Jesup Stimson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1914-10-01. Credentials presented: 1915-01-08. Left post on 1921-04-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Argentina",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1823-12-27) and status (Legation). Both refer to Caesar Rodney presenting credentials."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1914-10-01 matches RDCR (Event 1) institutional elevation date. POCOM (Event 2) gives 1915-01-08 credential presentation date, which is a separate personnel event. Per source priority, RDCR date is correct and CSV follows it."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 3,
+        "notes": "No extracted event for a 1944-06-27 Liaison status. This likely refers to a downgrade or change in relations during WWII (Argentina's neutrality period), but no corresponding event was found in the RDCR or POCOM extractions provided."
+      },
+      {
+        "csv_row": 4,
+        "notes": "No extracted event for a 1945-04-19 Embassy restoration. This likely refers to the resumption of full Embassy-level relations after the wartime Liaison period, but no corresponding event was found in the RDCR or POCOM extractions provided."
+      }
+    ],
+    "discrepancies": []
+  }
+}

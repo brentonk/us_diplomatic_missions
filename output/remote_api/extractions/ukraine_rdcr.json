@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ho97KZ97AXk29MszQDFgHm",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2212,
+      "output_tokens": 424
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ukraine",
+    "source_file": "rdcr/articles/ukraine.xml",
+    "events": [
+      {
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Ukraine on December 25, 1991, following U.S. recognition of Ukrainian independence after the dissolution of the Soviet Union. No physical mission yet established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+          }
+        ]
+      },
+      {
+        "date": "1992-01-23",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Kiev (Kyiv) was established on January 23, 1992, with Jon Gundersen as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy in Kiev was established on January 23, 1992, with Jon Gundersen as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FbjFJEoEiaAz2ZjyRpW7BZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3758,
+      "output_tokens": 1365
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Romania",
+    "source_file": "rdcr/articles/romania.xml",
+    "events": [
+      {
+        "date": "1880-12-14",
+        "new_status": "Liaison",
+        "event_description": "Eugene Schuyler, appointed Diplomatic Agent and Consul General, delivered his credentials to Romania, establishing a liaison-level diplomatic presence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Eugene Schuyler was the first U.S. diplomatic representative to Romania. He was appointed Diplomatic Agent and Consul General on June 11, 1880. The Romanian Foreign Ministry indicated on August 13 that it was willing to enter into provisional relations with the U.S. Legation. Schuyler delivered his credentials on December 14, 1880."
+          }
+        ]
+      },
+      {
+        "date": "1882-09-08",
+        "new_status": "Legation",
+        "event_description": "Schuyler was promoted to Minister Resident and Consul General and presented his new credentials, establishing the American Legation in Bucharest.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Schuyler was promoted to Minister Resident and Consul General on July 7, 1882, and presented his new credentials on September 8, 1882."
+          }
+        ]
+      },
+      {
+        "date": "1884",
+        "new_status": "Envoy Nonresident",
+        "event_description": "After Schuyler's recall in September 1884, U.S. Ministers to Romania were resident at Athens (commissioned to Greece, Romania, and Serbia), making representation nonresident until 1905.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Until 1921, no U.S. Minister was commissioned solely to Romania. From 1885 to 1905, their commissions were to Greece, Romania, and Serbia, being resident at Athens."
+          }
+        ]
+      },
+      {
+        "date": "1905",
+        "new_status": "Legation",
+        "event_description": "From 1905 onward, U.S. Ministers to Romania were resident in Bucharest, restoring a resident legation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "From 1905 to 1911, U.S. Ministers to Romania were also commissioned to Serbia but were resident in Bucharest."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-12",
+        "new_status": "None",
+        "event_description": "Diplomatic relations were severed when Romania declared war on the United States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "Diplomatic relations were severed when Romania declared war on the United States on December 12, 1941."
+          }
+        ]
+      },
+      {
+        "date": "1947-09-25",
+        "new_status": "Legation",
+        "event_description": "Rudolph E. Schoenfeld presented his credentials as the first postwar U.S. Minister to Romania, re-establishing the American Legation in Bucharest.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 51,
+            "quote": "Rudolph E. Schoenfeld presented his credentials as the first postwar U.S. Minister to Romania on September 25, 1947."
+          }
+        ]
+      },
+      {
+        "date": "1964-06-01",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Bucharest was raised to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "The U.S. Legation in Bucharest was raised to Embassy status on June 1, 1964."
+          }
+        ]
+      }
+    ]
+  }
+}

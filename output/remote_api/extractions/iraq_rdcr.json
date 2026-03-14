@@ -1,0 +1,135 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ts8sQjaN4CtAqi4fw7ph2A",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3485,
+      "output_tokens": 1929
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iraq",
+    "source_file": "rdcr/articles/iraq.xml",
+    "events": [
+      {
+        "date": "1889-01-08",
+        "new_status": "Consulate",
+        "event_description": "John Henry Haynes presented his credentials to Ottoman authorities in Baghdad, establishing a resident U.S. consular presence in the city that would become Iraq's capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "He initially fulfilled his duties as Consul for Baghdad while residing in Constantinople, Turkey, until he presented his credentials to the Ottoman authorities in Baghdad on January 8, 1889."
+          }
+        ]
+      },
+      {
+        "date": "1931-03-30",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Iraq were established when Alexander K. Sloan was appointed Charg\u00e9 d'Affaires of the American Legation at Baghdad.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations and the American Legation in Iraq were established on March 30, 1931, when Alexander K. Sloan (then serving as Consul in Iraq) was appointed Charg\u00e9 d'Affaires of the American Legation at Baghdad."
+          }
+        ]
+      },
+      {
+        "date": "1946-12-28",
+        "new_status": "Embassy",
+        "event_description": "The United States upgraded its diplomatic representation in Iraq from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "The United States upgraded its diplomatic representation in Iraq from a Legation to an Embassy on December 28, 1946."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "Iraq severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, ending the U.S. Embassy presence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "Iraq severed diplomatic relations with the United States on June 7, 1967, in the wake of the June 1967 Arab-Israeli War."
+          }
+        ]
+      },
+      {
+        "date": "1972-10-01",
+        "new_status": "Interests",
+        "event_description": "A U.S. Interests Section was established in the Belgian Embassy in Baghdad, restoring a limited diplomatic presence after the 1967 severance.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 42,
+            "line_end": 42,
+            "quote": "A U.S. Interests Section was established in the Belgian Embassy in Baghdad on October 1, 1972."
+          }
+        ]
+      },
+      {
+        "date": "1984-11-26",
+        "new_status": "Embassy",
+        "event_description": "The United States resumed diplomatic relations with Iraq and elevated the U.S. Interests Section in Baghdad to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "The United States resumed diplomatic relations with Iraq and elevated the U.S. Interests Section in Baghdad to Embassy status on November 26, 1984, when President Ronald Reagan and Deputy Prime Minister and Foreign Minister Tariq Aziz concluded an agreement to that effect."
+          }
+        ]
+      },
+      {
+        "date": "1991-01-12",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in Baghdad was closed following Iraq's invasion of Kuwait, the application of international sanctions, and the military buildup in the region.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "The Embassy in Baghdad was closed January 12, 1991, following Iraq's invasion of Kuwait, the application of international sanctions against Iraq, and the buildup of military forces in the region."
+          }
+        ]
+      },
+      {
+        "date": "1991-02-09",
+        "new_status": "Interests",
+        "event_description": "After Iraq severed diplomatic relations with the United States on February 9, 1991, each nation maintained a modest Interests Section in the other's capital.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "Iraq severed diplomatic relations with the United States February 9, 1991, after which each nation maintained a modest Interests Section in the other's capital."
+          }
+        ]
+      },
+      {
+        "date": "2004-06-28",
+        "new_status": "Embassy",
+        "event_description": "Upon the transfer of sovereignty to the Iraqi Interim Government, diplomatic relations were reestablished and the United States reopened its Embassy within Baghdad's Green Zone.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 65,
+            "line_end": 65,
+            "quote": "Upon the transfer of sovereignty to the Iraqi Interim Government, diplomatic relations were reestablished on June 28, 2004, when the United States reopened its Embassy within Baghdad's \"Green Zone.\""
+          }
+        ]
+      }
+    ]
+  }
+}

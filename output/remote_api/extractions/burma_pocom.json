@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DNf5kSatcApJdrZuP1zCG5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3388,
+      "output_tokens": 693
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Burma",
+    "source_file": "pocom/missions-countries/burma.xml",
+    "events": [
+      {
+        "date": "1947-09-19",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Burma established; Earl Lenoir Packer presented credentials as the first Charg\u00e9 d'Affaires ad interim, marking the opening of the U.S. diplomatic mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Earl Lenoir Packer, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1947-09-19."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WZRmqfWrsTUFxzjoRMKMHx",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4402,
+      "output_tokens": 874
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iran",
+    "source_file": "pocom/missions-countries/iran.xml",
+    "events": [
+      {
+        "date": "1883-06-11",
+        "new_status": "Legation",
+        "event_description": "Samuel Greene Wheeler Benjamin presented credentials as the first U.S. Minister Resident/Consul General to Persia, establishing a U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Samuel Greene Wheeler Benjamin, Minister Resident/Consul General. Appointed: 1883-02-27. Credentials presented: 1883-06-11. Left post on 1885-05-18. Note: Commissioned to Persia."
+          }
+        ]
+      },
+      {
+        "date": "1944-08-21",
+        "new_status": "Embassy",
+        "event_description": "Leland Burnette Morris presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Iran, elevating the mission from a legation to an embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "Leland Burnette Morris, Ambassador Extraordinary and Plenipotentiary. Appointed: 1944-03-21. Credentials presented: 1944-08-21. Left post on 1945-05-20."
+          }
+        ]
+      },
+      {
+        "date": "1980-04-07",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with Iran on April 7, 1980, following the seizure of the U.S. Embassy in Tehran on November 4, 1979.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 73,
+            "line_end": 73,
+            "quote": "Laingen was serving as Charg\u00e9 d'Affaires ad interim when the Embassy in Tehran was seized on November 4, 1979. The United States severed diplomatic relations with Iran on April 7, 1980."
+          }
+        ]
+      }
+    ]
+  }
+}

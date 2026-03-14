@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QymrU3c32knTYR3vbVXbwN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2422,
+      "output_tokens": 787
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Guinea-Bissau",
+    "source_file": "rdcr/articles/guinea-bissau.xml",
+    "events": [
+      {
+        "date": "1976-06-30",
+        "new_status": "Embassy",
+        "event_description": "Embassy Bissau was established with Dean Curran as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Embassy Bissau was established on June 30, 1976, with Dean Curran as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1998-06-14",
+        "new_status": "None",
+        "event_description": "Embassy Bissau suspended operations following the start of civil war in Guinea-Bissau.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Embassy Bissau suspended operations on June 14, 1998, following the start of civil war in Guinea-Bissau. The U.S. Ambassador to Senegal subsequently handled relations with Guinea-Bissau."
+          }
+        ]
+      },
+      {
+        "date": "2003-02-13",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. Ambassador to Senegal, Richard Allen Roth, was accredited to Guinea-Bissau, presenting credentials to President Kumba Yala.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "The U.S. Ambassador to Senegal, Richard Allen Roth was accredited to Guinea-Bissau on February 13, 2003, when he presented his credentials to President Kumba Yala."
+          }
+        ]
+      }
+    ]
+  }
+}

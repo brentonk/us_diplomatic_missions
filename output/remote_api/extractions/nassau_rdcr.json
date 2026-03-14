@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0154thhHyakaPGK8PAiBggkc",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2657,
+      "output_tokens": 529
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nassau",
+    "source_file": "rdcr/articles/nassau.xml",
+    "events": [
+      {
+        "date": "1866",
+        "new_status": "None",
+        "event_description": "Nassau ceased to exist as a sovereign state when it was annexed by Prussia on October 3, 1866. The United States had never established diplomatic relations with the Duchy of Nassau during its existence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "The United States and the Duchy of Nassau never established diplomatic relations."
+          },
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "the Duchy of Nassau was annexed to Prussia on October 3, 1866, and ceased to be an independent, sovereign state."
+          }
+        ]
+      }
+    ]
+  }
+}

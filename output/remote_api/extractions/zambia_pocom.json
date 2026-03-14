@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KZCkxaRSYGbp3K21UswTUw",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3038,
+      "output_tokens": 360
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Zambia",
+    "source_file": "pocom/missions-countries/zambia.xml",
+    "events": [
+      {
+        "date": "1964-10-24",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Zambia upon independence, with Robert Cartwright Foulon serving as Charg\u00e9 d'Affaires ad interim presenting credentials on that date.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert Cartwright Foulon, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1964-10-24."
+          }
+        ]
+      }
+    ]
+  }
+}

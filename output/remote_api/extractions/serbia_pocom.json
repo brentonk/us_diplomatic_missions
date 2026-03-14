@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CtXnxTEdEjt5NyYvU72wN7",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3493,
+      "output_tokens": 1536
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Serbia",
+    "source_file": "pocom/missions-countries/serbia.xml",
+    "events": [
+      {
+        "date": "1882-11-10",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Serbia when Eugene Schuyler, Minister Resident/Consul General, presented credentials in Belgrade.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Eugene Schuyler, Minister Resident/Consul General. Appointed: 1882-07-07. Credentials presented: 1882-11-10."
+          }
+        ]
+      },
+      {
+        "date": "1894-06-29",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Mission status effectively became nonresident when Eben Alexander, Envoy Extraordinary and Minister Plenipotentiary/Consul General, presented credentials \u2014 he was resident at Athens, not Belgrade, marking a shift from a resident Legation to a nonresident Envoy arrangement.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Eben Alexander, Envoy Extraordinary and Minister Plenipotentiary/Consul General. Appointed: 1893-04-07. Credentials presented: 1894-06-29. Relinquished charge at Athens 1897-08-01."
+          }
+        ]
+      },
+      {
+        "date": "1918-12-17",
+        "new_status": "None",
+        "event_description": "U.S. Legation in Belgrade suspended when Charles Joseph Vopicka was relieved of active functions pertaining to the Legation, coinciding with Serbia's absorption into the Kingdom of Serbs, Croats and Slovenes.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Charles Joseph Vopicka, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1913-09-11. Credentials presented: 1913-12-15. Relieved of active functions pertaining to the Legation in Belgrade on 1918-12-17."
+          }
+        ]
+      },
+      {
+        "date": "2002-01-04",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established in Serbia (then Federal Republic of Yugoslavia) when Ambassador William Dale Montgomery presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "William Dale Montgomery, Ambassador Extraordinary and Plenipotentiary. Appointed: 2001-11-26. Credentials presented: 2002-01-04. Left post: 2004-02-24. Note: Originally commissioned to the Federal Republic of Yugoslavia; continued to serve after country's name was changed to Serbia and Montenegro on February 4, 2003."
+          }
+        ]
+      }
+    ]
+  }
+}

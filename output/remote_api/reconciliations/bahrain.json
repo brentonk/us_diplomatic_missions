@@ -1,0 +1,78 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018jL4NfB4F2aGobwQv2qDCF",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2609,
+      "output_tokens": 591
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1971-09-21",
+      "new_status": "Embassy",
+      "event_description": "Embassy Manama was opened with John N. Gatch, Jr. as Charg\u00e9 d'Affaires ad interim, establishing the first U.S. diplomatic mission in Bahrain following independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Embassy Manama was opened on September 21, 1971, with John N. Gatch, Jr. as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1971-09-21",
+      "new_status": "Interests",
+      "event_description": "U.S. diplomatic presence established in Bahrain with a Charg\u00e9 d'Affaires ad interim presenting credentials, marking the opening of the U.S. mission following Bahraini independence.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "John Newton Jr Gatch, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1971-09-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1972-02-17",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Bahrain elevated to full ambassadorial representation when the first Ambassador Extraordinary and Plenipotentiary presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "William A Stoltzfus, Ambassador Extraordinary and Plenipotentiary. Appointed: 1971-12-09. Credentials presented: 1972-02-17. Appointment terminated on 1974-06-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Bahrain",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "RDCR Event 0 matches exactly on date (1971-09-21) and status (Embassy). POCOM Event 1 refers to the same event (Gatch presenting credentials on the same date) but was labeled 'Interests' in extraction; RDCR is the primary source and explicitly states 'Embassy Manama was opened,' so Embassy is the correct status. No discrepancy."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

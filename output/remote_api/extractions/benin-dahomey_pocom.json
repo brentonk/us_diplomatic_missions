@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Wo4si8u2ENVjhGWW5yDEGE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3454,
+      "output_tokens": 996
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Benin (Dahomey)",
+    "source_file": "pocom/missions-countries/benin.xml",
+    "events": [
+      {
+        "date": "1960-08-01",
+        "new_status": "Liaison",
+        "event_description": "Donald Richard Norland presented credentials as Charg\u00e9 d'Affaires ad interim on August 1, 1960, establishing the initial U.S. diplomatic presence in Dahomey prior to the appointment of a resident or nonresident ambassador.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Donald Richard Norland, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-01. Note: Presented credentials as Charg\u00e9 d'Affaires ad interim on July 31, 1960, to take effect on August 1, 1960."
+          }
+        ]
+      },
+      {
+        "date": "1960-11-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Robert Borden Reams presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Dahomey, serving initially as a nonresident ambassador before Embassy Cotonou was established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Robert Borden Reams, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-10-14. Credentials presented: 1960-11-26. Superseded 1961-07-31. Note: Commissioned to Dahomey. Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Reams's tenure as non-resident Ambassador, Embassy Cotonou was established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-15",
+        "new_status": "Embassy",
+        "event_description": "Embassy Cotonou was formally established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim, elevating the U.S. mission from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Reams's tenure as non-resident Ambassador, Embassy Cotonou was established on February 15, 1961, with Converse Hettinger as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

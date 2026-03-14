@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CKMpaQwguvAzZeKQNLaeZN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2977,
+      "output_tokens": 751
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bahrain",
+    "source_file": "pocom/missions-countries/bahrain.xml",
+    "events": [
+      {
+        "date": "1971-09-21",
+        "new_status": "Interests",
+        "event_description": "U.S. diplomatic presence established in Bahrain with a Charg\u00e9 d'Affaires ad interim presenting credentials, marking the opening of the U.S. mission following Bahraini independence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Newton Jr Gatch, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1971-09-21."
+          }
+        ]
+      },
+      {
+        "date": "1972-02-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Bahrain elevated to full ambassadorial representation when the first Ambassador Extraordinary and Plenipotentiary presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "William A Stoltzfus, Ambassador Extraordinary and Plenipotentiary. Appointed: 1971-12-09. Credentials presented: 1972-02-17. Appointment terminated on 1974-06-09."
+          }
+        ]
+      }
+    ]
+  }
+}

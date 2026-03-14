@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018yyyb6YeukbRY7MqXUhqFE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2263,
+      "output_tokens": 543
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Timor-Leste",
+    "source_file": "pocom/missions-countries/timor-leste.xml",
+    "events": [
+      {
+        "date": "2002-05-20",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Timor-Leste upon independence, with Sharon English Woods Villarosa serving as the first Charg\u00e9 d'Affaires ad interim and presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Sharon English Woods Villarosa, Charg\u00e9 d'Affaires ad interim. Credentials presented: 2002-05-20. Left post: 2002-12."
+          }
+        ]
+      }
+    ]
+  }
+}

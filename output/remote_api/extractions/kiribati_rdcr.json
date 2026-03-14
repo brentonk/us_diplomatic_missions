@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0183puyJEiCeVRa7UdKrf1YK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2363,
+      "output_tokens": 722
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kiribati",
+    "source_file": "rdcr/articles/kiribati.xml",
+    "events": [
+      {
+        "date": "1980-08-12",
+        "new_status": "Envoy Nonresident",
+        "event_description": "The United States and Kiribati agreed to establish diplomatic relations. The first U.S. envoy was subsequently appointed nonresident, stationed at Suva, Fiji.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The United States and Kiribati agreed to establish diplomatic relations on August 12, 1980."
+          }
+        ]
+      },
+      {
+        "date": "1980-09-26",
+        "new_status": "Envoy Nonresident",
+        "event_description": "William Bodde, Jr. was appointed Envoy Extraordinary and Minister Plenipotentiary to Kiribati, stationed nonresident at Suva, Fiji, as no diplomatic facilities exist on Kiribati.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "William Bodde, Jr. was appointed Envoy Extraordinary and Minister Plenipotentiary to Kiribati on September 26, 1980. Bodde was stationed at Suva, Fiji, as no diplomatic facilities exist on Kiribati."
+          }
+        ]
+      }
+    ]
+  }
+}

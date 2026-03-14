@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011Ui9C1VMLJzjaAN57VzUdE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3040,
+      "output_tokens": 947
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Latvia",
+    "source_file": "pocom/missions-countries/latvia.xml",
+    "events": [
+      {
+        "date": "1922-11-13",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Latvia when the first Envoy Extraordinary and Minister Plenipotentiary, Frederick William Backus Coleman, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Frederick William Backus Coleman, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1922-09-20. Credentials presented: 1922-11-13. Left post on 1931-10-20."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "U.S. Embassy (Legation) in Riga closed following Soviet occupation of Latvia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 13,
+            "quote": "Soviet forces occupied Riga on June 17, 1940.\n\nEarl Lenoir Packer, Charg\u00e9 d'Affaires ad interim. Embassy Riga closed 1940-09-05."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-02",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy re-established in Latvia after resumption of diplomatic relations on September 2, 1991; Charg\u00e9 d'Affaires ad interim Ints M Silins presented credentials on October 2, 1991.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 17,
+            "quote": "The United States resumed diplomatic relations with Latvia on September 2, 1991.\n\nInts M Silins, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1991-10-02."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Aq4Wr1UAv1JA23zSKNcYRK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2617,
+      "output_tokens": 666
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Micronesia",
+    "source_file": "pocom/missions-countries/micronesia.xml",
+    "events": [
+      {
+        "date": "1987-10-02",
+        "new_status": "Liaison",
+        "event_description": "U.S. established a liaison-level presence in Micronesia with Michael Gordon Wygant serving as Representative.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Michael Gordon Wygant, Representative. Appointed: 1987-07-31. Credentials presented: 1987-10-02. Left post on 1990-05-29."
+          }
+        ]
+      },
+      {
+        "date": "1990-09-18",
+        "new_status": "Embassy",
+        "event_description": "U.S. elevated its mission in Micronesia to Embassy level with the appointment and credentialing of the first Ambassador Extraordinary and Plenipotentiary, Aurelia Erskine Brazeal.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Aurelia Erskine Brazeal, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-08-06. Credentials presented: 1990-09-18. Left post on 1993-07-06."
+          }
+        ]
+      }
+    ]
+  }
+}

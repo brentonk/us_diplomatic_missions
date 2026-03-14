@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BkALULW1R8ukvcjB1nXn81",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2491,
+      "output_tokens": 444
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1980-04-18",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Salisbury (now Harare) was established upon Zimbabwe's attainment of independence, with Jeffrey Davidow as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "Diplomatic relations were established on April 18, 1980, when the American Embassy at Salisbury (now Harare) was established with Jeffrey Davidow as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-06-19",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Zimbabwe upon presentation of credentials by the first Ambassador, Robert Vossler Keeley.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Robert Vossler Keeley, Ambassador Extraordinary and Plenipotentiary. Appointed: 1980-05-23. Credentials presented: 1980-06-19. Left post on 1984-02-20."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Zimbabwe",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date 1980-04-18 matches RDCR (Event 0) exactly. POCOM (Event 1) gives 1980-06-19, which is the credential presentation date of the first Ambassador \u2014 a later personnel event, not the institutional establishment date. Per source priority, RDCR wins and the CSV is correct."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

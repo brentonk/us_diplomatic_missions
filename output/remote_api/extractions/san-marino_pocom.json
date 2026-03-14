@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01A9gzx2egv4wJg4eKf5GtSh",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2062,
+      "output_tokens": 473
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "San Marino",
+    "source_file": "pocom/missions-countries/san-marino.xml",
+    "events": [
+      {
+        "date": "2007-03-08",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Ronald Spogli presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to San Marino, establishing nonresident ambassadorial relations. Spogli was based in Rome.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Ronald Spogli, Ambassador Extraordinary and Plenipotentiary. Appointed: 2006-11-22. Credentials presented: 2007-03-08. Left post on 2009-02-06."
+          }
+        ]
+      }
+    ]
+  }
+}

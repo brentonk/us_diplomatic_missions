@@ -1,0 +1,105 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01G9aZ5MtA33kjt1516Dr8Cm",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2720,
+      "output_tokens": 1239
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1790-06-17",
+      "new_status": "Consulate",
+      "event_description": "First U.S. consulate opened in Hamburg, one of the three Hanseatic capital cities, establishing the first formal U.S. presence in the Hanseatic Republics.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 36,
+          "line_end": 39,
+          "quote": "The first U.S. Consulate to open in Hamburg was on June 17, 1790. It closed on January 2, 1967."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1853",
+      "new_status": "Legation",
+      "event_description": "The United States established diplomatic relations with the Hanseatic Republics, elevating representation to legation level when it received Rudolph Schleiden as Minister Resident of the Hanseatic Legation in Washington D.C.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 52,
+          "line_end": 54,
+          "quote": "The United States established diplomatic relations with the Hanseatic Republics in October 1853 when it received Rudolph Schleiden as Minister Resident of the Hanseatic Legation in Washington D.C."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1868-09-25",
+      "new_status": "None",
+      "event_description": "Diplomatic relations severed as the Hanseatic Republics joined the North German Confederation. The Hanseatic mission was withdrawn when Acting Charg\u00e9 d'Affaires Schumacker presented the letters of recall of the Hanseatic Charg\u00e9 d'Affaires.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 58,
+          "line_end": 58,
+          "quote": "On September 25, 1868, the Hanseatic Republic Acting Charg\u00e9 d'Affaires A. Schumacker presented the letters of recall of Dr. Johannes Rosing, the Hanseatic Republic's Charg\u00e9 d'Affaires. The withdrawal of the Hanseatic mission was due to the three Republics (Bremen, Hamburg, and L\u00fcbeck) joining the North German Union."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Hanseatic Republics",
+    "matched": [],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1790-06-17",
+        "new_status": "Consulate",
+        "event_description": "First U.S. consulate opened in Hamburg, one of the three Hanseatic capital cities, establishing the first formal U.S. presence in the Hanseatic Republics.",
+        "notes": "RDCR explicitly states the first U.S. Consulate in Hamburg opened on June 17, 1790. This is a well-sourced event that predates all CSV entries and should be considered for addition."
+      },
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1853",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations with the Hanseatic Republics in October 1853 when it received Rudolph Schleiden as Minister Resident of the Hanseatic Legation in Washington D.C.",
+        "notes": "RDCR clearly describes the establishment of diplomatic relations at legation level in 1853. This is distinct from the CSV Row 1 event (1857-01-24, Consulate) both in date and status level. Should be added as a separate event."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted event matches a consulate status change on 1857-01-24. The only consulate event in the sources is the 1790 opening in Hamburg (Event 0), and the 1853 event (Event 1) is a legation, not a consulate. The 1857 date and 'Consulate' status are not supported by either RDCR or POCOM extractions. This may reflect a source not included in this pipeline, or it could be an error in the CSV."
+      }
+    ],
+    "discrepancies": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "field": "date",
+        "csv_value": "1862-07-17",
+        "extracted_value": "1868-09-25",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "Both events refer to the termination of relations with the Hanseatic Republics, but the dates differ by over 6 years. The RDCR source explicitly states that on September 25, 1868, Acting Charg\u00e9 d'Affaires Schumacker presented letters of recall due to the three Republics joining the North German Union/Confederation. This is a specific, well-documented date from the primary source. The CSV date of 1862-07-17 does not appear in any extracted source and may be erroneous. The North German Confederation was formed in 1867, making an 1868 date historically consistent for the withdrawal of the Hanseatic mission, whereas 1862 would be too early for this event."
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012vaJAADVEMg2vv5cf1E5fg",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2715,
+      "output_tokens": 851
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-05",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established with Upper Volta via a Charg\u00e9 d'Affaires ad interim, but no embassy or legation yet opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 5, 1960, when Donald R. Norland assumed his post as Charg\u00e9 d'Affaires ad interim. Norland had presented his credentials on August 4, 1960, to take effect the following day."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-12-31",
+      "new_status": "Embassy",
+      "event_description": "Embassy Ouagadougou was established, elevating the U.S. diplomatic presence to full embassy level.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Ouagadougou was established on December 31, 1960, with Robert McKinnon as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-11-26",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Robert Borden Reams presented credentials as Ambassador Extraordinary and Plenipotentiary, but was nonresident, being commissioned to Dahomey. This established nonresident ambassadorial relations before the Embassy was formally opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Robert Borden Reams, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-10-14. Credentials presented: 1960-11-26. Superseded 1961-07-31. Note: Commissioned to Dahomey. Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Reams's tenure as non-resident Ambassador, Embassy Ouagadougou was established on December 31, 1960, with Robert McKinnon as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Burkina Faso (Upper Volta)",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Both CSV and RDCR agree on 1960-12-31 as the date Embassy Ouagadougou was established. POCOM Event 2 also confirms this date in its note text."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1960-08-05",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Upper Volta when Donald R. Norland assumed his post as Charg\u00e9 d'Affaires ad interim. No embassy or legation yet opened.",
+        "notes": "RDCR explicitly states diplomatic relations were established on August 5, 1960, prior to the embassy opening. This represents the initial establishment of relations and should be added as a 'None' status event preceding the Embassy row."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1960-11-26",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Robert Borden Reams presented credentials as nonresident Ambassador (commissioned to Dahomey) on November 26, 1960, establishing nonresident ambassadorial representation before the resident embassy was opened.",
+        "notes": "POCOM records a nonresident ambassador presenting credentials on 1960-11-26, over a month before the embassy was established on 1960-12-31. This is a distinct diplomatic status transition (None \u2192 Ambassador Nonresident) that occurred between the initial establishment of relations and the embassy opening. Candidate for insertion between the proposed 1960-08-05 'None' event and the 1960-12-31 'Embassy' event."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

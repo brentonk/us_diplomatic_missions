@@ -1,0 +1,85 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01FvNHFJJcyAyLcpVwbYJWdA",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2620,
+      "output_tokens": 479
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1801-11-24",
+      "new_status": "Consulate",
+      "event_description": "The United States established its first consular post in Batavia (present-day Jakarta, the capital) by appointing Thomas Hewes.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States established its first consular post in what is now Indonesia in the city of Jakarta when it appointed Thomas Hewes on November 24, 1801. At the time, the territory was a Dutch colony and the city was known as Batavia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1949-12-28",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations were established and the U.S. Embassy opened when Ambassador H. Merle Cochran presented his credentials to President Sukarno upon Indonesian independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Diplomatic relations were established on December 28, 1949, when U.S. Ambassador H. Merle Cochran presented his credentials to President Sukarno."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1949-12-30",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Indonesia when the first Ambassador Extraordinary and Plenipotentiary, Horace Merle Cochran, presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Horace Merle Cochran, Ambassador Extraordinary and Plenipotentiary. Appointed: 1949-12-28. Credentials presented: 1949-12-30."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Indonesia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1801-11-24) and status (Consulate). Both refer to the appointment of Thomas Hewes as first consul in Batavia."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1949-12-28 matches RDCR (Event 1). POCOM (Event 2) gives credentials presented date as 1949-12-30, but RDCR is the primary source and explicitly states diplomatic relations were established on December 28, 1949. CSV correctly follows RDCR."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

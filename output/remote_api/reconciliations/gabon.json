@@ -1,0 +1,111 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Hm5i18iPW23FRm68TEH48t",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2824,
+      "output_tokens": 872
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-17",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established with a nonresident Charg\u00e9 d'Affaires ad interim resident at Brazzaville presenting credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 17, 1960, when Alan W. Lukens (resident at Brazzaville) presented his credentials as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1961-03-20",
+      "new_status": "Embassy",
+      "event_description": "Embassy Libreville established with a resident Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Embassy Libreville was established on March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-08-17",
+      "new_status": "None",
+      "event_description": "Alan Wood Lukens served as Charg\u00e9 d'Affaires ad interim upon Gabonese independence, representing the U.S. before any formal ambassadorial appointment or embassy establishment. This marks the initial U.S. presence but not yet a full mission.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1961-01-13",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Wilton Wendell Blancke presented credentials as the first U.S. Ambassador to Gabon, serving in a nonresident capacity before Embassy Libreville was established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Wilton Wendell Blancke, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-12-12. Credentials presented: 1961-01-13. Superseded 1961-10-10. Note: Commissioned during a recess of the Senate; recommissioned on February 6, 1961, after confirmation. During Blancke's tenure as non-resident Ambassador, Embassy Libreville was established March 20, 1961, with Walker A. Diamanti as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Gabon",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "RDCR Event 0 matches perfectly (1960-08-17, Envoy Nonresident). POCOM Event 2 covers the same event (Lukens presenting credentials) but was extracted with status 'None' rather than 'Envoy Nonresident'; RDCR takes priority and confirms the CSV status."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "RDCR Event 1 matches perfectly (1961-03-20, Embassy Libreville established)."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1961-01-13",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Wilton Wendell Blancke presented credentials as the first U.S. Ambassador to Gabon on 1961-01-13, serving in a nonresident capacity before Embassy Libreville was established on 1961-03-20.",
+        "notes": "This is a distinct diplomatic transition between the initial Envoy Nonresident status (1960-08-17) and the Embassy establishment (1961-03-20). POCOM confirms Blancke served as a non-resident Ambassador during this interim period. Candidate for insertion between CSV rows 1 and 2."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

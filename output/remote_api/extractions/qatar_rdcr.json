@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014voiX5Ht9r1uDYmUkyeqKC",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2270,
+      "output_tokens": 470
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Qatar",
+    "source_file": "rdcr/articles/qatar.xml",
+    "events": [
+      {
+        "date": "1972-03-19",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established with Qatar via nonresident Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr., who was accredited to multiple Persian Gulf states and resided in Kuwait.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on March 19, 1972, when American Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented his credentials to the government of the State of Qatar. Stoltzfus was also accredited to a number of other Persian Gulf states and he resided in Kuwait."
+          }
+        ]
+      },
+      {
+        "date": "1973-02-24",
+        "new_status": "Embassy",
+        "event_description": "The United States Embassy in Doha was established under Charg\u00e9 d'Affaires ad interim John T. Wheelock.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The United States Embassy in Doha was established on February 24, 1973 under Charg\u00e9 d' Affaires ad interim John T. Wheelock."
+          }
+        ]
+      }
+    ]
+  }
+}

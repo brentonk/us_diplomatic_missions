@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01F68Dcphfaux5VmTscgKNoR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2384,
+      "output_tokens": 837
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "North Macedonia",
+    "source_file": "rdcr/articles/macedonia.xml",
+    "events": [
+      {
+        "date": "1993-12-03",
+        "new_status": "Liaison",
+        "event_description": "The United States established a Liaison Office in Skopje, with Robert L. Norman as Acting Principal Officer.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established a Liaison Office in Skopje on December 3, 1993. Robert L. Norman was the Acting Principal Officer."
+          }
+        ]
+      },
+      {
+        "date": "1995-09-13",
+        "new_status": "Legation",
+        "event_description": "The United States established full diplomatic relations with the Former Yugoslav Republic of Macedonia, elevating the Liaison Office to a legation-level mission.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "On September 13, 1995, U.S. President William J. Clinton announced that he had been in correspondence with President of the Former Yugoslav Republic of Macedonia Kiro Gligorov to establish diplomatic relations, and announced that \"I have received his positive response and can confirm that diplomatic relations now exist between our two countries.\""
+          }
+        ]
+      },
+      {
+        "date": "1996-07-29",
+        "new_status": "Embassy",
+        "event_description": "Christopher R. Hill presented his credentials as the first U.S. Ambassador to the Former Yugoslav Republic of Macedonia, establishing the U.S. Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "On July 29, 1996, Christopher R. Hill presented his credentials as the first U.S. Ambassador to the Former Yugoslav Republic of Macedonia."
+          }
+        ]
+      }
+    ]
+  }
+}

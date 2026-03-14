@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013Bm3n7RhPdNxoPdrhxuzrN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2640,
+      "output_tokens": 1275
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sudan",
+    "source_file": "rdcr/articles/sudan.xml",
+    "events": [
+      {
+        "date": "1956-02-15",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Liaison Office at Khartoum was elevated to Embassy status, with Arthur E. Beach as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on February 15, 1956, when the United States Liaison Office at Khartoum was elevated to Embassy status, with Arthur E. Beach as Charg\u00e9 d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "None",
+        "event_description": "Sudan severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, following the closure of the American Embassy the previous day.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Sudan severed diplomatic relations with the United States on June 7, 1967, in the wake of the June 1967 Arab-Israeli War."
+          }
+        ]
+      },
+      {
+        "date": "1967-08-14",
+        "new_status": "Interests",
+        "event_description": "A U.S. Interests Section was established in the Netherlands Embassy at Khartoum.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "A U.S. Interests Sections was established in the Netherlands Embassy at Khartoum on August 14, 1967."
+          }
+        ]
+      },
+      {
+        "date": "1972-07-25",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations were re-established when the American Embassy in Khartoum was re-opened, with George C. Moore as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Diplomatic relations were re-established when the American Embassy in Khartoum was re-opened on July 25, 1972, with George C. Moore as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1996-02-07",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The Embassy suspended operations, though Ambassador Carney remained accredited from Nairobi until November 30, 1997, representing a nonresident ambassadorial presence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "The Embassy suspended operations on February 7, 1996, although Ambassador Carney remained at Nairobi until November 30, 1997. He was succeeded by Charge d'Affaires ad interim Donald Teitelbaum."
+          }
+        ]
+      },
+      {
+        "date": "2002-05-23",
+        "new_status": "Embassy",
+        "event_description": "Embassy Khartoum resumed full operations, with Jeffrey Millington as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "Embassy Khartoum resumed full operations on May 23, 2002, with Jeffrey Millington as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

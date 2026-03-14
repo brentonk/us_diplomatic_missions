@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MY5eVvk7tR6Xk12Vuux6zc",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2336,
+      "output_tokens": 652
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Paraguay",
+    "source_file": "rdcr/articles/paraguay.xml",
+    "events": [
+      {
+        "date": "1861-11-26",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Asuncion were established when Commissioner Charles A. Washburn presented his credentials to the Government of Paraguay.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation in Asuncion were established on November 26, 1861, when American Commissioner Charles A. Washburn presented his credentials to the Government of the Republic of Paraguay."
+          }
+        ]
+      },
+      {
+        "date": "1942-03-31",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Paraguay was elevated to Embassy status, effective March 31, 1942, following a joint announcement on January 4, 1942.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Following a joint announcement by the Government of Paraguay and the Government of the United States on January 4, 1942, the Legation of Paraguay in the United States and the Legation of the United States in Paraguay were both raised to the rank of Embassy. The change in status became effective on March 31, 1942, when Ambassador of Paraguay, Se\u00f1or Dr. Don Celso R. Velazquez, presented his letters of credence to the United States Government."
+          }
+        ]
+      }
+    ]
+  }
+}

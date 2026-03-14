@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TnPvdYHYxGSGBf9MBxv6S6",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2250,
+      "output_tokens": 439
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nauru",
+    "source_file": "rdcr/articles/nauru.xml",
+    "events": [
+      {
+        "date": "1976-10-24",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established when U.S. Ambassador to Australia Marshall Green presented credentials to Nauru, remaining resident at Canberra.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on October 24, 1976, when U.S. Ambassador to Australia Marshall Green presented his credentials to Nauru; he remained resident at Canberra."
+          }
+        ]
+      },
+      {
+        "date": "1996-04-24",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Accreditation of U.S. Ambassador to Nauru changed from Canberra to Suva; U.S. Ambassador to Fiji Don L. Gevirtz presented credentials, remaining resident at Suva.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 20,
+            "quote": "On April 24, 1996, U.S. Ambassador to Fiji Don L. Gevirtz presented his credentials; he remained resident at Suva."
+          }
+        ]
+      }
+    ]
+  }
+}

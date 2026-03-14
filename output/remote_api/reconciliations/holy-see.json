@@ -1,0 +1,246 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XxQ6HQU3sgdGQiF1pf3ngd",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3269,
+      "output_tokens": 1540
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1797",
+      "new_status": "Consul Nonresident",
+      "event_description": "United States established consular relations with the Papal States.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States maintained consular relations with the Papal States from 1797 to 1870."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1870",
+      "new_status": "None",
+      "event_description": "U.S. consular relations with the Papal States ended when the Kingdom of Italy conquered Rome.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "The United States at different times had a Minister to the Papal States, Minister to the Pontifical States, and finally, a Minister to Rome from 1848 until Kingdom of Italy conquered Rome in 1870."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1984-01-10",
+      "new_status": "Liaison",
+      "event_description": "The United States and the Holy See established diplomatic relations by agreement between President Reagan and Pope John Paul II, with the existing Personal Representative of the President serving as the initial diplomatic presence prior to the embassy opening.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "The United States and the Holy See established diplomatic relations by agreement between President Ronald Reagan and Pope John Paul II on January 10, 1984."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1984-04-09",
+      "new_status": "Embassy",
+      "event_description": "The United States established an embassy to the Holy See when William A. Wilson presented his credentials to the Pope, elevating his position from Personal Representative of the President to U.S. Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "The United States established an embassy to the Holy See on April 9, 1984, when William A. Wilson presented his credentials to the Pope, elevating his position from Personal Representative of the President to U.S. Ambassador to the Holy See."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1848-08-19",
+      "new_status": "Legation",
+      "event_description": "First U.S. diplomatic mission established to the Papal States, with Jacob L. Martin presenting credentials as Charg\u00e9 d'Affaires.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Jacob L Martin, Charg\u00e9 d'Affaires. Appointed: 1848-04-07. Credentials presented: 1848-08-19. Died at post on 1848-08-26. Note: Commissioned to the Papal States."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1867-08-17",
+      "new_status": "None",
+      "event_description": "Last Minister Resident Rufus King left post; the U.S. mission to the Papal States was closed and not replaced, ending diplomatic representation.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Rufus2 King, Minister Resident. Appointed: 1863-10-07. Credentials presented: 1864-01-08. Left post on 1867-08-17. Note: Commissioned during a recess of the Senate; recommissioned on January 18, 1864, after confirmation. Commissioned as Minister Resident at Rome."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1939-12-23",
+      "new_status": "Liaison",
+      "event_description": "Myron Charles Taylor appointed as Personal Representative of the President to the Holy See, establishing an informal liaison-level presence after a 72-year gap.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quote": "Myron Charles Taylor, Personal Representative of the President. Credentials presented: 1939-12-23. Left post: 1950-01-18."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1950-01-18",
+      "new_status": "None",
+      "event_description": "Personal Representative Myron Charles Taylor left post with no successor appointed, ending U.S. diplomatic representation to the Holy See.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quote": "Myron Charles Taylor, Personal Representative of the President. Credentials presented: 1939-12-23. Left post: 1950-01-18."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1970-06-05",
+      "new_status": "Liaison",
+      "event_description": "Henry Cabot Lodge appointed as Personal Representative of the President to the Holy See, resuming informal liaison-level representation after a 20-year gap.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Henry Cabot Lodge, Personal Representative of the President. Credentials presented: 1970-06-05. Left post: 1977-07-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 4,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Holy See",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact match on date (1984-04-09) and status (Embassy). RDCR high confidence. Event 2 (1984-01-10 agreement) is a related precursor event but represents a distinct earlier transition."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1797",
+        "new_status": "Consul Nonresident",
+        "event_description": "United States established consular relations with the Papal States.",
+        "notes": "RDCR medium confidence. Only year-level precision. Represents the beginning of U.S. consular presence with the Papal States."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1848-08-19",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic mission established to the Papal States; Jacob L. Martin presented credentials as Charg\u00e9 d'Affaires.",
+        "notes": "POCOM high confidence. RDCR (Event 1 evidence) mentions a Minister from 1848, consistent with this date. This represents the elevation from consular to diplomatic (legation-level) relations."
+      },
+      {
+        "extracted_event_indices": [
+          5
+        ],
+        "date": "1867-08-17",
+        "new_status": "None",
+        "event_description": "Last Minister Resident Rufus King left post; U.S. diplomatic mission to the Papal States effectively closed.",
+        "notes": "POCOM medium confidence. RDCR says relations lasted until 1870 (when Italy conquered Rome), but POCOM shows the last diplomat left in 1867. The RDCR 1870 date (Event 1) may refer to the formal end of the Papal States entity rather than the end of U.S. representation. There is ambiguity about whether to use 1867 or 1870."
+      },
+      {
+        "extracted_event_indices": [
+          1
+        ],
+        "date": "1870",
+        "new_status": "None",
+        "event_description": "U.S. consular relations with the Papal States ended when the Kingdom of Italy conquered Rome.",
+        "notes": "RDCR medium confidence. This may overlap with Event 5 (1867 departure of last minister). RDCR frames 1870 as the end of both consular and diplomatic relations with the Papal States. If Event 5 is used for the end of the legation, this event could represent the end of remaining consular relations."
+      },
+      {
+        "extracted_event_indices": [
+          6
+        ],
+        "date": "1939-12-23",
+        "new_status": "Liaison",
+        "event_description": "Myron Charles Taylor appointed as Personal Representative of the President to the Holy See, establishing informal liaison-level presence.",
+        "notes": "POCOM high confidence. Represents resumption of U.S. representation to the Holy See after a ~70-year gap, at an informal (non-diplomatic) level."
+      },
+      {
+        "extracted_event_indices": [
+          7
+        ],
+        "date": "1950-01-18",
+        "new_status": "None",
+        "event_description": "Personal Representative Myron Charles Taylor left post with no successor appointed, ending U.S. representation.",
+        "notes": "POCOM medium confidence. Gap in representation until 1970."
+      },
+      {
+        "extracted_event_indices": [
+          8
+        ],
+        "date": "1970-06-05",
+        "new_status": "Liaison",
+        "event_description": "Henry Cabot Lodge appointed as Personal Representative of the President to the Holy See, resuming informal liaison-level representation.",
+        "notes": "POCOM high confidence. Resumption of Personal Representative role after 20-year gap."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1984-01-10",
+        "new_status": "Liaison",
+        "event_description": "The United States and the Holy See established formal diplomatic relations by agreement between President Reagan and Pope John Paul II.",
+        "notes": "RDCR medium confidence. This is the formal establishment of diplomatic relations, distinct from the April 9 embassy opening. The existing Personal Representative (Wilson) continued in role until presenting ambassador credentials on April 9. This could be coded as a distinct event marking the transition from informal liaison to formal diplomatic relations, though the status category (Liaison vs. Embassy) is debatable since formal relations were established but the embassy didn't open until April."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

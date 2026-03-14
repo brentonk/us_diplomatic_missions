@@ -1,0 +1,61 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AzYaQAJYCVS5EKmv7ijrAR",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2464,
+      "output_tokens": 338
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-08-25",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Zagreb was opened with Ronald Nietzke as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Zagreb was opened on August 25, 1992, with Ronald Nietzke as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-06-28",
+      "new_status": "Embassy",
+      "event_description": "First U.S. Ambassador to Croatia, Peter W Galbraith, presented credentials, confirming full ambassadorial-level embassy representation.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Peter W Galbraith, Ambassador Extraordinary and Plenipotentiary. Appointed: 1993-06-17. Credentials presented: 1993-06-28. Left post on 1998-01-03."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Croatia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both record the opening of the American Embassy in Zagreb on 1992-08-25."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013N86v2cmiAsyY4e2EHvBHV",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2495,
+      "output_tokens": 322
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1973-07-10",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Nassau established upon Bahamian independence, with Moncrieff J. Spear as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the U.S. Embassy in Nassau were established July 10, 1973, with Moncrieff J. Spear as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1973-07",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in The Bahamas upon independence, with the first U.S. representative (Charg\u00e9 d'Affaires ad interim Moncrieff Johnston Spear) presenting credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Moncrieff Johnston Spear, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1973-07. Left post: 1973-08."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Bahamas, The",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "Both RDCR (Event 0) and POCOM (Event 1) confirm the establishment of the U.S. Embassy in Nassau on July 10, 1973, upon Bahamian independence. POCOM only provides month-level precision (1973-07) but is consistent with the exact date."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AyDHZgEo52RaYVufM2oDyZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2219,
+      "output_tokens": 424
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Moldova",
+    "source_file": "rdcr/articles/moldova.xml",
+    "events": [
+      {
+        "date": "1992-02-18",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the United States and Moldova, prior to the opening of the embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established when President George H.W. Bush and Moldovan President Mircea Snegur agreed to do so during a February 18, 1992 meeting at the White House. The Bush administration confirmed February 18 as the date relations were established in a statement issued the next day."
+          }
+        ]
+      },
+      {
+        "date": "1992-03-13",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Chisinau was established, with Howard Steers as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy in Chisinau was established on March 13, 1992, with Howard Steers as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

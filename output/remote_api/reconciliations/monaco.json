@@ -1,0 +1,139 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01YXh6S5HJsZ5F8GrHb5Cgqv",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2934,
+      "output_tokens": 1117
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1874-02-22",
+      "new_status": "Consulate",
+      "event_description": "The United States established its first consular presence in Monaco when Emile de Loth was accredited by the Prince of Monaco as Consular Agent on February 22, 1874.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "the United States appointed its first consular representative to Monaco, Emile de Loth, on January 30, 1874, as Consular Agent. De Loth was accredited by the Prince of Monaco on February 22, 1874."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1906-02-16",
+      "new_status": "None",
+      "event_description": "The U.S. consular post in Monaco was ordered closed on February 16, 1906, and moved to Nice, ending U.S. consular representation in Monaco.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "This post was ordered closed on February 16, 1906, and moved to Nice."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "2006-12-13",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Full diplomatic relations were established when U.S. Ambassador Craig Stapleton presented his credentials to Prince Albert II on December 13, 2006. Stapleton was resident in Paris, making this a nonresident ambassadorial relationship.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 26,
+          "line_end": 26,
+          "quote": "U.S. Ambassador to Monaco Craig Stapleton presented his credentials to Prince Albert II on December 13, 2006. Stapleton was resident in Paris."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "2006-12-13",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Craig Roberts Stapleton presented credentials as Envoy Extraordinary and Minister Plenipotentiary (nonresident, based in Paris), establishing nonresident envoy-level relations with Monaco.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Craig Roberts Stapleton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 2006-11-22. Credentials presented: 2006-12-13. Left Paris 2009-01-29."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "2014-11-05",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Jane Dorothy Hartley presented credentials as Ambassador Extraordinary and Plenipotentiary (nonresident, based in Paris), elevating U.S. representation in Monaco from Envoy Nonresident to Ambassador Nonresident.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "Jane Dorothy Hartley, Ambassador Extraordinary and Plenipotentiary. Appointed: 2014-09-26. Credentials presented: 2014-11-05. Left Paris on 2017-01-19."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Monaco",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match on date (1874-02-22) and status (Consulate)."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match on date (1906-02-16) and status (None). RDCR confirms the consular post was ordered closed."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "2014-11-05",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Jane Dorothy Hartley presented credentials as Ambassador Extraordinary and Plenipotentiary (nonresident, based in Paris), elevating U.S. representation from Envoy Nonresident to Ambassador Nonresident.",
+        "notes": "POCOM clearly distinguishes Stapleton (Envoy) from Hartley (Ambassador). If the 2006 event is corrected to Envoy Nonresident, this 2014 event represents the elevation to Ambassador Nonresident and should be added to the CSV."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          3
+        ],
+        "field": "new_status",
+        "csv_value": "Ambassador Nonresident",
+        "extracted_value": "RDCR says 'Ambassador' (Event 2) but POCOM says 'Envoy Extraordinary and Minister Plenipotentiary' i.e. Envoy Nonresident (Event 3); both on 2006-12-13",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "POCOM precisely records Stapleton's rank as 'Envoy Extraordinary and Minister Plenipotentiary' \u2014 not Ambassador. POCOM then shows the first actual Ambassador to Monaco was Jane Hartley in 2014. The RDCR text uses the word 'Ambassador' loosely (a common colloquial usage for any chief of mission), but POCOM's detailed rank data is more authoritative on the specific diplomatic title. The correct status for 2006-12-13 should be Envoy Nonresident, with Ambassador Nonresident beginning 2014-11-05 when Hartley presented credentials. The CSV should be corrected to Envoy Nonresident for this row, and a new row added for the 2014 elevation to Ambassador Nonresident."
+      }
+    ]
+  }
+}

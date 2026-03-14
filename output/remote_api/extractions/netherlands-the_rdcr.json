@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Y2csPrWrWftD8NQn1XYApM",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3950,
+      "output_tokens": 1519
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Netherlands, The",
+    "source_file": "rdcr/articles/netherlands.xml",
+    "events": [
+      {
+        "date": "1782-04-19",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in The Hague were established when U.S. Minister John Adams presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "Diplomatic relations and the American Legation in The Hague were established on April 19, 1782, when U.S. Minister John Adams presented his credentials."
+          }
+        ]
+      },
+      {
+        "date": "1801-05",
+        "new_status": "None",
+        "event_description": "The U.S. closed its legation at The Hague in May 1801 to reduce expenditures, with no resident diplomatic mission until 1814.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 40,
+            "line_end": 40,
+            "quote": "The U.S. closed its legation at The Hague in May 1801, so that, as Secretary of State James Madison explained, the U.S. Government could reduce expenditures."
+          }
+        ]
+      },
+      {
+        "date": "1815-07-20",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations were re-established with the Kingdom of the Netherlands when U.S. Minister William Eustis presented his credentials on July 20, 1815.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 48,
+            "line_end": 48,
+            "quote": "On December 19, 1814, the U.S. accredited William Eustis to the Kingdom of the Netherlands, who presented his credentials on July 20, 1815."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "The United States closed its legation in The Hague on July 15, 1940, following the German invasion of the Netherlands.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "The United States closed its legation to The Hague on July 15, 1940, after the German invasion of the Netherlands and reopened the legation in London near the Dutch government-in-exile on August 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1940-08-15",
+        "new_status": "Legation",
+        "event_description": "The U.S. legation was reopened in London near the Dutch government-in-exile on August 15, 1940.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "The United States closed its legation to The Hague on July 15, 1940, after the German invasion of the Netherlands and reopened the legation in London near the Dutch government-in-exile on August 15, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-08",
+        "new_status": "Embassy",
+        "event_description": "The U.S. legation to the Kingdom of the Netherlands was elevated to embassy status when Minister Anthony J. Drexel Biddle Jr. presented his new credentials as Ambassador to the government-in-exile in London.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "The U.S. legation to the Kingdom of the Netherlands was elevated to the status of an embassy when Minister Anthony J. Drexel Biddle Jr. presented his new credentials as Ambassador to the government in exile in London on May 8, 1942."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KtTGcssFfDU7HDJGdz5H7U",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3790,
+      "output_tokens": 1411
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1825-06-01",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Mexico City was established when Joel Robert Poinsett presented his credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The American Legation in Mexico was established on June 1, 1825, when Joel Robert Poinsett presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to President Guadalupe Victoria."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1845-03-28",
+      "new_status": "None",
+      "event_description": "Mexico severed diplomatic relations with the United States in response to U.S. moves toward annexing Texas, handing U.S. Minister Wilson Shannon his dismissal.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "the Mexican Minister of Foreign Affairs informed U.S. Minister to Mexico, Wilson Shannon, on March 28, 1845, that Mexico was severing diplomatic relations with the United States."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1848-12-04",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations were reestablished following the Treaty of Guadalupe-Hidalgo, restoring the U.S. Legation in Mexico.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Diplomatic relations were reestablished on December 4, 1848, when U.S. President James K. Polk accepted Luis de la Rosa's credentials as Envoy Extraordinary and Minister Plenipotentiary to the United States."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1858-07-15",
+      "new_status": "None",
+      "event_description": "The U.S. suspended and then severed relations with Mexico's conservative government; Envoy Forsyth was recalled by President Buchanan.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "Envoy Extraordinary and Minister Plenipotentiary to Mexico John Forsyth \"suspended\" relations, on June 21, 1858, between the legation and the conservative government of Miguel Miram\u00f3n y Tarelo... Buchanan assented and recalled Forsyth on July 15, 1858."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": true
+    },
+    {
+      "date": "1859-04-06",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations were reestablished when Envoy Extraordinary and Minister Plenipotentiary Robert M. McLane presented his credentials to President Benito Ju\u00e1rez.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "Diplomatic relations were reestablished on April 6, 1859, when Envoy Extraordinary and Minister Plenipotentiary to Mexico, Robert M. McLane, presented his credentials to President Benito Ju\u00e1rez."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1899-01-03",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Mexico City was elevated to Embassy status when Powell Clayton presented his credentials as Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "The Legation in Mexico was raised to Embassy status on January 3, 1899, when Powell Clayton presented his credentials as Ambassador Extraordinary and Plenipotentiary to President Porfirio D\u00edaz."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1914-04-22",
+      "new_status": "None",
+      "event_description": "Mexico severed diplomatic relations with the United States following the U.S. occupation of Veracruz, handing Charg\u00e9 d'Affaires O'Shaughnessy his passport and requesting his departure.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "Mexican officials severed diplomatic relations with the United States on April 22, when they handed Charg\u00e9 d'Affaires ad interim O'Shaughnessy his passport and requested his departure from Mexico."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": false
+    },
+    {
+      "date": "1917-03-03",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations were reestablished at the embassy level when U.S. Ambassador Henry P. Fletcher presented his credentials to President Carranza.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 47,
+          "quote": "Diplomatic relations were reestablished on March 3, 1917, when U.S. Ambassador Henry P. Fletcher presented his credentials to President Carranza."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 7,
+      "has_citation_error": false
+    },
+    {
+      "date": "1848-10-02",
+      "new_status": "Legation",
+      "event_description": "Nathan Clifford presents credentials as Envoy Extraordinary and Minister Plenipotentiary, restoring the U.S. Legation in Mexico after the break in relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Nathan Clifford, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1848-07-28. Credentials presented: 1848-10-02. Presented recall on 1849-09-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1858-06-21",
+      "new_status": "None",
+      "event_description": "Envoy Forsyth suspends political relations of the U.S. Legation with the Government of Mexico.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 24,
+          "quote": "John2 Forsyth, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1856-07-21. Credentials presented: 1856-10-23. Suspended political relations of the Legation with Government of Mexico on 1858-06-21."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1899-01-13",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Mexico is elevated to an Embassy when Powell Clayton is promoted to Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 59,
+          "line_end": 59,
+          "quote": "Powell Clayton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1897-03-22. Credentials presented: 1897-05-13. Promoted to Ambassador Extraordinary and Plenipotentiary 1899-01-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 5,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Mexico",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date and status."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date and status."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3,
+          9
+        ],
+        "notes": "CSV date 1858-06-21 matches the suspension date in both RDCR (Event 3) and POCOM (Event 9). RDCR Event 3 has a citation error flag but the quoted text explicitly mentions June 21, 1858 as the suspension date, consistent with POCOM. The RDCR recall date of July 15 is a separate personnel event (Forsyth's recall by Buchanan)."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact match on date and status."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5,
+          10
+        ],
+        "notes": "CSV date 1899-01-03 matches RDCR (Event 5), which gives the explicit institutional date when Clayton presented credentials as Ambassador. POCOM (Event 10) gives 1899-01-13 as the promotion date, which is a personnel event. CSV correctly follows RDCR per source priority."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Exact match on date and status."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          7
+        ],
+        "notes": "Exact match on date and status."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          8
+        ],
+        "field": "date",
+        "csv_value": "1848-10-02",
+        "extracted_value": "RDCR: 1848-12-04; POCOM: 1848-10-02",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR (Event 2) explicitly states 'Diplomatic relations were reestablished on December 4, 1848' \u2014 this is an explicit institutional date for the reestablishment of relations. POCOM (Event 8) gives 1848-10-02 as the date Nathan Clifford presented credentials in Mexico City, which is a personnel/credential event. Per source priority rules, RDCR wins when it provides an explicit institutional date. The CSV uses the POCOM date (1848-10-02) and even notes 'Chiefs of Mission page for Mexico' as its source, but the correct date per RDCR should be 1848-12-04. The RDCR date refers to when President Polk accepted the Mexican envoy's credentials, formally reestablishing diplomatic relations. The CSV date should be updated to 1848-12-04."
+      }
+    ]
+  }
+}

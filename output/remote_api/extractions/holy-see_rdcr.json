@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015Y5EXYpRUTr6rNHXCVXsre",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2338,
+      "output_tokens": 708
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Holy See",
+    "source_file": "rdcr/articles/holy-see.xml",
+    "events": [
+      {
+        "date": "1797",
+        "new_status": "Consul Nonresident",
+        "event_description": "United States established consular relations with the Papal States.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States maintained consular relations with the Papal States from 1797 to 1870."
+          }
+        ]
+      },
+      {
+        "date": "1870",
+        "new_status": "None",
+        "event_description": "U.S. consular relations with the Papal States ended when the Kingdom of Italy conquered Rome.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The United States at different times had a Minister to the Papal States, Minister to the Pontifical States, and finally, a Minister to Rome from 1848 until Kingdom of Italy conquered Rome in 1870."
+          }
+        ]
+      },
+      {
+        "date": "1984-01-10",
+        "new_status": "Liaison",
+        "event_description": "The United States and the Holy See established diplomatic relations by agreement between President Reagan and Pope John Paul II, with the existing Personal Representative of the President serving as the initial diplomatic presence prior to the embassy opening.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "The United States and the Holy See established diplomatic relations by agreement between President Ronald Reagan and Pope John Paul II on January 10, 1984."
+          }
+        ]
+      },
+      {
+        "date": "1984-04-09",
+        "new_status": "Embassy",
+        "event_description": "The United States established an embassy to the Holy See when William A. Wilson presented his credentials to the Pope, elevating his position from Personal Representative of the President to U.S. Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The United States established an embassy to the Holy See on April 9, 1984, when William A. Wilson presented his credentials to the Pope, elevating his position from Personal Representative of the President to U.S. Ambassador to the Holy See."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016qk8T9JVGcrapy7oYujBTe",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2346,
+      "output_tokens": 680
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Madagascar",
+    "source_file": "rdcr/articles/madagascar.xml",
+    "events": [
+      {
+        "date": "1916-07-08",
+        "new_status": "Consulate",
+        "event_description": "The U.S. consulate moved from Tamatave to Tananarivo (the capital), establishing a consular presence in the capital.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The U.S. consulate moved from Tamatave to Tananarivo on or around July 8, 1916."
+          }
+        ]
+      },
+      {
+        "date": "1960-06-25",
+        "new_status": "Embassy",
+        "event_description": "The American Consulate at Tananarive was elevated to Embassy status upon Malagasy independence, with J. Roland Jacobs as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "With the establishment of the independent Malagasy Republic, the American Consulate at Tananarive (now Antananarivo) was elevated to Embassy status on June 25, 1960 with former Consul J. Roland Jacobs as Charge d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

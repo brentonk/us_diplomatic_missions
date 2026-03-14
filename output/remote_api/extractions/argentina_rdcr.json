@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KgFAueE7iFinMKXqgStvJK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2863,
+      "output_tokens": 910
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Argentina",
+    "source_file": "rdcr/articles/argentina.xml",
+    "events": [
+      {
+        "date": "1823-12-27",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when American Minister Plenipotentiary Caesar Rodney presented his credentials to the Government of Buenos Ayres.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on December 27, 1823, when American Minister Plenipotentiary Caesar Rodney presented his credentials to the Government of Buenos Ayres."
+          }
+        ]
+      },
+      {
+        "date": "1914-10-01",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Buenos Aires was elevated to Embassy status on October 1, 1914, when Frederic Jessup Stimson was appointed as U.S. Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "The United States elevated its Legation in Buenos Aires to Embassy status on October 1, 1914, when Frederic Jessup Stimson was appointed as U.S. Ambassador Extraordinary and Plenipotentiary. He presented his credentials on January 8, 1915."
+          }
+        ]
+      }
+    ]
+  }
+}

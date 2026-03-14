@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01THVcxhQ14ppzRBH4bY6bLL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3359,
+      "output_tokens": 716
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Zanzibar",
+    "source_file": "pocom/missions-countries/tanzania.xml",
+    "events": [
+      {
+        "date": "1963-12-10",
+        "new_status": "Embassy",
+        "event_description": "Embassy in Zanzibar established with Frederick P. Picard III as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "On December 10, 1963, the Embassy in Zanzibar was established with Frederick P. Picard III as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1964-06-27",
+        "new_status": "Consulate",
+        "event_description": "Embassy Zanzibar downgraded in rank to a Consulate General, effective June 27, 1964, following Zanzibar's union with Tanganyika on April 27, 1964.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Frank C. Carlucci III was serving as Charge d'Affaires ad interim when Embassy Zanzibar was changed in rank to a Consulate General, effective June 27, 1964."
+          }
+        ]
+      }
+    ]
+  }
+}

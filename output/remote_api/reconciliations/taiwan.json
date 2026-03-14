@@ -1,0 +1,166 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01N8MR1Yi4PkQBo8xn9R9dsT",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3141,
+      "output_tokens": 1447
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1914",
+      "new_status": "Consulate",
+      "event_description": "U.S. consular post established in Taipei (then called Taihoku), the capital of Japanese-colonial Taiwan.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The United States also established consular posts in Taiwan during the time that it was a colony of the Empire of Japan, in Danshui (then called Tansui or Tamshui) in 1898 and in Taipei (then called Taihoku) in 1914."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1949-12-19",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy moved to Taipei, Formosa (Taiwan), following the Republic of China government's relocation there during the Chinese Civil War. The U.S. continued to recognize the ROC as the legitimate government of China.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 79,
+          "line_end": 79,
+          "quote": "On December 19, 1949, the U.S. Embassy was moved to Taipei, Formosa (Taiwan), after the government of the Republic of China had moved there in response to advances by Chinese Communist forces on the mainland during the Chinese Civil War."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-01-01",
+      "new_status": "None",
+      "event_description": "The United States withdrew recognition of the Republic of China and terminated diplomatic relations with it, effective January 1, 1979, upon recognizing the PRC as the sole legitimate government of China.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 88,
+          "line_end": 88,
+          "quote": "On January 1, 1979, the United States recognized the PRC and established diplomatic relations with it as the sole legitimate government of China. On the same day, the United States withdrew its recognition of, and terminated diplomatic relations with, the Republic of China as the government of China."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1844-06-12",
+      "new_status": "Legation",
+      "event_description": "U.S. mission to China established when Caleb Cushing, Envoy Extraordinary and Minister Plenipotentiary, presented credentials on June 12, 1844.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Caleb Cushing, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1843-05-08. Credentials presented: 1844-06-12."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1935-09-17",
+      "new_status": "Embassy",
+      "event_description": "U.S. mission to China elevated from Legation to Embassy when Nelson Trusler Johnson was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on September 17, 1935.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 53,
+          "line_end": 55,
+          "quote": "Nelson Trusler Johnson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1929-12-16. Credentials presented: 1930-02-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1935-09-17. Note: Commissioned to China.\n\nNelson Trusler Johnson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1935-06-18. Credentials presented: 1935-09-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-02-28",
+      "new_status": "None",
+      "event_description": "Embassy Taipei closed on February 28, 1979, following the U.S. establishment of diplomatic relations with the People's Republic of China and termination of relations with the Republic of China on January 1, 1979.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 79,
+          "line_end": 79,
+          "quote": "The United States established diplomatic relations with the People's Republic of China, and terminated them with the Republic of China, on January 1, 1979. Embassy Taipei closed February 28, 1979."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "Taiwan",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2,
+          5
+        ],
+        "notes": "CSV date 1979-01-01 matches RDCR Event 2 exactly (termination of diplomatic relations). POCOM Event 5 (Embassy Taipei closed 1979-02-28) refers to the physical closure of the embassy, which is a subsequent operational event. The CSV correctly uses the RDCR date for the diplomatic termination. Event 5 has a CITATION ERROR flag but its content is consistent with the narrative."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1914",
+        "new_status": "Consulate",
+        "event_description": "U.S. consular post established in Taipei (then Taihoku) during Japanese colonial rule of Taiwan.",
+        "notes": "RDCR mentions this as part of the historical background. This predates the ROC government's presence on Taiwan and represents a U.S. consular presence under Japanese sovereignty. May be relevant if the dataset intends to capture all U.S. diplomatic presences on the island of Taiwan."
+      },
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1844-06-12",
+        "new_status": "Legation",
+        "event_description": "U.S. mission to China established when Caleb Cushing presented credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "notes": "This is the original establishment of the U.S. mission to China. Relevant to Taiwan's diplomatic lineage since the ROC government continued this relationship after 1949. Whether to include depends on whether the Taiwan dataset is meant to capture the full China/ROC diplomatic lineage or only the post-1949 Taiwan-specific period."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1935-09-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission to China elevated from Legation to Embassy when Nelson Trusler Johnson was promoted to Ambassador and presented credentials.",
+        "notes": "Elevation of the U.S. mission to China to Embassy rank. This is the origin of the Embassy status that the CSV picks up in 1949. If the dataset includes the full ROC diplomatic lineage, this event (and the 1844 Legation establishment) should precede the 1949 row. The CSV Row 1 (1949-12-08 Embassy) appears to represent the relocation of an already-existing Embassy to Taipei, not the creation of a new Embassy."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "field": "date",
+        "csv_value": "1949-12-08",
+        "extracted_value": "1949-12-19",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "RDCR explicitly states: 'On December 19, 1949, the U.S. Embassy was moved to Taipei, Formosa (Taiwan).' This is a clear institutional date from the primary source. The CSV date of December 8 does not appear in any source text and may be an error or confusion with another date (e.g., the ROC government's own relocation date). Per source priority rules, RDCR's explicit institutional date of 1949-12-19 should be preferred."
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014jdDKmZ7Efj2Dpwg6H3ydn",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2603,
+      "output_tokens": 574
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1991-12-25",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established with Kazakhstan on December 25, 1991, following U.S. recognition of Kazakhstan's independence upon dissolution of the Soviet Union. No mission yet established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-02-03",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Alma-Ata (now Almaty) was established on February 3, 1992, with William Harrison Courtney as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The American Embassy in Alma-Ata (now Almaty) was established on February 3, 1992, with William Harrison Courtney as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-09-15",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Kazakhstan when the first Ambassador, William Harrison Courtney, presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "William Harrison Courtney, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-09-15. Left post on 1995-07-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Kazakhstan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1992-02-03 matches RDCR (Event 1) exactly for Embassy establishment. POCOM (Event 2) gives 1992-09-15, which is the credential presentation date for the first Ambassador \u2014 a later personnel event. Per source priority, RDCR's institutional date is correct and the CSV follows it."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Kazakhstan on December 25, 1991, when President George H.W. Bush announced U.S. recognition of Kazakhstan's independence upon dissolution of the Soviet Union. No mission yet established.",
+        "notes": "High-confidence RDCR event. This represents the initial establishment of diplomatic relations prior to the opening of the Embassy. Candidate for addition as a 'None' status event preceding the Embassy establishment."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

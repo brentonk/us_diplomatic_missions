@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EaqVJyCix59ViYe3dTXSAA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3124,
+      "output_tokens": 772
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cameroon",
+    "source_file": "pocom/missions-countries/cameroon.xml",
+    "events": [
+      {
+        "date": "1960-01-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Cameroon established, with James Bolard More serving as Charg\u00e9 d'Affaires ad interim opening the mission.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "James Bolard More, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-01-01."
+          }
+        ]
+      },
+      {
+        "date": "1960-06-09",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador Extraordinary and Plenipotentiary to Cameroon, Leland Judd Barrows, presented credentials, confirming full Embassy-level representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Leland Judd Barrows, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-04-20. Credentials presented: 1960-06-09. Left post on 1966-09-06."
+          }
+        ]
+      }
+    ]
+  }
+}

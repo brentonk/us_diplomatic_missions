@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GGtPLX3UVvZtcrwia3DWjW",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2799,
+      "output_tokens": 720
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1977-09-01",
+      "new_status": "Liaison",
+      "event_description": "Frank V. Ortiz Jr. appointed U.S. Special Representative to St. Vincent (and several other Eastern Caribbean states), concurrent with his ambassadorship to Barbados and Grenada.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "Frank V. Oritz, Jr. was appointed United States Special Representative to the States of Antigua, Dominica, St. Christopher-Nevis-Anguilla, St. Lucia, and St. Vincent on September 1, 1977. The appointment was concurrent to his positions as Ambassador to Barbados and to Grenada."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-12-08",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Diplomatic relations formally established when American Ambassador Milan D. Bish presented credentials in Bridgetown on December 8, 1981. Bish was resident in Barbados, not Saint Vincent, making this a nonresident ambassadorial relationship.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 25,
+          "line_end": 25,
+          "quote": "Diplomatic relations were established on December 8, 1981, when St. Vincent and the Grenadines Ambassador Hudson Kemul Tannis presented his credentials. American Ambassador Milan D. Bish presented his credentials in Bridgetown that same day. He was concurrently Ambassador to Antigua and Barbuda, Barbados, Dominica, and St. Lucia and Special Representative to Saint Christopher and Nevis. All U.S. ambassadors to St. Vincent and the Grenadines have been resident at Bridgetown."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-12-11",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Nonresident ambassadorial relations established when the first U.S. Ambassador Extraordinary and Plenipotentiary, Milan D Bish (resident in Bridgetown, Barbados), presented credentials to Saint Vincent and the Grenadines.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Milan D Bish, Ambassador Extraordinary and Plenipotentiary. Appointed: 1981-11-23. Credentials presented: 1981-12-11. Left Bridgetown 1984-03-04. Note: Also Special Representative to St. Christopher and Nevis."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Saint Vincent and the Grenadines",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date (1981-12-08) matches RDCR Event 1 exactly. POCOM Event 2 gives 1981-12-11 as the credential presentation date, but RDCR provides the explicit institutional date of December 8, 1981 for the establishment of diplomatic relations. Per source priority rules, RDCR wins and the CSV is correct."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1977-09-01",
+        "new_status": "Liaison",
+        "event_description": "Frank V. Ortiz Jr. appointed U.S. Special Representative to St. Vincent (and several other Eastern Caribbean states), concurrent with his ambassadorship to Barbados and Grenada. This predates St. Vincent's independence (1979) and formal diplomatic relations (1981).",
+        "notes": "RDCR explicitly documents this appointment on September 1, 1977. This represents a pre-independence liaison relationship via a Special Representative. Candidate for addition as a 'Liaison' status entry preceding the 1981 establishment of formal diplomatic relations."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

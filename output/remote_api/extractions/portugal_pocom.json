@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UKuvXd8H9ZPfP3jbTi5JEP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6432,
+      "output_tokens": 1465
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Portugal",
+    "source_file": "pocom/missions-countries/portugal.xml",
+    "events": [
+      {
+        "date": "1791-05-13",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic mission to Portugal established when David Humphreys, Minister Resident, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "David Humphreys, Minister Resident. Appointed: 1791-02-21. Credentials presented: 1791-05-13. Presented recall on 1797-07-25."
+          }
+        ]
+      },
+      {
+        "date": "1821",
+        "new_status": "None",
+        "event_description": "The U.S. Legation to Portugal (then at Rio de Janeiro) was closed in 1821.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Note: The Legation to Portugal at Rio de Janeiro was closed in 1821."
+          }
+        ]
+      },
+      {
+        "date": "1822",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation to Portugal re-established at Lisbon when Henry Sr Dearborn, Envoy Extraordinary and Minister Plenipotentiary, arrived and presented credentials (exact date not reported).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Henry Sr Dearborn, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1822-05-07. Had farewell audience 1824-06-30. Note: Arrived at Lisbon before August 16, 1822; did not report date of presentation of credentials."
+          }
+        ]
+      },
+      {
+        "date": "1910-10-05",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations with Portugal interrupted following the change of government on October 5, 1910, with the new Portuguese government still unrecognized by the United States when the minister left post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "Normal relations interrupted on 1910-10-05. Note: The new Government of Portugal was still unrecognized by the United States when Gage left post on November 19, 1910."
+          }
+        ]
+      },
+      {
+        "date": "1911-08-03",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation to Portugal re-established when Edwin Vernon Morgan, Envoy Extraordinary and Minister Plenipotentiary, presented credentials to the new Portuguese government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 69,
+            "quote": "Edwin Vernon Morgan, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1911-05-24. Credentials presented: 1911-08-03. Left post on 1912-02-11."
+          }
+        ]
+      },
+      {
+        "date": "1944-06-20",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy when Raymond Henry Norweb was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on June 20, 1944.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 85,
+            "line_end": 87,
+            "quote": "Raymond Henry Norweb, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1943-11-15. Credentials presented: 1943-12-03. Promoted to Ambassador Extraordinary and Plenipotentiary 1944-06-20. Note: With the personal rank of Ambassador."
+          }
+        ]
+      }
+    ]
+  }
+}

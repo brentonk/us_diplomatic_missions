@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PFcMjRcWUg5Dt9kK6y9Hzs",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5690,
+      "output_tokens": 815
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Chile",
+    "source_file": "pocom/missions-countries/chile.xml",
+    "events": [
+      {
+        "date": "1824-04-23",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Chile when Heman Allen, Minister Plenipotentiary, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Heman Allen, Minister Plenipotentiary. Appointed: 1823-01-27. Credentials presented: 1824-04-23. Presented recall on 1827-07-31."
+          }
+        ]
+      },
+      {
+        "date": "1914-11-19",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy when Henry Prather Fletcher was promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 53,
+            "quote": "Henry Prather Fletcher, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1909-12-21. Credentials presented: 1910-09-09. Promoted to Ambassador Extraordinary and Plenipotentiary 1914-11-19.\n\nHenry Prather Fletcher, Ambassador Extraordinary and Plenipotentiary. Appointed: 1914-10-01. Credentials presented: 1914-11-19. Left Chile 1916-03-09."
+          }
+        ]
+      }
+    ]
+  }
+}

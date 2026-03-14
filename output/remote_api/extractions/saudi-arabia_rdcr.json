@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UqTKZocNHvFLJLC3FGsaTy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2532,
+      "output_tokens": 836
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saudi Arabia",
+    "source_file": "rdcr/articles/saudi-arabia.xml",
+    "events": [
+      {
+        "date": "1940-02-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when Bert Fish presented credentials as U.S. Envoy Extraordinary and Minister Plenipotentiary. Fish was also accredited to Egypt and was resident at Cairo, making this a nonresident envoy relationship.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on February 4, 1940, when Bert Fish presented his credentials as U.S. Envoy Extraordinary and Minister Plenipotentiary. He also was accredited to Egypt and was resident at Cairo."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-01",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation in Jidda was established, creating a resident diplomatic mission in Saudi Arabia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The U.S. Legation in Jidda was established on May 1, 1942, with James S. Moose, Jr., as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1949-03-18",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Jidda was elevated to Embassy status when J. Rives Childs presented his credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The Legation was raised to Embassy status on March 18, 1949, when J. Rives Childs presented his credential as Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

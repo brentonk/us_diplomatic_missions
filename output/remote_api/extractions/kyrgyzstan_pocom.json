@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018ynp5xGXVfCQKJJj4rvjta",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2604,
+      "output_tokens": 451
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kyrgyzstan",
+    "source_file": "pocom/missions-countries/kyrgyzstan.xml",
+    "events": [
+      {
+        "date": "1992-02-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Kyrgyzstan established, with Edmund McWilliams serving as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Edmund Mcwilliams, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-02-01."
+          }
+        ]
+      }
+    ]
+  }
+}

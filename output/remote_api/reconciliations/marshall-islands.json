@@ -1,0 +1,102 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GZcugs74DHxJcqrXgsyb4b",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2725,
+      "output_tokens": 677
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1986-10-21",
+      "new_status": "Liaison",
+      "event_description": "Office of the U.S. Representative opened in Majuro under Samuel B. Thomsen, prior to the formal establishment of diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "Prior to the establishment of diplomatic relations, and Office of the U.S. Representative in Majurio opened on October 21, 1986, under Samuel B. Thomsen."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1989-09-09",
+      "new_status": "Embassy",
+      "event_description": "The Office of the U.S. Representative was elevated to Embassy status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The Office of the U.S. Representative was elevated to Embassy status on September 9, 1989, and on June 27, 1990, William Bodde Jr. was appointed U.S. Ambassador Extraordinary and Plenipotentiary to the Marshall Islands."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1987-07-11",
+      "new_status": "Liaison",
+      "event_description": "U.S. established a liaison-level presence in the Marshall Islands, with Samuel B. Thomsen serving as Representative.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Samuel B Thomsen, Representative. Appointed: 1987-06-15. Credentials presented: 1987-07-11. Left post on 1990-07-11."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-08-06",
+      "new_status": "Embassy",
+      "event_description": "U.S. elevated its mission to embassy level in the Marshall Islands, with William Jr. Bodde presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "William Jr Bodde, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-06-27. Credentials presented: 1990-08-06. Left post on 1992-06-28."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Marshall Islands",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          2
+        ],
+        "notes": "CSV date 1986-10-21 matches RDCR (Event 0) exactly. POCOM (Event 2) gives 1987-07-11 as the credential presentation date for Thomsen, which is a later personnel event. Per source priority, RDCR's institutional opening date prevails."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          3
+        ],
+        "notes": "CSV date 1989-09-09 matches RDCR (Event 1) exactly. POCOM (Event 3) gives 1990-08-06 as the credential presentation date for the first Ambassador (Bodde), which is a later personnel event. Per source priority, RDCR's explicit institutional elevation date prevails."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

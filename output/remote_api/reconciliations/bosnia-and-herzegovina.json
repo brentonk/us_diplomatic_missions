@@ -1,0 +1,116 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DFxFVgqcKRaT643ZHicPiy",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2693,
+      "output_tokens": 1175
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-08-06",
+      "new_status": "None",
+      "event_description": "Diplomatic relations were established on August 6, 1992, but no physical mission or ambassador was yet in place.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 6, 1992, when President George H.W. Bush announced the decision during remarks to the press."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-11-10",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "A physical American Embassy to Bosnia and Herzegovina was established on November 10, 1993, on the premises of the American Embassy in Vienna, Austria \u2014 not yet in the capital Sarajevo.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "a physical American Embassy to Bosnia and Herzegovina was not established until November 10, 1993, on the premises of the American Embassy in Vienna, Austria."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1994-07-04",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Sarajevo (the capital) was established on July 4, 1994, with Jackovich as Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Sarajevo was established on July 4, 1994, with Jackovich as Ambassador."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-06-23",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Bosnia and Herzegovina when the first Ambassador Extraordinary and Plenipotentiary, Victor Jackovich, presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Victor Jackovich, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-05-12. Credentials presented: 1993-06-23. Left post on 1995-04-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Bosnia and Herzegovina",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. Both CSV and RDCR agree on 1994-07-04 as the date the American Embassy in Sarajevo was established."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1992-08-06",
+        "new_status": "None",
+        "event_description": "Diplomatic relations were established on August 6, 1992, when President George H.W. Bush announced the decision. No physical mission or ambassador was yet in place.",
+        "notes": "RDCR explicitly states diplomatic relations were established on this date. This is a candidate for addition as the initial establishment of relations (status 'None' since no mission or ambassador existed yet)."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          3
+        ],
+        "field": "both",
+        "csv_value": "1993-06-23, Ambassador Nonresident",
+        "extracted_value": "RDCR (Event 1): 1993-11-10, physical Embassy established in Vienna; POCOM (Event 3): 1993-06-23, Embassy (credential presentation)",
+        "assessment": "suggest_split",
+        "reasoning": "This CSV row conflates two distinct events. (1) On 1993-06-23, Ambassador Jackovich presented credentials (POCOM Event 3) \u2014 this is a personnel event marking the start of an ambassador's nonresident service, since no physical embassy existed yet. The CSV date of 1993-06-23 and status 'Ambassador Nonresident' aligns with this interpretation. (2) On 1993-11-10, RDCR (Event 1) says a physical American Embassy was established on the premises of the Embassy in Vienna \u2014 this is the institutional date for the mission opening, though it was located outside Bosnia. Per source priority rules, RDCR's institutional date (1993-11-10) should take precedence over POCOM's credential date (1993-06-23) for the mission establishment event. Suggested split: First event \u2014 1993-06-23, 'Ambassador Nonresident' (ambassador credentialed but no physical mission yet). Second event \u2014 1993-11-10, 'Embassy' (physical embassy established in Vienna, per RDCR). Then the existing CSV Row 2 (1994-07-04) captures the relocation/establishment of the Embassy in Sarajevo proper."
+      }
+    ]
+  }
+}

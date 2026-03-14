@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T10:25:55.396148-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QSjnBhrNxmZZvfratDGWrq",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2503,
+      "output_tokens": 491
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Andorra",
+    "source_file": "pocom/missions-countries/andorra.xml",
+    "events": [
+      {
+        "date": "1998-10-30",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Edward L. Romero presented credentials as the first U.S. Ambassador to Andorra, establishing nonresident ambassadorial relations. Romero was resident in Madrid, not Andorra.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Edward L Romero, Ambassador Extraordinary and Plenipotentiary. Appointed: 1998-06-29. Credentials presented: 1998-10-30. Left Madrid on 2001-06-01."
+          }
+        ]
+      }
+    ]
+  }
+}

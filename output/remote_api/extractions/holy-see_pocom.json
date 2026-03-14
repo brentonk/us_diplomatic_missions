@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013uU6Ro9qLBzxLQmPBkSxUg",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3467,
+      "output_tokens": 1401
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Holy See",
+    "source_file": "pocom/missions-countries/holy-see.xml",
+    "events": [
+      {
+        "date": "1848-08-19",
+        "new_status": "Legation",
+        "event_description": "First U.S. diplomatic mission established to the Papal States, with Jacob L. Martin presenting credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Jacob L Martin, Charg\u00e9 d'Affaires. Appointed: 1848-04-07. Credentials presented: 1848-08-19. Died at post on 1848-08-26. Note: Commissioned to the Papal States."
+          }
+        ]
+      },
+      {
+        "date": "1867-08-17",
+        "new_status": "None",
+        "event_description": "Last Minister Resident Rufus King left post; the U.S. mission to the Papal States was closed and not replaced, ending diplomatic representation.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Rufus2 King, Minister Resident. Appointed: 1863-10-07. Credentials presented: 1864-01-08. Left post on 1867-08-17. Note: Commissioned during a recess of the Senate; recommissioned on January 18, 1864, after confirmation. Commissioned as Minister Resident at Rome."
+          }
+        ]
+      },
+      {
+        "date": "1939-12-23",
+        "new_status": "Liaison",
+        "event_description": "Myron Charles Taylor appointed as Personal Representative of the President to the Holy See, establishing an informal liaison-level presence after a 72-year gap.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "Myron Charles Taylor, Personal Representative of the President. Credentials presented: 1939-12-23. Left post: 1950-01-18."
+          }
+        ]
+      },
+      {
+        "date": "1950-01-18",
+        "new_status": "None",
+        "event_description": "Personal Representative Myron Charles Taylor left post with no successor appointed, ending U.S. diplomatic representation to the Holy See.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "Myron Charles Taylor, Personal Representative of the President. Credentials presented: 1939-12-23. Left post: 1950-01-18."
+          }
+        ]
+      },
+      {
+        "date": "1970-06-05",
+        "new_status": "Liaison",
+        "event_description": "Henry Cabot Lodge appointed as Personal Representative of the President to the Holy See, resuming informal liaison-level representation after a 20-year gap.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Henry Cabot Lodge, Personal Representative of the President. Credentials presented: 1970-06-05. Left post: 1977-07-06."
+          }
+        ]
+      },
+      {
+        "date": "1984-04-09",
+        "new_status": "Embassy",
+        "event_description": "William A. Wilson, previously Personal Representative, presented credentials as Ambassador Extraordinary and Plenipotentiary, marking the establishment of a full U.S. Embassy to the Holy See.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "William A Wilson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1984-03-08. Credentials presented: 1984-04-09. Left post on 1986-07-18."
+          }
+        ]
+      }
+    ]
+  }
+}

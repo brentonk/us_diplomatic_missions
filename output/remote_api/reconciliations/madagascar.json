@@ -1,0 +1,93 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015PgqnCr2ktRVdkDpfAJM8d",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2612,
+      "output_tokens": 791
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1916-07-08",
+      "new_status": "Consulate",
+      "event_description": "The U.S. consulate moved from Tamatave to Tananarivo (the capital), establishing a consular presence in the capital.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "The U.S. consulate moved from Tamatave to Tananarivo on or around July 8, 1916."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-06-25",
+      "new_status": "Embassy",
+      "event_description": "The American Consulate at Tananarive was elevated to Embassy status upon Malagasy independence, with J. Roland Jacobs as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "With the establishment of the independent Malagasy Republic, the American Consulate at Tananarive (now Antananarivo) was elevated to Embassy status on June 25, 1960 with former Consul J. Roland Jacobs as Charge d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-06-26",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Madagascar upon independence, with John Roland Jacobs serving as the first Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "John Roland Jacobs, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-06-26."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Madagascar",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1960-06-25 matches RDCR (Event 1) exactly. POCOM (Event 2) gives 1960-06-26, which is the credential presentation date \u2014 a separate personnel event. Per source priority, RDCR's institutional date is correct and the CSV follows it."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1916-07-08",
+        "new_status": "Consulate",
+        "event_description": "The U.S. consulate moved from Tamatave to Tananarivo (the capital). This is a relocation of the existing consulate, not a new status change. It may be relevant as a geographic move but does not represent a diplomatic status transition.",
+        "notes": "This is a consulate relocation, not a status change. The status was already 'Consulate' since 1874. Likely not a candidate for a new CSV row unless the dataset tracks location changes, but worth noting for completeness."
+      }
+    ],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "The 1874-06-17 Consulate establishment is not covered by any extracted event. Event 0 describes a 1916 consulate relocation (Tamatave to Tananarivo), not the original establishment. The 1874 date likely comes from other historical sources not included in this extraction pipeline (e.g., original consular appointment records). It is plausible but cannot be verified from the RDCR or POCOM texts provided."
+      }
+    ],
+    "discrepancies": []
+  }
+}

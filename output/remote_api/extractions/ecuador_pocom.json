@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XxyvVFASfhNMpRuXw5jMDp",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5251,
+      "output_tokens": 901
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ecuador",
+    "source_file": "pocom/missions-countries/ecuador.xml",
+    "events": [
+      {
+        "date": "1848-08-12",
+        "new_status": "Legation",
+        "event_description": "Van Brugh Livingston presented credentials as the first U.S. Charg\u00e9 d'Affaires to Ecuador, establishing the U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Van Brugh Livingston, Charg\u00e9 d'Affaires. Appointed: 1848-04-10. Credentials presented: 1848-08-12. Transmitted recall by note 1849-11-12."
+          }
+        ]
+      },
+      {
+        "date": "1942-04-14",
+        "new_status": "Embassy",
+        "event_description": "The U.S. legation in Ecuador was elevated to an embassy when Boaz Walton Long was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 49,
+            "quote": "Boaz Walton Long, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1938-03-22. Credentials presented: 1938-04-29. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-04-14.\n\nBoaz Walton Long, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-04-14. Left post on 1943-05-01."
+          }
+        ]
+      }
+    ]
+  }
+}

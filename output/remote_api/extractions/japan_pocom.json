@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01U48WwngaLBxf4jmg9D2QaY",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4736,
+      "output_tokens": 997
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Japan",
+    "source_file": "pocom/missions-countries/japan.xml",
+    "events": [
+      {
+        "date": "1859-11-05",
+        "new_status": "Legation",
+        "event_description": "Townsend Harris, the first U.S. chief of mission to Japan, presented credentials as Minister Resident, establishing the U.S. Legation in Japan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Townsend Harris, Minister Resident. Appointed: 1859-01-19. Credentials presented: 1859-11-05. Presented recall on 1862-04-26."
+          }
+        ]
+      },
+      {
+        "date": "1906-05-26",
+        "new_status": "Embassy",
+        "event_description": "Luke Edward Wright presented credentials as Ambassador Extraordinary and Plenipotentiary, marking the elevation of the U.S. mission in Japan from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "Luke Edward Wright, Ambassador Extraordinary and Plenipotentiary. Appointed: 1906-01-25. Credentials presented: 1906-05-26. Left Japan 1907-08-13."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-08",
+        "new_status": "None",
+        "event_description": "Japan declared war on the United States; Ambassador Grew was interned and eventually left Japan in June 1942, ending U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 51,
+            "quote": "Japan declared war on the United States on (local time) 1941-12-08. Note: Grew, having been interned, left Japan on June 25, 1942."
+          }
+        ]
+      },
+      {
+        "date": "1952-04-28",
+        "new_status": "Embassy",
+        "event_description": "Embassy Tokyo was reestablished on April 28, 1952, with Ambassador Murphy in charge pending presentation of his letter of credence, restoring full U.S. diplomatic representation in Japan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 53,
+            "quote": "Note: Embassy Tokyo was reestablished April 28, 1952, with Murphy in charge pending presentation of his letter of credence."
+          }
+        ]
+      }
+    ]
+  }
+}

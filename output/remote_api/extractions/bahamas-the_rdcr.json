@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DKcbjgpVCt5ChBXyTqmgg5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2144,
+      "output_tokens": 276
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bahamas, The",
+    "source_file": "rdcr/articles/bahamas.xml",
+    "events": [
+      {
+        "date": "1973-07-10",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Nassau established upon Bahamian independence, with Moncrieff J. Spear as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the U.S. Embassy in Nassau were established July 10, 1973, with Moncrieff J. Spear as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

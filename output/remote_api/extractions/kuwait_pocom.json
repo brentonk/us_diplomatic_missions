@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Lym43GnFBZwDEFKgJf2naY",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3210,
+      "output_tokens": 645
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kuwait",
+    "source_file": "pocom/missions-countries/kuwait.xml",
+    "events": [
+      {
+        "date": "1961-09-22",
+        "new_status": "Embassy",
+        "event_description": "Embassy Kuwait established, with Charg\u00e9 d'Affaires Dayton S. Mak in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Embassy Kuwait was established on September 22, 1961, with Mak in charge."
+          }
+        ]
+      },
+      {
+        "date": "1990-12-13",
+        "new_status": "None",
+        "event_description": "Embassy Kuwait effectively closed after Iraqi occupation of Kuwait; Ambassador Howell and Embassy staff departed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Iraqi armed forces occupied Kuwait 1990-08-02. Note: Howell and the Embassy staff left Kuwait on December 13, 1990."
+          }
+        ]
+      },
+      {
+        "date": "1991-03-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy Kuwait reopened following liberation of Kuwait.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "Embassy Kuwait was reopened on March 1, 1991."
+          }
+        ]
+      }
+    ]
+  }
+}

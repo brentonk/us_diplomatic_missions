@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T10:25:55.396148-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XjSTreLn1pHEwGicCYHfHb",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3845,
+      "output_tokens": 1247
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Afghanistan",
+    "source_file": "pocom/missions-countries/afghanistan.xml",
+    "events": [
+      {
+        "date": "1935-05-04",
+        "new_status": "Envoy Nonresident",
+        "event_description": "William Harrison Hornibrook presented credentials as Envoy Extraordinary and Minister Plenipotentiary, nonresident (based in Tehran).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "William Harrison Hornibrook, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1935-01-22. Credentials presented: 1935-05-04. Left Tehran on 1936-03-16."
+          }
+        ]
+      },
+      {
+        "date": "1942-06-06",
+        "new_status": "Legation",
+        "event_description": "Legation Kabul opened, establishing a resident diplomatic mission in Afghanistan for the first time.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "[Mission Note] During Dreyfus' tenure as non-resident Minister, and in the interval between Engert's appointment and his arrival at his post, Legation Kabul was opened on June 6, 1942."
+          }
+        ]
+      },
+      {
+        "date": "1948-06-05",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy; Ely Eliot Palmer promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Ely Eliot Palmer, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1945-02-09. Credentials presented: 1945-12-06. Promoted to Ambassador Extraordinary and Plenipotentiary on 1948-06-05."
+          }
+        ]
+      },
+      {
+        "date": "1989-01-30",
+        "new_status": "None",
+        "event_description": "Embassy Kabul closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "[Mission Note] Embassy Kabul closed on January 30, 1989. The Liasion Office in Kabul opened on December 17, 2001. Embassy Kabul re-opened on January 17, 2002."
+          }
+        ]
+      },
+      {
+        "date": "2001-12-17",
+        "new_status": "Liaison",
+        "event_description": "Liaison Office in Kabul opened, re-establishing a U.S. presence in Afghanistan after the embassy closure.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "[Mission Note] Embassy Kabul closed on January 30, 1989. The Liasion Office in Kabul opened on December 17, 2001. Embassy Kabul re-opened on January 17, 2002."
+          }
+        ]
+      },
+      {
+        "date": "2002-01-17",
+        "new_status": "Embassy",
+        "event_description": "Embassy Kabul re-opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "[Mission Note] Embassy Kabul closed on January 30, 1989. The Liasion Office in Kabul opened on December 17, 2001. Embassy Kabul re-opened on January 17, 2002."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,9 +1,11 @@
 [project]
 name = "us-diplomatic-missions"
 version = "0.1"
-description = "Add your description here"
+description = "Panel data on U.S. diplomatic mission status, validated against State Department XML sources"
 readme = "README.md"
 requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "Brenton Kenkel"}]
 dependencies = [
     "anthropic>=0.84.0",
     "numpy>=2.4.3",

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PJ6i5rFjSKcHjcvcLwZ3WN",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3311,
+      "output_tokens": 601
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Texas",
+    "source_file": "rdcr/articles/texas.xml",
+    "events": [
+      {
+        "date": "1837-10",
+        "new_status": "Legation",
+        "event_description": "Establishment of the U.S. Legation in Houston. Alc\u00e9e La Branche, appointed Charg\u00e9 d'Affaires, presented his credentials sometime between October 23 and 27, 1837.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Alc\u00e9e La Branche, the appointed Charg\u00e9 d'Affaires of the U.S. Legation in Houston, then functioning as the seat of government, presented his credentials sometime between October 23 and 27, 1837."
+          }
+        ]
+      },
+      {
+        "date": "1846-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations between the United States and the Republic of Texas formally ended upon the transfer of Texan sovereignty to the United States on February 19, 1846.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "Although Texas entered the United States as a state on December 29, 1845, relations formally ended during the transfer of Texan sovereignty to the United States on February 19, 1846."
+          }
+        ]
+      }
+    ]
+  }
+}

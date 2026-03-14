@@ -1,0 +1,111 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NZyRjVZ62j2VWe4y7VfVPe",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2921,
+      "output_tokens": 833
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1825-10-29",
+      "new_status": "Legation",
+      "event_description": "The U.S. Legation in Brazil was established in Rio de Janeiro when U.S. Charg\u00e9 d'Affaires Condy Raguet presented his credentials to Emperor Pedro I.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The U. S. Legation in Brazil was established in Rio de Janeiro when U.S. Charg\u00e9 d'Affaires Condy Raguet of Pennsylvania presented his credentials to Emperor Pedro I on October 29, 1825."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1905-01-13",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Rio de Janeiro was elevated to Embassy status when U.S. Minister David E. Thompson was appointed U.S. Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The United States elevated the U.S. Embassy in Rio de Janeiro on January 13, 1905, when U.S. Minister to Brazil, David E. Thompson of Nebraska was appointed U.S. Ambassador Extraordinary and Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1842-01-01",
+      "new_status": "Legation",
+      "event_description": "Mission elevated within the Legation: William Hunter promoted from Charg\u00e9 d'Affaires to Envoy Extraordinary and Minister Plenipotentiary, the first Minister-level head of the U.S. Legation in Brazil.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 11,
+          "quote": "William Jr Hunter, Charg\u00e9 d'Affaires. Appointed: 1834-06-28. Credentials presented: 1835-01-07. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1842-01-01.\n\nWilliam Jr Hunter, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1841-09-13. Credentials presented: 1842-01-01."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1905-03-16",
+      "new_status": "Embassy",
+      "event_description": "U.S. Legation elevated to Embassy; David Eugene Thompson promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials as first Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 49,
+          "quote": "David Eugene Thompson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1902-12-08. Credentials presented: 1903-04-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1905-03-16.\n\nDavid Eugene Thompson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1905-01-13. Credentials presented: 1905-03-16."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Brazil",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1825-10-29) and status (Legation). RDCR high-confidence source describes Charg\u00e9 d'Affaires Condy Raguet presenting credentials to Emperor Pedro I."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1,
+          3
+        ],
+        "notes": "CSV date 1905-01-13 matches RDCR (Event 1) exactly. POCOM (Event 3) gives 1905-03-16, which is the credential presentation date for Ambassador Thompson. Per source priority, RDCR's institutional date of 1905-01-13 is correct, and the CSV follows this correctly. No discrepancy."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1842-01-01",
+        "new_status": "Legation",
+        "event_description": "William Hunter promoted from Charg\u00e9 d'Affaires to Envoy Extraordinary and Minister Plenipotentiary, the first Minister-level head of the U.S. Legation in Brazil.",
+        "notes": "This is a personnel promotion within the existing Legation, not an institutional status change. The mission status remained 'Legation' throughout. Likely not a candidate for addition to the CSV since the dataset tracks institutional status transitions, not personnel rank changes within the same mission type. Only relevant if the dataset distinguishes between Charg\u00e9-level and Minister-level legations."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019ajesReNNGmRBm9jig2jzL",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3584,
+      "output_tokens": 793
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Laos",
+    "source_file": "pocom/missions-countries/laos.xml",
+    "events": [
+      {
+        "date": "1950-08-22",
+        "new_status": "Legation",
+        "event_description": "Legation Vientiane opened, with Paul L. Guest as Charg\u00e9 d'Affaires ad interim, while Heath served as nonresident Minister.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Note: During Heath's tenure as non-resident Minister, Legation Vientiane was opened on August 22, 1950, with Paul L. Guest as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1955-08-19",
+        "new_status": "Embassy",
+        "event_description": "Mission elevated from Legation to Embassy when Yost was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 7,
+            "quote": "Charles Woodruff Yost, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1954-08-18. Credentials presented: 1954-11-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1955-08-19."
+          }
+        ]
+      }
+    ]
+  }
+}

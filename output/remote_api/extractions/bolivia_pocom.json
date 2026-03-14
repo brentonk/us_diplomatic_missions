@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012kvqh6XDgnqJz6VEMrENeA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6300,
+      "output_tokens": 2210
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bolivia",
+    "source_file": "pocom/missions-countries/bolivia.xml",
+    "events": [
+      {
+        "date": "1849-01-03",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Bolivia when the first Charg\u00e9 d'Affaires, John Appleton, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Appleton, Charg\u00e9 d'Affaires. Appointed: 1848-03-30. Credentials presented: 1849-01-03. Left Bolivia 1849-05-04."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-23",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy when Pierre de Lagarde Boal presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Bolivia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 74,
+            "line_end": 74,
+            "quote": "Pierre De Lagarde Boal, Ambassador Extraordinary and Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-05-23. Normal relations interrupted on 1943-12-20."
+          }
+        ]
+      },
+      {
+        "date": "1943-12-20",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted following an unrecognized change of government in Bolivia; Boal eventually left post on February 5, 1944.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 74,
+            "line_end": 74,
+            "quote": "Normal relations interrupted on 1943-12-20. Note: The new Government of Bolivia was still unrecognized by the United States when Boal left post on February 5, 1944."
+          }
+        ]
+      },
+      {
+        "date": "1944-11-16",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy restored when Walter Clarence Thurston presented credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 76,
+            "line_end": 76,
+            "quote": "Walter Clarence Thurston, Ambassador Extraordinary and Plenipotentiary. Appointed: 1944-09-21. Credentials presented: 1944-11-16. Left post on 1946-01-03."
+          }
+        ]
+      },
+      {
+        "date": "1980-07-17",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted following an unrecognized change of government in Bolivia; Ambassador Weissman left post on July 20, 1980.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 102,
+            "line_end": 102,
+            "quote": "Normal relations interrupted on 1980-07-17. Note: The new Government of Bolivia had not been recognized by the United States when Weissman left post on July 20, 1980."
+          }
+        ]
+      },
+      {
+        "date": "1980-07",
+        "new_status": "Interests",
+        "event_description": "Following the interruption of normal relations, Alexander Fletcher Watson served as Charg\u00e9 d'Affaires ad interim, maintaining an informal U.S. presence in Bolivia.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 104,
+            "line_end": 104,
+            "quote": "Alexander Fletcher Watson, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1980-07. Left post: 1981-09."
+          }
+        ]
+      },
+      {
+        "date": "1981-12-10",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy restored when Edwin Gharst Corr presented credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 106,
+            "line_end": 106,
+            "quote": "Edwin Gharst Corr, Ambassador Extraordinary and Plenipotentiary. Appointed: 1981-11-25. Credentials presented: 1981-12-10. Left post on 1985-08-09."
+          }
+        ]
+      }
+    ]
+  }
+}

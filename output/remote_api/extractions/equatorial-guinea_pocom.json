@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018EeDBBythX3VPQbDTX9KBQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3220,
+      "output_tokens": 1348
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Equatorial Guinea",
+    "source_file": "pocom/missions-countries/equatorial-guinea.xml",
+    "events": [
+      {
+        "date": "1968-11-21",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Albert William Sherer presents credentials as the first U.S. Ambassador to Equatorial Guinea, serving as a nonresident ambassador prior to the establishment of the embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Albert William Sherer, Ambassador Extraordinary and Plenipotentiary. Appointed: 1968-10-28. Credentials presented: 1968-11-21. Appointment terminated 1969-10-13. Note: Commissioned during a recess of the Senate; recommissioned on February 7, 1969, after confirmation. During Sherer's tenure as non-resident Ambassador, Embassy Santa Isabel (now Malabo) was established on August 1, 1969, with Albert N. Williams as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1969-08-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy Santa Isabel (now Malabo) established, elevating U.S. representation from nonresident ambassador to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "During Sherer's tenure as non-resident Ambassador, Embassy Santa Isabel (now Malabo) was established on August 1, 1969, with Albert N. Williams as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1976-03-14",
+        "new_status": "None",
+        "event_description": "Ambassador Spiro is declared persona non grata by the Government of Equatorial Guinea, effectively ending resident U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Herbert John Spiro, Ambassador Extraordinary and Plenipotentiary. Appointed: 1975-07-24. Credentials presented: 1975-09-01. Declared persona non grata by Government of Equatorial Guinea 1976-03-14."
+          }
+        ]
+      },
+      {
+        "date": "1979-12-19",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Mabel Murphy Smythe presents credentials as nonresident Ambassador to Equatorial Guinea, resuming U.S. ambassadorial relations after the break caused by Spiro's expulsion.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Mabel Murphy Smythe, Ambassador Extraordinary and Plenipotentiary. Appointed: 1979-12-17. Credentials presented: 1979-12-19. Left Yaounde 1980-02-24."
+          }
+        ]
+      },
+      {
+        "date": "1981-06-11",
+        "new_status": "Embassy",
+        "event_description": "Embassy Malabo reestablished during Horan's tenure as nonresident Ambassador, restoring a resident U.S. diplomatic mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "During Horan's tenure as non-resident Ambassador, Embassy Malabo was reestablished on June 11, 1981, with Joanne Thompson as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

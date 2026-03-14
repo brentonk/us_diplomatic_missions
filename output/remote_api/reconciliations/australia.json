@@ -1,0 +1,111 @@
+{
+  "run_timestamp": "2026-03-13T11:14:20.256099-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BXrCEp5ZDkBo1oqJNLi7gv",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2668,
+      "output_tokens": 800
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1940-01-08",
+      "new_status": "None",
+      "event_description": "The United States and Australia announced the establishment of bilateral diplomatic relations, but no resident mission had yet been established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quote": "On January 8, 1940, the Governments of the United States and Australia announced the establishment of bilateral diplomatic relations."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1940-07-17",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Australia was established when Clarence E. Gauss presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to the Government of Australia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "On July 17, 1940, Clarence E. Gauss presented his credentials as Envoy Extraordinary and Minister Plenipotentiary to the Government of Australia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1946-07-09",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Australia was elevated to Embassy status, as announced by the White House. The first U.S. Ambassador presented credentials on September 25, 1946.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "On July 9, 1946, the White House announced the elevation of the Australian and American legations to embassy status. On September 25, 1946, Robert Butler presented his credentials as Ambassador Extraordinary and Plenipotentiary of the United States to the Government of Australia."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": true
+    },
+    {
+      "date": "1946-07-19",
+      "new_status": "Embassy",
+      "event_description": "Legation Canberra was raised to Embassy status on July 19, 1946, while John Russell Minter was serving as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "Minter was serving as Charg\u00e9 d'Affaires ad interim when Legation Canberra was raised to Embassy status, July 19, 1946."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": true
+    }
+  ],
+  "result": {
+    "country": "Australia",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1940-07-17) and status (Legation). Both refer to Clarence E. Gauss presenting credentials as Minister Plenipotentiary."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          2,
+          3
+        ],
+        "notes": "CSV date 1946-07-09 matches RDCR Event 2 (primary source). POCOM Event 3 gives 1946-07-19 for the same elevation, but per source priority RDCR wins. Both Event 2 and Event 3 have citation error flags, but the event is well-attested across both sources. The 10-day difference between RDCR and POCOM likely reflects different administrative milestones (White House announcement vs. effective date at post)."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1940-01-08",
+        "new_status": "None",
+        "event_description": "The United States and Australia announced the establishment of bilateral diplomatic relations on January 8, 1940, prior to the establishment of any resident mission.",
+        "notes": "This is a distinct event preceding the Legation establishment by ~6 months. The CSV's first entry is the Legation (1940-07-17), so there is no row capturing the initial announcement of diplomatic relations. Status 'None' is appropriate since relations were established but no resident mission existed yet."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

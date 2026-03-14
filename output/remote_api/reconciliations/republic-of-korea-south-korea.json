@@ -1,0 +1,25 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KzZ2zTA1xQe512TzRztk7Z",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2255,
+      "output_tokens": 395
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [],
+  "result": {
+    "country": "Republic of Korea (South Korea)",
+    "matched": [],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [
+      {
+        "csv_row": 1,
+        "notes": "No extracted events were provided for the Republic of Korea (South Korea). The CSV records an Embassy established on 1949-04-20 based on the Chiefs of Mission page for Korea, but no RDCR narrative history or POCOM mission records were available in the extraction pipeline to corroborate this event. The event is plausible (the U.S. established diplomatic relations with the Republic of Korea in 1949), but it cannot be verified against the provided source texts."
+      }
+    ],
+    "discrepancies": []
+  }
+}

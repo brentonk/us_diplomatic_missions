@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VZWHXU8Jpf7EpekbeyMsQk",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2317,
+      "output_tokens": 484
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "United Arab Emirates, The",
+    "source_file": "rdcr/articles/united-arab-emirates.xml",
+    "events": [
+      {
+        "date": "1972-03-20",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when nonresident Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented credentials; he resided in Kuwait and was accredited to multiple Persian Gulf states.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on March 20, 1972, when American Envoy Extraordinary and Minister Plenipotentiary William A. Stoltzfus, Jr. presented his credentials to the government of the United Arab Emirates. Stoltzfus was also accredited to a number of other Persian Gulf states and he resided in Kuwait."
+          }
+        ]
+      },
+      {
+        "date": "1974-06-24",
+        "new_status": "Embassy",
+        "event_description": "The United States Embassy in Abu Dhabi was established when the first resident American Ambassador, Michael Edmund Sterner, presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The United States Embassy in Abu Dhabi was established on June 24, 1974, when the first American Ambassador in residence, Michael Edmund Sterner, presented his credentials to United Arab Emirates' officials."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WhcwdAs1PZFzkA4ykdMq4M",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2585,
+      "output_tokens": 579
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1797-06-26",
+      "new_status": "Consulate",
+      "event_description": "First U.S. consul appointed to Rome, establishing a consular presence in the Papal States capital.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 14,
+          "quote": "The first U.S. consul at Rome, John Baptiste Sartori, was appointed on June 26, 1797."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1848-08-19",
+      "new_status": "Legation",
+      "event_description": "U.S. Legation established in Rome when Jacob L. Martin presented credentials as the first U.S. Charg\u00e9 d'Affaires Near the Papal States.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 30,
+          "line_end": 30,
+          "quote": "The U.S. Legation in Rome was established in 1848 when the first U.S. Charg\u00e9 d'Affaires Jacob L. Martin presented his credentials on August 19, 1848."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1867",
+      "new_status": "None",
+      "event_description": "The American Legation in Rome closed after Congress refused to fund the mission, ending U.S. diplomatic representation to the Papal States.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 34,
+          "line_end": 34,
+          "quote": "The American mission to the Papal States closed in 1867 after Congress refused to fund the mission any longer."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Papal States",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both refer to the appointment of John Baptiste Sartori as first U.S. consul at Rome on 1797-06-26."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both refer to the establishment of the U.S. Legation when Jacob L. Martin presented credentials on 1848-08-19."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Date match at year-level precision (both 1867) and status match (None). Both refer to the closure of the American mission after Congress refused funding."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

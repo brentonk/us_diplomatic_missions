@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KGobCRDn54RJvsneayjPVy",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2851,
+      "output_tokens": 783
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Cabo Verde",
+    "source_file": "pocom/missions-countries/cape-verde.xml",
+    "events": [
+      {
+        "date": "1976-11-18",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. ambassadorial relations with Cabo Verde established when the first Ambassador, Melissa Foelsch Wells, presented credentials. No resident embassy yet existed.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 5,
+            "quote": "Melissa Foelsch Wells, Ambassador Extraordinary and Plenipotentiary. Appointed: 1976-09-16. Credentials presented: 1976-11-18. Left post on 1977-03-23. ... Note: During Marks's tenure as non-resident Ambassador, Embassy Praia was established on January 28, 1978"
+          }
+        ]
+      },
+      {
+        "date": "1978-01-28",
+        "new_status": "Embassy",
+        "event_description": "Embassy Praia was formally established, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Note: During Marks's tenure as non-resident Ambassador, Embassy Praia was established on January 28, 1978, with Howard McGowan as Charge d'affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

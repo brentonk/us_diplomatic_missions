@@ -1,0 +1,119 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01U9A1eryXic4zbokxgkawwr",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2860,
+      "output_tokens": 920
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1967-12-07",
+      "new_status": "Embassy",
+      "event_description": "The United States established diplomatic relations with the People's Republic of Southern Yemen and simultaneously opened the U.S. Embassy in Aden, with William L. Eagleton, Jr. as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 50,
+          "line_end": 54,
+          "quote": "The United States established diplomatic relations with the People's Republic of Southern Yemen the same day that it recognized the Republic's independence, on December 7, 1967, when it established the U.S. Embassy in Aden. William L. Eagleton, Jr., served as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1969-10-26",
+      "new_status": "None",
+      "event_description": "The U.S. Embassy in Aden was closed on October 26, 1969, following the People's Republic of Southern Yemen's severance of diplomatic relations with the United States on October 24, 1969.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 58,
+          "line_end": 62,
+          "quote": "Charg\u00e9 d'Affaires ad interim William L. Eagleton, Jr. was in charge of the American Embassy in Aden when the People's Republic of Southern Yemen severed diplomatic relations with the United States on October 24, 1969. Edward E. Keller, Jr., was Charg\u00e9 d'Affaires ad interim when the Embassy was closed on Oct 26, 1969."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1990-04-30",
+      "new_status": "None",
+      "event_description": "The United States resumed diplomatic relations with the People's Democratic Republic of Yemen (South Yemen) on April 30, 1990, but the U.S. Embassy in Aden never reopened, leaving no physical mission established before unification on May 22, 1990.",
+      "confidence": "low",
+      "evidence": [
+        {
+          "line_start": 72,
+          "line_end": 77,
+          "quote": "The United States resumed diplomatic relations with the People's Democratic Republic of Yemen on Apr 30, 1990. On May 22, 1990, the Yemen Arab Republic and the People's Democratic Republic of Yemen announced that they would form a united \"Republic of Yemen.\" The U.S. Embassy in Aden never reopened."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": true
+    },
+    {
+      "date": "1970-04-10",
+      "new_status": "Interests",
+      "event_description": "The United States established an Interests Section in the Italian Embassy in South Yemen on April 10, 1970.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "On April 10, 1970, the United States established an Interests Section in the Italian Embassy."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "South Yemen",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1967-12-07) and status (Embassy). Both describe the establishment of the U.S. Embassy in Aden upon recognition of Southern Yemen's independence."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1969-10-26) and status (None). Both describe the closure of the Embassy. RDCR notes that diplomatic relations were severed on October 24, 1969, with the Embassy formally closing on October 26, 1969."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1970-04-10",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Italian Embassy in South Yemen on April 10, 1970.",
+        "notes": "From POCOM source (high confidence). This represents a clear diplomatic status transition from None to Interests that is absent from the CSV. Strong candidate for addition."
+      },
+      {
+        "extracted_event_indices": [
+          2
+        ],
+        "date": "1990-04-30",
+        "new_status": "None",
+        "event_description": "The United States resumed diplomatic relations with the People's Democratic Republic of Yemen on April 30, 1990, but the U.S. Embassy in Aden never reopened before unification on May 22, 1990.",
+        "notes": "Low confidence and has a CITATION ERROR flag. This event is complex: it describes a resumption of diplomatic relations without a physical mission reopening, followed almost immediately by unification (May 22, 1990). The status 'None' is ambiguous \u2014 relations were resumed but no mission was established. If the Interests Section (Event 3) was still operative, this might represent a transition back from Interests. Treat with caution due to citation error; verify against original RDCR text before adding."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

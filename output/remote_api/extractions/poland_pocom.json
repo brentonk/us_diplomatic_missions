@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Av7TrX3uXMdyaLjTJx9iku",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4106,
+      "output_tokens": 1102
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Poland",
+    "source_file": "pocom/missions-countries/poland.xml",
+    "events": [
+      {
+        "date": "1919-05-02",
+        "new_status": "Legation",
+        "event_description": "Hugh Simons Gibson presented credentials as Envoy Extraordinary and Minister Plenipotentiary, establishing the U.S. Legation in Poland.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Hugh Simons Gibson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1919-04-16. Credentials presented: 1919-05-02."
+          }
+        ]
+      },
+      {
+        "date": "1930-05-24",
+        "new_status": "Embassy",
+        "event_description": "John North Willys presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Poland from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "John North Willys, Ambassador Extraordinary and Plenipotentiary. Appointed: 1930-03-08. Credentials presented: 1930-05-24. Left post on 1932-05-30."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-21",
+        "new_status": "Embassy",
+        "event_description": "Rudolf E. Schoenfeld opened the Embassy near the Government of Poland established in England, making his initial call as Charg\u00e9 d'Affaires ad interim on September 21, 1940, maintaining embassy-level representation after Biddle left Warsaw in September 1939.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Before Biddle arrived in London, Rudolf E. Schoenfeld opened the Embassy near the Government of Poland established in England, making his initial call as Charg\u00e9 d'Affaires ad interim on September 21, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1945-07-05",
+        "new_status": "Embassy",
+        "event_description": "The Embassy near the Government of Poland in England was terminated on July 5, 1945, and the Embassy in Warsaw was re-established on the same date with Ambassador Lane in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "Rudolf Emil Schoenfeld, Charg\u00e9 d'Affaires ad interim. Embassy near the Government of Poland in England was terminated on 1945-07-05. ... On July 5, 1945, the Embassy in Warsaw was re-established with Ambassador Lane in charge pending presentation of his letter of credence."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01F7ivNd4e7fnypj8iCvmkmS",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3831,
+      "output_tokens": 1192
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Ethiopia",
+    "source_file": "pocom/missions-countries/ethiopia.xml",
+    "events": [
+      {
+        "date": "1909-07-06",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Abyssinia (Ethiopia) when the first Minister Resident/Consul General, Hoffman Philip, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Hoffman Philip, Minister Resident/Consul General. Appointed: 1908-07-20. Credentials presented: 1909-07-06. Left post on 1910-02-08. Note: Commissioned during a recess of the Senate; recommissioned on December 9, 1908, after confirmation. Commissioned to Abyssinia. Did not serve under the July 20, 1908, appointment."
+          }
+        ]
+      },
+      {
+        "date": "1937-05-04",
+        "new_status": "None",
+        "event_description": "U.S. Legation effectively closed following Italian occupation of Addis Ababa; Engert left post on May 4, 1937, with no successor until 1943.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Cornelius Van Hemert Engert, Minister Resident/Consul General. Appointed: 1936-02-07. Credentials presented: 1936-04-30. Italian forces occupied Addis Ababa on 1936-05-06. Note: Engert left post on May 4, 1937."
+          }
+        ]
+      },
+      {
+        "date": "1943-08-31",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation re-established in Ethiopia when John Kenneth Caldwell (Minister Resident/Consul General) presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "John Kenneth Caldwell, Minister Resident/Consul General. Appointed: 1943-04-14. Credentials presented: 1943-08-31. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1943-12-09."
+          }
+        ]
+      },
+      {
+        "date": "1949-06-28",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy when George Robert Merrell was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 17,
+            "quote": "George Robert Merrell, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1947-05-15. Credentials presented: 1948-01-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1949-06-28.\n\nGeorge Robert Merrell, Ambassador Extraordinary and Plenipotentiary. Appointed: 1949-05-21. Credentials presented: 1949-06-28. Left post on 1951-03-17."
+          }
+        ]
+      }
+    ]
+  }
+}

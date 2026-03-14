@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TmKdZWT2JdpfW3DfjYEpkA",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2325,
+      "output_tokens": 723
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "East Germany (German Democratic Republic)",
+    "source_file": "pocom/missions-countries/german-democratic-republic.xml",
+    "events": [
+      {
+        "date": "1974-12-20",
+        "new_status": "Embassy",
+        "event_description": "Embassy established in East Germany; first Ambassador John Sherman Cooper presented credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "John Sherman Cooper, Ambassador Extraordinary and Plenipotentiary. Appointed: 1974-09-19. Credentials presented: 1974-12-20. Left post on 1976-09-28."
+          }
+        ]
+      },
+      {
+        "date": "1990-10-02",
+        "new_status": "None",
+        "event_description": "Embassy Berlin closed at midnight, coinciding with German reunification and the dissolution of East Germany.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Richard Clark Barkley, Ambassador Extraordinary and Plenipotentiary. Appointed: 1988-10-17. Credentials presented: 1988-12-19. Embassy Berlin was closed at midnight 1990-10-02."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0155qco5XsM51itW1WvpnVB3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3915,
+      "output_tokens": 1096
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lebanon",
+    "source_file": "pocom/missions-countries/lebanon.xml",
+    "events": [
+      {
+        "date": "1942-11-19",
+        "new_status": "Liaison",
+        "event_description": "George Wadsworth presented credentials as Diplomatic Agent/Consul General, establishing a liaison-level U.S. presence in Lebanon.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "George Wadsworth, Diplomatic Agent/Consul General. Appointed: 1942-10-09. Credentials presented: 1942-11-19. Promoted to Envoy Extraordinary and Minister Plenipotentiary 1944-11-16."
+          }
+        ]
+      },
+      {
+        "date": "1944-11-16",
+        "new_status": "Legation",
+        "event_description": "George Wadsworth promoted to Envoy Extraordinary and Minister Plenipotentiary, elevating the U.S. mission in Lebanon to a legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "George Wadsworth, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1944-09-21. Credentials presented: 1944-11-16. Left post on 1947-02-01."
+          }
+        ]
+      },
+      {
+        "date": "1952-08-27",
+        "new_status": "Embassy",
+        "event_description": "Legation Beirut was raised to Embassy status on August 27, 1952.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "Note: Commissioned during a recess of the Senate. Legation Beirut was raised to Embassy status on August 27, 1952."
+          }
+        ]
+      },
+      {
+        "date": "1989-09-06",
+        "new_status": "None",
+        "event_description": "All U.S. personnel were withdrawn from Beirut, ending the resident U.S. diplomatic presence in Lebanon.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "After the withdrawal of all U.S. personnel from Beirut on September 6, 1989, McCarthy resided in Washington, D.C."
+          }
+        ]
+      },
+      {
+        "date": "1990-11-29",
+        "new_status": "Embassy",
+        "event_description": "Ryan Clark Crocker presented credentials as Ambassador, re-establishing the U.S. Embassy in Lebanon after the 1989 withdrawal.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "Ryan Clark Crocker, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-10-30. Credentials presented: 1990-11-29. Left post on 1993-08-14."
+          }
+        ]
+      }
+    ]
+  }
+}

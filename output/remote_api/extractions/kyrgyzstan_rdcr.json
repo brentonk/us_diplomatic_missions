@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015TUxjpvY5YU9YtJDAqaF6x",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2216,
+      "output_tokens": 419
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Kyrgyzstan",
+    "source_file": "rdcr/articles/kyrgyzstan.xml",
+    "events": [
+      {
+        "date": "1991-12-25",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established with Kyrgyzstan following U.S. recognition of its independence upon dissolution of the Soviet Union, but no mission yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on December 25, 1991, when President George H.W. Bush announced the decision in an address to the nation regarding the dissolution of the Soviet Union."
+          }
+        ]
+      },
+      {
+        "date": "1992-02-01",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Bishkek was established with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy in Bishkek was established on February 1, 1992, with Edmund McWilliams as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

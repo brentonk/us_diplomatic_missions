@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GC314QMsKy3wGysvnfcgDa",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2245,
+      "output_tokens": 305
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Burma",
+    "source_file": "rdcr/articles/burma.xml",
+    "events": [
+      {
+        "date": "1947-09-18",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations established and the American Legation (formerly Consulate General) in Rangoon raised to Embassy status, with agreement to exchange representatives at the rank of ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation in Burma were established on September 18, 1947, when the U.S. Department of State announced that the governments of Burma and the United States had \"agreed to exchange representatives with the rank of ambassador.\" The announcement also stated that the Consulate General of the United States in Rangoon was being raised to the status of Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_0157FuDkBQTJxH6byGjksPvF",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2517,
+      "output_tokens": 711
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Two Sicilies",
+    "source_file": "pocom/missions-countries/two-sicilies.xml",
+    "events": [
+      {
+        "date": "1832-01-25",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established at Naples when first Charg\u00e9 d'Affaires John Nelson presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Nelson, Charg\u00e9 d'Affaires. Appointed: 1831-10-24. Credentials presented: 1832-01-25."
+          }
+        ]
+      },
+      {
+        "date": "1860-11-06",
+        "new_status": "None",
+        "event_description": "U.S. Legation at Naples closed in anticipation of the entry of King Victor Emmanuel into the city, ending U.S. diplomatic representation in Two Sicilies.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 20,
+            "quote": "Closed the Legation at Naples in anticipation of the entry of King Victor Emmanuel into city, November 2- 1860-11-06."
+          }
+        ]
+      }
+    ]
+  }
+}

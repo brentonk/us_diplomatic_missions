@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TDJjVLmjLKhLKcaedqPo9A",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4910,
+      "output_tokens": 2713
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Germany (Prussia)",
+    "source_file": "rdcr/articles/germany.xml",
+    "events": [
+      {
+        "date": "1797-12-05",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established with Prussia when John Quincy Adams was formally recognized as the accredited U.S. Minister to King Frederick William III during a private audience.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "During a private audience on December 5, however, the new king, Frederick William III, formally recognized Adams as the accredited U.S. Minister to his father."
+          }
+        ]
+      }
+    ]
+  }
+}

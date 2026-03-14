@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01D2iFprVWWN8ef6cxAaU7Nk",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2362,
+      "output_tokens": 490
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nepal",
+    "source_file": "rdcr/articles/nepal.xml",
+    "events": [
+      {
+        "date": "1948-02-16",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations established when Nepal opened a Legation to the United States. The Nepalese Minister was nonresident, residing at the Nepalese Embassy in London, implying U.S. representation was also at the legation level.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on February 16, 1948, when Nepal established a Legation to the United States with Commanding General Kaiser Shum Shere Jung Bahadur Rana, as Envoy Extraordinary and Minister Plenipotentiary. The Minister also was Ambassador to Great Britain, and the entire Legation staff resided at the Nepalese Embassy in London."
+          }
+        ]
+      },
+      {
+        "date": "1959-08-06",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy at Kathmandu was established with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "The U.S. Embassy at Kathmandu was established on August 6, 1959, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

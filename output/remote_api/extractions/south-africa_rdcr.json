@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HUtGwvSExL4Q7shzq87YH8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2739,
+      "output_tokens": 786
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "South Africa",
+    "source_file": "rdcr/articles/south-africa.xml",
+    "events": [
+      {
+        "date": "1929-12-19",
+        "new_status": "Legation",
+        "event_description": "The United States established a legation in Cape Town by appointing Ralph J. Totten, who was serving as Consul General, as Minister Resident.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "On December 19, 1929, the United States established a legation in Cape Town by appointing Ralph J. Totten, who was serving as Consul General, as Minister Resident; Totten presented his credentials as Minister Resident to the Government of the Union of South Africa on February 18, 1930."
+          }
+        ]
+      },
+      {
+        "date": "1949-03-23",
+        "new_status": "Embassy",
+        "event_description": "The U.S. legation in South Africa was elevated to embassy status, effective upon the presentation of ambassadorial credentials by North Winship on March 23, 1949.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "On December 21, 1948, the Department of State announced the elevation of the South African and U.S. legations to embassy stratus, effective as of the date of the presentation of ambassadorial credentials. On March 23, 1949, North Winship presented his credentials as Ambassador Extraordinary and Plenipotentiary of the United States to the Government of the Union of South Africa."
+          }
+        ]
+      }
+    ]
+  }
+}

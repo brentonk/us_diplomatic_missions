@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018PJ9JpMkeKiU1vM3xm5vpv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2769,
+      "output_tokens": 1465
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lithuania",
+    "source_file": "rdcr/articles/lithuania.xml",
+    "events": [
+      {
+        "date": "1922-07-28",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established; U.S. Commissioner Evan Young, resident in Riga, Latvia, was designated as the American representative to Lithuania with the new rank of Minister \u2014 a nonresident envoy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on July 28, 1922, when U.S. Commissioner at Riga, Evan Young, informed the Foreign Office of Lithuania that the United States' recognized its independence and that he would continue as the American representative to the three Baltic States, with the new rank of Minister."
+          }
+        ]
+      },
+      {
+        "date": "1930-05-31",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation was physically established at Kovno (later Kaunas), Lithuania, with Hugh S. Fullerton as Charg\u00e9 d'Affaires ad interim, elevating representation from nonresident to a resident legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The U.S. Legation at Kovno was established on May 31, 1930, with Hugh S. Fullerton as Charge d'Affaires ad interim. Previous U.S. diplomatic representatives to Lithuania also had been accredited to Estonia and Latvia, and had resided in Riga."
+          }
+        ]
+      },
+      {
+        "date": "1940-09-05",
+        "new_status": "None",
+        "event_description": "The U.S. Legation at Kaunas was closed following the Soviet occupation and annexation of Lithuania. The United States did not recognize the annexation, but the physical mission was shuttered.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The U.S. Legation at Kaunas was closed on September 5, 1940, after the USSR occupied and annexed Lithuania, as well as Estonia and Latvia, in August 1940."
+          }
+        ]
+      },
+      {
+        "date": "1991-09-06",
+        "new_status": "Liaison",
+        "event_description": "The United States and Lithuania resumed normal diplomatic relations via a signed memorandum of understanding, re-establishing a formal diplomatic presence ahead of the Embassy opening.",
+        "confidence": "low",
+        "evidence": [
+          {
+            "line_start": 32,
+            "line_end": 32,
+            "quote": "The United States and Lithuania resumed normal diplomatic relations on September 6, 1991, when U.S. Deputy Assistant Secretary of State Curtis Kamman and the Lithuanian First Deputy Minister of Foreign Affairs, Valdemaras Katkus, signed a memorandum of understanding concerning diplomatic relations."
+          }
+        ]
+      },
+      {
+        "date": "1991-10-02",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Vilnius was formally established, with Darryl N. Johnson as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 36,
+            "line_end": 36,
+            "quote": "The American Embassy at Vilnius was established October 2, 1991, with Darryl N. Johnson as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

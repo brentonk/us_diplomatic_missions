@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018oNFyvosqws6mLP3pN1uUw",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2591,
+      "output_tokens": 508
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1927-07-27",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Dublin was established when Frederick A. Sterling presented his credentials as American Envoy Extraordinary and Minister Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quote": "The American Legation in Dublin was established on July 27, 1927, when Frederick A. Sterling presented his credentials as American Envoy Extraordinary and Minister Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1950-04-18",
+      "new_status": "Embassy",
+      "event_description": "The U.S. Legation in Ireland was elevated to an Embassy when George Angus Garrett was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on the same date.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "George Angus Garrett, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1947-04-10. Credentials presented: 1947-07-28. Promoted to Ambassador Extraordinary and Plenipotentiary 1950-04-18.\n\nGeorge Angus Garrett, Ambassador Extraordinary and Plenipotentiary. Appointed: 1950-03-17. Credentials presented: 1950-04-18. Left post on 1951-05-27."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Ireland",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Both CSV and RDCR agree on 1927-07-27 as the date the American Legation in Dublin was established when Sterling presented credentials."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Match. Both agree on 1950-04-18 as the Embassy elevation date. CSV notes reference the Chiefs of Mission page, consistent with POCOM source. RDCR does not appear to provide a separate institutional elevation date, so POCOM's credential/promotion date of 1950-04-18 is the correct date per source priority rules."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

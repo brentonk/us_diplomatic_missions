@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01S72zzrekdPJqtmuj4SBW9B",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3101,
+      "output_tokens": 450
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Fiji",
+    "source_file": "pocom/missions-countries/fiji.xml",
+    "events": [
+      {
+        "date": "1971-11-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Fiji established, with Robert Woltz Skiff presenting credentials as the first Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert Woltz Skiff, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1971-11-01."
+          }
+        ]
+      }
+    ]
+  }
+}

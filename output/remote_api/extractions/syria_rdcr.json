@@ -1,0 +1,109 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01WwbrZ6HcikT8JTBMnLxqLQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2950,
+      "output_tokens": 1436
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Syria",
+    "source_file": "rdcr/articles/syria.xml",
+    "events": [
+      {
+        "date": "1942-10-09",
+        "new_status": "Liaison",
+        "event_description": "George Wadsworth appointed as Agent and Consul General, establishing a quasi-diplomatic liaison presence in Damascus.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "The United States appointed George Wadsworth as \"Agent and Consul General\" on October 9, 1942, to provide a quasi-diplomatic presence in Damascus until the United States determined that Syria achieved effective independence in 1944."
+          }
+        ]
+      },
+      {
+        "date": "1944-11-17",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations with Syria and opened the American Legation when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The United States established diplomatic relations with Syria when George Wadsworth presented his credentials as Envoy Extraordinary and Minister Plenipotentiary on November 17, 1944."
+          }
+        ]
+      },
+      {
+        "date": "1958-02-25",
+        "new_status": "Consulate",
+        "event_description": "Diplomatic relations with Syria ended and the American Embassy in Damascus was reclassified as a Consulate General after Syria joined Egypt to form the United Arab Republic.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "Diplomatic relations with Syria ended and the American Embassy in Damascus was reclassified as a Consulate General on February 25, 1958, after Syria joined Egypt to form the new state, the United Arab Republic."
+          }
+        ]
+      },
+      {
+        "date": "1961-10-10",
+        "new_status": "Embassy",
+        "event_description": "The United States reestablished diplomatic relations with the Syrian Arab Republic and the American Consulate General at Damascus was raised to Embassy status, with Ridgway B. Knight as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "The United States reestablished diplomatic relations with the Syrian Arab Republic and the American Consulate General at Damascus was raised to Embassy Status on October 10, 1961, with Ridgway B. Knight as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-06",
+        "new_status": "None",
+        "event_description": "Syria severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, ending all formal representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "Syria severed diplomatic relations with the United States on June 6, 1967 in the wake of the June 1967 Arab-Israeli War."
+          }
+        ]
+      },
+      {
+        "date": "1974-02-08",
+        "new_status": "Interests",
+        "event_description": "A U.S. Interests Section in Syria was established in the Italian Embassy with Thomas J. Scotes as Principal Officer.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 42,
+            "line_end": 42,
+            "quote": "A U.S. Interests Section in Syria was established on February 8, 1974, in the Italian Embassy with Thomas J. Scotes as Principal Officer."
+          }
+        ]
+      },
+      {
+        "date": "1974-06-16",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy in Damascus were reestablished with Scotes as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 46,
+            "line_end": 46,
+            "quote": "Diplomatic relations and the American Embassy in Damascus were reestablished on June 16, 1974, with Scotes as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

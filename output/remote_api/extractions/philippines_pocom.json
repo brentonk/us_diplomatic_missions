@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01AbyMyiiPpVAeJfWKn8fvX3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3674,
+      "output_tokens": 458
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Philippines",
+    "source_file": "pocom/missions-countries/philippines.xml",
+    "events": [
+      {
+        "date": "1946-07-04",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in the Philippines upon Philippine independence; Paul Vories McNutt presented credentials as the first U.S. Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Paul Vories Mcnutt, Ambassador Extraordinary and Plenipotentiary. Appointed: 1946-06-21. Credentials presented: 1946-07-04. Left post on 1947-03-22."
+          }
+        ]
+      }
+    ]
+  }
+}

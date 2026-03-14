@@ -1,0 +1,159 @@
+{
+  "run_timestamp": "2026-03-13T11:17:12.987356-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NbxcLurEEs1cA6iJTSrPpm",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3042,
+      "output_tokens": 1266
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1859-01-25",
+      "new_status": "Consulate",
+      "event_description": "Establishment of consular relations in Siam when John Hassett Chandler became Acting Vice Consul in Charge.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "John Hassett Chandler became the Acting Vice Consul in Charge on January 25, 1859."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1882-10-23",
+      "new_status": "Legation",
+      "event_description": "Establishment of diplomatic relations and the first U.S. Legation in Thailand (then Siam) when John A. Halderman presented credentials as Minister Resident and Consul General.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "Diplomatic relations and the first U.S. Legation in Thailand (then Siam) were established on October 23, 1882, when John A. Halderman presented his credentials as Minister Resident and Consul General."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-04-10",
+      "new_status": "Embassy",
+      "event_description": "Elevation of the American Legation to Embassy status, with Edwin F. Stanton promoted to become the first U.S. Ambassador to Thailand.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 26,
+          "line_end": 26,
+          "quote": "On April 10, 1947, Edwin F. Stanton was promoted to become the first U.S. Ambassador to Thailand. Stanton presented his credentials on May 9, 1947."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1941-12-08",
+      "new_status": "None",
+      "event_description": "Japanese forces occupied Bangkok; Thailand subsequently declared war on the United States, ending U.S. diplomatic representation. The minister was interned and eventually left post.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 37,
+          "line_end": 37,
+          "quote": "Japanese forces occupied Bangkok 1941-12-08. Note: Thailand declared war on the United States on January 25, 1942. Peck, having been interned, left post on June 29, 1942."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1946-01-05",
+      "new_status": "Legation",
+      "event_description": "U.S. Charg\u00e9 d'Affaires presents credentials, re-establishing U.S. diplomatic representation in Thailand after the wartime break.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "Charles Woodruff Yost, Charg\u00e9 d'Affaires. Credentials presented: 1946-01-05. Superseded 1946-07-04. Note: Not commissioned; letter of credence sent to Yost by telegram on October 16, 1945."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1947-05-09",
+      "new_status": "Embassy",
+      "event_description": "Edwin Forward Stanton promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission from a legation to an embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 41,
+          "line_end": 43,
+          "quote": "Edwin Forward Stanton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1946-04-27. Credentials presented: 1946-07-04. Promoted to Ambassador Extraordinary and Plenipotentiary 1947-05-09."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Thailand",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1859-01-25) and status (Consulate). RDCR confirms establishment of consular relations."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1882-10-23) and status (Legation). RDCR confirms establishment of diplomatic relations and first U.S. Legation."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          5
+        ],
+        "notes": "CSV date 1947-05-09 matches POCOM (Event 5). RDCR (Event 2) gives April 10, 1947 as the date Stanton was 'promoted' to Ambassador, with credentials presented May 9. Per guidelines, promotion dates are personnel events, not institutional dates. Since RDCR only provides a promotion date (not a distinct institutional elevation date), POCOM's credential presentation date of May 9 governs. CSV correctly follows this priority."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1941-12-08",
+        "new_status": "None",
+        "event_description": "Japanese forces occupied Bangkok on December 8, 1941. Thailand subsequently declared war on the United States on January 25, 1942. The U.S. minister was interned and left post on June 29, 1942, ending U.S. diplomatic representation.",
+        "notes": "POCOM source documents the wartime break in relations. This represents a significant gap in the CSV between the Legation (1882) and Embassy (1947) rows. Candidate for addition."
+      },
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1946-01-05",
+        "new_status": "Legation",
+        "event_description": "Re-establishment of U.S. diplomatic representation in Thailand after the wartime break, when Charg\u00e9 d'Affaires Charles Woodruff Yost presented credentials on January 5, 1946.",
+        "notes": "POCOM source documents the resumption of the Legation after the wartime closure. This event logically pairs with Event 3 (the wartime break) and fills the gap before the 1947 Embassy elevation. Candidate for addition."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

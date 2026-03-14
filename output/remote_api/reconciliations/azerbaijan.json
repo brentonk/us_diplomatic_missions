@@ -1,0 +1,88 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VKnBmmP4hDaHdbiPqwc83U",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2549,
+      "output_tokens": 625
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-02-19",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established between the United States and Azerbaijan, but no mission yet opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 17,
+          "quote": "Diplomatic relations were established on February 19, 1992, when President George H.W. Bush announced the decision in a press statement."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-03-16",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Baku was opened with Robert Finn as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 21,
+          "quote": "The American Embassy in Baku was opened on March 16, 1992, with Robert Finn as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-09-16",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Azerbaijan when the first Ambassador Extraordinary and Plenipotentiary, Richard Monroe Miles, presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Richard Monroe Miles, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-09-16. Left post on 1993-11-15."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Azerbaijan",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2
+        ],
+        "notes": "CSV date 1992-03-16 matches RDCR Event 1 exactly (Embassy opened in Baku). POCOM Event 2 gives 1992-09-16 (credential presentation of first ambassador), which is a later personnel event. RDCR provides the explicit institutional opening date and takes priority."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1992-02-19",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the United States and Azerbaijan when President George H.W. Bush announced the decision in a press statement. No mission was yet opened.",
+        "notes": "High-confidence RDCR event. This represents the establishment of diplomatic relations prior to the opening of the Embassy on 1992-03-16. Should be added as a 'None' status event preceding the Embassy row."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

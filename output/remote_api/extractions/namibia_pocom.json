@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NLYvdyCuqjWA6Vj5xMV2bd",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2562,
+      "output_tokens": 591
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Namibia",
+    "source_file": "pocom/missions-countries/namibia.xml",
+    "events": [
+      {
+        "date": "1990-03-21",
+        "new_status": "Liaison",
+        "event_description": "A Charg\u00e9 d'Affaires ad interim presented credentials, establishing an initial U.S. diplomatic presence in Namibia upon its independence.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Roger A Mcguire, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1990-03-21. Left post: 1990-08-30."
+          }
+        ]
+      },
+      {
+        "date": "1990-08-30",
+        "new_status": "Embassy",
+        "event_description": "First U.S. Ambassador to Namibia presented credentials, establishing the U.S. Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Genta Hawkins Holmes, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-08-06. Credentials presented: 1990-08-30. Left post on 1992-09-06."
+          }
+        ]
+      }
+    ]
+  }
+}

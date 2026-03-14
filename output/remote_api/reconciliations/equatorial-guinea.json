@@ -1,0 +1,183 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01LZUXrkS1S8YDXrZxURxVmk",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3202,
+      "output_tokens": 832
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1968-11-21",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Diplomatic relations established when Ambassador Albert W. Sherer presented credentials; Sherer was nonresident, accredited to Togo and resident at Lom\u00e9.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on November 21, 1968, when Ambassador Albert W. Sherer presented his credentials to the government of Equatorial Guinea. Sherer also was accredited to Togo and was resident at Lom\u00e9."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1969-08-01",
+      "new_status": "Embassy",
+      "event_description": "American Embassy established at Santa Isabel (now Malabo), elevating representation from nonresident ambassador to a resident embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy at Santa Isabel (now Malabo) was established on August 1, 1969, with Albert N. Williams as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1976-03-14",
+      "new_status": "None",
+      "event_description": "United States suspended diplomatic relations with Equatorial Guinea after the U.S. Ambassador and U.S. Consul were declared personae non gratae.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The United States suspended diplomatic relations with Equatorial Guinea on March 14, 1976. The Department of State announced that the action had been taken after it learned the U.S. Ambassador, Herbert J. Spiro, and the U.S. Consul, had been declared personae non gratae, in what the Department termed an \"unwarranted affront\" to the two individuals and the U.S. government."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-12-19",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Normal diplomatic relations resumed when Ambassador Mable Murphy Smythe presented credentials; the embassy was not yet reestablished, so representation was at the ambassador nonresident level.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 27,
+          "line_end": 27,
+          "quote": "Normal relations were resumed on December 19, 1979, when Mable Murphy Smythe presented her credentials as American Ambassador."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-06-11",
+      "new_status": "Embassy",
+      "event_description": "American Embassy in Malabo reestablished, restoring a resident embassy presence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quote": "The American Embassy in Malabo was reestablished on June 11, 1981, with Joanne Thompson as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1995-10-31",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Embassy Malabo closed; functions transferred to the Embassy in Yaounde, leaving representation via a nonresident ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 35,
+          "line_end": 35,
+          "quote": "Embassy Malabo was closed on October 31, 1995, and its functions were transferred to the Embassy in Yaounde November 1, 1995."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "2006-11-23",
+      "new_status": "Embassy",
+      "event_description": "Embassy Malabo reopened; Ambassador Donald J. Johnson presented credentials as the first resident ambassador in over ten years.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 39,
+          "quote": "Recognizing the U.S.'s growing economic and political interests, the U.S. Government reopened Embassy Malabo in 2006. U.S. Ambassador Extraordinary and Plenipotentiary Donald J. Johnson presented his credentials on November 23, 2006, becoming the first resident ambassador in over ten years."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Equatorial Guinea",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Perfect match. Diplomatic relations established 1968-11-21 with nonresident ambassador."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Embassy established at Santa Isabel (Malabo) on 1969-08-01."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. Diplomatic relations suspended 1976-03-14."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Perfect match. Normal relations resumed 1979-12-19 with nonresident ambassador."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Perfect match. Embassy in Malabo reestablished 1981-06-11."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Perfect match. Embassy Malabo closed 1995-10-31; functions transferred to Yaounde, leaving nonresident ambassador representation."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Perfect match. Embassy Malabo reopened; Ambassador Johnson presented credentials 2006-11-23."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01S5U6vQq9piUBG1yV2rs7ZQ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2434,
+      "output_tokens": 668
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Iran",
+    "source_file": "rdcr/articles/iran.xml",
+    "events": [
+      {
+        "date": "1883-06-11",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation at Tehran were established when Charg\u00e9 d'Affaires S.G.W. Benjamin presented his credentials to the Shah of Persia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations and the American Legation at Tehran were established on June 11, 1883, when Charg\u00e9 d'Affaires S.G.W. Benjamin presented his credentials to the Shah of Persia."
+          }
+        ]
+      },
+      {
+        "date": "1980-04-07",
+        "new_status": "Interests",
+        "event_description": "The United States severed diplomatic relations with Iran; Switzerland serves as the protecting power for U.S. interests in Iran.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The United States severed diplomatic relations with Iran on April 7, 1980. This action was taken following the seizure by student militants of the American Embassy in Tehran and its staff on November 4, 1979, and the subsequent failure of the Iranian government to secure their release. The hostages eventually were released on January 20, 1981; however, diplomatic relations remain severed and Switzerland currently serves as the protecting power for U.S. interests in Iran."
+          }
+        ]
+      }
+    ]
+  }
+}

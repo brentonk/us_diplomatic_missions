@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_016zqAP3YemYC5HYrM2gTPca",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6383,
+      "output_tokens": 721
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Argentina",
+    "source_file": "pocom/missions-countries/argentina.xml",
+    "events": [
+      {
+        "date": "1823-12-27",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Buenos Aires with Caesar Augustus Rodney presenting credentials as Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Caesar Augustus Rodney, Minister Plenipotentiary. Appointed: 1823-01-27. Credentials presented: 1823-12-27. Died at post on 1824-06-10. Note: Commissioned as Minister Plenipotentiary to Buenos Aires."
+          }
+        ]
+      },
+      {
+        "date": "1915-01-08",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from Legation to Embassy with Frederic Jesup Stimson presenting credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 63,
+            "line_end": 63,
+            "quote": "Frederic Jesup Stimson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1914-10-01. Credentials presented: 1915-01-08. Left post on 1921-04-21."
+          }
+        ]
+      }
+    ]
+  }
+}

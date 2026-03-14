@@ -17,7 +17,7 @@ from .text_utils import country_slug
 
 
 def _load_work_units(config: PipelineConfig, countries_filter: list[str] | None = None) -> list[WorkUnit]:
-    work_units_dir = config.paths.output_dir / "work_units"
+    work_units_dir = config.paths.output_dir / "local" / "work_units"
     work_units = []
     for path in sorted(work_units_dir.glob("*.json")):
         with open(path) as f:
@@ -131,8 +131,8 @@ def assemble_country(
     Returns a list of sourcing record dicts.
     """
     slug = country_slug(work_unit.country)
-    extractions_dir = config.paths.output_dir / "extractions"
-    reconciliations_dir = config.paths.output_dir / "reconciliations"
+    extractions_dir = config.paths.output_dir / "remote_api" / "extractions"
+    reconciliations_dir = config.paths.output_dir / "remote_api" / "reconciliations"
 
     # Load reconciliation
     recon_path = reconciliations_dir / f"{slug}.json"
@@ -452,7 +452,7 @@ def run_assemble(
     if decisions:
         print(f"  Loaded {len(decisions)} human decisions from {decisions_path}")
 
-    final_dir = config.paths.output_dir / "final"
+    final_dir = config.paths.output_dir / "local" / "final"
     final_dir.mkdir(parents=True, exist_ok=True)
 
     records_path = final_dir / "sourcing_records.jsonl"

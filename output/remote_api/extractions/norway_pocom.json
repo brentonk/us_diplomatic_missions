@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012tCwK5A2aUJs4MndHdLkUR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4238,
+      "output_tokens": 1078
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Norway",
+    "source_file": "pocom/missions-countries/norway.xml",
+    "events": [
+      {
+        "date": "1905-05-31",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation to Norway separately established when Graves presented credentials to Norway independently, having previously been commissioned jointly to Sweden and Norway and resident at Stockholm.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Charles Hinman Graves, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1905-03-08. Credentials presented: 1905-05-31. Functions with respect to Norway ceased 1906-08-06. Note: Commissioned to Sweden and Norway; resident at Stockholm. On November 14, 1905, Graves acknowledged instructions to exercise the functions of his office toward Norway separately."
+          }
+        ]
+      },
+      {
+        "date": "1940-07-15",
+        "new_status": "None",
+        "event_description": "Legation in Oslo closed, ending formal U.S. diplomatic presence in occupied Norway.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Raymond Edwin Cox, Charg\u00e9 d'Affaires ad interim. Legation Oslo closed on 1940-07-15."
+          }
+        ]
+      },
+      {
+        "date": "1940-08-02",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation re-established near the Government of Norway in exile in England, with Schoenfeld making his initial call as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 22,
+            "quote": "Rudolf E. Schoenfeld opened the Legation near the Government of Norway established in England, making his initial call as Charg\u00e9 d'Affaires ad interim on August 2, 1940."
+          }
+        ]
+      },
+      {
+        "date": "1942-05-13",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy when Biddle was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 26,
+            "quote": "Anthony Joseph Drexel Jr Biddle, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1941-02-11. Credentials presented: 1941-03-20. Promoted to Ambassador Extraordinary and Plenipotentiary 1942-05-13."
+          }
+        ]
+      }
+    ]
+  }
+}

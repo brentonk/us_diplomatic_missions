@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017AVvXMWPiTfsWnDB25EhxX",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2865,
+      "output_tokens": 1193
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1977-08-15",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established via joint communiqu\u00e9. The first U.S. Charg\u00e9 d'Affaires ad interim was nonresident, resident at Antananarivo, Madagascar.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on August 15, 1977, when United States and the Comorian Republic issued a joint communiqu\u00e9 that announced the establishment of diplomatic relations between the two countries. The first American Charge d'Affaires ad interim to the Republic of the Comoros, Robert S. Barrett IV, presented his credentials to Foreign Minister Mouzawior Abdallah on August 16, 1977. Barrett was also Charge d'Affairs ad interim and resident at Antananarivo, Madagascar."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1985-08-26",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy at Moroni was established, elevating the U.S. mission from a nonresident arrangement to a resident embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy at Moroni was established on August 26, 1985, with Edward Brynn as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1993-09-30",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "The American Embassy at Moroni was closed. Subsequent U.S. Ambassadors to Comoros were accredited to Comoros but resident at Port Louis, Mauritius.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The American Embassy at Moroni was closed on September 30, 1993. Subsequent American Ambassadors to Comoros also have been accredited to Mauritius, and resident at Port Louis."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1982-11-18",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Status elevated to nonresident Ambassador when Fernando Enrique Rondon, the first Ambassador Extraordinary and Plenipotentiary accredited to Comoros, presented credentials while based in Antananarivo.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Fernando Enrique Rondon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1982-09-23. Credentials presented: 1982-11-18. Left Antananarivo 1983-05-25."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Comoros",
+    "matched": [
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Perfect match. Both agree on 1985-08-26 and Embassy status."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Perfect match. Both agree on 1993-09-30 and Ambassador Nonresident status (embassy closed, ambassador now resident at Port Louis, Mauritius)."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          3
+        ],
+        "date": "1982-11-18",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Fernando Enrique Rondon presented credentials as the first U.S. Ambassador Extraordinary and Plenipotentiary to Comoros, resident at Antananarivo. This elevated representation from Charg\u00e9 d'Affaires level to Ambassador level while remaining nonresident.",
+        "notes": "From POCOM. This is a meaningful status upgrade from Envoy/Charg\u00e9-level nonresident representation to Ambassador-level nonresident representation. If Row 1 is corrected to Envoy Nonresident, this event would represent the transition to Ambassador Nonresident. Even if Row 1 remains Ambassador Nonresident, this event marks when the first actual Ambassador was accredited."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "field": "both",
+        "csv_value": "1977-08-16, Ambassador Nonresident",
+        "extracted_value": "1977-08-15, Envoy Nonresident",
+        "assessment": "extracted_likely_correct",
+        "reasoning": "Date: RDCR explicitly states diplomatic relations were established on August 15, 1977 (the joint communiqu\u00e9 date). The CSV date of August 16 corresponds to the credential presentation date of the first Charg\u00e9 d'Affaires ad interim, which is a personnel event, not the institutional establishment date. Per source priority rules, the RDCR institutional date of August 15 should be used. Status: RDCR clearly states the first U.S. representative was a Charg\u00e9 d'Affaires ad interim (not an Ambassador). The first actual Ambassador (Rondon) was not accredited until 1982 (Event 3). The initial status should be 'Envoy Nonresident' (or equivalent sub-Ambassador nonresident status) rather than 'Ambassador Nonresident'. If the CSV status is corrected to Envoy Nonresident, then Event 3 (1982-11-18) would represent the transition to Ambassador Nonresident."
+      }
+    ]
+  }
+}

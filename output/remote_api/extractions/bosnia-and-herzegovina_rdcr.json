@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018GkavAQuex8ByMQ3oxxZ7v",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2234,
+      "output_tokens": 905
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bosnia and Herzegovina",
+    "source_file": "rdcr/articles/bosnia-herzegovina.xml",
+    "events": [
+      {
+        "date": "1992-08-06",
+        "new_status": "None",
+        "event_description": "Diplomatic relations were established on August 6, 1992, but no physical mission or ambassador was yet in place.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Diplomatic relations were established on August 6, 1992, when President George H.W. Bush announced the decision during remarks to the press."
+          }
+        ]
+      },
+      {
+        "date": "1993-11-10",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "A physical American Embassy to Bosnia and Herzegovina was established on November 10, 1993, on the premises of the American Embassy in Vienna, Austria \u2014 not yet in the capital Sarajevo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "a physical American Embassy to Bosnia and Herzegovina was not established until November 10, 1993, on the premises of the American Embassy in Vienna, Austria."
+          }
+        ]
+      },
+      {
+        "date": "1994-07-04",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Sarajevo (the capital) was established on July 4, 1994, with Jackovich as Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy in Sarajevo was established on July 4, 1994, with Jackovich as Ambassador."
+          }
+        ]
+      }
+    ]
+  }
+}

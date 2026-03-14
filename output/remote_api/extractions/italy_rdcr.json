@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01V6PYuLnmVcX3WRoL2ixEM1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3262,
+      "output_tokens": 1246
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Italy",
+    "source_file": "rdcr/articles/italy.xml",
+    "events": [
+      {
+        "date": "1861-04-11",
+        "new_status": "Legation",
+        "event_description": "The United States established diplomatic relations with the Kingdom of Italy and a legation was recognized when Chevalier Joseph Bertinatti presented credentials as Minister Plenipotentiary of the Kingdom of Italy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The United States established diplomatic relations with the Kingdom of Italy in 1861 when it accepted the credentials of Chevalier Joseph Bertinatti as Minister Plenipotentiary of the Kingdom of Italy on April 11, 1861."
+          }
+        ]
+      },
+      {
+        "date": "1893-10-23",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation to Italy was elevated to Embassy status when James J. Van Allen was appointed ambassador, marking the formal elevation date, though Wayne MacVeagh became the first ambassador to actually present credentials (March 11, 1894).",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "The legation was elevated to an embassy when James J. Van Allen was appointed ambassador on October 23, 1893, though he declined the appointment. Wayne MacVeagh became the first official U.S. Ambassador to Italy when he presented his credentials in Rome on March 11, 1894."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-11",
+        "new_status": "None",
+        "event_description": "Diplomatic relations were severed and the American Embassy in Rome was closed after Italy declared war on the United States.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 51,
+            "quote": "Diplomatic relations were severed and the American Embassy in Rome was closed on December 11, 1941, after Italy declared war on the United States."
+          }
+        ]
+      },
+      {
+        "date": "1944-10-16",
+        "new_status": "Interests",
+        "event_description": "Diplomatic relations were reestablished on October 16, 1944, though the Embassy had not yet physically re-opened; this represents a restoration of formal contact short of a fully operational embassy.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "Diplomatic relations were reestablished on October 16, 1944, when the Acting Secretary of State announced the decision in a statement released to the press."
+          }
+        ]
+      },
+      {
+        "date": "1945-01-08",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Rome was formally re-opened when Ambassador Alexander C. Kirk presented his credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "Ambassador Alexander C. Kirk re-opened the U.S. Embassy in Rome when he presented his credentials on January 8, 1945."
+          }
+        ]
+      }
+    ]
+  }
+}

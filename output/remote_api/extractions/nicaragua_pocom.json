@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013hvDwsFrBbCpM87UyceiPP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5801,
+      "output_tokens": 1221
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Nicaragua",
+    "source_file": "pocom/missions-countries/nicaragua.xml",
+    "events": [
+      {
+        "date": "1852-02-18",
+        "new_status": "Legation",
+        "event_description": "First U.S. chief of mission (Charg\u00e9 d'Affaires John Bozman Kerr) presented credentials to Nicaragua, establishing the U.S. legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "John Bozman Kerr, Charg\u00e9 d'Affaires. Appointed: 1851-03-12. Credentials presented: 1852-02-18."
+          }
+        ]
+      },
+      {
+        "date": "1909-03-12",
+        "new_status": "None",
+        "event_description": "Legation Managua was formally closed by Charg\u00e9 d'Affaires ad interim John Hanaford Gregory.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 44,
+            "line_end": 45,
+            "quote": "John Hanaford Gregory, Charg\u00e9 d'Affaires ad interim. Notified the Government of Nicaragua of the closing of Legation Managua on 1909-03-12."
+          }
+        ]
+      },
+      {
+        "date": "1911-02-21",
+        "new_status": "Legation",
+        "event_description": "Legation Managua reopened when Elliott Northcott presented credentials as Envoy Extraordinary and Minister Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "Elliott Northcott, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1911-01-09. Credentials presented: 1911-02-21. Left post on 1911-06-23."
+          }
+        ]
+      },
+      {
+        "date": "1943-04-14",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy when James Bolton Stewart was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 69,
+            "quote": "James Bolton Stewart, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-06-12. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-14. James Bolton Stewart, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-14."
+          }
+        ]
+      }
+    ]
+  }
+}

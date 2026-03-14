@@ -1,0 +1,67 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01TrwDeTj3vjZVPCyR92D2dB",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2515,
+      "output_tokens": 470
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1966-05-26",
+      "new_status": "Embassy",
+      "event_description": "American Embassy established at Georgetown upon U.S. recognition of Guyanese independence from Britain.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quote": "The United States recognized Guyanan independence on May 26, 1966, with the establishment of the American Embassy at Georgetown."
+        },
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic Relations and the American Embassy in Georgetown were established on May 26, 1966, with Delmar R. Carlson as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1966-08-17",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Guyana upon independence, with Delmar Richard Carlson presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Delmar Richard Carlson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1966-06-16. Credentials presented: 1966-08-17. Left post on 1969-09-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Guyana",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date (1966-05-26) matches RDCR Event 0 exactly. POCOM Event 1 (1966-08-17) reflects the credential presentation date of the first Ambassador, which is a later personnel event, not a separate institutional transition. The CSV correctly follows RDCR's institutional date per source priority rules."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

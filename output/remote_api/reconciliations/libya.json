@@ -1,0 +1,501 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01U3tBQsxh4iDUUAFxYUJayL",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 4844,
+      "output_tokens": 2371
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1799-04-05",
+      "new_status": "Consulate",
+      "event_description": "U.S. Consulate opened at Tripoli when James Leander Cathcart arrived and presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "James Leander Cathcart arrived in Tripoli to assume his duties as U.S. Consul on April 5, 1799."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1801-05-14",
+      "new_status": "None",
+      "event_description": "U.S. Consulate at Tripoli closed due to the beginning of the Tripolitan War.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The Consulate closed on May 14, 1801 owing to the beginning of the Tripolitan War."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1807",
+      "new_status": "Consulate",
+      "event_description": "U.S. Consulate at Tripoli re-opened; George Davis was serving as consul by 1807.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The Consulate had re-opened by 1807, when George Davis was U.S. consul at Tripoli."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1882-07-22",
+      "new_status": "None",
+      "event_description": "U.S. Consulate at Tripoli closed by order of Congress.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "the consulate remained open until July 22, 1882, when it was closed by order of Congress."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1908-06-10",
+      "new_status": "Consulate",
+      "event_description": "U.S. Consulate at Tripoli re-opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1916-08-15",
+      "new_status": "None",
+      "event_description": "U.S. Consulate at Tripoli closed.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1935-04-24",
+      "new_status": "Consulate",
+      "event_description": "U.S. Consulate at Tripoli re-opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 6,
+      "has_citation_error": false
+    },
+    {
+      "date": "1937-03-15",
+      "new_status": "None",
+      "event_description": "U.S. Consulate at Tripoli closed.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 7,
+      "has_citation_error": false
+    },
+    {
+      "date": "1948-06-06",
+      "new_status": "Consulate",
+      "event_description": "U.S. Consulate at Tripoli re-established.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 8,
+      "has_citation_error": false
+    },
+    {
+      "date": "1951-12-24",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation in Libya established when the Consulate General was elevated to a Legation, with Andrew Lynch as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 34,
+          "line_end": 34,
+          "quote": "Diplomatic relations and the American Legation in Libya were established on December 24, 1951, when the American Consulate General was elevated to a Legation with Andrew Lynch designated as Charge d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 9,
+      "has_citation_error": false
+    },
+    {
+      "date": "1954-09-25",
+      "new_status": "Embassy",
+      "event_description": "The American Legation in Libya was raised to Embassy status on September 25, 1954.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 38,
+          "line_end": 38,
+          "quote": "John N. Gatch, Jr. , was serving as Charg\u00e9 d'Affaires ad interim when the Legation in Libya was raised to Embassy status, September 25, 1954."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 10,
+      "has_citation_error": false
+    },
+    {
+      "date": "1980-05-02",
+      "new_status": "None",
+      "event_description": "U.S. Embassy at Tripoli closed; Charg\u00e9 d'Affaires Eagleton had been recalled in February 1980.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 43,
+          "line_end": 43,
+          "quote": "U.S. Charg\u00e9 d'Affaires William Eagleton, Jr. was recalled February 8, 1980, and the U.S. Embassy at Tripoli closed May 2, 1980, and the Libyan People's Bureau in Washington closed on May 6, 1981."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 11,
+      "has_citation_error": false
+    },
+    {
+      "date": "2004-02-08",
+      "new_status": "Interests",
+      "event_description": "The United States established an Interests Section at the Belgian Embassy in Tripoli.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 47,
+          "quote": "The United States established an Interests Section at the Belgian Embassy in Tripoli, February 8, 2004."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 12,
+      "has_citation_error": false
+    },
+    {
+      "date": "2004-06-28",
+      "new_status": "Liaison",
+      "event_description": "The U.S. Interests Section became the U.S. Liaison Office on June 28, 2004, with Gregory L. Berry as Principal Officer.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 47,
+          "line_end": 47,
+          "quote": "It became the U.S. Liaison Office on June 28, with Gregory L. Berry as the Principal Officer."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 13,
+      "has_citation_error": false
+    },
+    {
+      "date": "2006-05-31",
+      "new_status": "Embassy",
+      "event_description": "The United States resumed full diplomatic relations with Libya and the Liaison Office in Tripoli became an Embassy, with Gregory L. Berry as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 52,
+          "line_end": 52,
+          "quote": "On May 31, 2006, the United States resumed full diplomatic relations with Libya, and the Liaison Office in Tripoli became an Embassy, with Gregory L. Berry became Charge d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 14,
+      "has_citation_error": false
+    },
+    {
+      "date": "2011-02-25",
+      "new_status": "None",
+      "event_description": "The United States suspended Embassy operations in Tripoli amid Qadhafi's suppression of an uprising.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 56,
+          "line_end": 56,
+          "quote": "On February 25, 2011, the United States suspended Embassy operations in Tripoli."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 15,
+      "has_citation_error": false
+    },
+    {
+      "date": "2011-09-22",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy in Tripoli resumed operations following U.S. recognition of the Transitional National Council as the legitimate government of Libya.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 60,
+          "line_end": 60,
+          "quote": "On September 22, 2011, the U.S. Embassy in Tripoli resumed operations."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 16,
+      "has_citation_error": false
+    },
+    {
+      "date": "2014-07-26",
+      "new_status": "None",
+      "event_description": "U.S. Embassy operations in Tripoli suspended due to ongoing violence between Libyan militias; embassy temporarily relocated to Tunisia.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 68,
+          "line_end": 68,
+          "quote": "The Department suspended U.S. Embassy operations in Tripoli on July 26, 2014 because of ongoing violence between Libyan militias in the immediate vicinity."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 17,
+      "has_citation_error": false
+    },
+    {
+      "date": "2015-03",
+      "new_status": "Liaison",
+      "event_description": "The embassy temporarily relocated to Tunisia as the 'Libya External Office in Tunis,' operating under the authority of the U.S. Ambassador to Libya.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 68,
+          "line_end": 68,
+          "quote": "The embassy temporarily relocated to Tunisia in March 2015 where it operates as the \"Libya External Office in Tunis under the authority of the U.S. Ambassador to Libya, facilitating engagement with Libyans and U.S. foreign assistance."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 18,
+      "has_citation_error": false
+    },
+    {
+      "date": "1954-11-16",
+      "new_status": "Embassy",
+      "event_description": "Mission elevated from Legation to Embassy with the presentation of credentials by the first Ambassador Extraordinary and Plenipotentiary, John Lindsley Tappin.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quote": "John Lindsley Tappin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1954-09-25. Credentials presented: 1954-11-16. Superseded 1958-03-17."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "2014-07-26",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Embassy Tripoli suspended operations and all U.S. personnel were withdrawn due to the Libyan civil war; however, diplomatic relations were maintained and the U.S. Ambassador to Libya continued to operate from U.S. Embassies in Malta and later Tunis.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 38,
+          "line_end": 38,
+          "quote": "The U.S. Embassy in Tripoli suspended operations on July 26, 2014, and all U.S. personnel were withdrawn after security conditions deteriorated in the midst of the Libyan civil war; however, the United States did not sever diplomatic relations with Libya."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 6,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Libya",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2
+        ],
+        "notes": "Both give year-only date 1807 and status Consulate."
+      },
+      {
+        "csv_row": 4,
+        "extracted_event_indices": [
+          3
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 5,
+        "extracted_event_indices": [
+          4
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 6,
+        "extracted_event_indices": [
+          5
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 7,
+        "extracted_event_indices": [
+          6
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 8,
+        "extracted_event_indices": [
+          7
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 9,
+        "extracted_event_indices": [
+          8
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 10,
+        "extracted_event_indices": [
+          9
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 11,
+        "extracted_event_indices": [
+          10,
+          19
+        ],
+        "notes": "RDCR (Event 10) gives 1954-09-25 as the institutional elevation date; POCOM (Event 19) gives 1954-11-16 as the credential presentation date for the first Ambassador. CSV correctly follows RDCR's institutional date."
+      },
+      {
+        "csv_row": 12,
+        "extracted_event_indices": [
+          11
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 13,
+        "extracted_event_indices": [
+          12
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 14,
+        "extracted_event_indices": [
+          13
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 15,
+        "extracted_event_indices": [
+          14
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 16,
+        "extracted_event_indices": [
+          15
+        ],
+        "notes": "Exact date and status match."
+      },
+      {
+        "csv_row": 17,
+        "extracted_event_indices": [
+          16
+        ],
+        "notes": "Exact date and status match."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          18
+        ],
+        "date": "2015-03",
+        "new_status": "Liaison",
+        "event_description": "The embassy temporarily relocated to Tunisia as the 'Libya External Office in Tunis,' operating under the authority of the U.S. Ambassador to Libya.",
+        "notes": "Medium confidence event from RDCR. This describes the operational relocation of the embassy to Tunis in March 2015. However, this may not represent a formal status change \u2014 the office operates under the U.S. Ambassador to Libya, which is consistent with the CSV's 'Ambassador Nonresident' status from Row 18. The 'Liaison' classification is debatable; it could also be viewed as a continuation of the Ambassador Nonresident arrangement. Consider whether this warrants a separate row or is subsumed by Row 18."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 18,
+        "extracted_event_indices": [
+          17,
+          20
+        ],
+        "field": "new_status",
+        "csv_value": "Ambassador Nonresident",
+        "extracted_value": "None (RDCR Event 17: embassy operations suspended) / Ambassador Nonresident (POCOM Event 20: diplomatic relations maintained, ambassador operating from abroad)",
+        "assessment": "ambiguous",
+        "reasoning": "RDCR (Event 17, primary source) describes the suspension of embassy operations on 2014-07-26, which would typically map to status 'None.' However, POCOM (Event 20) clarifies that the United States did not sever diplomatic relations and the Ambassador continued to operate from Malta and later Tunis. The CSV's 'Ambassador Nonresident' captures this nuance \u2014 that while the embassy was physically closed, an ambassador continued to represent U.S. interests from abroad. This is a legitimate interpretive difference: RDCR focuses on the embassy closure (suggesting 'None'), while POCOM and the broader context support 'Ambassador Nonresident.' The CSV choice is reasonable given that diplomatic relations were explicitly maintained and an ambassador remained accredited, but RDCR as primary source would support 'None' followed by a separate event. Marked as ambiguous because both interpretations have merit."
+      }
+    ]
+  }
+}

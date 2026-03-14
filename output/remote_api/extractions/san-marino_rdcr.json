@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QeMeTsUk1V4egCNJqKHDGk",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2834,
+      "output_tokens": 702
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "San Marino",
+    "source_file": "rdcr/articles/san-marino.xml",
+    "events": [
+      {
+        "date": "2006-11-22",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. appointed its first Ambassador to San Marino on November 22, 2006. Ambassador Ronald Spogli, who was concurrently the U.S. Ambassador to Italy and resident in Rome, presented his credentials to San Marino on March 8, 2007.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "did not appoint its first diplomatic ambassador to that country until November 22, 2006."
+          },
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Ambassador Ronald Spogli, who was also the U.S. Ambassador to Italy, presented his credentials to San Marino on March 8, 2007, and was resident in Rome."
+          }
+        ]
+      }
+    ]
+  }
+}

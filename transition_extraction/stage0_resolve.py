@@ -133,7 +133,7 @@ def run_stage0(config: PipelineConfig) -> None:
         output[name] = mapping.to_mapping_dict()
 
     # Write mapping file
-    output_dir = config.paths.output_dir
+    output_dir = config.paths.output_dir / "local"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "country_mapping.json"
     with open(output_path, "w") as f:

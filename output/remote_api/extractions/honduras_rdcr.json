@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01QJxH3KdvwZUp5rSnMrD4b5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2482,
+      "output_tokens": 722
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Honduras",
+    "source_file": "rdcr/articles/honduras.xml",
+    "events": [
+      {
+        "date": "1853-04-19",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established with Honduras via appointment of Solon Borland as Envoy Extraordinary and Minister Plenipotentiary, accredited to Honduras but not resident there.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on April 19, 1853, when American Envoy Extraordinary and Minister Plenipotentiary Solon Borland was appointed to Honduras, Costa Rica, Nicaragua, and El Salvador. Borland did not present his credentials in Tegucigalpa, though he was accredited to Honduras."
+          }
+        ]
+      },
+      {
+        "date": "1856-02-22",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Comayagua and Tegucigalpa was opened, establishing a resident diplomatic mission in Honduras.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "The American Legation in Comayagua and Tegucigalpa was opened on February 22, 1856."
+          }
+        ]
+      },
+      {
+        "date": "1943-03-23",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Honduras was elevated to Embassy status following a joint announcement between the United States and seven American Republics including Honduras.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "Following a joint announcement on March 23, 1943 between the United States and seven American Republics that included Honduras, the Legations in the respective nations and the United States were raised to the status of Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

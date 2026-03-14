@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VH9zzyMzcKwweryCfNgs4T",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2897,
+      "output_tokens": 1112
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Comoros",
+    "source_file": "pocom/missions-countries/comoros.xml",
+    "events": [
+      {
+        "date": "1977-08-15",
+        "new_status": "Envoy Nonresident",
+        "event_description": "First U.S. diplomatic representation to Comoros established when nonresident Charg\u00e9 d'Affaires ad interim Robert South Barrett presented credentials, operating from Antananarivo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Robert South Barrett, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1977-08-15. Left Antananarivo 1980-06."
+          }
+        ]
+      },
+      {
+        "date": "1982-11-18",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Status elevated to nonresident Ambassador when Fernando Enrique Rondon, the first Ambassador Extraordinary and Plenipotentiary accredited to Comoros, presented credentials while based in Antananarivo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Fernando Enrique Rondon, Ambassador Extraordinary and Plenipotentiary. Appointed: 1982-09-23. Credentials presented: 1982-11-18. Left Antananarivo 1983-05-25."
+          }
+        ]
+      },
+      {
+        "date": "1985-08-26",
+        "new_status": "Embassy",
+        "event_description": "Embassy Moroni established with Edward Brynn as Charg\u00e9 d'Affaires ad interim, while Robert Brendon Keating continued as nonresident Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Note: During Keating's tenure as non-resident Ambassador, Embassy Moroni was established August 26, 1985 with Edward Brynn as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1993-09-30",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Embassy Moroni closed, reverting to nonresident Ambassador status; ambassadors continued to be accredited to Comoros from Port Louis.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "[Mission Note] Embassy Moroni was closed on September 30, 1993."
+          }
+        ]
+      }
+    ]
+  }
+}

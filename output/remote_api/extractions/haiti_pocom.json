@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01PyhQompSmFtBZzUg2k5MG1",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5380,
+      "output_tokens": 1412
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Haiti",
+    "source_file": "pocom/missions-countries/haiti.xml",
+    "events": [
+      {
+        "date": "1862-10-01",
+        "new_status": "Legation",
+        "event_description": "U.S. legation established in Haiti with the presentation of credentials by the first Commissioner and Consul General.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Benjamin Franklin Whidden, Commissioner and Consul General. Appointed: 1862-07-12. Credentials presented: 1862-10-01. Left post on 1865-02-23."
+          }
+        ]
+      },
+      {
+        "date": "1866-10-11",
+        "new_status": "Legation",
+        "event_description": "Mission elevated from Commissioner and Consul General to Minister Resident/Consul General, reflecting a formal upgrade in the grade of the chief of mission.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Henry Everard Peck, Commissioner and Consul General. Appointed: 1865-03-14. Credentials presented: 1865-09-02. Promoted to Minister Resident/Consul General 1866-10-11."
+          }
+        ]
+      },
+      {
+        "date": "1897-08-20",
+        "new_status": "Legation",
+        "event_description": "Mission grade elevated to Envoy Extraordinary and Minister Plenipotentiary with the presentation of credentials by William Frank Powell.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "William Frank Powell, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1897-06-17. Credentials presented: 1897-08-20. Left post about 1905-11-30."
+          }
+        ]
+      },
+      {
+        "date": "1943-04-14",
+        "new_status": "Embassy",
+        "event_description": "Legation elevated to Embassy with John Campbell White promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "John Campbell White, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1940-11-29. Credentials presented: 1941-03-14. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-14."
+          }
+        ]
+      },
+      {
+        "date": "1963-05-15",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted; U.S. ambassador left post and was recalled by Haiti, ending formal representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "Normal relations interrupted on 1963-05-15. Note: Commissioned during a recess of the Senate; recommissioned on January 30, 1962, after confirmation. Relations had not yet resumed when Thurston left post on May 26, 1963. On June 14, 1963 the Government of Haiti requested Thurston's recall, and he did not return to post."
+          }
+        ]
+      },
+      {
+        "date": "1964-01-16",
+        "new_status": "Embassy",
+        "event_description": "Embassy re-established with the presentation of credentials by Ambassador Benson Ellison Lane Timmons.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 69,
+            "quote": "Benson Ellison Lane Timmons, Ambassador Extraordinary and Plenipotentiary. Appointed: 1963-11-30. Credentials presented: 1964-01-16. Left post on 1967-05-28."
+          }
+        ]
+      }
+    ]
+  }
+}

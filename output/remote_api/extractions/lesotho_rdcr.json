@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01LBNEzqzmWLoU8nyrjY4JxZ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2162,
+      "output_tokens": 276
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Lesotho",
+    "source_file": "rdcr/articles/lesotho.xml",
+    "events": [
+      {
+        "date": "1966-10-04",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy at Maseru was established upon Lesotho's attainment of independence, with Richard St. F. Post as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Diplomatic relations were established on October 4, 1966, when the American Embassy at Maseru was established with Richard St. F. Post as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

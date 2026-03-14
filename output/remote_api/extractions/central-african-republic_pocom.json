@@ -1,0 +1,70 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01VrmR5rRvkJPqxJP1sNzymW",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3525,
+      "output_tokens": 831
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Central African Republic",
+    "source_file": "pocom/missions-countries/central-african-republic.xml",
+    "events": [
+      {
+        "date": "1960-08-13",
+        "new_status": "Embassy",
+        "event_description": "Initial U.S. diplomatic presence established in the Central African Republic upon independence, with Alan Wood Lukens as Charg\u00e9 d'Affaires ad interim presenting credentials.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Alan Wood Lukens, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-08-13."
+          }
+        ]
+      },
+      {
+        "date": "1961-02-10",
+        "new_status": "Embassy",
+        "event_description": "Embassy Bangui formally established with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim, during Blancke's tenure as non-resident Ambassador.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "During Blancke's tenure as non-resident Ambassador, Embassy Bangui was established February 10, 1961, with Alan W. Lukens as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1997-03-31",
+        "new_status": "None",
+        "event_description": "Embassy Bangui closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 35,
+            "quote": "Embassy closed. 1997-03-31."
+          }
+        ]
+      },
+      {
+        "date": "1999-06-01",
+        "new_status": "Embassy",
+        "event_description": "Embassy Bangui reopened after closure in 1997.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 35,
+            "line_end": 35,
+            "quote": "Perry arrived at post on January 26, 1999, and assumed charge. He presented credentials on February 1, 1999, and the Embassy reopened on June 1, 1999."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011XM917EC4Rd45BLAmnK4sd",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2773,
+      "output_tokens": 861
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Samoa",
+    "source_file": "pocom/missions-countries/samoa.xml",
+    "events": [
+      {
+        "date": "1971-07-14",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "First U.S. Ambassador to Samoa, Kenneth Franzheim, presented credentials, establishing ambassadorial-level relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Kenneth Franzheim, Ambassador Extraordinary and Plenipotentiary. Appointed: 1971-02-10. Credentials presented: 1971-07-14. Left Apia 1972-11-11."
+          }
+        ]
+      },
+      {
+        "date": "1988-11-15",
+        "new_status": "Embassy",
+        "event_description": "Embassy Apia was formally established, elevating the mission from a nonresident ambassadorship to a resident embassy, with William P. Francisco III as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Note: During Cleveland's tenure as non-resident Ambassador, Embassy Apia was established on November 15, 1988, with William P. Francisco III as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

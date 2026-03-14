@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01B6uPfxZBQWC3WqCkbsM25B",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6562,
+      "output_tokens": 1477
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "France",
+    "source_file": "pocom/missions-countries/france.xml",
+    "events": [
+      {
+        "date": "1779-03-23",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in France when Benjamin Franklin, Minister Plenipotentiary, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Benjamin Franklin, Minister Plenipotentiary. Appointed: 1778-09-14. Credentials presented: 1779-03-23. Superseded 1785-05-17."
+          }
+        ]
+      },
+      {
+        "date": "1835-11-08",
+        "new_status": "None",
+        "event_description": "U.S. Legation in Paris closed by Charg\u00e9 d'Affaires ad interim Thomas Pennant Barton, who had been recalled.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "Thomas Pennant Barton, Charg\u00e9 d'Affaires ad interim. Legation Paris closed 1835-11-08. Note: Barton closed the legation because he had been recalled."
+          }
+        ]
+      },
+      {
+        "date": "1836-12-01",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation in Paris re-opened when Lewis Cass, Envoy Extraordinary and Minister Plenipotentiary, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 36,
+            "line_end": 36,
+            "quote": "Lewis Cass, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1836-10-04. Credentials presented: 1836-12-01. Left post on 1842-11-12."
+          }
+        ]
+      },
+      {
+        "date": "1893-05-06",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated to Embassy when James Biddle Eustis presented credentials as the first Ambassador Extraordinary and Plenipotentiary to France.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 66,
+            "line_end": 66,
+            "quote": "James Biddle Eustis, Ambassador Extraordinary and Plenipotentiary. Appointed: 1893-04-08. Credentials presented: 1893-05-06. Presented recall on 1897-05-24."
+          }
+        ]
+      },
+      {
+        "date": "1942-11-08",
+        "new_status": "None",
+        "event_description": "France severed diplomatic relations with the United States, ending U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 92,
+            "line_end": 92,
+            "quote": "Somerville Pinkney Tuck, Charg\u00e9 d'Affaires ad interim. France severed diplomatic relations with the United States on 1942-11-08."
+          }
+        ]
+      },
+      {
+        "date": "1944-12-01",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Paris re-opened to the public with Jefferson Caffery in charge, pending presentation of his letter of credence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 94,
+            "line_end": 94,
+            "quote": "Note: The Embassy in Paris had been opened to the public December 1, 1944, with Caffery in charge pending presentation of his letter of credence."
+          }
+        ]
+      }
+    ]
+  }
+}

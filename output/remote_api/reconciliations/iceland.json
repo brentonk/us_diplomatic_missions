@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GE1Hydq6a5H7M9YBcxWSSa",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2532,
+      "output_tokens": 278
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1941-09-30",
+      "new_status": "Legation",
+      "event_description": "Diplomatic relations and the American Legation at Reykjavik were established when Envoy Extraordinary and Minister Plenipotentiary Lincoln MacVeagh presented credentials, elevating the existing American Consulate to Legation status.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 16,
+          "quote": "Diplomatic relations and the American Legation at Reykjavik were established on September 30, 1941, when Envoy Extraordinary and Minister Plenipotentiary Lincoln MacVeagh presented credentials and elevated the American Consulate to Legation status."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1955-11-03",
+      "new_status": "Embassy",
+      "event_description": "The American Legation was elevated to Embassy status when John J. Muccio presented his credentials as Ambassador Extraordinary and Plenipotentiary.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 20,
+          "line_end": 20,
+          "quote": "The American Legation was elevated to Embassy status on November 3, 1955, when John J. Muccio presented his credentials as Ambassador Extraordinary and Plenipotentiary."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Iceland",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact date and status match. Both record the establishment of the Legation at Reykjavik on 1941-09-30."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact date and status match. Both record the elevation to Embassy on 1955-11-03."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

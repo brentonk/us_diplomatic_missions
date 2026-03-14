@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01GnU5TYnESYgQhdZVq9ZVxc",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2720,
+      "output_tokens": 1474
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Egypt",
+    "source_file": "rdcr/articles/egypt.xml",
+    "events": [
+      {
+        "date": "1922-04-26",
+        "new_status": "Liaison",
+        "event_description": "Diplomatic relations established upon U.S. recognition of Egyptian independence. The existing Diplomatic Agent and Consul General, J. Morton Howell, served as the American diplomatic representative, constituting a liaison-level presence prior to formal elevation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "Diplomatic relations were established on April 26, 1922, upon American recognition of Egyptian independence. American Diplomatic Agent and Consul General at Cairo, J. Morton Howell, had conducted unofficial relations with Egypt as a \"semi-independent state\" prior to this date, as had been U.S. practice since 1849."
+          }
+        ]
+      },
+      {
+        "date": "1922-06-24",
+        "new_status": "Legation",
+        "event_description": "The position of Diplomatic Agent was raised to Envoy Extraordinary and Minister Plenipotentiary, formally establishing the American Legation in Egypt.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 20,
+            "line_end": 20,
+            "quote": "the position of Diplomatic Agent was raised to the rank of Envoy Extraordinary and Minister Plenipotentiary on June 24, 1922, thereby establishing the American Legation in Egypt."
+          }
+        ]
+      },
+      {
+        "date": "1958-02-25",
+        "new_status": "Embassy",
+        "event_description": "Upon U.S. recognition of the United Arab Republic (formed by Egypt and Syria), the United States maintained its embassy in Cairo as the primary mission to the UAR.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "The United States recognized the UAR on February 25, 1958, when U.S. Ambassador Raymond Hare delivered a note to that effect to the UAR Ministry of Foreign Affairs. The UAR's capital was established at Cairo, where the United States maintained its embassy, while the American Embassy in Damascus was reclassified as a Consulate General."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-06",
+        "new_status": "None",
+        "event_description": "The United Arab Republic severed diplomatic relations with the United States in the wake of the June 1967 Arab-Israeli War, ending formal U.S. diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 24,
+            "quote": "The United Arab Republic severed diplomatic relations with the United States on June 6, 1967, in the wake of the June 1967 Arab-Israeli War."
+          }
+        ]
+      },
+      {
+        "date": "1967-06-07",
+        "new_status": "Interests",
+        "event_description": "A U.S. Interests Section was established in the Spanish Embassy in Cairo, maintaining a limited U.S. presence after the severance of diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 28,
+            "line_end": 28,
+            "quote": "A U.S. Interests Section was established in the Spanish Embassy in Cairo on June 7, 1967."
+          }
+        ]
+      },
+      {
+        "date": "1974-02-28",
+        "new_status": "Embassy",
+        "event_description": "Egypt and the United States agreed to resume diplomatic relations and the American Embassy in Cairo was reopened, with Ambassador-designate Hermann F. Eilts named in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "The Governments of Egypt and the United States agreed to resume diplomatic relations on February 28, 1974, and the United States named Ambassador-designate Hermann F. Eilts in charge of the American Embassy in Cairo, which was reopened on the same date."
+          }
+        ]
+      }
+    ]
+  }
+}

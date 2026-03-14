@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_014Ha55ppy9BLgYBut4DFD46",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2342,
+      "output_tokens": 608
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bangladesh",
+    "source_file": "rdcr/articles/bangladesh.xml",
+    "events": [
+      {
+        "date": "1949-08-29",
+        "new_status": "Consulate",
+        "event_description": "The United States established a consulate in Dhaka (then Dacca), which was at the time the eastern part of Pakistan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established a consulate in Dhaka (then referred to as \"Dacca\") on August 29, 1949, when what is now called \"Bangladesh\" was the eastern part of Pakistan."
+          }
+        ]
+      },
+      {
+        "date": "1972-05-18",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations and the American Embassy at Dhaka were established, with Herbert D. Spivack as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations and the American Embassy at Dhaka were established on May 18, 1972, with Herbert D. Spivack as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T10:47:44.085737-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ao51Frm9HMoLDdQ55BwGKo",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3008,
+      "output_tokens": 685
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Grenada",
+    "source_file": "pocom/missions-countries/grenada.xml",
+    "events": [
+      {
+        "date": "1975-02-25",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "First U.S. Ambassador to Grenada (Theodore Roosevelt Britton) presented credentials while resident in Bridgetown, establishing nonresident ambassadorial relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Theodore Roosevelt Britton, Ambassador Extraordinary and Plenipotentiary. Appointed: 1974-12-09. Credentials presented: 1975-02-25. Left Bridgetown 1977-04-22."
+          }
+        ]
+      },
+      {
+        "date": "1984-02-02",
+        "new_status": "Embassy",
+        "event_description": "Embassy St. Georges was formally established, elevating U.S. representation from a nonresident ambassadorship to a resident embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 9,
+            "line_end": 9,
+            "quote": "Embassy St. Georges was established on February 2, 1984."
+          }
+        ]
+      }
+    ]
+  }
+}

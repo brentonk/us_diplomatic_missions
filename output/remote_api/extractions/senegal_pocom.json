@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012Rooa6XEspKBfwSPR6jonP",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3337,
+      "output_tokens": 470
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Senegal",
+    "source_file": "pocom/missions-countries/senegal.xml",
+    "events": [
+      {
+        "date": "1960-09-24",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Senegal established, with Roswell Dunlop Mcclelland serving as the first Charg\u00e9 d'Affaires ad interim upon presenting credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Roswell Dunlop Mcclelland, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1960-09-24. Left post: 1960-10-31."
+          }
+        ]
+      }
+    ]
+  }
+}

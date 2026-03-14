@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Efvekm8a49vZmov1t9cthd",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2493,
+      "output_tokens": 475
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Brazil",
+    "source_file": "rdcr/articles/brazil.xml",
+    "events": [
+      {
+        "date": "1825-10-29",
+        "new_status": "Legation",
+        "event_description": "The U.S. Legation in Brazil was established in Rio de Janeiro when U.S. Charg\u00e9 d'Affaires Condy Raguet presented his credentials to Emperor Pedro I.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The U. S. Legation in Brazil was established in Rio de Janeiro when U.S. Charg\u00e9 d'Affaires Condy Raguet of Pennsylvania presented his credentials to Emperor Pedro I on October 29, 1825."
+          }
+        ]
+      },
+      {
+        "date": "1905-01-13",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Rio de Janeiro was elevated to Embassy status when U.S. Minister David E. Thompson was appointed U.S. Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The United States elevated the U.S. Embassy in Rio de Janeiro on January 13, 1905, when U.S. Minister to Brazil, David E. Thompson of Nebraska was appointed U.S. Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01UcbCX7ttGwQPfAKqqgY3Ab",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2486,
+      "output_tokens": 405
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1847-03-03",
+      "new_status": "Consulate",
+      "event_description": "The United States established a consulate in British Honduras (present-day Belize), located in what was then the capital.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "The United States established a consulate in British Honduras (now Belize) on March 3, 1847."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1981-10-29",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations and the American Embassy were established when Consulate General Belize was raised to Embassy status, coinciding with U.S. recognition of Belizean independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "Diplomatic relations and the American Embassy were established on October 29, 1981, when Consulate General Belize was raised to Embassy status with Principal Officer Malcolm R. Barnebey serving as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Belize",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1847-03-03) and status (Consulate). RDCR confirms U.S. consulate established in British Honduras."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1981-10-29) and status (Embassy). RDCR confirms Consulate General raised to Embassy status upon recognition of Belizean independence."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

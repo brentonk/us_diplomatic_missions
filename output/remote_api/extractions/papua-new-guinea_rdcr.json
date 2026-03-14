@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_012JCJdBPTjwCGp4z1KZDUUU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2367,
+      "output_tokens": 582
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Papua New Guinea",
+    "source_file": "rdcr/articles/papua-new-guinea.xml",
+    "events": [
+      {
+        "date": "1974-07-01",
+        "new_status": "Consulate",
+        "event_description": "The United States established its first consulate (Consulate General) in Port Moresby, the capital of the then self-governing Territory of Papua and New Guinea, when Consul General Mary S. Olmsted arrived to open the office.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States established its first consulate in the then self-governing Territory of Papua and New Guinea in the city of Port Moresby on or about July 1, 1974, when Consulate General Mary S. Olmsted arrived to open the office there."
+          }
+        ]
+      },
+      {
+        "date": "1975-09-16",
+        "new_status": "Embassy",
+        "event_description": "Diplomatic relations were established and the U.S. Consulate General at Port Moresby was elevated to Embassy status upon Papua New Guinea's independence, with Ambassador-designate Mary S. Olmsted in charge.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "Diplomatic relations were established on September 16, 1975, when the U.S. Consulate General at Port Moresby was elevated to the status of Embassy and opened with Ambassador-designate Mary S. Olmsted in charge."
+          }
+        ]
+      }
+    ]
+  }
+}

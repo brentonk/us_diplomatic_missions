@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NeWDkTKRcTN8EZV5Qn6RP6",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3213,
+      "output_tokens": 351
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tunisia",
+    "source_file": "pocom/missions-countries/tunisia.xml",
+    "events": [
+      {
+        "date": "1956-06-05",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Tunis was established, with Morris Nelson Hughes designated as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Neither commissioned nor accredited; designated effective June 5, 1956, on which date the Embassy in Tunis was established."
+          }
+        ]
+      }
+    ]
+  }
+}

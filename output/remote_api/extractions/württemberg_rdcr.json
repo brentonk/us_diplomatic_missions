@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018PqJRcRAwppww2xvkwrKZU",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3547,
+      "output_tokens": 1400
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "W\u00fcrttemberg",
+    "source_file": "rdcr/articles/wurttemberg.xml",
+    "events": [
+      {
+        "date": "1842-10-13",
+        "new_status": "Consulate",
+        "event_description": "First U.S. consulate opened in W\u00fcrttemberg (Stuttgart, the capital).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The first U.S. consulate opened in W\u00fcrttemberg on October 13, 1842, and closed on March 3, 1843."
+          }
+        ]
+      },
+      {
+        "date": "1843-03-03",
+        "new_status": "None",
+        "event_description": "The first U.S. consulate in W\u00fcrttemberg closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The first U.S. consulate opened in W\u00fcrttemberg on October 13, 1842, and closed on March 3, 1843."
+          }
+        ]
+      },
+      {
+        "date": "1847-03-03",
+        "new_status": "Consulate",
+        "event_description": "U.S. consulate reopened in Stuttgart (the capital of W\u00fcrttemberg).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The U.S. later opened a consulate in Stuttgart on March 3, 1847, which closed in September 1985."
+          }
+        ]
+      },
+      {
+        "date": "1868-07-27",
+        "new_status": "Envoy Nonresident",
+        "event_description": "George Bancroft was specially accredited as U.S. Minister to the Kingdom of W\u00fcrttemberg (nonresident, as he was also accredited to Prussia and the North German Confederation), signing a naturalization treaty on that date.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "On July 27, 1868, specially accredited U.S. Minister to the Kingdom of W\u00fcrttemberg George Bancroft signed a naturalization treaty with the Kingdom of W\u00fcrttemberg. At the time, Bancroft was also accredited to Prussia and the North German Confederation and, after 1871, to the German Empire."
+          }
+        ]
+      },
+      {
+        "date": "1871-01-18",
+        "new_status": "None",
+        "event_description": "W\u00fcrttemberg joined the German Empire; foreign policy thereafter conducted through Berlin, ending separate U.S. diplomatic representation to W\u00fcrttemberg.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 48,
+            "line_end": 48,
+            "quote": "The Kingdom of W\u00fcrttemberg was one of the founding states of the German Empire, which was proclaimed on January 18, 1871."
+          }
+        ]
+      },
+      {
+        "date": "1917-02-03",
+        "new_status": "None",
+        "event_description": "U.S. severed all diplomatic relations with the German Empire, including W\u00fcrttemberg as a constituent state.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "On February 3, 1917, U.S. President Woodrow Wilson instructed the Secretary of State to notify the German Ambassador to the United States that all diplomatic relations between the U.S. and the German Empire were severed. As the foreign affairs of Imperial Germany were run out of Berlin and decided upon by the Kaiser, this constituted the severance of relations with W\u00fcrttemberg, as part of the German Empire."
+          }
+        ]
+      }
+    ]
+  }
+}

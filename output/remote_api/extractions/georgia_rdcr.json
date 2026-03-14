@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KFDKByrDfcj9G5QoUqwN24",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2160,
+      "output_tokens": 387
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Georgia",
+    "source_file": "rdcr/articles/georgia.xml",
+    "events": [
+      {
+        "date": "1992-03-24",
+        "new_status": "None",
+        "event_description": "Diplomatic relations established between the United States and Georgia, but no mission yet opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 9,
+            "quote": "Diplomatic relations were established on March 24, 1992, when President George H.W. Bush announced the decision in a press statement."
+          }
+        ]
+      },
+      {
+        "date": "1992-04-23",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in T'bilisi was established with Carey Cavanaugh as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 16,
+            "quote": "The American Embassy in T'bilisi was established April 23, 1992, with Carey Cavanaugh as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

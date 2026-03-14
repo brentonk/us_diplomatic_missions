@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CyeYiKY8Gh6pp267ZbcUYK",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2657,
+      "output_tokens": 757
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Tajikistan",
+    "source_file": "pocom/missions-countries/tajikistan.xml",
+    "events": [
+      {
+        "date": "1992-03-13",
+        "new_status": "Embassy",
+        "event_description": "Embassy Dushanbe established; Edmund McWilliams presented credentials as Charg\u00e9 d'Affaires ad interim, marking the opening of U.S. diplomatic representation in Tajikistan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Edmund Mcwilliams, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-03-13."
+          }
+        ]
+      },
+      {
+        "date": "1992-10-25",
+        "new_status": "None",
+        "event_description": "Embassy Dushanbe was closed and all U.S. personnel were withdrawn, ending formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "On October 25, 1992, Embassy Dushanbe was closed and all U.S. personnel were withdrawn."
+          }
+        ]
+      },
+      {
+        "date": "1993-03-11",
+        "new_status": "Embassy",
+        "event_description": "Embassy Dushanbe reopened by Ambassador Escudero, restoring full U.S. diplomatic representation in Tajikistan.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 7,
+            "line_end": 7,
+            "quote": "Escudero reopened the Embassy on March 11, 1993."
+          }
+        ]
+      }
+    ]
+  }
+}

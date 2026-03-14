@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019yXqX79VeHWPqeh4TZBh1c",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2846,
+      "output_tokens": 1112
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Serbia",
+    "source_file": "rdcr/articles/serbia.xml",
+    "events": [
+      {
+        "date": "1992-05-21",
+        "new_status": "Interests",
+        "event_description": "The U.S. announced it would not recognize the FRY as the successor state to the SFRY. Ambassador Warren Zimmerman was recalled from Belgrade, but the mission continued under a Charg\u00e9 d'Affaires ad interim, effectively functioning as an interests-level presence given non-recognition.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 22,
+            "line_end": 22,
+            "quote": "On May 21, 1992, the U.S. announced that it would not recognize the Federal Republic of Yugoslavia as a successor state of the Socialist Federal Republic of Yugoslavia. U.S. Ambassador Warren Zimmerman was recalled from Belgrade, but the mission continued with a staff under the authority of a Charg\u00e9 d'Affaires ad interim"
+          }
+        ]
+      },
+      {
+        "date": "1999-03-23",
+        "new_status": "None",
+        "event_description": "The U.S. severed relations with the Federal Republic of Yugoslavia and closed Embassy Belgrade in response to the conflict in Kosovo, one day before the NATO bombing of Yugoslavia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "on March 23, 1999, the U.S. severed relations with the Federal Republic of Yugoslavia, and closed Embassy Belgrade."
+          }
+        ]
+      },
+      {
+        "date": "2001-05",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Embassy in Belgrade reopened in May 2001, following the establishment of full diplomatic relations in November 2000.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "The U.S. Embassy reopened in May 2001, and William Dale Montgomery was appointed Ambassador Extraordinary and Plenipotentiary to Serbia on November 26, 2001."
+          }
+        ]
+      }
+    ]
+  }
+}

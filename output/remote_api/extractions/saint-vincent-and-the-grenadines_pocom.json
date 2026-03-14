@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01D8W79Et3MvQ7RucwmcADo3",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2793,
+      "output_tokens": 559
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Saint Vincent and the Grenadines",
+    "source_file": "pocom/missions-countries/saint-vincent-grenadines.xml",
+    "events": [
+      {
+        "date": "1981-12-11",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Nonresident ambassadorial relations established when the first U.S. Ambassador Extraordinary and Plenipotentiary, Milan D Bish (resident in Bridgetown, Barbados), presented credentials to Saint Vincent and the Grenadines.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Milan D Bish, Ambassador Extraordinary and Plenipotentiary. Appointed: 1981-11-23. Credentials presented: 1981-12-11. Left Bridgetown 1984-03-04. Note: Also Special Representative to St. Christopher and Nevis."
+          }
+        ]
+      }
+    ]
+  }
+}

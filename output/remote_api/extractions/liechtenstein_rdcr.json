@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XWHkPBXxkixiETigDzjuis",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2261,
+      "output_tokens": 288
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Liechtenstein",
+    "source_file": "rdcr/articles/liechtenstein.xml",
+    "events": [
+      {
+        "date": "1997-02-10",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "The U.S. Ambassador to Switzerland, Madeleine M. Kunin, was accredited to Liechtenstein as the first U.S. Ambassador, resident at Bern, establishing diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "On February 10, 1997, U.S. Ambassador to Switzerland Madeleine M. Kunin was the first U.S. Ambassador accredited to Liechtenstein, resident at Bern."
+          }
+        ]
+      }
+    ]
+  }
+}

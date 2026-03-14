@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01MGhQvA4HBquV4wiCoeR515",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 3259,
+      "output_tokens": 743
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Burundi",
+    "source_file": "pocom/missions-countries/burundi.xml",
+    "events": [
+      {
+        "date": "1962-07-01",
+        "new_status": "Legation",
+        "event_description": "U.S. legation-level mission established in Burundi upon independence, with Herbert Vincent Olds presenting credentials as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Herbert Vincent Olds, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-07-01."
+          }
+        ]
+      },
+      {
+        "date": "1963-09-16",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission elevated from legation to embassy when Donald Albert Dumont was promoted from Envoy Extraordinary and Minister Plenipotentiary to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Donald Albert Dumont, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1962-10-25. Credentials presented: 1963-01-17. Promoted to Ambassador Extraordinary and Plenipotentiary 1963-09-16."
+          }
+        ]
+      }
+    ]
+  }
+}

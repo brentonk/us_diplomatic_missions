@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01Ncc5CAmis8s7gAGBdJ76LR",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2800,
+      "output_tokens": 587
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Dominica",
+    "source_file": "pocom/missions-countries/dominica.xml",
+    "events": [
+      {
+        "date": "1979-07-18",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "U.S. ambassadorial relations with Dominica established when the first Ambassador, Sally Angela Shelton (resident in Bridgetown, Barbados), presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Sally Angela Shelton, Ambassador Extraordinary and Plenipotentiary. Appointed: 1979-05-17. Credentials presented: 1979-07-18. Left Bridgetown 1981-02-14. Note: Also Special Representative to Antigua, St. Christopher-Nevis-Anguilla, and St. Vincent."
+          }
+        ]
+      }
+    ]
+  }
+}

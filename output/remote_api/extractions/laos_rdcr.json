@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_013rEVAZuFsMavBoQHnAKyDY",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2727,
+      "output_tokens": 1440
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Laos",
+    "source_file": "rdcr/articles/laos.xml",
+    "events": [
+      {
+        "date": "1950-04-25",
+        "new_status": "Consulate",
+        "event_description": "United States opened consular relations with Laos by assigning a Vice Consul at Vientiane (the capital).",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "The United States opened consular relations with Laos with the assignment of Charles J. Baker as Vice Consul at Vientiane on April 25, 1950."
+          }
+        ]
+      },
+      {
+        "date": "1950-07-29",
+        "new_status": "Envoy Nonresident",
+        "event_description": "Diplomatic relations established when nonresident American Envoy Extraordinary and Minister Plenipotentiary Donald R. Heath presented credentials to the King of Laos; Heath was resident at Saigon.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Diplomatic relations were established on July 29, 1950, when American Envoy Extraordinary and Minister Plenipotentiary Donald R. Heath presented his credentials to the King of Laos. Heath was also accredited to Cambodia and Viet-Nam and was resident at Saigon."
+          }
+        ]
+      },
+      {
+        "date": "1950-08-22",
+        "new_status": "Legation",
+        "event_description": "The American Legation in Vientiane was established and opened under Charg\u00e9 d'Affaires ad interim Paul L. Guest.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "The American Legation in Vientiane was established on August 22, 1950, when it opened under Charg\u00e9 d'Affaires ad interim Paul L. Guest."
+          }
+        ]
+      },
+      {
+        "date": "1955-08-10",
+        "new_status": "Embassy",
+        "event_description": "The United States elevated its diplomatic mission in Vientiane from a Legation to an Embassy, per a joint announcement by the U.S. and Laotian governments.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "According to a joint announcement by the Governments of the United States and Laos on August 10, 1955, the United States elevated its diplomatic mission in Vientiane from a Legation to an Embassy."
+          }
+        ]
+      },
+      {
+        "date": "1975-12",
+        "new_status": "Liaison",
+        "event_description": "Following the proclamation of the Lao People's Democratic Republic, the U.S. downgraded its chief of mission from Ambassador to Charg\u00e9 d'Affaires ad interim, reducing the mission below embassy level.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "After the proclamation of the founding of the Lao People's Democratic Republic (LPDR) in December 1975, the United States downgraded its chief of mission in Vientiane from Ambassador to Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1992-08-06",
+        "new_status": "Embassy",
+        "event_description": "Ambassadorial relations restored when Ambassador Charles B. Salmon Jr. presented his credentials to the Lao Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The United States posted its first Ambassador to the LPDR when Ambassador Charles B. Salmon Jr. presented his credentials to the Lao Government on August 6, 1992."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -11,18 +11,18 @@ Validates hand-coded U.S. diplomatic status transitions (590 rows, ~215 countrie
 ## Running the pipeline
 
 ```bash
-uv run python main.py stage0              # Country name resolution
-uv run python main.py stage1              # Preprocessing (XML -> numbered text)
-uv run python main.py stage2              # LLM extraction (Sonnet)
-uv run python main.py stage3              # Quote verification
-uv run python main.py stage4              # LLM reconciliation (Opus)
-uv run python main.py assemble            # Final output assembly
-uv run python main.py run-all             # All stages sequentially
-uv run python main.py --dry-run stage2    # Cost estimate without API calls
-uv run python main.py --countries "Afghanistan,Andorra" run-all  # Filter countries
-uv run python main.py generate-data              # Generate all data product files + web sources
-quarto render web                                # Build website locally
-quarto preview web                               # Preview website locally
+uv run python main.py extraction0              # Country name resolution
+uv run python main.py extraction1              # Preprocessing (XML -> numbered text)
+uv run python main.py extraction2              # LLM extraction (Sonnet)
+uv run python main.py extraction3              # Quote verification
+uv run python main.py extraction4              # LLM reconciliation (Opus)
+uv run python main.py assemble                 # Final output assembly
+uv run python main.py extraction-all           # All extraction stages sequentially
+uv run python main.py --dry-run extraction2    # Cost estimate without API calls
+uv run python main.py --countries "Afghanistan,Andorra" extraction-all  # Filter countries
+uv run python main.py generate-data            # Generate all data product files + web sources
+quarto render web                              # Build website locally
+quarto preview web                             # Preview website locally
 ```
 
 ## Project structure
@@ -64,7 +64,8 @@ quarto preview web                               # Preview website locally
   - `2024-01-16_transitions.csv` — Hand-coded transitions (590 rows)
 - `instructions/` — Pipeline and data product specifications (gitignored, local reference only)
 - `rdcr/`, `pocom/` — Git submodules (State Department sources)
-- `output/` — All pipeline outputs (gitignored)
+- `output/remote_api/` — Non-deterministic LLM outputs: `extractions/` (Stage 2) and `reconciliations/` (Stage 4). Committed for reproducibility.
+- `output/local/` — Deterministic/ephemeral pipeline outputs (gitignored): `work_units/`, `verifications/`, `final/`, `country_mapping.json`, `manifest.json`
 - `data/` — Versioned data products (committed, organized as `data/v{VERSION}/`): 9 CSVs, codebook (md + pdf)
 - `web/` — Quarto website source (landing page, download page, data explorer)
 - `.github/workflows/pages.yml` — GitHub Pages deployment on push to main

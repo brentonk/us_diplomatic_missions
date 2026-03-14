@@ -1,0 +1,265 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XjbMfBPUFeVN2LMVoCZfx5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4019,
+      "output_tokens": 3510
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Libya",
+    "source_file": "rdcr/articles/libya.xml",
+    "events": [
+      {
+        "date": "1799-04-05",
+        "new_status": "Consulate",
+        "event_description": "U.S. Consulate opened at Tripoli when James Leander Cathcart arrived and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "James Leander Cathcart arrived in Tripoli to assume his duties as U.S. Consul on April 5, 1799."
+          }
+        ]
+      },
+      {
+        "date": "1801-05-14",
+        "new_status": "None",
+        "event_description": "U.S. Consulate at Tripoli closed due to the beginning of the Tripolitan War.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The Consulate closed on May 14, 1801 owing to the beginning of the Tripolitan War."
+          }
+        ]
+      },
+      {
+        "date": "1807",
+        "new_status": "Consulate",
+        "event_description": "U.S. Consulate at Tripoli re-opened; George Davis was serving as consul by 1807.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The Consulate had re-opened by 1807, when George Davis was U.S. consul at Tripoli."
+          }
+        ]
+      },
+      {
+        "date": "1882-07-22",
+        "new_status": "None",
+        "event_description": "U.S. Consulate at Tripoli closed by order of Congress.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "the consulate remained open until July 22, 1882, when it was closed by order of Congress."
+          }
+        ]
+      },
+      {
+        "date": "1908-06-10",
+        "new_status": "Consulate",
+        "event_description": "U.S. Consulate at Tripoli re-opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1916-08-15",
+        "new_status": "None",
+        "event_description": "U.S. Consulate at Tripoli closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1935-04-24",
+        "new_status": "Consulate",
+        "event_description": "U.S. Consulate at Tripoli re-opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1937-03-15",
+        "new_status": "None",
+        "event_description": "U.S. Consulate at Tripoli closed.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1948-06-06",
+        "new_status": "Consulate",
+        "event_description": "U.S. Consulate at Tripoli re-established.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The office re-opened on June 10, 1908, closed again on August 15, 1916, reopened April 24, 1935, closed again March 15, 1937, then reestablished June 6, 1948."
+          }
+        ]
+      },
+      {
+        "date": "1951-12-24",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Libya established when the Consulate General was elevated to a Legation, with Andrew Lynch as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 34,
+            "line_end": 34,
+            "quote": "Diplomatic relations and the American Legation in Libya were established on December 24, 1951, when the American Consulate General was elevated to a Legation with Andrew Lynch designated as Charge d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1954-09-25",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Libya was raised to Embassy status on September 25, 1954.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 38,
+            "line_end": 38,
+            "quote": "John N. Gatch, Jr. , was serving as Charg\u00e9 d'Affaires ad interim when the Legation in Libya was raised to Embassy status, September 25, 1954."
+          }
+        ]
+      },
+      {
+        "date": "1980-05-02",
+        "new_status": "None",
+        "event_description": "U.S. Embassy at Tripoli closed; Charg\u00e9 d'Affaires Eagleton had been recalled in February 1980.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 43,
+            "line_end": 43,
+            "quote": "U.S. Charg\u00e9 d'Affaires William Eagleton, Jr. was recalled February 8, 1980, and the U.S. Embassy at Tripoli closed May 2, 1980, and the Libyan People's Bureau in Washington closed on May 6, 1981."
+          }
+        ]
+      },
+      {
+        "date": "2004-02-08",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section at the Belgian Embassy in Tripoli.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "The United States established an Interests Section at the Belgian Embassy in Tripoli, February 8, 2004."
+          }
+        ]
+      },
+      {
+        "date": "2004-06-28",
+        "new_status": "Liaison",
+        "event_description": "The U.S. Interests Section became the U.S. Liaison Office on June 28, 2004, with Gregory L. Berry as Principal Officer.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 47,
+            "line_end": 47,
+            "quote": "It became the U.S. Liaison Office on June 28, with Gregory L. Berry as the Principal Officer."
+          }
+        ]
+      },
+      {
+        "date": "2006-05-31",
+        "new_status": "Embassy",
+        "event_description": "The United States resumed full diplomatic relations with Libya and the Liaison Office in Tripoli became an Embassy, with Gregory L. Berry as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 52,
+            "line_end": 52,
+            "quote": "On May 31, 2006, the United States resumed full diplomatic relations with Libya, and the Liaison Office in Tripoli became an Embassy, with Gregory L. Berry became Charge d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "2011-02-25",
+        "new_status": "None",
+        "event_description": "The United States suspended Embassy operations in Tripoli amid Qadhafi's suppression of an uprising.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 56,
+            "line_end": 56,
+            "quote": "On February 25, 2011, the United States suspended Embassy operations in Tripoli."
+          }
+        ]
+      },
+      {
+        "date": "2011-09-22",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy in Tripoli resumed operations following U.S. recognition of the Transitional National Council as the legitimate government of Libya.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 60,
+            "line_end": 60,
+            "quote": "On September 22, 2011, the U.S. Embassy in Tripoli resumed operations."
+          }
+        ]
+      },
+      {
+        "date": "2014-07-26",
+        "new_status": "None",
+        "event_description": "U.S. Embassy operations in Tripoli suspended due to ongoing violence between Libyan militias; embassy temporarily relocated to Tunisia.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 68,
+            "line_end": 68,
+            "quote": "The Department suspended U.S. Embassy operations in Tripoli on July 26, 2014 because of ongoing violence between Libyan militias in the immediate vicinity."
+          }
+        ]
+      },
+      {
+        "date": "2015-03",
+        "new_status": "Liaison",
+        "event_description": "The embassy temporarily relocated to Tunisia as the 'Libya External Office in Tunis,' operating under the authority of the U.S. Ambassador to Libya.",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "line_start": 68,
+            "line_end": 68,
+            "quote": "The embassy temporarily relocated to Tunisia in March 2015 where it operates as the \"Libya External Office in Tunis under the authority of the U.S. Ambassador to Libya, facilitating engagement with Libyans and U.S. foreign assistance."
+          }
+        ]
+      }
+    ]
+  }
+}

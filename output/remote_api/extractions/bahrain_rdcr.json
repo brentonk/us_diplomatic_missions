@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_015Vhgx76Dq9bdXmbWrNJ65n",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2311,
+      "output_tokens": 541
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Bahrain",
+    "source_file": "rdcr/articles/bahrain.xml",
+    "events": [
+      {
+        "date": "1971-09-21",
+        "new_status": "Embassy",
+        "event_description": "Embassy Manama was opened with John N. Gatch, Jr. as Charg\u00e9 d'Affaires ad interim, establishing the first U.S. diplomatic mission in Bahrain following independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 16,
+            "line_end": 16,
+            "quote": "Embassy Manama was opened on September 21, 1971, with John N. Gatch, Jr. as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

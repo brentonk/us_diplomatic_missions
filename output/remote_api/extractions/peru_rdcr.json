@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CXYCbcGu1EBnoaZ4SYzA1A",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2551,
+      "output_tokens": 417
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Peru",
+    "source_file": "rdcr/articles/peru.xml",
+    "events": [
+      {
+        "date": "1827-05-21",
+        "new_status": "Legation",
+        "event_description": "Diplomatic relations and the American Legation in Lima were established when James Cooley presented his credentials as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 20,
+            "quote": "Diplomatic relations and the American Legation in Lima were established on May 21, 1827, when James Cooley presented his credentials as Charg\u00e9 d'Affaires."
+          }
+        ]
+      },
+      {
+        "date": "1920-04-24",
+        "new_status": "Embassy",
+        "event_description": "The American Legation in Lima was elevated to Embassy status when Ambassador William E. Gonzales presented his credentials to the Peruvian Government.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 28,
+            "quote": "The Legation at Lima was raised to an Embassy on April 24, 1920, when Ambassador William E. Gonzales presented his credentials to the Peruvian Government."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KQWAFPQZo57RU4TvCi99zt",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2468,
+      "output_tokens": 394
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1836-07-04",
+      "new_status": "Consulate",
+      "event_description": "The United States established a Consulate in Singapore by appointing Joseph Balestier to the post.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "The United States established a Consulate in Singapore when it appointed Joseph Balestier to the post on July 4, 1836."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1966-04-04",
+      "new_status": "Embassy",
+      "event_description": "Diplomatic relations and the American Embassy were established in Singapore, with Richard H. Donald as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 22,
+          "line_end": 22,
+          "quote": "Diplomatic relations and the American Embassy were established on April 4, 1966, when the United States opened its embassy in Singapore under with Richard H. Donald as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Singapore",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1836-07-04) and status (Consulate). RDCR confirms appointment of Joseph Balestier."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1966-04-04) and status (Embassy). RDCR confirms establishment of diplomatic relations and the American Embassy under Richard H. Donald as Charg\u00e9 d'Affaires ad interim."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

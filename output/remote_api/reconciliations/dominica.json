@@ -1,0 +1,67 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01NAEjLdTMBZ6Q7CAbZVF8XG",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2555,
+      "output_tokens": 460
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1979",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "Ambassador Sally Angela Shelton presented credentials as the first U.S. Ambassador to Dominica, remaining resident in Bridgetown, Barbados \u2014 establishing nonresident ambassadorial relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 13,
+          "quote": "The United States maintains no official presence in Dominica. The Ambassador and the Embassy staff are resident at Bridgetown, Barbados."
+        },
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "Ambassador Sally Angela Shelton presented credentials at Bridgetown, Barbados, where she remained resident."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1979-07-18",
+      "new_status": "Ambassador Nonresident",
+      "event_description": "U.S. ambassadorial relations with Dominica established when the first Ambassador, Sally Angela Shelton (resident in Bridgetown, Barbados), presented credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Sally Angela Shelton, Ambassador Extraordinary and Plenipotentiary. Appointed: 1979-05-17. Credentials presented: 1979-07-18. Left Bridgetown 1981-02-14. Note: Also Special Representative to Antigua, St. Christopher-Nevis-Anguilla, and St. Vincent."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Dominica",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "Both extracted events refer to the same transition: establishment of nonresident ambassadorial relations via Sally Angela Shelton's credential presentation. RDCR (Event 0) gives only year-level precision (1979); POCOM (Event 1) provides the exact date 1979-07-18. Since RDCR lacks a specific institutional date, POCOM's credential presentation date applies per source priority rules. CSV date matches POCOM exactly."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011MmDifUyWU7B7fDqfsnzLv",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2553,
+      "output_tokens": 606
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Marshall Islands",
+    "source_file": "pocom/missions-countries/marshall-islands.xml",
+    "events": [
+      {
+        "date": "1987-07-11",
+        "new_status": "Liaison",
+        "event_description": "U.S. established a liaison-level presence in the Marshall Islands, with Samuel B. Thomsen serving as Representative.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Samuel B Thomsen, Representative. Appointed: 1987-06-15. Credentials presented: 1987-07-11. Left post on 1990-07-11."
+          }
+        ]
+      },
+      {
+        "date": "1990-08-06",
+        "new_status": "Embassy",
+        "event_description": "U.S. elevated its mission to embassy level in the Marshall Islands, with William Jr. Bodde presenting credentials as the first Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "William Jr Bodde, Ambassador Extraordinary and Plenipotentiary. Appointed: 1990-06-27. Credentials presented: 1990-08-06. Left post on 1992-06-28."
+          }
+        ]
+      }
+    ]
+  }
+}

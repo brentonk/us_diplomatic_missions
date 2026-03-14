@@ -1,0 +1,45 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_018teSNZD2RnEREEqxNoNQ5d",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2349,
+      "output_tokens": 348
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1946-11-01",
+      "new_status": "Embassy",
+      "event_description": "The American Mission at New Delhi was raised to an Embassy, establishing diplomatic relations with the Interim Government of India prior to formal Indian independence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 18,
+          "line_end": 18,
+          "quote": "Diplomatic relations and the American Embassy at New Delhi were established on November 1, 1946, when the U.S. Department of State raised the American Mission at New Delhi to an Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "India",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1946-11-01) and status (Embassy). RDCR source with high confidence confirms the American Mission at New Delhi was raised to an Embassy on this date."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

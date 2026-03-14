@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01XvmaxhRwVpTcZQ1wMkqjWe",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2247,
+      "output_tokens": 446
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Maldives",
+    "source_file": "rdcr/articles/maldives.xml",
+    "events": [
+      {
+        "date": "1966-04-09",
+        "new_status": "Ambassador Nonresident",
+        "event_description": "Diplomatic relations established when U.S. Ambassador to Ceylon Cecil B. Lyon presented credentials to the Maldives, remaining resident at Colombo.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "On April 9, 1966, U.S. Ambassador to Ceylon Cecil B. Lyon presented his credentials to the Maldives; he remained resident at Colombo."
+          }
+        ]
+      }
+    ]
+  }
+}

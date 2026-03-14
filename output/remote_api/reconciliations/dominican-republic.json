@@ -1,0 +1,209 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019S6HTtGML8wGyMz9JhKkjQ",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 3328,
+      "output_tokens": 1165
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1884-03-26",
+      "new_status": "Envoy Nonresident",
+      "event_description": "Diplomatic relations established when John M. Langston presented credentials as American Charge d'Affaires. He was accredited to the Dominican Republic but resident at Port-au-Prince, Haiti.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established on March 26, 1884, when John M. Langston presented his credentials as American Charge d'Affaires to the Government of the Dominican Republic. He was also accredited to Haiti and resident at Port-au-Prince."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1904-07-23",
+      "new_status": "Legation",
+      "event_description": "The American Legation in Santo Domingo was established when Thomas C. Dawson presented his credentials as Minister Resident/Consul General.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Legation in Santo Domingo was established on July 23, 1904, when Thomas C. Dawson presented his credentials as Minister Resident/Consul General."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-03-23",
+      "new_status": "Embassy",
+      "event_description": "The American Legation was elevated to Embassy status following a joint announcement on March 23, 1943, between the United States and seven American Republics including the Dominican Republic.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 23,
+          "line_end": 23,
+          "quote": "Following a joint announcement on March 23, 1943, between the United States and seven American Republics that included Dominican Republic, the Legations in the respective nations and the United States were raised to the status of Embassy."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1943-04-17",
+      "new_status": "Embassy",
+      "event_description": "Avra Milvin Warren promoted to Ambassador Extraordinary and Plenipotentiary, elevating the mission from a legation to an embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 39,
+          "line_end": 41,
+          "quote": "Avra Milvin Warren, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1942-03-05. Credentials presented: 1942-07-04. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-17. Avra Milvin Warren, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-17. Left post on 1944-04-22."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-08-26",
+      "new_status": "None",
+      "event_description": "The United States severed diplomatic relations with the Dominican Republic.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 57,
+          "line_end": 58,
+          "quote": "Henry Mark Valpey Dearborn, Charg\u00e9 d'Affaires ad interim. The United States severed diplomatic relations with the Dominican Republic on 1960-08-26."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 3,
+      "has_citation_error": false
+    },
+    {
+      "date": "1962-01-06",
+      "new_status": "Embassy",
+      "event_description": "John Calvin Hill presents credentials as Charg\u00e9 d'Affaires ad interim, resuming U.S. diplomatic representation at the embassy level.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 60,
+          "line_end": 60,
+          "quote": "John Calvin Hill, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1962-01-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 4,
+      "has_citation_error": false
+    },
+    {
+      "date": "1963-09-25",
+      "new_status": "None",
+      "event_description": "Normal diplomatic relations interrupted following the new unrecognized government; the U.S. suspended normal relations on 1963-09-25.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 62,
+          "line_end": 62,
+          "quote": "John Bartlow Martin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1962-03-02. Credentials presented: 1962-03-09. Normal relations interrupted on 1963-09-25. Note: The new Government of the Dominican Republic was still unrecognized by the United States when Martin left post on September 28, 1963."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 5,
+      "has_citation_error": false
+    },
+    {
+      "date": "1964-03-23",
+      "new_status": "Embassy",
+      "event_description": "William Tapley Bennett presents credentials as Ambassador Extraordinary and Plenipotentiary, restoring full embassy-level diplomatic relations.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 64,
+          "line_end": 64,
+          "quote": "William Tapley Bennett, Ambassador Extraordinary and Plenipotentiary. Appointed: 1964-03-04. Credentials presented: 1964-03-23. Left post on 1966-04-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 6,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Dominican Republic",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1884-03-26) and status (Envoy Nonresident). RDCR confirms diplomatic relations established with nonresident envoy accredited from Haiti."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1904-07-23) and status (Legation). RDCR confirms establishment of American Legation in Santo Domingo."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          3
+        ],
+        "notes": "CSV date (1943-03-23) matches RDCR Event 2 (joint announcement date for elevation to Embassy). POCOM Event 3 gives 1943-04-17 (ambassador promotion/credentials date), which is a separate personnel event. CSV correctly follows RDCR source priority."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          4
+        ],
+        "date": "1960-08-26",
+        "new_status": "None",
+        "event_description": "The United States severed diplomatic relations with the Dominican Republic on 1960-08-26.",
+        "notes": "POCOM source only, but high confidence. This is a significant break in relations that should be reflected in the CSV."
+      },
+      {
+        "extracted_event_indices": [
+          5
+        ],
+        "date": "1962-01-06",
+        "new_status": "Embassy",
+        "event_description": "John Calvin Hill presented credentials as Charg\u00e9 d'Affaires ad interim on 1962-01-06, resuming U.S. diplomatic representation at the embassy level after the 1960 severance.",
+        "notes": "POCOM source only. Represents resumption of diplomatic relations following the 1960 break. Should be added as a pair with the 1960-08-26 severance."
+      },
+      {
+        "extracted_event_indices": [
+          6
+        ],
+        "date": "1963-09-25",
+        "new_status": "None",
+        "event_description": "Normal diplomatic relations interrupted on 1963-09-25 following an unrecognized new government in the Dominican Republic.",
+        "notes": "POCOM source only. Represents a second interruption of relations. The ambassador left post shortly after on September 28, 1963."
+      },
+      {
+        "extracted_event_indices": [
+          7
+        ],
+        "date": "1964-03-23",
+        "new_status": "Embassy",
+        "event_description": "William Tapley Bennett presented credentials as Ambassador Extraordinary and Plenipotentiary on 1964-03-23, restoring full embassy-level diplomatic relations.",
+        "notes": "POCOM source only. Represents restoration of relations following the 1963 interruption. Should be added as a pair with the 1963-09-25 interruption."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HGhJAELAh63WWcbzx87hqH",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5794,
+      "output_tokens": 2237
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Peru",
+    "source_file": "pocom/missions-countries/peru.xml",
+    "events": [
+      {
+        "date": "1827-05-21",
+        "new_status": "Legation",
+        "event_description": "James Cooley presented credentials as Charg\u00e9 d'Affaires, establishing the U.S. Legation in Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "James Cooley, Charg\u00e9 d'Affaires. Appointed: 1826-05-02. Credentials presented: 1827-05-21. Died at post on 1828-02-24."
+          }
+        ]
+      },
+      {
+        "date": "1860-10-19",
+        "new_status": "None",
+        "event_description": "John Randolph Clay notified the Government of Peru that relations were suspended.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "John Randolph Clay, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1853-03-16. Credentials presented: 1853-08-22. Notified the Government of Peru that relations were suspended on 1860-10-19."
+          }
+        ]
+      },
+      {
+        "date": "1862-01-11",
+        "new_status": "Legation",
+        "event_description": "Christopher Robinson presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. Legation in Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Christopher Robinson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1861-06-08. Credentials presented: 1862-01-11. Normal relations interrupted on 1865-11-26."
+          }
+        ]
+      },
+      {
+        "date": "1865-11-26",
+        "new_status": "None",
+        "event_description": "Normal relations interrupted; the new Government of Peru was still unrecognized by the United States when Robinson left Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "Normal relations interrupted on 1865-11-26. Note: Commissioned during a recess of the Senate; recommissioned on July 15, 1861, after confirmation. The new Government of Peru was still unrecognized by the United States when Robinson left Peru on December 21, 1865."
+          }
+        ]
+      },
+      {
+        "date": "1866-05-22",
+        "new_status": "Legation",
+        "event_description": "Alvin Peterson Hovey presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. Legation in Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 21,
+            "line_end": 21,
+            "quote": "Alvin Peterson Hovey, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1865-08-12. Credentials presented: 1866-05-22. Left post on 1870-09-22."
+          }
+        ]
+      },
+      {
+        "date": "1881-09-28",
+        "new_status": "None",
+        "event_description": "Normal relations interrupted during Chilean occupation of Lima; Hurlbut later died at post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 31,
+            "line_end": 31,
+            "quote": "Stephen Augustus Hurlbut, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1881-05-19. Credentials presented: 1881-08-02. Normal relations interrupted on 1881-09-28. Note: Chilean occupation forces were still in control of Lima when Hurlbut died at post on March 27, 1882."
+          }
+        ]
+      },
+      {
+        "date": "1884-04-24",
+        "new_status": "Legation",
+        "event_description": "Seth Ledyard Phelps presented credentials as Envoy Extraordinary and Minister Plenipotentiary, re-establishing the U.S. Legation in Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 33,
+            "line_end": 33,
+            "quote": "Seth Ledyard Phelps, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1883-06-18. Credentials presented: 1884-04-24. Died at post on 1885-06-24."
+          }
+        ]
+      },
+      {
+        "date": "1920-04-24",
+        "new_status": "Embassy",
+        "event_description": "William Elliott Gonzales presented credentials as Ambassador Extraordinary and Plenipotentiary, elevating the U.S. mission in Peru from a Legation to an Embassy.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "William Elliott Gonzales, Ambassador Extraordinary and Plenipotentiary. Appointed: 1919-09-10. Credentials presented: 1920-04-24. Left Peru 1921-10-11."
+          }
+        ]
+      },
+      {
+        "date": "1962-07-18",
+        "new_status": "None",
+        "event_description": "Normal relations interrupted; the new Government of Peru was still unrecognized by the United States when Loeb left post.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 75,
+            "line_end": 75,
+            "quote": "James Isaac Loeb, Ambassador Extraordinary and Plenipotentiary. Appointed: 1961-04-18. Credentials presented: 1961-05-23. Normal relations interrupted on 1962-07-18. Note: The new Government of Peru was still unrecognized by the United States when Loeb left post on July 26, 1962."
+          }
+        ]
+      },
+      {
+        "date": "1963-02-06",
+        "new_status": "Embassy",
+        "event_description": "John Wesley Jones presented credentials as Ambassador Extraordinary and Plenipotentiary, re-establishing the U.S. Embassy in Peru.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 77,
+            "line_end": 77,
+            "quote": "John Wesley Jones, Ambassador Extraordinary and Plenipotentiary. Appointed: 1962-11-29. Credentials presented: 1963-02-06. Left post on 1969-06-02."
+          }
+        ]
+      }
+    ]
+  }
+}

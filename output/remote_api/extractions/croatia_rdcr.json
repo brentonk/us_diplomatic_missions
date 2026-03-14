@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CekURsh1spVvjUbzLP4eQW",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2166,
+      "output_tokens": 247
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Croatia",
+    "source_file": "rdcr/articles/croatia.xml",
+    "events": [
+      {
+        "date": "1992-08-25",
+        "new_status": "Embassy",
+        "event_description": "The American Embassy in Zagreb was opened with Ronald Nietzke as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 19,
+            "line_end": 19,
+            "quote": "The American Embassy in Zagreb was opened on August 25, 1992, with Ronald Nietzke as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      }
+    ]
+  }
+}

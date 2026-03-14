@@ -1,0 +1,57 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_019XFqj273sMf5ykQUBGyV9M",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5811,
+      "output_tokens": 1329
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Taiwan",
+    "source_file": "pocom/missions-countries/china.xml",
+    "events": [
+      {
+        "date": "1844-06-12",
+        "new_status": "Legation",
+        "event_description": "U.S. mission to China established when Caleb Cushing, Envoy Extraordinary and Minister Plenipotentiary, presented credentials on June 12, 1844.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 5,
+            "line_end": 5,
+            "quote": "Caleb Cushing, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1843-05-08. Credentials presented: 1844-06-12."
+          }
+        ]
+      },
+      {
+        "date": "1935-09-17",
+        "new_status": "Embassy",
+        "event_description": "U.S. mission to China elevated from Legation to Embassy when Nelson Trusler Johnson was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials on September 17, 1935.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 53,
+            "line_end": 55,
+            "quote": "Nelson Trusler Johnson, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1929-12-16. Credentials presented: 1930-02-01. Promoted to Ambassador Extraordinary and Plenipotentiary 1935-09-17. Note: Commissioned to China.\n\nNelson Trusler Johnson, Ambassador Extraordinary and Plenipotentiary. Appointed: 1935-06-18. Credentials presented: 1935-09-17."
+          }
+        ]
+      },
+      {
+        "date": "1979-02-28",
+        "new_status": "None",
+        "event_description": "Embassy Taipei closed on February 28, 1979, following the U.S. establishment of diplomatic relations with the People's Republic of China and termination of relations with the Republic of China on January 1, 1979.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 79,
+            "line_end": 79,
+            "quote": "The United States established diplomatic relations with the People's Republic of China, and terminated them with the Republic of China, on January 1, 1979. Embassy Taipei closed February 28, 1979."
+          }
+        ]
+      }
+    ]
+  }
+}

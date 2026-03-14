@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KtPLmfbwtFDcUfriAFFjAE",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2890,
+      "output_tokens": 534
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Djibouti",
+    "source_file": "pocom/missions-countries/djibouti.xml",
+    "events": [
+      {
+        "date": "1977-06-27",
+        "new_status": "Embassy",
+        "event_description": "U.S. Embassy established in Djibouti upon independence, with Walter Sheldon Clarke presenting credentials as Charg\u00e9 d'Affaires ad interim on the date of independence.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Walter Sheldon Clarke, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1977-06-27."
+          }
+        ]
+      }
+    ]
+  }
+}

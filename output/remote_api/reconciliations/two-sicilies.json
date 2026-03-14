@@ -1,0 +1,108 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01L8izT8LWU7QHrWRERNvqpx",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2863,
+      "output_tokens": 690
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1796-05-20",
+      "new_status": "Consulate",
+      "event_description": "The Kingdom of Naples recognized the United States by accepting the credentials of U.S. consular agent John S. M. Matthiew, appointed as U.S. Consul in Naples (the capital), establishing the first U.S. consular presence.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 14,
+          "line_end": 14,
+          "quote": "The Kingdom of Naples recognized the United States when it accepted the credentials of U.S. consular agent John S. M. Matthiew, who was appointed to the position of U.S. Consul in Naples on May 20, 1796."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1832-01-25",
+      "new_status": "Legation",
+      "event_description": "Full diplomatic relations established when the first U.S. Charg\u00e9 d'Affaires to the Kingdom of the Two Sicilies, John Nelson, presented his credentials to the King on January 25, 1832, elevating the U.S. mission from consular to legation level.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 32,
+          "line_end": 32,
+          "quote": "Full diplomatic relations were established when the first U.S. Charg\u00e9 d'Affaires to the Kingdom of the Two Sicilies John Nelson presented his credentials to the King of the Two Sicilies on January 25, 1832."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1860-11",
+      "new_status": "None",
+      "event_description": "The U.S. closed its mission in Naples in November 1860 as the Kingdom of the Two Sicilies ceased to exist during the Risorgimento, with U.S. diplomatic representatives subsequently relocating to Turin under the new Kingdom of Italy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 40,
+          "line_end": 40,
+          "quote": "The U.S. closed its mission in Naples in November 1860. When the Kingdom of Italy was proclaimed in early 1861, Sicily and Naples were part of the newly constituted nation, and U.S. diplomatic representatives were located in Turin."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 2,
+      "has_citation_error": false
+    },
+    {
+      "date": "1860-11-06",
+      "new_status": "None",
+      "event_description": "U.S. Legation at Naples closed in anticipation of the entry of King Victor Emmanuel into the city, ending U.S. diplomatic representation in Two Sicilies.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 20,
+          "quote": "Closed the Legation at Naples in anticipation of the entry of King Victor Emmanuel into city, November 2- 1860-11-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Two Sicilies",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "notes": "Exact match on date (1796-05-20) and status (Consulate). Both describe the appointment/acceptance of U.S. Consul John S. M. Matthiew in Naples."
+      },
+      {
+        "csv_row": 2,
+        "extracted_event_indices": [
+          1
+        ],
+        "notes": "Exact match on date (1832-01-25) and status (Legation). Both describe John Nelson presenting credentials as first U.S. Charg\u00e9 d'Affaires to the Kingdom of the Two Sicilies."
+      },
+      {
+        "csv_row": 3,
+        "extracted_event_indices": [
+          2,
+          3
+        ],
+        "notes": "CSV date 1860-11-06 matches POCOM event (Event 3) exactly. RDCR (Event 2) gives only 'November 1860' without a specific day. CSV correctly uses the POCOM-specific date since RDCR lacks a precise date. Both sources confirm closure of the U.S. mission at Naples as the Kingdom of the Two Sicilies ceased to exist."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

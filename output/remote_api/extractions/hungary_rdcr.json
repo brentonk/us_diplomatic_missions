@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01DL12KBEMFjJF3hd34CW1kX",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4749,
+      "output_tokens": 1126
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Hungary",
+    "source_file": "rdcr/articles/hungary.xml",
+    "events": [
+      {
+        "date": "1921-12-26",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Budapest, with Commissioner Ulysses Grant-Smith as Charg\u00e9 d'Affaires pro tempore.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 39,
+            "line_end": 39,
+            "quote": "The U.S. Legation was established in Budapest on December 26, 1921, with Commissioner Ulysses Grant-Smith as Charg\u00e9 d'Affaires pro tempore."
+          }
+        ]
+      },
+      {
+        "date": "1941-12-11",
+        "new_status": "None",
+        "event_description": "Hungary severed diplomatic relations with the United States following Germany's declaration of war on the U.S., and declared war on December 13. U.S. Minister Pell departed Budapest on January 16, 1942.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 49,
+            "line_end": 49,
+            "quote": "After Germany declared war on the United States, Hungary severed diplomatic relations with the United States on December 11, 1941. A declaration of war followed on December 13."
+          }
+        ]
+      },
+      {
+        "date": "1945-05-11",
+        "new_status": "Liaison",
+        "event_description": "H. F. Arthur Schoenfeld arrived in Budapest as U.S. Representative with the personal rank of Minister and established a U.S. Mission, functioning as a liaison presence prior to formal re-establishment of diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 55,
+            "line_end": 55,
+            "quote": "President Roosevelt also designated H. F. Arthur Schoenfeld as U.S. Representative in Hungary, with the personal rank of Minister. Schoenfeld arrived in Budapest on May 11 and established a U.S. Mission there."
+          }
+        ]
+      },
+      {
+        "date": "1946-01-26",
+        "new_status": "Legation",
+        "event_description": "After Schoenfeld presented his credentials as U.S. Minister to Hungary, the U.S. Mission became a Legation once more.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 57,
+            "line_end": 57,
+            "quote": "He presented his credentials on January 26, 1946, and served until June 1, 1947. After Schoenfeld presented his credentials, the U.S. Mission became a Legation once more."
+          }
+        ]
+      },
+      {
+        "date": "1966-11-28",
+        "new_status": "Embassy",
+        "event_description": "The United States raised its Legation in Hungary to Embassy status on November 28, 1966, one of the last U.S. diplomatic missions to be upgraded.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 67,
+            "line_end": 67,
+            "quote": "On November 28, 1966, the United States raised its Legations in Bulgaria and Hungary to Embassy status. These were the last U.S. diplomatic missions to be upgraded."
+          }
+        ]
+      }
+    ]
+  }
+}

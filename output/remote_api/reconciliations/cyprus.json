@@ -1,0 +1,62 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_017Y3RVWD3WEVsy2NGVNTZ5Q",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2505,
+      "output_tokens": 428
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1960-08-16",
+      "new_status": "Embassy",
+      "event_description": "The American Consulate General in Nicosia was elevated to an Embassy upon U.S. recognition of Cyprus, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "Diplomatic relations and the American Embassy in Nicosia were established on August 16, 1960, when the American Consulate General was elevated to an embassy, with L. Douglas Heck as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1960-09-19",
+      "new_status": "Embassy",
+      "event_description": "Fraser Wilkins presented credentials as the first Ambassador Extraordinary and Plenipotentiary to Cyprus, confirming full Embassy status with a resident Ambassador.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Fraser Wilkins, Ambassador Extraordinary and Plenipotentiary. Appointed: 1960-08-27. Credentials presented: 1960-09-19. Left post on 1964-04-06."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Cyprus",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0,
+          1
+        ],
+        "notes": "CSV date 1960-08-16 matches RDCR (Event 0) exactly. POCOM (Event 1) gives 1960-09-19, which is the credential presentation date for the first Ambassador \u2014 a later personnel event, not a conflicting institutional date. Per source priority, RDCR's date is authoritative and the CSV correctly follows it."
+      }
+    ],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

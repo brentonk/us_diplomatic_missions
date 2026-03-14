@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01G5Vwd3N8gShM3k5ukeKQof",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 5374,
+      "output_tokens": 773
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Honduras",
+    "source_file": "pocom/missions-countries/honduras.xml",
+    "events": [
+      {
+        "date": "1858-08-10",
+        "new_status": "Legation",
+        "event_description": "U.S. Legation established in Honduras when the first Minister Resident, Beverly Leonidas Clarke, presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Beverly Leonidas Clarke, Minister Resident. Appointed: 1858-01-14. Credentials presented: 1858-08-10. Died at Guatemala 1860-03-17."
+          }
+        ]
+      },
+      {
+        "date": "1943-04-27",
+        "new_status": "Embassy",
+        "event_description": "U.S. Legation elevated to Embassy when John Draper Erwin was promoted to Ambassador Extraordinary and Plenipotentiary and presented credentials.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 51,
+            "line_end": 53,
+            "quote": "John Draper Erwin, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1937-07-29. Credentials presented: 1937-09-08. Promoted to Ambassador Extraordinary and Plenipotentiary 1943-04-27.\n\nJohn Draper Erwin, Ambassador Extraordinary and Plenipotentiary. Appointed: 1943-03-27. Credentials presented: 1943-04-27. Left post on 1947-04-16."
+          }
+        ]
+      }
+    ]
+  }
+}

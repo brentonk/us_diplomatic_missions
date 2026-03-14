@@ -1,0 +1,83 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KQjQ5bGnt13urYFQmfh1Je",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2866,
+      "output_tokens": 1196
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Vietnam",
+    "source_file": "rdcr/articles/vietnam.xml",
+    "events": [
+      {
+        "date": "1950-02-17",
+        "new_status": "Legation",
+        "event_description": "The Consulate General at Saigon was raised to Legation status, establishing diplomatic relations with the State of Viet Nam, with Edmund A. Gullion as Charg\u00e9 d'Affaires ad interim.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Diplomatic relations were established on February 17, 1950, when the Consulate General at Saigon was raised to Legation status with Edmund A. Gullion as Charg\u00e9 d'Affaires ad interim."
+          }
+        ]
+      },
+      {
+        "date": "1952-06-06",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Saigon was raised to Embassy status, following a joint announcement by the Governments of the United States and Vietnam on June 6, 1952.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 29,
+            "quote": "The United States Legation in Saigon was raised to Embassy status on June 24, 1952, when Ambassador Donald R. Heath received confirmation of his appointment from the United States Senate. This followed a joint announcement by the Governments of the United States and Vietnam to this effect on June 6, 1952."
+          }
+        ]
+      },
+      {
+        "date": "1975-04-29",
+        "new_status": "None",
+        "event_description": "The United States closed the Embassy in Saigon and evacuated all Embassy personnel, just prior to the surrender of South Vietnam to North Vietnamese forces.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 37,
+            "line_end": 37,
+            "quote": "The United States closed the Embassy in Saigon and evacuated all Embassy personnel on April 29, 1975, just prior to the surrender of South Vietnam to North Vietnamese forces."
+          }
+        ]
+      },
+      {
+        "date": "1995-01-28",
+        "new_status": "Liaison",
+        "event_description": "The United States opened a Liaison Office in Hanoi, establishing an informal diplomatic presence prior to the full resumption of relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 41,
+            "line_end": 41,
+            "quote": "The United States opened a Liaison Office in Hanoi on January 28, 1995."
+          }
+        ]
+      },
+      {
+        "date": "1995-08-06",
+        "new_status": "Embassy",
+        "event_description": "Embassy Hanoi opened following the reestablishment of diplomatic relations on August 5, 1995, with L. Desaix Anderson serving as Charg\u00e9 d'Affaires a.i.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45,
+            "quote": "The United States and Vietnam reestablished diplomatic relations on August 5, 1995 during Secretary of State Warren Christopher's visit to Vietnam, when he and Vietnam's Foreign Minister signed documents agreeing to do so and to open embassies in Hanoi and Washington. The opening of Embassy Hanoi took place on August 6."
+          }
+        ]
+      }
+    ]
+  }
+}

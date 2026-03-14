@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01BVxkXd5BMdYRqLRmoe5oUp",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2229,
+      "output_tokens": 248
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Sri Lanka",
+    "source_file": "rdcr/articles/sri-lanka.xml",
+    "events": [
+      {
+        "date": "1949-08-03",
+        "new_status": "Embassy",
+        "event_description": "American Embassy established in Colombo when Felix Cole presented credentials as Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 19,
+            "quote": "Diplomatic relations were established on August 3, 1949, when Felix Cole presented his credentials as American Ambassador Extraordinary and Plenipotentiary."
+          }
+        ]
+      }
+    ]
+  }
+}

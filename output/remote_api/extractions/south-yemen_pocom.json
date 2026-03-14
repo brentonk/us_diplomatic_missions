@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01JNj7BMxXV58xQNwsQYaWW5",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 4032,
+      "output_tokens": 875
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "South Yemen",
+    "source_file": "pocom/missions-countries/yemen.xml",
+    "events": [
+      {
+        "date": "1969-10-26",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in South Yemen closed on October 26, 1969, following the Government of the People's Democratic Republic of Southern Yemen severing diplomatic relations with the United States on October 24, 1969.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 24,
+            "line_end": 25,
+            "quote": "The Government of the People's Democratic Republic of Southern Yemen severed diplomatic relations with the United States on 1969-10-24. Note: The Embassy closed on October 26, 1969."
+          }
+        ]
+      },
+      {
+        "date": "1970-04-10",
+        "new_status": "Interests",
+        "event_description": "The United States established an Interests Section in the Italian Embassy in South Yemen on April 10, 1970.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 27,
+            "line_end": 27,
+            "quote": "On April 10, 1970, the United States established an Interests Section in the Italian Embassy."
+          }
+        ]
+      }
+    ]
+  }
+}

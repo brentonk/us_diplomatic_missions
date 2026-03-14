@@ -1,0 +1,105 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CQgHqVfHzU1oeDHf7MzxmF",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2685,
+      "output_tokens": 778
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1992-02-18",
+      "new_status": "None",
+      "event_description": "Diplomatic relations established between the United States and Moldova, prior to the opening of the embassy.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 15,
+          "quote": "Diplomatic relations were established when President George H.W. Bush and Moldovan President Mircea Snegur agreed to do so during a February 18, 1992 meeting at the White House. The Bush administration confirmed February 18 as the date relations were established in a statement issued the next day."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-03-13",
+      "new_status": "Embassy",
+      "event_description": "The American Embassy in Chisinau was established, with Howard Steers as Charg\u00e9 d'Affaires ad interim.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quote": "The American Embassy in Chisinau was established on March 13, 1992, with Howard Steers as Charg\u00e9 d'Affaires ad interim."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 1,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-03-13",
+      "new_status": "Liaison",
+      "event_description": "U.S. diplomatic presence established in Moldova with a Charg\u00e9 d'Affaires ad interim presenting credentials.",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quote": "Howard Steers, Charg\u00e9 d'Affaires ad interim. Credentials presented: 1992-03-13."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 0,
+      "has_citation_error": false
+    },
+    {
+      "date": "1992-08-26",
+      "new_status": "Embassy",
+      "event_description": "U.S. Embassy established in Moldova with the first Ambassador Extraordinary and Plenipotentiary presenting credentials.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quote": "Mary C Pendleton, Ambassador Extraordinary and Plenipotentiary. Appointed: 1992-08-11. Credentials presented: 1992-08-26. Left post on 1995-08-12."
+        }
+      ],
+      "source_type": "pocom",
+      "original_index": 1,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Moldova",
+    "matched": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          1,
+          2,
+          3
+        ],
+        "notes": "CSV matches RDCR Event 1 (Embassy established 1992-03-13) exactly. POCOM Event 2 (same date, labeled Liaison) and Event 3 (1992-08-26, Ambassador credentials) both refer to the same mission but reflect personnel milestones rather than separate institutional transitions. RDCR is primary and explicitly states the Embassy was established on 1992-03-13."
+      }
+    ],
+    "missing_from_csv": [
+      {
+        "extracted_event_indices": [
+          0
+        ],
+        "date": "1992-02-18",
+        "new_status": "None",
+        "event_description": "Diplomatic relations were established between the United States and Moldova during a meeting between President Bush and Moldovan President Snegur at the White House on February 18, 1992.",
+        "notes": "RDCR explicitly states this as the date diplomatic relations were established, prior to the embassy opening on March 13. This could be added as a 'None' status event representing the formal establishment of relations before any diplomatic mission was set up."
+      }
+    ],
+    "unsupported_in_sources": [],
+    "discrepancies": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01EqBGwBBByecWeqGmwsMzgJ",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2410,
+      "output_tokens": 572
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Marshall Islands",
+    "source_file": "rdcr/articles/marshall-islands.xml",
+    "events": [
+      {
+        "date": "1986-10-21",
+        "new_status": "Liaison",
+        "event_description": "Office of the U.S. Representative opened in Majuro under Samuel B. Thomsen, prior to the formal establishment of diplomatic relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 15,
+            "quote": "Prior to the establishment of diplomatic relations, and Office of the U.S. Representative in Majurio opened on October 21, 1986, under Samuel B. Thomsen."
+          }
+        ]
+      },
+      {
+        "date": "1989-09-09",
+        "new_status": "Embassy",
+        "event_description": "The Office of the U.S. Representative was elevated to Embassy status.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 23,
+            "quote": "The Office of the U.S. Representative was elevated to Embassy status on September 9, 1989, and on June 27, 1990, William Bodde Jr. was appointed U.S. Ambassador Extraordinary and Plenipotentiary to the Marshall Islands."
+          }
+        ]
+      }
+    ]
+  }
+}

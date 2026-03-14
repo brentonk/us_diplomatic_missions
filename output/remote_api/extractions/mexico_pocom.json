@@ -1,0 +1,122 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_011MP1F6TLv4W94PwzC62SXg",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 6154,
+      "output_tokens": 1817
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mexico",
+    "source_file": "pocom/missions-countries/mexico.xml",
+    "events": [
+      {
+        "date": "1825-06-01",
+        "new_status": "Legation",
+        "event_description": "Joel Roberts Poinsett presents credentials as Envoy Extraordinary and Minister Plenipotentiary, establishing the U.S. Legation in Mexico.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 3,
+            "line_end": 3,
+            "quote": "Joel Roberts Poinsett, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1825-03-08. Credentials presented: 1825-06-01."
+          }
+        ]
+      },
+      {
+        "date": "1845-03-28",
+        "new_status": "None",
+        "event_description": "Mexico severs diplomatic relations with the United States, ending the U.S. Legation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 13,
+            "line_end": 13,
+            "quote": "Mexico severed diplomatic relations with the United States on 1845-03-28. Note: Shannon left post on May 14, 1845."
+          }
+        ]
+      },
+      {
+        "date": "1848-10-02",
+        "new_status": "Legation",
+        "event_description": "Nathan Clifford presents credentials as Envoy Extraordinary and Minister Plenipotentiary, restoring the U.S. Legation in Mexico after the break in relations.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 15,
+            "line_end": 15,
+            "quote": "Nathan Clifford, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1848-07-28. Credentials presented: 1848-10-02. Presented recall on 1849-09-06."
+          }
+        ]
+      },
+      {
+        "date": "1858-06-21",
+        "new_status": "None",
+        "event_description": "Envoy Forsyth suspends political relations of the U.S. Legation with the Government of Mexico.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 23,
+            "line_end": 24,
+            "quote": "John2 Forsyth, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1856-07-21. Credentials presented: 1856-10-23. Suspended political relations of the Legation with Government of Mexico on 1858-06-21."
+          }
+        ]
+      },
+      {
+        "date": "1859-04-06",
+        "new_status": "Legation",
+        "event_description": "Robert Milligan McLane presents credentials as Envoy Extraordinary and Minister Plenipotentiary, restoring the U.S. Legation in Mexico.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 26,
+            "line_end": 26,
+            "quote": "Robert Milligan Mclane, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1859-03-07. Credentials presented: 1859-04-06. Presented recall on 1860-12-22."
+          }
+        ]
+      },
+      {
+        "date": "1899-01-13",
+        "new_status": "Embassy",
+        "event_description": "The U.S. Legation in Mexico is elevated to an Embassy when Powell Clayton is promoted to Ambassador Extraordinary and Plenipotentiary.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 59,
+            "line_end": 59,
+            "quote": "Powell Clayton, Envoy Extraordinary and Minister Plenipotentiary. Appointed: 1897-03-22. Credentials presented: 1897-05-13. Promoted to Ambassador Extraordinary and Plenipotentiary 1899-01-13."
+          }
+        ]
+      },
+      {
+        "date": "1914-04-22",
+        "new_status": "None",
+        "event_description": "The U.S. Embassy in Mexico City is closed at the request of Mexican authorities, ending formal diplomatic representation.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 69,
+            "line_end": 69,
+            "quote": "Nelson Oshaugnessy, Charg\u00e9 d'Affaires ad interim. Embassy Mexico City closed at the request of the Mexican authorities on 1914-04-22."
+          }
+        ]
+      },
+      {
+        "date": "1917-03-03",
+        "new_status": "Embassy",
+        "event_description": "Henry Prather Fletcher presents credentials as Ambassador Extraordinary and Plenipotentiary, reopening the U.S. Embassy in Mexico.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 71,
+            "line_end": 71,
+            "quote": "Henry Prather Fletcher, Ambassador Extraordinary and Plenipotentiary. Appointed: 1916-02-25. Credentials presented: 1917-03-03. Left post on 1919-01-25."
+          }
+        ]
+      }
+    ]
+  }
+}

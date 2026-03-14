@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01KvBpLDg5aRRWjYqCUg3qi9",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2403,
+      "output_tokens": 294
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Malaysia",
+    "source_file": "rdcr/articles/malaysia.xml",
+    "events": [
+      {
+        "date": "1957-08-31",
+        "new_status": "Embassy",
+        "event_description": "The United States elevated its Consulate General in Kuala Lumpur to the status of Embassy upon Malaysian independence, with Consul General Thomas K. Wright placed in charge as Charg\u00e9 d'Affaires.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 25,
+            "line_end": 25,
+            "quote": "Diplomatic relations were established on August 31, 1957, when the United States elevated its Consulate General in Kuala Lumpur to the status of Embassy. Then Consul General Thomas K. Wright was placed in charge of the Embassy as Charge d'Affaires."
+          }
+        ]
+      }
+    ]
+  }
+}

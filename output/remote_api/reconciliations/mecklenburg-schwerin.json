@@ -1,0 +1,54 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01HsfwRvmfF6cJAHPxELKi2p",
+    "model": "claude-opus-4-6",
+    "usage": {
+      "input_tokens": 2452,
+      "output_tokens": 736
+    },
+    "stop_reason": "tool_use"
+  },
+  "merged_events": [
+    {
+      "date": "1816",
+      "new_status": "None",
+      "event_description": "Mutual recognition established in 1816 via appointment of a U.S. Consul, but diplomatic relations were never formally established between the United States and the Grand Duchy of Mecklenburg-Schwerin. The consulate's location is not confirmed to be in the capital (Schwerin), and no legation or embassy was ever opened.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quote": "The United States and the Grand Duchy of Mecklenburg-Schwerin never established diplomatic relations."
+        },
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quote": "The first known act of mutual recognition between the United States and the Grand Duchy of Mecklenburg-Schwerin was in 1816, when John M. Forbes established the first U.S. Consul in the Grand Duchy of Mecklenburg-Schwerin."
+        }
+      ],
+      "source_type": "rdcr",
+      "original_index": 0,
+      "has_citation_error": false
+    }
+  ],
+  "result": {
+    "country": "Mecklenburg-Schwerin",
+    "matched": [],
+    "missing_from_csv": [],
+    "unsupported_in_sources": [],
+    "discrepancies": [
+      {
+        "csv_row": 1,
+        "extracted_event_indices": [
+          0
+        ],
+        "field": "both",
+        "csv_value": "1816-01-22, Consulate",
+        "extracted_value": "1816, None",
+        "assessment": "csv_likely_correct",
+        "reasoning": "Both refer to the same event: the 1816 appointment of a U.S. Consul in Mecklenburg-Schwerin. The date conflict is minor \u2014 the CSV provides a specific date (1816-01-22) while the extracted event only has the year 1816; the source text does not contradict the specific date. The status conflict is more substantive: the extracted event codes 'None' because RDCR states diplomatic relations were never formally established. However, the CSV's 'Consulate' status is appropriate because the dataset tracks consular presence as a distinct category from diplomatic relations (Embassy/Legation). RDCR itself confirms a U.S. Consul was appointed in 1816, which supports the 'Consulate' status. The CSV is likely correct on both counts."
+      }
+    ]
+  }
+}

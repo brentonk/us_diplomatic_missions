@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "2026-03-13T11:32:54.381855-05:00",
+  "api_metadata": {
+    "message_id": "msg_01CAVXjsLNqrCSrVwZxXMFC8",
+    "model": "claude-sonnet-4-6",
+    "usage": {
+      "input_tokens": 2947,
+      "output_tokens": 628
+    },
+    "stop_reason": "tool_use"
+  },
+  "result": {
+    "country": "Mecklenburg-Schwerin",
+    "source_file": "rdcr/articles/mecklenburg-schwerin.xml",
+    "events": [
+      {
+        "date": "1816",
+        "new_status": "None",
+        "event_description": "Mutual recognition established in 1816 via appointment of a U.S. Consul, but diplomatic relations were never formally established between the United States and the Grand Duchy of Mecklenburg-Schwerin. The consulate's location is not confirmed to be in the capital (Schwerin), and no legation or embassy was ever opened.",
+        "confidence": "high",
+        "evidence": [
+          {
+            "line_start": 17,
+            "line_end": 17,
+            "quote": "The United States and the Grand Duchy of Mecklenburg-Schwerin never established diplomatic relations."
+          },
+          {
+            "line_start": 11,
+            "line_end": 11,
+            "quote": "The first known act of mutual recognition between the United States and the Grand Duchy of Mecklenburg-Schwerin was in 1816, when John M. Forbes established the first U.S. Consul in the Grand Duchy of Mecklenburg-Schwerin."
+          }
+        ]
+      }
+    ]
+  }
+}

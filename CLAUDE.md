@@ -72,11 +72,37 @@ quarto preview web                             # Preview website locally
 - `.github/workflows/release.yml` — Creates GitHub Release with data archives on version tag push
 - `logs/` — API call logs (gitignored)
 
+## Branching workflow
+
+This project uses a branching model with two long-lived branches:
+
+- **`main`**: Production branch. Always reflects the latest release. Only receives merges from `develop` (for releases) or `hotfix/*` branches (for urgent fixes). Every merge to `main` should be accompanied by a version tag and release.
+- **`develop`**: Pre-release integration branch. All day-to-day work happens here or on feature branches merged into `develop`.
+
+### Standard release flow
+
+1. Work on `develop` (or merge feature branches into `develop`).
+2. When ready to release: merge `develop` into `main`, tag the version (`v0.X`), push the tag to trigger the release workflow.
+3. After the release, merge `main` back into `develop` to pick up the tag and any release-specific commits.
+
+### Hotfix flow
+
+1. Branch from `main`: `git checkout -b hotfix/description main`
+2. Fix and commit on the hotfix branch.
+3. Merge into `main`, tag the version, push the tag.
+4. Merge `main` back into `develop`.
+
+### Rules
+
+- **Never commit directly to `main`.** All changes reach `main` via merges.
+- **Never push tags from `develop`.** Tags are only created on `main` after a merge.
+- GitHub Pages deploys on push to `main` (paths: `web/**`, `data/**`). The website only updates on release.
+
 ## Versioning
 
-The canonical version is in `pyproject.toml`. The current pre-release version is 0.1.
+The canonical version is in `pyproject.toml`. The current released version is 0.1.
 
-- **Version bumps**: After the initial 0.1 release, any code change that produces different output data requires a version bump. Minor changes (e.g., typo fixes in mapping) get a minor bump; major changes (e.g., new state system data versions) get a major bump.
+- **Version bumps**: Any code change that produces different output data requires a version bump. Minor changes (e.g., typo fixes in mapping) get a minor bump; major changes (e.g., new state system data versions) get a major bump.
 - **Release tags**: Each release should be tagged in GitHub (e.g., `v0.1`). Push a tag to trigger the release workflow, which creates a GitHub Release with data archives attached.
 - **Data preservation**: This project is intended for scientific research. Data from prior releases must not be deleted or overwritten. Output datasets should be versioned alongside the code so that any published result can be reproduced from a tagged release.
 

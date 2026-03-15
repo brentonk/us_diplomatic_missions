@@ -4,6 +4,7 @@ project:
 
 website:
   title: "US Diplomatic Mission Status Data"
+  site-url: "https://bkenkel.com/us_diplomatic_missions/"
   navbar:
     background: "#0f1729"
     foreground: "#f0ece4"

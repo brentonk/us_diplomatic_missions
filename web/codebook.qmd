@@ -15,7 +15,7 @@ The dataset is maintained by Brenton Kenkel, Vanderbilt University (<brenton.ken
 If you have any questions or corrections, email me directly, or file an issue on GitHub at <https://github.com/brentonk/us_diplomatic_missions/issues>.
 
 
-# Data products
+# Datasets
 
 The data is provided in three temporal resolutions, each matched to three state system definitions, for a total of nine CSV files. All filenames include the version number (currently v0.1).
 
@@ -44,10 +44,6 @@ The data is provided in three temporal resolutions, each matched to three state 
 - `mission_status_yearly_cow_v0.1.csv`
 - `mission_status_yearly_gw_v0.1.csv`
 - `mission_status_yearly_gwm_v0.1.csv`
-
-### Daily datasets (not distributed)
-
-Daily-level datasets (one row per country--day) are not distributed due to their size, but can be generated from the range data. See Section 6 for code to produce daily data from the range files.
 
 
 # Diplomatic status categories
@@ -226,6 +222,64 @@ Key coding decisions:
 - The establishment of the People's Republic of China (1949-10-01) is coded as the date of the break in relations with China (status changes to None).
 - Taiwan's embassy is coded as beginning on 1949-12-08, its date of system entry in both the COW and Gleditsch-Ward datasets, even though the U.S. embassy in Taipei did not physically open until 1949-12-19. This is because the U.S. embassy in mainland China had been moved repeatedly throughout 1949 to remain near the Nationalist government, and using the system entry date ensures consistency with the treatment of European governments in exile during WWII.
 - The break in relations with Taiwan is coded as 1979-01-01 (U.S. recognition of the PRC).
+
+
+# Mapping gaps
+
+The following state system member codes have no corresponding entry in the USDOS diplomatic history. In the data, these entities have an empty `country_name_usdos` value and `us_mission_status` is set to "None" for all dates.
+
+## COW
+
+| Code | Number | Name | Membership |
+|------|-------:|------|------------|
+| HAN | 240 | Hanover | 1837--1866 |
+| SAX | 269 | Saxony | 1816--1867 |
+| HSE | 273 | Hesse Electoral | 1816--1866 |
+| MOD | 332 | Modena | 1842--1860 |
+| PMA | 335 | Parma | 1851--1860 |
+| TUS | 337 | Tuscany | 1816--1860 |
+| PRK | 731 | North Korea | 1948--2024 |
+| BHU | 760 | Bhutan | 1971--2024 |
+
+## GW
+
+| Code | Number | Name | Membership |
+|------|-------:|------|------------|
+| HAN | 240 | Hanover | 1816--1871 |
+| SAX | 269 | Saxony | 1816--1871 |
+| HSE | 273 | Hesse-Kassel (Electoral) | 1816--1871 |
+| MOD | 332 | Modena | 1816--1861 |
+| PMA | 335 | Parma | 1816--1861 |
+| TUS | 337 | Tuscany | 1816--1861 |
+| TRA | 563 | Transvaal | 1852--1910 |
+| TBT | 711 | Tibet | 1913--1950 |
+| PRK | 731 | Korea, People's Republic of | 1948--2020 |
+| BHU | 760 | Bhutan | 1949--2020 |
+| VNM | 815 | Vietnam (Annam/Cochin China/Tonkin) | 1816--1893 |
+
+## GWM
+
+| Code | Number | Name | Membership |
+|------|-------:|------|------------|
+| HAN | 240 | Hanover | 1816--1871 |
+| SAX | 269 | Saxony | 1816--1871 |
+| HSE | 273 | Hesse-Kassel (Electoral) | 1816--1871 |
+| MOD | 332 | Modena | 1816--1861 |
+| PMA | 335 | Parma | 1816--1861 |
+| TUS | 337 | Tuscany | 1816--1861 |
+| ABK | 396 | Abkhazia | 2008--2020 |
+| SOT | 397 | South Ossetia | 2008--2020 |
+| TRA | 563 | Transvaal | 1852--1910 |
+| TBT | 711 | Tibet | 1913--1950 |
+| PRK | 731 | Korea, People's Republic of | 1948--2020 |
+| BHU | 760 | Bhutan | 1949--2020 |
+| VNM | 815 | Vietnam (Annam/Cochin China/Tonkin) | 1816--1893 |
+
+The following entities appear in the USDOS diplomatic records but do not correspond to any code in the given state system. They are included in the hand-coded transitions data but excluded from the corresponding panel datasets.
+
+**COW**: Brunswick and Lüneburg, Central American Federation, Hanseatic Republics, Hawaii, Holy See, Nassau, Orange Free State, Republic of Genoa, Texas.
+
+**GW / GWM**: Brunswick and Lüneburg, Hanseatic Republics, Hawaii, Holy See, Nassau, Republic of Genoa, Texas.
 
 
 # Acknowledgments

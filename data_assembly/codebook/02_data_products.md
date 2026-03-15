@@ -1,4 +1,4 @@
-# Data products
+# Datasets
 
 The data is provided in three temporal resolutions, each matched to three state system definitions, for a total of nine CSV files. All filenames include the version number (currently v{{VERSION}}).
 
@@ -27,7 +27,3 @@ The data is provided in three temporal resolutions, each matched to three state 
 - `mission_status_yearly_cow_v{{VERSION}}.csv`
 - `mission_status_yearly_gw_v{{VERSION}}.csv`
 - `mission_status_yearly_gwm_v{{VERSION}}.csv`
-
-### Daily datasets (not distributed)
-
-Daily-level datasets (one row per country--day) are not distributed due to their size, but can be generated from the range data. See Section 6 for code to produce daily data from the range files.

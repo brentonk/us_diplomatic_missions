@@ -2,13 +2,13 @@
 
 Panel datasets recording the status of U.S. diplomatic missions abroad, from the earliest diplomatic contacts through 2024, matched to standard state system membership data used in international relations research.
 
-**[Download the data](https://github.com/brentonk/us_diplomatic_missions/releases)** | **[Codebook](data/v0.1/CODEBOOK_us_mission_status_v0.1.md)** | **[Project website](https://brentonk.github.io/us_diplomatic_missions/)**
+**[Download the data](https://github.com/brentonk/us_diplomatic_missions/releases)** | **[Codebook](data/v0.1/CODEBOOK_us_mission_status_v0.1.md)** | **[Project website](https://bkenkel.com/us_diplomatic_missions/)**
 
 Maintained by Brenton Kenkel, Vanderbilt University (<brenton.kenkel@gmail.com>)
 
-## Quick start
+## Getting the data
 
-Download the data files from the [latest release](https://github.com/brentonk/us_diplomatic_missions/releases) or directly from [`data/v0.1/`](data/v0.1/).
+Download the compiled data files from the [latest release](https://github.com/brentonk/us_diplomatic_missions/releases) or directly from [`data/v0.1/`](data/v0.1/). No software installation is required.
 
 Each state system definition (Correlates of War states, Gleditsch-Ward states, Gleditsch-Ward states + microstates) is available at three temporal resolutions:
 
@@ -110,7 +110,19 @@ us_diplomatic_missions/
 
 ## Replication
 
-All replication workflows require Python 3.12+ and [uv](https://docs.astral.sh/uv/).
+### Prerequisites
+
+All replication workflows require:
+
+- Python 3.12+
+- [uv](https://docs.astral.sh/uv/) (Python package manager)
+
+Codebook PDF generation additionally requires:
+
+- [pandoc](https://pandoc.org/installing.html)
+- A LaTeX distribution with XeLaTeX (e.g., [TeX Live](https://tug.org/texlive/))
+
+### Setup
 
 ```bash
 git clone --recurse-submodules https://github.com/brentonk/us_diplomatic_missions.git
@@ -171,4 +183,6 @@ Code is released under the [MIT License](LICENSE). Data is released under [CC-BY
 
 ## Citation
 
-If you use this data in academic work, please cite **working paper TBD**.
+If you use this data in academic work, please cite:
+
+> Kenkel, Brenton. 2026. "U.S. Diplomatic Mission Status Data." Version 0.1. <https://github.com/brentonk/us_diplomatic_missions>.

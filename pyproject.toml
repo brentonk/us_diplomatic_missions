@@ -14,3 +14,7 @@ dependencies = [
     "pyyaml>=6.0.3",
     "unidecode>=1.4.0",
 ]
+
+[project.urls]
+Homepage = "https://bkenkel.com/us_diplomatic_missions/"
+Repository = "https://github.com/brentonk/us_diplomatic_missions"

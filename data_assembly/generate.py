@@ -48,6 +48,9 @@ def generate_all_datasets(
         print()
 
     print("Building codebook...")
-    md_path, pdf_path = build_codebook(version, output_dir, release_date=release_date)
+    md_path, pdf_path = build_codebook(
+        version, output_dir, release_date=release_date,
+        resolver=resolver, transitions_csv=transitions_csv,
+    )
     print(f"  {md_path.name} ({md_path.stat().st_size:,} bytes)")
     print(f"  {pdf_path.name} ({pdf_path.stat().st_size:,} bytes)")

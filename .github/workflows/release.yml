@@ -13,6 +13,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Validate data directory
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          DATA_DIR="data/v${VERSION}"
+          if [ ! -d "$DATA_DIR" ]; then
+            echo "::error::Data directory $DATA_DIR does not exist. Did you forget to run generate-data?"
+            exit 1
+          fi
+          CSV_COUNT=$(ls "$DATA_DIR"/mission_status_*.csv 2>/dev/null | wc -l)
+          if [ "$CSV_COUNT" -eq 0 ]; then
+            echo "::error::No CSV files found in $DATA_DIR."
+            exit 1
+          fi
+
       - name: Create archives
         run: |
           VERSION="${GITHUB_REF_NAME#v}"

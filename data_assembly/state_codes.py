@@ -77,10 +77,10 @@ def _load_gw(gw_tsv: Path, supplement: Path | None = None) -> dict[str, list[Int
     return intervals
 
 
-def _load_mapping(mapping_yaml: Path) -> tuple[CodeMapping, CodeMapping, list[str]]:
+def _load_mapping(mapping_yaml: Path) -> tuple[CodeMapping, CodeMapping]:
     """Load code-keyed state_system_codes.yaml.
 
-    Returns (cow_mapping, gw_mapping, unmapped_names).
+    Returns (cow_mapping, gw_mapping).
     """
     with open(mapping_yaml) as f:
         raw = yaml.safe_load(f)
@@ -106,8 +106,7 @@ def _load_mapping(mapping_yaml: Path) -> tuple[CodeMapping, CodeMapping, list[st
             else:
                 raise ValueError(f"Unexpected value for {system_key}.{code}: {value!r}")
 
-    unmapped = raw.get("unmapped", [])
-    return cow_mapping, gw_mapping, unmapped
+    return cow_mapping, gw_mapping
 
 
 def _build_name_index(mapping: CodeMapping) -> NameIndex:
@@ -153,14 +152,9 @@ class StateCodeResolver:
         self._cow = _load_cow(cow_csv)
         self._gw_base = _load_gw(gw_tsv)
         self._gw_full = _load_gw(gw_tsv, gw_supplement)
-        self._cow_mapping, self._gw_mapping, self._unmapped = _load_mapping(mapping_yaml)
+        self._cow_mapping, self._gw_mapping = _load_mapping(mapping_yaml)
         self._cow_name_index = _build_name_index(self._cow_mapping)
         self._gw_name_index = _build_name_index(self._gw_mapping)
-        self._unmapped_set = set(self._unmapped)
-
-    def is_unmapped(self, usdos_name: str) -> bool:
-        """Check if a USDOS name is in the unmapped list."""
-        return usdos_name in self._unmapped_set
 
     def intervals(self, system: str) -> dict[str, list[Interval]]:
         if system == "cow":
@@ -196,7 +190,7 @@ class StateCodeResolver:
         return None
 
     def usdos_to_code(self, usdos_name: str, system: str, query_date: date) -> tuple[str, int] | None:
-        """USDOS name + date → (code, number). Returns None if unmapped."""
+        """USDOS name + date → (code, number). Returns None if no mapping exists."""
         name_index = self._cow_name_index if system == "cow" else self._gw_name_index
         candidates = name_index.get(usdos_name)
         if not candidates:
@@ -236,3 +230,47 @@ class StateCodeResolver:
                                     f"for '{r1.name}' and '{r2.name}'"
                                 )
         return warnings
+
+    def diagnose_coverage(self, usdos_names: set[str]) -> list[str]:
+        """Diagnose coverage gaps between state systems and USDOS names.
+
+        Returns list of diagnostic messages for:
+        1. State system codes with no USDOS mapping.
+        2. USDOS names with no state system mapping.
+        """
+        messages: list[str] = []
+
+        # Direction 1: state system codes with no USDOS mapping
+        for label, mapping, raw in [
+            ("COW", self._cow_mapping, self._cow),
+            ("GW", self._gw_mapping, self._gw_base),
+            ("GWM", self._gw_mapping, self._gw_full),
+        ]:
+            unmapped_codes = []
+            for code in sorted(raw.keys()):
+                if code not in mapping:
+                    names = sorted(set(iv.name for iv in raw[code]))
+                    unmapped_codes.append(f"    {code} ({', '.join(names)})")
+            if unmapped_codes:
+                messages.append(
+                    f"{label}: {len(unmapped_codes)} code(s) with no USDOS mapping:\n"
+                    + "\n".join(unmapped_codes)
+                )
+
+        # Direction 2: USDOS names with no state system mapping
+        # GW and GWM share the same mapping, so only report COW and GW.
+        for label, name_index in [
+            ("COW", self._cow_name_index),
+            ("GW", self._gw_name_index),
+        ]:
+            unmatched = sorted(
+                n for n in usdos_names
+                if n not in name_index
+            )
+            if unmatched:
+                messages.append(
+                    f"{label}: {len(unmatched)} USDOS name(s) with no mapping:\n"
+                    + "\n".join(f"    {n}" for n in unmatched)
+                )
+
+        return messages

@@ -100,6 +100,16 @@ def main():
                 print(f"  {w}")
             print()
 
+        import csv as csv_mod
+        with open(transitions_csv, newline="") as f:
+            usdos_names = {row["state_dept_name"].strip() for row in csv_mod.DictReader(f)}
+        coverage = resolver.diagnose_coverage(usdos_names)
+        if coverage:
+            print("Coverage diagnostics:")
+            for msg in coverage:
+                print(f"  {msg}")
+            print()
+
         output_dir = config.repo_root / "data" / f"v{version}"
         print(f"Generating data product v{version} in {output_dir}\n")
         generate_all_datasets(resolver, transitions_csv, output_dir, version)

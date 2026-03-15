@@ -1,8 +1,10 @@
 ---
-title: "US Diplomatic Mission Status Data"
-subtitle: "Codebook, Version 0.1"
-date: 2025
+title: "US Diplomatic Mission Status Data --- Codebook"
+subtitle: "Version 0.1"
+author: "Brenton Kenkel"
+date: "2026-03-15"
 geometry: margin=1in
+fontsize: 12pt
 colorlinks: true
 ---
 
@@ -14,6 +16,9 @@ This dataset records the status of U.S. diplomatic missions abroad, matched to s
 The primary source is the Office of the Historian, U.S. Department of State, *A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776*, available in machine-readable XML at <https://github.com/HistoryAtState/rdcr>. Ambiguities in the primary source are resolved by consulting *Principal Officers & Chiefs of Mission* (<https://github.com/HistoryAtState/pocom>).
 
 The underlying transition events were hand-coded from these sources, then validated against the XML records using a combination of automated extraction and manual reconciliation. For details on the extraction and validation pipeline, see the project repository at <https://github.com/brentonk/us_diplomatic_missions>.
+
+The dataset is maintained by Brenton Kenkel, Vanderbilt University (<brenton.kenkel@gmail.com>).
+If you have any questions or corrections, email me directly, or file an issue on GitHub at <https://github.com/brentonk/us_diplomatic_missions/issues>.
 
 
 # Data products
@@ -68,18 +73,18 @@ Each observation records the highest level of U.S. diplomatic representation in 
 ## Date coding rules
 
 - When the records specify the date an embassy, legation, or consulate general opened, that date is used.
-- If no specific opening date is provided, the date of presentation of credentials by the first chief of mission is used.
+- If no specific opening date for the mission is provided, the date of presentation of credentials by the first chief of mission is used.
 - For elevations of existing relations (e.g., legation to embassy), the date of formal elevation is used, even if there is a lag before the new ambassador presents credentials.
 - For newly established relations, the date of credential presentation by the first envoy/ambassador is used.
 - When State Department records are ambiguous about exact dates, as much information as possible is recorded: dates with a known year but unknown month or day are mapped to January 1 or the first of the month, respectively.
 
 ## Coding conventions
 
-- **Missions** (e.g., to France and Prussia in the 1700s) are coded as legations.
-- **"Office of the U.S. Representative"** (e.g., Marshall Islands) and **"Diplomatic Agent"** (e.g., Morocco) are coded as liaison offices.
-- **Nonresident charges d'affaires** and **nonresident ministers** are coded at the level of the mission they represent: Envoy Nonresident if serving at the envoy level, Ambassador Nonresident if serving at the ambassadorial level.
-- **Consulates** are only coded if located in the capital.
-- **Governments in exile** during WWII: "embassy near the government" is treated as an open embassy.
+- Missions (e.g., to France and Prussia in the 1700s) are coded as legations.
+- "Office of the U.S. Representative" (e.g., Marshall Islands) and "Diplomatic Agent" (e.g., Morocco) are coded as liaison offices.
+- Nonresident charges d'affaires and nonresident ministers are coded at the level of the mission they represent: Envoy Nonresident if serving at the envoy level, Ambassador Nonresident if serving at the ambassadorial level.
+- Consulates are only coded if located in the capital.
+- Governments in exile during WWII: "embassy near the government" is treated as an open embassy.
 
 
 # Column definitions
@@ -140,7 +145,14 @@ Daily-level datasets are not distributed due to their size (approximately 6--7 m
 | `date` | Date in YYYY-MM-DD format. |
 | `us_mission_status` | Diplomatic status on that date. |
 
-## R (tidyverse)
+## Sample code
+
+The samples below generate daily COW data.
+For Gleditsch-Ward, replace `_cow` with `_gw` or `_gwm` in the file name.
+
+Daily data files are also available on request from the maintainer.
+
+### R (tidyverse)
 
 ```r
 library(tidyverse)
@@ -153,7 +165,7 @@ daily_df <- range_df |>
   select(-date_start, -date_end)
 ```
 
-## Python (pandas)
+### Python (pandas)
 
 ```python
 import pandas as pd
@@ -170,7 +182,18 @@ for _, row in range_df.iterrows():
 daily_df = pd.DataFrame(daily_rows)
 ```
 
-Replace `cow` with `gw` or `gwm` for other state system definitions. Daily data files are also available on request from the project maintainers.
+### Stata
+
+```stata
+import delimited "mission_status_range_cow_v0.1.csv", clear
+gen date_start_d = date(date_start, "YMD")
+gen date_end_d = date(date_end, "YMD")
+gen n_days = date_end_d - date_start_d + 1
+expand n_days
+bysort country_code_cow date_start (date_start): gen date = date_start_d + _n - 1
+format date %td
+drop date_start* date_end* n_days
+```
 
 
 # State system definitions
@@ -209,3 +232,8 @@ Key coding decisions:
 - The establishment of the People's Republic of China (1949-10-01) is coded as the date of the break in relations with China (status changes to None).
 - Taiwan's embassy is coded as beginning on 1949-12-08, its date of system entry in both the COW and Gleditsch-Ward datasets, even though the U.S. embassy in Taipei did not physically open until 1949-12-19. This is because the U.S. embassy in mainland China had been moved repeatedly throughout 1949 to remain near the Nationalist government, and using the system entry date ensures consistency with the treatment of European governments in exile during WWII.
 - The break in relations with Taiwan is coded as 1979-01-01 (U.S. recognition of the PRC).
+
+
+# Acknowledgments
+
+I thank Amanda Gu, David Holmes, Priyam Madhukar, and Jennifer Okereke for their assistance assembling the hand-coded data during their time as Vanderbilt undergraduates.

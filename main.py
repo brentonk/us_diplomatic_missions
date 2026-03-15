@@ -32,7 +32,8 @@ def main():
     subparsers.add_parser("extraction4", help="LLM reconciliation (Opus)")
     subparsers.add_parser("assemble", help="Final output assembly")
     subparsers.add_parser("audit", help="Generate HTML audit report")
-    subparsers.add_parser("generate-data", help="Generate all data product CSVs")
+    gen_parser = subparsers.add_parser("generate-data", help="Generate all data product CSVs")
+    gen_parser.add_argument("--release-date", default=None, help="Codebook date (YYYY-MM-DD); defaults to today")
     subparsers.add_parser("extraction-all", help="Run all extraction stages sequentially")
 
     args = parser.parse_args()
@@ -112,7 +113,7 @@ def main():
 
         output_dir = config.repo_root / "data" / f"v{version}"
         print(f"Generating data product v{version} in {output_dir}\n")
-        generate_all_datasets(resolver, transitions_csv, output_dir, version)
+        generate_all_datasets(resolver, transitions_csv, output_dir, version, release_date=args.release_date)
 
         from data_assembly.generate_web import generate_web_sources
         print("\nGenerating web sources...")

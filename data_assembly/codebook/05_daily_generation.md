@@ -13,7 +13,14 @@ Daily-level datasets are not distributed due to their size (approximately 6--7 m
 | `date` | Date in YYYY-MM-DD format. |
 | `us_mission_status` | Diplomatic status on that date. |
 
-## R (tidyverse)
+## Sample code
+
+The samples below generate daily COW data.
+For Gleditsch-Ward, replace `_cow` with `_gw` or `_gwm` in the file name.
+
+Daily data files are also available on request from the maintainer.
+
+### R (tidyverse)
 
 ```r
 library(tidyverse)
@@ -26,7 +33,7 @@ daily_df <- range_df |>
   select(-date_start, -date_end)
 ```
 
-## Python (pandas)
+### Python (pandas)
 
 ```python
 import pandas as pd
@@ -43,4 +50,15 @@ for _, row in range_df.iterrows():
 daily_df = pd.DataFrame(daily_rows)
 ```
 
-Replace `cow` with `gw` or `gwm` for other state system definitions. Daily data files are also available on request from the project maintainers.
+### Stata
+
+```stata
+import delimited "mission_status_range_cow_v{{VERSION}}.csv", clear
+gen date_start_d = date(date_start, "YMD")
+gen date_end_d = date(date_end, "YMD")
+gen n_days = date_end_d - date_start_d + 1
+expand n_days
+bysort country_code_cow date_start (date_start): gen date = date_start_d + _n - 1
+format date %td
+drop date_start* date_end* n_days
+```

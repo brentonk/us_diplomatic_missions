@@ -15,15 +15,15 @@ Each observation records the highest level of U.S. diplomatic representation in 
 ## Date coding rules
 
 - When the records specify the date an embassy, legation, or consulate general opened, that date is used.
-- If no specific opening date is provided, the date of presentation of credentials by the first chief of mission is used.
+- If no specific opening date for the mission is provided, the date of presentation of credentials by the first chief of mission is used.
 - For elevations of existing relations (e.g., legation to embassy), the date of formal elevation is used, even if there is a lag before the new ambassador presents credentials.
 - For newly established relations, the date of credential presentation by the first envoy/ambassador is used.
 - When State Department records are ambiguous about exact dates, as much information as possible is recorded: dates with a known year but unknown month or day are mapped to January 1 or the first of the month, respectively.
 
 ## Coding conventions
 
-- **Missions** (e.g., to France and Prussia in the 1700s) are coded as legations.
-- **"Office of the U.S. Representative"** (e.g., Marshall Islands) and **"Diplomatic Agent"** (e.g., Morocco) are coded as liaison offices.
-- **Nonresident charges d'affaires** and **nonresident ministers** are coded at the level of the mission they represent: Envoy Nonresident if serving at the envoy level, Ambassador Nonresident if serving at the ambassadorial level.
-- **Consulates** are only coded if located in the capital.
-- **Governments in exile** during WWII: "embassy near the government" is treated as an open embassy.
+- Missions (e.g., to France and Prussia in the 1700s) are coded as legations.
+- "Office of the U.S. Representative" (e.g., Marshall Islands) and "Diplomatic Agent" (e.g., Morocco) are coded as liaison offices.
+- Nonresident charges d'affaires and nonresident ministers are coded at the level of the mission they represent: Envoy Nonresident if serving at the envoy level, Ambassador Nonresident if serving at the ambassadorial level.
+- Consulates are only coded if located in the capital.
+- Governments in exile during WWII: "embassy near the government" is treated as an open embassy.

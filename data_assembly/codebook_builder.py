@@ -1,13 +1,14 @@
 """Assemble and render the codebook from source fragments."""
 
 import subprocess
+from datetime import date
 from pathlib import Path
 
 
 CODEBOOK_DIR = Path(__file__).parent / "codebook"
 
 
-def build_codebook(version: str, output_dir: Path) -> tuple[Path, Path]:
+def build_codebook(version: str, output_dir: Path, release_date: str | None = None) -> tuple[Path, Path]:
     """Assemble codebook Markdown from fragments and render to PDF.
 
     Returns (md_path, pdf_path).
@@ -20,11 +21,14 @@ def build_codebook(version: str, output_dir: Path) -> tuple[Path, Path]:
     for p in sorted(CODEBOOK_DIR.glob("[0-9]*.md")):
         fragments.append(p)
 
-    # Assemble and substitute version
+    # Assemble and substitute version/date
+    codebook_date = release_date if release_date is not None else date.today().isoformat()
     parts = []
     for frag in fragments:
         text = frag.read_text()
-        parts.append(text.replace("{{VERSION}}", version))
+        text = text.replace("{{VERSION}}", version)
+        text = text.replace("{{DATE}}", codebook_date)
+        parts.append(text)
     assembled = "\n\n".join(parts)
 
     # Write assembled Markdown
@@ -38,7 +42,7 @@ def build_codebook(version: str, output_dir: Path) -> tuple[Path, Path]:
 
     # Render PDF via pandoc
     subprocess.run(
-        ["pandoc", str(md_path), "-o", str(pdf_path), "--pdf-engine=xelatex"],
+        ["pandoc", str(md_path), "-o", str(pdf_path), "--pdf-engine=xelatex", "--number-sections", "--toc"],
         check=True,
     )
 

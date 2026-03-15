@@ -14,6 +14,7 @@ def generate_all_datasets(
     transitions_csv: Path,
     output_dir: Path,
     version: str,
+    release_date: str | None = None,
 ) -> None:
     """Generate all data product files: 9 CSVs and codebook."""
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -47,6 +48,6 @@ def generate_all_datasets(
         print()
 
     print("Building codebook...")
-    md_path, pdf_path = build_codebook(version, output_dir)
+    md_path, pdf_path = build_codebook(version, output_dir, release_date=release_date)
     print(f"  {md_path.name} ({md_path.stat().st_size:,} bytes)")
     print(f"  {pdf_path.name} ({pdf_path.stat().st_size:,} bytes)")

@@ -5,3 +5,6 @@ This dataset records the status of U.S. diplomatic missions abroad, matched to s
 The primary source is the Office of the Historian, U.S. Department of State, *A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776*, available in machine-readable XML at <https://github.com/HistoryAtState/rdcr>. Ambiguities in the primary source are resolved by consulting *Principal Officers & Chiefs of Mission* (<https://github.com/HistoryAtState/pocom>).
 
 The underlying transition events were hand-coded from these sources, then validated against the XML records using a combination of automated extraction and manual reconciliation. For details on the extraction and validation pipeline, see the project repository at <https://github.com/brentonk/us_diplomatic_missions>.
+
+The dataset is maintained by Brenton Kenkel, Vanderbilt University (<brenton.kenkel@gmail.com>).
+If you have any questions or corrections, email me directly, or file an issue on GitHub at <https://github.com/brentonk/us_diplomatic_missions/issues>.

@@ -1,6 +1,6 @@
 ---
 title: "Data Explorer"
-subtitle: "Select a country to view its diplomatic status timeline"
+subtitle: "Highest status of US permanent diplomatic representation by country over time"
 ---
 
 ```{=html}
@@ -21,7 +21,7 @@ subtitle: "Select a country to view its diplomatic status timeline"
 
   <div id="main-panel">
     <div id="welcome-msg">
-      <p>Select a country from the list to view its diplomatic status timeline.</p>
+      <p>Select a country from the list to view the highest status of US permanent diplomatic representation over time.</p>
     </div>
     <div id="timeline-panel">
       <h3 id="timeline-title"></h3>

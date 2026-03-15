@@ -2,7 +2,10 @@
 
 ## Pre-commit checklist
 
-Before every commit, re-read this file and update it with any relevant new information (new conventions, gotchas, resolved issues, etc.).
+Before every commit:
+
+1. Re-read this file and update it with any relevant new information (new conventions, gotchas, resolved issues, etc.).
+2. Update `CHANGELOG.md` with a brief description of the change under the appropriate heading. Group entries under `## [Unreleased]`. When a version is released, rename `[Unreleased]` to the version number and date (e.g., `## [0.2] - 2026-03-15`) and add a fresh `## [Unreleased]` section above it. Keep entries concise — one line per change, grouped by category (`Added`, `Changed`, `Fixed`, `Removed`) following [Keep a Changelog](https://keepachangelog.com/) conventions.
 
 ## Project overview
 
@@ -68,6 +71,7 @@ quarto preview web                             # Preview website locally
 - `output/local/` — Deterministic/ephemeral pipeline outputs (gitignored): `work_units/`, `verifications/`, `final/`, `country_mapping.json`, `manifest.json`
 - `data/` — Versioned data products (committed, organized as `data/v{VERSION}/`): 9 CSVs, codebook (md + pdf)
 - `web/` — Quarto website source (landing page, download page, data explorer)
+- `CHANGELOG.md` — Running changelog (updated on every commit, follows [Keep a Changelog](https://keepachangelog.com/))
 - `.github/workflows/pages.yml` — GitHub Pages deployment on push to main
 - `.github/workflows/release.yml` — Creates GitHub Release with data archives on version tag push
 - `logs/` — API call logs (gitignored)

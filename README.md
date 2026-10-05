@@ -2,23 +2,23 @@
 
 Panel datasets recording the status of U.S. diplomatic missions abroad, from the earliest diplomatic contacts through 2024, matched to standard state system membership data used in international relations research.
 
-**[Download the data](https://github.com/brentonk/us_diplomatic_missions/releases)** | **[Codebook](data/v0.1/CODEBOOK_us_mission_status_v0.1.md)** | **[Project website](https://bkenkel.com/us_diplomatic_missions/)**
+**[Download the data](https://github.com/brentonk/us_diplomatic_missions/releases)** | **[Codebook](data/v0.2/CODEBOOK_us_mission_status_v0.2.md)** | **[Project website](https://bkenkel.com/us_diplomatic_missions/)**
 
 Maintained by Brenton Kenkel, Vanderbilt University (<brenton.kenkel@gmail.com>)
 
 ## Getting the data
 
-Download the compiled data files from the [latest release](https://github.com/brentonk/us_diplomatic_missions/releases) or directly from [`data/v0.1/`](data/v0.1/). No software installation is required.
+Download the compiled data files from the [latest release](https://github.com/brentonk/us_diplomatic_missions/releases) or directly from [`data/v0.2/`](data/v0.2/). No software installation is required.
 
 Each state system definition (Correlates of War states, Gleditsch-Ward states, Gleditsch-Ward states + microstates) is available at three temporal resolutions:
 
 | Resolution | Description | Example file |
 |---|---|---|
-| **Range** | One row per country--date range with constant status | `mission_status_range_cow_v0.1.csv` |
-| **Monthly** | One row per country--month (min/max/median/mode) | `mission_status_monthly_cow_v0.1.csv` |
-| **Yearly** | One row per country--year (min/max/median/mode) | `mission_status_yearly_cow_v0.1.csv` |
+| **Range** | One row per country--date range with constant status | `mission_status_range_cow_v0.2.csv` |
+| **Monthly** | One row per country--month (min/max/median/mode) | `mission_status_monthly_cow_v0.2.csv` |
+| **Yearly** | One row per country--year (min/max/median/mode) | `mission_status_yearly_cow_v0.2.csv` |
 
-See the [codebook](data/v0.1/CODEBOOK_us_mission_status_v0.1.md) for variable definitions, coding rules, and special cases.
+See the [codebook](data/v0.2/CODEBOOK_us_mission_status_v0.2.md) for variable definitions, coding rules, and special cases.
 
 ## Diplomatic status categories
 
@@ -51,12 +51,12 @@ The extraction and validation pipeline uses Claude (Anthropic) via the Messages 
 ```
 us_diplomatic_missions/
 ├── data/
-│   └── v0.1/                          # Versioned data products
-│       ├── CODEBOOK_us_mission_status_v0.1.md
-│       ├── CODEBOOK_us_mission_status_v0.1.pdf
-│       ├── mission_status_range_{cow,gw,gwm}_v0.1.csv
-│       ├── mission_status_monthly_{cow,gw,gwm}_v0.1.csv
-│       └── mission_status_yearly_{cow,gw,gwm}_v0.1.csv
+│   └── v0.2/                          # Versioned data products
+│       ├── CODEBOOK_us_mission_status_v0.2.md
+│       ├── CODEBOOK_us_mission_status_v0.2.pdf
+│       ├── mission_status_range_{cow,gw,gwm}_v0.2.csv
+│       ├── mission_status_monthly_{cow,gw,gwm}_v0.2.csv
+│       └── mission_status_yearly_{cow,gw,gwm}_v0.2.csv
 ├── input/                              # Pipeline inputs
 │   ├── 2024-01-16_transitions.csv      # Hand-coded diplomatic transitions (590 rows)
 │   ├── extraction_config.yaml          # Pipeline configuration
@@ -141,7 +141,7 @@ uv run python main.py assemble       # Combine LLM outputs + manual decisions �
 uv run python main.py generate-data  # Build data products from transitions CSV
 ```
 
-The LLM extraction (Stage 2) and reconciliation (Stage 4) outputs are committed in `output/remote_api/`, so those stages can be skipped. The `assemble` step combines them with the manual decisions in `input/manual_reconciliation.yaml` to produce the transitions CSV, which `generate-data` then uses to build all data products in `data/v0.1/`.
+The LLM extraction (Stage 2) and reconciliation (Stage 4) outputs are committed in `output/remote_api/`, so those stages can be skipped. The `assemble` step combines them with the manual decisions in `input/manual_reconciliation.yaml` to produce the transitions CSV, which `generate-data` then uses to build all data products in `data/v0.2/`.
 
 ### Workflow 2: Full pipeline replication
 
@@ -175,7 +175,7 @@ Like the COW and Diplometrics data, this dataset focuses on the status of diplom
 
 ## Coding conventions
 
-For details on date coding rules, special cases (China/Taiwan, WWII governments in exile, nonresident representatives), and country identification, see the [codebook](data/v0.1/CODEBOOK_us_mission_status_v0.1.md).
+For details on date coding rules, special cases (China/Taiwan, WWII governments in exile, nonresident representatives), and country identification, see the [codebook](data/v0.2/CODEBOOK_us_mission_status_v0.2.md).
 
 ## License
 
@@ -185,4 +185,4 @@ Code is released under the [MIT License](LICENSE). Data is released under [CC-BY
 
 If you use this data in academic work, please cite:
 
-> Kenkel, Brenton. 2026. "U.S. Diplomatic Mission Status Data." Version 0.1. <https://github.com/brentonk/us_diplomatic_missions>.
+> Kenkel, Brenton. 2026. "U.S. Diplomatic Mission Status Data." Version 0.2. <https://github.com/brentonk/us_diplomatic_missions>.

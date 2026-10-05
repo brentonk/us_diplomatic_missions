@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+## [0.2] - 2026-10-05
+
 ### Added
 
 - `us_mission_start` and `us_mission_end` columns in the monthly and yearly datasets, giving the status on the first and last observed day of each period.

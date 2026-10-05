@@ -104,7 +104,7 @@ This project uses a branching model with two long-lived branches:
 
 ## Versioning
 
-The canonical version is in `pyproject.toml`. The current released version is 0.1.
+The canonical version is in `pyproject.toml`. The current released version is 0.2.
 
 - **Version bumps**: Any code change that produces different output data requires a version bump. Minor changes (e.g., typo fixes in mapping) get a minor bump; major changes (e.g., new state system data versions) get a major bump.
 - **Release tags**: Each release should be tagged in GitHub (e.g., `v0.1`). Push a tag to trigger the release workflow, which creates a GitHub Release with data archives attached.

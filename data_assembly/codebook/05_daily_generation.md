@@ -50,6 +50,22 @@ for _, row in range_df.iterrows():
 daily_df = pd.DataFrame(daily_rows)
 ```
 
+### Python (polars)
+
+```python
+import polars as pl
+
+range_df = pl.read_csv("mission_status_range_cow_v{{VERSION}}.csv",
+                       try_parse_dates=True)
+
+daily_df = (
+    range_df
+    .with_columns(date=pl.date_ranges("date_start", "date_end"))
+    .explode("date", empty_as_null=False)
+    .drop("date_start", "date_end")
+)
+```
+
 ### Stata
 
 ```stata

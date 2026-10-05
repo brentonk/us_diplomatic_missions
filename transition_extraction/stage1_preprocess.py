@@ -8,7 +8,7 @@ import json
 import subprocess
 from pathlib import Path
 
-import pandas as pd
+import polars as pl
 
 from .config import PipelineConfig
 from .models import CountryMapping, CsvEvent, NumberedText, WorkUnit
@@ -20,26 +20,26 @@ TOKEN_LIMIT = 60_000
 
 def _parse_csv_events(config: PipelineConfig) -> dict[str, list[CsvEvent]]:
     """Parse the transitions CSV into CsvEvent records grouped by country."""
-    df = pd.read_csv(config.paths.transitions_csv, keep_default_na=False)
+    df = pl.read_csv(
+        config.paths.transitions_csv, infer_schema=False, empty_string_is_null=False,
+    )
+    groups = df.partition_by("state_dept_name", as_dict=True, maintain_order=True)
 
     events_by_country: dict[str, list[CsvEvent]] = {}
-    for country_name, group in df.groupby("state_dept_name", sort=True):
+    for (country_name,), group in sorted(groups.items(), key=lambda kv: kv[0]):
         events = []
-        for row_idx, (_, row) in enumerate(group.iterrows(), start=1):
-            year = int(row["year"]) if row["year"] != "" and pd.notna(row["year"]) else None
-            month = int(row["month"]) if row["month"] != "" and pd.notna(row["month"]) else None
-            day = int(row["day"]) if row["day"] != "" and pd.notna(row["day"]) else None
+        for row_idx, row in enumerate(group.iter_rows(named=True), start=1):
             events.append(CsvEvent(
-                state_dept_name=str(row["state_dept_name"]),
-                status_change=str(row["status_change"]),
-                year=year,
-                month=month,
-                day=day,
-                last_verified=str(row["last_verified"]) if pd.notna(row["last_verified"]) else "",
-                notes=str(row["notes"]) if pd.notna(row["notes"]) else "",
+                state_dept_name=row["state_dept_name"],
+                status_change=row["status_change"],
+                year=int(row["year"]) if row["year"] else None,
+                month=int(row["month"]) if row["month"] else None,
+                day=int(row["day"]) if row["day"] else None,
+                last_verified=row["last_verified"],
+                notes=row["notes"],
                 row_index=row_idx,
             ))
-        events_by_country[str(country_name)] = events
+        events_by_country[country_name] = events
 
     return events_by_country
 

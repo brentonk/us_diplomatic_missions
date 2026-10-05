@@ -113,6 +113,8 @@ The canonical version is in `pyproject.toml`. The current released version is 0.
 ## Key conventions
 
 - **Package manager**: `uv` (never `pip install` directly)
+- **Dataframes**: polars only (no pandas or numpy). Daily expansion and monthly/yearly aggregation are polars expressions; `write_csv` quotes empty strings as `""`, so columns that may be empty are set to null before writing to keep output unquoted (matching the `csv`-module range files).
+- **Verifying data changes**: `generate-data` writes into `data/v{VERSION}/`, so running it at an already-released version overwrites frozen data. To check that a refactor leaves output unchanged, call the builders directly into a scratch dir and diff against `data/v{VERSION}/`.
 - **Pydantic models**: All models in `models.py` are Pydantic `BaseModel` subclasses. Use `.model_dump()` to serialize, `Model.model_validate(d)` to deserialize. `config.py` still uses plain dataclasses since it doesn't need serialization.
 - **stdlib XML**: `xml.etree.ElementTree` only (no lxml)
 - **TEI namespace**: `http://www.tei-c.org/ns/1.0` — must be handled in all `find`/`findall` calls in rdcr parsing

@@ -35,13 +35,13 @@ def generate_all_datasets(
         print(f"  [{sys_label}] Aggregating monthly...")
         monthly_df = build_monthly_dataset(daily_df, system)
         monthly_path = output_dir / f"mission_status_monthly_{system}_v{version}.csv"
-        monthly_df.to_csv(monthly_path, index=False)
+        monthly_df.write_csv(monthly_path)
         print(f"  [{sys_label}] Wrote {len(monthly_df)} rows to {monthly_path.name}")
 
         print(f"  [{sys_label}] Aggregating yearly...")
         yearly_df = build_yearly_dataset(daily_df, system)
         yearly_path = output_dir / f"mission_status_yearly_{system}_v{version}.csv"
-        yearly_df.to_csv(yearly_path, index=False)
+        yearly_df.write_csv(yearly_path)
         print(f"  [{sys_label}] Wrote {len(yearly_df)} rows to {yearly_path.name}")
 
         del daily_df

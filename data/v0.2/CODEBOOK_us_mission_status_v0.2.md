@@ -1,7 +1,13 @@
 ---
-title: "Codebook (v0.2)"
-number-sections: true
+title: "US Diplomatic Mission Status Data --- Codebook"
+subtitle: "Version 0.2"
+author: "Brenton Kenkel"
+date: "2026-10-05"
+geometry: margin=1in
+fontsize: 12pt
+colorlinks: true
 ---
+
 
 # Overview
 

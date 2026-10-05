@@ -8,7 +8,7 @@ import json
 import re
 from pathlib import Path
 
-import pandas as pd
+import polars as pl
 import yaml
 
 from .config import PipelineConfig
@@ -91,8 +91,8 @@ def resolve_countries(config: PipelineConfig) -> dict[str, CountryMapping]:
     Returns a dict mapping CSV country names to CountryMapping objects.
     """
     # Read unique country names from CSV
-    df = pd.read_csv(config.paths.transitions_csv, keep_default_na=False)
-    csv_names = sorted(df["state_dept_name"].unique())
+    df = pl.read_csv(config.paths.transitions_csv, infer_schema=False)
+    csv_names = sorted(df["state_dept_name"].unique().to_list())
 
     # List available XML stems
     rdcr_stems = _list_xml_stems(config.paths.rdcr_articles)

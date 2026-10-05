@@ -2,23 +2,23 @@
 title: "Download"
 ---
 
-Current release: **v0.1**
+Current release: **v0.2**
 
 ::: {.download-section}
 ### Complete Archives
 
 Download all data files and codebook in a single archive.
 
-- [`us_mission_status_v0.1.zip`](https://github.com/brentonk/us_diplomatic_missions/releases/download/v0.1/us_mission_status_v0.1.zip) (ZIP)
-- [`us_mission_status_v0.1.tar.gz`](https://github.com/brentonk/us_diplomatic_missions/releases/download/v0.1/us_mission_status_v0.1.tar.gz) (TAR.GZ)
+- [`us_mission_status_v0.2.zip`](https://github.com/brentonk/us_diplomatic_missions/releases/download/v0.2/us_mission_status_v0.2.zip) (ZIP)
+- [`us_mission_status_v0.2.tar.gz`](https://github.com/brentonk/us_diplomatic_missions/releases/download/v0.2/us_mission_status_v0.2.tar.gz) (TAR.GZ)
 
 :::
 
 ::: {.download-section}
 ### Codebook
 
-- [`CODEBOOK_us_mission_status_v0.1.pdf`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/CODEBOOK_us_mission_status_v0.1.pdf) (PDF)
-- [`CODEBOOK_us_mission_status_v0.1.md`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/CODEBOOK_us_mission_status_v0.1.md) (Markdown)
+- [`CODEBOOK_us_mission_status_v0.2.pdf`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/CODEBOOK_us_mission_status_v0.2.pdf) (PDF)
+- [`CODEBOOK_us_mission_status_v0.2.md`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/CODEBOOK_us_mission_status_v0.2.md) (Markdown)
 
 :::
 
@@ -27,9 +27,9 @@ Download all data files and codebook in a single archive.
 
 One row per country--date range with constant diplomatic status.
 
-- [`mission_status_range_cow_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_range_cow_v0.1.csv) (Correlates of War)
-- [`mission_status_range_gw_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_range_gw_v0.1.csv) (Gleditsch-Ward)
-- [`mission_status_range_gwm_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_range_gwm_v0.1.csv) (GW + microstates)
+- [`mission_status_range_cow_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_range_cow_v0.2.csv) (Correlates of War)
+- [`mission_status_range_gw_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_range_gw_v0.2.csv) (Gleditsch-Ward)
+- [`mission_status_range_gwm_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_range_gwm_v0.2.csv) (GW + microstates)
 
 :::
 
@@ -38,9 +38,9 @@ One row per country--date range with constant diplomatic status.
 
 One row per country--month with min/max/median/mode aggregation.
 
-- [`mission_status_monthly_cow_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_monthly_cow_v0.1.csv) (Correlates of War)
-- [`mission_status_monthly_gw_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_monthly_gw_v0.1.csv) (Gleditsch-Ward)
-- [`mission_status_monthly_gwm_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_monthly_gwm_v0.1.csv) (GW + microstates)
+- [`mission_status_monthly_cow_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_monthly_cow_v0.2.csv) (Correlates of War)
+- [`mission_status_monthly_gw_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_monthly_gw_v0.2.csv) (Gleditsch-Ward)
+- [`mission_status_monthly_gwm_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_monthly_gwm_v0.2.csv) (GW + microstates)
 
 :::
 
@@ -49,9 +49,9 @@ One row per country--month with min/max/median/mode aggregation.
 
 One row per country--year with min/max/median/mode aggregation.
 
-- [`mission_status_yearly_cow_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_yearly_cow_v0.1.csv) (Correlates of War)
-- [`mission_status_yearly_gw_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_yearly_gw_v0.1.csv) (Gleditsch-Ward)
-- [`mission_status_yearly_gwm_v0.1.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.1/mission_status_yearly_gwm_v0.1.csv) (GW + microstates)
+- [`mission_status_yearly_cow_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_yearly_cow_v0.2.csv) (Correlates of War)
+- [`mission_status_yearly_gw_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_yearly_gw_v0.2.csv) (Gleditsch-Ward)
+- [`mission_status_yearly_gwm_v0.2.csv`](https://raw.githubusercontent.com/brentonk/us_diplomatic_missions/main/data/v0.2/mission_status_yearly_gwm_v0.2.csv) (GW + microstates)
 
 :::
 

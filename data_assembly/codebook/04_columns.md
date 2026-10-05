@@ -33,8 +33,12 @@ The unit of observation is **country-code--month**. Aggregation is over all days
 | `us_mission_max` | Greatest diplomatic status observed on any day in the month. |
 | `us_mission_median` | Median diplomatic status across all days in the month. |
 | `us_mission_mode` | Most frequent diplomatic status across all days in the month. |
+| `us_mission_start` | Diplomatic status on the first observed day of the month. |
+| `us_mission_end` | Diplomatic status on the last observed day of the month. |
 
 Status comparisons use the ordering in Section 3 (Embassy is the greatest, None is the least). Ties in the median or mode are broken in favor of the greater status.
+
+The first and last "observed day" of the month in `us_mission_start` and `us_mission_end` account for the fact that the country may enter or leave the state system mid-month.
 
 ## Yearly datasets
 

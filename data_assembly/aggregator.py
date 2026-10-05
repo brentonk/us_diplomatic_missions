@@ -34,6 +34,10 @@ def _aggregate(daily_df: pl.DataFrame, system: str, period_col: str, monthly: bo
         us_mission_median=rank.sort().get((pl.len() - 1) // 2),
         # Mode: ties broken toward lowest rank (greatest status)
         us_mission_mode=rank.mode().min(),
+        # Status on the first/last observed day, which is not the calendar
+        # first/last day when the country enters or exits the system mid-period
+        us_mission_start=rank.sort_by("date").first(),
+        us_mission_end=rank.sort_by("date").last(),
     ).sort(code_col, "period_key")
 
     if monthly:
@@ -46,7 +50,14 @@ def _aggregate(daily_df: pl.DataFrame, system: str, period_col: str, monthly: bo
         period_str = pl.col("period_key").cast(pl.String)
 
     rank_labels = dict(enumerate(STATUS_ORDER))
-    stat_cols = ["us_mission_min", "us_mission_max", "us_mission_median", "us_mission_mode"]
+    stat_cols = [
+        "us_mission_min",
+        "us_mission_max",
+        "us_mission_median",
+        "us_mission_mode",
+        "us_mission_start",
+        "us_mission_end",
+    ]
     return grouped.select(
         abbrev_col,
         code_col,

@@ -1,6 +1,6 @@
 [project]
 name = "us-diplomatic-missions"
-version = "0.1"
+version = "0.2"
 description = "Panel data on U.S. diplomatic mission status, validated against State Department XML sources"
 readme = "README.md"
 requires-python = ">=3.12"
